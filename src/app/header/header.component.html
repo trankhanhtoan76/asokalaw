@@ -1,68 +1,25 @@
 <header>
   <section [ngClass]="fixedTop">
-    <div class="bg-blue d-none d-md-block">
+    <div class="bg-blue">
       <div class="container">
         <div class="row" style="height: 55px;">
           <div class="col-md-6" style="margin: auto; display: grid;">
-            <div class="tel" style="font-weight: 300; color: #afaead;">
+            <div *ngIf="!isMobileScreen" class="tel" style="font-weight: 300; color: #afaead;">
               <img style="height: 13px;  padding-right: 2px;" src="/assets/media/mail_icon.svg"/> consult@asokalaw.vn
             </div>
-            <div class="row header-search" style="width: 80%">
-              <div class="container-search flex-center-vertically shadow header-search">
-                <div class="row row-search">
-                  <i class="fa fa-search"></i>
-                  <select name="business_type" type="text" class="input-search">
-
-                  </select>
-                  <i class="fa fa-caret-down"></i>
-                </div>
-              </div>
-              <button class="btn btn-warning text-color-search" onclick="modalShow('business_type', null, null)">Tư vấn</button>
-            </div>
-
           </div>
           <div class="col-md-6" style="margin: auto; float:right;">
             <div style="margin-top: 2px;float:right; padding: 10px 5px;">
-              <a style="
-    font-weight: bold;
-" href="setLang/vi?redirect_to=/">VN</a>
-              <span style="    font-size: 15px;
-    font-weight: 900;
-    font-family: auto;">|</span>
-              <a style="
-    font-weight: bold;
-" href="/setLang/en?redirect_to=/">EN</a></div>
-            <div class="padding" style="float:right;">
-              <button class="float-right btn btn-outline-warning padding" onclick="onClickHeaderBtn()"
-                      type="button">Nhận tư vấn miễn phí
+              <a style=" font-weight: bold;" href="setLang/vi?redirect_to=/">VN</a>
+              <span style="    font-size: 15px; font-weight: 900; font-family: auto;color:#fff"> | </span>
+              <a style=" font-weight: bold;" href="/setLang/en?redirect_to=/">EN</a></div>
+            <div class="padding" style="float:{{isMobileScreen ? 'left' : 'right'}};">
+              <button class="float-right btn btn-outline-warning padding" onclick="onClickHeaderBtn()" type="button">Nhận tư vấn miễn phí
               </button>
             </div>
-            <div class="h-phone padding" style="">
-              <img style="height: 20px"
-                   src="/assets/media/phone_icon.svg"/><a
-              style="font-size: 18px;font-weight: 400;font-family:'Montserrat' medium;" href="#">
-              0336634028
-            </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="bg-blue d-block d-md-none">
-      <div class="container">
-        <div class="row" style="height: 40px;">
-          <div class="col-sm-12" style="margin: auto; float:right;">
-            <div style="margin-top: 2px;float:right; padding: 10px 5px;">
-              <a style=" font-weight: bold;" href="/setLang/vi?redirect_to=/">VN</a>
-              <span style="    font-size: 15px; font-weight: 900; font-family: auto;">|</span>
-              <a style=" font-weight: bold;" href="/setLang/en?redirect_to=/">EN</a>
-            </div>
-
-            <div class="h-phone" style="float:left;padding-top:5px">
+            <div *ngIf="!isMobileScreen" class="h-phone padding">
               <img style="height: 20px" src="/assets/media/phone_icon.svg"/>
-              <a style="font-size: 18px;font-weight: 400;font-family:'Montserrat',serif;" href="#">
-                0336634028
-              </a>
+              <a style="font-size: 18px;font-weight: 400;font-family:'Montserrat',serif;" href="#">0336634028</a>
             </div>
           </div>
         </div>

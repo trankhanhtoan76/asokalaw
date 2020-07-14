@@ -7,6 +7,7 @@ import {Component, HostListener, OnInit} from '@angular/core';
 export class HeaderComponent implements OnInit {
   fixedTop = '';
   styleBorderBottomMainMenu = '';
+  isMobileScreen = window.screen.width < 768;
 
   constructor() {
   }
@@ -17,8 +18,7 @@ export class HeaderComponent implements OnInit {
   @HostListener('window:scroll', ['$event'])
   // tslint:disable-next-line:typedef
   onWindowScroll() {
-    let t = document.documentElement.scrollTop;
-    if (t >= 400) {
+    if (document.documentElement.scrollTop >= 400) {
       this.fixedTop = 'fixed-top';
       this.styleBorderBottomMainMenu = 'border-bottom:solid 1px #acacac';
     } else {

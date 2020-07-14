@@ -10,6 +10,9 @@ import { HeaderbannerComponent } from './headerbanner/headerbanner.component';
 import { FooteremailsubcribeComponent } from './footeremailsubcribe/footeremailsubcribe.component';
 import { FooterinfoComponent } from './footerinfo/footerinfo.component';
 import { HeadermainmenuComponent } from './headermainmenu/headermainmenu.component';
+import { ServicemostusedComponent } from './servicemostused/servicemostused.component';
+import { HomepricingComponent } from './homepricing/homepricing.component';
+import { HomefeedbackComponent } from './homefeedback/homefeedback.component';
 
 const routes: Routes = [
   {path: '', component: HomeComponent}
@@ -24,7 +27,10 @@ const routes: Routes = [
     HeaderbannerComponent,
     FooteremailsubcribeComponent,
     FooterinfoComponent,
-    HeadermainmenuComponent
+    HeadermainmenuComponent,
+    ServicemostusedComponent,
+    HomepricingComponent,
+    HomefeedbackComponent
   ],
   imports: [
     BrowserModule,
