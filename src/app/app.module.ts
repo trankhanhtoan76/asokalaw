@@ -13,6 +13,11 @@ import { HeadermainmenuComponent } from './headermainmenu/headermainmenu.compone
 import { ServicemostusedComponent } from './servicemostused/servicemostused.component';
 import { HomepricingComponent } from './homepricing/homepricing.component';
 import { HomefeedbackComponent } from './homefeedback/homefeedback.component';
+import { HometeamsComponent } from './hometeams/hometeams.component';
+import { HomeeffectComponent } from './homeeffect/homeeffect.component';
+import { CountnumberofusedComponent } from './countnumberofused/countnumberofused.component';
+import { HomenewsComponent } from './homenews/homenews.component';
+import { HomevideosComponent } from './homevideos/homevideos.component';
 
 const routes: Routes = [
   {path: '', component: HomeComponent}
@@ -30,7 +35,12 @@ const routes: Routes = [
     HeadermainmenuComponent,
     ServicemostusedComponent,
     HomepricingComponent,
-    HomefeedbackComponent
+    HomefeedbackComponent,
+    HometeamsComponent,
+    HomeeffectComponent,
+    CountnumberofusedComponent,
+    HomenewsComponent,
+    HomevideosComponent
   ],
   imports: [
     BrowserModule,
