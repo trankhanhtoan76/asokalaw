@@ -1,11 +1,12 @@
 import {Component, HostListener, OnInit} from '@angular/core';
 
 @Component({
-  selector: 'app-header',
-  templateUrl: './header.component.html'
+  selector: 'app-headermainmenu',
+  templateUrl: './headermainmenu.component.html',
+  styleUrls: ['./headermainmenu.component.css']
 })
-export class HeaderComponent implements OnInit {
-  fixedTop = '';
+export class HeadermainmenuComponent implements OnInit {
+
   styleBorderBottomMainMenu = '';
 
   constructor() {
@@ -19,11 +20,10 @@ export class HeaderComponent implements OnInit {
   onWindowScroll() {
     let t = document.documentElement.scrollTop;
     if (t >= 400) {
-      this.fixedTop = 'fixed-top';
       this.styleBorderBottomMainMenu = 'border-bottom:solid 1px #acacac';
     } else {
-      this.fixedTop = '';
       this.styleBorderBottomMainMenu = '';
     }
   }
+
 }

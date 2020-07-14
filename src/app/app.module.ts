@@ -6,6 +6,10 @@ import {HeaderComponent} from './header/header.component';
 import {FooterComponent} from './footer/footer.component';
 import {HomeComponent} from './home/home.component';
 import {RouterModule, Routes} from '@angular/router';
+import { HeaderbannerComponent } from './headerbanner/headerbanner.component';
+import { FooteremailsubcribeComponent } from './footeremailsubcribe/footeremailsubcribe.component';
+import { FooterinfoComponent } from './footerinfo/footerinfo.component';
+import { HeadermainmenuComponent } from './headermainmenu/headermainmenu.component';
 
 const routes: Routes = [
   {path: '', component: HomeComponent}
@@ -16,7 +20,11 @@ const routes: Routes = [
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    HomeComponent
+    HomeComponent,
+    HeaderbannerComponent,
+    FooteremailsubcribeComponent,
+    FooterinfoComponent,
+    HeadermainmenuComponent
   ],
   imports: [
     BrowserModule,
