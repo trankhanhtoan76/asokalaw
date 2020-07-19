@@ -18,6 +18,12 @@ import { CountnumberofusedComponent } from './countnumberofused/countnumberofuse
 import { HomenewsComponent } from './homenews/homenews.component';
 import { HomevideosComponent } from './homevideos/homevideos.component';
 import { DkkdComponent } from './dkkd/dkkd/dkkd.component';
+import { DkkdbusinesstypeComponent } from './dkkd/dkkdbusinesstype/dkkdbusinesstype.component';
+import { DkkdpricingComponent } from './dkkd/dkkdpricing/dkkdpricing.component';
+import { DkkdconsultComponent } from './dkkd/dkkdconsult/dkkdconsult.component';
+import { Dkkd3stepregistrateComponent } from './dkkd/dkkd3stepregistrate/dkkd3stepregistrate.component';
+import { DkkdfeedbackComponent } from './dkkd/dkkdfeedback/dkkdfeedback.component';
+import { DkkdsupportComponent } from './dkkd/dkkdsupport/dkkdsupport.component';
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
@@ -41,7 +47,13 @@ const routes: Routes = [
     CountnumberofusedComponent,
     HomenewsComponent,
     HomevideosComponent,
-    DkkdComponent
+    DkkdComponent,
+    DkkdbusinesstypeComponent,
+    DkkdpricingComponent,
+    DkkdconsultComponent,
+    Dkkd3stepregistrateComponent,
+    DkkdfeedbackComponent,
+    DkkdsupportComponent
   ],
   imports: [
     BrowserModule,

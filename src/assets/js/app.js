@@ -138,3 +138,40 @@ $(document).ready(function () {
     $(this).attr('height', parseInt(parseFloat(w) / 1.77, 10));
   });
 });
+
+$(document).ready(function () {
+  $('.feedback-slide-pltx').slick({
+    dots: true,
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 4000,
+    nextArrow: false,
+    prevArrow: false,
+    customPaging: function (slider, i) {
+      return '<i class="fa fa-circle"></i>';
+    },
+    focusOnSelect: true
+  });
+  $('.slide-support-pltx').slick({
+    infinite: true,
+    slidesToShow: 4,
+    slidesToScroll: 2,
+    // autoplay: true,
+    autoplaySpeed: 4000,
+
+    nextArrow: '<img src="/assets/media/landingpage/news/right.svg" class="nextArrowBtnVideo news">',
+    prevArrow: '<img src="/assets/media/landingpage/news/left.svg" class="prevArrowBtnVideo news">',
+    responsive: [
+      {
+        breakpoint: 800,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
+  });
+
+});
