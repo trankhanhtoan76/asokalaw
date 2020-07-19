@@ -32,8 +32,7 @@
             "scripts": [
               "src/assets/js/jquery.min.js",
               "src/assets/js/bootstrap.min.js",
-              "src/assets/js/slick.min.js",
-              "src/assets/js/app.js"
+              "src/assets/js/slick.min.js"
             ]
           },
           "configurations": {

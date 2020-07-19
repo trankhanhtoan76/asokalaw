@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+
+declare var $: any;
 
 @Component({
   selector: 'app-hometeams',
@@ -7,9 +9,35 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HometeamsComponent implements OnInit {
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit(): void {
   }
 
+  ngAfterContentInit(): void {
+    $('.list-slide-team').slick({
+      dots: true,
+      infinite: true,
+      slidesToShow: 2,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 3000,
+      nextArrow: false,
+      prevArrow: false,
+      customPaging: function(slider, i) {
+        return '<i class="fa fa-circle"></i>';
+      },
+      focusOnSelect: true,
+      responsive: [
+        {
+          breakpoint: 800,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+      ]
+    });
+  }
 }

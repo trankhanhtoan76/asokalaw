@@ -24,6 +24,7 @@ import { DkkdconsultComponent } from './dkkd/dkkdconsult/dkkdconsult.component';
 import { Dkkd3stepregistrateComponent } from './dkkd/dkkd3stepregistrate/dkkd3stepregistrate.component';
 import { DkkdfeedbackComponent } from './dkkd/dkkdfeedback/dkkdfeedback.component';
 import { DkkdsupportComponent } from './dkkd/dkkdsupport/dkkdsupport.component';
+import { DkkdquestionComponent } from './dkkd/dkkdquestion/dkkdquestion.component';
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
@@ -53,7 +54,8 @@ const routes: Routes = [
     DkkdconsultComponent,
     Dkkd3stepregistrateComponent,
     DkkdfeedbackComponent,
-    DkkdsupportComponent
+    DkkdsupportComponent,
+    DkkdquestionComponent
   ],
   imports: [
     BrowserModule,
