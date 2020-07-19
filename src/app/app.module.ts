@@ -6,7 +6,6 @@ import {HeaderComponent} from './header/header.component';
 import {FooterComponent} from './footer/footer.component';
 import {HomeComponent} from './home/home.component';
 import {RouterModule, Routes} from '@angular/router';
-import { HeaderbannerComponent } from './headerbanner/headerbanner.component';
 import { FooteremailsubcribeComponent } from './footeremailsubcribe/footeremailsubcribe.component';
 import { FooterinfoComponent } from './footerinfo/footerinfo.component';
 import { HeadermainmenuComponent } from './headermainmenu/headermainmenu.component';
@@ -18,9 +17,11 @@ import { HomeeffectComponent } from './homeeffect/homeeffect.component';
 import { CountnumberofusedComponent } from './countnumberofused/countnumberofused.component';
 import { HomenewsComponent } from './homenews/homenews.component';
 import { HomevideosComponent } from './homevideos/homevideos.component';
+import { DkkdComponent } from './dkkd/dkkd/dkkd.component';
 
 const routes: Routes = [
-  {path: '', component: HomeComponent}
+  {path: '', component: HomeComponent},
+  {path: 'dang-ky-kinh-doanh', component: DkkdComponent},
 ];
 
 @NgModule({
@@ -29,7 +30,6 @@ const routes: Routes = [
     HeaderComponent,
     FooterComponent,
     HomeComponent,
-    HeaderbannerComponent,
     FooteremailsubcribeComponent,
     FooterinfoComponent,
     HeadermainmenuComponent,
@@ -40,7 +40,8 @@ const routes: Routes = [
     HomeeffectComponent,
     CountnumberofusedComponent,
     HomenewsComponent,
-    HomevideosComponent
+    HomevideosComponent,
+    DkkdComponent
   ],
   imports: [
     BrowserModule,

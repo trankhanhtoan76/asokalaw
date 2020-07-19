@@ -7,12 +7,15 @@ import {Component, HostListener, OnInit} from '@angular/core';
 export class HeaderComponent implements OnInit {
   fixedTop = '';
   styleBorderBottomMainMenu = '';
-  isMobileScreen = window.screen.width < 768;
 
   constructor() {
   }
 
   ngOnInit(): void {
+  }
+
+  isMobileScreen(): boolean {
+    return window.screen.width < 768;
   }
 
   @HostListener('window:scroll', ['$event'])

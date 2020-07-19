@@ -1,7 +1,7 @@
 <div style="background-color: #fff;{{styleBorderBottomMainMenu}}">
   <nav class="container navbar navbar-expand-md">
     <!-- Brand -->
-    <a class="navbar-brand" href="">
+    <a class="navbar-brand" routerLink="/">
       <img class="img-responsive center-block logo-header" alt="Công ty Luật TNHH Asoka" src="/assets/media/logo.png">
     </a>
 
@@ -15,35 +15,32 @@
     <!-- Navbar links -->
     <div class="collapse navbar-collapse" id="collapsibleNavbar">
       <ul class="navbar-nav ml-auto">
-        <li class="nav-item dropdown">
-          <a class="nav-link" href id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
-             aria-expanded="false">
+        <li class="nav-item dropdown" [ngClass]="{'show':showMenu1}" (mouseover)="showMenu1=true" (mouseout)="showMenu1=false">
+          <a class="nav-link" href data-toggle="dropdown" aria-haspopup="true" [attr.aria-expanded]="showMenu1">
             VỀ ASOKA
           </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <div class="dropdown-menu"  [ngClass]="{'show':showMenu1}">
             <a class="dropdown-item" href>Tầm nhìn sứ mệnh</a>
             <a class="dropdown-item" href>Cơ hội nghề nghiệp</a>
             <a class="dropdown-item" href>Đối tác nhượng quyền</a>
           </div>
         </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link" href id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
-             aria-expanded="false">
+        <li class="nav-item dropdown" [ngClass]="{'show':showMenu2}" (mouseover)="showMenu2=true" (mouseout)="showMenu2=false">
+          <a class="nav-link" href  data-toggle="dropdown" aria-haspopup="true" [attr.aria-expanded]="showMenu2">
             PHÁP LÝ DOANH NGHIỆP
           </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <div class="dropdown-menu" [ngClass]="{'show':showMenu2}">
             <a class="dropdown-item" href="">Khởi tạo DN</a>
             <a class="dropdown-item" href="">Doanh nghiệp dưới 03 năm</a>
             <a class="dropdown-item" href="">Doanh nghiệp trên 03 năm</a>
           </div>
         </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link" href id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
-             aria-expanded="false">
+        <li class="nav-item dropdown" [ngClass]="{'show':showMenu3}" (mouseover)="showMenu3=true" (mouseout)="showMenu3=false">
+          <a class="nav-link" href  data-toggle="dropdown" aria-haspopup="true" [attr.aria-expanded]="showMenu3">
             DỊCH VỤ PHÁP LÝ
           </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <a class="dropdown-item" href="/dang-ky-kinh-doanh">Đăng ký kinh doanh</a>
+          <div class="dropdown-menu" [ngClass]="{'show':showMenu3}">
+            <a class="dropdown-item" routerLink="/dang-ky-kinh-doanh">Đăng ký kinh doanh</a>
             <a class="dropdown-item" href="/dang-ky-nhan-hieu">Đăng ký nhãn hiệu</a>
             <a class="dropdown-item" href="/dang-ky-dau-tu">Đăng ký đầu tư</a>
             <a class="dropdown-item" href="/phap-ly-thuong-xuyen">Pháp lý thường xuyên</a>
@@ -52,12 +49,11 @@
             <a class="dropdown-item" href="/giai-quyet-tranh-chap">Giải quyết tranh chấp</a>
           </div>
         </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link" href id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
-             aria-expanded="false">
+        <li class="nav-item dropdown" [ngClass]="{'show':showMenu4}" (mouseover)="showMenu4=true" (mouseout)="showMenu4=false">
+          <a class="nav-link" href  data-toggle="dropdown" aria-haspopup="true" [attr.aria-expanded]="showMenu4">
             TIN TỨC
           </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <div class="dropdown-menu" [ngClass]="{'show':showMenu4}">
             <a class="dropdown-item" href>Ưu đãi</a>
             <a class="dropdown-item" href>Tin tức Asoka</a>
             <a class="dropdown-item" href>Tin tức pháp luật</a>
@@ -70,22 +66,18 @@
             <a class="dropdown-item" href>Văn bản pháp lý</a>
           </div>
         </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link" href id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
-             aria-expanded="false">KHÁCH HÀNG
+        <li class="nav-item dropdown" [ngClass]="{'show':showMenu5}" (mouseover)="showMenu5=true" (mouseout)="showMenu5=false">
+          <a class="nav-link" href  data-toggle="dropdown" aria-haspopup="true" [attr.aria-expanded]="showMenu5">KHÁCH HÀNG
           </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <div class="dropdown-menu" [ngClass]="{'show':showMenu5}">
             <a class="dropdown-item" href="">Câu hỏi thường gặp</a>
-
             <a class="dropdown-item" href>Chính sách khách hàng</a>
-
             <a class="dropdown-item" href="">Quy trình làm việc</a>
             <a class="dropdown-item" href>Hướng dẫn thanh toán</a>
-
           </div>
         </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link" href="/lien-he" id="navbarDropdownMenuLink" aria-haspopup="true"
+        <li class="nav-item">
+          <a class="nav-link" href="/lien-he"  aria-haspopup="true"
              aria-expanded="false">LIÊN HỆ
           </a>
         </li>

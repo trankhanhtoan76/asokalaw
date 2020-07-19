@@ -8,6 +8,11 @@ import {Component, HostListener, OnInit} from '@angular/core';
 export class HeadermainmenuComponent implements OnInit {
 
   styleBorderBottomMainMenu = '';
+  showMenu1 = false;
+  showMenu2 = false;
+  showMenu3 = false;
+  showMenu4= false;
+  showMenu5 = false;
 
   constructor() {
   }
