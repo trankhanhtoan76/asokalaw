@@ -1,4 +1,5 @@
 import {BrowserModule} from '@angular/platform-browser';
+import {PlskModule} from './plsk/plsk.module';
 import {NgModule} from '@angular/core';
 
 import {AppComponent} from './app.component';
@@ -50,17 +51,17 @@ import {PltxfeedbackComponent} from './pltx/pltxfeedback/pltxfeedback.component'
 import {PltxsupportComponent} from './pltx/pltxsupport/pltxsupport.component';
 import {PltxquestionComponent} from './pltx/pltxquestion/pltxquestion.component';
 import {PltxvideosComponent} from './pltx/pltxvideos/pltxvideos.component';
-import { PltxcontactComponent } from './pltx/pltxcontact/pltxcontact.component';
-import { TvlsComponent } from './tvls/tvls.component';
-import { TvlslawyerComponent } from './tvls/tvlslawyer/tvlslawyer.component';
-import { TvlsserviceComponent } from './tvls/tvlsservice/tvlsservice.component';
-import { TvlseffectiveComponent } from './tvls/tvlseffective/tvlseffective.component';
-import { TvlsteamComponent } from './tvls/tvlsteam/tvlsteam.component';
-import { TvlsconsultComponent } from './tvls/tvlsconsult/tvlsconsult.component';
-import { TvlssupportComponent } from './tvls/tvlssupport/tvlssupport.component';
-import { TvlsfeedbackComponent } from './tvls/tvlsfeedback/tvlsfeedback.component';
-import { TvlsmostviewComponent } from './tvls/tvlsmostview/tvlsmostview.component';
-import { TvlscontactComponent } from './tvls/tvlscontact/tvlscontact.component';
+import {PltxcontactComponent} from './pltx/pltxcontact/pltxcontact.component';
+import {TvlsComponent} from './tvls/tvls.component';
+import {TvlslawyerComponent} from './tvls/tvlslawyer/tvlslawyer.component';
+import {TvlsserviceComponent} from './tvls/tvlsservice/tvlsservice.component';
+import {TvlseffectiveComponent} from './tvls/tvlseffective/tvlseffective.component';
+import {TvlsteamComponent} from './tvls/tvlsteam/tvlsteam.component';
+import {TvlsconsultComponent} from './tvls/tvlsconsult/tvlsconsult.component';
+import {TvlssupportComponent} from './tvls/tvlssupport/tvlssupport.component';
+import {TvlsfeedbackComponent} from './tvls/tvlsfeedback/tvlsfeedback.component';
+import {TvlsmostviewComponent} from './tvls/tvlsmostview/tvlsmostview.component';
+import {TvlscontactComponent} from './tvls/tvlscontact/tvlscontact.component';
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
@@ -131,10 +132,11 @@ const routes: Routes = [
     TvlssupportComponent,
     TvlsfeedbackComponent,
     TvlsmostviewComponent,
-    TvlscontactComponent,
+    TvlscontactComponent
   ],
   imports: [
     BrowserModule,
+    PlskModule,
     RouterModule.forRoot(routes)
   ],
   providers: [],
