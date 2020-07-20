@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { DkdtrecognizeComponent } from './dkdtrecognize.component';
+import { PltxComponent } from './pltx.component';
 
-describe('DkdtrecognizeComponent', () => {
-  let component: DkdtrecognizeComponent;
-  let fixture: ComponentFixture<DkdtrecognizeComponent>;
+describe('PltxComponent', () => {
+  let component: PltxComponent;
+  let fixture: ComponentFixture<PltxComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ DkdtrecognizeComponent ]
+      declarations: [ PltxComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(DkdtrecognizeComponent);
+    fixture = TestBed.createComponent(PltxComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

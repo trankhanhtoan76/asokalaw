@@ -23,5 +23,10 @@ export class DkdtrecognizeComponent implements OnInit {
         $(this).text('Chi tiết hạng mục công việc');
       }
     });
+    $('input[name="checkBox"]').on('change', function () {
+      const id = $(this).val();
+      $('.price-recognize').collapse('hide');
+      $($('.price-recognize')[id]).collapse('show');
+    });
   }
 }

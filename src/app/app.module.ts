@@ -42,6 +42,7 @@ import { DkdtreasonComponent } from './dkdt/dkdtreason/dkdtreason.component';
 import { DkdtbusinessComponent } from './dkdt/dkdtbusiness/dkdtbusiness.component';
 import { DkdtfeedbackComponent } from './dkdt/dkdtfeedback/dkdtfeedback.component';
 import { DkdtsupportComponent } from './dkdt/dkdtsupport/dkdtsupport.component';
+import { PltxComponent } from './pltx/pltx.component';
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
@@ -92,6 +93,7 @@ const routes: Routes = [
     DkdtbusinessComponent,
     DkdtfeedbackComponent,
     DkdtsupportComponent,
+    PltxComponent,
   ],
   imports: [
     BrowserModule,
