@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+
+declare var $: any;
 
 @Component({
   selector: 'app-dkdtrecognize',
@@ -7,9 +9,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DkdtrecognizeComponent implements OnInit {
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit(): void {
   }
 
+  ngAfterContentInit(): void {
+    $('.custom-collapse').on('click', function(elem) {
+      if ($(this).hasClass('collapsed')) {
+        $(this).text('Thu gọn');
+      } else {
+        $(this).text('Chi tiết hạng mục công việc');
+      }
+    });
+  }
 }
