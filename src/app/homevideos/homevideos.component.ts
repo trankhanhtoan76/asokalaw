@@ -32,5 +32,9 @@ export class HomevideosComponent implements OnInit {
         }
       ]
     });
+    $('.list-slide-video iframe').each(function () {
+      const w = $(this).width();
+      $(this).attr('height', parseInt(String(parseFloat(w) / 1.77), 10));
+    });
   }
 }

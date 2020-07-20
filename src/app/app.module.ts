@@ -25,10 +25,27 @@ import { Dkkd3stepregistrateComponent } from './dkkd/dkkd3stepregistrate/dkkd3st
 import { DkkdfeedbackComponent } from './dkkd/dkkdfeedback/dkkdfeedback.component';
 import { DkkdsupportComponent } from './dkkd/dkkdsupport/dkkdsupport.component';
 import { DkkdquestionComponent } from './dkkd/dkkdquestion/dkkdquestion.component';
+import { DknhComponent } from './dknh/dknh/dknh.component';
+import { DknhintroComponent } from './dknh/dknhintro/dknhintro.component';
+import { DknheffectiveComponent } from './dknh/dknheffective/dknheffective.component';
+import { DknheffectivecontentComponent } from './dknh/dknheffectivecontent/dknheffectivecontent.component';
+import { DknhpricingComponent } from './dknh/dknhpricing/dknhpricing.component';
+import { DknhwhychooseComponent } from './dknh/dknhwhychoose/dknhwhychoose.component';
+import { DknhcustomerComponent } from './dknh/dknhcustomer/dknhcustomer.component';
+import { DknhfeedbackComponent } from './dknh/dknhfeedback/dknhfeedback.component';
+import { DknhquestionComponent } from './dknh/dknhquestion/dknhquestion.component';
+import { PartnerComponent } from './home/partner/partner.component';
+import { DknhsubfooterComponent } from './dknh/dknhsubfooter/dknhsubfooter.component';
+import { DkdtComponent } from './dkdt/dkdt.component';
+import { DkdtrecognizeComponent } from './dkdt/dkdtrecognize/dkdtrecognize.component';
+import { DkdtreasonComponent } from './dkdt/dkdtreason/dkdtreason.component';
+import { DkdtbusinessComponent } from './dkdt/dkdtbusiness/dkdtbusiness.component';
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
   {path: 'dang-ky-kinh-doanh', component: DkkdComponent},
+  {path: 'dang-ky-nhan-hieu', component: DknhComponent},
+  {path: 'dang-ky-dau-tu', component: DkdtComponent},
 ];
 
 @NgModule({
@@ -55,7 +72,22 @@ const routes: Routes = [
     Dkkd3stepregistrateComponent,
     DkkdfeedbackComponent,
     DkkdsupportComponent,
-    DkkdquestionComponent
+    DkkdquestionComponent,
+    DknhComponent,
+    DknhintroComponent,
+    DknheffectiveComponent,
+    DknheffectivecontentComponent,
+    DknhpricingComponent,
+    DknhwhychooseComponent,
+    DknhcustomerComponent,
+    DknhfeedbackComponent,
+    DknhquestionComponent,
+    PartnerComponent,
+    DknhsubfooterComponent,
+    DkdtComponent,
+    DkdtrecognizeComponent,
+    DkdtreasonComponent,
+    DkdtbusinessComponent,
   ],
   imports: [
     BrowserModule,
