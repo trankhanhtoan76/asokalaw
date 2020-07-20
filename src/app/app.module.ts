@@ -43,12 +43,17 @@ import { DkdtbusinessComponent } from './dkdt/dkdtbusiness/dkdtbusiness.componen
 import { DkdtfeedbackComponent } from './dkdt/dkdtfeedback/dkdtfeedback.component';
 import { DkdtsupportComponent } from './dkdt/dkdtsupport/dkdtsupport.component';
 import { PltxComponent } from './pltx/pltx.component';
+import { PltxbusinessComponent } from './pltx/pltxbusiness/pltxbusiness.component';
+import { PltxserviceComponent } from './pltx/pltxservice/pltxservice.component';
+import { PltxeffectiveComponent } from './pltx/pltxeffective/pltxeffective.component';
+import { PltxfeedbackComponent } from './pltx/pltxfeedback/pltxfeedback.component';
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
   {path: 'dang-ky-kinh-doanh', component: DkkdComponent},
   {path: 'dang-ky-nhan-hieu', component: DknhComponent},
   {path: 'dang-ky-dau-tu', component: DkdtComponent},
+  {path: 'phap-ly-thuong-xuyen', component: PltxComponent},
 ];
 
 @NgModule({
@@ -94,6 +99,10 @@ const routes: Routes = [
     DkdtfeedbackComponent,
     DkdtsupportComponent,
     PltxComponent,
+    PltxbusinessComponent,
+    PltxserviceComponent,
+    PltxeffectiveComponent,
+    PltxfeedbackComponent,
   ],
   imports: [
     BrowserModule,
