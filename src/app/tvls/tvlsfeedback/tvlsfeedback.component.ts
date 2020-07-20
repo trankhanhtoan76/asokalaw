@@ -3,11 +3,11 @@ import {Component, OnInit} from '@angular/core';
 declare var $: any;
 
 @Component({
-  selector: 'app-homefeedback',
-  templateUrl: './homefeedback.component.html',
-  styleUrls: ['./homefeedback.component.css']
+  selector: 'app-tvlsfeedback',
+  templateUrl: './tvlsfeedback.component.html',
+  styleUrls: ['./tvlsfeedback.component.css']
 })
-export class HomefeedbackComponent implements OnInit {
+export class TvlsfeedbackComponent implements OnInit {
 
   constructor() {
   }

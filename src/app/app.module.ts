@@ -51,6 +51,16 @@ import {PltxsupportComponent} from './pltx/pltxsupport/pltxsupport.component';
 import {PltxquestionComponent} from './pltx/pltxquestion/pltxquestion.component';
 import {PltxvideosComponent} from './pltx/pltxvideos/pltxvideos.component';
 import { PltxcontactComponent } from './pltx/pltxcontact/pltxcontact.component';
+import { TvlsComponent } from './tvls/tvls.component';
+import { TvlslawyerComponent } from './tvls/tvlslawyer/tvlslawyer.component';
+import { TvlsserviceComponent } from './tvls/tvlsservice/tvlsservice.component';
+import { TvlseffectiveComponent } from './tvls/tvlseffective/tvlseffective.component';
+import { TvlsteamComponent } from './tvls/tvlsteam/tvlsteam.component';
+import { TvlsconsultComponent } from './tvls/tvlsconsult/tvlsconsult.component';
+import { TvlssupportComponent } from './tvls/tvlssupport/tvlssupport.component';
+import { TvlsfeedbackComponent } from './tvls/tvlsfeedback/tvlsfeedback.component';
+import { TvlsmostviewComponent } from './tvls/tvlsmostview/tvlsmostview.component';
+import { TvlscontactComponent } from './tvls/tvlscontact/tvlscontact.component';
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
@@ -58,6 +68,7 @@ const routes: Routes = [
   {path: 'dang-ky-nhan-hieu', component: DknhComponent},
   {path: 'dang-ky-dau-tu', component: DkdtComponent},
   {path: 'phap-ly-thuong-xuyen', component: PltxComponent},
+  {path: 'tu-van-luat-su', component: TvlsComponent},
 ];
 
 @NgModule({
@@ -111,6 +122,16 @@ const routes: Routes = [
     PltxquestionComponent,
     PltxvideosComponent,
     PltxcontactComponent,
+    TvlsComponent,
+    TvlslawyerComponent,
+    TvlsserviceComponent,
+    TvlseffectiveComponent,
+    TvlsteamComponent,
+    TvlsconsultComponent,
+    TvlssupportComponent,
+    TvlsfeedbackComponent,
+    TvlsmostviewComponent,
+    TvlscontactComponent,
   ],
   imports: [
     BrowserModule,
