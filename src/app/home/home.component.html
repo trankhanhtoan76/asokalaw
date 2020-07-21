@@ -7,15 +7,22 @@
           <div class="container-search flex-center-vertically shadow">
             <div class="row row-search">
               <i class="fa fa-search"></i>
-              <select type="text" name="business_type" class="input-search homeSearch">
+              <select type="text" id="home_business_type" name="business_type" class="input-search homeSearch">
                 <option value="" selected>Chọn lĩnh vực bạn quan tâm</option>
+                <option value="Enterprise">Doanh nghiệp</option>
+                <option value="Intellectual Property">Sở hữu trí tuệ</option>
+                <option value="Trade disputes">Tranh chấp thương mại</option>
+                <option value="Labor - HR">Lao động - nhân sự</option>
+                <option value="Events - communication">Sự kiện - truyền thông</option>
+                <option value="Registration of investment">Đăng ký đầu tư</option>
+                <option value="Bank - insurance">Ngân hàng - bảo hiểm</option>
+                <option value="Settlement - study abroad">Định cư - du học</option>
+                <option value="Other">Lĩnh vực khác</option>
               </select>
               <i class="fa fa-caret-down"></i>
             </div>
           </div>
-          <button class="btn btn-warning text-color-search shadow btn-banner"
-                  onclick="modalShow('business_type', null, null,null,'problem,problem-checkbox')">Tư vấn
-          </button>
+          <button class="btn btn-warning text-color-search shadow btn-banner" (click)="submit()">Tư vấn</button>
         </div>
       </div>
     </div>

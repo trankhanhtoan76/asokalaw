@@ -17,6 +17,7 @@ export class HeaderComponent implements OnInit {
   email: string;
   description: string;
   service: any;
+  business: string;
   serviceTranslate: any;
 
   constructor(private spinner: SpinnerService) {
@@ -73,6 +74,7 @@ export class HeaderComponent implements OnInit {
   }
 
   submit(): void {
+    this.business = $('#home_business_type option:selected').text();
     this.spinner.show('Sending');
     let serviceReg = '';
     for (const s in this.service) {
@@ -103,6 +105,10 @@ export class HeaderComponent implements OnInit {
           <td style="padding:5px 0;font-family:arial,sans-serif">Dịch vụ cần tư vấn:</td>
           <td style="padding:5px 0;font-family:arial,sans-serif">${serviceReg}</td>
         </tr>
+        <tr>
+          <td style="padding:5px 0;font-family:arial,sans-serif">Lĩnh vực quan tâm:</td>
+          <td style="padding:5px 0;font-family:arial,sans-serif">${this.business}</td>
+        </tr>
         </tbody></table><p style="border-top:1px solid #aaa;padding-top:15px">Trân trọng<br>
         <b></b></p></td><td width="40"></td></tr><tr><td height="22" colspan="3"></td>
         </tr></tbody></table></div></td></tr><tr><td height="16"></td></tr><tr><td align="left">
@@ -124,6 +130,7 @@ export class HeaderComponent implements OnInit {
         $('#alert-success').modal('show');
         $('#modalHomeAdvice').modal('hide');
         this.resetData();
+        $('#home_business_type').val('');
       }
     );
   }
