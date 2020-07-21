@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+declare var $: any;
 @Component({
   selector: 'app-dkkdpricing',
   templateUrl: './dkkdpricing.component.html',
@@ -11,5 +11,7 @@ export class DkkdpricingComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+  submit(): void {
+    $('#dkkdform1').modal('show');
+  }
 }

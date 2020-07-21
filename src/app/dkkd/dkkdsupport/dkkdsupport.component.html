@@ -84,9 +84,49 @@
       </div>
     </div>
     <div class="center pt-3">
-      <button class=" btn btn-warning padding color-white"
-              onclick="modalShow(null, null, null, '3', 'package,type_company')" type="button">TƯ VẤN DỊCH VỤ
-      </button>
+      <button (click)="showModal()" class=" btn btn-warning padding color-white" type="button">TƯ VẤN DỊCH VỤ</button>
     </div>
   </div>
 </section>
+<div class="modal fade" id="dkkdform2" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header" style="border: none; padding: unset; padding-top: 1rem;">
+        <button type="button" class="close" data-dismiss="modal" style="padding: unset; padding-right: 2rem" aria-label="Close">
+          <span aria-hidden="true" style="font-size: 26px">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="form-group">
+          <label class="col-form-label">Họ tên</label>
+          <input type="text" class="form-control" [(ngModel)]="name" name="name">
+        </div>
+        <div class="form-group">
+          <label class="col-form-label">Số điện thoại<sup>*</sup></label>
+          <input class="form-control" [(ngModel)]="phone" name="phone" type="text"/>
+        </div>
+        <div class="form-group">
+          <label class="col-form-label">Email<sup>*</sup></label>
+          <input class="form-control" name="email" [(ngModel)]="email" type="text"/>
+        </div>
+        <div class="form-group problem-checkbox">
+          <label>Dịch vụ bạn muốn đăng ký</label>
+          <ng-container *ngFor="let i of serviceT">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" [checked]="service[serviceT.indexOf(i)]" (change)="service[serviceT.indexOf(i)]=!service[serviceT.indexOf(i)]" type="checkbox">
+                  <span class="form-check-label">{{i}}</span>
+                </div>
+              </div>
+            </div>
+          </ng-container>
+          <textarea *ngIf="service[6]" placeholder="Vui lòng mô tả dịch vụ bạn yêu cầu" class="form-control" [(ngModel)]="description" name="description" rows="2"></textarea>
+        </div>
+      </div>
+      <div class="modal-footer" style="text-align: center;">
+        <button style="margin: auto; color: white;" (click)="submit()" type="button" class="btn btn-warning">Gửi yêu cầu</button>
+      </div>
+    </div>
+  </div>
+</div>

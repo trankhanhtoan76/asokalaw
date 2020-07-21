@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+
+declare var $: any;
 
 @Component({
   selector: 'app-dkkd3stepregistrate',
@@ -7,9 +9,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Dkkd3stepregistrateComponent implements OnInit {
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit(): void {
   }
 
+  submit(): void {
+    $('#dkkdform1').modal('show');
+  }
 }
