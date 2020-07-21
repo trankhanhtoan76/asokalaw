@@ -1,6 +1,7 @@
 import {BrowserModule} from '@angular/platform-browser';
 import {PlskModule} from './plsk/plsk.module';
 import {NgModule} from '@angular/core';
+import {GqtcModule} from './gqtc/gqtc.module';
 
 import {AppComponent} from './app.component';
 import {HeaderComponent} from './header/header.component';
@@ -139,9 +140,11 @@ const routes: Routes = [
     BrowserModule,
     PlskModule,
     RouterModule.forRoot(routes),
-    FormsModule
+    FormsModule,
+    GqtcModule
   ],
   providers: [],
+  exports: [],
   bootstrap: [AppComponent]
 })
 export class AppModule {
