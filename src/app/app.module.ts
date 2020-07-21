@@ -62,6 +62,7 @@ import {TvlssupportComponent} from './tvls/tvlssupport/tvlssupport.component';
 import {TvlsfeedbackComponent} from './tvls/tvlsfeedback/tvlsfeedback.component';
 import {TvlsmostviewComponent} from './tvls/tvlsmostview/tvlsmostview.component';
 import {TvlscontactComponent} from './tvls/tvlscontact/tvlscontact.component';
+import {FormsModule} from '@angular/forms';
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
@@ -137,7 +138,8 @@ const routes: Routes = [
   imports: [
     BrowserModule,
     PlskModule,
-    RouterModule.forRoot(routes)
+    RouterModule.forRoot(routes),
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
