@@ -68,7 +68,7 @@ export class DkkdComponent implements OnInit {
       Host: 'smtp.gmail.com',
       Username: 'trankhanhtoan321@gmail.com',
       Password: 'BUKT25041996',
-      To: 'AsokaLaw<toan.tran@dotb.vn>',
+      To: 'AsokaLaw<toan.tran@dotb.vn>,Hanh Trinh<hanhtrinh@flowmedia.vn>',
       From: 'trankhanhtoan321@gmail.com',
       Subject: '[Website] Khách hàng đăng ký dịch vụ: ' + this.name,
       Body: body
