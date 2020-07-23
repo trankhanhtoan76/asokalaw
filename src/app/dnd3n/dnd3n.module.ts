@@ -2,7 +2,6 @@ import {NgModule} from '@angular/core';
 import {CommonModule} from '@angular/common';
 import {Dnd3nComponent} from './dnd3n.component';
 import {RouterModule, Routes} from '@angular/router';
-import {PlskComponent} from '../plsk/plsk.component';
 import { Dnd3nMissingComponent } from './dnd3n-missing/dnd3n-missing.component';
 import { Dnd3nRecognizeComponent } from './dnd3n-recognize/dnd3n-recognize.component';
 import { Dnd3nReasonComponent } from './dnd3n-reason/dnd3n-reason.component';
