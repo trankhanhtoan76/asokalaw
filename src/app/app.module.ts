@@ -64,6 +64,7 @@ import {TvlsfeedbackComponent} from './tvls/tvlsfeedback/tvlsfeedback.component'
 import {TvlsmostviewComponent} from './tvls/tvlsmostview/tvlsmostview.component';
 import {TvlscontactComponent} from './tvls/tvlscontact/tvlscontact.component';
 import {FormsModule} from '@angular/forms';
+import {Dnd3nModule} from './dnd3n/dnd3n.module';
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
@@ -141,10 +142,13 @@ const routes: Routes = [
     PlskModule,
     RouterModule.forRoot(routes),
     FormsModule,
-    GqtcModule
+    GqtcModule,
+    Dnd3nModule
   ],
   providers: [],
-  exports: [],
+  exports: [
+    DkkdquestionComponent
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule {
