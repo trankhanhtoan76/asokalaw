@@ -66,6 +66,7 @@ import {TvlscontactComponent} from './tvls/tvlscontact/tvlscontact.component';
 import {FormsModule} from '@angular/forms';
 import {Dnd3nModule} from './dnd3n/dnd3n.module';
 import {Dnt3nModule} from './dnt3n/dnt3n.module';
+import {ContactModule} from './contact/contact.module';
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
@@ -145,7 +146,8 @@ const routes: Routes = [
     FormsModule,
     GqtcModule,
     Dnd3nModule,
-    Dnt3nModule
+    Dnt3nModule,
+    ContactModule
   ],
   providers: [],
   exports: [
