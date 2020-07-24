@@ -67,6 +67,7 @@ import {FormsModule} from '@angular/forms';
 import {Dnd3nModule} from './dnd3n/dnd3n.module';
 import {Dnt3nModule} from './dnt3n/dnt3n.module';
 import {ContactModule} from './contact/contact.module';
+import {ChtgModule} from './chtg/chtg.module';
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
@@ -147,7 +148,8 @@ const routes: Routes = [
     GqtcModule,
     Dnd3nModule,
     Dnt3nModule,
-    ContactModule
+    ContactModule,
+    ChtgModule
   ],
   providers: [],
   exports: [
