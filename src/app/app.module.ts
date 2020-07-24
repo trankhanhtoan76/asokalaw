@@ -68,6 +68,7 @@ import {Dnd3nModule} from './dnd3n/dnd3n.module';
 import {Dnt3nModule} from './dnt3n/dnt3n.module';
 import {ContactModule} from './contact/contact.module';
 import {ChtgModule} from './chtg/chtg.module';
+import {ChnnModule} from './chnn/chnn.module';
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
@@ -149,7 +150,8 @@ const routes: Routes = [
     Dnd3nModule,
     Dnt3nModule,
     ContactModule,
-    ChtgModule
+    ChtgModule,
+    ChnnModule
   ],
   providers: [],
   exports: [
