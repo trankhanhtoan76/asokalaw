@@ -69,6 +69,7 @@ import {Dnt3nModule} from './dnt3n/dnt3n.module';
 import {ContactModule} from './contact/contact.module';
 import {ChtgModule} from './chtg/chtg.module';
 import {ChnnModule} from './chnn/chnn.module';
+import {QtlvModule} from './qtlv/qtlv.module';
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
@@ -151,7 +152,8 @@ const routes: Routes = [
     Dnt3nModule,
     ContactModule,
     ChtgModule,
-    ChnnModule
+    ChnnModule,
+    QtlvModule
   ],
   providers: [],
   exports: [
