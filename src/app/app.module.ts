@@ -71,6 +71,8 @@ import {ChtgModule} from './chtg/chtg.module';
 import {ChnnModule} from './chnn/chnn.module';
 import {QtlvModule} from './qtlv/qtlv.module';
 import {TnsmModule} from './tnsm/tnsm.module';
+import { NewsComponent } from './news/news.component';
+import {NewsModule} from './news/news.module';
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
@@ -155,7 +157,8 @@ const routes: Routes = [
     ChtgModule,
     ChnnModule,
     QtlvModule,
-    TnsmModule
+    TnsmModule,
+    NewsModule
   ],
   providers: [],
   exports: [

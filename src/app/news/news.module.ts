@@ -1,18 +1,20 @@
 import {NgModule} from '@angular/core';
 import {CommonModule} from '@angular/common';
-import {TnsmComponent} from './tnsm.component';
+import {NewsComponent} from './news.component';
 import {RouterModule, Routes} from '@angular/router';
 
 const routes: Routes = [
-  {path: 'tam-nhin-su-menh', component: TnsmComponent}
+  {path: 'tin-tuc', component: NewsComponent}
 ];
 
 @NgModule({
-  declarations: [TnsmComponent],
+  declarations: [
+    NewsComponent
+  ],
   imports: [
     CommonModule,
     RouterModule.forRoot(routes)
   ]
 })
-export class TnsmModule {
+export class NewsModule {
 }
