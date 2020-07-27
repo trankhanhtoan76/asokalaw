@@ -1,29 +1,86 @@
 <section class="header">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-7" style="margin-top: 100px; ">
-        <h1 style="line-height: 60px; font-weight: 500; font-family:'Montserrat'; font-size: 45px; color: black;">
-          Xử lý tranh chấp hiệu quả  trước khi bùng phát
-        </h1>
-        <p style="margin-top: 40px; font-size: 16px;
+    <div class="container">
+        <div class="row">
+            <div class="col-md-7" style="margin-top: 100px; ">
+                <h1 style="line-height: 60px; font-weight: 500; font-family:'Montserrat'; font-size: 45px; color: black;">
+                    Xử lý tranh chấp hiệu quả trước khi bùng phát
+                </h1>
+                <p style="margin-top: 40px; font-size: 16px;
     font-weight: 200;
     line-height: 30px;
    ">12+ năm kinh nghiệm, 1000+ phiên giải quyết tranh chấp. Đội ngũ luật sư Asoka Law
-          đạt tỷ lệ kỳ vọng của khách hàng đến 80%, trong việc ngăn chặn mâu thuẫn bùng
-          phát và bảo vệ lợi ích hợp pháp của doanh nghiệp.</p>
-        <div>
-          <button style="padding: 10px 40px; margin-top: 60px;" class="btn btn-outline-warning">Xem danh
-            sách luật sư
-          </button>
+                    đạt tỷ lệ kỳ vọng của khách hàng đến 80%, trong việc ngăn chặn mâu thuẫn bùng
+                    phát và bảo vệ lợi ích hợp pháp của doanh nghiệp.</p>
+                <div>
+                    <a (click)="gotoTo('dnls12nkn')" style="padding: 10px 40px; margin-top: 60px;" class="btn btn-outline-warning">Xem danh
+                        sách luật sư
+                    </a>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-  </div>
 </section>
 <app-gqtc-recognize></app-gqtc-recognize>
-<app-gqtc-team></app-gqtc-team>
+<app-gqtc-team #gctcteam></app-gqtc-team>
 <app-gqtc-three-rule></app-gqtc-three-rule>
 <app-gqtc-suitable></app-gqtc-suitable>
 <app-gqtc-feedback></app-gqtc-feedback>
 <app-gqtc-reason></app-gqtc-reason>
 <app-gqtc-contact></app-gqtc-contact>
+<div class="modal fade" id="gqtcform1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header" style="border: none; padding: unset; padding-top: 1rem;">
+                <button type="button" class="close" data-dismiss="modal" style="padding: unset; padding-right: 2rem" aria-label="Close">
+                    <span aria-hidden="true" style="font-size: 26px">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                    <label class="col-form-label">Họ tên</label>
+                    <input type="text" class="form-control" [(ngModel)]="name" name="name">
+                </div>
+                <div class="form-group">
+                    <label class="col-form-label">Số điện thoại<sup>*</sup></label>
+                    <input class="form-control" [(ngModel)]="phone" name="phone" type="tel"/>
+                </div>
+                <div class="form-group">
+                    <label class="col-form-label">Email<sup>*</sup></label>
+                    <input class="form-control" name="email" [(ngModel)]="email" type="email"/>
+                </div>
+                <div class="form-group">
+                    <label>Chọn gói dịch vụ phù hợp với nhu cầu của bạn</label>
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-check form-check-inline">
+                                    <input [(ngModel)]="package" name="package" class="form-check-input" type="radio" value="Gói tiết kiệm">
+                                    <span class="form-check-label">Gói thương lượng</span>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-check form-check-inline">
+                                    <input [(ngModel)]="package" name="package" class="form-check-input" type="radio" value="Gói toàn diện">
+                                    <span class="form-check-label">Gói tranh tụng</span>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-check form-check-inline">
+                                    <input [(ngModel)]="package" name="package" class="form-check-input" type="radio" value="Gói cộng sự">
+                                    <span class="form-check-label">Gói toàn diện</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-form-label">Diễn tả sơ bộ tình trạng tranh chấp của doanh nghiệp bạn<sup>*</sup></label>
+                    <textarea class="form-control" name="description" [(ngModel)]="description"></textarea>
+                </div>
+            </div>
+            <div class="modal-footer" style="text-align: center;">
+                <button style="margin: auto; color: white;" (click)="submit()" type="button" class="btn btn-warning">Gửi yêu cầu</button>
+            </div>
+        </div>
+    </div>
+</div>
