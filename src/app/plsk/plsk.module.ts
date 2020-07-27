@@ -8,6 +8,7 @@ import {PLSKExpertComponent} from './plskexpert/plskexpert.component';
 import {PLSKStudyContentComponent} from './plskstudy-content/plskstudy-content.component';
 import {PlskTeacherComponent} from './plsk-teacher/plsk-teacher.component';
 import {PlskContactComponent} from './plsk-contact/plsk-contact.component';
+import {FormsModule} from '@angular/forms';
 
 const routes: Routes = [
   {path: 'phap-ly-su-kien', component: PlskComponent}
@@ -23,10 +24,11 @@ const routes: Routes = [
     PlskTeacherComponent,
     PlskContactComponent
   ],
-  imports: [
-    BrowserModule,
-    RouterModule.forRoot(routes)
-  ],
+    imports: [
+        BrowserModule,
+        RouterModule.forRoot(routes),
+        FormsModule
+    ],
   providers: [],
   bootstrap: []
 })
