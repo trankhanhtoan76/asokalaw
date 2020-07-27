@@ -8,7 +8,7 @@
           lý
           – hợp đồng – thuế – lao động</b>, nhằm tiết kiệm cho doanh nghiệp
           hơn 80% chi phí vận hành.</p>
-        <button type="button" class="btn btn-custom">Bắt đầu dùng thử</button>
+        <button onclick="$('#pltxform1').modal('show')" type="button" class="btn btn-custom">Bắt đầu dùng thử</button>
       </div>
     </div>
   </div>
@@ -22,3 +22,59 @@
 <app-pltxvideos></app-pltxvideos>
 <app-homenews></app-homenews>
 <app-pltxcontact></app-pltxcontact>
+<div class="modal fade" id="pltxform1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header" style="border: none; padding: unset; padding-top: 1rem;">
+        <button type="button" class="close" data-dismiss="modal" style="padding: unset; padding-right: 2rem" aria-label="Close">
+          <span aria-hidden="true" style="font-size: 26px">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <h4 class="text-center">Dùng thử miễn phí 0 đồng ngay hôm nay</h4>
+        <div class="form-group">
+          <label class="col-form-label">Họ tên</label>
+          <input type="text" class="form-control" [(ngModel)]="name" name="name">
+        </div>
+        <div class="form-group">
+          <label class="col-form-label">Số điện thoại<sup>*</sup></label>
+          <input class="form-control" [(ngModel)]="phone" name="phone" type="tel"/>
+        </div>
+        <div class="form-group">
+          <label class="col-form-label">Email<sup>*</sup></label>
+          <input class="form-control" name="email" [(ngModel)]="email" type="email"/>
+        </div>
+        <div class="form-group">
+          <label>Chọn gói dịch vụ phù hợp với nhu cầu của bạn</label>
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-md-4">
+                <div class="form-check form-check-inline">
+                  <input [(ngModel)]="package" name="package" class="form-check-input" type="radio" value="Gói tiết kiệm">
+                  <span class="form-check-label">Gói cơ bản</span>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="form-check form-check-inline">
+                  <input [(ngModel)]="package" name="package" class="form-check-input" type="radio" value="Gói toàn diện">
+                  <span class="form-check-label">Gói toàn diện</span>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="form-check form-check-inline">
+                  <input [(ngModel)]="package" name="package" class="form-check-input" type="radio" value="Gói cộng sự">
+                  <span class="form-check-label">Gói cộng sự</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p><i><small>Chuyên viên của Asoka sẽ liên lạc với bạn ngay trong 05 phút để xác nhận thông tin này.</small></i><br/>
+        <i><small>Bạn vui lòng kiểm tra điện thoại/tin nhắn/email để không bỏ sót thông tin từ chúng tôi. Xin cảm ơn.</small></i></p>
+      </div>
+      <div class="modal-footer" style="text-align: center;">
+        <button style="margin: auto; color: white;" (click)="submit()" type="button" class="btn btn-warning">Gửi yêu cầu</button>
+      </div>
+    </div>
+  </div>
+</div>
