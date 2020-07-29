@@ -29,8 +29,8 @@
   </div>
 </section>
 <app-dkkdbusinesstype></app-dkkdbusinesstype>
-<app-dkkdpricing></app-dkkdpricing>
-<app-dkkdconsult></app-dkkdconsult>
+<app-dkkdpricing (package)="onSubmitPackage($event)"></app-dkkdpricing>
+<app-dkkdconsult (consultEvent)="onSubmitConsult($event)"></app-dkkdconsult>
 <app-dkkd3stepregistrate></app-dkkd3stepregistrate>
 <app-dkkdfeedback></app-dkkdfeedback>
 <app-dkkdsupport></app-dkkdsupport>
@@ -75,13 +75,13 @@
             <div class="row">
               <div class="col-md-6">
                 <div class="form-check form-check-inline">
-                  <input [(ngModel)]="package" name="package" class="form-check-input" type="radio" value="Gói cơ bản">
+                  <input [(ngModel)]="package" [checked]="package=='Gói cơ bản'" name="package" class="form-check-input" type="radio" value="Gói cơ bản">
                   <span class="form-check-label">Gói cơ bản</span>
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="form-check form-check-inline">
-                  <input [(ngModel)]="package" name="package" class="form-check-input" type="radio" value="Gói toàn diện">
+                  <input [(ngModel)]="package" [checked]="package=='Gói toàn diện'" name="package" class="form-check-input" type="radio" value="Gói toàn diện">
                   <span class="form-check-label">Gói toàn diện</span>
                 </div>
               </div>
@@ -94,7 +94,7 @@
             <div class="row">
               <div class="col-md-12">
                 <div class="form-check form-check-inline">
-                  <input [(ngModel)]="consult" name="consult" class="form-check-input" type="radio" value="Tư vấn miễn phí cùng chuyên viên pháp lý">
+                  <input [(ngModel)]="consult" [checked]="consult=='Tư vấn miễn phí cùng chuyên viên pháp lý'" name="consult" class="form-check-input" type="radio" value="Tư vấn miễn phí cùng chuyên viên pháp lý">
                   <span class="form-check-label">Tư vấn miễn phí cùng chuyên viên pháp lý</span>
                 </div>
               </div>
@@ -102,7 +102,7 @@
             <div class="row">
               <div class="col-md-12">
                 <div class="form-check form-check-inline">
-                  <input [(ngModel)]="consult" name="consult" class="form-check-input" type="radio" value="Tư vấn chuyên sâu với luật sư">
+                  <input [(ngModel)]="consult" [checked]="consult=='Tư vấn chuyên sâu với luật sư'" name="consult" class="form-check-input" type="radio" value="Tư vấn chuyên sâu với luật sư">
                   <span class="form-check-label">Tư vấn chuyên sâu với luật sư</span>
                 </div>
               </div>

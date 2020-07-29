@@ -1,17 +1,22 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, EventEmitter, OnInit, Output} from '@angular/core';
+
 declare var $: any;
+
 @Component({
-  selector: 'app-dkkdpricing',
-  templateUrl: './dkkdpricing.component.html',
-  styleUrls: ['./dkkdpricing.component.css']
+    selector: 'app-dkkdpricing',
+    templateUrl: './dkkdpricing.component.html',
+    styleUrls: ['./dkkdpricing.component.css']
 })
 export class DkkdpricingComponent implements OnInit {
+    @Output() package = new EventEmitter();
 
-  constructor() { }
+    constructor() {
+    }
 
-  ngOnInit(): void {
-  }
-  submit(): void {
-    $('#dkkdform1').modal('show');
-  }
+    ngOnInit(): void {
+    }
+
+    submit(p): void {
+        this.package.emit(p);
+    }
 }
