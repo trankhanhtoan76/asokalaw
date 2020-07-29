@@ -966,11 +966,7 @@ img.prevArrowBtnNews {
 }
 
 img.nextArrowBtnNews {
-  position: absolute;
-  z-index: 1000;
-  top: 110px;
-  right: 0;
-  color: #BFAFB2;
+  position: absolute;z-index: 1000;top: 110px;right: 0;color: #BFAFB2;
 }
 
 img.icon {

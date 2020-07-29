@@ -26,9 +26,9 @@
     </div>
   </div>
 </section>
-<app-dkdtrecognize></app-dkdtrecognize>
+<app-dkdtrecognize (onclickregister)="changePackageRegister($event)" (onclickchangepackage)="changeTypeRegister($event)"></app-dkdtrecognize>
 <app-dkdtreason></app-dkdtreason>
-<app-dkdtbusiness></app-dkdtbusiness>
+<app-dkdtbusiness (showregistrationform)="showRegistrationForm($event)"></app-dkdtbusiness>
 <app-dkdtfeedback></app-dkdtfeedback>
 <app-dkdtsupport></app-dkdtsupport>
 <app-dkkdquestion></app-dkkdquestion>
@@ -84,7 +84,7 @@
             <div class="row">
               <div class="col-md-12">
                 <div class="form-check form-check-inline">
-                  <input [(ngModel)]="form" name="form" class="form-check-input" type="radio" value="Thành lập doanh nghiệp mới">
+                  <input [(ngModel)]="form" [checked]="form=='Thành lập doanh nghiệp mới'" name="form" class="form-check-input" type="radio" value="Thành lập doanh nghiệp mới">
                   <span class="form-check-label">Thành lập doanh nghiệp mới</span>
                 </div>
               </div>
@@ -92,8 +92,8 @@
             <div class="row">
               <div class="col-md-12">
                 <div class="form-check form-check-inline">
-                  <input [(ngModel)]="form" name="form" class="form-check-input" type="radio" value="Tư vấn chuyên sâu với luật sư">
-                  <span class="form-check-label">Góp hoặc mua cổ phần/vố góp</span>
+                  <input [(ngModel)]="form" [checked]="form=='Góp hoặc mua cổ phần/vốn góp'" name="form" class="form-check-input" type="radio" value="Góp hoặc mua cổ phần/vốn góp">
+                  <span class="form-check-label">Góp hoặc mua cổ phần/vốn góp</span>
                 </div>
               </div>
             </div>
@@ -105,13 +105,13 @@
             <div class="row">
               <div class="col-md-6">
                 <div class="form-check form-check-inline">
-                  <input [(ngModel)]="service" name="service" class="form-check-input" type="radio" value="Gói tiết kiệm">
+                  <input [(ngModel)]="service" [checked]="service=='Gói tiết kiệm'" name="service" class="form-check-input" type="radio" value="Gói tiết kiệm">
                   <span class="form-check-label">Gói tiết kiệm</span>
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="form-check form-check-inline">
-                  <input [(ngModel)]="service" name="service" class="form-check-input" type="radio" value="Gói toàn diện">
+                  <input [(ngModel)]="service" [checked]="service=='Gói toàn diện'" name="service" class="form-check-input" type="radio" value="Gói toàn diện">
                   <span class="form-check-label">Gói toàn diện</span>
                 </div>
               </div>
