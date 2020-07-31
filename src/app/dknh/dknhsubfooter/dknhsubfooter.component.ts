@@ -1,15 +1,19 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
-  selector: 'app-dknhsubfooter',
-  templateUrl: './dknhsubfooter.component.html',
-  styleUrls: ['./dknhsubfooter.component.css']
+    selector: 'app-dknhsubfooter',
+    templateUrl: './dknhsubfooter.component.html',
+    styleUrls: ['./dknhsubfooter.component.css']
 })
 export class DknhsubfooterComponent implements OnInit {
 
-  constructor() { }
+    constructor() {
+    }
 
-  ngOnInit(): void {
-  }
+    ngOnInit(): void {
+    }
 
+    scroll(id: string) {
+        document.getElementById(id).scrollIntoView({behavior: "smooth"});
+    }
 }

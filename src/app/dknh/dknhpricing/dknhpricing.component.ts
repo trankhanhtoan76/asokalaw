@@ -1,15 +1,19 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
-  selector: 'app-dknhpricing',
-  templateUrl: './dknhpricing.component.html',
-  styleUrls: ['./dknhpricing.component.css']
+    selector: 'app-dknhpricing',
+    templateUrl: './dknhpricing.component.html',
+    styleUrls: ['./dknhpricing.component.css']
 })
 export class DknhpricingComponent implements OnInit {
 
-  constructor() { }
+    constructor() {
+    }
 
-  ngOnInit(): void {
-  }
+    ngOnInit(): void {
+    }
 
+    scroll(id: string) {
+        document.getElementById(id).scrollIntoView({behavior: "smooth"});
+    }
 }
