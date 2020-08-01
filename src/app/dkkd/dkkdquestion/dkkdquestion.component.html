@@ -1,3 +1,4 @@
+<!--OK-->
 <section id="question" class="">
   <div class="container">
     <h1  class="s1-title padding-header">
@@ -211,9 +212,504 @@
       </div>
     </div>
       <div class="info-see-all center">
-        <a onclick="$('.modal-question').modal('toggle');">Xem tất cả các câu hỏi >></a>
+        <a href="#" data-toggle="modal" data-target="#modal-question" style="cursor: pointer;">Xem tất cả các câu hỏi &gt;&gt;</a>
 
       </div>
     </div>
   </div>
 </section>
+<!-- <Change> -->
+<div class="modal fade" id="modal-question"  tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header" style="border: none; padding: unset; padding-top: 1rem;">
+        <button type="button" class="close" data-dismiss="modal" style="padding: unset; padding-right: 2rem; outline: none;" aria-label="Close">
+          <span aria-hidden="true" style="font-size: 26px">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          <div class="textTitle" id="khainiem">Khái niệm</div>
+          <div>
+              <div class="card" style="margin-bottom: 5px;">
+                  <div class="card-header cardHeader" id="headingOne">
+                      <h5 class="mb-0 collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                          <table style="width: 100%">
+                              <tr>
+                                  <td><span class="btnLink Link">Nhãn hiệu là gì?</span></td>
+                                  <td style="vertical-align: middle;text-align:right"><i class="fa fa-chevron-up"></i></td>
+                              </tr>
+                          </table>
+                      </h5>
+                  </div>
+                  <div id="collapseOne" class="collapse" aria-labelledby="headingOne">
+                      <div class="card-body" style="background-color: #f6f6f6;">
+                          Là dấu hiệu (có thể là từ ngữ, hình ảnh hoặc từ ngữ kết hợp với hình ảnh được
+                          thể hiện bằng một hoặc nhiều màu sắc) dùng để phân biệt hàng hoá, dịch vụ của
+                          các tổ chức, cá nhân khác nhau.
+                      </div>
+                  </div>
+              </div>
+              <div class="card" style="margin-bottom: 5px;">
+                  <div class="card-header cardHeader" id="headingTwo">
+                      <h5 class="mb-0 collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                          <table style="width: 100%">
+                              <tr>
+                                  <td><span class="btnLink Link">Nhãn hiệu liên kết là gì?</span></td>
+                                  <td style="vertical-align: middle;text-align:right"><i class="fa fa-chevron-up"></i></td>
+                              </tr>
+                          </table>
+                      </h5>
+                  </div>
+                  <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                  >
+                      <div class="card-body" style="background-color: #f6f6f6;">
+                          Nhãn hiệu liên kết là các nhãn hiệu do cùng một chủ thể đăng ký, trùng hoặc
+                          tương tự nhau dùng cho sản phẩm, dịch vụ cùng loại hoặc tương tự nhau hoặc có
+                          liên quan với nhau.
+                      </div>
+                  </div>
+              </div>
+              <div class="card" style="margin-bottom: 5px;">
+                  <div class="card-header cardHeader" id="headingThree">
+                      <h5 class="mb-0 collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                          <table style="width: 100%">
+                              <tr>
+                                  <td><span class="btnLink Link">Nhãn hiệu tập thể là gì?</span></td>
+                                  <td style="vertical-align: middle;text-align:right"><i class="fa fa-chevron-up"></i></td>
+                              </tr>
+                          </table>
+                      </h5>
+                  </div>
+                  <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                  >
+                      <div class="card-body" style="background-color: #f6f6f6;">
+                          Nhãn hiệu tập thể là nhãn hiệu dùng để phân biệt hàng hoá, dịch vụ của các thành
+                          viên của tổ chức là chủ sở hữu nhãn hiệu đó với hàng hoá, dịch vụ của tổ chức,
+                          cá nhân không phải là thành viên của tổ chức đó.
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <div class="textTitle" id="thoigian">
+              Thời gian
+          </div>
+          <div>
+              <div class="card" style="margin-bottom: 5px;">
+                  <div class="card-header cardHeader" id="headingFour">
+                      <h5 class="mb-0 collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                          <table style="width: 100%">
+                              <tr>
+                                  <td><span class="btnLink Link">Thời gian bảo hộ nhãn hiệu của tôi bao lâu?</span></td>
+                                  <td style="vertical-align: middle;text-align:right"><i class="fa fa-chevron-up"></i></td>
+                              </tr>
+                          </table>
+                      </h5>
+                  </div>
+                  <div id="collapseFour" class="collapse" aria-labelledby="headingFour"
+                  >
+                      <div class="card-body" style="background-color: #f6f6f6;">
+                          Thời gian đăng ký thành công việc bảo hộ nhãn hiệu thông thường mất khoảng 1-1,5
+                          năm, tùy thuộc vào số lượng hồ sơ nộp và tốc độ xử lý của nhân viên tại Cục SHTT
+                          mà hồ sơ có thể ra văn bằng sớm hay trễ hơn thời gian trên.
+                      </div>
+                  </div>
+              </div>
+              <div class="card" style="margin-bottom: 5px;">
+                  <div class="card-header cardHeader" id="headingFive">
+                      <h5 class="mb-0 collapsed" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                          <table style="width: 100%">
+                              <tr>
+                                  <td><span class="btnLink Link">Hình như tôi thấy bên khác làm nhanh hơn</span></td>
+                                  <td style="vertical-align: middle;text-align:right"><i class="fa fa-chevron-up"></i></td>
+                              </tr>
+                          </table>
+                      </h5>
+                  </div>
+                  <div id="collapseFive" class="collapse" aria-labelledby="headingFive"
+                  >
+                      <div class="card-body" style="background-color: #f6f6f6;">
+                          Không thể có bên khác làm nhanh hơn, bởi tất cả các bên đại diện để đăng ký nhãn
+                          hiệu đều chỉ có vai trò là người nộp đơn giùm anh/chị, còn cơ quan xử lý là Cục
+                          Sở Hữu Trí Tuệ. Thời gian xử lý đơn phụ thuộc vào số lượng hồ sơ mà các nhân
+                          viên cục phải xử lý nên có thể xê xích như trên.
+                      </div>
+                  </div>
+              </div>
+              <div class="card" style="margin-bottom: 5px;">
+                  <div class="card-header cardHeader" id="headingSix">
+                      <h5 class="mb-0 collapsed" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                          <table style="width: 100%">
+                              <tr>
+                                  <td><span class="btnLink Link">Văn bằng bảo hộ có thời hạn bao lâu?</span></td>
+                                  <td style="vertical-align: middle;text-align:right"><i class="fa fa-chevron-up"></i></td>
+                              </tr>
+                          </table>
+                      </h5>
+                  </div>
+                  <div id="collapseSix" class="collapse" aria-labelledby="headingSix"
+                  >
+                      <div class="card-body" style="background-color: #f6f6f6;">
+                          Văn bằng bảo hộ được cấp có thời hạn 10 năm (kể từ thời điểm nhận đơn). Hết thời
+                          hạn này, anh chị có thể gia hạn thêm.
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <div class="textTitle" id="thutuc">
+              Thủ tục đăng kí nhãn hiệu
+          </div>
+          <div>
+              <div class="card" style="margin-bottom: 5px;">
+                  <div class="card-header cardHeader" id="headingSeven">
+                      <h5 class="mb-0 collapsed" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseOne">
+                          <table style="width: 100%">
+                              <tr>
+                                  <td><span class="btnLink Link">Tài liệu sao y là gì?</span></td>
+                                  <td style="vertical-align: middle;text-align:right"><i class="fa fa-chevron-up"></i></td>
+                              </tr>
+                          </table>
+                      </h5>
+                  </div>
+                  <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven"
+                  >
+                      <div class="card-body" style="background-color: #f6f6f6;">
+                          Tài liệu sao y là việc đưa các giấy tờ (bản chính và bản photocopy) của bạn tới
+                          cơ quan có chứng năng chứng thực/ công chứng (ví dụ: Ủy ban nhân dân xã/ phường;
+                          Phòng công chứng...) để được các cơ quan đó xác nhận bản photocopy là đúng với
+                          bản chính.
+                      </div>
+                  </div>
+              </div>
+              <div class="card" style="margin-bottom: 5px;">
+                  <div class="card-header cardHeader" id="headingEight">
+                      <h5 class="mb-0 collapsed" data-toggle="collapse" data-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                          <table style="width: 100%">
+                              <tr>
+                                  <td><span class="btnLink Link">Tài liệu để đăng ký sở hữu nhãn hiệu công ty</span></td>
+                                  <td style="vertical-align: middle"><i class="fa fa-chevron-up"></i></td>
+                              </tr>
+                          </table>
+                      </h5>
+                  </div>
+                  <div id="collapseEight" class="collapse" aria-labelledby="headingEight"
+                  >
+                      <div class="card-body" style="background-color: #f6f6f6;">
+                          Nếu bên bạn muốn đăng ký nhãn hiệu dưới tư cách sở hữu doanh nghiệp/ hộ kinh
+                          doanh, xin vui lòng cung cấp: (1) - bản sao y không quá 03 tháng Giấy đăng ký
+                          kinh doanh; (2) chứng minh nhân dân sao y không quá 03 tháng của người đại diện
+                          pháp luật doanh nghiệp; (3) - mẫu thiết kế nhãn hiệu chính xác và giải thích ý
+                          nghĩa/ mô tả nhãn hiệu (nếu có).
+                      </div>
+                  </div>
+              </div>
+              <div class="card" style="margin-bottom: 5px;">
+                  <div class="card-header cardHeader" id="headingNine">
+                      <h5 class="mb-0 collapsed" data-toggle="collapse" data-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                          <table style="width: 100%">
+                              <tr>
+                                  <td><span class="btnLink Link">Tài liệu để đăng ký sở hữu nhãn hiệu cá nhân?</span></td>
+                                  <td style="vertical-align: middle;text-align:right"><i class="fa fa-chevron-up"></i></td>
+                              </tr>
+                          </table>
+                      </h5>
+                  </div>
+                  <div id="collapseNine" class="collapse" aria-labelledby="headingNine"
+                  >
+                      <div class="card-body" style="background-color: #f6f6f6;">
+                          Nếu bên bạn muốn đăng ký nhãn hiệu dưới tư cách sở hữu cá nhân, xin vui lòng
+                          cung cấp: (1) - bản sao chứng minh nhân dân sao y không quá 03 tháng của chủ sở
+                          hữu nhãn hiệu; (2) - mẫu thiết kế nhãn hiệu chính xác và giải thích ý nghĩa/ mô
+                          tả nhãn hiệu (nếu có).
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <div class="textTitle" id="tracuu">
+              Tra cứu nhãn hiệu
+          </div>
+          <div>
+              <div class="card" style="margin-bottom: 5px;">
+                  <div class="card-header cardHeader" id="headingEleven">
+                      <h5 class="mb-0 collapsed" data-toggle="collapse" data-target="#collapseEleven" aria-expanded="false" aria-controls="collapseEleven">
+                          <table style="width: 100%">
+                              <tr>
+                                  <td><span class="btnLink Link">Tự kiểm tra nhãn hiệu ở đâu?</span></td>
+                                  <td style="vertical-align: middle;text-align:right"><i class="fa fa-chevron-up"></i></td>
+                              </tr>
+                          </table>
+                      </h5>
+                  </div>
+                  <div id="collapseEleven" class="collapse" aria-labelledby="headingEleven"
+                  >
+                      <div class="card-body" style="background-color: #f6f6f6;">
+                          Bạn có thể tự kiểm tra nhãn hiệu của mình đã có ai đăng ký trước, hoặc gây
+                          trùng/ gây nhầm lẫn với các bên khác hay chưa tại Thư Viện Số Về Sở Hữu Công
+                          Nghiệp của Cục Sở hữu Trí Tuệ Việt Nam theo đường link như sau:
+                          http://iplib.noip.gov.vn/WebUI/WLogin.php
+                      </div>
+                  </div>
+              </div>
+              <div class="card" style="margin-bottom: 5px;">
+                  <div class="card-header cardHeader" id="headingTwelve">
+                      <h5 class="mb-0 collapsed" data-toggle="collapse" data-target="#collapseTwelve" aria-expanded="false" aria-controls="collapseTwelve">
+                          <table style="width: 100%">
+                              <tr>
+                                  <td><span class="btnLink Link">Làm sao biết nhãn hiệu có đủ điều kiện đăng ký?</span></td>
+                                  <td style="vertical-align: middle;text-align:right"><i class="fa fa-chevron-up"></i></td>
+                              </tr>
+                          </table>
+                      </h5>
+                  </div>
+                  <div id="collapseTwelve" class="collapse" aria-labelledby="headingTwelve"
+                  >
+                      <div class="card-body" style="background-color: #f6f6f6;">
+                          Để nhận biết nhãn hiệu của bạn có đủ điều kiện đăng ký độc quyền nhãn hiệu hay
+                          không, bạn cần xác định:
+
+                          1. Liệu nhãn hiệu của bạn đã là một nhãn hiệu đúng? (nhãn hiệu là dấu hiệu được
+                          cấu thành bởi từ ngữ, hình ảnh hoặc từ ngữ kết hợp với hình ảnh, được thể hiện
+                          bằng một hoặc nhiều màu sắc).
+
+                          2. Liệu nhãn hiệu của bạn có khả năng để phân biệt hàng hóa, dịch vụ của mình
+                          với hàng hóa, dịch vụ cùng loại của các doanh nghiệp khác?
+
+                          Nếu đủ 02 yếu tố như trên, nhãn hiệu của bạn có thể tiến hành đăng ký độc quyền
+                          nhãn hiệu.
+                      </div>
+                  </div>
+              </div>
+              <div class="card" style="margin-bottom: 5px;">
+                  <div class="card-header cardHeader" id="headingThirteen">
+                      <h5 class="mb-0 collapsed" data-toggle="collapse" data-target="#collapseThirteen" aria-expanded="false" aria-controls="collapseThirteen">
+                          <table style="width: 100%">
+                              <tr>
+                                  <td><span class="btnLink Link">Asoka Law có kiểm tra nhãn hiệu miễn phí?</span></td>
+                                  <td style="vertical-align: middle;text-align:right"><i class="fa fa-chevron-up"></i></td>
+                              </tr>
+                          </table>
+                      </h5>
+                  </div>
+                  <div id="collapseThirteen" class="collapse" aria-labelledby="headingThirteen"
+                  >
+                      <div class="card-body" style="background-color: #f6f6f6;">
+                          Có! Asoka Law sẽ hỗ trợ khách hàng kiểm tra nhãn hiệu có đạt đủ điều kiện đăng
+                          ký độc quyền hay không, đồng thời đưa ra các tư vấn sơ bộ miễn phí. (Thông
+                          thường việc kiểm tra nhãn hiệu này trên thị trường sẽ có thu phí, dao động ở
+                          nhiều mức giá khác nhau).
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <div class="textTitle" id="quytrinh">
+              Quy trình xử lý
+          </div>
+          <div>
+              <div class="card" style="margin-bottom: 5px;">
+                  <div class="card-header cardHeader" id="headingFourteen">
+                      <h5 class="mb-0 collapsed" data-toggle="collapse" data-target="#collapseFourteen" aria-expanded="false" aria-controls="collapseFourteen">
+                          <table style="width: 100%">
+                              <tr>
+                                  <td><span class="btnLink Link">Việc xử lý hồ sơ tại Tp. Hồ Chí Minh như thế nào?</span></td>
+                                  <td style="vertical-align: middle;text-align:right"><i class="fa fa-chevron-up"></i></td>
+                              </tr>
+                          </table>
+                      </h5>
+                  </div>
+                  <div id="collapseFourteen" class="collapse" aria-labelledby="headingFourteen"
+                  >
+                      <div class="card-body" style="background-color: #f6f6f6;">
+                          Sau đây là quy trình Asoka Law xử lý hồ sơ đối với khách hàng tại Tp. Hồ Chí
+                          Minh:
+                          Bước 1: Kiểm tra nhãn hiệu
+                          Khách hàng gửi logo/ nhãn hiệu qua email consult@asokalaw.vn, Asoka kiểm tra
+                          trong vòng 30 phút. Nếu nhãn hiệu đủ điều kiện đăng ký, chúng tôi sẽ thông báo
+                          và gửi Hợp đồng tới Quý khách. Hai Bên ký hợp đồng/ chuyển phí/ các tài liệu cần
+                          thiết.
+
+                          Bước 2: Soạn thảo hồ sơ
+                          Asoka Law soạn thảo hồ sơ và cử chuyên viên đến trụ sở/ địa chỉ khách hàng yêu
+                          cầu nhằm ký và nhận hồ sơ. Hồ sơ được nộp tới Cục Sở Hữu Trí Tuệ trong vòng 24
+                          giờ kể từ thời điểm khách hàng ký.
+
+                          Bước 3: Bàn giao tài liệu
+                          Asoka Law gửi hồ sơ đã được đăng ký về lại địa chỉ trụ sở Quý khách yêu cầu kèm
+                          Biên bản bàn giao. Asoka Law có trách nhiệm theo dõi hồ sơ và xử lý các vấn đề
+                          phát sinh cho đến khi khách hàng nhận được Giấy chứng nhận đăng ký nhãn hiệu.
+                      </div>
+                  </div>
+              </div>
+              <div class="card" style="margin-bottom: 5px;">
+                  <div class="card-header cardHeader" id="headingFitteen">
+                      <h5 class="mb-0 collapsed" data-toggle="collapse" data-target="#collapseFitteen" aria-expanded="false" aria-controls="collapseFitteen">
+                          <table style="width: 100%">
+                              <tr>
+                                  <td><span class="btnLink Link">Việc xử lý hồ sơ ngoài Tp. Hồ Chí Minh như thế nào?</span></td>
+                                  <td style="vertical-align: middle;text-align:right"><i class="fa fa-chevron-up"></i></td>
+                              </tr>
+                          </table>
+                      </h5>
+                  </div>
+                  <div id="collapseFitteen" class="collapse" aria-labelledby="headingFitteen"
+                  >
+                      <div class="card-body" style="background-color: #f6f6f6;">
+                          Sau đây là quy trình Asoka Law xử lý hồ sơ đối với khách hàng ngoài Tp. Hồ Chí
+                          Minh:
+
+                          Bước 1: Kiểm tra nhãn hiệu
+
+                          Khách hàng gửi logo/ nhãn hiệu qua email consult@asokalaw.vn Asoka Law kiểm tra
+                          trong vòng 30 phút. Nếu nhãn hiệu đủ điều kiện đăng ký, chúng tôi sẽ thông báo
+                          và gửi Hợp đồng tới Quý khách. Hai Bên ký hợp đồng/ chuyển phí/ các tài liệu cần
+                          thiết.
+
+
+                          Bước 2: Soạn thảo hồ sơ
+
+                          Asoka Law soạn thảo hồ sơ/ hướng dẫn khách hàng ký hồ sơ. Khách hàng in hồ sơ và
+                          ký theo hướng dẫn, sau đó chuyển hồ sơ cùng hợp đồng về địa chỉ trụ sở của Asoka
+                          Law. Chúng tôi sẽ nộp hồ sơ của Quý khách tới Cục Sở Hữu Trí Tuệ trong vòng
+                          không quá 24 giờ, kể từ thời điểm nhận hồ sơ.
+
+
+                          Bước 3: Bàn giao tài liệu
+
+                          Asoka Law gửi hồ sơ đã được đăng ký về lại địa chỉ trụ sở Quý khách yêu cầu kèm
+                          Biên bản bàn giao. Asoka Law có trách nhiệm theo dõi hồ sơ và xử lý các vấn đề
+                          phát sinh cho đến khi khách hàng nhận được Giấy chứng nhận đăng ký nhãn hiệu.
+                      </div>
+                  </div>
+              </div>
+              <div class="card" style="margin-bottom: 5px;">
+                  <div class="card-header cardHeader" id="headingSixteen">
+                      <h5 class="mb-0 collapsed" data-toggle="collapse" data-target="#collapseSixteen" aria-expanded="false" aria-controls="collapseSixteen">
+                          <table style="width: 100%">
+                              <tr>
+                                  <td><span class="btnLink Link">Quy trình xử lý đơn tại Cục SHTT như thế nào?</span></td>
+                                  <td style="vertical-align: middle;text-align:right"><i class="fa fa-chevron-up"></i></td>
+                              </tr>
+                          </table>
+                      </h5>
+                  </div>
+                  <div id="collapseSixteen" class="collapse" aria-labelledby="headingSixteen"
+                  >
+                      <div class="card-body" style="background-color: #f6f6f6;">
+                          Đơn đăng ký nhãn hiệu được xử lý tại Cục Sở Hữu Trí Tuệ theo trình tự như sau:
+
+                          Bước 1: Nhận hồ sơ và thẩm định hình thức:
+
+                          Là việc đánh giá tính hợp lệ của đơn theo các yêu cầu về hình thức,về đối tượng
+                          loại trừ, về quyền nộp đơn… để từ đó đưa ra kết luận đơn hợp lệ hay không hợp
+                          lệ. Thời gian thẩm định hình thức là 1 tháng kể từ ngày nộp đơn.
+
+                          Bước 2: Đăng công báo:
+                          Đơn đăng ký nhãn hiệu được chấp nhận là hợp lệ được công bố trên Công báo SHCN
+                          trong thời hạn 2 tháng kể từ ngày được chấp nhận là đơn hợp lệ. Nội dung công bố
+                          đơn đăng ký nhãn hiệu là các thông tin liên quan đến đơn hợp lệ ghi trong thông
+                          báo chấp nhận đơn hợp lệ, mẫu nhãn hiệu và danh mục hàng hóa, dịch vụ kèm theo.
+
+                          Bước 3: Thẩm định nội dung:
+                          Đơn đăng ký nhãn hiệu đã được công nhận là hợp lệ được thẩm định nội dung để
+                          đánh giá khả năng cấp Giấy chứng nhận đăng ký nhãn hiệu cho đối tượng nêu trong
+                          đơn theo các điều kiện bảo hộ. Thời hạn thẩm định nội dung đơn nhãn hiệu là 9
+                          tháng kể từ ngày công bố đơn.
+
+                          Bước 4: Thu phí cấp Giấy chứng nhận đăng ký nhãn hiệu:
+                          Sau khi thẩm định nội dung Cục Sở Hữu Trí Tuệ yêu cầu chủ sở hữu nhãn hiệu tiến
+                          hành nộp phí cấp văn bằng. Chủ sở hữu nộp phí và chờ cấp Giấy chứng nhận đăng ký
+                          nhãn hiệu.
+
+                          Bước 5: Cấp Giấy chứng nhận đăng ký nhãn hiệu:
+                          Sau 02 tháng kể từ ngày nộp phí cấp giấy chứng nhận đăng ký nhãn hiệu. Chủ sở
+                          hữu nhãn hiệu nhận Giấy chứng nhận đăng ký nhãn hiệu sau 1 - 1,5 năm kể từ ngày
+                          nộp đơn.
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <div class="textTitle" id="cachthuc">
+              Cách thức thanh toán
+          </div>
+          <div>
+              <div class="card" style="margin-bottom: 5px;">
+                  <div class="card-header cardHeader" id="headingSeventeen">
+                      <h5 class="mb-0 collapsed" data-toggle="collapse" data-target="#collapseSeventeen" aria-expanded="false" aria-controls="collapseSeventeen">
+                          <table style="width: 100%">
+                              <tr>
+                                  <td><span class="btnLink Link">Tôi muốn thanh toán tiền mặt có được không?</span></td>
+                                  <td style="vertical-align: middle;text-align:right"><i class="fa fa-chevron-up"></i></td>
+                              </tr>
+                          </table>
+                      </h5>
+                  </div>
+                  <div id="collapseSeventeen" class="collapse" aria-labelledby="headingSeventeen"
+                  >
+                      <div class="card-body" style="background-color: #f6f6f6;">
+                          Được. Asoka Law chấp nhận thanh toán bằng tiền mặt đối với khách hàng tại Tp. Hồ
+                          Chí Minh.
+
+                          Với Quý khách có nhu cầu chi trả dịch vụ bằng tiền mặt, xin vui lòng yêu cầu
+                          nhân viên Asoka Law xuất trình Phiếu thanh toán có chữ ký của người đại diện
+                          pháp luật và con dấu của Công ty Luật TNHH Asoka Law. Chúng tôi sẽ cử nhân viên
+                          thu tiền tại địa điểm thuận tiện nhất cho Quý khách.
+                      </div>
+                  </div>
+              </div>
+              <div class="card" style="margin-bottom: 5px;">
+                  <div class="card-header cardHeader" id="headingEighteen">
+                      <h5 class="mb-0 collapsed" data-toggle="collapse" data-target="#collapseEighteen" aria-expanded="false" aria-controls="collapseEighteen">
+                          <table style="width: 100%">
+                              <tr>
+                                  <td><span class="btnLink Link">Tôi muốn thanh toán bằng chuyển khoản thì sao?</span></td>
+                                  <td style="vertical-align: middle;text-align:right"><i class="fa fa-chevron-up"></i></td>
+                              </tr>
+                          </table>
+                      </h5>
+                  </div>
+                  <div id="collapseEighteen" class="collapse" aria-labelledby="headingEighteen"
+                  >
+                      <div class="card-body" style="background-color: #f6f6f6;">
+                          Asoka Law chấp thuận hình thức thanh toán chuyển khoản.
+
+                          Với cá nhân yêu cầu xuất hóa đơn dịch vụ, Quý khách vui lòng chuyển khoản giá
+                          trị Hợp đồng vào số tài khoản như sau:
+
+                          · Số tài khoản: 210571109
+
+                          · Tên chủ tài khoản: Dương Nữ Cẩm Tâm
+
+
+                          · Ngân hàng Thương Mại Cổ Phần Á Châu (ACB Bank) – Chi nhánh Nguyễn Văn Trỗi
+                      </div>
+                  </div>
+              </div>
+              <div class="card" style="margin-bottom: 25px;">
+                  <div class="card-header cardHeader" id="headingNineteen">
+                      <h5 class="mb-0 collapsed" data-toggle="collapse" data-target="#collapseNineteen" aria-expanded="false" aria-controls="collapseNineteen">
+                          <table style="width: 100%">
+                              <tr>
+                                  <td><span class="btnLink Link">Hình thức thanh toán đối với doanh nghiệp?</span></td>
+                                  <td style="vertical-align: middle;text-align:right"><i class="fa fa-chevron-up"></i></td>
+                              </tr>
+                          </table>
+                      </h5>
+                  </div>
+                  <div id="collapseNineteen" class="collapse" aria-labelledby="headingNineteen"
+                  >
+                      <div class="card-body" style="background-color: #f6f6f6;">
+                          Nhãn hiệu tập thể là nhãn hiệu dùng để phân biệt hàng hoá, dịch vụ của các thành
+                          viên của tổ chức là chủ sở hữu nhãn hiệu đó với hàng hoá, dịch vụ của tổ chức,
+                          cá nhân không phải là thành viên của tổ chức đó.
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- </Change> -->

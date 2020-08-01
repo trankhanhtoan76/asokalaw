@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-
+declare var $: any;
 @Component({
   selector: 'app-plsk-contact',
   templateUrl: './plsk-contact.component.html',
@@ -12,5 +12,10 @@ export class PlskContactComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  // <Change>
+  submit(): void {
+    $('#plsk-form').modal('show');
+  }
+  // </Change>
 
 }

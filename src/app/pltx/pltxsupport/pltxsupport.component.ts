@@ -116,8 +116,10 @@ export class PltxsupportComponent implements OnInit {
     this.smtp.send(subject, body).then(
       message => {
         this.spinner.hide();
+        // <Change>
         $('#alert-success').modal('show');
-        $('#dkdtform2').modal('hide');
+        $('#pltxform2').modal('hide');
+        // </Change>
       }
     );
   }

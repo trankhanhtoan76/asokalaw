@@ -31,31 +31,46 @@ export class PLSKStudyContentComponent implements OnInit {
         prevArrow: '<img src="/assets/media/DKDT/ly-do-dkdt/Asset 32.svg" class=" nextArrowBtnFeedback feedback">',
         customPaging: function(slider, i) {
           if (i === 0) {
-            return '<b>01.</b> Sự kiện cần xin giấy phép';
+            return '01. Sự kiện cần xin giấy phép';
           } else if (i === 1) {
-            return '<b>02.</b> Thủ tục xin giấy phép';
+            return '02. Thủ tục xin giấy phép';
           } else if (i === 2) {
-            return '<b>03.</b> Thủ tục xin giấy phép (tiếp)';
+            return '03. Thủ tục xin giấy phép (tiếp)';
           } else if (i === 3) {
-            return '<b>04.</b> Hợp đồng đối tác';
+            return '04. Hợp đồng đối tác';
           } else if (i === 4) {
-            return '<b>05.</b> Xử lý khủng hoảng';
+            return '05. Xử lý khủng hoảng';
           } else {
-            return '<b>06</b> Tương tác nhóm và trao chứng chỉ';
+            return '06 Tương tác nhóm và trao chứng chỉ';
           }
-
         },
         focusOnSelect: true
       });
     } else {
       $('.study-slider').slick({
+        dots: true,
         infinite: true,
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: false,
         autoplaySpeed: 4000,
-        nextArrow: '<img src="/assets/media/DKDT/ly-do-dkdt/Asset 33.svg" class="prevArrowBtnFeedback feedback">',
-        prevArrow: '<img src="/assets/media/DKDT/ly-do-dkdt/Asset 32.svg" class=" nextArrowBtnFeedback feedback">',
+        nextArrow: '',
+        prevArrow: '',
+        customPaging: function(slider, i) {
+          if (i === 0) {
+            return '01. Sự kiện cần xin giấy phép';
+          } else if (i === 1) {
+            return '02. Thủ tục xin giấy phép';
+          } else if (i === 2) {
+            return '03. Thủ tục xin giấy phép (tiếp)';
+          } else if (i === 3) {
+            return '04. Hợp đồng đối tác';
+          } else if (i === 4) {
+            return '05. Xử lý khủng hoảng';
+          } else {
+            return '06 Tương tác nhóm và trao chứng chỉ';
+          }
+        },
         focusOnSelect: true,
       });
     }

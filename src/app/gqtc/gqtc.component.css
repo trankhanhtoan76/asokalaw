@@ -3574,3 +3574,32 @@ img.nextArrowBtnNews {
     padding-bottom: unset!important;
   }
 }
+/* <Change> */
+.box {
+  padding: 25px;
+  width: 100%;
+}
+.call p::before, .call p::after {
+  content: none;
+}
+#feedback .feedback-slide-pltx {
+  padding: 0;
+  width: 80%;
+  margin: 0 auto;
+}
+.form-file-upload-text {
+  font-weight: 400;
+  font-style: italic;
+  color: #1a73e8;
+  text-decoration: underline;
+  cursor: pointer;
+}
+@media only screen and (max-width: 768px) {
+  #feedback .feedback-slide-pltx {
+    width: 100%;
+  }
+  .box {
+    overflow: hidden;
+  }
+}
+/* </Change> */

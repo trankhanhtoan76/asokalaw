@@ -1,0 +1,50 @@
+.pltx-des {
+    position: relative;
+    font-style: italic;
+    font-size: 1.35rem;
+    color: #25405b;
+    text-align: center;
+    font-weight: 400;
+    line-height: 2em;
+    padding: 2rem;
+    z-index: 1;
+    margin-bottom: 3rem;
+}
+.pltx-des::before, .pltx-des::after {
+    content: '';
+    position: absolute;
+    background: url('../../../assets/media/GQTC/xu_ly_thanh_cong/Asset 30.svg') center no-repeat;
+    background-size: 100% auto;
+    width: 50px;
+    height: 50px;
+}
+ .pltx-des::before {
+    background: url('../../../assets/media/GQTC/xu_ly_thanh_cong/Asset 30.svg') center no-repeat;
+    background-size: 100% auto;
+    top: 0;
+    left: 0;
+}
+
+.pltx-des::after {
+    background: url('../../../assets/media/GQTC/xu_ly_thanh_cong/Asset 31.svg') center no-repeat;
+    background-size: 100% auto;
+    bottom: 0;
+    right: 0;
+}
+.pltx-line {
+    border: 1px solid gray;
+    color: #80808087;
+    background: gray;
+    margin: auto;
+    width: 25%;
+}
+.pltx-cate {
+    text-align: center;
+    margin: 2rem 0 3rem;
+    line-height: 2rem;
+}
+.pltx-cate span {
+    color: #ffb111;
+    display: block;
+    font-weight: 500;
+}

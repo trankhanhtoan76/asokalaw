@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+declare var $: any;
 
 @Component({
   selector: 'app-gqtc-reason',
@@ -11,8 +12,12 @@ import { Component, OnInit } from '@angular/core';
 export class GqtcReasonComponent implements OnInit {
 
   constructor() { }
-
+  // <Change>
   ngOnInit(): void {
+    $('.s6head').click(function (e) {
+      e.preventDefault();
+      $(this).parents("li").find(".s6body").slideToggle();
+    });
   }
-
+  // </Change>
 }

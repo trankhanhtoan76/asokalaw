@@ -4137,3 +4137,18 @@ img.nextArrowBtnVideo {
     min-height: unset!important;
   }
 }
+/* <Change> */
+.slick-slide, .slick-current {
+  margin-top: 0;
+  outline: none;
+}
+.study-content .icon-block {
+  display: inline-block;
+}
+.teacher-slider .content-event {
+  padding: 0.5rem 0.5rem 0.25rem;
+}
+@media only screen and (max-width: 768px) {
+  
+}
+/* </Change> */
