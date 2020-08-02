@@ -1,8 +1,8 @@
-<div id="tvlsform2" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog" role="document">
+<div class="modal fade" id="tvlsform2" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable" role="document">
         <div class="modal-content">
             <div class="modal-header" style="border: none; padding: unset; padding-top: 1rem;">
-                <button (click)="show=false" type="button" class="close" data-dismiss="modal" style="padding: unset; padding-right: 2rem" aria-label="Close">
+                <button type="button" class="close" data-dismiss="modal" style="padding: unset; padding-right: 2rem" aria-label="Close">
                     <span aria-hidden="true" style="font-size: 26px">&times;</span>
                 </button>
             </div>
@@ -16,13 +16,57 @@
                 <div class="form-group">
                     <input placeholder="Email" class="form-control" name="email" [(ngModel)]="email" type="email"/>
                 </div>
-                <div class="form-group problem">
+                <div class="row" style="margin-bottom: 15px">
+                    <div class="col-4 vertical-middle">
+                        <label style="margin-bottom: 0">Số lượng câu hỏi: </label>
+                    </div>
+                    <div class="col-4 vertical-middle">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <button [disabled]="numberQuestion==1" (click)="numberQuestion=numberQuestion-1;total=numberQuestion*200000" style="background: #e9ecef;border:solid 1px #acacac" class="btn btn-outline-secondary" type="button">-</button>
+                            </div>
+                            <input [(ngModel)]="numberQuestion" name="numberQuestion" style="border: solid 1px #acacac" type="text" class="form-control" value="1" aria-describedby="basic-addon1" readonly>
+                            <div class="input-group-append">
+                                <button (click)="numberQuestion=numberQuestion+1;total=numberQuestion*200000" style="background: #e9ecef;border:solid 1px #acacac" class="btn btn-outline-secondary" type="button">+</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4 vertical-middle">
+                        X 200.000 vnđ
+                    </div>
+                </div>
+                <div class="form-group">
                     <label>Nhập nội dung câu hỏi dự kiến của bạn</label>
-                    <textarea class="form-control" [(ngModel)]="description" name="description" rows="2"></textarea>
+                    <textarea
+                            placeholder="Bạn vui lòng điền câu hỏi ở đây. Nội dung câu hỏi càng cụ thể, câu trả lời bạn nhận được từ luật sư/cố vấn càng rõ ràng.&#x0a;Ví dụ:&#x0a;1. Tôi muốn được tư vấn về thủ tục thành lập công ty cổ phần.&#x0a;2. Sau khi thành lập công ty, tôi muốn mở chi nhánh thì làm thế nào?&#x0a;3. Tôi muốn đăng ký nhãn hiệu của công ty thì cần điều kiện gì?"
+                            rows="6" class="form-control" [(ngModel)]="description" name="description"></textarea>
+                </div>
+                <div class="form-group">
+                    Tài liệu đính kèm:
+                    <button *ngIf="!attachment" style="margin-bottom: 5px;color: #0f74a8;text-decoration: underline" class="btn" type="button" (click)="fileInput1.click()">
+                        <span style="color: #0f74a8" class="far fa-paperclip"></span> tải lên tại đây
+                        <input #fileInput1 type="file" (change)="onSelectFile($event)" style="display:none;"/>
+                    </button>
+                    <ng-container *ngIf="attachment">
+                        {{attachmentName}}
+                        <span (click)="onRemoveSelectedFile()" class="fa fa-times-circle" style="color:red;cursor: pointer"></span>
+                    </ng-container>
+                </div>
+                <div class="form-group vertical-middle">
+                    Tạm tính: <span style="color: #0f74a8;font-size: 25px;font-weight: bold">{{total | number}} vnđ</span>
+                </div>
+                <p>Chuyên viên của Asoka sẽ liên lạc với bạn ngay trong vòng 5 phút để xác nhận yêu cầu tư vấn</p>
+                <p>Bạn vui lòng kiểm tra tin nhắn điện thoại/email để không bỏ sót thông tin từ chúng tôi. Xin cảm ơn.</p>
+                <div class="form-group">
+                    <label>
+                        <input (change)="checkTerm=!checkTerm" value="1" type="checkbox">
+                        Tôi đã đọc và đồng ý với các điều khoản
+                        <span style="text-decoration: underline;color:#0f74a8;font-style: italic">Xem chi tiết</span>
+                    </label>
                 </div>
             </div>
             <div class="modal-footer" style="text-align: center;">
-                <button style="margin: auto; color: white;" (click)="submit()" type="button" class="btn btn-warning">Gửi yêu cầu</button>
+                <button [disabled]="!checkTerm" style="margin: auto; color: white;" (click)="submit()" type="button" class="btn btn-warning">Gửi yêu cầu</button>
             </div>
         </div>
     </div>

@@ -27,8 +27,8 @@ export class TvlsComponent implements OnInit {
     }
 
     showForm2(): void {
-        this.isShowForm2 = true;
         this.showForm1(false);
+        $('#tvlsform2').modal('show');
     }
 
     selectService(e): void {

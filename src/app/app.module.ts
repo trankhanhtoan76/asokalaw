@@ -74,6 +74,7 @@ import {TnsmModule} from './tnsm/tnsm.module';
 import {NewsModule} from './news/news.module';
 import {KtdnModule} from "./ktdn/ktdn.module";
 import { TvlsformtvcComponent } from './tvls/tvlsformtvc/tvlsformtvc.component';
+import { Tvlsform3Component } from './tvls/tvlsform3/tvlsform3.component';
 
 const routes: Routes = [
     {path: '', component: HomeComponent},
@@ -145,7 +146,8 @@ const routes: Routes = [
         TvlsfeedbackComponent,
         TvlsmostviewComponent,
         TvlscontactComponent,
-        TvlsformtvcComponent
+        TvlsformtvcComponent,
+        Tvlsform3Component
     ],
     imports: [
         BrowserModule,
