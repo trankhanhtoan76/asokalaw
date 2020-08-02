@@ -1,16 +1,23 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, OnInit, Output, EventEmitter} from '@angular/core';
+
+declare var $: any;
 
 @Component({
-  selector: 'app-plskpricing',
-  templateUrl: './plskpricing.component.html',
-  styleUrls: ['../plsk.component.css', './plskpricing.component.css']
+    selector: 'app-plskpricing',
+    templateUrl: './plskpricing.component.html',
+    styleUrls: ['../plsk.component.css', './plskpricing.component.css']
 })
 export class PLSKPricingComponent implements OnInit {
+    @Output() changepackage = new EventEmitter;
 
-  constructor() {
-  }
+    constructor() {
+    }
 
-  ngOnInit(): void {
-  }
+    ngOnInit(): void {
+    }
 
+    onChangePackage(name) {
+        this.changepackage.emit(name);
+        $('#plskform1').modal('show');
+    }
 }
