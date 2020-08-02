@@ -72,7 +72,7 @@
                         <b [class.text-warning]="checkService2">Giải pháp chi tiết</b> giá phí 500.000đ đồng cho một câu hỏi, thời gian trả lời tư vấn tối đa 1 ngày
                     </div>
                     <div class="col-2 vertical-middle align-left">
-                        <button class="btn btn-outline-warning d-inline text-nowrap">
+                        <button (click)="showForm3()" class="btn btn-outline-warning d-inline text-nowrap">
                             Tiếp tục <i class="fa fa-arrow-right text-warning"></i>
                         </button>
                     </div>
@@ -85,7 +85,7 @@
                         <b [class.text-warning]="checkService3">Tư vấn trực tiếp</b> giá phí 1.000.000 đồng cho mỗi 30 phút, thời gian tư vấn tối đa 1 ngày
                     </div>
                     <div class="col-2 vertical-middle align-left">
-                        <button class="btn btn-outline-warning d-inline text-nowrap">
+                        <button (click)="showForm4()" class="btn btn-outline-warning d-inline text-nowrap">
                             Tiếp tục <i class="fa fa-arrow-right text-warning"></i>
                         </button>
                     </div>
@@ -95,7 +95,7 @@
     </div>
 </div>
 <div class="modal fade" id="prevformclose" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header" style="border: none; padding: unset; padding-top: 1rem;">
                 <button (click)="pauseVideo()" type="button" class="close" data-dismiss="modal" style="padding: unset; padding-right: 2rem" aria-label="Close">
@@ -110,3 +110,6 @@
     </div>
 </div>
 <app-tvlsformtvc></app-tvlsformtvc>
+<app-tvlsform3></app-tvlsform3>
+<app-tvlsform4></app-tvlsform4>
+<app-tvlsdialogconfirm></app-tvlsdialogconfirm>

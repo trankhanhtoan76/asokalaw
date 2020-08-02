@@ -75,6 +75,8 @@ import {NewsModule} from './news/news.module';
 import {KtdnModule} from "./ktdn/ktdn.module";
 import { TvlsformtvcComponent } from './tvls/tvlsformtvc/tvlsformtvc.component';
 import { Tvlsform3Component } from './tvls/tvlsform3/tvlsform3.component';
+import { Tvlsform4Component } from './tvls/tvlsform4/tvlsform4.component';
+import { TvlsdialogconfirmComponent } from './tvls/tvlsdialogconfirm/tvlsdialogconfirm.component';
 
 const routes: Routes = [
     {path: '', component: HomeComponent},
@@ -147,7 +149,9 @@ const routes: Routes = [
         TvlsmostviewComponent,
         TvlscontactComponent,
         TvlsformtvcComponent,
-        Tvlsform3Component
+        Tvlsform3Component,
+        Tvlsform4Component,
+        TvlsdialogconfirmComponent
     ],
     imports: [
         BrowserModule,

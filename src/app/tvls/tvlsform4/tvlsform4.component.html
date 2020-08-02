@@ -1,4 +1,4 @@
-<div class="modal fade" id="tvlsform2" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal fade" id="tvlsform4" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog modal-dialog-scrollable" role="document">
         <div class="modal-content">
             <div class="modal-header" style="border: none; padding: unset; padding-top: 1rem;">
@@ -18,28 +18,22 @@
                 </div>
                 <div class="row" style="margin-bottom: 15px">
                     <div class="col-4 vertical-middle">
-                        <label style="margin-bottom: 0">Số lượng câu hỏi: </label>
+                        <label style="margin-bottom: 0">Thời gian tư vấn: </label>
                     </div>
                     <div class="col-4 vertical-middle">
                         <div class="input-group">
                             <div class="input-group-prepend">
-                                <button [disabled]="numberQuestion==1" (click)="numberQuestion=numberQuestion-1;total=numberQuestion*200000" style="background: #e9ecef;border:solid 1px #acacac" class="btn btn-outline-secondary" type="button">-</button>
+                                <button [disabled]="numberQuestion==30" (click)="numberQuestion=numberQuestion-30;total=numberQuestion/30*1000000" style="background: #e9ecef;border:solid 1px #acacac" class="btn btn-outline-secondary" type="button">-</button>
                             </div>
                             <input [(ngModel)]="numberQuestion" name="numberQuestion" style="border: solid 1px #acacac;text-align: center" type="text" class="form-control" value="1" aria-describedby="basic-addon1" readonly>
                             <div class="input-group-append">
-                                <button (click)="numberQuestion=numberQuestion+1;total=numberQuestion*200000" style="background: #e9ecef;border:solid 1px #acacac" class="btn btn-outline-secondary" type="button">+</button>
+                                <button (click)="numberQuestion=numberQuestion+30;total=numberQuestion/30*1000000" style="background: #e9ecef;border:solid 1px #acacac" class="btn btn-outline-secondary" type="button">+</button>
                             </div>
                         </div>
                     </div>
                     <div class="col-4 vertical-middle">
-                        X 200.000 vnđ
+                        <i>(1.000.000 vnđ mỗi 30 phút)</i>
                     </div>
-                </div>
-                <div class="form-group">
-                    <label>Nhập nội dung câu hỏi dự kiến của bạn</label>
-                    <textarea
-                            placeholder="Bạn vui lòng điền câu hỏi ở đây. Nội dung câu hỏi càng cụ thể, câu trả lời bạn nhận được từ luật sư/cố vấn càng rõ ràng.&#x0a;Ví dụ:&#x0a;1. Tôi muốn được tư vấn về thủ tục thành lập công ty cổ phần.&#x0a;2. Sau khi thành lập công ty, tôi muốn mở chi nhánh thì làm thế nào?&#x0a;3. Tôi muốn đăng ký nhãn hiệu của công ty thì cần điều kiện gì?"
-                            rows="6" class="form-control" [(ngModel)]="description" name="description"></textarea>
                 </div>
                 <div class="form-group">
                     Tài liệu đính kèm:

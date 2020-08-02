@@ -31,6 +31,16 @@ export class TvlsComponent implements OnInit {
         $('#tvlsform2').modal('show');
     }
 
+    showForm3(): void {
+        this.showForm1(false);
+        $('#tvlsform3').modal('show');
+    }
+
+    showForm4(): void {
+        this.showForm1(false);
+        $('#tvlsform4').modal('show');
+    }
+
     selectService(e): void {
         this.checkService1 = false;
         this.checkService2 = false;

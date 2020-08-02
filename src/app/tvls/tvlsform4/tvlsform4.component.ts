@@ -5,19 +5,18 @@ import {EmailService} from "../../service/email.service";
 declare var $: any;
 
 @Component({
-    selector: 'app-tvlsformtvc',
-    templateUrl: './tvlsformtvc.component.html',
-    styleUrls: ['./tvlsformtvc.component.css']
+    selector: 'app-tvlsform4',
+    templateUrl: './tvlsform4.component.html',
+    styleUrls: ['./tvlsform4.component.css']
 })
-export class TvlsformtvcComponent implements OnInit {
+export class Tvlsform4Component implements OnInit {
     name: string;
     email: string;
     phone: string;
-    numberQuestion = 1;
-    description: string;
+    numberQuestion = 30;
     attachment: string;
     attachmentName: string;
-    total = 200000;
+    total = 1000000;
     checkTerm: boolean;
 
     constructor(private spinner: SpinnerService, private smtp: EmailService) {
@@ -28,7 +27,7 @@ export class TvlsformtvcComponent implements OnInit {
 
     closeModal() {
         // @ts-ignore
-        window.lastModal = '#tvlsform2';
+        window.lastModal = '#tvlsform4';
         $('#tvlsform2,#tvlsform3,#tvlsform4').modal('hide');
         $('#tvlsdialogconfirm').modal('show');
     }
@@ -58,15 +57,11 @@ export class TvlsformtvcComponent implements OnInit {
         </tr>
         <tr>
           <td style="padding:5px 0;font-family:arial,sans-serif">Gói:</td>
-          <td style="padding:5px 0;font-family:arial,sans-serif">Tư vấn chung</td>
+          <td style="padding:5px 0;font-family:arial,sans-serif">Tư vấn trực tiếp</td>
         </tr>
         <tr>
-          <td style="padding:5px 0;font-family:arial,sans-serif">Số lượng câu hỏi:</td>
-          <td style="padding:5px 0;font-family:arial,sans-serif">${this.numberQuestion}</td>
-        </tr>
-        <tr>
-          <td style="padding:5px 0;font-family:arial,sans-serif">Nội dung:</td>
-          <td style="padding:5px 0;font-family:arial,sans-serif">${this.description}</td>
+          <td style="padding:5px 0;font-family:arial,sans-serif">Thời gian tư vấn:</td>
+          <td style="padding:5px 0;font-family:arial,sans-serif">${this.numberQuestion} phút</td>
         </tr>
         <tr>
           <td style="padding:5px 0;font-family:arial,sans-serif">Tạm tính:</td>
@@ -86,7 +81,7 @@ export class TvlsformtvcComponent implements OnInit {
             message => {
                 this.spinner.hide();
                 $('#alert-success').modal('show');
-                $('#tvlsform2').modal('hide');
+                $('#tvlsform4').modal('hide');
             }
         );
     }
