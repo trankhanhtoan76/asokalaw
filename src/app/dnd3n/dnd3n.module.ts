@@ -9,6 +9,7 @@ import { Dnd3nFeedbackComponent } from './dnd3n-feedback/dnd3n-feedback.componen
 import { Dnd3nExcusionComponent } from './dnd3n-excusion/dnd3n-excusion.component';
 import { Dnd3nSupportComponent } from './dnd3n-support/dnd3n-support.component';
 import { Dnd3nQuestionComponent } from './dnd3n-question/dnd3n-question.component';
+import {FormsModule} from "@angular/forms";
 
 const routes: Routes = [
   {path: 'doanh-nghiep-duoi-3-nam', component: Dnd3nComponent}
@@ -25,10 +26,11 @@ const routes: Routes = [
     Dnd3nSupportComponent,
     Dnd3nQuestionComponent
   ],
-  imports: [
-    CommonModule,
-    RouterModule.forRoot(routes)
-  ]
+    imports: [
+        CommonModule,
+        RouterModule.forRoot(routes),
+        FormsModule
+    ]
 })
 export class Dnd3nModule {
 }

@@ -142,29 +142,56 @@
         <div class="col-md-5">
           <div>
             <img src="/assets/media/DKNH/Form/Asset 3.svg" class="imgForm">
-            <form class="shadow backgrFormound">
-              <div class="form-group">
-                <h2 style="font-family: 'Montserrat', sans-serif; text-align: center; margin-bottom: 20px">TRA CỨU LOGO CỦA BẠN</h2>
-                <input style="margin-bottom: 3%;" type="text" class="form-control"
-                       id="exampleFormControlInput1" placeholder="Họ và tên">
-                <input style="margin-bottom: 3%;" type="phone" class="form-control"
-                       id="exampleFormControlInput1" placeholder="Số điện thoại*">
-                <input style="margin-bottom: 3%;" type="email" class="form-control"
-                       id="exampleFormControlInput1" placeholder="Email*">
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
-                          placeholder="Tên nhãn hiệu, ngành nghề kinh doanh. Vd: Flow Media-Truyền thông marketing"></textarea>
-              </div>
-              <div class="row">
-                <button type="button" class="btn btn-link"><i>Logo đính kèm 1</i></button>
-                <button type="button" class="btn btn-link" style="color: gray;"><i>Logo đính kèm
-                  2</i></button>
-                <button type="button" class="btn btn-link" style="color: gray;"><i>Logo đính kèm
-                  3</i></button>
-              </div>
-              <div class="flex-center-hor">
-                <button type="button" class="btn btn-warning btn-custom">Tra cứu miễn phí</button>
-              </div>
-            </form>
+              <form class="shadow backgrFormound" enctype="multipart/form-data" style="height:{{formHeight}}px">
+                  <h2>TRA CỨU LOGO CỦA BẠN</h2>
+                  <div class="form-group">
+                      <input style="margin-bottom: 3%;" type="text" [(ngModel)]="name" class="form-control" name="name" placeholder="Họ và tên">
+                  </div>
+                  <div class="form-group">
+                      <input [(ngModel)]="phone" style="margin-bottom: 3%;" type="text" class="form-control" name="phone" placeholder="Số điện thoại*">
+                  </div>
+                  <div class="form-group">
+                      <input [(ngModel)]="email" style="margin-bottom: 3%;" type="text" class="form-control" name="email" placeholder="Email*">
+                  </div>
+                  <div class="form-group">
+                      <textarea [(ngModel)]="description" name="description" class="form-control" rows="3" placeholder="Tên nhãn hiệu, ngành nghề kinh doanh. Vd: Flow Media-Truyền thông marketing"></textarea>
+                  </div>
+                  <div class="row">
+                      <div class="form-group col-4">
+                          <button style="margin-bottom: 5px" class="btn btn-light" type="button" (click)="fileInput1.click()">
+                              <span>Tải logo 1</span>
+                              <input #fileInput1 type="file" accept="image/*" (change)="onSelectFile($event,1)" style="display:none;"/>
+                          </button>
+                          <div *ngIf="logo1.data">
+                              <img style="width: 50px;max-height:100px" [src]="logo1.data"/>
+                              <span (click)="onRemoveSelectedFile(1)" class="fa fa-times-circle" style="color:red;cursor: pointer"></span>
+                          </div>
+                      </div>
+                      <div class="form-group col-4">
+                          <button style="margin-bottom: 5px" class="btn btn-light" type="button" (click)="fileInput2.click()">
+                              <span>Tải logo 2</span>
+                              <input #fileInput2 type="file" accept="image/*" (change)="onSelectFile($event,2)" style="display:none;"/>
+                          </button>
+                          <div *ngIf="logo2.data">
+                              <img style="width: 50px;max-height:100px" [src]="logo2.data"/>
+                              <span  (click)="onRemoveSelectedFile(2)" class="fa fa-times-circle" style="color:red;cursor: pointer"></span>
+                          </div>
+                      </div>
+                      <div class="form-group col-4">
+                          <button style="margin-bottom: 5px" class="btn btn-light" type="button" (click)="fileInput3.click()">
+                              <span>Tải logo 3</span>
+                              <input #fileInput3 type="file" accept="image/*" (change)="onSelectFile($event,3)" style="display:none;"/>
+                          </button>
+                          <div *ngIf="logo3.data">
+                              <img style="width: 50px;max-height:100px" [src]="logo3.data"/>
+                              <span  (click)="onRemoveSelectedFile(3)" class="fa fa-times-circle" style="color:red;cursor: pointer"></span>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="flex-center-hor">
+                      <button (click)="submit()" type="button" class="btn btn-warning btn-custom">Đăng kí bảo hộ nhãn quyền</button>
+                  </div>
+              </form>
           </div>
         </div>
       </div>
