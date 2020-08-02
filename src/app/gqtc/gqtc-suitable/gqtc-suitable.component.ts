@@ -1,18 +1,26 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit, Output, EventEmitter} from '@angular/core';
+
+declare var $: any;
 
 @Component({
-  selector: 'app-gqtc-suitable',
-  templateUrl: './gqtc-suitable.component.html',
-  styleUrls: [
-    '../gqtc.component.css',
-    './gqtc-suitable.component.css'
-  ]
+    selector: 'app-gqtc-suitable',
+    templateUrl: './gqtc-suitable.component.html',
+    styleUrls: [
+        '../gqtc.component.css',
+        './gqtc-suitable.component.css'
+    ]
 })
 export class GqtcSuitableComponent implements OnInit {
+    @Output() changepackage = new EventEmitter;
 
-  constructor() { }
+    constructor() {
+    }
 
-  ngOnInit(): void {
-  }
+    ngOnInit(): void {
+    }
 
+    onChangePackage(name) {
+        this.changepackage.emit(name);
+        $('#gqtcform1').modal('show');
+    }
 }
