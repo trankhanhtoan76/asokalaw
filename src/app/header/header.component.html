@@ -1,108 +1,108 @@
 <header>
-  <section [ngClass]="fixedTop">
-    <div class="bg-blue">
-      <div class="container">
-        <div class="row" style="height: 55px;">
-          <div class="col-md-6" style="margin: auto; display: grid;">
-            <div *ngIf="!isMobileScreen()" class="tel" style="font-weight: 300; color: #afaead;">
-              <img style="height: 13px;  padding-right: 2px;" src="/assets/media/mail_icon.svg"/> consult@asokalaw.vn
+    <section [ngClass]="fixedTop">
+        <div class="bg-blue">
+            <div class="container">
+                <div class="row" style="height: 55px;">
+                    <div class="col-md-6" style="margin: auto; display: grid;">
+                        <div *ngIf="!isMobileScreen()" class="tel" style="font-weight: 300; color: #afaead;">
+                            <img style="height: 13px;  padding-right: 2px;" src="/assets/media/mail_icon.svg"/> consult@asokalaw.vn
+                        </div>
+                    </div>
+                    <div class="col-md-6" style="margin: auto; float:right;">
+                        <div style="margin-top: 2px;float:right; padding: 10px 5px;">
+                            <a style=" font-weight: bold;" href="setLang/vi?redirect_to=/">VN</a>
+                            <span style="    font-size: 15px; font-weight: 900; color:#fff"> | </span>
+                            <a style=" font-weight: bold;" href="/setLang/en?redirect_to=/">EN</a></div>
+                        <div class="padding" [ngStyle]="isMobileScreen()?{float:'left'}:{float:'right'}">
+                            <button id="headerButtonModal" data-toggle="modal" data-target="#modalHomeAdvice" class="float-right btn btn-outline-warning padding" type="button">Nhận tư vấn miễn phí</button>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="col-md-6" style="margin: auto; float:right;">
-            <div style="margin-top: 2px;float:right; padding: 10px 5px;">
-              <a style=" font-weight: bold;" href="setLang/vi?redirect_to=/">VN</a>
-              <span style="    font-size: 15px; font-weight: 900; color:#fff"> | </span>
-              <a style=" font-weight: bold;" href="/setLang/en?redirect_to=/">EN</a></div>
-            <div class="padding" [ngStyle]="isMobileScreen()?{float:'left'}:{float:'right'}">
-              <button id="headerButtonModal" data-toggle="modal" data-target="#modalHomeAdvice" class="float-right btn btn-outline-warning padding" type="button">Nhận tư vấn miễn phí</button>
-            </div>
-          </div>
         </div>
-      </div>
-    </div>
-    <app-headermainmenu></app-headermainmenu>
-  </section>
+        <app-headermainmenu></app-headermainmenu>
+    </section>
 </header>
 <div class="modal fade" id="modalHomeAdvice" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
      aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header" style="border: none; padding: unset; padding-top: 1rem;">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header" style="border: none; padding: unset; padding-top: 1rem;">
 
-        <button type="button" class="close" data-dismiss="modal" style="padding: unset; padding-right: 2rem" aria-label="Close">
-          <span aria-hidden="true" style="font-size: 26px">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <form id="homeAdvice">
-          <div class="form-group">
-            <label class="col-form-label">Họ tên</label>
-            <input type="text" class="form-control" [(ngModel)]="name" name="name">
-          </div>
-          <div class="form-group">
-            <label for="phone" class="col-form-label">Số điện thoại<sup>*</sup></label>
-            <input class="form-control" [(ngModel)]="phone" name="phone" type="tel" id="phone"/>
-          </div>
-          <div class="form-group">
-            <label for="email" class="col-form-label">Email<sup>*</sup></label>
-            <input class="form-control" name="email" [(ngModel)]="email" type="email" id="email"/>
-          </div>
-          <div class="form-group problem">
-            <label for="problem">Vấn đề bạn cần tư vấn</label>
-            <textarea class="form-control" [(ngModel)]="description" name="description" id="problem" rows="2"></textarea>
-          </div>
-          <div class="form-group problem-checkbox">
-            <label>Dịch vụ bạn cần tư vấn</label>
-            <div class="container-fluid">
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="form-check form-check-inline">
-                    <input class="form-check-input" [checked]="service.dkkd" (change)="service.dkkd=!service.dkkd" type="checkbox">
-                    <span class="form-check-label">Đăng ký kinh doanh</span>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="checkbox" [checked]="service.dknh" (change)="service.dknh=!service.dknh">
-                    <span class="form-check-label">Đăng ký nhãn hiệu</span>
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="checkbox" [checked]="service.pltx" (change)="service.pltx=!service.pltx">
-                    <span class="form-check-label">Pháp lý thường xuyên</span>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="checkbox" [checked]="service.plsk" (change)="service.plsk=!service.plsk">
-                    <span class="form-check-label">Pháp lý sự kiện</span>
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="checkbox" [checked]="service.tvtt" (change)="service.tvtt=!service.tvtt">
-                    <span class="form-check-label">Tư vấn trực tuyến</span>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="checkbox" [checked]="service.xltc" (change)="service.xltc=!service.xltc">
-                    <span class="form-check-label">Xử lý tranh chấp</span>
-                  </div>
-                </div>
-              </div>
+                <button type="button" class="close" data-dismiss="modal" style="padding: unset; padding-right: 2rem" aria-label="Close">
+                    <span aria-hidden="true" style="font-size: 26px">&times;</span>
+                </button>
             </div>
-          </div>
-        </form>
-      </div>
-      <div class="modal-footer" style="text-align: center;">
-        <button style="margin: auto; color: white;" (click)="submit()" type="button" class="btn btn-warning">Gửi yêu cầu</button>
-      </div>
+            <div class="modal-body">
+                <form id="homeAdvice">
+                    <div class="form-group">
+                        <label class="col-form-label">Họ tên *</label>
+                        <input [class.is-invalid]="!fieldValid(name)" [class.is-valid]="fieldValid(name)" type="text" class="form-control" [(ngModel)]="name" name="name">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone" class="col-form-label">Số điện thoại *</label>
+                        <input [class.is-invalid]="!fieldValid(phone,'phone')" [class.is-valid]="fieldValid(phone,'phone')" class="form-control" [(ngModel)]="phone" name="phone" type="tel" id="phone"/>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" class="col-form-label">Email *</label>
+                        <input [class.is-invalid]="!fieldValid(email,'email')" [class.is-valid]="fieldValid(email,'email')" class="form-control" name="email" [(ngModel)]="email" type="email" id="email"/>
+                    </div>
+                    <div class="form-group problem">
+                        <label for="problem">Vấn đề bạn cần tư vấn</label>
+                        <textarea class="form-control" [(ngModel)]="description" name="description" id="problem" rows="2"></textarea>
+                    </div>
+                    <div class="form-group problem-checkbox">
+                        <label>Dịch vụ bạn cần tư vấn</label>
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" [checked]="service.dkkd" (change)="service.dkkd=!service.dkkd" type="checkbox">
+                                        <span class="form-check-label">Đăng ký kinh doanh</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" [checked]="service.dknh" (change)="service.dknh=!service.dknh">
+                                        <span class="form-check-label">Đăng ký nhãn hiệu</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" [checked]="service.pltx" (change)="service.pltx=!service.pltx">
+                                        <span class="form-check-label">Pháp lý thường xuyên</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" [checked]="service.plsk" (change)="service.plsk=!service.plsk">
+                                        <span class="form-check-label">Pháp lý sự kiện</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" [checked]="service.tvtt" (change)="service.tvtt=!service.tvtt">
+                                        <span class="form-check-label">Tư vấn trực tuyến</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" [checked]="service.xltc" (change)="service.xltc=!service.xltc">
+                                        <span class="form-check-label">Xử lý tranh chấp</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer" style="text-align: center;">
+                <button [disabled]="!formValid()" style="margin: auto; color: white;" (click)="submit()" type="button" class="btn btn-warning">Gửi yêu cầu</button>
+            </div>
+        </div>
     </div>
-  </div>
 </div>
