@@ -73,6 +73,7 @@ import {QtlvModule} from './qtlv/qtlv.module';
 import {TnsmModule} from './tnsm/tnsm.module';
 import {NewsModule} from './news/news.module';
 import {KtdnModule} from "./ktdn/ktdn.module";
+import { TvlsformtvcComponent } from './tvls/tvlsformtvc/tvlsformtvc.component';
 
 const routes: Routes = [
     {path: '', component: HomeComponent},
@@ -143,7 +144,8 @@ const routes: Routes = [
         TvlssupportComponent,
         TvlsfeedbackComponent,
         TvlsmostviewComponent,
-        TvlscontactComponent
+        TvlscontactComponent,
+        TvlsformtvcComponent
     ],
     imports: [
         BrowserModule,

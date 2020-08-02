@@ -1,23 +1,34 @@
 <section class="header">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-6 title-banner">
-        <h1>Kết nối ngay với<br> luật sư giỏi nhất</h1>
-        <br>
-        <span>Hơn <b style="color: #ffc107; font-size: large;">6.890 giờ tư vấn</b> đã được thực hiện bởi luật sư/cố vấn của Asoka Law. Dễ dàng tiếp cận ngay</span>
-        <div class=" row search">
-          <div class="shadow container-search flex-center-vertically">
-            <div class="row row-search">
-              <i class="fa fa-search"></i>
-              <input type="text" class="input-search" placeholder="Chọn lĩnh vực bạ quan tâm">
-              <i class="fa fa-caret-down"></i>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 title-banner">
+                <h1>Kết nối ngay với luật sư giỏi nhất</h1>
+                <br>
+                <span>Hơn <b style="color: #ffc107; font-size: large;">6.890 giờ tư vấn</b> đã được thực hiện bởi luật sư/cố vấn của Asoka Law. Dễ dàng tiếp cận ngay</span>
+                <div class=" row search">
+                    <div class="shadow container-search flex-center-vertically">
+                        <div class="row row-search">
+                            <i class="fa fa-search"></i>
+                            <select [(ngModel)]="type" name="type" class="input-search">
+                                <option value="0">Chọn lĩnh vực bạn quan tâm</option>
+                                <option value="Doanh nghiệp">Doanh nghiệp</option>
+                                <option value="Sở hữu trí tuệ">Sở hữu trí tuệ</option>
+                                <option value="Tranh chấp thương mại">Tranh chấp thương mại</option>
+                                <option value="Lao động - nhân sự">Lao động - nhân sự</option>
+                                <option value="Sự kiện - truyền thông">Sự kiện - truyền thông</option>
+                                <option value="Đăng ký đầu tư">Đăng ký đầu tư</option>
+                                <option value="Ngân hàng - bảo hiểm">Ngân hàng - bảo hiểm</option>
+                                <option value="Định cư - du học">Định cư - du học</option>
+                                <option value="Lĩnh vực khác">Lĩnh vực khác</option>
+                            </select>
+                            <i class="fa fa-caret-down"></i>
+                        </div>
+                    </div>
+                    <button (click)="showForm1()" class="shadow btn btn-warning text-color-search">Đặt lịch ngay</button>
+                </div>
             </div>
-          </div>
-          <button class="shadow btn btn-warning text-color-search">Tìm kiếm</button>
         </div>
-      </div>
     </div>
-  </div>
 </section>
 <app-tvlslawyer></app-tvlslawyer>
 <app-tvlsservice></app-tvlsservice>
@@ -29,3 +40,73 @@
 <app-dkkdquestion></app-dkkdquestion>
 <app-tvlsmostview></app-tvlsmostview>
 <app-tvlscontact></app-tvlscontact>
+
+<div class="modal fade" id="form1" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header" style="border: none; padding: unset; padding-top: 1rem;">
+                <button onclick="$('#prevformclose').modal('show')" type="button" class="close" data-dismiss="modal" style="padding: unset; padding-right: 2rem" aria-label="Close">
+                    <span aria-hidden="true" style="font-size: 26px">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <h4 class="text-center" style="margin-bottom: 20px">Chọn gói tư vấn phù hợp với bạn</h4>
+                <div class="row" (mouseenter)="selectService(1)">
+                    <div class="col-1 vertical-middle align-right">
+                        <input [(ngModel)]="service" type="radio" [checked]="checkService1" name="service" value="Tư vấn chung"/>
+                    </div>
+                    <div class="col-9 vertical-middle align-left" [class.text-warning]="checkService1">
+                        <b [class.text-warning]="checkService1">Tư vấn chung</b> giá phí 2 triệu đồng cho một câu hỏi, thời gian trả lời tư vấn tối đa 3 ngày
+                    </div>
+                    <div class="col-2 vertical-middle align-left">
+                        <button (click)="showForm2()" class="btn btn-outline-warning d-inline text-nowrap">
+                            Tiếp tục <i class="fa fa-arrow-right text-warning"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="row" style="margin-top:20px" (mouseenter)="selectService(2)">
+                    <div class="col-1 vertical-middle align-right">
+                        <input [(ngModel)]="service" [checked]="checkService2" type="radio" name="service" value="Giải pháp chi tiết"/>
+                    </div>
+                    <div class="col-9 vertical-middle align-left" [class.text-warning]="checkService2">
+                        <b [class.text-warning]="checkService2">Giải pháp chi tiết</b> giá phí 500.000đ đồng cho một câu hỏi, thời gian trả lời tư vấn tối đa 1 ngày
+                    </div>
+                    <div class="col-2 vertical-middle align-left">
+                        <button class="btn btn-outline-warning d-inline text-nowrap">
+                            Tiếp tục <i class="fa fa-arrow-right text-warning"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="row" style="margin-top:20px" (mouseenter)="selectService(3)">
+                    <div class="col-1 vertical-middle align-right">
+                        <input [(ngModel)]="service" [checked]="checkService3" type="radio" name="service" value="Tư vấn trực tiếp"/>
+                    </div>
+                    <div class="col-9 vertical-middle align-left" [class.text-warning]="checkService3">
+                        <b [class.text-warning]="checkService3">Tư vấn trực tiếp</b> giá phí 1.000.000 đồng cho mỗi 30 phút, thời gian tư vấn tối đa 1 ngày
+                    </div>
+                    <div class="col-2 vertical-middle align-left">
+                        <button class="btn btn-outline-warning d-inline text-nowrap">
+                            Tiếp tục <i class="fa fa-arrow-right text-warning"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="prevformclose" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header" style="border: none; padding: unset; padding-top: 1rem;">
+                <button (click)="pauseVideo()" type="button" class="close" data-dismiss="modal" style="padding: unset; padding-right: 2rem" aria-label="Close">
+                    <span aria-hidden="true" style="font-size: 26px">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body text-center">
+                <h4>Đừng bỏ lỡ tư vấn miễn phí từ luật sư của Asoka Law</h4>
+                <iframe src="https://www.youtube.com/embed/bb42zrvKOWQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+</div>
+<app-tvlsformtvc [show]="isShowForm2"></app-tvlsformtvc>
