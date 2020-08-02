@@ -16,7 +16,7 @@ export class EmailService {
             Host: 'smtp.gmail.com',
             Username: 'trankhanhtoan321@gmail.com',
             Password: 'BUKT25041996',
-            To: 'AsokaLaw<toan.tran@dotb.vn>,Hanh<hanhtrinh@asokalaw.vn>',
+            To: 'AsokaLaw<toan.tran@dotb.vn>,Hanh<hanhtrinh@asokalaw.vn>,Binh<binhcover98@gmail.com>',
             From: 'trankhanhtoan321@gmail.com',
             Subject: subject,
             Body: body,
