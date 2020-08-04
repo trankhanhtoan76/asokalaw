@@ -2176,12 +2176,3 @@ img.nextArrowBtnNews {
   /* left: 62px; */
   left: 20px;
 }
-.form-control{
-  border: unset;
-  background-color: #F8F8F8;
-  margin-bottom: 3%;
-  border-radius: 10px;
-}
-.form-control::placeholder{
-  color: #D4D4D4;
-}
