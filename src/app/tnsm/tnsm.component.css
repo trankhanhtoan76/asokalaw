@@ -1131,15 +1131,18 @@ hr.blue {
   left: 50%;
   transform: translateX(-35%);
 }
-.mission-circle-list p {
+.mission-circle-list p
+{
   margin-bottom: 0.5rem;
   font-size: 15px;
   font-weight: 500;
-  color: #25405b;
+  color: #0c4c76;
 }
-.mission-circle-list li {
+.mission-circle-list li,
+.mission-circle-list a
+{
   list-style: disc;
-  color: #25405b;
+  color: #0c4c76;
   font-size: 12px;
   font-weight: 500;
   margin-bottom: 5px;

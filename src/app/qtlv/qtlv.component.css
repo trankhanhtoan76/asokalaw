@@ -1353,7 +1353,7 @@ hr.blue {
 }
 /**/
 .support-title p{
-  white-space: nowrap;
+  white-space: normal;
   overflow: hidden;
   text-overflow: ellipsis;
 }

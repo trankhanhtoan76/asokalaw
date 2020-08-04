@@ -896,7 +896,7 @@ img.arrows {
 }
 
 img.news {
-  width: 50px;
+  width: 60px;
 }
 
 img.prevArrowBtnNews {
@@ -946,18 +946,16 @@ img.nextArrowBtnPartner {
 img.prevArrowBtnVideo {
   position: absolute;
   z-index: 1000;
-  height: 10%;
   top: 100px;
-  left: -5px;
+  left: -25px;
   color: #BFAFB2;
 }
 
 img.nextArrowBtnVideo {
   position: absolute;
   z-index: 1000;
-  height: 10%;
   top: 100px;
-  right: -5px;
+  right: -25px;
   color: #BFAFB2;
 }
 
