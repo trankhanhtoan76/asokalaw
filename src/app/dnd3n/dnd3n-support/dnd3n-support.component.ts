@@ -13,8 +13,6 @@ declare var $: any;
     ]
 })
 export class Dnd3nSupportComponent implements OnInit {
-
-
     name: string;
     phone: string;
     email: string;
