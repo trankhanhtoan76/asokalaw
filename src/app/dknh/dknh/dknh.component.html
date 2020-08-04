@@ -65,8 +65,8 @@
                 </div>
                 <div class="row">
                     <div class="form-group col-4">
-                        <button style="margin-bottom: 5px" class="btn btn-light" type="button" (click)="fileInput1.click()">
-                            <span>Tải logo 1</span>
+                        <button style="margin-bottom: 5px" class="btn" type="button" (click)="fileInput1.click()">
+                            <span style="color:#0f74a8;text-decoration: underline;font-size: 11px">Logo đính kèm 1</span>
                             <input #fileInput1 type="file" accept="image/*" (change)="onSelectFile($event,1)" style="display:none;"/>
                         </button>
                         <div *ngIf="logo1.data">
@@ -75,8 +75,8 @@
                         </div>
                     </div>
                     <div class="form-group col-4">
-                        <button style="margin-bottom: 5px" class="btn btn-light" type="button" (click)="fileInput2.click()">
-                            <span>Tải logo 2</span>
+                        <button style="margin-bottom: 5px" class="btn" type="button" (click)="fileInput2.click()">
+                            <span style="color:#0f74a8;text-decoration: underline;font-size: 11px">Logo đính kèm 2</span>
                             <input #fileInput2 type="file" accept="image/*" (change)="onSelectFile($event,2)" style="display:none;"/>
                         </button>
                         <div *ngIf="logo2.data">
@@ -85,8 +85,8 @@
                         </div>
                     </div>
                     <div class="form-group col-4">
-                        <button style="margin-bottom: 5px" class="btn btn-light" type="button" (click)="fileInput3.click()">
-                            <span>Tải logo 3</span>
+                        <button style="margin-bottom: 5px" class="btn" type="button" (click)="fileInput3.click()">
+                            <span style="color:#0f74a8;text-decoration: underline;font-size: 11px">Logo đính kèm 3</span>
                             <input #fileInput3 type="file" accept="image/*" (change)="onSelectFile($event,3)" style="display:none;"/>
                         </button>
                         <div *ngIf="logo3.data">
