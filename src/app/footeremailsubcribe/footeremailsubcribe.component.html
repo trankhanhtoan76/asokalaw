@@ -1,6 +1,6 @@
 <div class="style1 input-group mb-3">
-  <input type="text" class="style2 form-control" name="email" [(ngModel)]="email" placeholder="Vui lòng nhập email của bạn"/>
-  <div class="input-group-append">
-    <button [disabled]="!email" (click)="submit()" class="style3 btn btn-warning" type="button">Gửi</button>
-  </div>
+    <input [class.is-invalid]="!fieldValid(email,'email')" [class.is-valid]="fieldValid(email,'email')" type="text" class="style2 form-control" name="email" [(ngModel)]="email" placeholder="Vui lòng nhập email của bạn"/>
+    <div class="input-group-append">
+        <button [disabled]="!fieldValid(email,'email')" (click)="submit()" class="style3 btn btn-warning" type="button">Gửi</button>
+    </div>
 </div>

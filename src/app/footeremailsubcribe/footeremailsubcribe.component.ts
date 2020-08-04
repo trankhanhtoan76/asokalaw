@@ -17,6 +17,17 @@ export class FooteremailsubcribeComponent implements OnInit {
 
   ngOnInit(): void {
   }
+    fieldValid(value, type?): boolean {
+        if (value) {
+            if (type == 'phone') {
+                return /^[0-9]{10,15}$/.test(value);
+            } else if (type == 'email') {
+                return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(value);
+            }
+            return true;
+        }
+        return false;
+    }
 
   submit(): void {
     this.spinner.show('Sending');
