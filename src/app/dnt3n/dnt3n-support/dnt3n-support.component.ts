@@ -77,11 +77,11 @@ export class Dnt3nSupportComponent implements OnInit {
     }
 
     showForm() {
-        $('#dnd3nform2').modal('show');
+        $('#dnt3nform2').modal('show');
     }
 
     hideForm() {
-        $('#dnd3nform2').modal('hide');
+        $('#dnt3nform2').modal('hide');
     }
 
     isSelectedService(s): boolean {

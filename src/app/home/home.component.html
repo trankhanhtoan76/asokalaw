@@ -7,7 +7,7 @@
           <div class="container-search flex-center-vertically shadow">
             <div class="row row-search">
               <i class="fa fa-search"></i>
-              <select type="text" id="home_business_type_1" name="business_type" class="input-search homeSearch">
+              <select style="width: 90%" type="text" id="home_business_type_1" name="business_type" class="input-search homeSearch">
                 <option value="" selected>Chọn lĩnh vực bạn quan tâm</option>
                 <option value="Enterprise">Doanh nghiệp</option>
                 <option value="Intellectual Property">Sở hữu trí tuệ</option>
@@ -19,7 +19,7 @@
                 <option value="Settlement - study abroad">Định cư - du học</option>
                 <option value="Other">Lĩnh vực khác</option>
               </select>
-              <i onclick="$('#home_business_type_1').click()" class="fa fa-caret-down"></i>
+              <i style="position:absolute;left:67%" class="d-none d-md-block fa fa-caret-down"></i>
             </div>
           </div>
           <button class="btn btn-warning text-color-search shadow btn-banner" (click)="submit()">Tư vấn</button>

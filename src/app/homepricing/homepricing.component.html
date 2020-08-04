@@ -1,130 +1,228 @@
 <section id="price-list">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12 text-center">
-        <h1>Asoka Law được tin dùng bởi +3500 doanh nghiệp</h1>
-        <br/>
-        <p class="p-price-sub-title">Từ công ty khởi nghiệp cho đến công ty hoạt động trên 03 năm đều dễ dàng
-          tìm thấy các dịch vụ pháp lý thiết yếu tại Asoka Law. Đóng gói chặt chẽ theo độ tuổi doanh
-          nghiệp/lĩnh vực kinh doanh, tư vấn nhiệt tình, thực hiện tận tâm. Asoka Law đã hỗ trợ khách hàng
-          kinh doanh thành công từ 2015 cho đến nay.</p>
-        <br/>
-      </div>
-    </div>
-    <div class="row text-center d-none d-md-flex">
-      <div class="col-md-4">
-        <div class="price-list-item shadow-lg">
-          <img src="/assets/media/landingpage/price/1.svg">
-          <h2>Khởi tạo<br/>doanh nghiệp</h2>
-          <div class="price-list-price">
-            <p><sup>Từ</sup>200.000<sup>VNĐ</sup></p>
-          </div>
-          <p class="sub-title">Dịch vụ phổ biến</p>
-          <div class="list-rule">
-            <p><i class="fa fa-caret-right"></i> Tư vấn với Luật sư</p>
-            <p><i class="fa fa-caret-right"></i> Đăng ký kinh doanh</p>
-            <p><i class="fa fa-caret-right"></i> Đăng ký đầu tư</p>
-          </div>
-          <div class="center">
-            <button class="btn btn-warning padding price-button" (click)="submit()" type="button">Đăng ký ngay</button>
-          </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h1>Asoka Law được tin dùng bởi +3500 doanh nghiệp</h1>
+                <br/>
+                <p class="p-price-sub-title">Từ công ty khởi nghiệp cho đến công ty hoạt động trên 03 năm đều dễ dàng
+                    tìm thấy các dịch vụ pháp lý thiết yếu tại Asoka Law. Đóng gói chặt chẽ theo độ tuổi doanh
+                    nghiệp/lĩnh vực kinh doanh, tư vấn nhiệt tình, thực hiện tận tâm. Asoka Law đã hỗ trợ khách hàng
+                    kinh doanh thành công từ 2015 cho đến nay.</p>
+                <br/>
+            </div>
         </div>
-      </div>
-      <div class="col-md-4">
-        <div class="price-list-item shadow-lg">
-          <img src="/assets/media/landingpage/price/3.svg">
-          <h2>Doanh nghiệp<br/>01 đến 03 năm</h2>
-          <div class="price-list-price">
-            <p><sup>Từ</sup>1.990.000<sup>VNĐ</sup></p>
-          </div>
-          <p class="sub-title">Dịch vụ phổ biến</p>
-          <div class="list-rule">
-            <p><i class="fa fa-caret-right"></i> Quản trị 4 trong 1</p>
-            <p><i class="fa fa-caret-right"></i> Ngành nghề điều kiện</p>
-            <p><i class="fa fa-caret-right"></i> Đăng ký nhãn hiệu</p>
+        <div class="row text-center d-none d-md-flex">
+            <div class="col-md-4">
+                <div class="price-list-item shadow-lg">
+                    <img src="/assets/media/landingpage/price/1.svg">
+                    <h2>Khởi tạo<br/>doanh nghiệp</h2>
+                    <div class="price-list-price">
+                        <p><sup>Từ</sup>200.000<sup>VNĐ</sup></p>
+                    </div>
+                    <p class="sub-title">Dịch vụ phổ biến</p>
+                    <div class="list-rule">
+                        <p><i class="fa fa-caret-right"></i> Tư vấn với Luật sư</p>
+                        <p><i class="fa fa-caret-right"></i> Đăng ký kinh doanh</p>
+                        <p><i class="fa fa-caret-right"></i> Đăng ký đầu tư</p>
+                    </div>
+                    <div class="center">
+                        <button class="btn btn-warning padding price-button" (click)="package='Khởi tạo doanh nghiệp';selectMultiService([s1,s5,s7]);showForm()" type="button">Đăng ký ngay</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="price-list-item shadow-lg">
+                    <img src="/assets/media/landingpage/price/3.svg">
+                    <h2>Doanh nghiệp<br/>01 đến 03 năm</h2>
+                    <div class="price-list-price">
+                        <p><sup>Từ</sup>1.990.000<sup>VNĐ</sup></p>
+                    </div>
+                    <p class="sub-title">Dịch vụ phổ biến</p>
+                    <div class="list-rule">
+                        <p><i class="fa fa-caret-right"></i> Quản trị 4 trong 1</p>
+                        <p><i class="fa fa-caret-right"></i> Ngành nghề điều kiện</p>
+                        <p><i class="fa fa-caret-right"></i> Đăng ký nhãn hiệu</p>
 
-          </div>
-          <div class="center">
-            <button class="btn btn-warning padding price-button" (click)="submit()" type="button">Đăng ký ngay</button>
-          </div>
+                    </div>
+                    <div class="center">
+                        <button class="btn btn-warning padding price-button" (click)="package='Doanh nghiệp 01 đến 03 năm';selectMultiService([s2,s3,s8]);showForm()" type="button">Đăng ký ngay</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="price-list-item shadow-lg">
+                    <img src="/assets/media/landingpage/price/4.svg">
+                    <h2>Doanh nghiệp<br/>trên 03 năm</h2>
+                    <div class="price-list-price">
+                        <p><sup>Từ</sup>2.990.000<sup>VNĐ</sup></p>
+                    </div>
+                    <p class="sub-title">Dịch vụ phổ biến</p>
+                    <div class="list-rule">
+                        <p><i class="fa fa-caret-right"></i> Giải quyết tranh chấp</p>
+                        <p><i class="fa fa-caret-right"></i> Pháp lý tổ chức sự kiện</p>
+                        <p><i class="fa fa-caret-right"></i> Tạm ngưng - giải thể</p>
+                    </div>
+                    <div class="center">
+                        <button class="btn btn-warning padding price-button" (click)="package='Doanh nghiệp trên 3 năm';selectMultiService([s4,s6,s9]);showForm()" type="button">Đăng ký ngay</button>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="col-md-4">
-        <div class="price-list-item shadow-lg">
-          <img src="/assets/media/landingpage/price/4.svg">
-          <h2>Doanh nghiệp<br/>trên 03 năm</h2>
-          <div class="price-list-price">
-            <p><sup>Từ</sup>2.990.000<sup>VNĐ</sup></p>
-          </div>
-          <p class="sub-title">Dịch vụ phổ biến</p>
-          <div class="list-rule">
-            <p><i class="fa fa-caret-right"></i> Giải quyết tranh chấp</p>
-            <p><i class="fa fa-caret-right"></i> Pháp lý tổ chức sự kiện</p>
-            <p><i class="fa fa-caret-right"></i> Tạm ngưng - giải thể</p>
-          </div>
-          <div class="center">
-            <button class="btn btn-warning padding price-button" (click)="submit()" type="button">Đăng ký ngay</button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="row text-center d-block d-md-none">
-      <div class="col-sm-12">
-        <div class="price-list-item-mobile shadow-lg">
-          <img src="/assets/media/landingpage/price/1.svg">
-          <h2>Khởi tạo<br/>doanh nghiệp</h2>
-          <div class="price-list-price">
-            <p><sup>Từ</sup>200.000<sup>VNĐ</sup></p>
-          </div>
-          <p class="sub-title">Dịch vụ phổ biến</p>
-          <div class="list-rule">
-            <p><i class="fa fa-caret-right"></i> Tư vấn với Luật sư</p>
-            <p><i class="fa fa-caret-right"></i> Đăng ký kinh doanh</p>
-            <p><i class="fa fa-caret-right"></i> Đăng ký đầu tư</p>
-          </div>
-          <div class="center">
-            <button class="btn btn-warning padding price-button" (click)="submit()" type="button">Đăng ký ngay</button>
-          </div>
-        </div>
-      </div>
+        <div class="row text-center d-block d-md-none">
+            <div class="col-sm-12">
+                <div class="price-list-item-mobile shadow-lg">
+                    <img src="/assets/media/landingpage/price/1.svg">
+                    <h2>Khởi tạo<br/>doanh nghiệp</h2>
+                    <div class="price-list-price">
+                        <p><sup>Từ</sup>200.000<sup>VNĐ</sup></p>
+                    </div>
+                    <p class="sub-title">Dịch vụ phổ biến</p>
+                    <div class="list-rule">
+                        <p><i class="fa fa-caret-right"></i> Tư vấn với Luật sư</p>
+                        <p><i class="fa fa-caret-right"></i> Đăng ký kinh doanh</p>
+                        <p><i class="fa fa-caret-right"></i> Đăng ký đầu tư</p>
+                    </div>
+                    <div class="center">
+                        <button class="btn btn-warning padding price-button" (click)="package='Khởi tạo doanh nghiệp';selectMultiService([s1,s5,s7]);showForm()" type="button">Đăng ký ngay</button>
+                    </div>
+                </div>
+            </div>
 
-      <div class="col-sm-12">
-        <div class="price-list-item-mobile shadow-lg">
-          <img src="/assets/media/landingpage/price/3.svg">
-          <h2>Doanh nghiệp<br/>01 đến 03 năm</h2>
-          <div class="price-list-price">
-            <p><sup>Từ</sup>1.990.000<sup>VNĐ</sup></p>
-          </div>
-          <p class="sub-title">Dịch vụ phổ biến</p>
-          <div class="list-rule">
-            <p><i class="fa fa-caret-right"></i> Quản trị 4 trong 1</p>
-            <p><i class="fa fa-caret-right"></i> Ngành nghề điều kiện</p>
-            <p><i class="fa fa-caret-right"></i> Đăng ký nhãn hiệu</p>
+            <div class="col-sm-12">
+                <div class="price-list-item-mobile shadow-lg">
+                    <img src="/assets/media/landingpage/price/3.svg">
+                    <h2>Doanh nghiệp<br/>01 đến 03 năm</h2>
+                    <div class="price-list-price">
+                        <p><sup>Từ</sup>1.990.000<sup>VNĐ</sup></p>
+                    </div>
+                    <p class="sub-title">Dịch vụ phổ biến</p>
+                    <div class="list-rule">
+                        <p><i class="fa fa-caret-right"></i> Quản trị 4 trong 1</p>
+                        <p><i class="fa fa-caret-right"></i> Ngành nghề điều kiện</p>
+                        <p><i class="fa fa-caret-right"></i> Đăng ký nhãn hiệu</p>
 
-          </div>
-          <div class="center">
-            <button class="btn btn-warning padding price-button" (click)="submit()" type="button">Đăng ký ngay</button>
-          </div>
+                    </div>
+                    <div class="center">
+                        <button class="btn btn-warning padding price-button" (click)="package='Doanh nghiệp 01 đến 03 năm';selectMultiService([s2,s3,s8]);showForm()" type="button">Đăng ký ngay</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12">
+                <div class="price-list-item-mobile shadow-lg">
+                    <img src="/assets/media/landingpage/price/4.svg">
+                    <h2>Doanh nghiệp<br/>trên 03 năm</h2>
+                    <div class="price-list-price">
+                        <p><sup>Từ</sup>2.990.000<sup>VNĐ</sup></p>
+                    </div>
+                    <p class="sub-title">Dịch vụ phổ biến</p>
+                    <div class="list-rule">
+                        <p><i class="fa fa-caret-right"></i> Giải quyết tranh chấp</p>
+                        <p><i class="fa fa-caret-right"></i> Pháp lý tổ chức sự kiện</p>
+                        <p><i class="fa fa-caret-right"></i> Tạm ngưng - giải thể</p>
+                    </div>
+                    <div class="center">
+                        <button class="btn btn-warning padding price-button" (click)="package='doanh nghiệp trên 3 năm';selectMultiService([s4,s6,s9]);showForm()" type="button">Đăng ký ngay</button>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="col-sm-12">
-        <div class="price-list-item-mobile shadow-lg">
-          <img src="/assets/media/landingpage/price/4.svg">
-          <h2>Doanh nghiệp<br/>trên 03 năm</h2>
-          <div class="price-list-price">
-            <p><sup>Từ</sup>2.990.000<sup>VNĐ</sup></p>
-          </div>
-          <p class="sub-title">Dịch vụ phổ biến</p>
-          <div class="list-rule">
-            <p><i class="fa fa-caret-right"></i> Giải quyết tranh chấp</p>
-            <p><i class="fa fa-caret-right"></i> Pháp lý tổ chức sự kiện</p>
-            <p><i class="fa fa-caret-right"></i> Tạm ngưng - giải thể</p>
-          </div>
-          <div class="center">
-            <button class="btn btn-warning padding price-button" (click)="submit()" type="button">Đăng ký ngay</button>
-          </div>
-        </div>
-      </div>
     </div>
-  </div>
 </section>
+
+<div class="modal fade" id="homeform2">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header" style="border: none; padding: unset; padding-top: 1rem;">
+                <button type="button" class="close" style="padding: unset; padding-right: 2rem" aria-label="Close" data-dismiss="modal">
+                    <span aria-hidden="true" style="font-size: 26px">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                    <input [(ngModel)]="name" name="name" [class.is-invalid]="!fieldValid(name)" [class.is-valid]="fieldValid(name)" type="text" class="form-control" id="name" placeholder="Họ tên*">
+                </div>
+                <div class="form-group">
+                    <input [(ngModel)]="phone" name="phone" [class.is-invalid]="!fieldValid(phone,'phone')" [class.is-valid]="fieldValid(phone,'phone')" class="form-control" type="text" id="phone" placeholder="Số điện thoại*" required/>
+                </div>
+                <div class="form-group">
+                    <input [(ngModel)]="email" name="email" [class.is-invalid]="!fieldValid(email,'email')" [class.is-valid]="fieldValid(email,'email')" class="form-control" type="email" id="email" placeholder="Email*" required/>
+                </div>
+                <div class="form-group">
+                    <label>Dịch vụ pháp lý yêu cầu tư vấn*</label>
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-check-inline">
+                                    <input (change)="selectService(s1)" [checked]="isSelectedService(s1)" class="form-check-input" name="service" type="checkbox" id="service1" [value]="s1">
+                                    <label class="form-check-label font-weight-normal" for="service1">{{s1}}</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-check-inline">
+                                    <input (change)="selectService(s2)" [checked]="isSelectedService(s2)" class="form-check-input" name="service" type="checkbox" id="service2" [value]="s2">
+                                    <label class="form-check-label font-weight-normal" for="service2">{{s2}}</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-check-inline">
+                                    <input (change)="selectService(s3)" [checked]="isSelectedService(s3)" class="form-check-input" name="service" type="checkbox" id="service3" [value]="s3">
+                                    <label class="form-check-label font-weight-normal" for="service3">{{s3}}</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-check-inline">
+                                    <input (change)="selectService(s4)" [checked]="isSelectedService(s4)" class="form-check-input" name="service" type="checkbox" id="service4" [value]="s4">
+                                    <label class="form-check-label font-weight-normal" for="service4">{{s4}}</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-check-inline">
+                                    <input (change)="selectService(s5)" [checked]="isSelectedService(s5)" class="form-check-input" name="service" type="checkbox" id="service5" [value]="s5">
+                                    <label class="form-check-label font-weight-normal" for="service5">{{s5}}</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-check-inline">
+                                    <input (change)="selectService(s6)" [checked]="isSelectedService(s6)" class="form-check-input" name="service" type="checkbox" id="service6" [value]="s6">
+                                    <label class="form-check-label font-weight-normal" for="service6">{{s6}}</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-check-inline">
+                                    <input (change)="selectService(s7)" [checked]="isSelectedService(s7)" class="form-check-input" name="service" type="checkbox" id="service7" [value]="s7">
+                                    <label class="form-check-label font-weight-normal" for="service7">{{s7}}</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-check-inline">
+                                    <input (change)="selectService(s8)" [checked]="isSelectedService(s8)" class="form-check-input" name="service" type="checkbox" id="service8" [value]="s8">
+                                    <label class="form-check-label font-weight-normal" for="service8">{{s8}}</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-check-inline">
+                                    <input (change)="selectService(s9)" [checked]="isSelectedService(s9)" class="form-check-input" name="service" type="checkbox" id="service9" [value]="s9">
+                                    <label class="form-check-label font-weight-normal" for="service7">{{s9}}</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <textarea [(ngModel)]="description" name="description" class="form-control" id="questiontext" rows="3" placeholder="Vấn đề bạn cần tư vấn"></textarea>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button (click)="submit()" [disabled]="!formValid()" style="margin: auto; color: white;" type="button" class="btn btn-warning" data-dismiss="modal">Gửi yêu cầu</button>
+            </div>
+        </div>
+    </div>
+</div>
