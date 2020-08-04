@@ -39,7 +39,7 @@ export class DknhintroComponent implements OnInit {
     fieldValid(value, type?): boolean {
         if (value) {
             if (type == 'phone') {
-                return /^[0-9]{8,15}$/.test(value);
+                return /^[0-9]{10,15}$/.test(value);
             } else if (type == 'email') {
                 return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(value);
             }
