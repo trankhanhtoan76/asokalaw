@@ -291,6 +291,7 @@ p.des-record {
   font-size: 13px;
   padding-left: 10px;
   margin-bottom: 0px !important;
+    white-space: normal;
 }
 
 .support-title i {

@@ -22,8 +22,8 @@ export class PltxvideosComponent implements OnInit {
       slidesToScroll: 1,
       autoplay: true,
       autoplaySpeed: 3000,
-      nextArrow: '<img src="/assets/media/landingpage/Asset 83.svg" class="nextArrowBtnVideo">',
-      prevArrow: '<img src="/assets/media/landingpage/Asset 84.svg" class="prevArrowBtnVideo">',
+      nextArrow: '<img src="/assets/media/landingpage/Asset 83.svg" class="nextArrowBtnVideo" style="width: 25px">',
+      prevArrow: '<img src="/assets/media/landingpage/Asset 84.svg" class="prevArrowBtnVideo" style="width: 25px">',
       responsive: [
         {
           breakpoint: 800,

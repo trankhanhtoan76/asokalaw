@@ -524,7 +524,7 @@ p.des-record {
   position: absolute;
   top: 1rem;
   right: -105%;
-  background-color: #83878ac7;
+  background-color: #4bb1e0;
 }.call p:before {
    content: '';
    width: 100%;
@@ -532,7 +532,7 @@ p.des-record {
    position: absolute;
    top: 1rem;
    left: -105%;
-   background-color: #83878ac7;
+   background-color: #4bb1e0;
  }
 #contact p b{
   font-size: 20px;
@@ -619,7 +619,7 @@ p.des-record {
     position: absolute;
     top: 1rem;
     right: -25%;
-    background-color: #83878ac7;
+    background-color: #4bb1e0;
   }.call p:before {
      content: '';
      width: 20%;
@@ -627,7 +627,7 @@ p.des-record {
      position: absolute;
      top: 1rem;
      left: -25%;
-     background-color: #83878ac7;
+     background-color: #4bb1e0;
    }
   #support .des-record {
     padding: 0px 1rem;
