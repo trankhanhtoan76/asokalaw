@@ -22,8 +22,8 @@ export class TvlsteamComponent implements OnInit {
       slidesToScroll: 1,
 
       autoplaySpeed: 4000,
-      nextArrow: '<img src="/assets/media/landingpage/Asset 83.svg" class="nextArrowBtnNews news">',
-      prevArrow: '<img src="/assets/media/landingpage/Asset 84.svg" class="prevArrowBtnNews news">',
+      nextArrow: '<img src="/assets/media/landingpage/Asset 83.svg" class="nextArrowBtnNews news" style="width: 25px;top:80px">',
+      prevArrow: '<img src="/assets/media/landingpage/Asset 84.svg" class="prevArrowBtnNews news" style="width: 25px;top:80px">',
       responsive: [
         {
           breakpoint: 800,
