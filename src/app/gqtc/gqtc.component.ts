@@ -15,8 +15,28 @@ export class GqtcComponent implements OnInit {
     email;
     package;
     description;
+    attachment: string;
+    attachmentName: string;
 
     constructor(private spinner: SpinnerService, private smtp: EmailService) {
+    }
+
+    onRemoveSelectedFile() {
+        this.attachmentName = '';
+        this.attachment = '';
+    }
+
+    onSelectFile(e) {
+        const file = e.dataTransfer ? e.dataTransfer.files[0] : e.target.files[0];
+        const reader = new FileReader();
+        this.attachmentName = e.srcElement.value.replace(/^.*[\\\/]/, '')
+        reader.onload = this.readFile.bind(this);
+        reader.readAsDataURL(file);
+    }
+
+    readFile(e) {
+        let reader = e.target;
+        this.attachment = reader.result;
     }
 
     selectPackage(name) {
@@ -93,7 +113,9 @@ export class GqtcComponent implements OnInit {
         </div></td><td width="40"></td></tr></tbody></table></td></tr><tr><td height="22"></td></tr></tbody></table></td></tr></tbody></table>
             `;
         const subject = '[Website] Khách hàng đăng ký dịch vụ: ' + this.name;
-        this.smtp.send(subject, body).then(
+        let attachments = [];
+        if (this.attachment) attachments.push({name: this.attachmentName, data: this.attachment});
+        this.smtp.send(subject, body, attachments).then(
             message => {
                 this.spinner.hide();
                 $('#alert-success').modal('show');

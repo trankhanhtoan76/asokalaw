@@ -37,16 +37,13 @@
             <div class="modal-body">
                 <h4 class="text-center">Nhận tư vấn miễn phí</h4>
                 <div class="form-group">
-                    <label class="col-form-label">Họ tên</label>
-                    <input [class.is-invalid]="!fieldValid(name)" [class.is-valid]="fieldValid(name)" type="text" class="form-control" [(ngModel)]="name" name="name">
+                    <input [class.is-invalid]="!fieldValid(name)" [class.is-valid]="fieldValid(name)" type="text" class="form-control" [(ngModel)]="name" name="name" placeholder="Họ tên *">
                 </div>
                 <div class="form-group">
-                    <label class="col-form-label">Số điện thoại</label>
-                    <input [class.is-invalid]="!fieldValid(phone,'phone')" [class.is-valid]="fieldValid(phone,'phone')" class="form-control" [(ngModel)]="phone" name="phone" type="tel"/>
+                    <input [class.is-invalid]="!fieldValid(phone,'phone')" [class.is-valid]="fieldValid(phone,'phone')" class="form-control" [(ngModel)]="phone" name="phone" type="tel" placeholder="Số điện thoại *"/>
                 </div>
                 <div class="form-group">
-                    <label class="col-form-label">Email</label>
-                    <input [class.is-invalid]="!fieldValid(email,'email')" [class.is-valid]="fieldValid(email,'email')" class="form-control" name="email" [(ngModel)]="email" type="email"/>
+                    <input [class.is-invalid]="!fieldValid(email,'email')" [class.is-valid]="fieldValid(email,'email')" class="form-control" name="email" [(ngModel)]="email" type="email" placeholder="Email *"/>
                 </div>
                 <div class="form-group">
                     <label class="col-form-label">Tên doanh nghiệp (Nếu bạn đăng ký khóa học pháp lý)<sup>*</sup></label>
@@ -55,23 +52,13 @@
                 <div class="form-group problem-checkbox">
                     <label>Chọn dịch vụ bạn cần tự vấn</label>
                     <div class="row">
-                        <div class="col-md-12">
+                        <div class="col-md-6">
                             <div class="form-check form-check-inline">
                                 <input class="form-check-input" [checked]="s1Check" (change)="s1Check=!s1Check" type="checkbox">
                                 <span class="form-check-label">{{s1}}</span>
                             </div>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" [checked]="s2Check" (change)="s2Check=!s2Check" type="checkbox">
-                                <span class="form-check-label">{{s2}}</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12">
+                        <div class="col-md-6">
                             <div class="form-check form-check-inline">
                                 <input class="form-check-input" [checked]="s3Check" (change)="s3Check=!s3Check" type="checkbox">
                                 <span class="form-check-label">{{s3}}</span>
@@ -79,7 +66,13 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-md-12">
+                        <div class="col-md-6">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" [checked]="s2Check" (change)="s2Check=!s2Check" type="checkbox">
+                                <span class="form-check-label">{{s2}}</span>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
                             <div class="form-check form-check-inline">
                                 <input class="form-check-input" [checked]="s4Check" (change)="s4Check=!s4Check" type="checkbox">
                                 <span class="form-check-label">{{s4}}</span>
