@@ -4,7 +4,7 @@
             <div class="container">
                 <div class="row" style="height: 55px;">
                     <div class="col-md-6" style="margin: auto; display: grid;">
-                        <div *ngIf="!isMobileScreen()" class="tel" style="font-size: 16px;font-weight: 300; color: #afaead;font-family:'Montserrat',serif;">
+                        <div class="tel d-none d-md-block" style="font-size: 16px;font-weight: 300; color: #afaead;font-family:'Montserrat',serif;">
                             <img style="height: 16px;  padding-right: 2px;" src="/assets/media/mail_icon.svg"/> consult@asokalaw.vn
                             &nbsp;&nbsp;
                             <img style="height: 16px" src="/assets/media/phone_icon.svg"/>
@@ -12,14 +12,22 @@
                                 028 62 789 228
                             </a>
                         </div>
+
                     </div>
                     <div class="col-md-6" style="margin: auto; float:right;">
                         <div style="margin-top: 2px;float:right; padding: 10px 5px;">
                             <a style=" font-weight: bold;" href="#">VN</a>
                             <span style="    font-size: 15px; font-weight: 900; color:#fff"> | </span>
-                            <a style=" font-weight: bold;" href="#">EN</a></div>
-                        <div class="padding" [ngStyle]="isMobileScreen()?{float:'left'}:{float:'right'}">
+                            <a style=" font-weight: bold;" href="#">EN</a>
+                        </div>
+                        <div class="padding d-none d-md-block" style="float:right">
                             <button id="headerButtonModal" data-toggle="modal" data-target="#modalHomeAdvice" class="float-right btn btn-outline-warning padding" type="button">Nhận tư vấn miễn phí</button>
+                        </div>
+                        <div class="padding d-block d-md-none" style="float: left">
+                            <img style="height: 16px" src="/assets/media/phone_icon.svg"/>
+                            <a href="tel:02862789228">
+                                028 62 789 228
+                            </a>
                         </div>
                     </div>
                 </div>
