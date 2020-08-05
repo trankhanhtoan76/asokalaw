@@ -10,6 +10,9 @@ declare var Email: any;
     styleUrls: ['./chnn.component.css']
 })
 export class ChnnComponent implements OnInit {
+    n;
+    e;
+    p;
     name;
     email;
     phone;

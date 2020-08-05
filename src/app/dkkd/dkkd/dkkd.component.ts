@@ -16,6 +16,9 @@ export class DkkdComponent implements OnInit {
     typeCompany: string;
     package: string;
     consult: string;
+    n;
+    e;
+    p;
 
     constructor(private spinner: SpinnerService) {
     }

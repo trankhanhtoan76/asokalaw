@@ -239,13 +239,13 @@
                 <div class="col-md-6">
                     <div class="form-group">
                         <label for="name" class="col-form-label">Họ và tên</label>
-                        <input [class.is-invalid]="!fieldValid(name)" [class.is-valid]="fieldValid(name)" [(ngModel)]="name" name="name" type="text" class="form-control" id="name">
+                        <input (change)="n=true" [class.is-invalid]="!fieldValid(name) && n" [class.is-valid]="fieldValid(name) && n" [(ngModel)]="name" name="name" type="text" class="form-control" id="name">
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="form-group">
                         <label for="email" class="col-form-label">Email</label>
-                        <input [class.is-invalid]="!fieldValid(email,'email')" [class.is-valid]="fieldValid(email,'email')" [(ngModel)]="email" name="email" type="text" class="form-control" id="email">
+                        <input (change)="e=true" [class.is-invalid]="!fieldValid(email,'email') && e" [class.is-valid]="fieldValid(email,'email') && e" [(ngModel)]="email" name="email" type="text" class="form-control" id="email">
                     </div>
                 </div>
             </div>
@@ -253,7 +253,7 @@
                 <div class="col-md-6">
                     <div class="form-group">
                         <label for="phone" class="col-form-label">Số điện thoại</label>
-                        <input [class.is-invalid]="!fieldValid(phone,'phone')" [class.is-valid]="fieldValid(phone,'phone')" [(ngModel)]="phone" name="phone" type="text" class="form-control" id="phone">
+                        <input (change)="p=true" [class.is-invalid]="!fieldValid(phone,'phone') && p" [class.is-valid]="fieldValid(phone,'phone') && p" [(ngModel)]="phone" name="phone" type="text" class="form-control" id="phone">
                     </div>
                 </div>
                 <div class="col-md-6">

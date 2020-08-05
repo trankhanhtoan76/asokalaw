@@ -52,13 +52,13 @@
             </div>
             <div class="modal-body">
                 <div class="form-group">
-                    <input [class.is-invalid]="!fieldValid(name)" [class.is-valid]="fieldValid(name)" style="margin-bottom: 3%;" type="text" [(ngModel)]="name" class="form-control" name="name" placeholder="Họ và tên">
+                    <input (change)="n=true" [class.is-invalid]="!fieldValid(name)&&n" [class.is-valid]="fieldValid(name)&&n" style="margin-bottom: 3%;" type="text" [(ngModel)]="name" class="form-control" name="name" placeholder="Họ và tên *">
                 </div>
                 <div class="form-group">
-                    <input [class.is-invalid]="!fieldValid(phone,'phone')" [class.is-valid]="fieldValid(phone,'phone')" [(ngModel)]="phone" style="margin-bottom: 3%;" type="text" class="form-control" name="phone" placeholder="Số điện thoại*">
+                    <input (change)="p=true" [class.is-invalid]="!fieldValid(phone,'phone')&&p" [class.is-valid]="fieldValid(phone,'phone')&&p" [(ngModel)]="phone" style="margin-bottom: 3%;" type="text" class="form-control" name="phone" placeholder="Số điện thoại *">
                 </div>
                 <div class="form-group">
-                    <input [class.is-invalid]="!fieldValid(email,'email')" [class.is-valid]="fieldValid(email,'email')" [(ngModel)]="email" style="margin-bottom: 3%;" type="text" class="form-control" name="email" placeholder="Email*">
+                    <input (change)="e=true" [class.is-invalid]="!fieldValid(email,'email')&&e" [class.is-valid]="fieldValid(email,'email')&&e" [(ngModel)]="email" style="margin-bottom: 3%;" type="text" class="form-control" name="email" placeholder="Email *">
                 </div>
                 <div class="form-group">
                     <textarea [(ngModel)]="description" name="description" class="form-control" rows="3" placeholder="Tên nhãn hiệu, ngành nghề kinh doanh. Vd: Flow Media-Truyền thông marketing"></textarea>

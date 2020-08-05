@@ -29,6 +29,10 @@ export class DknhComponent implements OnInit {
     email: string;
     phone: string;
     description: string;
+    n;
+    p;
+    e;
+
 
     constructor(private spinner: SpinnerService, private smtp: EmailService) {
     }

@@ -16,6 +16,9 @@ export class DkdtComponent implements OnInit {
     form = 'Thành lập doanh nghiệp mới';
     service = 'Gói tiết kiệm';
     description: string;
+    n;
+    e;
+    p;
 
     constructor(private spinner: SpinnerService, private smtp: EmailService) {
     }

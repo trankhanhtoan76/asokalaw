@@ -14,6 +14,9 @@ export class ContactComponent implements OnInit {
     phone: string;
     email: string;
     description: string;
+    n;
+    e;
+    p;
 
     constructor(private spinner: SpinnerService) {
     }

@@ -16,6 +16,7 @@ export class DkkdsupportComponent implements OnInit {
   service: any;
   serviceT: any;
   description: string;
+  n;p;e;
 
   constructor(private spinner: SpinnerService) {
     this.service = [false, false, false, false, false, false, false];

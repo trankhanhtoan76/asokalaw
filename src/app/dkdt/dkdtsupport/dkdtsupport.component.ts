@@ -22,6 +22,9 @@ export class DkdtsupportComponent implements OnInit {
     s2Check = false;
     s3Check = false;
     s4Check = false;
+    n;
+    e;
+    p;
 
     constructor(private smtp: EmailService, private spinner: SpinnerService) {
     }

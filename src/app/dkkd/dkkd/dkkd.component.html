@@ -48,15 +48,15 @@
             <div class="modal-body">
                 <div class="form-group">
                     <label class="col-form-label">Họ tên *</label>
-                    <input [class.is-invalid]="!fieldValid(name)" [class.is-valid]="fieldValid(name)" type="text" class="form-control" [(ngModel)]="name" name="name">
+                    <input (change)="n=true" [class.is-invalid]="!fieldValid(name)&&n" [class.is-valid]="fieldValid(name)&&n" type="text" class="form-control" [(ngModel)]="name" name="name">
                 </div>
                 <div class="form-group">
                     <label class="col-form-label">Số điện thoại *</label>
-                    <input [class.is-invalid]="!fieldValid(phone,'phone')" [class.is-valid]="fieldValid(phone,'phone')" class="form-control" [(ngModel)]="phone" name="phone" type="tel"/>
+                    <input (change)="p=true" [class.is-invalid]="!fieldValid(phone,'phone')&&p" [class.is-valid]="fieldValid(phone,'phone')&&p" class="form-control" [(ngModel)]="phone" name="phone" type="tel"/>
                 </div>
                 <div class="form-group">
                     <label class="col-form-label">Email *</label>
-                    <input [class.is-invalid]="!fieldValid(email,'email')" [class.is-valid]="fieldValid(email,'email')" class="form-control" name="email" [(ngModel)]="email" type="email"/>
+                    <input (change)="e=true" [class.is-invalid]="!fieldValid(email,'email')&&e" [class.is-valid]="fieldValid(email,'email')&&e" class="form-control" name="email" [(ngModel)]="email" type="email"/>
                 </div>
                 <div class="form-group">
                     <label>Loại hình công ty bạn muốn đăng ký</label>

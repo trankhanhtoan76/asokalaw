@@ -87,9 +87,9 @@
                 <form>
                     <div class="form-group">
                         <h1 style="margin-bottom: 20px">Hãy để lại lời nhắn của bạn</h1>
-                        <input [(ngModel)]="name" [class.is-invalid]="!fieldValid(name)" [class.is-valid]="fieldValid(name)" name="name" type="text" class="form-control input-custom" placeholder="Họ và tên">
-                        <input [(ngModel)]="phone" [class.is-invalid]="!fieldValid(phone,'phone')" [class.is-valid]="fieldValid(phone,'phone')" name="phone" type="text" class="form-control input-custom" placeholder="Số điện thoại*">
-                        <input [(ngModel)]="email" [class.is-invalid]="!fieldValid(email,'email')" [class.is-valid]="fieldValid(email,'email')" name="email" type="email" class="form-control input-custom" placeholder="Email*">
+                        <input (change)="n=true" [(ngModel)]="name" [class.is-invalid]="!fieldValid(name) && n" [class.is-valid]="fieldValid(name)&&n" name="name" type="text" class="form-control input-custom" placeholder="Họ và tên *">
+                        <input (change)="p" [(ngModel)]="phone" [class.is-invalid]="!fieldValid(phone,'phone')&&p" [class.is-valid]="fieldValid(phone,'phone')&&p" name="phone" type="text" class="form-control input-custom" placeholder="Số điện thoại *">
+                        <input (change)="e=true" [(ngModel)]="email" [class.is-invalid]="!fieldValid(email,'email')&&e" [class.is-valid]="fieldValid(email,'email')&&e" name="email" type="email" class="form-control input-custom" placeholder="Email *">
                         <textarea class="form-control input-custom" rows="7" placeholder="Lời nhắn của bạn"></textarea>
                     </div>
                     <div>
