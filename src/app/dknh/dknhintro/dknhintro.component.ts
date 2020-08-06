@@ -121,7 +121,7 @@ export class DknhintroComponent implements OnInit {
 
     changeFormHeight() {
         if (this.logo1.data || this.logo2.data || this.logo3.data) {
-            this.formHeight = 500;
+            this.formHeight = 550;
         } else {
             this.formHeight = 450;
         }
