@@ -3,5 +3,6 @@
     RewriteCond %{REQUEST_FILENAME} -f [OR]
     RewriteCond %{REQUEST_FILENAME} -d
     RewriteRule ^ - [L]
+    RewriteRule ^trademark-registration https://en.asokalaw.vn/trademark-registration [L]
     RewriteRule ^ index.html [L]
 </IfModule>
