@@ -19,8 +19,8 @@ export class Dnd3nFeedbackComponent implements OnInit {
   }
 
   ngAfterContentInit(): void {
-    $('.feedback-slide-pltx').slick({
-      dots: true,
+    $('.create-slider').slick({
+      dots:true,
       infinite: true,
       slidesToShow: 1,
       slidesToScroll: 1,
@@ -28,8 +28,8 @@ export class Dnd3nFeedbackComponent implements OnInit {
       autoplaySpeed: 4000,
       nextArrow: false,
       prevArrow: false,
-      customPaging: function(slider, i) {
-        return '<i class="fa fa-circle"></i>';
+      customPaging : function(slider, i) {
+          return '<span class="create-dots-circle"></span>';
       },
       focusOnSelect: true
     });
