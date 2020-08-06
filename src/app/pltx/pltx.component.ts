@@ -5,21 +5,25 @@ import {EmailService} from '../service/email.service';
 declare var $: any;
 
 @Component({
-  selector: 'app-pltx',
-  templateUrl: './pltx.component.html',
-  styleUrls: ['./pltx.component.css']
+    selector: 'app-pltx',
+    templateUrl: './pltx.component.html',
+    styleUrls: ['./pltx.component.css']
 })
 export class PltxComponent implements OnInit {
-  name;
-  phone;
-  email;
-  package;
+    name;
+    phone;
+    email;
+    package;
+    e;
+    p;
+    n;
 
-  constructor(private spinner: SpinnerService, private smtp: EmailService) {
-  }
+    constructor(private spinner: SpinnerService, private smtp: EmailService) {
+    }
 
-  ngOnInit(): void {
-  }
+    ngOnInit(): void {
+    }
+
     fieldValid(value, type?): boolean {
         if (value) {
             if (type == 'phone') {
@@ -53,9 +57,12 @@ export class PltxComponent implements OnInit {
         }
     }
 
-  submit(): void {
-    this.spinner.show('sending');
-    const body = `<table width="620" cellspacing="0" cellpadding="0" border="0" align="center"> <tbody> <tr> <td bgcolor="#f5f5f5"> <table width="578" cellspacing="0" cellpadding="0" border="0" align="center"> <tbody> <tr> <td height="16"></td> </tr> <tr> <td align="center"><img src="https://ci5.googleusercontent.com/proxy/-8AhuwEBWjbUauG2vyvW7r8a5aY2HZ9kZC00fhd_MiyExMPvQkH3XjyfGME-foH3AJigwdw1OkhD7o3RDAsPCB4=s0-d-e1-ft#https://www.asokalaw.vn/assets/images/logo.png" alt="Công ty Luật TNHH Asoka" style="width:200px" class="CToWUd"></td> </tr> <tr> <td height="16"></td> </tr> <tr> <td align="left" bgcolor="#fff"> <div style="border-style:solid;border-width:1px;border-color:#ccc"> <table width="578" cellspacing="0" cellpadding="0" border="0" align="center"> <tbody> <tr> <td height="22" colspan="3"></td> </tr> <tr> <td width="40"></td> <td width="498">
+    submit(): void {
+        this.e = this.p = this.n = true;
+        if (!this.formValid()) return;
+
+        this.spinner.show('sending');
+        const body = `<table width="620" cellspacing="0" cellpadding="0" border="0" align="center"> <tbody> <tr> <td bgcolor="#f5f5f5"> <table width="578" cellspacing="0" cellpadding="0" border="0" align="center"> <tbody> <tr> <td height="16"></td> </tr> <tr> <td align="center"><img src="https://ci5.googleusercontent.com/proxy/-8AhuwEBWjbUauG2vyvW7r8a5aY2HZ9kZC00fhd_MiyExMPvQkH3XjyfGME-foH3AJigwdw1OkhD7o3RDAsPCB4=s0-d-e1-ft#https://www.asokalaw.vn/assets/images/logo.png" alt="Công ty Luật TNHH Asoka" style="width:200px" class="CToWUd"></td> </tr> <tr> <td height="16"></td> </tr> <tr> <td align="left" bgcolor="#fff"> <div style="border-style:solid;border-width:1px;border-color:#ccc"> <table width="578" cellspacing="0" cellpadding="0" border="0" align="center"> <tbody> <tr> <td height="22" colspan="3"></td> </tr> <tr> <td width="40"></td> <td width="498">
         <h3 style="font-family:arial;font-size:16px">Chào Ban Quản Trị,</h3>
         <h3>Dịch vụ: Pháp lý thường xuyên</h3>
         <table width="100%" cellspacing="0" cellpadding="0" border="0"> <tbody>
@@ -82,13 +89,13 @@ export class PltxComponent implements OnInit {
         ©2015 Công ty Luật TNHH Asoka,  228 Nguyễn Hoàng, P. An Phú, Quận 2, Tp. HCM
         </div></td><td width="40"></td></tr></tbody></table></td></tr><tr><td height="22"></td></tr></tbody></table></td></tr></tbody></table>
             `;
-    const subject = '[Website] Khách hàng đăng ký dịch vụ: ' + this.name;
-    this.smtp.send(subject, body).then(
-      message => {
-        this.spinner.hide();
-        $('#alert-success').modal('show');
-        $('#pltxform1').modal('hide');
-      }
-    );
-  }
+        const subject = '[Website] Khách hàng đăng ký dịch vụ: ' + this.name;
+        this.smtp.send(subject, body).then(
+            message => {
+                this.spinner.hide();
+                $('#alert-success').modal('show');
+                $('#pltxform1').modal('hide');
+            }
+        );
+    }
 }

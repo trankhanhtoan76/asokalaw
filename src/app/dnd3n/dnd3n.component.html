@@ -45,13 +45,16 @@
             </div>
             <div class="modal-body">
                 <div class="form-group">
-                    <input [(ngModel)]="name" name="name" [class.is-invalid]="!fieldValid(name)" [class.is-valid]="fieldValid(name)" type="text" class="form-control" id="name" placeholder="Họ tên*">
+                    <input (keyup)="n=true" [class.is-invalid]="!fieldValid(name)&&n" [class.is-valid]="fieldValid(name)&&n" type="text" class="form-control" [(ngModel)]="name" name="name" placeholder="Họ tên *">
+                    <i *ngIf="!fieldValid(name) && n"><small class="text-danger">Bắt buộc nhập họ tên.</small></i>
                 </div>
                 <div class="form-group">
-                    <input [(ngModel)]="phone" name="phone" [class.is-invalid]="!fieldValid(phone,'phone')" [class.is-valid]="fieldValid(phone,'phone')" class="form-control" type="text" id="phone" placeholder="Số điện thoại*" required/>
+                    <input (keyup)="p=true" [class.is-invalid]="!fieldValid(phone,'phone')&&p" [class.is-valid]="fieldValid(phone,'phone')&&p" class="form-control" [(ngModel)]="phone" name="phone" type="text" placeholder="Số điện thoại *"/>
+                    <i *ngIf="!fieldValid(phone,'phone') && p"><small class="text-danger">Bắt buộc nhập số điện thoại hợp lệ.</small></i>
                 </div>
                 <div class="form-group">
-                    <input [(ngModel)]="email" name="email" [class.is-invalid]="!fieldValid(email,'email')" [class.is-valid]="fieldValid(email,'email')" class="form-control" type="email" id="email" placeholder="Email*" required/>
+                    <input (keyup)="e=true" [class.is-invalid]="!fieldValid(email,'email')&&e" [class.is-valid]="fieldValid(email,'email')&&e" class="form-control" name="email" [(ngModel)]="email" type="text" placeholder="Email *"/>
+                    <i *ngIf="!fieldValid(email,'email') && e"><small class="text-danger">Bắt buộc nhập email hợp lệ.</small></i>
                 </div>
                 <div class="form-group">
                     <label>Dịch vụ pháp lý yêu cầu tư vấn*</label>
@@ -95,7 +98,7 @@
                 </div>
             </div>
             <div class="modal-footer">
-                <button (click)="submit()" [disabled]="!formValid()" style="margin: auto; color: white;" type="button" class="btn btn-warning" data-dismiss="modal">Gửi yêu cầu</button>
+                <button (click)="submit()" style="margin: auto; color: white;" type="button" class="btn btn-warning" data-dismiss="modal">Gửi yêu cầu</button>
             </div>
         </div>
     </div>

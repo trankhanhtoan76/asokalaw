@@ -19,6 +19,9 @@ export class HeaderComponent implements OnInit {
     service: any;
     business: string;
     serviceTranslate: any;
+    n;
+    p;
+    e;
 
     constructor(private spinner: SpinnerService) {
         this.service = {
@@ -107,6 +110,9 @@ export class HeaderComponent implements OnInit {
     }
 
     submit(): void {
+        this.e = this.p = this.n = true;
+        if (!this.formValid()) return;
+
         this.business = $('#home_business_type option:selected').text();
         this.spinner.show('Sending');
         let serviceReg = '';

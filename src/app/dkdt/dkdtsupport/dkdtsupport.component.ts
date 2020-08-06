@@ -87,6 +87,9 @@ export class DkdtsupportComponent implements OnInit {
     }
 
     submit(): void {
+        this.p = this.n = this.e = true;
+        if (!this.formValid()) return;
+
         this.spinner.show('sending');
         let s = '';
         if (this.s1Check) {

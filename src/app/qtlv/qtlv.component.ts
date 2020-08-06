@@ -15,6 +15,9 @@ export class QtlvComponent implements OnInit {
     email: string;
     service = [];
     description: string;
+    n;
+    p;
+    e;
 
     constructor(private spinner: SpinnerService, private smtp: EmailService) {
     }
@@ -65,6 +68,9 @@ export class QtlvComponent implements OnInit {
     }
 
     submit(): void {
+        this.n = this.e = this.p = true;
+        if (!this.formValid()) return;
+
         const serviceString = '<li>' + this.service.join('</li><li>') + '</li>';
         this.spinner.show('sending');
         const body = `<table width="620" cellspacing="0" cellpadding="0" border="0" align="center"> <tbody> <tr> <td bgcolor="#f5f5f5"> <table width="578" cellspacing="0" cellpadding="0" border="0" align="center"> <tbody> <tr> <td height="16"></td> </tr> <tr> <td align="center"><img src="https://ci5.googleusercontent.com/proxy/-8AhuwEBWjbUauG2vyvW7r8a5aY2HZ9kZC00fhd_MiyExMPvQkH3XjyfGME-foH3AJigwdw1OkhD7o3RDAsPCB4=s0-d-e1-ft#https://www.asokalaw.vn/assets/images/logo.png" alt="Công ty Luật TNHH Asoka" style="width:200px" class="CToWUd"></td> </tr> <tr> <td height="16"></td> </tr> <tr> <td align="left" bgcolor="#fff"> <div style="border-style:solid;border-width:1px;border-color:#ccc"> <table width="578" cellspacing="0" cellpadding="0" border="0" align="center"> <tbody> <tr> <td height="22" colspan="3"></td> </tr> <tr> <td width="40"></td> <td width="498">

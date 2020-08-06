@@ -47,16 +47,16 @@
             </div>
             <div class="modal-body">
                 <div class="form-group">
-                    <label class="col-form-label">Họ tên *</label>
-                    <input (change)="n=true" [class.is-invalid]="!fieldValid(name)&&n" [class.is-valid]="fieldValid(name)&&n" type="text" class="form-control" [(ngModel)]="name" name="name">
+                    <input (keyup)="n=true" [class.is-invalid]="!fieldValid(name)&&n" [class.is-valid]="fieldValid(name)&&n" type="text" class="form-control" [(ngModel)]="name" name="name" placeholder="Họ tên *">
+                    <i *ngIf="!fieldValid(name) && n"><small class="text-danger">Bắt buộc nhập họ tên.</small></i>
                 </div>
                 <div class="form-group">
-                    <label class="col-form-label">Số điện thoại *</label>
-                    <input (change)="p=true" [class.is-invalid]="!fieldValid(phone,'phone')&&p" [class.is-valid]="fieldValid(phone,'phone')&&p" class="form-control" [(ngModel)]="phone" name="phone" type="tel"/>
+                    <input (keyup)="p=true" [class.is-invalid]="!fieldValid(phone,'phone')&&p" [class.is-valid]="fieldValid(phone,'phone')&&p" class="form-control" [(ngModel)]="phone" name="phone" type="text" placeholder="Số điện thoại *"/>
+                    <i *ngIf="!fieldValid(phone,'phone') && p"><small class="text-danger">Bắt buộc nhập số điện thoại hợp lệ.</small></i>
                 </div>
                 <div class="form-group">
-                    <label class="col-form-label">Email *</label>
-                    <input (change)="e=true" [class.is-invalid]="!fieldValid(email,'email')&&e" [class.is-valid]="fieldValid(email,'email')&&e" class="form-control" name="email" [(ngModel)]="email" type="email"/>
+                    <input (keyup)="e=true" [class.is-invalid]="!fieldValid(email,'email')&&e" [class.is-valid]="fieldValid(email,'email')&&e" class="form-control" name="email" [(ngModel)]="email" type="text" placeholder="Email *"/>
+                    <i *ngIf="!fieldValid(email,'email') && e"><small class="text-danger">Bắt buộc nhập email hợp lệ.</small></i>
                 </div>
                 <div class="form-group">
                     <label>Loại hình công ty bạn muốn đăng ký</label>
@@ -111,7 +111,7 @@
                 </div>
             </div>
             <div class="modal-footer" style="text-align: center;">
-                <button [disabled]="!(formValid())" style="margin: auto; color: white;" (click)="submit()" type="button" class="btn btn-warning">Gửi yêu cầu</button>
+                <button style="margin: auto; color: white;" (click)="submit()" type="button" class="btn btn-warning">Gửi yêu cầu</button>
             </div>
         </div>
     </div>

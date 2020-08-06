@@ -238,22 +238,25 @@
             <div class="row">
                 <div class="col-md-6">
                     <div class="form-group">
-                        <label for="name" class="col-form-label">Họ và tên</label>
-                        <input (change)="n=true" [class.is-invalid]="!fieldValid(name) && n" [class.is-valid]="fieldValid(name) && n" [(ngModel)]="name" name="name" type="text" class="form-control" id="name">
+                        <label for="name" class="col-form-label">Họ và tên *</label>
+                        <input (keyup)="n=true" [class.is-invalid]="!fieldValid(name) && n" [class.is-valid]="fieldValid(name) && n" [(ngModel)]="name" name="name" type="text" class="form-control" id="name" placeholder="Họ tên *">
+                        <i *ngIf="!fieldValid(name) && n"><small class="text-danger">Bắt buộc nhập họ tên.</small></i>
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="form-group">
-                        <label for="email" class="col-form-label">Email</label>
-                        <input (change)="e=true" [class.is-invalid]="!fieldValid(email,'email') && e" [class.is-valid]="fieldValid(email,'email') && e" [(ngModel)]="email" name="email" type="text" class="form-control" id="email">
+                        <label for="email" class="col-form-label">Email *</label>
+                        <input (change)="e=true" [class.is-invalid]="!fieldValid(email,'email') && e" [class.is-valid]="fieldValid(email,'email') && e" [(ngModel)]="email" name="email" type="text" class="form-control" id="email" placeholder="Email *">
+                        <i *ngIf="!fieldValid(email,'email') && e"><small class="text-danger">Bắt buộc nhập email hợp lệ.</small></i>
                     </div>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-6">
                     <div class="form-group">
-                        <label for="phone" class="col-form-label">Số điện thoại</label>
-                        <input (change)="p=true" [class.is-invalid]="!fieldValid(phone,'phone') && p" [class.is-valid]="fieldValid(phone,'phone') && p" [(ngModel)]="phone" name="phone" type="text" class="form-control" id="phone">
+                        <label for="phone" class="col-form-label">Số điện thoại *</label>
+                        <input (change)="p=true" [class.is-invalid]="!fieldValid(phone,'phone') && p" [class.is-valid]="fieldValid(phone,'phone') && p" [(ngModel)]="phone" name="phone" type="text" class="form-control" id="phone" placeholder="Số điện thoại *">
+                        <i *ngIf="!fieldValid(phone,'phone') && p"><small class="text-danger">Bắt buộc nhập số điện thoại hợp lệ.</small></i>
                     </div>
                 </div>
                 <div class="col-md-6">
@@ -295,7 +298,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="form-button">
-                        <button (click)="submit()" [disabled]="!formValid()" class="btn btn-warning">Nộp đơn</button>
+                        <button (click)="submit()" class="btn btn-warning">Nộp đơn</button>
                     </div>
                 </div>
             </div>

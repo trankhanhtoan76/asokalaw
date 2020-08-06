@@ -23,6 +23,9 @@ export class PlskComponent implements OnInit {
     s2Check = false;
     s3Check = false;
     s4Check = false;
+    n;
+    p;
+    e;
 
     constructor(private spinner: SpinnerService, private smtp: EmailService) {
     }
@@ -77,6 +80,9 @@ export class PlskComponent implements OnInit {
     }
 
     submit(): void {
+        this.e = this.n = this.p = true;
+        if (!this.formValid()) return;
+
         this.spinner.show('sending');
         let s = '';
         if (this.s1Check) {
