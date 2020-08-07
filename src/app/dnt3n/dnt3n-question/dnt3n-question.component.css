@@ -1,0 +1,10 @@
+#modal-question td {
+    border: none;
+  }
+  #modal-question .card-body {
+    padding: 1.25rem;
+    border-top: 1px solid rgba(0,0,0,.125);
+  }
+  #modal-question .card-header:first-child {
+    border-bottom: none;
+  }

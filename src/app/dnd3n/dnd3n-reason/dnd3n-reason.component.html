@@ -6,11 +6,11 @@
         <div class="pc">
           <img style="width:100%;" src="/assets/media/DND3N/loi-ich/thumbnail.png">
           <img style="position: absolute; top: 40px; z-index: -1; width: 90%; left: 55px;" src="/assets/media/DND3N/loi-ich/Asset 17.svg">
-          <img style="width: 100px; height: 100px; position: absolute; left: 50%; top: 50%; margin-left: -50px; margin-top: -50px;" src="/assets/media/DND3N/loi-ich/Asset 18.svg">
+          <img data-toggle="modal" data-target="#modalVideo" style="width: 100px; height: 100px; position: absolute; left: 50%; top: 50%; margin-left: -50px; margin-top: -50px; cursor: pointer;" src="/assets/media/DND3N/loi-ich/Asset 18.svg">
         </div>
         <div class="sp" style="margin-bottom: 3rem;">
           <img style="width:100%;" src="/assets/media/DND3N/loi-ich/thumbnail.png">
-          <img style="width: 100px; height: 100px; position: absolute; left: 50%; top: 50%; margin-left: calc(-1.5rem - 50px); margin-top: -50px;" src="/assets/media/DND3N/loi-ich/Asset 18.svg">
+          <img data-toggle="modal" data-target="#modalVideo" style="width: 80px; height: 80px; position: absolute; left: 50%; top: 50%; margin-left: -40px; margin-top: calc(-40px - 1.5rem); cursor: pointer;" src="/assets/media/DND3N/loi-ich/Asset 18.svg">
         </div>
       </div>
       <div class="col-md-6">
@@ -45,3 +45,17 @@
     </div>
   </div>
 </section>
+<div class="modal fade" id="modalVideo">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <div class="modal-youtube">
+          <iframe width="100%" height="315" src="https://www.youtube.com/embed/7tz4Ya6gzG4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>  
+      </div>
+    </div>
+  </div>
+</div>

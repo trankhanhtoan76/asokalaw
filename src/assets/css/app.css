@@ -1226,6 +1226,7 @@ h1 {
 
 .s6head {
     cursor: pointer;
+    line-height: 2rem;
 }
 
 .s6-item h4 {
@@ -2580,7 +2581,7 @@ hr.blue {
     z-index: 1;
     margin-bottom: 3rem;
 }
-.create-status-txt.small {
+.create-slider-item.style01 .create-status-txt {
     font-size: 1rem;
     margin-bottom: 1rem;
     padding: 2rem;
@@ -2594,9 +2595,10 @@ hr.blue {
 	bottom: 0;
 	left: calc(50% - 80px);
 }
-.create-status-txt.small::after {
+.create-slider-item.style01 .create-status-txt::after {
     width: 240px;
 	left: calc(50% - 120px);
+    height: 1px;
 }
 .create-status-txt::before {
 	position: absolute;
@@ -2608,7 +2610,11 @@ hr.blue {
 	top: 0;
 	left: 30px;
 }
-.create-status-txt.small::before {
+.create-status-txt.style01::before {
+    background: url('../../assets/media/PLTX/feedback/Asset 13.svg') center no-repeat;
+	background-size: 100% auto;
+}
+.create-slider-item.style01 .create-status-txt::before {
     width: 50px;
     left: 0;
 }
@@ -2659,13 +2665,22 @@ hr.blue {
 .create-slider-dots:hover::after {
 	transform: scale(1);
 }
+.create-slider .slick-active .create-dots-circle {
+    background: #1f8bff;
+}
+.create-dots-circle {
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    border-radius: 50%;
+    border: 1px solid #1f8bff;
+}
 .create-info {
 	display: flex;
 	align-items: center;
-	padding: 2rem 0;
+	padding: 2rem 1rem;
 }
 .create-info-img {
-  padding: 5px;
   margin: 0 2rem 0 0;
   width: 100%;
   max-width: 120px;
@@ -2676,6 +2691,15 @@ hr.blue {
   background-size: cover;
   box-shadow: 2px 2px 10px rgba(0,0,0,0.15);
   border-radius: 50%;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 5px solid #d0e6f2;
+}
+.create-slider-item.style01 .create-info-img {
+    padding: 0;
+    background: transparent;
+    box-shadow: none;
+    overflow: hidden;
 }
 .create-info-name {
 	font-weight: 500;
@@ -2684,9 +2708,12 @@ hr.blue {
 }
 .create-info-name span {
 	font-weight: 300;
-	color: #007bff;
+	color: #ffb111;
 	display: block;
 	font-size: 14px;
+}
+.create-slider-item.style01 .create-info-name span {
+    color: #007bff;
 }
 .create-slider .slick-dots {
     bottom: 3rem;
@@ -3036,9 +3063,9 @@ hr.blue {
         line-height: 1.4em;
     }
     .create-info-img {
-	    padding: 2px;
 	    margin: 0 1rem 0 0;
-	    max-width: 70px;
+        max-width: 70px;
+        border-width: 2px;
 	}
     .create-status-txt {
 	    font-size: 1rem;
@@ -3067,7 +3094,10 @@ hr.blue {
 	}
 	.create-info-name span {
 	    font-size: 12px;
-	}
+    }
+    .create-slider-item.style01 .create-info-img {
+        padding: 0;
+    }
 }
 
 .tvlstextareaform {

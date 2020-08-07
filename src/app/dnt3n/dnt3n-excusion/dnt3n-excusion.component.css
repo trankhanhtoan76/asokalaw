@@ -1,0 +1,62 @@
+.mission-circle {
+    position: relative;
+    padding-bottom: 130px;
+    padding-top: 20px;
+}
+.mission-circle-img {
+    margin: 0 auto;
+    max-width: 360px;
+}
+.mission-circle-list {
+	position: absolute;
+}
+.mission-circle-list.list01 {
+	top: 0;
+	left: 0;
+}
+.mission-circle-list.list02 {
+	top: 0;
+	right: 0;
+}
+.mission-circle-list.list03 {
+	bottom: 0;
+    left: 50%;
+    transform: translateX(-35%);
+}
+.mission-circle-list p {
+    margin-bottom: 0.5rem;
+    font-size: 15px;
+    font-weight: 500;
+    color: #25405b;
+}
+.mission-circle-list li {
+	list-style: none;
+}
+.mission-circle-list li::before {
+	content: '\2022';
+	color: #3A3A3A;
+	font-weight: bold;
+	display: inline-block; 
+	width: 1em;
+	margin-left: -1em;
+	font-size: 15px;
+}
+.mission-circle-list li a {
+    color: #25405b;
+    font-size: 12px;
+    font-weight: 500;
+}
+.mission-circle-list.gray-color p {
+	color: rgb(58 58 58 / 0.9)
+}
+.mission-circle-list.gray-color li a {
+	color: rgb(58 58 58 / 0.7);
+}
+.mission-circle-list.gray-color li::before {
+	color: rgb(58 58 58 / 0.7);
+}
+@media only screen and (max-width: 768px) {
+    .mission-circle {
+		padding: 0;
+	}
+}

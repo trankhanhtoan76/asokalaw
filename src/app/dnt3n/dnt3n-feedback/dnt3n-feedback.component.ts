@@ -19,17 +19,17 @@ export class Dnt3nFeedbackComponent implements OnInit {
   }
 
   ngAfterContentInit(): void {
-    $('.feedback-slide-pltx').slick({
-      dots: true,
+    $('.create-slider').slick({
+      dots:true,
       infinite: true,
       slidesToShow: 1,
       slidesToScroll: 1,
-      autoplay: true,
+      autoplay: false,
       autoplaySpeed: 4000,
       nextArrow: false,
       prevArrow: false,
-      customPaging: function(slider, i) {
-        return '<i class="fa fa-circle"></i>';
+      customPaging : function(slider, i) {
+          return '<span class="create-slider-dots"></span>';
       },
       focusOnSelect: true
     });

@@ -2202,7 +2202,38 @@ img.nextArrowBtnNews {
   border-radius: 20px;
   margin: 0;
 }
+
+.mainvisual {
+  background-image: url('/assets/media/DND3N/banner/dnd3n.jpg');
+  background-size: cover;
+  background-position: bottom;
+  display: flex;
+  align-items: center;
+  height: 650px;
+}
+.mainvisual h1 {
+  line-height: 4rem;
+  font-family: 'Montserrat',sans-serif;
+  font-size: 3.2rem;
+  color: #000000;
+  margin: 0;
+}
+.mainvisual p {
+  margin: 3rem 0;
+  line-height: 2.55rem;
+}
 @media only screen and (max-width: 768px) {
+  .mainvisual {
+    height: 350px;
+  }
+  .mainvisual h1 {
+    line-height: 2.75rem;
+    font-size: 1.8rem;
+  }
+  .mainvisual p {
+    margin: 1.5rem 0;
+    line-height: 2rem;
+  }
   .block-missing {
     margin-bottom: 3rem;
   }

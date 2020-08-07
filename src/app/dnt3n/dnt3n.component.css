@@ -331,10 +331,6 @@ p.des-record{
   width: 100%;
   max-height: 263px;
 }
-.tab-content-1 h6, p{
-  color: #434444;
-  text-align: left;
-}
 .btn-collapse{
   width: 100%;
   background:#e8e8e8 ;
@@ -3397,9 +3393,6 @@ img.nextArrowBtnNews {
   width: 120px;
 }
 
-.slick-initialized .slick-slide {
-  display: flex;
-}
 
 .slider .slick-dots {
   display: flex;
@@ -3579,11 +3572,13 @@ img.nextArrowBtnNews {
   background-image: url("/assets/media/DNT3N/Nhan-dinh-dung/bg.svg");
   background-position: bottom;
   background-size: cover;
+  padding: 1rem 0 8rem;
 }
 #feedback{
   background-image: url("/assets/media/DNT3N/nguoi-thanh-cong/bg_1.svg");
   background-position: top;
   background-size: cover;
+  padding-top: 10rem;
 }
 .custom-color-white{
   top: 35%;
@@ -3596,4 +3591,45 @@ img.nextArrowBtnNews {
 }
 .custom-color-white:hover{
   border: 1px solid #ffc107;
+}
+.mainvisual {
+  background-image: url('../../assets/media/DNT3N/Banner/banner.jpg');
+  background-size: cover;
+  background-position: bottom;
+  display: flex;
+  align-items: center;
+  height: 700px;
+}
+.mainvisual h1 {
+  line-height: 4rem;
+  font-family: 'Montserrat',sans-serif;
+  font-size: 3.2rem;
+  color: #000000;
+  margin: 0;
+}
+.main-txt {
+  margin: 3rem 0 1rem;
+  line-height: 2.55rem;
+}
+.main-list {
+  margin-bottom: 3rem;
+}
+.main-list li {
+  padding-left: 15px;
+  background: url('../../assets/media/DNT3N/Banner/Asset 1.svg') top 7px left no-repeat;
+  background-size: 8px;
+}
+@media only screen and (max-width: 768px) {
+  .mainvisual {
+    height: auto;
+    padding: 4rem 0 6rem;
+  }
+  .mainvisual h1 {
+    line-height: 2.75rem;
+    font-size: 1.8rem;
+  }
+  .main-txt {
+    margin: 1.5rem 0;
+    line-height: 2rem;
+  }
 }

@@ -148,8 +148,23 @@ export class Dnd3nSupportComponent implements OnInit {
             autoplay: true,
             autoplaySpeed: 4000,
             nextArrow: '<img src="/assets/media/landingpage/news/right.svg" class="nextArrowBtnVideo news">',
-            prevArrow: '<img src="/assets/media/landingpage/news/left.svg" class="prevArrowBtnVideo news">'
-
+            prevArrow: '<img src="/assets/media/landingpage/news/left.svg" class="prevArrowBtnVideo news">',
+            responsive: [
+                {
+                  breakpoint: 768,
+                  settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
+                  }
+                },
+                {
+                  breakpoint: 576,
+                  settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                  }
+                }
+            ]
         });
     }
 }
