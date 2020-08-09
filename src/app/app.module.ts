@@ -77,6 +77,8 @@ import { TvlsformtvcComponent } from './tvls/tvlsformtvc/tvlsformtvc.component';
 import { Tvlsform3Component } from './tvls/tvlsform3/tvlsform3.component';
 import { Tvlsform4Component } from './tvls/tvlsform4/tvlsform4.component';
 import { TvlsdialogconfirmComponent } from './tvls/tvlsdialogconfirm/tvlsdialogconfirm.component';
+import {FormValidateService} from "./service/form-validate.service";
+import {EmailService} from "./service/email.service";
 
 const routes: Routes = [
     {path: '', component: HomeComponent},
@@ -169,7 +171,10 @@ const routes: Routes = [
         NewsModule,
         KtdnModule
     ],
-    providers: [],
+    providers: [
+        FormValidateService,
+        EmailService
+    ],
     exports: [
         DkkdquestionComponent
     ],
