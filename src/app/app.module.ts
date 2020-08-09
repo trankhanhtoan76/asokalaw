@@ -79,6 +79,8 @@ import { Tvlsform4Component } from './tvls/tvlsform4/tvlsform4.component';
 import { TvlsdialogconfirmComponent } from './tvls/tvlsdialogconfirm/tvlsdialogconfirm.component';
 import {FormValidateService} from "./service/form-validate.service";
 import {EmailService} from "./service/email.service";
+import { FormFieldUploadComponent } from './service/form-field-upload/form-field-upload.component';
+import { FormGroupFieldInfoComponent } from './service/form-group-field-info/form-group-field-info.component';
 
 const routes: Routes = [
     {path: '', component: HomeComponent},
@@ -153,7 +155,9 @@ const routes: Routes = [
         TvlsformtvcComponent,
         Tvlsform3Component,
         Tvlsform4Component,
-        TvlsdialogconfirmComponent
+        TvlsdialogconfirmComponent,
+        FormFieldUploadComponent,
+        FormGroupFieldInfoComponent
     ],
     imports: [
         BrowserModule,

@@ -1,26 +1,20 @@
-<section class="header">
+<section class="mainvisual">
     <div class="container">
-        <div class="row banner">
+        <div class="row">
             <div class="col-md-6 title-banner">
                 <div>
-                    <h1>Đăng ký logo "chính chủ"
+                    <h1 class="title-dknh">Đăng ký logo "chính chủ"
                         <b class="light-blue">"24h"</b> nhận ngay kết quả</h1>
                 </div>
-                <div class="row paddingTabRecord">
-                    <div class="tab-record ">
-
-                        <p class="unit align-left widthTabRecord"><i class="fa fa-circle float-left"></i>Không phí
-                            ẩn</p>
+                <div class="row title-dknh-m">
+                    <div class="tab-record">
+                        <p class="unit align-left widthTabRecord"><i class="fa fa-circle float-left"></i>Không phí ẩn</p>
                     </div>
                     <div class="tab-record">
-
-                        <p class="unit align-left widthTabRecord"><i class="fa fa-circle float-left"></i>Tra cứu
-                            miễn phí</p>
+                        <p class="unit align-left widthTabRecord"><i class="fa fa-circle float-left"></i>Tra cứu miễn phí</p>
                     </div>
                     <div class="tab-record ">
-
-                        <p class="unit align-left widthTabRecord"><i class="fa fa-circle float-left"></i>Ký & giao
-                            hồ sơ tận nơi</p>
+                        <p class="unit align-left widthTabRecord"><i class="fa fa-circle float-left"></i>Ký & giao hồ sơ tận nơi</p>
                     </div>
                 </div>
                 <div>
@@ -51,55 +45,23 @@
                 </button>
             </div>
             <div class="modal-body">
-                <div class="form-group">
-                    <input (keyup)="n=true" [class.is-invalid]="!fieldValid(name)&&n" [class.is-valid]="fieldValid(name)&&n" type="text" class="form-control" [(ngModel)]="name" name="name" placeholder="Họ tên *">
-                    <i *ngIf="!fieldValid(name) && n"><small class="text-danger">Bắt buộc nhập họ tên.</small></i>
-                </div>
-                <div class="form-group">
-                    <input (keyup)="p=true" [class.is-invalid]="!fieldValid(phone,'phone')&&p" [class.is-valid]="fieldValid(phone,'phone')&&p" class="form-control" [(ngModel)]="phone" name="phone" type="text" placeholder="Số điện thoại *"/>
-                    <i *ngIf="!fieldValid(phone,'phone') && p"><small class="text-danger">Bắt buộc nhập số điện thoại hợp lệ.</small></i>
-                </div>
-                <div class="form-group">
-                    <input (keyup)="e=true" [class.is-invalid]="!fieldValid(email,'email')&&e" [class.is-valid]="fieldValid(email,'email')&&e" class="form-control" name="email" [(ngModel)]="email" type="text" placeholder="Email *"/>
-                    <i *ngIf="!fieldValid(email,'email') && e"><small class="text-danger">Bắt buộc nhập email hợp lệ.</small></i>
-                </div>
+                <app-form-group-field-info [submitClick]="submitClick" (dataName)="name=$event" (dataPhone)="phone=$event" (dataEmail)="email=$event"></app-form-group-field-info>
                 <div class="form-group">
                     <textarea [(ngModel)]="description" name="description" class="form-control" rows="3" placeholder="Tên nhãn hiệu, ngành nghề kinh doanh. Vd: Flow Media-Truyền thông marketing"></textarea>
                 </div>
                 <div class="row">
                     <div class="form-group col-4">
-                        <button style="margin-bottom: 5px" class="btn" type="button" (click)="fileInput1.click()">
-                            <span style="color:#0f74a8;text-decoration: underline;font-size: 11px">Logo đính kèm 1</span>
-                            <input #fileInput1 type="file" accept="image/*" (change)="onSelectFile($event,1)" style="display:none;"/>
-                        </button>
-                        <div *ngIf="logo1.data">
-                            <img style="width: 50px;max-height:100px" [src]="logo1.data"/>
-                            <span (click)="onRemoveSelectedFile(1)" class="fa fa-times-circle" style="color:red;cursor: pointer"></span>
-                        </div>
+                        <app-form-field-upload label="Logo đính kèm 1" type="image" (data)="this.logo1=$event"></app-form-field-upload>
                     </div>
                     <div class="form-group col-4">
-                        <button style="margin-bottom: 5px" class="btn" type="button" (click)="fileInput2.click()">
-                            <span style="color:#0f74a8;text-decoration: underline;font-size: 11px">Logo đính kèm 2</span>
-                            <input #fileInput2 type="file" accept="image/*" (change)="onSelectFile($event,2)" style="display:none;"/>
-                        </button>
-                        <div *ngIf="logo2.data">
-                            <img style="width: 50px;max-height:100px" [src]="logo2.data"/>
-                            <span (click)="onRemoveSelectedFile(2)" class="fa fa-times-circle" style="color:red;cursor: pointer"></span>
-                        </div>
+                        <app-form-field-upload label="Logo đính kèm 2" type="image" (data)="this.logo2=$event"></app-form-field-upload>
                     </div>
                     <div class="form-group col-4">
-                        <button style="margin-bottom: 5px" class="btn" type="button" (click)="fileInput3.click()">
-                            <span style="color:#0f74a8;text-decoration: underline;font-size: 11px">Logo đính kèm 3</span>
-                            <input #fileInput3 type="file" accept="image/*" (change)="onSelectFile($event,3)" style="display:none;"/>
-                        </button>
-                        <div *ngIf="logo3.data">
-                            <img style="width: 50px;max-height:100px" [src]="logo3.data"/>
-                            <span (click)="onRemoveSelectedFile(3)" class="fa fa-times-circle" style="color:red;cursor: pointer"></span>
-                        </div>
+                        <app-form-field-upload label="Logo đính kèm 3" type="image" (data)="this.logo3=$event"></app-form-field-upload>
                     </div>
                 </div>
                 <div class="flex-center-hor">
-                    <button (click)="submit()" type="button" class="btn btn-warning btn-custom">Yêu cầu tra cứu nhanh</button>
+                    <button (click)="submit()" type="button" class="btn btn-warning btn-custom">YÊU CẦU TRA CỨU NHANH</button>
                 </div>
             </div>
         </div>
