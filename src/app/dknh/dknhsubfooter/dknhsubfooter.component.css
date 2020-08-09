@@ -168,15 +168,14 @@
 
 .flex-center-sub {
     text-align: center;
-    padding-top: 5%;
 }
 
 .subFooter {
-    height: 250px;
     background: url(../../../assets/media/DKNH/subFooter.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    padding: 2rem 0;
 }
 
 .desRecord {

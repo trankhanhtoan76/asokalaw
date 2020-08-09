@@ -27,7 +27,8 @@
               "src/assets/css/bootstrap.min.css",
               "src/assets/font-awesome/css/all.min.css",
               "src/assets/css/slick.css",
-              "src/assets/css/app.css"
+              "src/assets/css/app.css",
+                "src/assets/css/app-mobile.css"
             ],
             "scripts": [
               "src/assets/js/jquery.min.js",

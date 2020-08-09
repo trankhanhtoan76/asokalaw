@@ -27,7 +27,7 @@ export class DknhfeedbackComponent implements OnInit {
       prevArrow: false,
       focusOnSelect: true,
       customPaging: function(slider, i) {
-        return '<i class="fa fa-circle"></i>';
+          return '<span class="dots-img"><img src="/assets/media/DKNH/feedback_img0'+ (1*i + 1) + '.png" style="max-width: 100%"/></span>';
       },
     });
   }

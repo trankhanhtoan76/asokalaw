@@ -1,0 +1,16 @@
+@media (max-width: 768px) {
+    #asoka-description .slick-dots {
+        margin-top: 1rem;
+    }
+    #asoka-description .slick-dots li {
+        padding: 0;
+    }
+    .dots-img {
+        width: 80px;
+        height: 80px;
+    }
+    .slick-active .dots-img {
+        width: 90px;
+        height: 90px;
+    }
+}

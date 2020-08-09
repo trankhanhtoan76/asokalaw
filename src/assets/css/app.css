@@ -3119,3 +3119,28 @@ p.tvlstextareaform {
 #modal-question .card-header:first-child {
     border-bottom: none;
 }
+
+
+#asoka-description .slick-dots {
+    align-items: center;
+    margin-top: 3rem;
+}
+#asoka-description .slick-dots li {
+    padding: 0 5rem;
+}
+.dots-img {
+    cursor: pointer;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    border: 1px solid transparent;
+    padding: 4px;
+    display: inline-block;
+    opacity: 0.5;
+}
+.slick-active .dots-img {
+    width: 200px;
+    height: 200px;
+    opacity: 1;
+    border: 1px solid #ffa500;
+}

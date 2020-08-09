@@ -8,24 +8,28 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="list-slide-video">
-                    <div class="slide-item">
-                        <img data-toggle="modal" data-target="#homevideosmodal1" class="img-responsive" src="/assets/media/vid1.png"/>
-                    </div>
-                    <div class="slide-item">
-                        <img data-toggle="modal" data-target="#homevideosmodal2" class="img-responsive" src="/assets/media/vid2.png"/>
-                    </div>
-                    <div class="slide-item">
-                        <img data-toggle="modal" data-target="#homevideosmodal3" class="img-responsive" src="/assets/media/vid3.png"/>
-                    </div>
-                    <div class="slide-item">
-                        <img data-toggle="modal" data-target="#homevideosmodal4" class="img-responsive" src="/assets/media/vid4.png"/>
+                    <div *ngFor="let i of videos" class="slide-item">
+                        <img data-toggle="modal" data-target="#homevideosmodal{{i.name}}" class="img-responsive" src="{{i.img}}"/>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
-<app-view-video-modal link="https://youtu.be/bb42zrvKOWQ" dataid="homevideosmodal1"></app-view-video-modal>
-<app-view-video-modal link="https://youtu.be/6RplDXDwPG8" dataid="homevideosmodal2"></app-view-video-modal>
-<app-view-video-modal link="https://youtu.be/A1epghSWS-k" dataid="homevideosmodal3"></app-view-video-modal>
-<app-view-video-modal link="https://youtu.be/ege5lEtvPWA" dataid="homevideosmodal4"></app-view-video-modal>
+
+<ng-container *ngFor="let i of videos">
+    <div class="modal fade" id="homevideosmodal{{i.name}}">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <div class="modal-youtube">
+                        <iframe width="100%" height="315" [src]="i.src" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</ng-container>

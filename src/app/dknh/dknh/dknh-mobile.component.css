@@ -2,13 +2,16 @@
     .title-dknh-m {
         margin: 0;
     }
+
     .mainvisual {
         background-image: url(../../../assets/media/DKNH/DKNH-Banner-mobile-ver.jpg);
         background-size: cover;
         background-position: bottom;
-        height: 320px;
+        height: auto;
+        padding: 80px 0 40px;
     }
-    .title-dknh{
+
+    .title-dknh {
         font-size: 2rem;
         line-height: 2.5rem;
         text-align: center;
