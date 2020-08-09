@@ -12,18 +12,14 @@ export class HomevideosComponent implements OnInit {
 
     constructor() {
         this.videos = [
-            {img: "/assets/media/vid1.png", name: 1},
-            {img: "/assets/media/vid2.png", name: 2},
-            {img: "/assets/media/vid3.png", name: 3},
-            {img: "/assets/media/vid4.png", name: 4}
+            {img: "/assets/media/vid1.png", id: 'bb42zrvKOWQ'},
+            {img: "/assets/media/vid2.png", id: '6RplDXDwPG8'},
+            {img: "/assets/media/vid3.png", id: 'A1epghSWS-k'},
+            {img: "/assets/media/vid4.png", id: 'ege5lEtvPWA'}
         ];
     }
 
     ngOnInit(): void {
-    }
-
-    openModal(id) {
-        $(id).modal('show');
     }
 
     ngAfterViewChecked(): void {

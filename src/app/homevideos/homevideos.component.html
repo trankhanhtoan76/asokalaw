@@ -8,9 +8,9 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="list-slide-video">
-                    <ng-container *ngFor="let i of videos">
+                    <ng-container *ngFor="let video of videos">
                         <div class="slide-item">
-                            <img (click)="openModal('#homevideosmodal'+i.name)" class="img-responsive" src="{{i.img}}"/>
+                            <img style="cursor: pointer" [attr.data-target]="'#'+video.id" data-toggle="modal" class="img-responsive" src="{{video.img}}"/>
                         </div>
                     </ng-container>
                 </div>
@@ -18,61 +18,6 @@
         </div>
     </div>
 </section>
-
-
-<div class="modal fade" id="homevideosmodal1">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-body">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true" style="font-size: 30px">&times;</span>
-                </button>
-                <div class="modal-youtube">
-                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/bb42zrvKOWQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="modal fade" id="homevideosmodal2">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-body">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true" style="font-size: 30px">&times;</span>
-                </button>
-                <div class="modal-youtube">
-                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/6RplDXDwPG8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="modal fade" id="homevideosmodal3">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-body">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true" style="font-size: 30px">&times;</span>
-                </button>
-                <div class="modal-youtube">
-                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/A1epghSWS-k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="modal fade" id="homevideosmodal4">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-body">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true" style="font-size: 30px">&times;</span>
-                </button>
-                <div class="modal-youtube">
-                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/ege5lEtvPWA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+<ng-container *ngFor="let video of videos">
+    <app-modal-video [dataid]="video.id"></app-modal-video>
+</ng-container>
