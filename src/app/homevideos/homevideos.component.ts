@@ -1,5 +1,4 @@
 import {Component, OnInit} from '@angular/core';
-import {DomSanitizer} from "@angular/platform-browser";
 
 declare var $: any;
 
@@ -13,15 +12,18 @@ export class HomevideosComponent implements OnInit {
 
     constructor() {
         this.videos = [
-            {src: "https://www.youtube.com/embed/bb42zrvKOWQ", img: "/assets/media/vid1.png", name: 1},
-            {src: "https://www.youtube.com/embed/6RplDXDwPG8", img: "/assets/media/vid2.png", name: 2},
-            {src: "https://www.youtube.com/embed/A1epghSWS-k", img: "/assets/media/vid3.png", name: 3},
-            {src: "https://www.youtube.com/embed/ege5lEtvPWA", img: "/assets/media/vid4.png", name: 4}
+            {img: "/assets/media/vid1.png", name: 1},
+            {img: "/assets/media/vid2.png", name: 2},
+            {img: "/assets/media/vid3.png", name: 3},
+            {img: "/assets/media/vid4.png", name: 4}
         ];
-        console.log(this.videos);
     }
 
     ngOnInit(): void {
+    }
+
+    openModal(id) {
+        $(id).modal('show');
     }
 
     ngAfterViewChecked(): void {

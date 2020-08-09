@@ -8,28 +8,71 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="list-slide-video">
-                    <div *ngFor="let i of videos" class="slide-item">
-                        <img data-toggle="modal" data-target="#homevideosmodal{{i.name}}" class="img-responsive" src="{{i.img}}"/>
-                    </div>
+                    <ng-container *ngFor="let i of videos">
+                        <div class="slide-item">
+                            <img (click)="openModal('#homevideosmodal'+i.name)" class="img-responsive" src="{{i.img}}"/>
+                        </div>
+                    </ng-container>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
-<ng-container *ngFor="let i of videos">
-    <div class="modal fade" id="homevideosmodal{{i.name}}">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-body">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                    <div class="modal-youtube">
-                        <iframe width="100%" height="315" [src]="i.src" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </div>
+
+<div class="modal fade" id="homevideosmodal1">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true" style="font-size: 30px">&times;</span>
+                </button>
+                <div class="modal-youtube">
+                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/bb42zrvKOWQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </div>
         </div>
     </div>
-</ng-container>
+</div>
+<div class="modal fade" id="homevideosmodal2">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true" style="font-size: 30px">&times;</span>
+                </button>
+                <div class="modal-youtube">
+                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/6RplDXDwPG8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="homevideosmodal3">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true" style="font-size: 30px">&times;</span>
+                </button>
+                <div class="modal-youtube">
+                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/A1epghSWS-k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="homevideosmodal4">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true" style="font-size: 30px">&times;</span>
+                </button>
+                <div class="modal-youtube">
+                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/ege5lEtvPWA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
