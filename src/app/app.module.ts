@@ -81,6 +81,7 @@ import {FormValidateService} from "./service/form-validate.service";
 import {EmailService} from "./service/email.service";
 import { FormFieldUploadComponent } from './service/form-field-upload/form-field-upload.component';
 import { FormGroupFieldInfoComponent } from './service/form-group-field-info/form-group-field-info.component';
+import {ViewVideoModalComponent} from "./service/view-video-modal/view-video-modal.component";
 
 const routes: Routes = [
     {path: '', component: HomeComponent},
@@ -157,7 +158,8 @@ const routes: Routes = [
         Tvlsform4Component,
         TvlsdialogconfirmComponent,
         FormFieldUploadComponent,
-        FormGroupFieldInfoComponent
+        FormGroupFieldInfoComponent,
+        ViewVideoModalComponent
     ],
     imports: [
         BrowserModule,

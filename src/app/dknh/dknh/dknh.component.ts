@@ -8,7 +8,10 @@ declare var $: any;
 @Component({
     selector: 'app-dknh',
     templateUrl: './dknh.component.html',
-    styleUrls: ['./dknh.component.css']
+    styleUrls: [
+        './dknh.component.css',
+        './dknh-mobile.component.css',
+    ]
 })
 export class DknhComponent implements OnInit {
     logo1 = {

@@ -1,15 +1,22 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+
+declare var $: any;
 
 @Component({
-  selector: 'app-dknhquestion',
-  templateUrl: './dknhquestion.component.html',
-  styleUrls: ['./dknhquestion.component.css']
+    selector: 'app-dknhquestion',
+    templateUrl: './dknhquestion.component.html',
+    styleUrls: ['./dknhquestion.component.css']
 })
 export class DknhquestionComponent implements OnInit {
 
-  constructor() { }
+    constructor() {
+    }
 
-  ngOnInit(): void {
-  }
+    ngOnInit(): void {
+        $('.s6head').click(function (e) {
+            e.preventDefault();
+            $(this).parents("li").find(".s6body").slideToggle();
+        });
+    }
 
 }

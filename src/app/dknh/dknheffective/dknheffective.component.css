@@ -358,7 +358,7 @@ header nav a:hover {
 }
 
 #effective, #effective2 {
-  background-image: url(../../../assets/media/landingpage/effect/background_1.svg);
+  background: transparent;
   background-size: cover;
   padding-bottom: 100px;
   background-repeat: no-repeat;

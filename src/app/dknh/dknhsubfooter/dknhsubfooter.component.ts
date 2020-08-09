@@ -3,7 +3,10 @@ import {Component, OnInit} from '@angular/core';
 @Component({
     selector: 'app-dknhsubfooter',
     templateUrl: './dknhsubfooter.component.html',
-    styleUrls: ['./dknhsubfooter.component.css']
+    styleUrls: [
+        './dknhsubfooter.component.css',
+        './dknhsubfooter-mobile.component.css'
+    ]
 })
 export class DknhsubfooterComponent implements OnInit {
 
