@@ -20,8 +20,8 @@
                         VỀ ASOKA
                     </a>
                     <div class="dropdown-menu" [ngClass]="{'show':showMenu1}">
-                        <a class="dropdown-item" routerLink="/tam-nhin-su-menh">Tầm nhìn sứ mệnh</a>
-                        <a class="dropdown-item" routerLink="/co-hoi-nghe-nghiep">Cơ hội nghề nghiệp</a>
+                        <a (click)="collapseMenu()" class="dropdown-item" routerLink="/tam-nhin-su-menh">Tầm nhìn sứ mệnh</a>
+                        <a (click)="collapseMenu()" class="dropdown-item" routerLink="/co-hoi-nghe-nghiep">Cơ hội nghề nghiệp</a>
                         <!--            <a class="dropdown-item" href="#">Đối tác nhượng quyền</a>-->
                     </div>
                 </li>
@@ -30,9 +30,9 @@
                         PHÁP LÝ DOANH NGHIỆP
                     </a>
                     <div class="dropdown-menu" [ngClass]="{'show':showMenu2}">
-                        <a class="dropdown-item" routerLink="/khoi-tao-doanh-nghiep">Khởi tạo doanh nghiệp</a>
-                        <a class="dropdown-item" routerLink="/doanh-nghiep-duoi-3-nam">Doanh nghiệp dưới 03 năm</a>
-                        <a class="dropdown-item" routerLink="/doanh-nghiep-tren-3-nam">Doanh nghiệp trên 03 năm</a>
+                        <a (click)="collapseMenu()" class="dropdown-item" routerLink="/khoi-tao-doanh-nghiep">Khởi tạo doanh nghiệp</a>
+                        <a (click)="collapseMenu()" class="dropdown-item" routerLink="/doanh-nghiep-duoi-3-nam">Doanh nghiệp dưới 03 năm</a>
+                        <a (click)="collapseMenu()" class="dropdown-item" routerLink="/doanh-nghiep-tren-3-nam">Doanh nghiệp trên 03 năm</a>
                     </div>
                 </li>
                 <li class="nav-item dropdown" [ngClass]="{'show':showMenu3}" (mouseover)="showMenu3=true" (mouseout)="showMenu3=false">
@@ -40,13 +40,13 @@
                         DỊCH VỤ PHÁP LÝ
                     </a>
                     <div class="dropdown-menu" [ngClass]="{'show':showMenu3}">
-                        <a class="dropdown-item" routerLink="/dang-ky-kinh-doanh">Đăng ký kinh doanh</a>
-                        <a class="dropdown-item" routerLink="/dang-ky-nhan-hieu">Đăng ký nhãn hiệu</a>
-                        <a class="dropdown-item" routerLink="/dang-ky-dau-tu">Đăng ký đầu tư</a>
-                        <a class="dropdown-item" routerLink="/phap-ly-thuong-xuyen">Pháp lý thường xuyên</a>
-                        <a class="dropdown-item" routerLink="/tu-van-luat-su">Tư vấn luật sư</a>
-                        <a class="dropdown-item" routerLink="/phap-ly-su-kien">Pháp lý sự kiện</a>
-                        <a class="dropdown-item" routerLink="/giai-quyet-tranh-chap">Giải quyết tranh chấp</a>
+                        <a (click)="collapseMenu()" class="dropdown-item" routerLink="/dang-ky-kinh-doanh">Đăng ký kinh doanh</a>
+                        <a (click)="collapseMenu()" class="dropdown-item" routerLink="/dang-ky-nhan-hieu">Đăng ký nhãn hiệu</a>
+                        <a (click)="collapseMenu()" class="dropdown-item" routerLink="/dang-ky-dau-tu">Đăng ký đầu tư</a>
+                        <a (click)="collapseMenu()" class="dropdown-item" routerLink="/phap-ly-thuong-xuyen">Pháp lý thường xuyên</a>
+                        <a (click)="collapseMenu()" class="dropdown-item" routerLink="/tu-van-luat-su">Tư vấn luật sư</a>
+                        <a (click)="collapseMenu()" class="dropdown-item" routerLink="/phap-ly-su-kien">Pháp lý sự kiện</a>
+                        <a (click)="collapseMenu()" class="dropdown-item" routerLink="/giai-quyet-tranh-chap">Giải quyết tranh chấp</a>
                     </div>
                 </li>
                 <!--        <li class="nav-item dropdown" [ngClass]="{'show':showMenu4}" (mouseover)="showMenu4=true" (mouseout)="showMenu4=false">-->
@@ -70,9 +70,9 @@
                     <a class="nav-link" href data-toggle="dropdown" aria-haspopup="true" [attr.aria-expanded]="showMenu5">KHÁCH HÀNG
                     </a>
                     <div class="dropdown-menu" [ngClass]="{'show':showMenu5}">
-                        <a class="dropdown-item" routerLink="/cau-hoi-thuong-gap">Câu hỏi thường gặp</a>
+                        <a (click)="collapseMenu()" class="dropdown-item" routerLink="/cau-hoi-thuong-gap">Câu hỏi thường gặp</a>
                         <!--            <a class="dropdown-item" href="#">Chính sách khách hàng</a>-->
-                        <a class="dropdown-item" routerLink="/quy-trinh-lam-viec">Quy trình làm việc</a>
+                        <a (click)="collapseMenu()" class="dropdown-item" routerLink="/quy-trinh-lam-viec">Quy trình làm việc</a>
                         <!--            <a class="dropdown-item" href="#">Hướng dẫn thanh toán</a>-->
                     </div>
                 </li>

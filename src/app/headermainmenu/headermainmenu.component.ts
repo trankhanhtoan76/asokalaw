@@ -1,5 +1,7 @@
 import {Component, HostListener, OnInit} from '@angular/core';
 
+declare var $: any;
+
 @Component({
     selector: 'app-headermainmenu',
     templateUrl: './headermainmenu.component.html',
@@ -31,4 +33,7 @@ export class HeadermainmenuComponent implements OnInit {
         }
     }
 
+    collapseMenu() {
+        $('#collapsibleNavbar').collapse('hide')
+    }
 }
