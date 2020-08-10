@@ -82,6 +82,7 @@ import {EmailService} from "./service/email.service";
 import { FormFieldUploadComponent } from './service/form-field-upload/form-field-upload.component';
 import { FormGroupFieldInfoComponent } from './service/form-group-field-info/form-group-field-info.component';
 import {GlobalModule} from "./global/global.module";
+import { DknhVideosComponent } from './dknh/dknh-videos/dknh-videos.component';
 
 const routes: Routes = [
     {path: '', component: HomeComponent},
@@ -158,7 +159,8 @@ const routes: Routes = [
         Tvlsform4Component,
         TvlsdialogconfirmComponent,
         FormFieldUploadComponent,
-        FormGroupFieldInfoComponent
+        FormGroupFieldInfoComponent,
+        DknhVideosComponent
     ],
     imports: [
         BrowserModule,
