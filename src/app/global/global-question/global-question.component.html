@@ -50,7 +50,7 @@
                     <div>
                         <div *ngFor="let item of content.b" class="card" style="margin-bottom: 5px;">
                             <div class="card-header cardHeader">
-                                <h5 class="mb-0 collapsed" data-toggle="collapse" [attr.data-target]="'#'+str2id(item.t)" aria-expanded="false" [attr.aria-controls]="str2id(item.t)">
+                                <h5 style="cursor: pointer" class="mb-0 collapsed" data-toggle="collapse" [attr.data-target]="'#'+str2id(item.t)" aria-expanded="false" [attr.aria-controls]="str2id(item.t)">
                                     <table style="width: 100%">
                                         <tr>
                                             <td><span class="btnLink Link">{{item.t}}</span></td>

@@ -19,6 +19,11 @@ export class DkkdComponent implements OnInit {
     n;
     e;
     p;
+    videos = [
+        {img:'/assets/media/DKKD/video1.jpg',id:'6RplDXDwPG8'},
+        {img:'/assets/media/DKKD/video2.jpg',id:'ege5lEtvPWA'},
+        {img:'/assets/media/DKKD/video3.jpg',id:'4IvZSmZYWwg'},
+    ];
 
     constructor(private spinner: SpinnerService) {
     }

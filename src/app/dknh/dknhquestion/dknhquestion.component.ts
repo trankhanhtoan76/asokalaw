@@ -8,7 +8,6 @@ declare var $: any;
     styleUrls: ['./dknhquestion.component.css']
 })
 export class DknhquestionComponent implements OnInit {
-    hadInit: boolean;
     contents1 = [
         {
             t: 'Khái niệm',

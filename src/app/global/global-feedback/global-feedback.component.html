@@ -1,0 +1,23 @@
+<section id="asoka-description" class="sub">
+    <div class="container center">
+        <div class="row">
+            <div class="col-md-12 flex-center-vertically">
+                <h1>{{datatitle}}</h1>
+                <div id="{{dataid}}">
+                    <div *ngFor="let item of datacontent" class="slide-item">
+                        <div class="content feedback-content">
+                            <div class="des-record">
+                                <p>{{item.content}}</p>
+                            </div>
+                            <hr>
+                            <div class="des-record ">
+                                <p class="font-weight-bold normal">{{item.name}}</p>
+                                <p class="text-color">{{item.title}}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

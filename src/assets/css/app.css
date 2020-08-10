@@ -3123,7 +3123,7 @@ p.tvlstextareaform {
 
 #asoka-description .slick-dots {
     align-items: center;
-    margin-top: 3rem;
+    margin-top: 0;
 }
 #asoka-description .slick-dots li {
     padding: 0 5rem;
@@ -3143,4 +3143,7 @@ p.tvlstextareaform {
     height: 200px;
     opacity: 1;
     border: 1px solid #ffa500;
+}
+h1,h2,.padding-header{
+    padding-top:3rem;
 }
