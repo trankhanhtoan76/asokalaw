@@ -46,7 +46,11 @@ export class DknhintroComponent implements OnInit {
                     this.formHeight = 570;
                 }
             } else {
-                this.formHeight = 550;
+                if(this.isFormValid()){
+                    this.formHeight = 500;
+                }else {
+                    this.formHeight = 550;
+                }
             }
         } else {
             if (this.isMobile()) {

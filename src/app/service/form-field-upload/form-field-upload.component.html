@@ -1,6 +1,6 @@
 <button style="margin-bottom: 5px" class="btn" type="button" (click)="fileInput.click()">
     <span style="color:#0f74a8;text-decoration: underline;font-size: 11px">{{label}}</span>
-    <input #fileInput type="file" accept="image/*" (change)="onSelectFile($event)" style="display:none;"/>
+    <input #fileInput type="file" [value]="value" accept="image/*" (change)="onSelectFile($event)" style="display:none;"/>
 </button>
 <div *ngIf="file.data">
     <img *ngIf="type=='image'" style="width: 50px;max-height:100px" [src]="file.data"/>

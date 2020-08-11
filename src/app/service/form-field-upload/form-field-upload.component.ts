@@ -13,6 +13,7 @@ export class FormFieldUploadComponent implements OnInit {
         data: '',
         ext: ''
     };
+    value = '';
 
     constructor() {
     }
@@ -25,10 +26,12 @@ export class FormFieldUploadComponent implements OnInit {
             data: '',
             ext: ''
         };
+        this.value = '';
         this.data.emit(this.file);
     }
 
     onSelectFile(e) {
+        debugger;
         const file = e.dataTransfer ? e.dataTransfer.files[0] : e.target.files[0];
         const reader = new FileReader();
 
