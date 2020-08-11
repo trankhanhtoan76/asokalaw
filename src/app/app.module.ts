@@ -84,6 +84,7 @@ import { FormGroupFieldInfoComponent } from './service/form-group-field-info/for
 import {GlobalModule} from "./global/global.module";
 import { DknhVideosComponent } from './dknh/dknh-videos/dknh-videos.component';
 import {ClickOutsideModule} from "ng-click-outside";
+import { DkkdSubfooterComponent } from './dkkd/dkkd-subfooter/dkkd-subfooter.component';
 
 const routes: Routes = [
     {path: '', component: HomeComponent},
@@ -161,7 +162,8 @@ const routes: Routes = [
         TvlsdialogconfirmComponent,
         FormFieldUploadComponent,
         FormGroupFieldInfoComponent,
-        DknhVideosComponent
+        DknhVideosComponent,
+        DkkdSubfooterComponent
     ],
     imports: [
         BrowserModule,

@@ -1,0 +1,7 @@
+.subFooter{
+    background: url(/assets/media/DKKD/dkkd_subfooter.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    padding: 3rem 0;
+}
