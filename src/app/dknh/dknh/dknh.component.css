@@ -1316,8 +1316,9 @@ p.des-record {
 }
 
 .tab-record p {
-    font-size: 12px;
-    margin-bottom: 10px;
+    font-size: 14px;
+    margin-bottom: 0;
+    white-space: nowrap;
 }
 
 .tab-record i {
