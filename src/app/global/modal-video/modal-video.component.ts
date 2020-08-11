@@ -19,6 +19,10 @@ export class ModalVideoComponent implements OnInit {
         this.link = this._sanitizer.bypassSecurityTrustResourceUrl('https://www.youtube.com/embed/' + this.dataid);
     }
 
+    test(e) {
+        console.log(e);
+    }
+
     reloadIframe() {
         const $if = $('#' + this.dataid).find('iframe');
         $if.attr('src', $if.attr('src'));

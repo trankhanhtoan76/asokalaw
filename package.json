@@ -21,6 +21,7 @@
     "@angular/router": "~10.0.3",
     "emailjs": "^3.2.1",
     "jquery": "^3.5.1",
+    "ng-click-outside": "^7.0.0",
     "nodemailer": "^6.4.10",
     "rxjs": "~6.5.5",
     "tslib": "^2.0.0",

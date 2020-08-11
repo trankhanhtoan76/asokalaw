@@ -83,6 +83,7 @@ import { FormFieldUploadComponent } from './service/form-field-upload/form-field
 import { FormGroupFieldInfoComponent } from './service/form-group-field-info/form-group-field-info.component';
 import {GlobalModule} from "./global/global.module";
 import { DknhVideosComponent } from './dknh/dknh-videos/dknh-videos.component';
+import {ClickOutsideModule} from "ng-click-outside";
 
 const routes: Routes = [
     {path: '', component: HomeComponent},
