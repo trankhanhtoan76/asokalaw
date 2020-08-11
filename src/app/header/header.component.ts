@@ -39,7 +39,7 @@ export class HeaderComponent implements OnInit {
             plsk: 'Pháp lý sự kiện',
             pltx: 'Pháp lý thường xuyên',
             tvtt: 'Tư vấn trực tuyến',
-            xltc: 'Xử lý tranh chấp'
+            xltc: 'Giải quyết tranh chấp'
         };
     }
 

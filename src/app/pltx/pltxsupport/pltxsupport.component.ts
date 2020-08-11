@@ -16,7 +16,7 @@ export class PltxsupportComponent implements OnInit {
     s1 = 'Thay đổi đăng ký kinh doanh';
     s2 = 'Đăng ký đầu tư';
     s3 = 'Đăng ký sở hữu trí tuệ';
-    s4 = 'Luật sư đại diện xử lý tranh chấp';
+    s4 = 'Luật sư đại diện giải quyết tranh chấp';
     s5 = 'Đăng ký lưu hành sản phẩm trên thị trường';
     s6 = 'Đăng ký giấy phép ngành nghề có điều kiện';
     s7 = 'Dịch vụ khác';

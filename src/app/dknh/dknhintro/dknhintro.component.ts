@@ -16,7 +16,7 @@ export class DknhintroComponent implements OnInit {
     logo3;
     onSelectLogo: number;
     onSelectLogoData: any;
-    formHeight = 470;
+    formHeight: number;
     name: string;
     email: string;
     phone: string;
@@ -26,22 +26,49 @@ export class DknhintroComponent implements OnInit {
     e;
 
     constructor(private spinner: SpinnerService, private smtp: EmailService, public form: FormValidateService) {
+        this.formHeight = 470;
     }
 
     ngOnInit(): void {
     }
 
+    isMobile(): boolean {
+        return window.screen.width < 768;
+    }
+
+
     changeFormHeight() {
         if (this.logo1.data || this.logo2.data || this.logo3.data) {
-            this.formHeight = 550;
+            if (this.isMobile()) {
+                if (this.isFormValid()) {
+                    this.formHeight = 520;
+                } else {
+                    this.formHeight = 570;
+                }
+            } else {
+                this.formHeight = 550;
+            }
         } else {
-            this.formHeight = 470;
+            if (this.isMobile()) {
+                if (this.isFormValid()) {
+                    this.formHeight = 470;
+                } else {
+                    this.formHeight = 520;
+                }
+            } else {
+                this.formHeight = 470;
+            }
         }
+    }
+
+    isFormValid(): boolean {
+        return (!this.form.formValid([{value: this.name}, {value: this.phone, type: 'phone'}, {value: this.email, type: 'email'}]));
     }
 
     submit(): void {
         this.n = this.e = this.p = true;
-        if (!this.form.formValid([{value: this.name}, {value: this.phone, type: 'phone'}, {value: this.email, type: 'email'}])) return;
+        this.changeFormHeight();
+        if (!this.isFormValid()) return;
 
         this.spinner.show('sending');
         const body = [

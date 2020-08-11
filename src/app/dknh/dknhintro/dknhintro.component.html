@@ -53,7 +53,7 @@
                 <div class="col-md-6 introduceRight" style="padding-left: 90px;">
                     <img src="/assets/media/DKNH/Form/Asset 3.svg" class="imgForm d-none d-md-block">
                     <form class="shadow backgrFormound" enctype="multipart/form-data" style="height:{{formHeight}}px">
-                        <h2 class="text-center">TRA CỨU LOGO CỦA BẠN</h2>
+                        <h2 class="text-center" style="padding-top:0;padding-bottom: 1rem">TRA CỨU LOGO CỦA BẠN</h2>
                         <div class="form-group">
                             <input (keyup)="n=true" [class.is-invalid]="!form.fieldValid(name)&&n" [class.is-valid]="form.fieldValid(name)&&n" type="text" class="form-control" [(ngModel)]="name" name="name" placeholder="Họ tên *">
                             <i *ngIf="!form.fieldValid(name) && n"><small class="text-danger">Bắt buộc nhập họ tên.</small></i>

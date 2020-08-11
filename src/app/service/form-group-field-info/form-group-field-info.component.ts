@@ -10,7 +10,7 @@ export class FormGroupFieldInfoComponent implements OnInit {
     @Output() dataName = new EventEmitter;
     @Output() dataEmail = new EventEmitter;
     @Output() dataPhone = new EventEmitter;
-    @Input() submitClick;
+    @Input() submitClick:boolean;
     name: string;
     email: string;
     phone: string;
