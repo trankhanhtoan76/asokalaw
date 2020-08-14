@@ -1,0 +1,8 @@
+<div class="col-md-{% if span==12 %}12{% else %}6{% endif %}">
+    <div class="form-group row">
+        <label class="col-md-{% if span==12 %}2{% else %}4{% endif %} col-form-label text-sm-left text-md-right">{{ lang(def.label) }}</label>
+        <div class="col-md-{% if span==12 %}10{% else %}8{% endif %} col-form-value">
+            {{ vfield_multienum(name,(def.options),value)|raw }}
+        </div>
+    </div>
+</div>

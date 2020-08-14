@@ -1,0 +1,9 @@
+<div class="col-md-{% if span==12 %}12{% else %}6{% endif %}">
+    <div class="form-group row">
+        <label class="col-md-{% if span==12 %}2{% else %}4{% endif %} col-form-label text-sm-left text-md-right">{{ lang(def.label) }}{% if required==1 %}<span style="color:red">*</span>{% endif %}</label>
+        <div class="col-md-{% if span==12 %}10{% else %}8{% endif %}">
+            {% set required=(required?'required':'') %}
+            {{ ffield_time(name,value,required)|raw }}
+        </div>
+    </div>
+</div>

@@ -1,0 +1,44 @@
+{% extends "app/base.twig" %}
+{% block content %}
+    <div class="content-header">
+        <div class="container-fluid">
+            <div class="row mb-2 mt-2">
+                <div class="col-md-9">
+                    {{ breakcrum('users',app.record.name)|raw }}
+                </div>
+                <div class="col-md-3 text-left text-md-right mt-2 mt-md-0">
+                    <div class="btn-group">
+                        <a href="{{ base_url }}/admin/users/{{ app.record.id }}/edit" type="button" class="btn btn-primary btn-flat">Sửa</a>
+                        <button type="button" class="btn btn-primary btn-flat dropdown-toggle dropdown-icon" data-toggle="dropdown">
+                            <div class="dropdown-menu dropdown-menu-right dropdown-menu-md-left" role="menu">
+                                <a class="dropdown-item" onclick="window.location.href='{{ base_url }}/admin/users/layout/create';">Tạo mới</a>
+                                <a class="dropdown-item" onclick="window.location.href='{{ base_url }}/admin/users'">Danh sách</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" onclick="deleteRecord('users','{{ app.record.id }}')">Xóa</a>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="content">
+        <div class="container-fluid">
+            <div class="card">
+                <div class="card-header">
+                    <h3 class="card-title">{{ lang('LBL_GENERAL_INFO') }}</h3>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        {% include  'app/fields/text/view.twig' with {'name':'name','def':app.db.def.users.name,'value':app.record.name} only %}
+                        {% include  'app/fields/text/view.twig' with {'name':'username','def':app.db.def.users.username,'value':app.record.username} only %}
+                    </div>
+                    <div class="row">
+                        {% include  'app/fields/bool/view.twig' with {'name':'last_login','def':app.db.def.users.last_login,'value':app.record.last_login} only %}
+                        {% include  'app/fields/bool/view.twig' with {'name':'is_admin','def':app.db.def.users.is_admin,'value':app.record.is_admin} only %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}

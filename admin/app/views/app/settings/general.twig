@@ -1,0 +1,53 @@
+{% extends "app/base.twig" %}
+{% block content %}
+    <div class="content-header">
+        <div class="container-fluid">
+            <div class="row mb-2 mt-2">
+                <div class="col-md-9">
+                    {{ breakcrum('admin','Cài đặt chung')|raw }}
+                </div>
+                <div class="col-md-3 text-left text-md-right mt-2 mt-md-0">
+                    <a href="{{ base_url }}/admin/settings" class="btn btn-outline-danger">Trở về</a>
+                    <button type="button" onclick="formOnSubmit('{{ base_url }}/admin/settings/general/save')" class="btn btn-primary">{{ lang('SAVE') }}</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="content">
+        <div class="container-fluid">
+            <div class="card">
+                <div class="card-header">
+                    <h3 class="card-title">{{ lang('LBL_GENERAL_INFO') }}</h3>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        {% include  'app/fields/text/form.twig' with {'name':'name','def':app.db.def.settings.name,'value':app.settings.name} only %}
+                        {% include  'app/fields/text/form.twig' with {'name':'phone','def':app.db.def.settings.phone,'value':app.settings.phone} only %}
+                    </div>
+                    <div class="row">
+                        {% include  'app/fields/text/form.twig' with {'name':'email','def':app.db.def.settings.email,'value':app.settings.email} only %}
+                        {% include  'app/fields/text/form.twig' with {'name':'head_office','def':app.db.def.settings.head_office,'value':app.settings.head_office} only %}
+                    </div>
+                    <div class="row">
+                        {% include  'app/fields/number/form.twig' with {'name':'record_per_page','def':app.db.def.settings.record_per_page,'value':app.settings.record_per_page} only %}
+                        {% include  'app/fields/text/form.twig' with {'name':'branch_office','def':app.db.def.settings.branch_office,'value':app.settings.branch_office} only %}
+                    </div>
+                    <div class="row">
+                        {% include  'app/fields/text/form.twig' with {'name':'hot_line','def':app.db.def.settings.hot_line,'value':app.settings.hot_line} only %}
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <h3 class="card-title">Logo</h3>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        {% include  'app/fields/image/form.twig' with {'name':'logo','def':app.db.def.settings.logo,'value':app.settings.logo} only %}
+                        {% include  'app/fields/image/form.twig' with {'name':'favicon','def':app.db.def.settings.favicon,'value':app.settings.favicon} only %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}

@@ -1,0 +1,80 @@
+{% extends "app/base.twig" %}
+{% block content %}
+    <link rel="stylesheet" href="{{ base_url }}/app/views/app/settings/list.css"/>
+    <div class="content-header">
+        <div class="container-fluid">
+            <div class="row mb-2">
+                <div class="col-sm-12">
+                    <i style="font-size:20px" class="fal fa-cogs"></i>
+                    <b style="font-size: 20px">{{ lang('LBL_MODULE_ADMIN') }}</b>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="content">
+        <div class="container-fluid">
+            <div class="card">
+                <div class="card-header">
+                    <h3 class="card-title">Users</h3>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-12">
+                            <ul class="settings-list">
+                                <li><a href='{{ base_url }}/admin/users'><i class="fal fa-users"></i>{{ lang('LBL_MODULE_USERS') }}</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <h3 class="card-title">System</h3>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-12">
+                            <ul class="settings-list">
+                                <li><a href='{{ base_url }}/admin/settings/layout/general'><i class="fal fa-cog"></i>Cài đặt chung</a></li>
+                                <li><a target="_blank" href='{{ base_url }}/app/assets/ckfinder/ckfinder.html?langCode={{ app.langs.current }}'><i class="fal fa-image"></i>Media file</a></li>
+                                <li><a href='{{ base_url }}/admin/settings/layout/module_icon'><i class="fal fa-cube"></i>Module icon</a></li>
+                                <li><a href='{{ base_url }}/admin/settings/layout/translate_language'><i class="fal fa-globe-americas"></i>Translate Languages</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <h3 class="card-title">Email</h3>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-12">
+                            <ul class="settings-list">
+                                <li><a href='{{ base_url }}/admin/settings/layout/email'><i class="fal fa-envelope"></i>Email settings</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <h3 class="card-title">Developer tool</h3>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-12">
+                            <ul class="settings-list">
+                                <li><a href='{{ base_url }}/admin/admin/layout/createmodule'><i class="fal fa-cube"></i>Tạo module</a></li>
+                                <li><a href='{{ base_url }}/admin/routing'><i class="fal fa-exchange-alt"></i>{{ lang('LBL_MODULE_ROUTING') }}</a></li>
+                                <li><a href='{{ base_url }}/admin/admin/layout/repair'><i class="fal fa-wand-magic"></i>Sửa chữa hệ thống</a></li>
+                                <li><a href='{{ base_url }}/admin/admin/layout/repair_language'><i class="fal fa-language"></i>Sửa chữa Ngôn ngữ</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}

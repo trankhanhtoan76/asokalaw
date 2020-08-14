@@ -1,0 +1,52 @@
+.settings-list ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px;
+    display: inline-block;
+    border-collapse: collapse;
+}
+
+.settings-list li {
+    text-align: center;
+    vertical-align: middle;
+    display: inline-block;
+    width: 100px;
+    height: 90px;
+    padding: 5px;
+    margin: 5px;
+    border: solid 1px #ccc;
+    line-height: 1.4;
+    border-radius: 2px;
+}
+
+.settings-list li:hover {
+    border: solid 1px #000;
+}
+
+.settings-list li:hover > a {
+    color: #000 !important;
+}
+
+.settings-list a {
+    display: grid;
+    text-decoration: none;
+    vertical-align: middle;
+    padding-top: 0;
+    font-family: 'SFUIText', sans-serif;
+    line-height: 14px;
+    color: #535353 !important;
+    height:80px;
+}
+
+.settings-list a:link {
+    text-decoration: none;
+}
+
+.settings-list li > a > i.fa,
+.settings-list li > a > i.fab,
+.settings-list li > a > i.fad,
+.settings-list li > a > i.fal,
+.settings-list li > a > i.far,
+.settings-list li > a > i.fas {
+    font-size: 40px;
+}

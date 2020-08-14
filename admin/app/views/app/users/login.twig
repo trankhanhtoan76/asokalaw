@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>KT Administration</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="{{ base_url }}/upload/{{ app.settings.favicon }}" type="image/png">
+    <link rel="stylesheet" href="{{ base_url }}/app/assets/font-awesome/css/all.min.css">
+    <link rel="stylesheet" href="{{ base_url }}/app/assets/plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+    <link rel="stylesheet" href="{{ base_url }}/app/assets/dist/css/adminlte.min.css">
+    <link rel="stylesheet" href="{{ base_url }}/app/assets/dist/css/app.css">
+    <script src="{{ base_url }}/app/assets/kt/kt_{{ app.version }}.js"></script>
+</head>
+<body class="hold-transition login-page">
+<div class="login-box">
+    <div class="card">
+        <div class="card-body login-card-body">
+            <div class="login-logo">
+                <img style="width: 200px" src="{{ app.settings.logo }}" alt=""/>
+            </div>
+            <div class="input-group mb-3">
+                <select class="form-control change-language">
+                    {% for lkey,lname in app.config.languages %}
+                        <option value="{{ lkey }}" {% if app.langs.current==lkey %}selected{% endif %}>{{ lname }}</option>
+                    {% endfor %}
+                </select>
+                <div class="input-group-append">
+                    <div class="input-group-text">
+                        <span class="fal fa-flag"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="input-group mb-3">
+                <input type="text" class="form-control username" placeholder="{{ lang('USER_NAME') }}">
+                <div class="input-group-append">
+                    <div class="input-group-text">
+                        <span class="fal fa-user"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="input-group mb-3">
+                <input type="password" class="form-control password" placeholder="{{ lang('PASSWORD') }}">
+                <div class="input-group-append">
+                    <div class="input-group-text">
+                        <span class="fal fa-lock"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-md-12">
+                    <button type="button" class="btn btn-primary btn-login">
+                        <i class="fal fa-sign-in-alt"></i>
+                        {{ lang('LOGIN') }}
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="{{ base_url }}/app/assets/plugins/jquery/jquery.min.js"></script>
+<script src="{{ base_url }}/app/assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="{{ base_url }}/app/assets/dist/js/adminlte.min.js"></script>
+<script src="{{ base_url }}/app/views/app/users/login.js"></script>
+</body>
+</html>

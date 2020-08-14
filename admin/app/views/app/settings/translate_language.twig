@@ -1,0 +1,52 @@
+{% extends "app/base.twig" %}
+{% block content %}
+    <div class="content-header">
+        <div class="container-fluid">
+            <div class="row mb-2 mt-2">
+                <div class="col-md-9">
+                    {{ breakcrum('admin',lang('LBL_TRANSLATE_LANGUAGES'))|raw }}
+                </div>
+                <div class="col-md-3 text-left text-md-right mt-2 mt-md-0">
+                    <a href="{{ base_url }}/admin/settings" class="btn btn-outline-danger">{{ lang('LBL_CANCEL') }}</a>
+                    <button type="button" onclick="saveTranslateLanguage()" class="btn btn-primary">{{ lang('LBL_SAVE') }}</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="content">
+        <div class="container-fluid">
+            <div class="card">
+                <div class="card-body p-0 table-responsive">
+                    <table class="table table-hover ">
+                        <thead>
+                        <tr>
+                            <th>Label</th>
+                            <th>English</th>
+                            <th>Tiếng Việt</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        {% for key,label in app.all_langs_app.en %}
+                            <tr data-key="{{ key }}">
+                                <td>
+                                        {{ vfield_text('key',key)|raw }}
+                                </td>
+                                <td>
+                                    {{ ffield_text('label_en',label)|raw }}
+                                </td>
+                                <td>
+                                    {{ ffield_text('label_vi',app.all_langs_app.vi[key])|raw }}
+                                </td>
+                            </tr>
+                        {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}
+
+{% block extra_footer %}
+    <script src="{{ app.config.base_url }}/app/views/app/settings/translate_language.js"></script>
+{% endblock %}
