@@ -1,4 +1,5 @@
 import {Component, HostListener, OnInit} from '@angular/core';
+import {GlobalService} from "../service/global.service";
 
 declare var $: any;
 
@@ -16,7 +17,7 @@ export class HeadermainmenuComponent implements OnInit {
     showMenu4 = false;
     showMenu5 = false;
 
-    constructor() {
+    constructor(private global: GlobalService) {
     }
 
     ngOnInit(): void {

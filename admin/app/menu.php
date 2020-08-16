@@ -1,2 +1,0 @@
-<?php
-$menu = array();
