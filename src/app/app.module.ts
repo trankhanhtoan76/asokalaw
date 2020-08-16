@@ -85,6 +85,7 @@ import {GlobalModule} from "./global/global.module";
 import { DknhVideosComponent } from './dknh/dknh-videos/dknh-videos.component';
 import {ClickOutsideModule} from "ng-click-outside";
 import { DkkdSubfooterComponent } from './dkkd/dkkd-subfooter/dkkd-subfooter.component';
+import {GlobalService} from "./service/global.service";
 
 const routes: Routes = [
     {path: '', component: HomeComponent},
@@ -184,7 +185,8 @@ const routes: Routes = [
     ],
     providers: [
         FormValidateService,
-        EmailService
+        EmailService,
+        GlobalService
     ],
     exports: [
         DkkdquestionComponent

@@ -2,6 +2,7 @@ import {Component, HostListener, OnInit} from '@angular/core';
 import {SpinnerService} from '../service/spinner.service';
 import {FormValidateService} from "../service/form-validate.service";
 import {EmailService} from "../service/email.service";
+import {GlobalService} from "../service/global.service";
 
 declare var $: any;
 
@@ -24,7 +25,7 @@ export class HeaderComponent implements OnInit {
     p;
     e;
 
-    constructor(private spinner: SpinnerService, public form: FormValidateService, private smtp: EmailService) {
+    constructor(private spinner: SpinnerService, public form: FormValidateService, private smtp: EmailService, public global: GlobalService) {
         this.service = {
             dkkd: false,
             dknh: false,

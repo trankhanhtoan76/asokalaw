@@ -1,6 +1,5 @@
 <section class="footer bg-blue">
     <div class="container">
-
         <div class="row">
             <div class="col-md-4" style="padding-right: 50px">
                 <app-footerinfo></app-footerinfo>
@@ -79,13 +78,13 @@
                 <h4>Đăng ký nhận ưu đãi mới nhất</h4>
                 <app-footeremailsubcribe></app-footeremailsubcribe>
                 <div class="social" style="margin-top: 25px;">
-                    <p style="color: #afaead;">Kết nối với chúng tôi <a href="https://www.facebook.com/asokalaw" target="_blank" class="facebook">
+                    <p style="color: #afaead;">Kết nối với chúng tôi <a href="{{global.settings.facebook}}" target="_blank" class="facebook">
                         <img style="width: 28px" src="/assets/media/fb icon.svg">
                     </a>
-                        <a href="https://www.linkedin.com/organization-guest/company/asoka-law?challengeId=AQFdmt1h8qzhagAAAXOPOoZGnXUC4KFlTb-eQ1l-YaNvfzOXpXGAaT8QOv57aT6OGtgB1FFXwSWYOfx8IgibsdUM1zmawBFJKw&submissionId=6470d4b3-3e8c-2516-9f08-82c55cfe5367" target="_blank" class="linkedin">
+                        <a href="{{global.settings.linkin}}" target="_blank" class="linkedin">
                             <img style="width: 28px" src="/assets/media/linked in icon.svg">
                         </a>
-                        <a href="https://www.youtube.com/channel/UCYmiA32I5VjuQLZvFgFGXXQ" target="_blank" class="youtube">
+                        <a href="{{global.settings.youtube}}" target="_blank" class="youtube">
                             <img style="width: 28px" src="/assets/media/youtube icon.svg">
                         </a>
                     </p>
@@ -109,9 +108,9 @@
     text-align: center;
     font-size: 12px;">
         © 2019 asokalaw.vn<br/>
-        Công ty Luật TNHH Asoka<br/>
-        Trụ sở chính: 228 Nguyễn Hoàng, Phường An Phú, Quận 2, Tp. Hồ Chí Minh<br/>
-        Chi nhánh: 23.OT09, Landmark 81, 208 Nguyễn Hữu Cảnh, Quận Bình Thạnh, Tp. Hồ Chí Minh<br/>
+        {{global.settings.name}}<br/>
+        Trụ sở chính: {{global.settings.head_office}}<br/>
+        Chi nhánh: {{global.settings.branch_office}}<br/>
         Giấy ĐKHĐ số: 41.02.2946/TP/ĐKHĐ do Sở Tư pháp TP. Hồ Chí Minh cấp
     </div>
 </section>
