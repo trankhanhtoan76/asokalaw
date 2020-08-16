@@ -24,8 +24,8 @@ export class DkdtbusinessComponent implements OnInit {
         $('.controller-tabs-popular').slick({
             infinite: true,
             slidesToShow: 4,
+            // focusOnSelect: true,
             slidesToScroll: 1,
-            autoplay: false,
             autoplaySpeed: 4000,
             nextArrow: '<img src="/assets/media/landingpage/Asset 83.svg" class="nextArrowBtnNews news" style="width:25px;position: absolute;z-index: 1000;top: 80px;right: 0;color: #BFAFB2;">',
             prevArrow: '<img src="/assets/media/landingpage/Asset 84.svg" class="prevArrowBtnNews news" style="width:25px;position: absolute;z-index: 1000;top: 80px;left: 0;color: #BFAFB2;">',

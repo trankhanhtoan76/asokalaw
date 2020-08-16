@@ -32,10 +32,18 @@ export class DkdtrecognizeComponent implements OnInit {
         });
     }
 
-    changepackage(e): void {
+    changepackage(e, target?): void {
         this.onclickchangepackage.emit(e);
+        if(target === 'tab-mcp-V'){
+            $('#tab-tldnm-V').addClass('hide-V');
+            $('#'+target).removeClass('hide-V');
+        }else if(target === 'tab-tldnm-V'){
+            $('#tab-mcp-V').addClass('hide-V');
+            $('#'+target).removeClass('hide-V');
+        }
     }
 
+    // onclick="$('#tab-mcp-V').addClass('hide-V');$('#tab-tldnm-V').toggleClass('hide-V');
     submit(e): void {
         this.onclickregister.emit(e);
     }

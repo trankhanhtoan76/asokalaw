@@ -2155,6 +2155,7 @@ img.nextArrowBtnNews {
   left: 20px;
 }
 .block-dk-list {
+  cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;

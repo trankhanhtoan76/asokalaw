@@ -15,7 +15,7 @@
                         <p class="external-title center">Giấy phép lao động</p>
                         <p style="min-height: 80px;" class="">Dành cho người nước ngoài lao động tại Việt Nam</p>
                         <button (click)="showRegistrationForm(1)" style="    border-radius: 30px; width: 120px; height: 40px; text-align: center; margin-bottom: 20px;" class="btn btn-warning">Đăng ký</button>
-                        <p class="center"><a href="#">Xem chi tiết</a></p>
+                        <p class="center"><a href="" data-toggle="modal" data-target="#modal-dk-V-1">Xem chi tiết</a></p>
                     </div>
                     <img class="external-image" src="/assets/media/DKDT/dich-vu-ho-tro-them/1-Giay-phep-lao-dong.png">
                     <button (click)="showRegistrationForm(1)" class="btn btn-outline-warning external-body">Đăng ký</button>
@@ -32,13 +32,32 @@
                     </div>
                 </div>
             </div>
+
+            <div class="modal modal-dk-V" id="modal-dk-V-1">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <p>Giấy phép lao động</p>
+                      <!-- <button type="button" class="close" data-dismiss="modal">&times;</button> -->
+                    </div>
+                    <div class="modal-body">
+                        <p>Là thủ tục bắt buộc nhằm xác nhận người nước ngoài vào làm việc tại Việt Nam thuộc hoặc không thuộc diện cấp giấy phép lao động</p>
+                        <img src="/assets/media/DKDT/dich-vu-ho-tro-them/anh-mo-ta-giay-phep-lao-dong.jpg">
+                    </div>
+                    <div class="modal-footer" style="justify-content: center;">
+                      <button type="button" style="margin-bottom: 25px;" class="btn btn-warning" data-dismiss="modal" (click)="showRegistrationForm(1)">ĐĂNG KÝ</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
             <div class="col-md-4 center">
                 <div class="external" style="margin: auto;width: 310px; position: relative;">
                     <div class="cover center">
                         <p class="external-title center">Thẻ tạm trú nhà đầu tư</p>
                         <p style="min-height: 80px;" class="">Dành cho nhà đầu tư nước ngoài sinh sống có thời hạn tại Việt Nam</p>
                         <button (click)="showRegistrationForm(2)" style="    border-radius: 30px; width: 120px; height: 40px; text-align: center; margin-bottom: 20px;" class="btn btn-warning">Đăng ký</button>
-                        <p class="center"><a href="#">Xem chi tiết</a></p>
+                        <p class="center"><a href="" data-toggle="modal" data-target="#modal-dk-V-2">Xem chi tiết</a></p>
                     </div>
                     <img class="external-image" src="/assets/media/DKDT/dich-vu-ho-tro-them/2-the-tam-tru.png">
                     <button (click)="showRegistrationForm(2)" class="btn btn-outline-warning external-body">Đăng ký</button>
@@ -56,13 +75,32 @@
                     </div>
                 </div>
             </div>
+
+            <div class="modal modal-dk-V" id="modal-dk-V-2">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <p>Thẻ tạm trú</p>
+                      <!-- <button type="button" class="close" data-dismiss="modal">&times;</button> -->
+                    </div>
+                    <div class="modal-body">
+                        <p>Là thủ tục bắt buộc nhằm xác nhận người nước ngoài lưu trú tại Việt Nam trong thời gian từ 01 - 03 năm và được phép gia hạn.</p>
+                        <img src="/assets/media/DKDT/dich-vu-ho-tro-them/anh-mo-ta-giay-tam-tru.jpg">
+                    </div>
+                    <div class="modal-footer" style="justify-content: center;">
+                      <button type="button" style="margin-bottom: 25px;" class="btn btn-warning" data-dismiss="modal" (click)="showRegistrationForm(2)">ĐĂNG KÝ</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
             <div class="col-md-4 center">
                 <div class="external" style="margin: auto;width: 310px; position: relative;">
                     <div class="cover center">
                         <p class="external-title center">Pháp lý thường xuyên</p>
                         <p style="min-height: 80px;" class="">Dành cho doanh nghiệp nước ngoài tại Việt Nam, chưa có trợ lý, nhân sự, kế toán viên.</p>
                         <button (click)="showRegistrationForm(3)" style="    border-radius: 30px; width: 120px; height: 40px; text-align: center; margin-bottom: 20px;" class="btn btn-warning">Đăng ký</button>
-                        <p class="center"><a href="#">Xem chi tiết</a></p>
+                        <p class="center"><a href="/phap-ly-thuong-xuyen">Xem chi tiết</a></p>
                     </div>
                     <img class="external-image" src="/assets/media/DKDT/dich-vu-ho-tro-them/3-phap-ly-thuong-xuyen.png">
                     <button (click)="showRegistrationForm(3)" class="btn btn-outline-warning external-body">Đăng ký</button>
@@ -87,7 +125,7 @@
                         <p class="external-title center">Giấy phép lao động</p>
                         <p style="min-height: 80px;" class="">Dành cho người nước ngoài lao động tại Việt Nam</p>
                         <button (click)="showRegistrationForm(1)" style="    border-radius: 30px; width: 120px; height: 40px; text-align: center; margin-bottom: 20px;" class="btn btn-warning">Đăng ký</button>
-                        <p class="center"><a href="#">Xem chi tiết</a></p>
+                        <p class="center"><a>Xem chi tiết</a></p>
                     </div>
                     <img class="external-image"
                          src="/assets/media/DKDT/dich-vu-ho-tro-them/1-Giay-phep-lao-dong.png">

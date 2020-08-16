@@ -25,13 +25,444 @@
     <div class="row" style="padding-top: 40px">
       <div class="col-md-5">
         <ul class="block-dk-list">
-          <li>Công nghệ thông tin</li>
-          <li>Phân phối hàng hoá</li>
-          <li>Du lịch<br>Ăn uống</li>
-          <li>Truyền thông quảng cáo</li>
-          <li>Giáo dục nghề nghiệp</li>
+          <li data-toggle="modal" data-target="#cnttModal">Công nghệ thông tin</li>
+          <li data-toggle="modal" data-target="#pphhModal">Phân phối hàng hoá</li>
+          <li data-toggle="modal" data-target="#dlauModal">Du lịch<br>Ăn uống</li>
+          <li data-toggle="modal" data-target="#ttqcModal">Truyền thông quảng cáo</li>
+          <li data-toggle="modal" data-target="#gdnnModal">Giáo dục nghề nghiệp</li>
         </ul>
       </div>
+
+      <!-- list modal -->
+      <div class="modal modal-dk-V-list" id="search-free-V">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <p>Tra cứu giấy phép ngành nghề có điều kiện miễn phí</p>
+              <i class="fa fa-times close" aria-hidden="true" type="button" data-dismiss="modal"></i>
+            </div>
+            <div class="modal-body" style="margin-top: 15px;">
+                <div class="form-group">
+                  <input (keyup)="n=true" [class.is-invalid]="!fieldValid(name)&&n" [class.is-valid]="fieldValid(name)&&n" type="text" class="form-control" [(ngModel)]="name" name="name" placeholder="Họ tên *">
+                  <i *ngIf="!fieldValid(name) && n"><small class="text-danger">Bắt buộc nhập họ tên.</small></i>
+                </div>
+                <div class="form-group">
+                    <input (keyup)="p=true" [class.is-invalid]="!fieldValid(phone,'phone')&&p" [class.is-valid]="fieldValid(phone,'phone')&&p" class="form-control" [(ngModel)]="phone" name="phone" type="text" placeholder="Số điện thoại *"/>
+                    <i *ngIf="!fieldValid(phone,'phone') && p"><small class="text-danger">Bắt buộc nhập số điện thoại hợp lệ.</small></i>
+                </div>
+                <div class="form-group">
+                    <input (keyup)="e=true" [class.is-invalid]="!fieldValid(email,'email')&&e" [class.is-valid]="fieldValid(email,'email')&&e" class="form-control" name="email" [(ngModel)]="email" type="text" placeholder="Email *"/>
+                    <i *ngIf="!fieldValid(email,'email') && e"><small class="text-danger">Bắt buộc nhập email hợp lệ.</small></i>
+                </div>
+                <p class="form-small-header-V">Ngành ngề kinh doanh</p>
+                <textarea placeholder="Ghi đầy đủ theo giấy phép Đăng ký kinh doanhdoanh, kết quả nhận được càng chính xác. Ví dụ: giáo dục khác chưa được phân vào đâu: trung tâm ngoại ngữ"></textarea>
+                <p class="form-small-header-V">Tài liệu đính kèm</p>
+                <ul class="list-group" id="list-record-attachment-V">
+                  <li class="list-group-item"><span>Giấy đăng ký kinh doanh 1</span><span class="icon-attachment-file-V"><i style="color: #00BFFF;cursor: pointer;" class="fa fa-paperclip" aria-hidden="true"></i> Tải lên tại đây</span></li>
+                  <li class="list-group-item"><span>Giấy đăng ký kinh doanh 2</span><span class="icon-attachment-file-V"><i style="color: #00BFFF;cursor: pointer;" class="fa fa-paperclip" aria-hidden="true"></i> Tải lên tại đây</span></li>
+                  <li class="list-group-item"><span>Tài liệu đăng ký kinh doanh khác</span><span class="icon-attachment-file-V"><i style="color: #00BFFF;cursor: pointer;" class="fa fa-paperclip" aria-hidden="true"></i> Tải lên tại đây</span></li>
+                </ul>
+            </div>
+            <div class="modal-footer" style="justify-content: center;">
+              <button type="button" style="margin-bottom: 20px;" class="btn btn-warning" data-dismiss="modal">ĐĂNG KÝ GIẤY PHÉP</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal modal-dk-V-list" id="cnttModal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <p>Các loại giấy phép phổ biến của lĩnh vực Công nghệ thông tin</p>
+              <i class="fa fa-times close" aria-hidden="true" type="button" data-dismiss="modal"></i>
+            </div>
+            <div class="modal-body" style="margin-top: 15px;">
+                <p class="form-small-header-V">Doanh nghiệp của bạn còn thiếu loại giấy phép nào ?</p>
+                <div class="form-group" style="margin: 20px;">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="form-check-inline">
+                                    <input class="form-check-input" name="service" type="checkbox" id="service1">
+                                    <label class="form-check-label font-weight-normal" for="service1">Giấy phép thiết lập trang thông tin điện tử tổng hợp</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="form-check-inline">
+                                    <input class="form-check-input" name="service" type="checkbox" id="service2">
+                                    <label class="form-check-label font-weight-normal" for="service2">Giấy phép thiết lập trang mạng xã hội</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="form-check-inline">
+                                    <input class="form-check-input" name="service" type="checkbox" id="service3">
+                                    <label class="form-check-label font-weight-normal" for="service3">Thông báo trang thương mại điện tử bán hàng</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="form-check-inline">
+                                    <input class="form-check-input" name="service" type="checkbox" id="service4">
+                                    <label class="form-check-label font-weight-normal" for="service4">Đăng ký sàn giao dịch thương mại điện tử</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="form-check-inline">
+                                    <input class="form-check-input" name="service" type="checkbox" id="service4">
+                                    <label class="form-check-label font-weight-normal" for="service4">Thông báo ứng dụng thương mại điện tử bán hàng</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="form-check-inline">
+                                    <input class="form-check-input" name="service" type="checkbox" id="service4">
+                                    <label class="form-check-label font-weight-normal" for="service4">Đăng ký ứng dụng cung cấp dịch vụ thương mại điện tử</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                  <input (keyup)="n=true" [class.is-invalid]="!fieldValid(name)&&n" [class.is-valid]="fieldValid(name)&&n" type="text" class="form-control" [(ngModel)]="name" name="name" placeholder="Họ tên *">
+                  <i *ngIf="!fieldValid(name) && n"><small class="text-danger">Bắt buộc nhập họ tên.</small></i>
+                </div>
+                <div class="form-group">
+                    <input (keyup)="p=true" [class.is-invalid]="!fieldValid(phone,'phone')&&p" [class.is-valid]="fieldValid(phone,'phone')&&p" class="form-control" [(ngModel)]="phone" name="phone" type="text" placeholder="Số điện thoại *"/>
+                    <i *ngIf="!fieldValid(phone,'phone') && p"><small class="text-danger">Bắt buộc nhập số điện thoại hợp lệ.</small></i>
+                </div>
+                <div class="form-group">
+                    <input (keyup)="e=true" [class.is-invalid]="!fieldValid(email,'email')&&e" [class.is-valid]="fieldValid(email,'email')&&e" class="form-control" name="email" [(ngModel)]="email" type="text" placeholder="Email *"/>
+                    <i *ngIf="!fieldValid(email,'email') && e"><small class="text-danger">Bắt buộc nhập email hợp lệ.</small></i>
+                </div>
+            </div>
+            <div class="modal-footer" style="justify-content: center;">
+              <button type="button" style="margin-bottom: 20px;" class="btn btn-warning" data-dismiss="modal">ĐĂNG KÝ GIẤY PHÉP</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal modal-dk-V-list" id="pphhModal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <p>Các loại giấy phép phổ biến của lĩnh vực Phân phối hàng hoá đặc biệt</p>
+              <i class="fa fa-times close" aria-hidden="true" type="button" data-dismiss="modal"></i>
+            </div>
+            <div class="modal-body" style="margin-top: 15px;">
+                <p class="form-small-header-V">Doanh nghiệp của bạn còn thiếu loại giấy phép nào ?</p>
+                <div class="form-group" style="margin: 20px;">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="form-check-inline">
+                                    <input class="form-check-input" name="service" type="checkbox" id="service1">
+                                    <label class="form-check-label font-weight-normal">Giấy phép bán buôn rượu</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="form-check-inline">
+                                    <input class="form-check-input" name="service" type="checkbox" id="service2">
+                                    <label class="form-check-label font-weight-normal">Giấy phép bán lẻ rượu</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="form-check-inline">
+                                    <input class="form-check-input" name="service" type="checkbox" id="service3">
+                                    <label class="form-check-label font-weight-normal">Giấy phép lập cơ sở bán lẻ <span style="font-style:italic;">(công ty nước ngoài)</span></label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="form-check-inline">
+                                    <input class="form-check-input" name="service" type="checkbox" id="service4">
+                                    <label class="form-check-label font-weight-normal">Giấy phép kinh doanh <span><span style="font-style:italic;">(công ty nước ngoài)</span></span></label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="form-check-inline">
+                                    <input class="form-check-input" name="service" type="checkbox" id="service4">
+                                    <label class="form-check-label font-weight-normal">Nhượng quyền thương mại</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                  <input (keyup)="n=true" [class.is-invalid]="!fieldValid(name)&&n" [class.is-valid]="fieldValid(name)&&n" type="text" class="form-control" [(ngModel)]="name" name="name" placeholder="Họ tên *">
+                  <i *ngIf="!fieldValid(name) && n"><small class="text-danger">Bắt buộc nhập họ tên.</small></i>
+                </div>
+                <div class="form-group">
+                    <input (keyup)="p=true" [class.is-invalid]="!fieldValid(phone,'phone')&&p" [class.is-valid]="fieldValid(phone,'phone')&&p" class="form-control" [(ngModel)]="phone" name="phone" type="text" placeholder="Số điện thoại *"/>
+                    <i *ngIf="!fieldValid(phone,'phone') && p"><small class="text-danger">Bắt buộc nhập số điện thoại hợp lệ.</small></i>
+                </div>
+                <div class="form-group">
+                    <input (keyup)="e=true" [class.is-invalid]="!fieldValid(email,'email')&&e" [class.is-valid]="fieldValid(email,'email')&&e" class="form-control" name="email" [(ngModel)]="email" type="text" placeholder="Email *"/>
+                    <i *ngIf="!fieldValid(email,'email') && e"><small class="text-danger">Bắt buộc nhập email hợp lệ.</small></i>
+                </div>
+            </div>
+            <div class="modal-footer" style="justify-content: center;">
+              <button type="button" style="margin-bottom: 20px;" class="btn btn-warning" data-dismiss="modal">ĐĂNG KÝ GIẤY PHÉP</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal modal-dk-V-list" id="dlauModal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <p>Các loại giấy phép phổ biến của lĩnh vực Du lịch - Ăn uống</p>
+              <i class="fa fa-times close" aria-hidden="true" type="button" data-dismiss="modal"></i>
+            </div>
+            <div class="modal-body" style="margin-top: 15px;">
+                <p class="form-small-header-V">Doanh nghiệp của bạn còn thiếu loại giấy phép nào ?</p>
+                <div class="form-group" style="margin: 20px;">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="form-check-inline">
+                                    <input class="form-check-input" name="service" type="checkbox" id="service1">
+                                    <label class="form-check-label font-weight-normal" for="service1">Giấy phép kinh doanh lữ hành nội địa</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="form-check-inline">
+                                    <input class="form-check-input" name="service" type="checkbox" id="service2">
+                                    <label class="form-check-label font-weight-normal" for="service2">Giấy phép kinh doanhanh lữ hành quốc tế</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="form-check-inline">
+                                    <input class="form-check-input" name="service" type="checkbox" id="service3">
+                                    <label class="form-check-label font-weight-normal" for="service3">Công nhận cơ sở lưu trữ đạt tiêu chuẩn sao</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="form-check-inline">
+                                    <input class="form-check-input" name="service" type="checkbox" id="service4">
+                                    <label class="form-check-label font-weight-normal" for="service4">Công nhận cơ sở phục vụ khách du lịch</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="form-check-inline">
+                                    <input class="form-check-input" name="service" type="checkbox" id="service4">
+                                    <label class="form-check-label font-weight-normal" for="service4">Giấy chứng nhận vệ sinh an toàn thực phẩm</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="form-check-inline">
+                                    <input class="form-check-input" name="service" type="checkbox" id="service4">
+                                    <label class="form-check-label font-weight-normal" for="service4">Giấy phép kinh doanh rượu, thuốc lá</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                  <input (keyup)="n=true" [class.is-invalid]="!fieldValid(name)&&n" [class.is-valid]="fieldValid(name)&&n" type="text" class="form-control" [(ngModel)]="name" name="name" placeholder="Họ tên *">
+                  <i *ngIf="!fieldValid(name) && n"><small class="text-danger">Bắt buộc nhập họ tên.</small></i>
+                </div>
+                <div class="form-group">
+                    <input (keyup)="p=true" [class.is-invalid]="!fieldValid(phone,'phone')&&p" [class.is-valid]="fieldValid(phone,'phone')&&p" class="form-control" [(ngModel)]="phone" name="phone" type="text" placeholder="Số điện thoại *"/>
+                    <i *ngIf="!fieldValid(phone,'phone') && p"><small class="text-danger">Bắt buộc nhập số điện thoại hợp lệ.</small></i>
+                </div>
+                <div class="form-group">
+                    <input (keyup)="e=true" [class.is-invalid]="!fieldValid(email,'email')&&e" [class.is-valid]="fieldValid(email,'email')&&e" class="form-control" name="email" [(ngModel)]="email" type="text" placeholder="Email *"/>
+                    <i *ngIf="!fieldValid(email,'email') && e"><small class="text-danger">Bắt buộc nhập email hợp lệ.</small></i>
+                </div>
+            </div>
+            <div class="modal-footer" style="justify-content: center;">
+              <button type="button" style="margin-bottom: 20px;" class="btn btn-warning" data-dismiss="modal">ĐĂNG KÝ GIẤY PHÉP</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal modal-dk-V-list" id="ttqcModal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <p>Các loại giấy phép phổ biến của lĩnh vực Du lịch - Ăn uống</p>
+              <i class="fa fa-times close" aria-hidden="true" type="button" data-dismiss="modal"></i>
+            </div>
+            <div class="modal-body" style="margin-top: 15px;">
+                <p class="form-small-header-V">Doanh nghiệp của bạn còn thiếu loại giấy phép nào ?</p>
+                <div class="form-group" style="margin: 20px;">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="form-check-inline">
+                                    <input class="form-check-input" name="service" type="checkbox" id="service1">
+                                    <label class="form-check-label font-weight-normal" for="service1">Giấy phép biểu diễn nghệ thuật ca múa nhạc</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="form-check-inline">
+                                    <input class="form-check-input" name="service" type="checkbox" id="service2">
+                                    <label class="form-check-label font-weight-normal" for="service2">Giấy phép triển lãm tranh/ảnh tác phẩm nghệ thuật</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="form-check-inline">
+                                    <input class="form-check-input" name="service" type="checkbox" id="service3">
+                                    <label class="form-check-label font-weight-normal" for="service3">Giấy phép triển lãm hội chợ, triển lãm thương mại</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="form-check-inline">
+                                    <input class="form-check-input" name="service" type="checkbox" id="service4">
+                                    <label class="form-check-label font-weight-normal" for="service4">Giấy phép quảng cáo trên bảng hiệu, băng rôn</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="form-check-inline">
+                                    <input class="form-check-input" name="service" type="checkbox" id="service4">
+                                    <label class="form-check-label font-weight-normal" for="service4">Thông báo tổ chức chương trình khuyến mại</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="form-check-inline">
+                                    <input class="form-check-input" name="service" type="checkbox" id="service4">
+                                    <label class="form-check-label font-weight-normal" for="service4">Giấy phép tổ chức họp báo/thông cáo báo chí</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                  <input (keyup)="n=true" [class.is-invalid]="!fieldValid(name)&&n" [class.is-valid]="fieldValid(name)&&n" type="text" class="form-control" [(ngModel)]="name" name="name" placeholder="Họ tên *">
+                  <i *ngIf="!fieldValid(name) && n"><small class="text-danger">Bắt buộc nhập họ tên.</small></i>
+                </div>
+                <div class="form-group">
+                    <input (keyup)="p=true" [class.is-invalid]="!fieldValid(phone,'phone')&&p" [class.is-valid]="fieldValid(phone,'phone')&&p" class="form-control" [(ngModel)]="phone" name="phone" type="text" placeholder="Số điện thoại *"/>
+                    <i *ngIf="!fieldValid(phone,'phone') && p"><small class="text-danger">Bắt buộc nhập số điện thoại hợp lệ.</small></i>
+                </div>
+                <div class="form-group">
+                    <input (keyup)="e=true" [class.is-invalid]="!fieldValid(email,'email')&&e" [class.is-valid]="fieldValid(email,'email')&&e" class="form-control" name="email" [(ngModel)]="email" type="text" placeholder="Email *"/>
+                    <i *ngIf="!fieldValid(email,'email') && e"><small class="text-danger">Bắt buộc nhập email hợp lệ.</small></i>
+                </div>
+            </div>
+            <div class="modal-footer" style="justify-content: center;">
+              <button type="button" style="margin-bottom: 20px;" class="btn btn-warning" data-dismiss="modal">ĐĂNG KÝ GIẤY PHÉP</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal modal-dk-V-list" id="gdnnModal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <p>Các loại giấy phép phổ biến của lĩnh vực Giáo dục - Nghề nghiệp</p>
+              <i class="fa fa-times close" aria-hidden="true" type="button" data-dismiss="modal"></i>
+            </div>
+            <div class="modal-body" style="margin-top: 15px;">
+                <p class="form-small-header-V">Doanh nghiệp của bạn còn thiếu loại giấy phép nào ?</p>
+                <div class="form-group" style="margin: 20px;">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="form-check-inline">
+                                    <input class="form-check-input" name="service" type="checkbox" id="service1">
+                                    <label class="form-check-label font-weight-normal">Giấy phép thành lập trung tâm ngoại ngữ</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="form-check-inline">
+                                    <input class="form-check-input" name="service" type="checkbox" id="service2">
+                                    <label class="form-check-label font-weight-normal">Giấy phép thành lập trung tâm tin học</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="form-check-inline">
+                                    <input class="form-check-input" name="service" type="checkbox" id="service3">
+                                    <label class="form-check-label font-weight-normal">Giấy phép kinh doanh dịch vụ tư vấn dụ học</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="form-check-inline">
+                                    <input class="form-check-input" name="service" type="checkbox" id="service4">
+                                    <label class="form-check-label font-weight-normal">Thành lập trung tâm đào tạo kỹ năng sống</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="form-check-inline">
+                                    <input class="form-check-input" name="service" type="checkbox" id="service4">
+                                    <label class="form-check-label font-weight-normal">Thông báo ứng dụng thương mại điện tử bán hàng</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="form-check-inline">
+                                    <input class="form-check-input" name="service" type="checkbox" id="service4">
+                                    <label class="form-check-label font-weight-normal">Thành lập trung tâm đào tạo kĩ năng sống</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                  <input (keyup)="n=true" [class.is-invalid]="!fieldValid(name)&&n" [class.is-valid]="fieldValid(name)&&n" type="text" class="form-control" [(ngModel)]="name" name="name" placeholder="Họ tên *">
+                  <i *ngIf="!fieldValid(name) && n"><small class="text-danger">Bắt buộc nhập họ tên.</small></i>
+                </div>
+                <div class="form-group">
+                    <input (keyup)="p=true" [class.is-invalid]="!fieldValid(phone,'phone')&&p" [class.is-valid]="fieldValid(phone,'phone')&&p" class="form-control" [(ngModel)]="phone" name="phone" type="text" placeholder="Số điện thoại *"/>
+                    <i *ngIf="!fieldValid(phone,'phone') && p"><small class="text-danger">Bắt buộc nhập số điện thoại hợp lệ.</small></i>
+                </div>
+                <div class="form-group">
+                    <input (keyup)="e=true" [class.is-invalid]="!fieldValid(email,'email')&&e" [class.is-valid]="fieldValid(email,'email')&&e" class="form-control" name="email" [(ngModel)]="email" type="text" placeholder="Email *"/>
+                    <i *ngIf="!fieldValid(email,'email') && e"><small class="text-danger">Bắt buộc nhập email hợp lệ.</small></i>
+                </div>
+            </div>
+            <div class="modal-footer" style="justify-content: center;">
+              <button type="button" style="margin-bottom: 20px;" class="btn btn-warning" data-dismiss="modal">ĐĂNG KÝ GIẤY PHÉP</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end list modal -->
+
       <div class="col-md-7">
         <div class="recognize-block">
           <img style="top: -20px; left: 147px;" src="/assets/media/DND3N/giai-quyet-tan-goc/bg-dang-ky-nganh-nghe-co-dieu-kien.svg">
@@ -42,7 +473,7 @@
             <p>Am hiểu thủ tục pháp lý của từng ngành nghề, Asoka sẽ tư vấn cho bạn hiểu rõ và hoàn thiện hồ sơ pháp lý đầy đủ theo quy định của cơ quan Nhà nước. Doanh nghiệp của bạn sẽ được rà soát, quản trị toàn diện về tình trạng pháp lý.</p>
           </div>
           <p style="color: #D5D5D5; font-style: italic">* Bấm vào từng lĩnh vực ở bên để tra cứu nhanh.</p>
-          <button style="margin-top: 30px; margin-bottom: 20px" class="btn btn-warning sub-button">Tra cứu miễn phí</button>
+          <button style="margin-top: 30px; margin-bottom: 20px" data-toggle="modal" data-target="#search-free-V" class="btn btn-warning sub-button">Tra cứu miễn phí</button>
           <p><i><a href="#">Kiểm tra toàn diện giấy phép có điều kiện</a></i></p>
         </div>
       </div>
@@ -80,11 +511,11 @@
                     <i *ngIf="!fieldValid(email,'email') && e"><small class="text-danger">Bắt buộc nhập email hợp lệ.</small></i>
                 </div>
                 <div class="form-group">
-                    <textarea [(ngModel)]="description" name="description" class="form-control" rows="3" placeholder="Tên nhãn hiệu, ngành nghề kinh doanh. Vd: Flow Media-Truyền thông marketing"></textarea>
+                    <textarea style="resize:none;" [(ngModel)]="description" name="description" class="form-control" rows="3" placeholder="Tên nhãn hiệu, ngành nghề kinh doanh.&#x0a;Vd: Flow Media-Truyền thông marketing"></textarea>
                 </div>
-                <div class="row">
+                <div class="row" style="padding: 0px 10px;">
                     <div class="form-group col-4">
-                        <button style="margin-bottom: 5px" class="btn" type="button" (click)="fileInput1.click()">
+                        <button style="margin-bottom: 5px;padding: 0px;" class="btn" type="button" (click)="fileInput1.click()">
                             <span style="color:#0f74a8;text-decoration: underline;font-size: 11px">Logo đính kèm 1</span>
                             <input #fileInput1 type="file" accept="image/*" (change)="onSelectFile($event,1)" style="display:none;"/>
                         </button>
@@ -94,7 +525,7 @@
                         </div>
                     </div>
                     <div class="form-group col-4">
-                        <button style="margin-bottom: 5px" class="btn" type="button" (click)="fileInput2.click()">
+                        <button style="margin-bottom: 5px;padding: 0px;" class="btn" type="button" (click)="fileInput2.click()">
                             <span style="color:#0f74a8;text-decoration: underline;font-size: 11px">Logo đính kèm 2</span>
                             <input #fileInput2 type="file" accept="image/*" (change)="onSelectFile($event,2)" style="display:none;"/>
                         </button>
@@ -104,7 +535,7 @@
                         </div>
                     </div>
                     <div class="form-group col-4">
-                        <button style="margin-bottom: 5px" class="btn" type="button" (click)="fileInput3.click()">
+                        <button style="margin-bottom: 5px;padding: 0px;" class="btn" type="button" (click)="fileInput3.click()">
                             <span style="color:#0f74a8;text-decoration: underline;font-size: 11px">Logo đính kèm 3</span>
                             <input #fileInput3 type="file" accept="image/*" (change)="onSelectFile($event,3)" style="display:none;"/>
                         </button>

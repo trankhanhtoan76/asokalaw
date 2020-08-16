@@ -3,6 +3,6 @@
     <input #fileInput type="file" [value]="value" accept="image/*" (change)="onSelectFile($event)" style="display:none;"/>
 </button>
 <div *ngIf="file.data">
-    <img *ngIf="type=='image'" style="width: 50px;max-height:100px" [src]="file.data"/>
+    <img *ngIf="type=='image'" style="width: auto;max-height:50px;max-width: 120px;" [src]="file.data"/>
     <span (click)="onRemoveSelectedFile()" class="fa fa-times-circle" style="color:red;cursor: pointer"></span>
 </div>

@@ -3152,7 +3152,7 @@ h1,h2,.padding-header{
 #fix-introduceRight-V{
     position: relative;
 }
-#fix-introduceRight-V img{
+#fix-introduceRight-V #img-background{
     top: -11.5%;
     margin-top: 0px;
     width: 664px;
@@ -3176,4 +3176,120 @@ h1,h2,.padding-header{
 }
 .list-slide-video{
     padding-top: 30px;
+}
+#fix-dkkd-quote{
+    line-height: 2;
+    padding-bottom: 15px;
+}
+.hide-V{
+    display: none;
+}
+#fix-dkdtbusiness-V{
+    height: 200px;
+}
+.slick-slide{
+    outline: none;
+}
+
+/* modal */
+.modal-dk-V .modal-header,.modal-dk-V .modal-body,.modal-dk-V .modal-footer{
+    border: none;
+}
+.modal-dk-V-list .modal-header,.modal-dk-V-list .modal-body,.modal-dk-V-list .modal-footer{
+    border: none;
+}
+.modal-dk-V .modal-content{
+    padding: 0px 15px;
+}
+.modal-dk-V-list .modal-content{
+    border-radius: 15px;
+    padding: 10px 25px;
+}
+.modal-dk-V .modal-header{
+    padding-bottom: 0px;
+}
+.modal-dk-V .modal-header p{
+    font-weight: bold;
+    padding: 0px;
+    margin: 0px;
+    font-size: 16px;
+}
+.modal-dk-V-list .modal-header{
+    padding-bottom: 0px;
+}
+.modal-dk-V-list .modal-header p{
+    line-height: 1.5;
+    font-weight: bold;
+    padding: 0px;
+    margin: 0px;
+    font-size: 22px;
+    text-align: center;
+}
+.modal-dk-V .modal-dialog{
+    padding-top: 10vh;
+    max-width: 700px;
+    width: 700px;
+}
+.modal-dk-V .modal-body img{
+    width: 100%;
+}
+.modal-dk-V .modal-footer{
+    text-align: center;
+}
+.modal-dk-V-list .modal-dialog{
+    padding-top: 10vh;
+    max-width: 550px;
+    width: 550px;
+}
+.modal-dk-V-list .fa-times{
+    font-size: 22px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+.modal-dk-V-list .modal-body img{
+    width: 100%;
+}
+.modal-dk-V-list .modal-footer{
+    text-align: center;
+}
+.modal-dk-V-list .modal-body .form-check-inline{
+    padding-bottom: 12px;
+}
+.modal-dk-V-list .modal-body .form-check-inline .form-check-label{
+    padding-left: 10px;
+    color:#655f5f;
+}
+#search-free-V textarea{
+    line-height: 2;
+    border-radius: 8px;
+    border: 1px solid #ced4da;
+    margin-bottom: 20px;
+    width: 100%;
+    height: 150px;
+    resize: none;
+    padding: 14px;
+    outline: none;
+}
+.form-small-header-V{
+    font-weight: bold;
+    color: #796f6f;
+    margin-bottom: 20px;
+}
+#list-record-attachment-V li{
+    display: flex;
+}
+#list-record-attachment-V li{
+    display: flex;
+    border-style: none;
+    justify-content: space-between;
+}
+.icon-attachment-file-V{
+    width: 120px;
+    color: #00BFFF;
+    cursor: pointer;
+    text-decoration: underline;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }

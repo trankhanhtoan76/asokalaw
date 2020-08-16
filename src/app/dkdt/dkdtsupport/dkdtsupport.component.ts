@@ -30,6 +30,7 @@ export class DkdtsupportComponent implements OnInit {
     }
 
     ngOnInit(): void {
+        $('#dkdtsupport-sp01','#dkdtsupport-sp02').magnificPopup({type: 'image'});
     }
 
     fieldValid(value, type?): boolean {

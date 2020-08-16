@@ -11,9 +11,18 @@ declare var $: any;
     styleUrls: ['./dknhintro.component.css']
 })
 export class DknhintroComponent implements OnInit {
-    logo1;
-    logo2;
-    logo3;
+    logo1 = {
+        data: '',
+        ext: ''
+    };
+    logo2 = {
+        data: '',
+        ext: ''
+    };
+    logo3 = {
+        data: '',
+        ext: ''
+    };
     onSelectLogo: number;
     onSelectLogoData: any;
     formHeight: number;
@@ -38,6 +47,7 @@ export class DknhintroComponent implements OnInit {
 
 
     changeFormHeight() {
+
         if (this.logo1.data || this.logo2.data || this.logo3.data) {
             if (this.isMobile()) {
                 if (this.isFormValid()) {
@@ -47,9 +57,9 @@ export class DknhintroComponent implements OnInit {
                 }
             } else {
                 if(this.isFormValid()){
-                    this.formHeight = 500;
+                    this.formHeight = 480;
                 }else {
-                    this.formHeight = 550;
+                    this.formHeight = 540;
                 }
             }
         } else {
@@ -60,13 +70,17 @@ export class DknhintroComponent implements OnInit {
                     this.formHeight = 520;
                 }
             } else {
-                this.formHeight = 470;
+                if(this.isFormValid()){
+                    this.formHeight = 440;
+                }else {
+                    this.formHeight = 490;
+                }
             }
         }
     }
 
     isFormValid(): boolean {
-        return (!this.form.formValid([{value: this.name}, {value: this.phone, type: 'phone'}, {value: this.email, type: 'email'}]));
+        return (this.form.formValid([{value: this.name}, {value: this.phone, type: 'phone'}, {value: this.email, type: 'email'}]));
     }
 
     submit(): void {

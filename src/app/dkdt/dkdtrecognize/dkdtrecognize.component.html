@@ -24,12 +24,12 @@
             <div class="col-sm-12 d-block d-md-none">
                 <ul class="nav nav-tabs pb-3" id="myTab" role="tablist">
                     <li class="">
-                        <a (click)="changepackage('Thành lập doanh nghiệp mới')" class="nav-link text-center active" id="home-tab" data-toggle="tab" href=".ndn" role="tab"
+                        <a (click)="changepackage('Thành lập doanh nghiệp mới','tab-tldnm-V')" class="nav-link text-center active" id="home-tab" data-toggle="tab" href=".ndn" role="tab"
                            aria-controls="home" aria-selected="true">Thành lập<br> doanh nghiệp mới</a>
 
                     </li>
                     <li class="">
-                        <a (click)="changepackage('Góp hoặc mua cổ phần/vốn góp')" class="nav-link text-center"
+                        <a (click)="changepackage('Góp hoặc mua cổ phần/vốn góp','tab-mcp-V')" class="nav-link text-center"
                            id="profile-tab" data-toggle="tab" href=".tdn" role="tab"
                            aria-controls="profile" aria-selected="false">Góp hoặc mua<br> cổ phần/vốn góp</a>
 
@@ -41,72 +41,6 @@
 
                 <div class="tab-content" id="myTabContent">
                     <div class="tab-pane fade show active ndn" role="tabpanel" aria-labelledby="home-tab">
-                        <h5 class="d-none d-md-block">Góp vốn, mua cổ phần, phần vốn góp</h5>
-                        <div id="accordion">
-                            <div class="header_custom">
-                                <div class="header-content" id="headingOne">
-
-                                    <a class="btn btn-link" data-toggle="collapse" data-target="#collapseOne"
-                                       aria-expanded="true" aria-controls="collapseOne">
-                                        Ưu điểm<i class="icon-right"></i>
-                                    </a>
-
-                                </div>
-
-                                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
-                                     data-parent="#accordion">
-                                    <div class="card-body">
-                                        <div class="content-dkdt">
-                                            <i class="fa fa-circle"></i>Nhà đầu tư nhanh chóng thực hiện được việc kinh
-                                            doanh dựa trên nền tảng
-                                            hồ
-                                            sơ/giấy phép doanh nghiệp cũ đã có sẵn.
-                                        </div>
-                                        <div class="content-dkdt">
-                                            <i class="fa fa-circle"></i> Tiếp cận ngay với thị trường, khách hàng cũ, từ
-                                            đó việc phát triển kinh
-                                            doanh có
-                                            thể dễ dàng hơn so với việc thành lập doanh nghiệp mới hoàn toàn.
-                                        </div>
-                                        <div class="content-dkdt">
-                                            <i class="fa fa-circle"></i> Thủ tục đăng ký góp vốn, mua cổ phần, phần vốn
-                                            góp nhìn chung tương đối
-                                            đơn
-                                            giản hơn so với việc thành lập doanh nghiệp mới.
-                                        </div>
-
-
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="header_custom">
-                                <div class="header-content" id="headingTwo">
-
-                                    <a class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo"
-                                       aria-expanded="true" aria-controls="collapseTwo">
-                                        Nhược điểm<i class="icon-right"></i>
-                                    </a>
-
-                                </div>
-
-                                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
-                                     data-parent="#accordion">
-                                    <div class="card-body">
-                                        <div class="content-dkdt">
-                                            <i class="fa fa-circle"></i>Nhà đầu tư cần thận trọng trong quá trình soát
-                                            xét các vấn đề pháp lý của doanh nghiệp cũ trước khi quyết định góp vốn, mua
-                                            cổ phần/vốn góp.
-                                        </div>
-                                        <div class="content-dkdt">
-                                            <i class="fa fa-circle"></i>Một số ngành nghề đang hoạt động tại doanh
-                                            nghiệp cũ có thể có hạn chế sự tham gia của nhà đầu tư nước ngoài.
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tab-pane fade tdn" role="tabpanel" aria-labelledby="profile-tab">
                         <h5 class="d-none d-md-block">Thành lập doanh nghiệp mới</h5>
                         <div id="accordionn">
                             <div class="header_custom">
@@ -174,6 +108,72 @@
 
                         </div>
                     </div>
+                    <div class="tab-pane fade tdn" role="tabpanel" aria-labelledby="profile-tab">
+                        <h5 class="d-none d-md-block">Góp vốn, mua cổ phần, phần vốn góp</h5>
+                        <div id="accordion">
+                            <div class="header_custom">
+                                <div class="header-content" id="headingOne">
+
+                                    <a class="btn btn-link" data-toggle="collapse" data-target="#collapseOne"
+                                       aria-expanded="true" aria-controls="collapseOne">
+                                        Ưu điểm<i class="icon-right"></i>
+                                    </a>
+
+                                </div>
+
+                                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                                     data-parent="#accordion">
+                                    <div class="card-body">
+                                        <div class="content-dkdt">
+                                            <i class="fa fa-circle"></i>Nhà đầu tư nhanh chóng thực hiện được việc kinh
+                                            doanh dựa trên nền tảng
+                                            hồ
+                                            sơ/giấy phép doanh nghiệp cũ đã có sẵn.
+                                        </div>
+                                        <div class="content-dkdt">
+                                            <i class="fa fa-circle"></i> Tiếp cận ngay với thị trường, khách hàng cũ, từ
+                                            đó việc phát triển kinh
+                                            doanh có
+                                            thể dễ dàng hơn so với việc thành lập doanh nghiệp mới hoàn toàn.
+                                        </div>
+                                        <div class="content-dkdt">
+                                            <i class="fa fa-circle"></i> Thủ tục đăng ký góp vốn, mua cổ phần, phần vốn
+                                            góp nhìn chung tương đối
+                                            đơn
+                                            giản hơn so với việc thành lập doanh nghiệp mới.
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="header_custom">
+                                <div class="header-content" id="headingTwo">
+
+                                    <a class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo"
+                                       aria-expanded="true" aria-controls="collapseTwo">
+                                        Nhược điểm<i class="icon-right"></i>
+                                    </a>
+
+                                </div>
+
+                                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                                     data-parent="#accordion">
+                                    <div class="card-body">
+                                        <div class="content-dkdt">
+                                            <i class="fa fa-circle"></i>Nhà đầu tư cần thận trọng trong quá trình soát
+                                            xét các vấn đề pháp lý của doanh nghiệp cũ trước khi quyết định góp vốn, mua
+                                            cổ phần/vốn góp.
+                                        </div>
+                                        <div class="content-dkdt">
+                                            <i class="fa fa-circle"></i>Một số ngành nghề đang hoạt động tại doanh
+                                            nghiệp cũ có thể có hạn chế sự tham gia của nhà đầu tư nước ngoài.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
                 </div>
             </div>
@@ -187,13 +187,13 @@
     width: fit-content;
     margin: auto;">
                     <li class="nav-item nav-custom">
-                        <a (click)="changepackage('Thành lập doanh nghiệp mới')" class="nav-link active" style="border-right:1px solid #bbb5b5;border-top-left-radius: 0rem; border-top-left-radius: 30px;border-bottom-left-radius: 30px;
+                        <a (click)="changepackage('Thành lập doanh nghiệp mới','tab-tldnm-V')" class="nav-link active" style="border-right:1px solid #bbb5b5;border-top-left-radius: 0rem; border-top-left-radius: 30px;border-bottom-left-radius: 30px;
     border-top-right-radius: 0rem; " id="home-tab" data-toggle="tab" href=".ndn" role="tab"
                            aria-controls="home" aria-selected="true">Thành lập doanh nghiệp mới</a>
 
                     </li>
                     <li class="nav-item nav-custom">
-                        <a (click)="changepackage('Góp hoặc mua cổ phần/vốn góp')" class="nav-link" style="border-top-right-radius: 30px;border-bottom-right-radius: 30px; "
+                        <a (click)="changepackage('Góp hoặc mua cổ phần/vốn góp','tab-mcp-V')" class="nav-link" style="border-top-right-radius: 30px;border-bottom-right-radius: 30px; "
                            id="profile-tab" data-toggle="tab" href=".tdn" role="tab"
                            aria-controls="profile" aria-selected="false">Góp hoặc mua cổ phần/vốn góp</a>
 
@@ -203,7 +203,7 @@
             </div>
         </div>
         <div class="d-none d-md-block">
-            <div class="row  sub custom-tab home-tab">
+            <div class="row  sub custom-tab home-tab hide-V" id="tab-mcp-V">
 
                 <div class="col-md-4">
                     <h1>Đề xuất các gói phí từ Asoka Law</h1>
@@ -211,7 +211,7 @@
                     để xem giá phí tương ứng.
                 </div>
                 <div class="col-md-4">
-                    <div class="box shadow-lg" style="background-color: #FDF6F3;">
+                    <div class="box shadow-lg" style="background-color: #FDF6F3;border: 1px solid #4caddb">
                         <div class="block-one">
                             <img class="sticky" src="/assets/media/DKKD/cac-goi-phi/Asset 6.svg">
                             <div class="title-block center">
@@ -233,7 +233,7 @@
                                 hàng, chi cục thuế.
                             </p>
                             <button (click)="submit('Gói tiết kiệm')" class="btn btn-outline-warning" style="border-radius: 30px; padding: 5px 20px;">Đăng ký</button>
-                            <div class="block-three collapse">
+                            <div class="block-three collapse" id="multiCollapseExample1">
                                 <hr style="margin-bottom: 20px!important;">
                                 <p><img class="icon-block"
                                         src="/assets/media/DKKD/cac-goi-phi/Asset 8.svg">Tư vấn
@@ -303,7 +303,7 @@
                                 Chi Cục Thuế.
                             </p>
                             <button (click)="submit('Gói toàn diện')" class="btn btn-warning" style="border-radius: 30px; padding: 5px 20px;">Đăng ký</button>
-                            <div class="block-three collapse">
+                            <div class="block-three collapse" id="multiCollapseExample2">
                                 <hr style="margin-bottom: 20px!important;">
                                 <p><img class="icon-block"
                                         src="/assets/media/DKKD/cac-goi-phi/Asset 8.svg">Tư vấn
@@ -355,7 +355,7 @@
 
 
             </div>
-            <div class="row  sub custom-tab profile-tab" style="display: none;">
+            <div class="row  sub custom-tab profile-tab" id="tab-tldnm-V">
 
                 <div class="col-md-4">
                     <h1>Đề xuất các gói phí từ Asoka Law</h1>
@@ -579,9 +579,10 @@
                     Góp hoặc mua cổ phần/vốn góp
                 </label>
             </div>
+            
             <div class="pt-4 price-recognize collapse show">
                 <div class="col-sm-12 p-4">
-                    <div class="box shadow-lg" style="background-color: #FDF6F3;">
+                    <div class="box shadow-lg" style="background-color: #FDF6F3;border: 1px solid #4caddb">
                         <div class="block-one">
                             <img class="sticky" src="/assets/media/DKKD/cac-goi-phi/Asset 6.svg">
                             <div class="title-block center">
@@ -727,6 +728,7 @@
                     </div>
                 </div>
             </div>
+
             <div class="pt-4 price-recognize collapse">
                 <div class="col-sm-12 p-4">
                     <div class="box shadow-lg">
