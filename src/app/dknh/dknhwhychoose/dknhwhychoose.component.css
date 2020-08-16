@@ -1382,7 +1382,7 @@ p.des-record {
   position: absolute;
   top: 1rem;
   right: -28rem;
-  background-color: #4cb1e0;
+  background-color: black;
 }.call p:before {
    content: '';
    width: 25rem;
@@ -1390,7 +1390,7 @@ p.des-record {
    position: absolute;
    top: 1rem;
    left: -28rem;
-   background-color: #4cb1e0;
+   background-color: black;
  }
 @media (max-width: 768px) {
   .header {
