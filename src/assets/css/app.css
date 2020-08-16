@@ -3147,3 +3147,33 @@ p.tvlstextareaform {
 h1,h2,.padding-header{
     padding-top:3rem;
 }
+
+/* code of V */
+#fix-introduceRight-V{
+    position: relative;
+}
+#fix-introduceRight-V img{
+    top: -11.5%;
+    margin-top: 0px;
+    width: 664px;
+    right: -18%;
+    transform: rotate(-2deg);
+    margin-left: 0px;
+    height: 570px;
+}
+#fix-introduceRight-V #fix-form-V{
+    padding: 20px 40px;
+}
+#effectiveContent{
+    background-image: url(../media/landingpage/effect/new-background-2.svg);
+    background-repeat: no-repeat;
+}
+.fix-dknhfeedback-V{
+    background-image: url(../media/landingpage/effect/new-background-3.svg);
+}
+.fix-slide-dkn-videos-V{
+    padding: 20px 40px 20px 40px;
+}
+.list-slide-video{
+    padding-top: 30px;
+}

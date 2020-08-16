@@ -26,7 +26,7 @@ export class DknhintroComponent implements OnInit {
     e;
 
     constructor(private spinner: SpinnerService, private smtp: EmailService, public form: FormValidateService) {
-        this.formHeight = 470;
+        this.formHeight = 440;
     }
 
     ngOnInit(): void {
