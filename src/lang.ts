@@ -7,8 +7,8 @@ export const langDefined = {
         vi: "Pháp lý thường xuyên",
         en: "Pháp lý thường xuyên"
     },
-    'abc':{
-        vi:"Chúng tôi là Asoka Law",
-        en:"Chúng tôi là Asoka Law ennnn k"
+    'chung-toi-la-asokalaw': {
+        vi: "Chúng tôi là Asoka Law",
+        en: "Chúng tôi là Asoka Law"
     }
 };

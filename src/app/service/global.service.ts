@@ -1,6 +1,6 @@
 import {Injectable} from '@angular/core';
 import {postAPI} from "../helpers/api";
-import {getCookie} from "../helpers/cookie";
+import {getCookie, setCookie} from "../helpers/cookie";
 import {langDefined} from "../../lang";
 
 @Injectable({
@@ -46,9 +46,16 @@ export class GlobalService {
     }
 
     initLocale() {
-        this.locale = getCookie('asokalawlang');
-        if (!this.locale) {
-            this.locale = 'vi';
+        const url = new URL(window.location.href);
+        const lang = url.searchParams.get('lang');
+        if (lang) {
+            this.locale = lang;
+            setCookie('asokalawlang', lang);
+        } else {
+            this.locale = getCookie('asokalawlang');
+            if (!this.locale) {
+                this.locale = 'vi';
+            }
         }
     }
 }
