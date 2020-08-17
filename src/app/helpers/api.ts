@@ -22,5 +22,5 @@ export function callAPI(method: string, headers: {}, url: string, data: FormData
 }
 
 export function postAPI(data: FormData, callback, callbackError?): void {
-    callAPI('POST', {}, 'http://admin.asokalaw.vn/api/index.php', data, callback, callbackError);
+    callAPI('POST', {}, 'https://admin.asokalaw.vn/api/index.php', data, callback, callbackError);
 }

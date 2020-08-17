@@ -17,7 +17,7 @@
         <div class="row">
             <ng-container *ngFor="let item of news">
                 <div class="col-md-4">
-                    <app-news-box2></app-news-box2>
+                    <app-news-box2 [data]="item"></app-news-box2>
                 </div>
             </ng-container>
         </div>

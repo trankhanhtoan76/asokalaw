@@ -1,4 +1,5 @@
 import {Component, Input, OnInit} from '@angular/core';
+import {GlobalService} from "../../service/global.service";
 
 @Component({
     selector: 'app-news-box',
@@ -8,7 +9,7 @@ import {Component, Input, OnInit} from '@angular/core';
 export class NewsBoxComponent implements OnInit {
     @Input() data: any;
 
-    constructor() {
+    constructor(public global: GlobalService) {
     }
 
     ngOnInit(): void {
