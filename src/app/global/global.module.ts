@@ -19,7 +19,8 @@ import { LangComponent } from './lang/lang.component';
         ModalVideoComponent,
         GlobalQuestionComponent,
         GlobalFeedbackComponent,
-        GlobalSlideVideosComponent
+        GlobalSlideVideosComponent,
+        LangComponent
     ],
     imports: [
         CommonModule
