@@ -17,8 +17,8 @@ export class LangComponent implements OnInit {
     }
 
     ngOnInit(): void {
-        if (this.key && langDefined.hasOwnProperty(this.key)) {
-            this.langDisplay = langDefined[this.key];
+        if (this.key && langDefined.hasOwnProperty(this.key) && langDefined[this.key].hasOwnProperty(this.global.locale)) {
+            this.langDisplay = langDefined[this.key][this.global.locale];
         } else {
             this.langDisplay = this.default;
         }
