@@ -85,7 +85,6 @@ import {GlobalModule} from "./global/global.module";
 import { DknhVideosComponent } from './dknh/dknh-videos/dknh-videos.component';
 import { DkkdSubfooterComponent } from './dkkd/dkkd-subfooter/dkkd-subfooter.component';
 import {GlobalService} from "./service/global.service";
-import { NewsdetailComponent } from './newsdetail/newsdetail.component';
 
 const routes: Routes = [
     {path: '', component: HomeComponent},
@@ -93,8 +92,7 @@ const routes: Routes = [
     {path: 'dang-ky-nhan-hieu', component: DknhComponent},
     {path: 'dang-ky-dau-tu', component: DkdtComponent},
     {path: 'phap-ly-thuong-xuyen', component: PltxComponent},
-    {path: 'tu-van-luat-su', component: TvlsComponent},
-    {path: 'tin-tuc-2', component: NewsdetailComponent},
+    {path: 'tu-van-luat-su', component: TvlsComponent}
 ];
 
 @NgModule({
@@ -165,8 +163,7 @@ const routes: Routes = [
         FormFieldUploadComponent,
         FormGroupFieldInfoComponent,
         DknhVideosComponent,
-        DkkdSubfooterComponent,
-        NewsdetailComponent
+        DkkdSubfooterComponent
     ],
     imports: [
         BrowserModule,

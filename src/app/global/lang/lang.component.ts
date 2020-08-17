@@ -1,6 +1,5 @@
 import {Component, Input, OnInit} from '@angular/core';
 import {GlobalService} from "../../service/global.service";
-import {DomSanitizer} from "@angular/platform-browser";
 
 @Component({
     selector: '[lang-i18n]',
@@ -10,10 +9,10 @@ import {DomSanitizer} from "@angular/platform-browser";
 export class LangComponent implements OnInit {
     @Input() key: string;
     @Input() default: string;
-    langDisplay;
+    langDisplay:string;
     locale: string;
 
-    constructor(private global: GlobalService, private _sanitizer: DomSanitizer) {
+    constructor(private global: GlobalService) {
     }
 
     ngOnInit(): void {
@@ -22,6 +21,5 @@ export class LangComponent implements OnInit {
         } else {
             this.langDisplay = this.default;
         }
-        this.langDisplay = this._sanitizer.bypassSecurityTrustHtml(this.langDisplay);
     }
 }
