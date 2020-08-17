@@ -3,7 +3,7 @@
         <img src="{{data.image}}">
     </p>
     <p class="news-tag">
-        <span class="badge badge-secondary">
+        <span routerLink="/news-category/{{data.category_slug}}" class="badge badge-secondary">
             <img src="/assets/media/chnn/news01_tag.svg">
             {{global.locale == 'vi' ? data.category_name : data.en_category_name}}
         </span>

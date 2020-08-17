@@ -11,15 +11,27 @@ export class NewsComponent implements OnInit {
     count: number;
     news: any;
     firstnews: any;
-    category: string;
+    category_slug: string;
+    category = {
+        tags: ''
+    };
 
     constructor(private router: ActivatedRoute) {
         const self = this;
         this.router.paramMap.subscribe(paramMap => {
-            this.category = paramMap.get('category');
+            this.category_slug = paramMap.get('category');
+
+            //get category info
+            const param = new FormData();
+            param.append('action', 'get_record');
+            param.append('query', `select * from category where slug='${this.category_slug}'`);
+            postAPI(param, function (res): void {
+                self.category = res;
+            });
+
+            //get list post of category
             const data = new FormData();
             data.append('action', 'get_records');
-
             data.append('query', `
 select p.id,
        p.description,
@@ -48,13 +60,13 @@ where (
             (
                 select c.id
                 from category as c
-                where c.slug = '${this.category}'
+                where c.slug = '${this.category_slug}'
             )
         or p.category_id in
            (
                select c2.id
                from category as c2
-               where c2.parent_id in (select c4.id from category as c4 where c4.slug = '${this.category}')
+               where c2.parent_id in (select c4.id from category as c4 where c4.slug = '${this.category_slug}')
            )
     )
   and p.is_publish = 1

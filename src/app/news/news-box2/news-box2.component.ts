@@ -4,7 +4,10 @@ import {GlobalService} from "../../service/global.service";
 @Component({
     selector: 'app-news-box2',
     templateUrl: './news-box2.component.html',
-    styleUrls: ['./news-box2.component.css']
+    styleUrls: [
+        '../news.component.css',
+        './news-box2.component.css',
+    ]
 })
 export class NewsBox2Component implements OnInit {
     @Input() data;

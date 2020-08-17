@@ -688,6 +688,7 @@ hr.blue {
   font-size: 16px;
   font-weight: 300;
   background: #AFAFAF;
+    cursor: pointer;
 }
 .news-tag .badge img {
   width: 12px;
@@ -906,10 +907,10 @@ hr.blue {
   margin-top: 2.7rem;
 }
 .form-adv-btn button {
-  width: 170px;
+  /*width: 170px;*/
   text-transform: uppercase;
-  padding: 9px;
-  font-size: 12px;
+  /*padding: 9px;*/
+  /*font-size: 12px;*/
 }
 #mainvisual.news {
   display: flex;

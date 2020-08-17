@@ -1,11 +1,6 @@
 <div class="news-tags">
     <h4>Tags</h4>
     <ul class="news-list-tags">
-        <li class="btn btn-outline-secondary">Doanh nghiệp</li>
-        <li class="btn btn-outline-secondary">Đầu tư</li>
-        <li class="btn btn-outline-secondary">Khởi nghiệp</li>
-        <li class="btn btn-outline-secondary">Pháp lý doanh nghiệp</li>
-        <li class="btn btn-outline-secondary">Nhãn hiệu</li>
-        <li class="btn btn-outline-secondary">Pháp lý sự kiện</li>
+        <li *ngFor="let tag of displayTags" class="btn btn-outline-secondary">{{tag}}</li>
     </ul>
 </div>

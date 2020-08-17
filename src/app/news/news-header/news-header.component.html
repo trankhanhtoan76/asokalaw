@@ -2,8 +2,8 @@
     <div class="container">
         <div class="row">
             <div class="col-md-6">
-                <h2>Tin tức</h2>
-                <p class="main-txt">Trang thông tin - Cập nhật những tin tức mới nhất từ Asoka Law về pháp luật, kinh doanh, đầu tư, doanh nghiệp....</p>
+                <h2>{{global.locale == 'vi' ? data.name : data.en_name}}</h2>
+                <p class="main-txt">{{global.locale == 'vi' ? data.description : data.en_description}}</p>
             </div>
         </div>
     </div>
