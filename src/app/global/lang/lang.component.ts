@@ -3,7 +3,7 @@ import {langDefined} from "../../../lang";
 import {GlobalService} from "../../service/global.service";
 
 @Component({
-    selector: 'lang',
+    selector: '[lang]',
     templateUrl: './lang.component.html',
     styleUrls: ['./lang.component.css']
 })
