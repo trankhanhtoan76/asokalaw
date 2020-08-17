@@ -1,5 +1,6 @@
 import {Injectable} from '@angular/core';
 import {postAPI} from "../helpers/api";
+import {getCookie} from "../helpers/cookie";
 
 @Injectable({
     providedIn: 'root'
@@ -28,6 +29,7 @@ export class GlobalService {
         linkin: '',
         facebook: ''
     };
+    locale: string;
 
     constructor() {
         var self = this;
@@ -37,5 +39,13 @@ export class GlobalService {
         postAPI(params, function (res): void {
             self.settings = res;
         });
+        this.initLocale();
+    }
+
+    initLocale() {
+        this.locale = getCookie('asokalawlang');
+        if (!this.locale) {
+            this.locale = 'vi';
+        }
     }
 }

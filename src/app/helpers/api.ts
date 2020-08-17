@@ -21,6 +21,6 @@ export function callAPI(method: string, headers: {}, url: string, data: FormData
     xmlHttp.send(data);
 }
 
-export function postAPI(data: FormData, callback, callbackError?): void {
-    callAPI('POST', {}, 'http://localhost/tkt96/kt/api/index.php', data, callback, callbackError);
+export function postAPI(data: FormData, callback, callbackError?): void {debugger;
+    callAPI('POST', {}, 'http://admin.asokalaw.vn/api/index.php', data, callback, callbackError);
 }

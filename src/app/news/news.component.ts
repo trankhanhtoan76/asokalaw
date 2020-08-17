@@ -18,7 +18,7 @@ export class NewsComponent implements OnInit {
         const self = this;
         const data = new FormData();
         data.append('action', 'get_records');
-        data.append('query', 'select from post left join category c on post.category_id = c.id limit 10');
+        data.append('query', 'select * from post left join category c on post.category_id = c.id limit 10');
         postAPI(data, function (res): void {console.log(res);
             if (res.length) {
                 self.firstnews = res[0]

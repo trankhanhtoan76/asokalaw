@@ -3,6 +3,7 @@ import {SpinnerService} from '../service/spinner.service';
 import {FormValidateService} from "../service/form-validate.service";
 import {EmailService} from "../service/email.service";
 import {GlobalService} from "../service/global.service";
+import {setCookie} from "../helpers/cookie";
 
 declare var $: any;
 
@@ -45,6 +46,11 @@ export class HeaderComponent implements OnInit {
     }
 
     ngOnInit(): void {
+    }
+
+    changeLang(lang): void {
+        setCookie('asokalawlang', lang);
+        window.location.reload();
     }
 
     isMobileScreen(): boolean {
