@@ -9,6 +9,7 @@ import {NewsForm2Component} from './news-form2/news-form2.component';
 import {NewsTagComponent} from './news-tag/news-tag.component';
 import {NewsBox2Component} from './news-box2/news-box2.component';
 import {NewsdetailComponent} from "./newsdetail/newsdetail.component";
+import {FormsModule} from "@angular/forms";
 
 const routes: Routes = [
     {path: 'news-category/:category', component: NewsComponent},
@@ -28,7 +29,8 @@ const routes: Routes = [
     ],
     imports: [
         CommonModule,
-        RouterModule.forRoot(routes)
+        RouterModule.forRoot(routes),
+        FormsModule
     ]
 })
 export class NewsModule {

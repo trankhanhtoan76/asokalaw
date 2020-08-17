@@ -1,1 +1,86 @@
-<p>news-form2 works!</p>
+<section class="bg-gray">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h4 class="news-title center mb-5" style="color: #213070;">NHẬN TƯ VẤN MIỄN PHÍ CÁC VẤN ĐỀ PHÁP LÝ CỦA BẠN</h4>
+                <form class="news-form">
+                    <div class="form-group">
+                        <input (keyup)="n=true" [class.is-invalid]="!form.fieldValid(name)&&n" [class.is-valid]="form.fieldValid(name)&&n" type="text" class="form-control" [(ngModel)]="name" name="name" placeholder="Họ tên *">
+                        <i *ngIf="!form.fieldValid(name) && n"><small class="text-danger">Bắt buộc nhập họ tên.</small></i>
+                    </div>
+                    <div class="form-group">
+                        <input (keyup)="e=true" [class.is-invalid]="!form.fieldValid(email,'email')&&(e||submitClick)" [class.is-valid]="form.fieldValid(email,'email')" class="form-control" name="email" [(ngModel)]="email" type="text" placeholder="Email *"/>
+                        <i *ngIf="!form.fieldValid(email,'email')&&(e||submitClick)"><small class="text-danger">Bắt buộc nhập email hợp lệ.</small></i>
+                    </div>
+                    <div class="form-group">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-check-inline">
+                                        <input (change)="selectService(s1)" [checked]="isSelectedService(s1)" class="form-check-input" name="service1" type="checkbox" id="service1" [value]="s1">
+                                        <label class="form-check-label " for="service1">{{s1}}</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-check-inline">
+                                        <input (change)="selectService(s2)" [checked]="isSelectedService(s2)" class="form-check-input" name="service2" type="checkbox" id="service2" [value]="s2">
+                                        <label class="form-check-label " for="service1">{{s2}}</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-check-inline">
+                                        <input (change)="selectService(s3)" [checked]="isSelectedService(s3)" class="form-check-input" name="service3" type="checkbox" id="service3" [value]="s3">
+                                        <label class="form-check-label " for="service1">{{s3}}</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-check-inline">
+                                        <input (change)="selectService(s4)" [checked]="isSelectedService(s4)" class="form-check-input" name="service4" type="checkbox" id="service4" [value]="s4">
+                                        <label class="form-check-label " for="service1">{{s4}}</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-check-inline">
+                                        <input (change)="selectService(s5)" [checked]="isSelectedService(s5)" class="form-check-input" name="service5" type="checkbox" id="service5" [value]="s5">
+                                        <label class="form-check-label " for="service1">{{s5}}</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-check-inline">
+                                        <input (change)="selectService(s6)" [checked]="isSelectedService(s6)" class="form-check-input" name="service6" type="checkbox" id="service6" [value]="s6">
+                                        <label class="form-check-label " for="service1">{{s6}}</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-check-inline">
+                                        <input (change)="selectService(s7)" [checked]="isSelectedService(s7)" class="form-check-input" name="service7" type="checkbox" id="service7" [value]="s7">
+                                        <label class="form-check-label " for="service1">{{s7}}</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-check-inline">
+                                        <input (change)="selectService(s8)" [checked]="isSelectedService(s8)" class="form-check-input" name="service8" type="checkbox" id="service8" [value]="s8">
+                                        <label class="form-check-label " for="service1">{{s8}}</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button (click)="submit()" type="button" class="btn btn-warning d-block">Gửi yêu cầu</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
