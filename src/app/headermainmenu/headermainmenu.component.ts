@@ -17,7 +17,7 @@ export class HeadermainmenuComponent implements OnInit {
     showMenu4 = false;
     showMenu5 = false;
 
-    constructor(private global: GlobalService) {
+    constructor(public global: GlobalService) {
     }
 
     ngOnInit(): void {
