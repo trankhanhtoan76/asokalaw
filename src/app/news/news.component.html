@@ -1,269 +1,143 @@
-<section id="mainvisual" class="news">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-6">
-        <h2>Tin tức</h2>
-        <p class="main-txt">Trang thông tin - Cập nhật những tin tức mới nhất từ Asoka Law về pháp luật, kinh doanh, đầu tư, doanh nghiệp....</p>
-      </div>
-    </div>
-  </div>
-</section>
+<app-news-header></app-news-header>
 <section id="news">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-8">
-        <div class="news-content">
-          <p class="news-banner"><img src="/assets/media/chnn/news01_img.jpg" style="max-width: 100%"></p>
-          <div class="news-label">
-            <div class="row">
-              <div class="col-sm-8">
-                <p class="news-tag"><span class="badge badge-secondary"><img src="/assets/media/chnn/news01_tag.svg">Bảo hộ nhãn hiệu</span><span>23 tháng 05, 2020</span></p>
-              </div>
-              <div class="col-sm-4">
-                <div class="news-view">
-                  <p>228 lượt xem</p>
-                </div>
-              </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <app-news-box [data]="firstnews"></app-news-box>
             </div>
-          </div>
-          <h2>YG Entertainment đăng ký thương hiệu cho thành viên BLACKPINK</h2>
-          <p>YG Entertainment đã nộp đơn đăng ký thương hiệu cho tên của cô nàng Lisa, một thành viên trong nhóm nhạc hot hit BLACKPINK của mình.</p>
-          <a href="#" class="news-btn btn btn-outline-dark">Đọc tiếp<span><img src="/assets/media/chnn/news01_Asset 7.svg" ></span></a>
+            <div class="col-md-4">
+                <app-news-form1></app-news-form1>
+                <app-news-tag></app-news-tag>
+            </div>
         </div>
-      </div>
-      <div class="col-md-4">
-        <form class="form-adv">
-          <h4>Tư vấn pháp lý miễn phí</h4>
-          <hr>
-          <div class="form-group">
-            <input type="text" class="form-control" id="form-adv-name" placeholder="Họ &amp; tên">
-          </div>
-          <div class="form-group">
-            <input class="form-control" type="email" id="form-adv-email" placeholder="Email*" required="true">
-          </div>
-          <div class="form-adv-btn"><button type="button" class="btn btn-warning">Gửi yêu cầu</button></div>
-        </form>
-        <div class="news-tags">
-          <h4>Tags</h4>
-          <ul class="news-list-tags">
-            <li class="btn btn-outline-secondary">Doanh nghiệp</li>
-            <li class="btn btn-outline-secondary">Đầu tư</li>
-            <li class="btn btn-outline-secondary">Khởi nghiệp</li>
-            <li class="btn btn-outline-secondary">Pháp lý doanh nghiệp</li>
-            <li class="btn btn-outline-secondary">Nhãn hiệu</li>
-            <li class="btn btn-outline-secondary">Pháp lý sự kiện</li>
-          </ul>
-        </div>
-      </div>
     </div>
-  </div>
 </section>
 <section>
-  <div class="container">
-    <div class="row">
-      <div class="col-md-4">
-        <div class="list-news">
-          <p class="news-img"><img src="/assets/media/chnn/news01_img01.jpg"></p>
-          <p class="news-tag"><span class="badge badge-secondary"><img src="/assets/media/chnn/news01_tag.svg">Đăng ký kinh doanh</span><span>20 tháng 03, 2020</span></p>
-          <h4 class="news-title">Doanh nghiệp nên tác chiến với thông tin tiêu cực như thế nào?</h4>
-          <p class="news-txt">Đối với mỗi doanh nghiệp, gặp phải thông tin tiêu cực là vấn đề nhức nhối mà sẽ làm thiệt hại không nhỏ...</p>
-          <a href="#" class="news-btn btn btn-outline-dark">Đọc tiếp<span><img src="/assets/media/chnn/news01_Asset 7.svg" ></span></a>
+    <div class="container">
+        <div class="row">
+            <ng-container *ngFor="let item of news">
+                <div class="col-md-4">
+                    <app-news-box2></app-news-box2>
+                </div>
+            </ng-container>
         </div>
-      </div>
-      <div class="col-md-4">
-        <div class="list-news">
-          <p class="news-img"><img src="/assets/media/chnn/news01_img02.jpg"></p>
-          <p class="news-tag"><span class="badge badge-secondary"><img src="/assets/media/chnn/news01_tag.svg">Đăng ký kinh doanh</span><span>20 tháng 03, 2020</span></p>
-          <h4 class="news-title">Doanh nghiệp nên tác chiến với thông tin tiêu cực như thế nào?</h4>
-          <p class="news-txt">Đối với mỗi doanh nghiệp, gặp phải thông tin tiêu cực là vấn đề nhức nhối mà sẽ làm thiệt hại không nhỏ...</p>
-          <a href="#" class="news-btn btn btn-outline-dark">Đọc tiếp<span><img src="/assets/media/chnn/news01_Asset 7.svg" ></span></a>
+        <div class="row">
+            <div class="col-md-12 center">
+                <nav class="news-pagination">
+                    <ul class="pagination">
+                        <li class="page-item first-prev">
+                            <a href="#" aria-label="Previous">
+                                <img src="/assets/media/chnn/news01_Asset 4.svg">
+                            </a>
+                        </li>
+                        <li class="page-item prev">
+                            <a href="#" aria-label="Previous">
+                                <img src="/assets/media/chnn/news01_Asset 2.svg">
+                            </a>
+                        </li>
+                        <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item"><a class="page-link" href="#">4</a></li>
+                        <li class="page-item"><a class="page-link" href="#">...</a></li>
+                        <li class="page-item"><a class="page-link" href="#">17</a></li>
+                        <li class="page-item next">
+                            <a href="#" aria-label="Next">
+                                <img src="/assets/media/chnn/news01_Asset 3.svg">
+                            </a>
+                        </li>
+                        <li class="page-item end-next">
+                            <a href="#" aria-label="Next">
+                                <img src="/assets/media/chnn/news01_Asset 5.svg">
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
         </div>
-      </div>
-      <div class="col-md-4">
-        <div class="list-news">
-          <p class="news-img"><img src="/assets/media/chnn/news01_img03.jpg"></p>
-          <p class="news-tag"><span class="badge badge-secondary"><img src="/assets/media/chnn/news01_tag.svg">Đăng ký kinh doanh</span><span>20 tháng 03, 2020</span></p>
-          <h4 class="news-title">Doanh nghiệp nên tác chiến với thông tin tiêu cực như thế nào?</h4>
-          <p class="news-txt">Đối với mỗi doanh nghiệp, gặp phải thông tin tiêu cực là vấn đề nhức nhối mà sẽ làm thiệt hại không nhỏ...</p>
-          <a href="#" class="news-btn btn btn-outline-dark">Đọc tiếp<span><img src="/assets/media/chnn/news01_Asset 7.svg" ></span></a>
-        </div>
-      </div>
     </div>
-    <div class="row">
-      <div class="col-md-4">
-        <div class="list-news">
-          <p class="news-img"><img src="/assets/media/chnn/news01_img04.jpg"></p>
-          <p class="news-tag"><span class="badge badge-secondary"><img src="/assets/media/chnn/news01_tag.svg">Đăng ký kinh doanh</span><span>20 tháng 03, 2020</span></p>
-          <h4 class="news-title">Doanh nghiệp nên tác chiến với thông tin tiêu cực như thế nào?</h4>
-          <p class="news-txt">Đối với mỗi doanh nghiệp, gặp phải thông tin tiêu cực là vấn đề nhức nhối mà sẽ làm thiệt hại không nhỏ...</p>
-          <a href="#" class="news-btn btn btn-outline-dark">Đọc tiếp<span><img src="/assets/media/chnn/news01_Asset 7.svg" ></span></a>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="list-news">
-          <p class="news-img"><img src="/assets/media/chnn/news01_img05.jpg"></p>
-          <p class="news-tag"><span class="badge badge-secondary"><img src="/assets/media/chnn/news01_tag.svg">Đăng ký kinh doanh</span><span>20 tháng 03, 2020</span></p>
-          <h4 class="news-title">Doanh nghiệp nên tác chiến với thông tin tiêu cực như thế nào?</h4>
-          <p class="news-txt">Đối với mỗi doanh nghiệp, gặp phải thông tin tiêu cực là vấn đề nhức nhối mà sẽ làm thiệt hại không nhỏ...</p>
-          <a href="#" class="news-btn btn btn-outline-dark">Đọc tiếp<span><img src="/assets/media/chnn/news01_Asset 7.svg" ></span></a>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="list-news">
-          <p class="news-img"><img src="/assets/media/chnn/news01_img06.jpg"></p>
-          <p class="news-tag"><span class="badge badge-secondary"><img src="/assets/media/chnn/news01_tag.svg">Đăng ký kinh doanh</span><span>20 tháng 03, 2020</span></p>
-          <h4 class="news-title">Doanh nghiệp nên tác chiến với thông tin tiêu cực như thế nào?</h4>
-          <p class="news-txt">Đối với mỗi doanh nghiệp, gặp phải thông tin tiêu cực là vấn đề nhức nhối mà sẽ làm thiệt hại không nhỏ...</p>
-          <a href="#" class="news-btn btn btn-outline-dark">Đọc tiếp<span><img src="/assets/media/chnn/news01_Asset 7.svg" ></span></a>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-4">
-        <div class="list-news">
-          <p class="news-img"><img src="/assets/media/chnn/news01_img07.jpg"></p>
-          <p class="news-tag"><span class="badge badge-secondary"><img src="/assets/media/chnn/news01_tag.svg">Đăng ký kinh doanh</span><span>20 tháng 03, 2020</span></p>
-          <h4 class="news-title">Doanh nghiệp nên tác chiến với thông tin tiêu cực như thế nào?</h4>
-          <p class="news-txt">Đối với mỗi doanh nghiệp, gặp phải thông tin tiêu cực là vấn đề nhức nhối mà sẽ làm thiệt hại không nhỏ...</p>
-          <a href="#" class="news-btn btn btn-outline-dark">Đọc tiếp<span><img src="/assets/media/chnn/news01_Asset 7.svg" ></span></a>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="list-news">
-          <p class="news-img"><img src="/assets/media/chnn/news01_img08.jpg"></p>
-          <p class="news-tag"><span class="badge badge-secondary"><img src="/assets/media/chnn/news01_tag.svg">Đăng ký kinh doanh</span><span>20 tháng 03, 2020</span></p>
-          <h4 class="news-title">Doanh nghiệp nên tác chiến với thông tin tiêu cực như thế nào?</h4>
-          <p class="news-txt">Đối với mỗi doanh nghiệp, gặp phải thông tin tiêu cực là vấn đề nhức nhối mà sẽ làm thiệt hại không nhỏ...</p>
-          <a href="#" class="news-btn btn btn-outline-dark">Đọc tiếp<span><img src="/assets/media/chnn/news01_Asset 7.svg" ></span></a>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="list-news">
-          <p class="news-img"><img src="/assets/media/chnn/news01_img09.jpg"></p>
-          <p class="news-tag"><span class="badge badge-secondary"><img src="/assets/media/chnn/news01_tag.svg">Đăng ký kinh doanh</span><span>20 tháng 03, 2020</span></p>
-          <h4 class="news-title">Doanh nghiệp nên tác chiến với thông tin tiêu cực như thế nào?</h4>
-          <p class="news-txt">Đối với mỗi doanh nghiệp, gặp phải thông tin tiêu cực là vấn đề nhức nhối mà sẽ làm thiệt hại không nhỏ...</p>
-          <a href="#" class="news-btn btn btn-outline-dark">Đọc tiếp<span><img src="/assets/media/chnn/news01_Asset 7.svg" ></span></a>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-12 center">
-        <nav class="news-pagination">
-          <ul class="pagination">
-            <li class="page-item first-prev">
-              <a href="#" aria-label="Previous">
-                <img src="/assets/media/chnn/news01_Asset 4.svg">
-              </a>
-            </li>
-            <li class="page-item prev">
-              <a href="#" aria-label="Previous">
-                <img src="/assets/media/chnn/news01_Asset 2.svg">
-              </a>
-            </li>
-            <li class="page-item active"><a class="page-link" href="#">1</a></li>
-            <li class="page-item"><a class="page-link" href="#">2</a></li>
-            <li class="page-item"><a class="page-link" href="#">3</a></li>
-            <li class="page-item"><a class="page-link" href="#">4</a></li>
-            <li class="page-item"><a class="page-link" href="#">...</a></li>
-            <li class="page-item"><a class="page-link" href="#">17</a></li>
-            <li class="page-item next">
-              <a href="#" aria-label="Next">
-                <img src="/assets/media/chnn/news01_Asset 3.svg">
-              </a>
-            </li>
-            <li class="page-item end-next">
-              <a href="#" aria-label="Next">
-                <img src="/assets/media/chnn/news01_Asset 5.svg">
-              </a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </div>
-  </div>
 </section>
 <section class="bg-gray">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <h4 class="news-title center mb-5" style="color: #213070;">NHẬN TƯ VẤN MIỄN PHÍ CÁC VẤN ĐỀ PHÁP LÝ CỦA BẠN</h4>
-        <form class="news-form">
-          <div class="form-group">
-            <input type="text" class="form-control" id="name" placeholder="Họ và tên">
-          </div>
-          <div class="form-group">
-            <input class="form-control" type="email" id="email" placeholder="Email">
-          </div>
-          <div class="form-group">
-            <div class="container">
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="form-check form-check-inline">
-                    <input class="form-check-input" checked="true" type="checkbox" id="dkkd" value="dkkd">
-                    <label class="form-check-label" for="dkkd">Đăng ký kinh doanh</label>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="checkbox" id="dknh" value="dknh">
-                    <label class="form-check-label" for="dknh">Đăng ký nhãn hiệu</label>
-                  </div>
-                </div>
-              </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h4 class="news-title center mb-5" style="color: #213070;">NHẬN TƯ VẤN MIỄN PHÍ CÁC VẤN ĐỀ PHÁP LÝ CỦA BẠN</h4>
+                <form class="news-form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="name" placeholder="Họ và tên">
+                    </div>
+                    <div class="form-group">
+                        <input class="form-control" type="email" id="email" placeholder="Email">
+                    </div>
+                    <div class="form-group">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" checked="true" type="checkbox" id="dkkd" value="dkkd">
+                                        <label class="form-check-label" for="dkkd">Đăng ký kinh doanh</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" id="dknh" value="dknh">
+                                        <label class="form-check-label" for="dknh">Đăng ký nhãn hiệu</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" id="dkdt" value="dkdt">
+                                        <label class="form-check-label" for="dkdt">Đăng ký đầu tư</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" checked="true" type="checkbox" id="pltx" value="pltx">
+                                        <label class="form-check-label" for="pltx">Pháp lý thường xuyên</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" id="tvls" value="tvls">
+                                        <label class="form-check-label" for="tvls">Tư vấn luật sư</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" id="plsk" value="plsk">
+                                        <label class="form-check-label" for="plsk">Pháp lý sự kiện</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" id="gqtc" value="gqtc">
+                                        <label class="form-check-label" for="gqtc">Giải quyết tranh chấp</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" id="lvk" value="lvk">
+                                        <label class="form-check-label" for="lvk">Lĩnh vực khác</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-warning d-block">Gửi yêu cầu</button>
+                </form>
             </div>
-            <div class="container">
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="checkbox" id="dkdt" value="dkdt">
-                    <label class="form-check-label" for="dkdt">Đăng ký đầu tư</label>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="form-check form-check-inline">
-                    <input class="form-check-input" checked="true" type="checkbox" id="pltx" value="pltx">
-                    <label class="form-check-label" for="pltx">Pháp lý thường xuyên</label>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="container">
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="checkbox" id="tvls" value="tvls">
-                    <label class="form-check-label" for="tvls">Tư vấn luật sư</label>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="checkbox" id="plsk" value="plsk">
-                    <label class="form-check-label" for="plsk">Pháp lý sự kiện</label>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="container">
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="checkbox" id="gqtc" value="gqtc">
-                    <label class="form-check-label" for="gqtc">Giải quyết tranh chấp</label>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="checkbox" id="lvk" value="lvk">
-                    <label class="form-check-label" for="lvk">Lĩnh vực khác</label>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <button type="button" class="btn btn-warning d-block">Gửi yêu cầu</button>
-        </form>
-      </div>
+        </div>
     </div>
-  </div>
 </section>

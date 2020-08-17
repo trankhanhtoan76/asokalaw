@@ -4,6 +4,7 @@ import {ModalVideoComponent} from './modal-video/modal-video.component';
 import { GlobalQuestionComponent } from './global-question/global-question.component';
 import { GlobalFeedbackComponent } from './global-feedback/global-feedback.component';
 import { GlobalSlideVideosComponent } from './global-slide-videos/global-slide-videos.component';
+import { LangComponent } from './lang/lang.component';
 
 
 @NgModule({
@@ -11,7 +12,8 @@ import { GlobalSlideVideosComponent } from './global-slide-videos/global-slide-v
         ModalVideoComponent,
         GlobalQuestionComponent,
         GlobalFeedbackComponent,
-        GlobalSlideVideosComponent
+        GlobalSlideVideosComponent,
+        LangComponent
     ],
     exports: [
         ModalVideoComponent,
