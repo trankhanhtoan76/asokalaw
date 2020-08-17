@@ -9,6 +9,6 @@ export const langDefined = {
     },
     'abc':{
         vi:"Chúng tôi là Asoka Law",
-        en:"Chúng tôi là Asoka Law"
+        en:"Chúng tôi là Asoka Law ennnn k"
     }
 };
