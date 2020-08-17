@@ -1,6 +1,7 @@
 import {Injectable} from '@angular/core';
 import {postAPI} from "../helpers/api";
 import {getCookie} from "../helpers/cookie";
+import {langDefined} from "../../lang";
 
 @Injectable({
     providedIn: 'root'
@@ -30,6 +31,7 @@ export class GlobalService {
         facebook: ''
     };
     locale: string;
+    langDefined: any;
 
     constructor() {
         var self = this;
@@ -40,6 +42,7 @@ export class GlobalService {
             self.settings = res;
         });
         this.initLocale();
+        this.langDefined = langDefined;
     }
 
     initLocale() {
