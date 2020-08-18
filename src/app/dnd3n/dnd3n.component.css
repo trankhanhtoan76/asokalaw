@@ -2117,7 +2117,9 @@ img.nextArrowBtnNews {
   border-radius: 25px;
   transition: box-shadow 0.3s ease-in-out;
 }
-
+.block-missing.first img {
+  width: 60px;
+}
 .block-missing img {
   top: 20px;
   position: absolute;

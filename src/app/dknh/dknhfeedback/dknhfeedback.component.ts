@@ -17,7 +17,7 @@ export class DknhfeedbackComponent implements OnInit {
 
   ngAfterContentInit(): void {
     $('.slide-asoka-des').slick({
-      dots: true,
+      dots: false,
       infinite: true,
       slidesToShow: 1,
       slidesToScroll: 1,
@@ -26,9 +26,20 @@ export class DknhfeedbackComponent implements OnInit {
       nextArrow: false,
       prevArrow: false,
       focusOnSelect: true,
-      customPaging: function(slider, i) {
-          return '<span class="dots-img"><img src="/assets/media/DKNH/feedback_img0'+ (1*i + 1) + '.png" style="max-width: 100%"/></span>';
-      },
+      asNavFor: '.slick-img',
+    });
+    $('.slick-img').slick({
+      infinite: true,
+      dot: false,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      asNavFor: '.slide-asoka-des',
+      dots: false,
+      variableWidth: true,
+      centerMode: true,
+      focusOnSelect: true,
+      nextArrow: false,
+      prevArrow: false,
     });
   }
 }

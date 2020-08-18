@@ -31,7 +31,7 @@ export class DkdtbusinessComponent implements OnInit {
             prevArrow: '<img src="/assets/media/landingpage/Asset 84.svg" class="prevArrowBtnNews news" style="width:25px;position: absolute;z-index: 1000;top: 80px;left: 0;color: #BFAFB2;">',
             responsive: [
                 {
-                    breakpoint: 800,
+                    breakpoint: 768,
                     settings: {
                         slidesToShow: 3,
                         slidesToScroll: 1

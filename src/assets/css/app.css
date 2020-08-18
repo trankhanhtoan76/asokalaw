@@ -2738,11 +2738,11 @@ hr.blue {
 }
 
 /**/
-.support-title p {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
+/*.support-title p {*/
+/*    white-space: nowrap;*/
+/*    overflow: hidden;*/
+/*    text-overflow: ellipsis;*/
+/*}*/
 
 .slide-support-item {
     outline: none;
@@ -3292,4 +3292,8 @@ h1,h2,.padding-header{
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+}
+.slick-img .slick-track {
+    display: flex;
+    align-items: center;
 }

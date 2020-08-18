@@ -1392,6 +1392,29 @@ p.des-record {
    left: -28rem;
    background-color: #4cb1e0;
  }
+ .slick-img {
+   max-width: 500px;
+   width: 100%;
+   margin: 0 auto;
+ }
+.slick-img li img {
+  max-width: 100%;
+}
+.slick-img li {
+  max-width: 120px;
+  width: 100%;
+  margin: 0 30px;
+  padding: 5px;
+  border-radius: 50%;
+  border: 1px solid transparent;
+}
+
+.slick-img li.slick-active {
+  max-width: 150px;
+  border: 1px solid #ffc30d;
+  background: #fff;
+}
+/*ul.slick-img li center*/
 @media (max-width: 768px) {
   .header {
     background-image: url(../../../assets/media/DKNH/DKNH-Banner-mobile-ver.jpg);

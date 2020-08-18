@@ -23,6 +23,10 @@ export class KtdnComponent implements OnInit {
     }
 
     ngOnInit(): void {
+        $('.create-question-title').click(function (e) {
+            e.preventDefault();
+            $(this).parents("li").find(".create-question-toggle").slideToggle();
+        });
     }
 
     fieldValid(value, type?): boolean {
