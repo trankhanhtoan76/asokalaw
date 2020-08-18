@@ -43,6 +43,9 @@ select p.id,
        p.slug,
        p.tags,
        p.views,
+       p.seo_title,
+       p.seo_keywords,
+       p.seo_description,
        c.name as category_name,
        c.en_name as en_category_name,
        c.description as category_description,
@@ -53,9 +56,13 @@ inner join category c on p.category_id = c.id
 where p.slug='${this.slug}'
 `);
             postAPI(param, function (res): void {
-                self.data = res;
+                self.data = res;console.log(res);
                 self.data.description = self._sanitizer.bypassSecurityTrustHtml(self.data.description);
                 self.data.en_description = self._sanitizer.bypassSecurityTrustHtml(self.data.en_description);
+
+                self.global.seo_title.next(res.seo_title);
+                self.global.seo_keywords.next(res.seo_keywords);
+                self.global.seo_description.next(res.seo_description);
 
                 //get list post of category
                 const data = new FormData();

@@ -1,4 +1,4 @@
-import {BrowserModule} from '@angular/platform-browser';
+import {BrowserModule, Meta, Title} from '@angular/platform-browser';
 import {PlskModule} from './plsk/plsk.module';
 import {NgModule} from '@angular/core';
 import {GqtcModule} from './gqtc/gqtc.module';
@@ -185,7 +185,9 @@ const routes: Routes = [
     providers: [
         FormValidateService,
         EmailService,
-        GlobalService
+        GlobalService,
+        Title,
+        Meta
     ],
     exports: [
         DkkdquestionComponent

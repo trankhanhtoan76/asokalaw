@@ -1,6 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {postAPI} from "../helpers/api";
 import {ActivatedRoute} from "@angular/router";
+import {GlobalService} from "../service/global.service";
 
 @Component({
     selector: 'app-news',
@@ -16,7 +17,7 @@ export class NewsComponent implements OnInit {
         tags: ''
     };
 
-    constructor(private router: ActivatedRoute) {
+    constructor(private router: ActivatedRoute,private _global: GlobalService) {
 
     }
 
@@ -31,6 +32,9 @@ export class NewsComponent implements OnInit {
             param.append('query', `select * from category where slug='${this.category_slug}'`);
             postAPI(param, function (res): void {
                 self.category = res;
+                self._global.seo_title.next(res.seo_title);
+                self._global.seo_keywords.next(res.seo_keywords);
+                self._global.seo_description.next(res.seo_description);
             });
 
             //get list post of category
