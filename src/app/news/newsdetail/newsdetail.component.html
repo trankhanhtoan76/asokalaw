@@ -1,205 +1,45 @@
-<section id="mainvisual" class="news">
+<section *ngIf="data" id="mainvisual" class="news">
     <div class="container">
         <div class="row">
             <div class="col-md-6">
-                <h2>Tin tức</h2>
-                <p class="main-txt">Trang thông tin - Cập nhật những tin tức mới nhất từ Asoka Law về pháp luật, kinh doanh, đầu tư, doanh nghiệp....</p>
+                <h2>{{global.locale == 'vi' ? data.category_name : data.en_category_name}}</h2>
+                <p class="main-txt">{{global.locale == 'vi' ? data.category_description : data.en_category_description}}</p>
             </div>
         </div>
     </div>
 </section>
-<section id="news">
+<section *ngIf="data" id="news">
     <div class="container">
         <div class="row">
             <div class="col-md-8">
                 <div class="news-content">
-                    <h2 class="big">YG Entertainment đăng ký thương hiệu cho thành viên BLACKPINK</h2>
-
+                    <h2 class="big">{{global.locale == 'vi' ? data.title : data.en_title}}</h2>
                     <div class="news-label">
                         <p class="news-tag">
-                            <span class="badge badge-secondary">
-                        <img src="/src/assets/site/image/news01_tag.svg">Bảo hộ nhãn hiệu</span>
-                            <span>23 tháng 05, 2020</span></p></div>
-                    <p>Mới đây, YG Entertainment, một trong những công ty giải trí hàng đầu Hàn Quốc, đã nộp đơn đăng ký thương hiệu cho tên của cô nàng Lisa, một thành viên trong nhóm nhạc hot hit BLACKPINK của mình. Theo đó, thương hiệu xuất hiện trên đơn đăng ký không phải là nghệ danh (stage name) Lisa, mà là tên khai sinh hợp pháp của cô, gồm cả họ (MANOBAL) và tên đầy đủ (MANOBAL LALISA).</p>
-                    <p>Đơn đăng ký còn cho thấy YG có ý định sử dụng tên nữ idol cho mục đích buôn bán, chẳng hạn kinh doanh quần áo, mũ đội đầu, khăn quàng, đồ may sẵn. (Chi tiết vui lòng xem trên hình.)</p>
-                    <p class="news-banner">
-                        <img src="/src/assets/site/image/news02_img.jpg" style="max-width: 100%"></p>
-                    <p>Trước tin tức này, một số cư dân mạng (đặc biệt là trên mạng xã hội twitter) bày tỏ nỗi quan ngại không biết sau này khi rời khỏi công ty, liệu Lisa có còn được tiếp tục sử dụng tên thật của mình. Thực ra, mọi người không cần quá lo lắng vì việc đăng ký thương hiệu vốn chỉ áp dụng với kinh doanh sản phẩm, dịch vụ, và chỉ có thời hạn trong vòng 10 năm (sau đó nếu muốn tiếp tục sử dụng phải tiến hành thủ tục gia hạn). Trên thực tế, đăng ký thương hiệu cho "gà nhà" là điều khá phổ biến đối với các công ty giải trí.</p>
-                    <p>Được biết, YG Entertainment cũng sở hữu thương hiệu nhiều nghệ sĩ khác của mình như: Big Bang, 2NE1, IKON, WINNER, BLACKPINK.</p>
-                    <p>Theo dõi Asoka để cập nhật những xu hướng, tin tức mới nhất về nhãn hiệu/ thương hiệu cũng như đăng ký kinh doanh bạn nhé.</p>
+                            <span routerLink="/news-category/{{data.category_slug}}" class="badge badge-secondary">
+                                <img src="/assets/site/image/news01_tag.svg">
+                                {{global.locale == 'vi' ? data.category_name : data.en_category_name}}
+                            </span>
+                            <span>{{data.modified_at|date:'dd/MM/yyyy'}}</span></p>
+                    </div>
+                    <div [innerHTML]="global.locale == 'vi' ? data.description : data.en_description"></div>
                 </div>
             </div>
             <div class="col-md-4">
-                <form class="form-adv">
-                    <h4>Tư vấn pháp lý miễn phí</h4>
-                    <hr>
-                    <div class="form-group">
-                        <input type="text" class="form-control" id="form-adv-name" placeholder="Họ &amp; tên">
-                    </div>
-                    <div class="form-group">
-                        <input class="form-control" type="email" id="form-adv-email" placeholder="Email*" required="true">
-                    </div>
-                    <div class="form-adv-btn">
-                        <button type="button" class="btn btn-warning">Gửi yêu cầu</button>
-                    </div>
-                </form>
+                <app-news-form1></app-news-form1>
                 <div class="news-tags">
-                    <h4>Được xem nhiều nhất</h4>
-                    <ul class="news-mostview">
-                        <li>
-                            <p class="news-mostview-img"><img src="./assets/site/images/news_img_under.jpg"></p>
-                            <div class="news-mostview-des">
-                                <p class="news-mostview-txt"><a href="#">Recruitment of Legal Specialists - Round 05/2020</a></p>
-                                <p class="news-mostview-label">Tuyển dụng<span>228</span></p>
-                            </div>
-                        </li>
-                        <li>
-                            <p class="news-mostview-img"><img src="./assets/site/images/news_img_under.jpg"></p>
-                            <div class="news-mostview-des">
-                                <p class="news-mostview-txt"><a href="#">YG Entertainment đăng ký thương hiệu cho thành viên BLACKPINK</a></p>
-                                <p class="news-mostview-label">Bảo hộ nhãn hiệu<span>228</span></p>
-                            </div>
-                        </li>
-                        <li>
-                            <p class="news-mostview-img"><img src="./assets/site/images/news_img_under.jpg"></p>
-                            <div class="news-mostview-des">
-                                <p class="news-mostview-txt"><a href="#">Recruitment of Legal Specialists - Round 05/2020</a></p>
-                                <p class="news-mostview-label">Tuyển dụng<span>228</span></p>
-                            </div>
-                        </li>
-                        <li>
-                            <p class="news-mostview-img"><img src="./assets/site/images/news_img_under.jpg"></p>
-                            <div class="news-mostview-des">
-                                <p class="news-mostview-txt"><a href="#">Recruitment of Legal Specialists - Round 05/2020</a></p>
-                                <p class="news-mostview-label">Đăng ký kinh doanh<span>228</span></p>
-                            </div>
-                        </li>
-                    </ul>
-                    <h4>Tags</h4>
-                    <ul class="news-list-tags">
-                        <li class="btn btn-outline-secondary">Doanh nghiệp</li>
-                        <li class="btn btn-outline-secondary">Đầu tư</li>
-                        <li class="btn btn-outline-secondary">Khởi nghiệp</li>
-                        <li class="btn btn-outline-secondary">Pháp lý doanh nghiệp</li>
-                        <li class="btn btn-outline-secondary">Nhãn hiệu</li>
-                        <li class="btn btn-outline-secondary">Pháp lý sự kiện</li>
-                    </ul>
+                    <app-newsmostviews></app-newsmostviews>
+                    <app-news-tag [data]="data.tags"></app-news-tag>
                 </div>
             </div>
         </div>
         <div class="row">
             <div class="col-md-8">
                 <div class="news-post">
-                    <h4>Bài đăng mới nhất</h4>
-                    <ul>
-                        <li>
-                            <p><a href="#">Tăng thuế xuất khẩu vàng trang sức lên 2% từ 07/05/2019</a></p>
-                            <p class="news-post-time"><span>24-05-2020</span><span>228</span></p>
-                        </li>
-                        <li>
-                            <p><a href="#">Dù bạn 20 hay 35 tuổi, đây là những yếu tố tiên quyết để khởi nghiệp</a></p>
-                            <p class="news-post-time"><span>24-05-2020</span><span>228</span></p>
-                        </li>
-                        <li>
-                            <p><a href="#">Doanh nghiệp nên tác chiến với thông tin tiêu cực như thế nào?</a></p>
-                            <p class="news-post-time"><span>24-05-2020</span><span>228</span></p>
-                        </li>
-                        <li>
-                            <p><a href="#">5 điều kiện cần thiết khi thành lập công ty có vốn đầu tư nước ngoài</a></p>
-                            <p class="news-post-time"><span>24-05-2020</span><span>228</span></p>
-                        </li>
-                        <li>
-                            <p><a href="#">Những điều doanh nghiệp cần làm sau khi thành lập doanh nghiệp</a></p>
-                            <p class="news-post-time"><span>24-05-2020</span><span>228</span></p>
-                        </li>
-                    </ul>
-                    <p class="news-post-link"><a href="#">Xem thêm &gt;&gt;</a></p>
+                    <app-newsrecent *ngIf="recent" [data]="recent"></app-newsrecent>
                 </div>
             </div>
         </div>
     </div>
 </section>
-<section class="bg-gray">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <h4 class="news-title center mb-5" style="color: #213070;">NHẬN TƯ VẤN MIỄN PHÍ CÁC VẤN ĐỀ PHÁP LÝ CỦA BẠN</h4>
-                <form class="news-form">
-                    <div class="form-group">
-                        <input type="text" class="form-control" id="name" placeholder="Họ và tên">
-                    </div>
-                    <div class="form-group">
-                        <input class="form-control" type="email" id="email" placeholder="Email">
-                    </div>
-                    <div class="form-group">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="form-check form-check-inline">
-                                        <input class="form-check-input" checked="true" type="checkbox" id="dkkd" value="dkkd">
-                                        <label class="form-check-label" for="dkkd">Đăng ký kinh doanh</label>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="checkbox" id="dknh" value="dknh">
-                                        <label class="form-check-label" for="dknh">Đăng kí nhãn hiệu</label>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="checkbox" id="dkdt" value="dkdt">
-                                        <label class="form-check-label" for="dkdt">Đăng ký đầu tư</label>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-check form-check-inline">
-                                        <input class="form-check-input" checked="true" type="checkbox" id="pltx" value="pltx">
-                                        <label class="form-check-label" for="pltx">Pháp lý thường xuyên</label>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="checkbox" id="tvls" value="tvls">
-                                        <label class="form-check-label" for="tvls">Tư vấn luật sư</label>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="checkbox" id="plsk" value="plsk">
-                                        <label class="form-check-label" for="plsk">Pháp lý sự kiện</label>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="checkbox" id="gqtc" value="gqtc">
-                                        <label class="form-check-label" for="gqtc">Giải quyết tranh chấp</label>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="checkbox" id="lvk" value="lvk">
-                                        <label class="form-check-label" for="lvk">Lĩnh vực khác</label>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <button type="button" class="btn btn-warning d-block">Gửi yêu cầu</button>
-                </form>
-            </div>
-        </div>
-    </div>
-</section>
+<app-news-form2></app-news-form2>

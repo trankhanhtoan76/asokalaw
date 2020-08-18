@@ -17,6 +17,10 @@ export class NewsComponent implements OnInit {
     };
 
     constructor(private router: ActivatedRoute) {
+
+    }
+
+    ngOnInit(): void {
         const self = this;
         this.router.paramMap.subscribe(paramMap => {
             this.category_slug = paramMap.get('category');
@@ -86,9 +90,6 @@ limit 10
                 }
             });
         });
-    }
-
-    ngOnInit(): void {
     }
 
 }

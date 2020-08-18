@@ -10,6 +10,8 @@ import {NewsTagComponent} from './news-tag/news-tag.component';
 import {NewsBox2Component} from './news-box2/news-box2.component';
 import {NewsdetailComponent} from "./newsdetail/newsdetail.component";
 import {FormsModule} from "@angular/forms";
+import { NewsrecentComponent } from './newsdetail/newsrecent/newsrecent.component';
+import { NewsmostviewsComponent } from './newsdetail/newsmostviews/newsmostviews.component';
 
 const routes: Routes = [
     {path: 'news-category/:category', component: NewsComponent},
@@ -25,7 +27,9 @@ const routes: Routes = [
         NewsForm2Component,
         NewsTagComponent,
         NewsBox2Component,
-        NewsdetailComponent
+        NewsdetailComponent,
+        NewsrecentComponent,
+        NewsmostviewsComponent
     ],
     imports: [
         CommonModule,

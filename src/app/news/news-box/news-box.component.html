@@ -20,9 +20,9 @@
             </div>
         </div>
     </div>
-    <h2>{{global.locale == 'vi' ? data.title : data.en_title}}</h2>
+    <h2 style="cursor: pointer" routerLink="/news/{{data.slug}}">{{global.locale == 'vi' ? data.title : data.en_title}}</h2>
     <p>{{global.locale == 'vi' ? data.short_description : data.en_short_description}}</p>
-    <a href="#" class="news-btn btn btn-outline-dark">
+    <a routerLink="/news/{{data.slug}}" class="news-btn btn btn-outline-dark">
         Đọc tiếp<span><img src="/assets/media/chnn/news01_Asset 7.svg"></span>
     </a>
 </div>
