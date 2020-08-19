@@ -15,8 +15,9 @@ import { NewsmostviewsComponent } from './newsdetail/newsmostviews/newsmostviews
 import { NewsPaginationComponent } from './news-pagination/news-pagination.component';
 
 const routes: Routes = [
-    {path: 'news-category/:category', component: NewsComponent},
-    {path: 'tin-tuc/:post', component: NewsdetailComponent}
+    {path: 'danh-muc/:category', component: NewsComponent},
+    {path: 'tin-tuc/:post', component: NewsdetailComponent},
+    {path: 'tin-tuc', component: NewsComponent},
 ];
 
 @NgModule({

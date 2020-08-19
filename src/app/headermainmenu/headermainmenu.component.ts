@@ -1,5 +1,6 @@
 import {Component, HostListener, OnInit} from '@angular/core';
 import {GlobalService} from "../service/global.service";
+import {Router, RouterModule} from "@angular/router";
 
 declare var $: any;
 
@@ -17,7 +18,7 @@ export class HeadermainmenuComponent implements OnInit {
     showMenu4 = false;
     showMenu5 = false;
 
-    constructor(public global: GlobalService) {
+    constructor(public global: GlobalService, private router: Router) {
     }
 
     ngOnInit(): void {
@@ -36,5 +37,9 @@ export class HeadermainmenuComponent implements OnInit {
 
     collapseMenu() {
         $('#collapsibleNavbar').collapse('hide')
+    }
+
+    navigateTo(e) {
+        this.router.navigate([e]);
     }
 }
