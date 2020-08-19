@@ -25,36 +25,7 @@
         </div>
         <div class="row">
             <div class="col-md-12 center">
-                <nav class="news-pagination">
-                    <ul class="pagination">
-                        <li class="page-item first-prev">
-                            <a href="#" aria-label="Previous">
-                                <img src="/assets/media/chnn/news01_Asset 4.svg">
-                            </a>
-                        </li>
-                        <li class="page-item prev">
-                            <a href="#" aria-label="Previous">
-                                <img src="/assets/media/chnn/news01_Asset 2.svg">
-                            </a>
-                        </li>
-                        <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                        <li class="page-item"><a class="page-link" href="#">2</a></li>
-                        <li class="page-item"><a class="page-link" href="#">3</a></li>
-                        <li class="page-item"><a class="page-link" href="#">4</a></li>
-                        <li class="page-item"><a class="page-link" href="#">...</a></li>
-                        <li class="page-item"><a class="page-link" href="#">17</a></li>
-                        <li class="page-item next">
-                            <a href="#" aria-label="Next">
-                                <img src="/assets/media/chnn/news01_Asset 3.svg">
-                            </a>
-                        </li>
-                        <li class="page-item end-next">
-                            <a href="#" aria-label="Next">
-                                <img src="/assets/media/chnn/news01_Asset 5.svg">
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
+                <app-news-pagination *ngIf="category_slug" [category_slug]="category_slug"></app-news-pagination>
             </div>
         </div>
     </div>

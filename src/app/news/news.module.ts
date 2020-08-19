@@ -12,6 +12,7 @@ import {NewsdetailComponent} from "./newsdetail/newsdetail.component";
 import {FormsModule} from "@angular/forms";
 import { NewsrecentComponent } from './newsdetail/newsrecent/newsrecent.component';
 import { NewsmostviewsComponent } from './newsdetail/newsmostviews/newsmostviews.component';
+import { NewsPaginationComponent } from './news-pagination/news-pagination.component';
 
 const routes: Routes = [
     {path: 'news-category/:category', component: NewsComponent},
@@ -29,7 +30,8 @@ const routes: Routes = [
         NewsBox2Component,
         NewsdetailComponent,
         NewsrecentComponent,
-        NewsmostviewsComponent
+        NewsmostviewsComponent,
+        NewsPaginationComponent
     ],
     imports: [
         CommonModule,
