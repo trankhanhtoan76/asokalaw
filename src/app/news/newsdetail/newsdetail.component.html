@@ -29,7 +29,7 @@
                 <app-news-form1></app-news-form1>
                 <div class="news-tags">
                     <app-newsmostviews></app-newsmostviews>
-                    <app-news-tag [data]="data.tags"></app-news-tag>
+                    <app-news-tag [data]="global.locale=='vi'?data.tags:data.en_tags"></app-news-tag>
                 </div>
             </div>
         </div>

@@ -21,7 +21,7 @@ export class NewsComponent implements OnInit {
     isHasMore = true;
     showBtnGetMore = true;
 
-    constructor(private router: ActivatedRoute, private _global: GlobalService, private _router: Router) {
+    constructor(private router: ActivatedRoute, public _global: GlobalService, private _router: Router) {
     }
 
     ngOnInit(): void {
@@ -75,6 +75,7 @@ export class NewsComponent implements OnInit {
                        p.image,
                        p.slug,
                        p.tags,
+                       p.en_tags,
                        p.views,
                        c3.name as category_name,
                        c3.en_name as en_category_name,
@@ -105,6 +106,7 @@ export class NewsComponent implements OnInit {
                        p.image,
                        p.slug,
                        p.tags,
+                       p.en_tags,
                        p.views,
                        c3.name    as category_name,
                        c3.en_name as en_category_name,
