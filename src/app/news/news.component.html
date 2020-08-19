@@ -25,7 +25,11 @@
         </div>
         <div class="row">
             <div class="col-md-12 center">
-                <app-news-pagination *ngIf="category_slug" [category_slug]="category_slug"></app-news-pagination>
+                <nav class="news-pagination">
+                    <ul class="pagination">
+                        <li class="page-item"><a (click)="getMore()" class="page-link" style="width: auto" href="javascript:void('')">Tải thêm ...</a></li>
+                    </ul>
+                </nav>
             </div>
         </div>
     </div>

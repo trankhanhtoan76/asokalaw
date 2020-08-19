@@ -16,8 +16,11 @@ export class NewsComponent implements OnInit {
     category = {
         tags: ''
     };
+    limit = 9;
+    offset = 10;
+    isHasMore = true;
 
-    constructor(private router: ActivatedRoute,private _global: GlobalService) {
+    constructor(private router: ActivatedRoute, private _global: GlobalService) {
 
     }
 
@@ -96,4 +99,59 @@ limit 10
         });
     }
 
+    getMore(): void {
+        const self = this;
+        const data = new FormData();
+        data.append('action', 'get_records');
+        data.append('query', `
+select p.id,
+       p.description,
+       p.created_at,
+       p.modified_at,
+       p.created_by,
+       p.modified_by,
+       p.title,
+       p.en_description,
+       p.en_short_description,
+       p.short_description,
+       p.en_title,
+       p.is_publish,
+       p.category_id,
+       p.image,
+       p.slug,
+       p.tags,
+       p.views,
+       c3.name as category_name,
+       c3.en_name as en_category_name,
+       c3.slug as category_slug
+from post as p
+         inner join category c3 on p.category_id = c3.id
+where (
+            p.category_id in
+            (
+                select c.id
+                from category as c
+                where c.slug = '${this.category_slug}'
+            )
+        or p.category_id in
+           (
+               select c2.id
+               from category as c2
+               where c2.parent_id in (select c4.id from category as c4 where c4.slug = '${this.category_slug}')
+           )
+    )
+  and p.is_publish = 1
+order by p.created_at desc
+limit ${this.limit} offset ${this.offset}
+`);
+
+        postAPI(data, function (res): void {
+            if (res.length) {
+                self.news.concat(res);
+                self.offset = self.offset + 9;
+            } else {
+                self.isHasMore = false;
+            }
+        });
+    }
 }

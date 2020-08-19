@@ -1,7 +1,7 @@
 <h4>Bài đăng mới nhất</h4>
 <ul>
     <li *ngFor="let item of data">
-        <p><a routerLink="/news/{{item.slug}}">{{global.locale == 'vi' ? item.title : item.en_title}}</a></p>
+        <p><a routerLink="/tin-tuc/{{item.slug}}">{{global.locale == 'vi' ? item.title : item.en_title}}</a></p>
         <p class="news-post-time"><span>{{item.modified_at|date:'dd/MM/yyyy'}}</span><span>{{item.views}}</span></p>
     </li>
 </ul>
