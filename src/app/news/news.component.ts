@@ -2,7 +2,6 @@ import {Component, OnInit} from '@angular/core';
 import {postAPI} from "../helpers/api";
 import {ActivatedRoute, Router} from "@angular/router";
 import {GlobalService} from "../service/global.service";
-import {of} from "rxjs";
 
 @Component({
     selector: 'app-news',
@@ -15,7 +14,8 @@ export class NewsComponent implements OnInit {
     firstnews: any;
     category_slug: string;
     category = {
-        tags: ''
+        tags: '',
+        en_tags: ''
     };
     offset = 0;
     isHasMore = true;
