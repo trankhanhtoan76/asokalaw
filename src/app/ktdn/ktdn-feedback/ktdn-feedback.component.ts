@@ -32,7 +32,7 @@ export class KtdnFeedbackComponent implements OnInit {
     }
 
     ngAfterViewChecked(): void {
-        if (!this.initialized) {
+        if (!this.initialized && this.data.length) {
             this.initialized = true;
             $('.create-slider').slick({
                 dots: true,

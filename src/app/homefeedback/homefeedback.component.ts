@@ -24,7 +24,6 @@ export class HomefeedbackComponent implements OnInit {
             select *
             from feedbackhome
             where page = 'home'
-            order by created_at desc
         `);
         postAPI(data, function (res): void {
             self.data = res;
@@ -32,7 +31,7 @@ export class HomefeedbackComponent implements OnInit {
     }
 
     ngAfterViewChecked(): void {
-        if (!this.initialized) {
+        if (!this.initialized && this.data.length) {
             this.initialized = true;
             $('.slide-asoka-des').slick({
                 dots: true,

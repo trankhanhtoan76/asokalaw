@@ -1,69 +1,27 @@
-<section id ='feedback-pltx' class="sub d-none d-md-block">
-  <div class="container center">
-    <div class="feedback-slide-pltx">
-      <div class="feedback-item">
-        <div class="background-icon-pltx">
-          <img src="/assets/media/PLTX/feedback/Asset 13.svg">
-        </div>
-        <div class="content-pltx">
-          <p class="pltx-text">Drive Agency được đăng ký thành lập từ năm 2018 bởi Asoka Law. Sau đó chúng tôi tiếp tục sử dụng Gói Pháp Lý Thường Xuyên, ổn định cho đến nay. Hoàn toàn tin cậy và yên tâm, đó là những gì tôi nhận được khi thực hiện dịch vụ tại Asoka Law. Rất tốt!</p>
-          <hr>
-          <div class="info-feedback">
-            <div class="row">
-              <div class="flex-center-vertically">
-                <h4>Ông Pierre</h4>
-                <p>Giám đốc điều hành DRIVE</p>
-              </div>
-              <div class="logo-customer">
-                <div class="circal"></div>
-                <img src="/assets/media/PLTX/feedback/Asset%2014.svg">
-              </div>
+<section id='feedback-pltx' class="sub d-none d-md-block">
+    <div class="container center">
+        <div class="feedback-slide-pltx">
+            <div *ngFor="let item of data" class="feedback-item">
+                <div class="background-icon-pltx">
+                    <img src="/assets/media/PLTX/feedback/Asset 13.svg">
+                </div>
+                <div class="content-pltx">
+                    <p class="pltx-text">{{global.locale == 'vi' ? item.description : item.en_description}}</p>
+                    <hr>
+                    <div class="info-feedback">
+                        <div class="row">
+                            <div class="flex-center-vertically">
+                                <h4>{{item.name}}</h4>
+                                <p>{{global.locale == 'vi' ? item.title : item.en_title}}</p>
+                            </div>
+                            <div class="logo-customer">
+                                <div class="circal"></div>
+                                <img src="{{item.image}}">
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
-      <div class="feedback-item">
-        <div class="background-icon-pltx">
-          <img src="/assets/media/PLTX/feedback/Asset 13.svg">
-        </div>
-        <div class="content-pltx">
-          <p class="pltx-text">Drive Agency được đăng ký thành lập từ năm 2018 bởi Asoka Law. Sau đó chúng tôi tiếp tục sử dụng Gói Pháp Lý Thường Xuyên, ổn định cho đến nay. Hoàn toàn tin cậy và yên tâm, đó là những gì tôi nhận được khi thực hiện dịch vụ tại Asoka Law. Rất tốt!</p>
-          <hr>
-          <div class="info-feedback">
-            <div class="row">
-              <div class="flex-center-vertically">
-                <h4>Ông Pierre</h4>
-                <p>Giám đốc điều hành DRIVE</p>
-              </div>
-              <div class="logo-customer">
-                <div class="circal"></div>
-                <img src="/assets/media/PLTX/feedback/Asset%2014.svg">
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="feedback-item">
-        <div class="background-icon-pltx">
-          <img src="/assets/media/PLTX/feedback/Asset 13.svg">
-        </div>
-        <div class="content-pltx">
-          <p class="pltx-text">Drive Agency được đăng ký thành lập từ năm 2018 bởi Asoka Law. Sau đó chúng tôi tiếp tục sử dụng Gói Pháp Lý Thường Xuyên, ổn định cho đến nay. Hoàn toàn tin cậy và yên tâm, đó là những gì tôi nhận được khi thực hiện dịch vụ tại Asoka Law. Rất tốt!</p>
-          <hr>
-          <div class="info-feedback">
-            <div class="row">
-              <div class="flex-center-vertically">
-                <h4>Ông Pierre</h4>
-                <p>Giám đốc điều hành DRIVE</p>
-              </div>
-              <div class="logo-customer">
-                <div class="circal"></div>
-                <img src="/assets/media/PLTX/feedback/Asset%2014.svg">
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
-  </div>
 </section>

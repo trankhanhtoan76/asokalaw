@@ -4,14 +4,12 @@
             <h1 style="padding-bottom: 20px">Nhận xét từ khách hàng đã sử dụng dịch vụ</h1>
         </div>
         <div class="feedback-slide-pltx d-none d-md-block">
-            <div class="feedback-item">
+            <div *ngFor="let item of data" class="feedback-item">
                 <div class="background-icon-pltx">
                     <img src="/assets/media/PLTX/feedback/Asset 13.svg">
                 </div>
                 <div class="content-pltx">
-                    <p class="pltx-text">
-                        Tôi góp vốn nhằm thành lập doanh nghiệp về xuất nhập khẩu quần áo thời trang từ Hàn Quốc sang Việt Nam cũng với một đối tác người Việt Nam. Từ khi chưa thành lập cho đến lúc hoàn thiện, Công ty Luật Asoka đều cử chuyên viên và Luật sư hỗ trợ, giải đáp những khúc mắc pháp lý. Tôi hoàn toàn yên tâm khi kinh doanh tại Việt Nam với sự hỗ trợ toàn diện của Asoka Law.
-                    </p>
+                    <p class="pltx-text">{{global.locale == 'vi' ? item.description : item.en_description}}</p>
                     <hr style="    border: 0.5px solid #c7c4c412;
     color: #80808087;
     background: #c7c4c470;
@@ -20,11 +18,11 @@
                     <div class="info-feedback">
                         <div class="row">
                             <div class="flex-center-vertically">
-                                <h4 style="font-family: 'Montserrat', sans-serif; font-size: 18px">MR. AN</h4>
-                                <p>Nhà đầu tư từ <span style="color: #0f74a8; font-weight: 500">Hàn Quốc</span></p>
+                                <h4 style="font-family: 'Montserrat', sans-serif; font-size: 18px">{{item.name}}</h4>
+                                <p>{{global.locale == 'vi' ? item.title : item.en_title}}</p>
                             </div>
                             <div class="logo-customer">
-                                <img src="/assets/media/DKDT/feedback-khach-hang/Mr.An-Han-Quoc.jpg">
+                                <img src="{{item.image}}">
                             </div>
                         </div>
                     </div>
@@ -32,14 +30,12 @@
             </div>
         </div>
         <div class="feedback-slide-pltx-mobile d-block d-md-none">
-            <div class="feedback-item">
+            <div *ngFor="let item of data" class="feedback-item">
                 <div class="background-icon-pltx">
                     <img src="/assets/media/PLTX/feedback/Asset 13.svg">
                 </div>
                 <div class="content-pltx">
-                    <p class="pltx-text">
-                        Tôi góp vốn nhằm thành lập doanh nghiệp về xuất nhập khẩu quần áo thời trang từ Hàn Quốc sang Việt Nam cũng với một đối tác người Việt Nam. Từ khi chưa thành lập cho đến lúc hoàn thiện, Công ty Luật Asoka đều cử chuyên viên và Luật sư hỗ trợ, giải đáp những khúc mắc pháp lý. Tôi hoàn toàn yên tâm khi kinh doanh tại Việt Nam với sự hỗ trợ toàn diện của Asoka Law.
-                    </p>
+                    <p class="pltx-text">{{global.locale == 'vi' ? item.description : item.en_description}}</p>
                     <hr style="    border: 0.5px solid #c7c4c412;
     color: #80808087;
     background: #c7c4c470;
@@ -48,11 +44,11 @@
                     <div class="info-feedback">
                         <div class="row">
                             <div class="flex-center-vertically">
-                                <h4 style="font-family: 'Montserrat', sans-serif; font-size: 18px">MR. AN</h4>
-                                <p>Nhà đầu tư từ <span style="color: #0f74a8; font-weight: 500">Hàn Quốc</span></p>
+                                <h4 style="font-family: 'Montserrat', sans-serif; font-size: 18px">{{item.name}}</h4>
+                                <p>{{global.locale == 'vi' ? item.title : item.en_title}}</p>
                             </div>
                             <div class="logo-customer">
-                                <img src="/assets/media/DKDT/feedback-khach-hang/Mr.An-Han-Quoc.jpg">
+                                <img src="{{item.image}}">
                             </div>
                         </div>
                     </div>
