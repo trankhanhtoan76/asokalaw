@@ -20,10 +20,10 @@ export class GlobalFeedbackComponent implements OnInit {
     }
 
     ngAfterViewChecked(): void {
-        if (!this.hadInit) {
+        if (!this.hadInit && this.datacontent.length > 0) {
             var self = this;
             this.hadInit = true;
-            $('#'+this.dataid).slick({
+            $('#' + this.dataid).slick({
                 dots: true,
                 infinite: true,
                 slidesToShow: 1,

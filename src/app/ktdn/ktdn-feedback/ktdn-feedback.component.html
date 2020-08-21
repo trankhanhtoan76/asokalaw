@@ -1,9 +1,9 @@
-<section id="feedback">
+<section id="create-slider" style="margin-bottom: 3rem;">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-md-10">
                 <div class="create-slider">
-                    <div *ngFor="let item of data" class="create-slider-item style01">
+                    <div *ngFor="let item of data" class="create-slider-item">
                         <p class="create-status-txt">{{global.locale == 'vi' ? item.description : item.en_description}}</p>
                         <div class="create-info">
                             <p class="create-info-img"><img src="{{item.image}}" style="max-width: 100%"></p>

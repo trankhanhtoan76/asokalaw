@@ -1,34 +1,34 @@
 <section id="asoka-description" class="sub">
-  <div class="container center">
-    <div class="row">
-      <div class="col-md-12 flex-center-vertically">
-        <div class="slide-asoka-des">
-          <div class="slide-item">
-            <div class="col-12 d-block d-md-none">
-              <div class="team-user">
-                <img src="/assets/media/user3.png">
-              </div>
+    <div class="container center">
+        <div class="row">
+            <div class="col-md-12 flex-center-vertically">
+                <div class="slide-asoka-des">
+                    <div *ngFor="let item of data" class="slide-item">
+                        <div class="col-12 d-block d-md-none">
+                            <div class="team-user">
+                                <img src="{{item.image}}">
+                            </div>
+                        </div>
+                        <div class="row" style="background: url('/assets/media/landingpage/feedback/quote.svg');background-position: top left;background-size:60px;background-repeat: no-repeat">
+                            <div class="content col-12 col-md-8 vertical-middle">
+                                <div class="des-record">
+                                    <p>{{global.locale == 'vi' ? item.description : item.en_description}}</p>
+                                </div>
+                                <hr>
+                                <div class="des-record ">
+                                    <p class="font-weight-bold normal">{{item.name}}</p>
+                                    <p class="text-color">{{global.locale == 'vi' ? item.title : item.en_title}}</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4 vertical-middle d-none d-md-block">
+                                <div class="team-user">
+                                    <img src="{{item.image}}">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="row" style="background: url('/assets/media/landingpage/feedback/quote.svg');background-position: top left;background-size:60px;background-repeat: no-repeat">
-              <div class="content col-12 col-md-8 vertical-middle">
-                <div class="des-record">
-                  <p>Luật sư Asoka có kiến thức cực kỳ chuyên sâu về lĩnh vực mình cần tham vấn, giúp mình xác nhận được những ý kiến pháp luật mình muốn tìm hiểu. Tư vấn súc tích, nhiệt tình và tin cậy. Mình cũng đã nhờ Asoka Law thực hiện các thủ tục pháp lý cho công ty riêng của mình sau đó.</p>
-                </div>
-                <hr>
-                <div class="des-record ">
-                  <p class="font-weight-bold normal">Nguyễn Quang Minh</p>
-                  <p class="text-color">Giám đốc - Thiên Kỳ Technology</p>
-                </div>
-              </div>
-              <div class="col-md-4 vertical-middle d-none d-md-block">
-                <div class="team-user">
-                  <img src="/assets/media/user3.png">
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
-      </div>
     </div>
-  </div>
 </section>

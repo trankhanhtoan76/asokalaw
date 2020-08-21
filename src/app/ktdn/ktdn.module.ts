@@ -3,6 +3,7 @@ import {CommonModule} from '@angular/common';
 import {KtdnComponent} from './ktdn.component';
 import {RouterModule, Routes} from '@angular/router';
 import {FormsModule} from "@angular/forms";
+import { KtdnFeedbackComponent } from './ktdn-feedback/ktdn-feedback.component';
 
 const routes: Routes = [
     {path: 'khoi-tao-doanh-nghiep', component: KtdnComponent}
@@ -10,7 +11,8 @@ const routes: Routes = [
 
 @NgModule({
     declarations: [
-        KtdnComponent
+        KtdnComponent,
+        KtdnFeedbackComponent
     ],
     imports: [
         CommonModule,

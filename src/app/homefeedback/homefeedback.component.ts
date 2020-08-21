@@ -1,34 +1,53 @@
 import {Component, OnInit} from '@angular/core';
+import {GlobalService} from "../service/global.service";
+import {postAPI} from "../helpers/api";
 
 declare var $: any;
 
 @Component({
-  selector: 'app-homefeedback',
-  templateUrl: './homefeedback.component.html',
-  styleUrls: ['./homefeedback.component.css']
+    selector: 'app-homefeedback',
+    templateUrl: './homefeedback.component.html',
+    styleUrls: ['./homefeedback.component.css']
 })
 export class HomefeedbackComponent implements OnInit {
+    initialized = false;
+    data = [];
 
-  constructor() {
-  }
+    constructor(public global: GlobalService) {
+    }
 
-  ngOnInit(): void {
-  }
+    ngOnInit(): void {
+        const self = this;
+        const data = new FormData();
+        data.append('action', 'get_records');
+        data.append('query', `
+            select *
+            from feedbackhome
+            where page = 'home'
+            order by created_at desc
+        `);
+        postAPI(data, function (res): void {
+            self.data = res;
+        });
+    }
 
-  ngAfterContentInit(): void {
-    $('.slide-asoka-des').slick({
-      dots: true,
-      infinite: true,
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      autoplay: true,
-      autoplaySpeed: 3000,
-      nextArrow: false,
-      prevArrow: false,
-      focusOnSelect: true,
-      customPaging: function(slider, i) {
-        return '<i class="fa fa-circle"></i>';
-      },
-    });
-  }
+    ngAfterViewChecked(): void {
+        if (!this.initialized) {
+            this.initialized = true;
+            $('.slide-asoka-des').slick({
+                dots: true,
+                infinite: true,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 3000,
+                nextArrow: false,
+                prevArrow: false,
+                focusOnSelect: true,
+                customPaging: function (slider, i) {
+                    return '<i class="fa fa-circle"></i>';
+                },
+            });
+        }
+    }
 }

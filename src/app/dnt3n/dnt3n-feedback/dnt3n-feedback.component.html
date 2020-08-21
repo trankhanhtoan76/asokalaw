@@ -3,25 +3,11 @@
     <div class="row justify-content-center">
       <div class="col-md-12">
           <div class="create-slider">
-              <div class="create-slider-item">
-                  <p class="create-status-txt style01">Drive Agency được đăng ký thành lập từ năm 2018 bởi Asoka Law. Sau đó chúng tôi tiếp tục sử dụng Gói Pháp Lý Thường Xuyên, ổn định cho đến nay. Hoàn toàn tin cậy và yên tâm, đó là những gì tôi nhận được khi thực hiện dịch vụ tại Asoka Law. Rất tốt!</p>
+              <div *ngFor="let item of data" class="create-slider-item">
+                  <p class="create-status-txt style01">{{global.locale == 'vi' ? item.description : item.en_description}}</p>
                   <div class="create-info">
-                      <p class="create-info-img"><img src="/assets/media/DNT3N/nguoi-thanh-cong/Asset 9-100.jpg" style="max-width: 100%"></p>
-                      <p class="create-info-name">DRIVE AGENCY<span>Công ty ..........................................</span></p>
-                  </div>
-              </div>
-              <div class="create-slider-item">
-                  <p class="create-status-txt style01">Drive Agency được đăng ký thành lập từ năm 2018 bởi Asoka Law. Sau đó chúng tôi tiếp tục sử dụng Gói Pháp Lý Thường Xuyên, ổn định cho đến nay. Hoàn toàn tin cậy và yên tâm, đó là những gì tôi nhận được khi thực hiện dịch vụ tại Asoka Law. Rất tốt!</p>
-                  <div class="create-info">
-                      <p class="create-info-img"><img src="/assets/media/DNT3N/nguoi-thanh-cong/Asset 9-100.jpg" style="max-width: 100%"></p>
-                      <p class="create-info-name">DRIVE AGENCY<span>Công ty ..........................................</span></p>
-                  </div>
-              </div>
-              <div class="create-slider-item">
-                  <p class="create-status-txt style01">Drive Agency được đăng ký thành lập từ năm 2018 bởi Asoka Law. Sau đó chúng tôi tiếp tục sử dụng Gói Pháp Lý Thường Xuyên, ổn định cho đến nay. Hoàn toàn tin cậy và yên tâm, đó là những gì tôi nhận được khi thực hiện dịch vụ tại Asoka Law. Rất tốt!</p>
-                  <div class="create-info">
-                      <p class="create-info-img"><img src="/assets/media/DNT3N/nguoi-thanh-cong/Asset 9-100.jpg" style="max-width: 100%"></p>
-                      <p class="create-info-name">DRIVE AGENCY<span>Công ty ..........................................</span></p>
+                      <p class="create-info-img"><img src="{{item.image}}" style="max-width: 100%"></p>
+                      <p class="create-info-name">{{item.name}}<span>{{global.locale == 'vi' ? item.title : item.en_title}}</span></p>
                   </div>
               </div>
           </div>
