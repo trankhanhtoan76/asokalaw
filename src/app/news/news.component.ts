@@ -53,7 +53,9 @@ export class NewsComponent implements OnInit {
 
     getPosts(limit: number, offset: number, firstLoad: boolean, categorySlug?: string) {
         this.offset = this.offset + limit;
-
+        let wlocale;
+        if (this._global.locale == 'vi') wlocale = 'is_english_only<>1';
+        else wlocale = 'is_vi_only<>1';
         const self = this;
         const data = new FormData();
         data.append('action', 'get_records');
@@ -84,7 +86,7 @@ export class NewsComponent implements OnInit {
                          inner join category c3 on p.category_id = c3.id
                 where (p.category_id in(select c.id from category as c where c.slug = '${categorySlug}') 
                            or p.category_id in(select c2.id from category as c2  where c2.parent_id in (select c4.id from category as c4 where c4.slug = '${categorySlug}')))
-                        and p.is_publish = 1
+                        and p.is_publish = 1 and ${wlocale}
                 order by p.created_at desc
                 limit ${limit} offset ${offset}
                 `);
@@ -113,7 +115,7 @@ export class NewsComponent implements OnInit {
                        c3.slug    as category_slug
                 from post as p
                          inner join category c3 on p.category_id = c3.id
-                where p.is_publish = 1
+                where p.is_publish = 1 and ${wlocale}
                 order by p.created_at desc
                 limit ${limit} offset ${offset}
             `);
