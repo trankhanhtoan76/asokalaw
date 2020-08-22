@@ -54,16 +54,16 @@
                         TIN TỨC
                     </a>
                     <div class="dropdown-menu" [ngClass]="{'show':showMenu4}">
-                        <a class="dropdown-item" routerLink="/danh-muc/uu-dai">Ưu đãi</a>
-                        <a class="dropdown-item" routerLink="/danh-muc/tin-tuc-asoka">Tin tức Asoka</a>
-                        <a class="dropdown-item" routerLink="/danh-muc/tin-tuc-phap-ly">Tin tức pháp lý</a>
-                        <a class="dropdown-item subitem" routerLink="/danh-muc/thanh-lap-doanh-nghiep">Thành lập doanh nghiệp</a>
-                        <a class="dropdown-item subitem" routerLink="/danh-muc/so-huu-tri-tue">Sở hữu trí tuệ</a>
-                        <a class="dropdown-item subitem" routerLink="/danh-muc/dau-tu">Đầu tư</a>
-                        <a class="dropdown-item subitem" routerLink="/danh-muc/phap-ly-su-kien">Pháp lý sự kiện</a>
-                        <a class="dropdown-item subitem" routerLink="/danh-muc/giai-quyet-tranh-chap">Giải quyết tranh chấp</a>
-                        <a class="dropdown-item subitem" routerLink="/danh-muc/giay-phep-hoat-dong">Giấy phép hoạt động</a>
-                        <a class="dropdown-item" routerLink="/danh-muc/van-ban-phap-ly">Văn bản pháp lý</a>
+                        <a class="dropdown-item" routerLink="/{{global.locale=='vi'?'danh-muc':'category'}}/uu-dai">Ưu đãi</a>
+                        <a class="dropdown-item" routerLink="/{{global.locale=='vi'?'danh-muc':'category'}}/tin-tuc-asoka">Tin tức Asoka</a>
+                        <a class="dropdown-item" routerLink="/{{global.locale=='vi'?'danh-muc':'category'}}/tin-tuc-phap-ly">Tin tức pháp lý</a>
+                        <a class="dropdown-item subitem" routerLink="/{{global.locale=='vi'?'danh-muc':'category'}}/thanh-lap-doanh-nghiep">Thành lập doanh nghiệp</a>
+                        <a class="dropdown-item subitem" routerLink="/{{global.locale=='vi'?'danh-muc':'category'}}/so-huu-tri-tue">Sở hữu trí tuệ</a>
+                        <a class="dropdown-item subitem" routerLink="/{{global.locale=='vi'?'danh-muc':'category'}}/dau-tu">Đầu tư</a>
+                        <a class="dropdown-item subitem" routerLink="/{{global.locale=='vi'?'danh-muc':'category'}}/phap-ly-su-kien">Pháp lý sự kiện</a>
+                        <a class="dropdown-item subitem" routerLink="/{{global.locale=='vi'?'danh-muc':'category'}}/giai-quyet-tranh-chap">Giải quyết tranh chấp</a>
+                        <a class="dropdown-item subitem" routerLink="/{{global.locale=='vi'?'danh-muc':'category'}}/giay-phep-hoat-dong">Giấy phép hoạt động</a>
+                        <a class="dropdown-item" routerLink="/{{global.locale=='vi'?'danh-muc':'category'}}/van-ban-phap-ly">Văn bản pháp lý</a>
                     </div>
                 </li>
                 <li class="nav-item dropdown" [ngClass]="{'show':showMenu5}" (mouseover)="showMenu5=true" (mouseout)="showMenu5=false">

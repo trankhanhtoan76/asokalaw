@@ -10,14 +10,17 @@ import {NewsTagComponent} from './news-tag/news-tag.component';
 import {NewsBox2Component} from './news-box2/news-box2.component';
 import {NewsdetailComponent} from "./newsdetail/newsdetail.component";
 import {FormsModule} from "@angular/forms";
-import { NewsrecentComponent } from './newsdetail/newsrecent/newsrecent.component';
-import { NewsmostviewsComponent } from './newsdetail/newsmostviews/newsmostviews.component';
-import { NewsPaginationComponent } from './news-pagination/news-pagination.component';
+import {NewsrecentComponent} from './newsdetail/newsrecent/newsrecent.component';
+import {NewsmostviewsComponent} from './newsdetail/newsmostviews/newsmostviews.component';
+import {NewsPaginationComponent} from './news-pagination/news-pagination.component';
 
 const routes: Routes = [
     {path: 'danh-muc/:category', component: NewsComponent},
+    {path: 'category/:category', component: NewsComponent},
     {path: 'tin-tuc/:post', component: NewsdetailComponent},
+    {path: 'news/:post', component: NewsdetailComponent},
     {path: 'tin-tuc', component: NewsComponent},
+    {path: 'news', component: NewsComponent},
 ];
 
 @NgModule({

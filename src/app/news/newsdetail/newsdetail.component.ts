@@ -41,6 +41,7 @@ select p.id,
        p.category_id,
        p.image,
        p.slug,
+       p.en_slug,
        p.tags,
        p.en_tags,
        p.views,
@@ -54,7 +55,7 @@ select p.id,
        c.slug as category_slug
 from post as p 
 inner join category c on p.category_id = c.id
-where p.slug='${this.slug}'
+where p.slug='${this.slug}' or p.en_slug='${this.slug}'
 `);
             postAPI(param, function (res): void {
                 self.data = res;console.log(res);
@@ -84,11 +85,13 @@ select p.id,
        p.category_id,
        p.image,
        p.slug,
+       p.en_slug,
        p.tags,
        p.views,
        c3.name as category_name,
        c3.en_name as en_category_name,
-       c3.slug as category_slug
+       c3.slug as category_slug,
+       c3.en_slug as category_en_slug
 from post as p
          inner join category c3 on p.category_id = c3.id
 where (

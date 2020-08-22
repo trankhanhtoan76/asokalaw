@@ -1,5 +1,6 @@
 import {Component, Input, OnInit} from '@angular/core';
 import {postAPI} from "../../helpers/api";
+import {GlobalService} from "../../service/global.service";
 
 @Component({
     selector: 'app-news-pagination',
@@ -16,7 +17,7 @@ export class NewsPaginationComponent implements OnInit {
     prevLink: Array<any>;
     nextLink: Array<any>;
 
-    constructor() {
+    constructor(public global: GlobalService) {
     }
 
     ngOnInit(): void {

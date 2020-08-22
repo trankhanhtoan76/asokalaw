@@ -1,26 +1,26 @@
 <nav *ngIf="total" class="news-pagination">
     <ul class="pagination">
         <li class="page-item first-prev">
-            <a routerLink="/danh-muc/{{category_slug}}" aria-label="Previous">
+            <a routerLink="/{{global.locale=='vi'?'danh-muc':'category'}}/{{category_slug}}" aria-label="Previous">
                 <img src="/assets/media/chnn/news01_Asset 4.svg">
             </a>
         </li>
         <li class="page-item prev">
-            <a routerLink="/danh-muc/{{category_slug}}?p={{prev}}" aria-label="Previous">
+            <a routerLink="/{{global.locale=='vi'?'danh-muc':'category'}}/{{category_slug}}?p={{prev}}" aria-label="Previous">
                 <img src="/assets/media/chnn/news01_Asset 2.svg">
             </a>
         </li>
-        <li *ngFor="let i of prevLink" class="page-item"><a class="page-link" routerLink="/danh-muc/{{category_slug}}?p={{i}}">{{i}}</a></li>
-        <li class="page-item active"><a class="page-link" routerLink="/danh-muc/{{category_slug}}?p={{current}}">{{current}}</a></li>
+        <li *ngFor="let i of prevLink" class="page-item"><a class="page-link" routerLink="/{{global.locale=='vi'?'danh-muc':'category'}}/{{category_slug}}?p={{i}}">{{i}}</a></li>
+        <li class="page-item active"><a class="page-link" routerLink="/{{global.locale=='vi'?'danh-muc':'category'}}/{{category_slug}}?p={{current}}">{{current}}</a></li>
         <li class="page-item"><a class="page-link" href="javascript:void('')">...</a></li>
-        <li class="page-item"><a class="page-link" routerLink="/danh-muc/{{category_slug}}?p={{pages}}">{{pages}}</a></li>
+        <li class="page-item"><a class="page-link" routerLink="/{{global.locale=='vi'?'danh-muc':'category'}}/{{category_slug}}?p={{pages}}">{{pages}}</a></li>
         <li class="page-item next">
-            <a routerLink="/danh-muc/{{category_slug}}?p={{next}}" aria-label="Next">
+            <a routerLink="/{{global.locale=='vi'?'danh-muc':'category'}}/{{category_slug}}?p={{next}}" aria-label="Next">
                 <img src="/assets/media/chnn/news01_Asset 3.svg">
             </a>
         </li>
         <li class="page-item end-next">
-            <a routerLink="/danh-muc/{{category_slug}}?p={{pages}}" aria-label="Next">
+            <a routerLink="/{{global.locale=='vi'?'danh-muc':'category'}}/{{category_slug}}?p={{pages}}" aria-label="Next">
                 <img src="/assets/media/chnn/news01_Asset 5.svg">
             </a>
         </li>

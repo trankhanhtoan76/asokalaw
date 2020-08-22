@@ -34,11 +34,13 @@ export class NewsmostviewsComponent implements OnInit {
                    p.category_id,
                    p.image,
                    p.slug,
+                   p.en_slug,
                    p.tags,
                    p.views,
                    c.name    as category_name,
                    c.en_name as en_category_name,
-                   c.slug    as category_slug
+                   c.slug    as category_slug,
+                   c.en_slug as category_en_slug
             from post as p
                      inner join category c on p.category_id = c.id
             order by p.views desc

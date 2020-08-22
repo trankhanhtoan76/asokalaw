@@ -25,7 +25,7 @@ export class NewsComponent implements OnInit {
     }
 
     ngOnInit(): void {
-        if (this._router.url == '/tin-tuc') {
+        if (this._router.url == '/tin-tuc' || this._router.url == '/news') {
             this.category_slug = this._router.url.slice(1);
             this.initCategoryInfo();
             this.getPosts(10, 0, true);
@@ -42,7 +42,7 @@ export class NewsComponent implements OnInit {
         const self = this;
         const param = new FormData();
         param.append('action', 'get_record');
-        param.append('query', `select * from category where slug='${this.category_slug}'`);
+        param.append('query', `select * from category where slug='${this.category_slug}' or en_slug='${this.category_slug}'`);
         postAPI(param, function (res): void {
             self.category = res;
             self._global.seo_title.next(res.seo_title);
@@ -76,16 +76,18 @@ export class NewsComponent implements OnInit {
                        p.category_id,
                        p.image,
                        p.slug,
+                       p.en_slug,
                        p.tags,
                        p.en_tags,
                        p.views,
                        c3.name as category_name,
                        c3.en_name as en_category_name,
-                       c3.slug as category_slug
+                       c3.slug as category_slug,
+                       c3.en_slug as category_en_slug
                 from post as p
                          inner join category c3 on p.category_id = c3.id
-                where (p.category_id in(select c.id from category as c where c.slug = '${categorySlug}') 
-                           or p.category_id in(select c2.id from category as c2  where c2.parent_id in (select c4.id from category as c4 where c4.slug = '${categorySlug}')))
+                where (p.category_id in(select c.id from category as c where c.slug = '${categorySlug}' or c.en_slug='${categorySlug}') 
+                           or p.category_id in(select c2.id from category as c2  where c2.parent_id in (select c4.id from category as c4 where c4.en_slug='${categorySlug}' or c4.slug = '${categorySlug}')))
                         and p.is_publish = 1 and ${wlocale}
                 order by p.created_at desc
                 limit ${limit} offset ${offset}
@@ -107,12 +109,14 @@ export class NewsComponent implements OnInit {
                        p.category_id,
                        p.image,
                        p.slug,
+                       p.en_slug,
                        p.tags,
                        p.en_tags,
                        p.views,
                        c3.name    as category_name,
                        c3.en_name as en_category_name,
-                       c3.slug    as category_slug
+                       c3.slug    as category_slug,
+                       c3.en_slug as category_en_slug
                 from post as p
                          inner join category c3 on p.category_id = c3.id
                 where p.is_publish = 1 and ${wlocale}

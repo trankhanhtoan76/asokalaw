@@ -6,11 +6,11 @@
         </p>
         <div class="news-mostview-des">
             <p class="news-mostview-txt">
-                <a routerLink="/tin-tuc/{{item.slug}}">
+                <a routerLink="/{{global.locale=='vi'?'tin-tuc':'news'}}/{{global.locale=='vi'?item.slug:item.en_slug}}">
                     {{global.locale == 'vi' ? item.title : item.en_title}}
                 </a>
             </p>
-            <p style="cursor: pointer" class="news-mostview-label" routerLink="/danh-muc/{{item.category_slug}}">
+            <p style="cursor: pointer" class="news-mostview-label" routerLink="/{{global.locale=='vi'?'danh-muc':'category'}}/{{global.locale=='vi'?item.category_slug:item.category_en_slug}}">
                 {{global.locale == 'vi' ? item.category_name : item.en_category_name}}
                 <span>{{item.views}}</span>
             </p>
