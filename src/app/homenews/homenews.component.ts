@@ -26,7 +26,7 @@ export class HomenewsComponent implements OnInit {
         data.append('query', `
             select *
             from post
-            where is_publish=1 and ${wlocale}
+            where is_publish=1 and ${wlocale} and (category_id<>'' or category_id IS NOT NULL)
             order by created_at desc
             limit 5
         `);
