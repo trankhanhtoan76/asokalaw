@@ -3297,3 +3297,21 @@ h1,h2,.padding-header{
     display: flex;
     align-items: center;
 }
+.s6-item h4.color-blue {
+    color: #7ec8e9;
+}
+.study-slick .slick-dots {
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.study-slick .slick-dots li {
+    width: 30%;
+}
+#teacher .slick-track {
+    padding: 4rem 0;
+}
+@media only screen and (max-width: 768px) {
+    .study-slick .slick-dots li {
+        width: 100%;
+    }
+}

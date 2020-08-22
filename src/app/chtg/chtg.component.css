@@ -938,6 +938,7 @@ img.nextArrowBtnVideo {
 
 .textboder p a {
   cursor: pointer;
+  display: block;
 }
 
 .textboder p a:hover {

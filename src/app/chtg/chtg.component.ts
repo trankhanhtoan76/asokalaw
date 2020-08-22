@@ -22,14 +22,13 @@ export class ChtgComponent implements OnInit {
         scrollTop: $(target).offset().top - 150
       }, 200);
     });
-    $('.textTitle').on('click', function() {
-      const target = $(this).attr('block');
-      if (target === 'two') {
-        $('#two').show();
-        $('#one').hide();
-      } else {
-        $('#two').hide();
-        $('#one').show();
+    $('.tables1 .textTitle').on('click', function() {
+      const _this = $(this);
+      if (!_this.hasClass('actived')) {
+        $('.tables1 .textTitle').removeClass('actived');
+        _this.addClass('actived');
+        $('.tables2').hide();
+        $('#' + _this.attr('block')).show();
       }
     });
   }

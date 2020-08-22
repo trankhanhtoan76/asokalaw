@@ -85,6 +85,8 @@ import {GlobalModule} from "./global/global.module";
 import { DknhVideosComponent } from './dknh/dknh-videos/dknh-videos.component';
 import { DkkdSubfooterComponent } from './dkkd/dkkd-subfooter/dkkd-subfooter.component';
 import {GlobalService} from "./service/global.service";
+import { TvlsquestionComponent } from './tvls/tvlsquestion/tvlsquestion.component';
+import { DkdtquestionComponent } from './dkdt/dkdtquestion/dkdtquestion.component';
 
 const routes: Routes = [
     {path: '', component: HomeComponent},
@@ -163,7 +165,9 @@ const routes: Routes = [
         FormFieldUploadComponent,
         FormGroupFieldInfoComponent,
         DknhVideosComponent,
-        DkkdSubfooterComponent
+        DkkdSubfooterComponent,
+        TvlsquestionComponent,
+        DkdtquestionComponent
     ],
     imports: [
         BrowserModule,

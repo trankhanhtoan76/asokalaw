@@ -1,4 +1,9 @@
-
+.textTitle {
+  color: #ffc30d;
+  font-size: 18px;
+  font-weight: 500;
+  padding-top: 15px;
+}
 
 .light-blue{
   color:#7ec8e9;

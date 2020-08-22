@@ -1194,6 +1194,18 @@ hr.blue {
 .job-item:not(.item03) {
   padding-right: 35px;
 }
+.job-item.item01 {
+  background: url('/assets/media/chnn/icon01.png') top 10px right 30px no-repeat;
+  background-size: auto 40px;
+}
+.job-item.item02 {
+  background: url('/assets/media/chnn/icon02.png') top 10px right 30px no-repeat;
+  background-size: auto 40px;
+}
+.job-item.item03 {
+  background: url('/assets/media/chnn/icon03.png') top 10px right 30px no-repeat;
+  background-size: auto 40px;
+}
 .job-item .mission-txt p {
   text-align: justify;
 }

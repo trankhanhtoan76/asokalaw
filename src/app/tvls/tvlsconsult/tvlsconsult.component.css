@@ -1240,12 +1240,15 @@ img.nextArrowBtnVideo {
 .square{
   margin: auto;
   text-align: center;
-  width: 270px;
-  height: 200px;
+  width: 280px;
+  height: 250px;
   background-color: oldlace;
   padding: 12%;
   margin-top: 14%;
   transition: all .2s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .square:hover .default{
   display: none;

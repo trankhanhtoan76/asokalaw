@@ -1,3 +1,17 @@
+.unit-circle {
+  position: relative;
+  padding-left: 15px;
+}
+.unit-circle::before {
+  position: absolute;
+  content: '';
+  background: #80caec;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  top: 9px;
+  left: 0;
+}
 /*--------------------------------PLTX----------------------------------*/
 #PLTX-banner {
   background-image: url(/assets/media/PLTX/banner.jpg);
