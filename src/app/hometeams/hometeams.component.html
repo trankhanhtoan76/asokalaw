@@ -4,14 +4,14 @@
             <div class="row d-none d-md-flex">
                 <div class="col-md-7">
                     <div class="list-slide-team">
-                        <div *ngFor="let team of teams" class="slide-item">
+                        <div *ngFor="let item of data" class="slide-item">
                             <div class="team-user shadow">
-                                <img [src]="team.img">
+                                <img [src]="item.image">
                                 <div class="description-image">
                                     <div class="user-name center" style="padding-top: 10px;">
-                                        <p style="margin-top: 6px;">{{team.title}}&nbsp;<b class="name">{{team.name}}</b></p>
+                                        <p style="margin-top: 6px;">{{global.locale == 'vi' ? item.title : item.en_title}}&nbsp;<b class="name">{{item.name}}</b></p>
                                     </div>
-                                    <p class="job">{{team.job}}</p>
+                                    <p class="job">{{global.locale == 'vi' ? item.job : item.en_job}}</p>
                                 </div>
                             </div>
                         </div>
@@ -32,14 +32,14 @@
                         <p>Không chỉ có luật sư/chuyên viên trực tiếp làm việc tại Văn Phòng nhằm giải quyết các vấn đề pháp lý phổ biến cho doanh nghiệp, Asoka Law còn có mối quan hệ hợp tác với các luật sư/cố vấn tại các chuyên ngành cần chuyên môn sâu nhằm hỗ trợ khách hàng giải quyết tốt nhất ở các hồ sơ đặc thù. Chúng tôi tự hào có mối quan hệ hợp tác với trên 30 luật sư/cố vấn chuyên môn ở các lĩnh vực như: hàng hải, bảo hiểm, truyền thông, nhượng quyền</p>
                     </div>
                     <div class="list-slide-team">
-                        <div *ngFor="let team of teams" class="slide-item">
+                        <div *ngFor="let item of data" class="slide-item">
                             <div class="team-user shadow">
-                                <img [src]="team.img">
+                                <img [src]="item.image">
                                 <div class="description-image">
                                     <div class="user-name center" style="padding-top: 10px;">
-                                        <p style="margin-top: 6px;">{{team.title}}&nbsp;<b class="name">{{team.name}}</b></p>
+                                        <p style="margin-top: 6px;">{{global.locale == 'vi' ? item.title : item.en_title}}&nbsp;<b class="name">{{item.name}}</b></p>
                                     </div>
-                                    <p class="job">{{team.job}}</p>
+                                    <p class="job">{{global.locale == 'vi' ? item.job : item.en_job}}</p>
                                 </div>
                             </div>
                         </div>

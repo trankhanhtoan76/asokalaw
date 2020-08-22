@@ -4,7 +4,7 @@
     </p>
     <p class="news-tag">
         <span routerLink="/danh-muc/{{data.category_slug}}" class="badge badge-secondary">
-            <img src="/assets/media/chnn/news01_tag.svg">
+            <img style="width: 100%" src="/assets/media/chnn/news01_tag.svg">
             {{global.locale == 'vi' ? data.category_name : data.en_category_name}}
         </span>
         <span>{{data.modified_at|date:'dd/MM/yyyy'}}</span>

@@ -1,4 +1,6 @@
 import {Component, OnInit} from '@angular/core';
+import {GlobalService} from "../service/global.service";
+import {postAPI} from "../helpers/api";
 
 declare var $: any;
 
@@ -8,43 +10,28 @@ declare var $: any;
     styleUrls: ['./hometeams.component.css']
 })
 export class HometeamsComponent implements OnInit {
-    isInstalled: boolean;
-    teams = [
-        {
-            name: 'Lê Bình',
-            title: 'Cố vấn',
-            img: '/assets/media/teams/1.jpg',
-            job: 'Kế toán - thuế - Lao động - BHXH'
-        },
-        {
-            name: 'Đặng Thành Tài',
-            title: 'Luật sư',
-            img: '/assets/media/teams/2.jpg',
-            job: 'Tranh chấp - Thương mại & Doanh nghiệp'
-        },
-        {
-            name: 'Tâm Dương',
-            title: 'Luật sư',
-            img: '/assets/media/teams/3.jpg',
-            job: 'Truyền thông - Sự kiện'
-        },
-        {
-            name: 'Nguyễn Sơn Trà',
-            title: 'Luật sư',
-            img: '/assets/media/teams/4.jpg',
-            job: 'Tranh chấp dân sự - Thương mại'
-        }
-    ];
+    initialized = false;
+    data = [];
 
-    constructor() {
+    constructor(public global: GlobalService) {
     }
 
     ngOnInit(): void {
+        const self = this;
+        const data = new FormData();
+        data.append('action', 'get_records');
+        data.append('query', `
+            select *
+            from teamhome
+        `);
+        postAPI(data, function (res): void {
+            self.data = res;
+        });
     }
 
     ngAfterViewChecked(): void {
-        if (!this.isInstalled) {
-            this.isInstalled = true;
+        if (!this.initialized && this.data.length) {
+            this.initialized = true;
             $('.list-slide-team').slick({
                 dots: true,
                 infinite: true,
