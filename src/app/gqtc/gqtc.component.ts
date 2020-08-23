@@ -24,6 +24,10 @@ export class GqtcComponent implements OnInit {
     constructor(private spinner: SpinnerService, private smtp: EmailService) {
     }
 
+    showForm(){
+        $('#gqtcform1').modal('show');
+    }
+
     onRemoveSelectedFile() {
         this.attachmentName = '';
         this.attachment = '';

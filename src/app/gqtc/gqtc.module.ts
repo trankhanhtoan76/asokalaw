@@ -11,6 +11,7 @@ import { GqtcFeedbackComponent } from './gqtc-feedback/gqtc-feedback.component';
 import { GqtcReasonComponent } from './gqtc-reason/gqtc-reason.component';
 import { GqtcContactComponent } from './gqtc-contact/gqtc-contact.component';
 import {FormsModule} from "@angular/forms";
+import {GlobalModule} from "../global/global.module";
 
 const routes: Routes = [
   {path: 'giai-quyet-tranh-chap', component: GqtcComponent}
@@ -32,6 +33,7 @@ const routes: Routes = [
         RouterModule.forRoot(routes),
         BrowserModule,
         FormsModule,
+        GlobalModule,
     ]
 })
 export class GqtcModule {

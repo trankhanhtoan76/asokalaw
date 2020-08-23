@@ -1,0 +1,82 @@
+<section id="business-size" class="">
+    <div class="container center">
+        <div class="row ">
+            <div class="col-md-12 center">
+                <ng-content></ng-content>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="controller-tabs-popular" id="fix-dkdtbusiness-V">
+                    <div class="tkt-slide-item" *ngFor="let item of data" [attr.data-target]="'#'+item.id">
+                        <img src="{{item.image}}"/>
+                    </div>
+                    <div *ngFor="let item of data" [attr.data-target]="'#'+item.id">
+                        <img src="{{item.image}}"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="tab-content  info-panel">
+        <div class="container-fluid">
+            <div *ngFor="let item of data" id="{{item.id}}" class="tab-pane-business center row">
+                <div class="col-md-4 col-sm-12">
+                    <img class="business-size-bg d-none d-md-block" src="/assets/media/TVLS/business-size/Asset 3.svg">
+                    <div class="profile-business">
+                        <p class="title-business">{{global.locale == 'vi' ? item.title : item.en_title}}</p>
+                        <p class="name-business">{{item.name}}</p>
+                        <p class="blockquote-business"><i>{{global.locale == 'vi' ? item.description : item.en_description}}</i></p>
+                        <p class="start-business d-none d-md-block">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                        </p>
+                        <p class="btn-link btn-business">{{item.consult_count}} lượt đặt tư vấn</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12" style="text-align: left;padding-top: 4%;">
+                    <div class="experience-business">
+                        <h5 style="color: #00c4ffbf">Kinh nghiệm làm việc</h5>
+                        <ng-container *ngIf="global.locale=='vi'">
+                            <div *ngFor="let exp of item.exp" class="tab-business">
+                                <i class="fa fa-circle icon-child"></i>
+                                <p class="tab-child">{{exp}}</p>
+                            </div>
+                        </ng-container>
+                        <ng-container *ngIf="global.locale!='vi'">
+                            <div *ngFor="let exp of item.en_exp" class="tab-business">
+                                <i class="fa fa-circle icon-child"></i>
+                                <p class="tab-child">{{exp}}</p>
+                            </div>
+                        </ng-container>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12" style="text-align: left;padding-top: 4%;">
+                    <div style="">
+                        <h5 style="color: #00c4ffbf;font-family: 'Montserrat', sans-serif;">Bằng cấp & ngôn ngữ</h5>
+                        <ng-container *ngIf="global.locale=='vi'">
+                            <div *ngFor="let cert of item.cert" class="tab-business">
+                                <i class="fa fa-circle icon-child"></i>
+                                <p class="tab-child">{{cert}}</p>
+                            </div>
+                        </ng-container>
+                        <ng-container *ngIf="global.locale!='vi'">
+                            <div *ngFor="let cert of item.en_cert" class="tab-business">
+                                <i class="fa fa-circle icon-child"></i>
+                                <p class="tab-child">{{cert}}</p>
+                            </div>
+                        </ng-container>
+                    </div>
+                </div>
+                <div class="col-md-12 ">
+                    <button (click)="submit(true)" class=" btn btn-warning padding" style="color: white;margin-bottom: 20px;" type="button">
+                        Đặt lịch tư vấn với luật sư
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

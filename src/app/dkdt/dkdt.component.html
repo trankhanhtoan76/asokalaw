@@ -28,8 +28,14 @@
 </section>
 <app-dkdtrecognize (onclickregister)="changePackageRegister($event)" (onclickchangepackage)="changeTypeRegister($event)"></app-dkdtrecognize>
 <app-dkdtreason></app-dkdtreason>
-<!--<app-dkdtbusiness (showregistrationform)="showRegistrationForm($event)"></app-dkdtbusiness>-->
-<app-global-lawyer></app-global-lawyer>
+<app-global-lawyer (showregistrationform)="showRegistrationForm($event)">
+    <div>
+        <h1 class="sub-content-no-fluid" style="padding-top: 45px!important;">Luật sư và cố vấn 10+ năm kinh nghiệm</h1>
+    </div>
+    <p class="center sub-content-no-fluid" style="padding-bottom: 45px!important;">
+        Đội ngũ luật sư và cố vấn của chúng tôi đều trải qua 10+ năm kinh nghiệm trong lĩnh vực pháp lý doanh nghiệp và đầu tư. Chia sẻ với chúng tôi dự định kinh doanh của bạn tại Việt Nam, Asoka sẽ giúp bạn thực thi với một nền móng pháp lý vững chắc.
+    </p>
+</app-global-lawyer>
 <app-dkdtfeedback></app-dkdtfeedback>
 <app-dkdtsupport></app-dkdtsupport>
 <app-dkdtquestion></app-dkdtquestion>
