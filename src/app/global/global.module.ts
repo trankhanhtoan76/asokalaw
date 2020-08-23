@@ -5,6 +5,7 @@ import { GlobalQuestionComponent } from './global-question/global-question.compo
 import { GlobalFeedbackComponent } from './global-feedback/global-feedback.component';
 import { GlobalSlideVideosComponent } from './global-slide-videos/global-slide-videos.component';
 import { LangComponent } from './lang/lang.component';
+import { GlobalLawyerComponent } from './global-lawyer/global-lawyer.component';
 
 
 @NgModule({
@@ -13,14 +14,16 @@ import { LangComponent } from './lang/lang.component';
         GlobalQuestionComponent,
         GlobalFeedbackComponent,
         GlobalSlideVideosComponent,
-        LangComponent
+        LangComponent,
+        GlobalLawyerComponent
     ],
     exports: [
         ModalVideoComponent,
         GlobalQuestionComponent,
         GlobalFeedbackComponent,
         GlobalSlideVideosComponent,
-        LangComponent
+        LangComponent,
+        GlobalLawyerComponent
     ],
     imports: [
         CommonModule
