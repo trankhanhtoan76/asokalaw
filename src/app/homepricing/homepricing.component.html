@@ -2,12 +2,12 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12 text-center">
-                <h1>Asoka Law được tin dùng bởi +3500 doanh nghiệp</h1>
+                <h1 lang-i18n key="home-asoka-law-duoc-tin-dung" default="Asoka Law được tin dùng bởi +3500 doanh nghiệp" ></h1>
                 <br/>
-                <p class="p-price-sub-title">Từ công ty khởi nghiệp cho đến công ty hoạt động trên 03 năm đều dễ dàng
+                <p class="p-price-sub-title" lang-i18n key="home-tu-cong-ty-khoi-nghiep" default="Từ công ty khởi nghiệp cho đến công ty hoạt động trên 03 năm đều dễ dàng
                     tìm thấy các dịch vụ pháp lý thiết yếu tại Asoka Law. Đóng gói chặt chẽ theo độ tuổi doanh
                     nghiệp/lĩnh vực kinh doanh, tư vấn nhiệt tình, thực hiện tận tâm. Asoka Law đã hỗ trợ khách hàng
-                    kinh doanh thành công từ 2015 cho đến nay.</p>
+                    kinh doanh thành công từ 2015 cho đến nay." ></p>
                 <br/>
             </div>
         </div>
@@ -15,21 +15,22 @@
             <div class="col-md-4">
                 <div class="price-list-item shadow-lg">
                     <img src="/assets/media/landingpage/price/1.svg">
-                    <h2>Khởi tạo<br/>doanh nghiệp</h2>
+                    <h2 lang-i18n key="home-khoi-tao-doanh-nghiep" default="Khởi tạo<br/>doanh nghiệp" ></h2>
                     <div class="price-list-price">
-                        <p><sup>Từ</sup>200.000<sup>VNĐ</sup></p>
+                        <p><sup lang-i18n key="home-tu" default="Từ" ></sup>200.000<sup>VNĐ</sup></p>
                     </div>
-                    <p class="sub-title">Dịch vụ phổ biến</p>
+                    <p class="sub-title" lang-i18n key="home-dich-vu-pho-bien" default="Dịch vụ phổ biến" ></p>
                     <div class="list-rule">
-                        <p style="cursor: pointer" routerLink="/tu-van-luat-su"><i class="fa fa-caret-right"></i> Tư vấn với Luật sư</p>
-                        <p style="cursor: pointer" routerLink="/dang-ky-kinh-doanh"><i class="fa fa-caret-right"></i> Đăng ký kinh doanh</p>
-                        <p style="cursor: pointer" routerLink="/dang-ky-dau-tu"><i class="fa fa-caret-right"></i> Đăng ký đầu tư</p>
+                        <p style="cursor: pointer" routerLink="/tu-van-luat-su" ><i class="fa fa-caret-right"></i> <span lang-i18n key="home-tu-van-luat-su" default="Tư vấn luật sư"></span></p>
+                        <p style="cursor: pointer" routerLink="/dang-ky-kinh-doanh"><i class="fa fa-caret-right"></i> <span lang-i18n key="home-dangkykinhdoanh" default="Đăng ký kinh doanh"></span></p>
+                        <p style="cursor: pointer" routerLink="/dang-ky-dau-tu"><i class="fa fa-caret-right"></i> <span lang-i18n key="home-dangkydautu" default="Đăng ký đầu tư"></span></p>
                     </div>
                     <div class="center">
-                        <button class="btn btn-warning padding price-button" (click)="package='Khởi tạo doanh nghiệp';selectMultiService([s1,s5,s7]);showForm()" type="button">Đăng ký ngay</button>
+                        <button class="btn btn-warning padding price-button" (click)="package='Khởi tạo doanh nghiệp';selectMultiService([s1,s5,s7]);showForm()" type="button" lang-i18n key="home-dang-ky-ngay" default="Đăng ký ngay"></button>
                     </div>
                 </div>
             </div>
+<!--            denday-->
             <div class="col-md-4">
                 <div class="price-list-item shadow-lg">
                     <img src="/assets/media/landingpage/price/3.svg">
@@ -45,7 +46,7 @@
 
                     </div>
                     <div class="center">
-                        <button class="btn btn-warning padding price-button" (click)="package='Doanh nghiệp 01 đến 03 năm';selectMultiService([s2,s3,s8]);showForm()" type="button">Đăng ký ngay</button>
+                        <button class="btn btn-warning padding price-button" (click)="package='Doanh nghiệp 01 đến 03 năm';selectMultiService([s2,s3,s8]);showForm()" type="button" lang-i18n key="home-dang-ky-ngay" default="Đăng ký ngay">Đăng ký ngay</button>
                     </div>
                 </div>
             </div>
@@ -63,7 +64,7 @@
                         <p><i class="fa fa-caret-right"></i> Tạm ngưng - giải thể</p>
                     </div>
                     <div class="center">
-                        <button class="btn btn-warning padding price-button" (click)="package='Doanh nghiệp trên 3 năm';selectMultiService([s4,s6,s9]);showForm()" type="button">Đăng ký ngay</button>
+                        <button class="btn btn-warning padding price-button" (click)="package='Doanh nghiệp trên 3 năm';selectMultiService([s4,s6,s9]);showForm()" type="button" lang-i18n key="home-dang-ky-ngay" default="Đăng ký ngay">Đăng ký ngay</button>
                     </div>
                 </div>
             </div>
@@ -83,7 +84,7 @@
                         <p style="cursor: pointer" routerLink="/dang-ky-dau-tu"><i class="fa fa-caret-right"></i> Đăng ký đầu tư</p>
                     </div>
                     <div class="center">
-                        <button class="btn btn-warning padding price-button" (click)="package='Khởi tạo doanh nghiệp';selectMultiService([s1,s5,s7]);showForm()" type="button">Đăng ký ngay</button>
+                        <button class="btn btn-warning padding price-button" (click)="package='Khởi tạo doanh nghiệp';selectMultiService([s1,s5,s7]);showForm()" type="button" lang-i18n key="home-dang-ky-ngay" default="Đăng ký ngay">Đăng ký ngay</button>
                     </div>
                 </div>
             </div>
@@ -103,7 +104,7 @@
 
                     </div>
                     <div class="center">
-                        <button class="btn btn-warning padding price-button" (click)="package='Doanh nghiệp 01 đến 03 năm';selectMultiService([s2,s3,s8]);showForm()" type="button">Đăng ký ngay</button>
+                        <button class="btn btn-warning padding price-button" (click)="package='Doanh nghiệp 01 đến 03 năm';selectMultiService([s2,s3,s8]);showForm()" type="button" lang-i18n key="home-dang-ky-ngay" default="Đăng ký ngay">Đăng ký ngay</button>
                     </div>
                 </div>
             </div>
@@ -121,7 +122,7 @@
                         <p><i class="fa fa-caret-right"></i> Tạm ngưng - giải thể</p>
                     </div>
                     <div class="center">
-                        <button class="btn btn-warning padding price-button" (click)="package='doanh nghiệp trên 3 năm';selectMultiService([s4,s6,s9]);showForm()" type="button">Đăng ký ngay</button>
+                        <button class="btn btn-warning padding price-button" (click)="package='doanh nghiệp trên 3 năm';selectMultiService([s4,s6,s9]);showForm()" type="button" lang-i18n key="home-dang-ky-ngay" default="Đăng ký ngay">Đăng ký ngay</button>
                     </div>
                 </div>
             </div>

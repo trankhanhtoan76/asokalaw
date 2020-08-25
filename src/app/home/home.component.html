@@ -2,54 +2,54 @@
   <div class="container">
     <div class="row d-none d-md-flex">
       <div class="col-md-6 title-banner vertical-middle" style="margin-top: 200px;">
-        <h1>Hãng luật chính danh dành cho doanh nghiệp</h1>
+        <h1 lang-i18n key="hang-luat-chinh-danh-danh-cho-doanh-nghiep" default="Hãng luật chính danh dành cho doanh nghiệp" ></h1>
         <div class="row search" style="margin-top: 40px;">
           <div class="container-search flex-center-vertically shadow">
             <div class="row row-search">
               <i class="fa fa-search"></i>
               <select style="width: 90%" type="text" id="home_business_type_1" name="business_type" class="input-search homeSearch">
-                <option value="" selected>Chọn lĩnh vực bạn quan tâm</option>
-                <option value="Enterprise">Doanh nghiệp</option>
-                <option value="Intellectual Property">Sở hữu trí tuệ</option>
-                <option value="Trade disputes">Tranh chấp thương mại</option>
-                <option value="Labor - HR">Lao động - nhân sự</option>
-                <option value="Events - communication">Sự kiện - truyền thông</option>
-                <option value="Registration of investment">Đăng ký đầu tư</option>
-                <option value="Bank - insurance">Ngân hàng - bảo hiểm</option>
-                <option value="Settlement - study abroad">Định cư - du học</option>
-                <option value="Other">Lĩnh vực khác</option>
+                <option value="" selected lang-i18n key="chon-linh-vuc-ban-quan-tam" default="Chọn lĩnh vực bạn quan tâm"></option>
+                <option value="Enterprise" lang-i18n key="doanh-nghiep" default="Doanh nghiệp"></option>
+                <option value="Intellectual Property" lang-i18n key="so-huu-tri-tue" default="Sở hữu trí tuệ" ></option>
+                <option value="Trade disputes" lang-i18n key="home-tranhchapthuongmai" default="Tranh chấp thương mại" ></option>
+                <option value="Labor - HR" lang-i18n key="home-laodongnhansu" default="Lao động - nhân sự" ></option>
+                <option value="Events - communication" lang-i18n key="home-sukien-truyenthong" default="Sự kiện - truyền thông" ></option>
+                <option value="Registration of investment" lang-i18n key="home-dangkydautu22" default="Đăng ký đầu tư" ></option>
+                <option value="Bank - insurance" lang-i18n key="home-nganhang-baohiem" default="Ngân hàng - bảo hiểm" ></option>
+                <option value="Settlement - study abroad" lang-i18n key="home-dinhcu-duhoc" default="Định cư - du học" ></option>
+                <option value="Other" lang-i18n key="home-linhvuc-khac" default="Lĩnh vực khác" ></option>
               </select>
               <i style="position:absolute;left:67%" class="d-none d-md-block fa fa-caret-down"></i>
             </div>
           </div>
-          <button class="btn btn-warning text-color-search shadow btn-banner" (click)="submit()">Tư vấn</button>
+          <button class="btn btn-warning text-color-search shadow btn-banner" (click)="submit()"  lang-i18n key="home-tu-van" default="Tư vấn" ></button>
         </div>
       </div>
     </div>
     <div class="row d-block d-md-none">
       <div class="col-md-6 title-banner vertical-middle" style="margin-top: 60px;">
-        <h1 class="text-center" style="padding-top:50px">Hãng luật chính danh dành cho doanh nghiệp</h1>
+        <h1 class="text-center" style="padding-top:50px" lang-i18n key="hang-luat-chinh-danh-danh-cho-doanh-nghiep" default="Hãng luật chính danh dành cho doanh nghiệp"></h1>
         <div class="row search">
           <div class=" col-sm-12 container-search flex-center-vertically shadow" style="margin:auto">
             <div class="row row-search">
               <i class="fa fa-search"></i>
               <select #slcindustry2 type="text" class="input-search" id="home_business_type_2">
-                  <option value="" selected>Chọn lĩnh vực bạn quan tâm</option>
-                  <option value="Enterprise">Doanh nghiệp</option>
-                  <option value="Intellectual Property">Sở hữu trí tuệ</option>
-                  <option value="Trade disputes">Tranh chấp thương mại</option>
-                  <option value="Labor - HR">Lao động - nhân sự</option>
-                  <option value="Events - communication">Sự kiện - truyền thông</option>
-                  <option value="Registration of investment">Đăng ký đầu tư</option>
-                  <option value="Bank - insurance">Ngân hàng - bảo hiểm</option>
-                  <option value="Settlement - study abroad">Định cư - du học</option>
-                  <option value="Other">Lĩnh vực khác</option>
+                <option value="" selected lang-i18n key="chon-linh-vuc-ban-quan-tam" default="Chọn lĩnh vực bạn quan tâm"></option>
+                <option value="Enterprise" lang-i18n key="doanh-nghiep" default="Doanh nghiệp"></option>
+                <option value="Intellectual Property" lang-i18n key="so-huu-tri-tue" default="Sở hữu trí tuệ" ></option>
+                <option value="Trade disputes" lang-i18n key="home-tranhchapthuongmai" default="Tranh chấp thương mại" ></option>
+                <option value="Labor - HR" lang-i18n key="home-laodongnhansu" default="Lao động - nhân sự" ></option>
+                <option value="Events - communication" lang-i18n key="home-sukien-truyenthong" default="Sự kiện - truyền thông" ></option>
+                <option value="Registration of investment" lang-i18n key="home-dangkydautu22" default="Đăng ký đầu tư" ></option>
+                <option value="Bank - insurance" lang-i18n key="home-nganhang-baohiem" default="Ngân hàng - bảo hiểm" ></option>
+                <option value="Settlement - study abroad" lang-i18n key="home-dinhcu-duhoc" default="Định cư - du học" ></option>
+                <option value="Other" lang-i18n key="home-linhvuc-khac" default="Lĩnh vực khác" ></option>
               </select>
               <i (click)="slcindustry2.click()" class="fa fa-caret-down"></i>
             </div>
           </div>
           <div class="col-sm-12 text-center" style="margin-top:10px">
-            <button class="btn btn-warning text-color-search shadow">Tư vấn</button>
+            <button class="btn btn-warning text-color-search shadow"  lang-i18n key="home-tu-van" default="Tư vấn" ></button>
           </div>
         </div>
       </div>
