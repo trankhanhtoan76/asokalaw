@@ -3,10 +3,10 @@
         <img style="width: 100%" src="{{data.image}}">
     </p>
     <p class="news-tag">
-        <span routerLink="//{{global.locale=='vi'?'danh-muc':'category'}}/{{data.category_slug}}" class="badge badge-secondary">
-            <img src="/assets/media/chnn/news01_tag.svg">
-            {{global.locale == 'vi' ? data.category_name : data.en_category_name}}
-        </span>
+<!--        <span routerLink="//{{global.locale=='vi'?'danh-muc':'category'}}/{{data.category_slug}}" class="badge badge-secondary">-->
+<!--            <img src="/assets/media/chnn/news01_tag.svg">-->
+<!--            {{global.locale == 'vi' ? data.category_name : data.en_category_name}}-->
+<!--        </span>-->
         <span>{{data.modified_at|date:'dd/MM/yyyy'}}</span>
     </p>
     <h4 class="news-title" style="cursor: pointer" routerLink="/{{global.locale=='vi'?'tin-tuc':'category'}}/{{global.locale=='vi'?data.slug:data.en_slug}}">{{global.locale == 'vi' ? data.title : data.en_title}}</h4>
