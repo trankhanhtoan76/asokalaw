@@ -15,7 +15,7 @@
                             <a (click)="changeLang('en')" style=" font-weight: bold;" href="javascript:void('')">EN</a>
                         </div>
                         <div class="padding" style="float:right">
-                            <button id="headerButtonModal" data-toggle="modal" data-target="#modalHomeAdvice" class="float-right btn btn-outline-warning padding" type="button">Nhận tư vấn miễn phí</button>
+                            <button id="headerButtonModal" data-toggle="modal" data-target="#modalHomeAdvice" class="float-right btn btn-outline-warning padding" type="button" lang-i18n key="header-nhantuvan-mien-phi" default="Nhận tư vấn miễn phí"></button>
                             <div class="btn">
                                 <img style="height: 16px;font-weight: bold" src="/assets/media/phone_icon.svg"/>
                                 <a href="tel:{{global.settings.phone}}" style="font-weight: bold;font-family:'Montserrat',serif;color:#afaead;font-size: 1.25rem">
@@ -57,34 +57,34 @@
                 <form id="homeAdvice">
                     <div class="form-group">
                         <input (keyup)="n=true" [class.is-invalid]="!form.fieldValid(name)&&n" [class.is-valid]="form.fieldValid(name)&&n" type="text" class="form-control" [(ngModel)]="name" name="name" placeholder="Họ tên *">
-                        <i *ngIf="!form.fieldValid(name) && n"><small class="text-danger">Bắt buộc nhập họ tên.</small></i>
+                        <i *ngIf="!form.fieldValid(name) && n"><small class="text-danger" lang-i18n key="header-batbuochoten" default="Bắt buộc nhập họ tên."></small></i>
                     </div>
                     <div class="form-group">
                         <input (keyup)="p=true" [class.is-invalid]="!form.fieldValid(phone,'phone')&&p" [class.is-valid]="form.fieldValid(phone,'phone')&&p" class="form-control" [(ngModel)]="phone" name="phone" type="text" placeholder="Số điện thoại *"/>
-                        <i *ngIf="!form.fieldValid(phone,'phone') && p"><small class="text-danger">Bắt buộc nhập số điện thoại hợp lệ.</small></i>
+                        <i *ngIf="!form.fieldValid(phone,'phone') && p"><small class="text-danger" lang-i18n key="header-batbuocsdthople" default="Bắt buộc nhập số điện thoại hợp lệ."></small></i>
                     </div>
                     <div class="form-group">
                         <input (keyup)="e=true" [class.is-invalid]="!form.fieldValid(email,'email')&&e" [class.is-valid]="form.fieldValid(email,'email')&&e" class="form-control" name="email" [(ngModel)]="email" type="text" placeholder="Email *"/>
-                        <i *ngIf="!form.fieldValid(email,'email') && e"><small class="text-danger">Bắt buộc nhập email hợp lệ.</small></i>
+                        <i *ngIf="!form.fieldValid(email,'email') && e"><small class="text-danger"lang-i18n key="header-batbuocnhapemail" default="Bắt buộc nhập email hợp lệ." ></small></i>
                     </div>
                     <div class="form-group problem">
-                        <label for="problem">Vấn đề bạn cần tư vấn</label>
+                        <label for="problem" lang-i18n key="header-vandebancantuvan" default="Vấn đề bạn cần tư vấn"></label>
                         <textarea class="form-control" [(ngModel)]="description" name="description" id="problem" rows="2"></textarea>
                     </div>
                     <div class="form-group problem-checkbox">
-                        <label>Dịch vụ bạn cần tư vấn</label>
+                        <label lang-i18n key="header-dichvubancantuvan" default="Dịch vụ bạn cần tư vấn"></label>
                         <div class="container-fluid">
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-check form-check-inline">
                                         <input class="form-check-input" [checked]="service.dkkd" (change)="service.dkkd=!service.dkkd" type="checkbox">
-                                        <span class="form-check-label">Đăng ký kinh doanh</span>
+                                        <span class="form-check-label" lang-i18n key="header-dangkikinhdoanh" default="Đăng ký kinh doanh"></span>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-check form-check-inline">
                                         <input class="form-check-input" type="checkbox" [checked]="service.dknh" (change)="service.dknh=!service.dknh">
-                                        <span class="form-check-label">Đăng ký nhãn hiệu</span>
+                                        <span class="form-check-label" lang-i18n key="header-dangkinhanhieu" default="Đăng ký nhãn hiệu"></span>
                                     </div>
                                 </div>
                             </div>
@@ -92,13 +92,13 @@
                                 <div class="col-md-6">
                                     <div class="form-check form-check-inline">
                                         <input class="form-check-input" type="checkbox" [checked]="service.pltx" (change)="service.pltx=!service.pltx">
-                                        <span class="form-check-label">Pháp lý thường xuyên</span>
+                                        <span class="form-check-label" lang-i18n key="header-phaplythuongxuyen" default="Pháp lý thường xuyên"></span>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-check form-check-inline">
                                         <input class="form-check-input" type="checkbox" [checked]="service.plsk" (change)="service.plsk=!service.plsk">
-                                        <span class="form-check-label">Pháp lý sự kiện</span>
+                                        <span class="form-check-label" lang-i18n key="header-phaplysukien" default="Pháp lý sự kiện"></span>
                                     </div>
                                 </div>
                             </div>
@@ -106,13 +106,13 @@
                                 <div class="col-md-6">
                                     <div class="form-check form-check-inline">
                                         <input class="form-check-input" type="checkbox" [checked]="service.tvtt" (change)="service.tvtt=!service.tvtt">
-                                        <span class="form-check-label">Tư vấn trực tuyến</span>
+                                        <span class="form-check-label" lang-i18n key="header-tuvantructuyen" default="Tư vấn trực tuyến"></span>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-check form-check-inline">
                                         <input class="form-check-input" type="checkbox" [checked]="service.xltc" (change)="service.xltc=!service.xltc">
-                                        <span class="form-check-label">Giải quyết tranh chấp</span>
+                                        <span class="form-check-label" lang-i18n key="header-giaiquyetranhchap" default="Giải quyết tranh chấp"></span>
                                     </div>
                                 </div>
                             </div>
@@ -121,7 +121,7 @@
                 </form>
             </div>
             <div class="modal-footer" style="text-align: center;">
-                <button style="margin: auto; color: white;" (click)="submit()" type="button" class="btn btn-warning">Gửi yêu cầu</button>
+                <button style="margin: auto; color: white;" (click)="submit()" type="button" class="btn btn-warning" lang-i18n key="header-guiyeucau" default="Gửi yêu cầu"></button>
             </div>
         </div>
     </div>

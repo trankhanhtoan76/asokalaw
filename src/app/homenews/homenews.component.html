@@ -1,7 +1,7 @@
 <section *ngIf="news" id="slide-info" class="sub">
     <div class="container center">
         <div class="row title padding-record-title">
-            <h1>Tin tức mới nhất từ Asoka Law</h1>
+            <h1 lang-i18n key="home-tintuc-moinhat" default="Tin tức mới nhất từ Asoka Law" ></h1>
         </div>
         <div class="list-slide">
             <div *ngFor="let item of news" class="slide-item">
@@ -20,7 +20,7 @@
             </div>
         </div>
         <div class="info-see-all">
-            <a routerLink="/{{global.locale=='vi'?'tin-tuc':'news'}}">Xem tất cả tin tức >></a>
+            <a routerLink="/{{global.locale=='vi'?'tin-tuc':'news'}}"  lang-i18n key="home-xem-tat-ca-tin-tuc" default="Xem tất cả tin tức >>"></a>
             <hr>
         </div>
     </div>

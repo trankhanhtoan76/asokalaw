@@ -17,67 +17,67 @@
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item dropdown" [ngClass]="{'show':showMenu1}" (mouseover)="showMenu1=true" (mouseout)="showMenu1=false">
                     <a class="nav-link" href data-toggle="dropdown" aria-haspopup="true" [attr.aria-expanded]="showMenu1">
-                        VỀ ASOKA
+                       <span  lang-i18n key="headermenu-veasoka" default="VỀ ASOKA"></span>
                     </a>
                     <div class="dropdown-menu" [ngClass]="{'show':showMenu1}">
-                        <a (click)="collapseMenu()" class="dropdown-item" routerLink="/tam-nhin-su-menh">Tầm nhìn sứ mệnh</a>
-                        <a (click)="collapseMenu()" class="dropdown-item" routerLink="/co-hoi-nghe-nghiep">Cơ hội nghề nghiệp</a>
+                        <a (click)="collapseMenu()" class="dropdown-item" routerLink="/tam-nhin-su-menh"><span  lang-i18n key="headermenu-tamnhinsumenh" default="Tầm nhìn sứ mệnh"></span></a>
+                        <a (click)="collapseMenu()" class="dropdown-item" routerLink="/co-hoi-nghe-nghiep"><span  lang-i18n key="headermenu-cohoinghenghiep" default="Cơ hội nghề nghiệp"></span></a>
                         <!--            <a class="dropdown-item" href="#">Đối tác nhượng quyền</a>-->
                     </div>
                 </li>
                 <li class="nav-item dropdown" [ngClass]="{'show':showMenu2}" (mouseover)="showMenu2=true" (mouseout)="showMenu2=false">
                     <a class="nav-link" href data-toggle="dropdown" aria-haspopup="true" [attr.aria-expanded]="showMenu2">
-                        PHÁP LÝ DOANH NGHIỆP
+                        <span  lang-i18n key="headermenu-phaplydoanhnghiep" default="PHÁP LÝ DOANH NGHIỆP"></span>
                     </a>
                     <div class="dropdown-menu" [ngClass]="{'show':showMenu2}">
-                        <a (click)="collapseMenu()" class="dropdown-item" routerLink="/khoi-tao-doanh-nghiep">Khởi tạo doanh nghiệp</a>
-                        <a (click)="collapseMenu()" class="dropdown-item" routerLink="/doanh-nghiep-duoi-3-nam">Doanh nghiệp dưới 03 năm</a>
-                        <a (click)="collapseMenu()" class="dropdown-item" routerLink="/doanh-nghiep-tren-3-nam">Doanh nghiệp trên 03 năm</a>
+                        <a (click)="collapseMenu()" class="dropdown-item" routerLink="/khoi-tao-doanh-nghiep"><span  lang-i18n key="headermenu-khoitaodoanhnghiep" default="Khởi tạo doanh nghiệp"></span></a>
+                        <a (click)="collapseMenu()" class="dropdown-item" routerLink="/doanh-nghiep-duoi-3-nam"><span lang-i18n key="headermenu-dnd3nam" default="Doanh nghiệp dưới 03 năm"></span></a>
+                        <a (click)="collapseMenu()" class="dropdown-item" routerLink="/doanh-nghiep-tren-3-nam"><span lang-i18n key="headermenu-dnt3nam" default="Doanh nghiệp trên 03 năm"></span></a>
                     </div>
                 </li>
                 <li class="nav-item dropdown" [ngClass]="{'show':showMenu3}" (mouseover)="showMenu3=true" (mouseout)="showMenu3=false">
                     <a class="nav-link" href data-toggle="dropdown" aria-haspopup="true" [attr.aria-expanded]="showMenu3">
-                        DỊCH VỤ PHÁP LÝ
+                      <span lang-i18n key="headermenu-dichvuphaply" default="DỊCH VỤ PHÁP LÝ"></span>
                     </a>
                     <div class="dropdown-menu" [ngClass]="{'show':showMenu3}">
-                        <a (click)="collapseMenu()" class="dropdown-item" routerLink="/dang-ky-kinh-doanh">Đăng ký kinh doanh</a>
-                        <a (click)="collapseMenu()" class="dropdown-item" routerLink="/dang-ky-nhan-hieu" lang-i18n key="dang-ky-nhan-hieu" default="Đăng ký nhãn hiệu"></a>
-                        <a (click)="collapseMenu()" class="dropdown-item" routerLink="/dang-ky-dau-tu">Đăng ký đầu tư</a>
-                        <a (click)="collapseMenu()" class="dropdown-item" routerLink="/phap-ly-thuong-xuyen">Pháp lý thường xuyên</a>
-                        <a (click)="collapseMenu()" class="dropdown-item" routerLink="/tu-van-luat-su">Tư vấn luật sư</a>
-                        <a (click)="collapseMenu()" class="dropdown-item" routerLink="/phap-ly-su-kien">Pháp lý sự kiện</a>
-                        <a (click)="collapseMenu()" class="dropdown-item" routerLink="/giai-quyet-tranh-chap">Giải quyết tranh chấp</a>
+                        <a (click)="collapseMenu()" class="dropdown-item" routerLink="/dang-ky-nhan-hieu" ><span lang-i18n key="dang-ky-nhan-hieu" default="Đăng ký nhãn hiệu"></span></a>
+                        <a (click)="collapseMenu()" class="dropdown-item" routerLink="/dang-ky-kinh-doanh"><span lang-i18n key="headermenu-dangkikinhdoanh" default="Đăng ký kinh doanh"></span></a>
+                        <a (click)="collapseMenu()" class="dropdown-item" routerLink="/dang-ky-dau-tu"><span  lang-i18n key="headermenu-dangkidautu" default="Đăng ký đầu tư"></span></a>
+                        <a (click)="collapseMenu()" class="dropdown-item" routerLink="/phap-ly-thuong-xuyen"><span  lang-i18n key="headermenu-phaplythuongxuyen" default="Pháp lý thường xuyên"></span></a>
+                        <a (click)="collapseMenu()" class="dropdown-item" routerLink="/tu-van-luat-su"><span lang-i18n key="headermenu-tuvanluatsu" default="Tư vấn luật sư"></span></a>
+                        <a (click)="collapseMenu()" class="dropdown-item" routerLink="/phap-ly-su-kien"><span  lang-i18n key="headermenu-phaplysukien" default="Pháp lý sự kiện"></span></a>
+                        <a (click)="collapseMenu()" class="dropdown-item" routerLink="/giai-quyet-tranh-chap"><span lang-i18n key="headermenu-giaiquyetranhchap" default="Giải quyết tranh chấp"></span></a>
                     </div>
                 </li>
                 <li class="nav-item dropdown" [ngClass]="{'show':showMenu4}" (mouseover)="showMenu4=true" (mouseout)="showMenu4=false">
                     <a style="cursor: pointer" class="nav-link" (click)="navigateTo('/tin-tuc')" data-toggle="dropdown" aria-haspopup="true" [attr.aria-expanded]="showMenu4">
-                        TIN TỨC
+                   <span  lang-i18n key="headermenu-tintuc" default="TIN TỨC"></span>
                     </a>
                     <div class="dropdown-menu" [ngClass]="{'show':showMenu4}">
-                        <a class="dropdown-item" routerLink="/{{global.locale=='vi'?'danh-muc':'category'}}/uu-dai">Ưu đãi</a>
-                        <a class="dropdown-item" routerLink="/{{global.locale=='vi'?'danh-muc':'category'}}/tin-tuc-asoka">Tin tức Asoka</a>
-                        <a class="dropdown-item" routerLink="/{{global.locale=='vi'?'danh-muc':'category'}}/tin-tuc-phap-ly">Tin tức pháp lý</a>
-                        <a class="dropdown-item subitem" routerLink="/{{global.locale=='vi'?'danh-muc':'category'}}/thanh-lap-doanh-nghiep">Thành lập doanh nghiệp</a>
-                        <a class="dropdown-item subitem" routerLink="/{{global.locale=='vi'?'danh-muc':'category'}}/so-huu-tri-tue">Sở hữu trí tuệ</a>
-                        <a class="dropdown-item subitem" routerLink="/{{global.locale=='vi'?'danh-muc':'category'}}/dau-tu">Đầu tư</a>
-                        <a class="dropdown-item subitem" routerLink="/{{global.locale=='vi'?'danh-muc':'category'}}/phap-ly-su-kien">Pháp lý sự kiện</a>
-                        <a class="dropdown-item subitem" routerLink="/{{global.locale=='vi'?'danh-muc':'category'}}/giai-quyet-tranh-chap">Giải quyết tranh chấp</a>
-                        <a class="dropdown-item subitem" routerLink="/{{global.locale=='vi'?'danh-muc':'category'}}/giay-phep-hoat-dong">Giấy phép hoạt động</a>
-                        <a class="dropdown-item" routerLink="/{{global.locale=='vi'?'danh-muc':'category'}}/van-ban-phap-ly">Văn bản pháp lý</a>
+                        <a class="dropdown-item" routerLink="/{{global.locale=='vi'?'danh-muc':'category'}}/uu-dai"><span lang-i18n key="headermenu-uudai" default="Ưu đãi"></span></a>
+                        <a class="dropdown-item" routerLink="/{{global.locale=='vi'?'danh-muc':'category'}}/tin-tuc-asoka"><span lang-i18n key="headermenu-tintucasoka" default="Tin tức Asoka"></span></a>
+                        <a class="dropdown-item" routerLink="/{{global.locale=='vi'?'danh-muc':'category'}}/tin-tuc-phap-ly"><span  lang-i18n key="headermenu-tintucphaply" default="Tin tức pháp lý"></span></a>
+                        <a class="dropdown-item subitem" routerLink="/{{global.locale=='vi'?'danh-muc':'category'}}/thanh-lap-doanh-nghiep"><span lang-i18n key="headermenu-thanhlapdn" default="Thành lập doanh nghiệp"></span></a>
+                        <a class="dropdown-item subitem" routerLink="/{{global.locale=='vi'?'danh-muc':'category'}}/so-huu-tri-tue"><span  lang-i18n key="headermenu-sohuutritue" default="Sở hữu trí tuệ"></span></a>
+                        <a class="dropdown-item subitem" routerLink="/{{global.locale=='vi'?'danh-muc':'category'}}/dau-tu"><span  lang-i18n key="headermenu-dautu" default="Đầu tư"></span></a>
+                        <a class="dropdown-item subitem" routerLink="/{{global.locale=='vi'?'danh-muc':'category'}}/phap-ly-su-kien"><span  lang-i18n key="headermenu-phaplysukien" default="Pháp lý sự kiện"></span></a>
+                        <a class="dropdown-item subitem" routerLink="/{{global.locale=='vi'?'danh-muc':'category'}}/giai-quyet-tranh-chap"><span  lang-i18n key="headermenu-giaiquyetranhchap" default="Giải quyết tranh chấp"></span></a>
+                        <a class="dropdown-item subitem" routerLink="/{{global.locale=='vi'?'danh-muc':'category'}}/giay-phep-hoat-dong"><span lang-i18n key="headermenu-giayphephoatdong" default="Giấy phép hoạt động"></span></a>
+                        <a class="dropdown-item" routerLink="/{{global.locale=='vi'?'danh-muc':'category'}}/van-ban-phap-ly"><span  lang-i18n key="headermenu-vanbanphaply" default="Văn bản pháp lý"></span></a>
                     </div>
                 </li>
                 <li class="nav-item dropdown" [ngClass]="{'show':showMenu5}" (mouseover)="showMenu5=true" (mouseout)="showMenu5=false">
-                    <a class="nav-link" href data-toggle="dropdown" aria-haspopup="true" [attr.aria-expanded]="showMenu5">KHÁCH HÀNG
+                    <a class="nav-link" href data-toggle="dropdown" aria-haspopup="true" [attr.aria-expanded]="showMenu5"><span  lang-i18n key="headermenu-khachhang" default="KHÁCH HÀNG"></span>
                     </a>
                     <div class="dropdown-menu" [ngClass]="{'show':showMenu5}">
-                        <a (click)="collapseMenu()" class="dropdown-item" routerLink="/cau-hoi-thuong-gap">Câu hỏi thường gặp</a>
+                        <a (click)="collapseMenu()" class="dropdown-item" routerLink="/cau-hoi-thuong-gap"><span lang-i18n key="headermenu-chtg" default="Câu hỏi thường gặp"></span></a>
                         <!--            <a class="dropdown-item" href="#">Chính sách khách hàng</a>-->
-                        <a (click)="collapseMenu()" class="dropdown-item" routerLink="/quy-trinh-lam-viec">Quy trình làm việc</a>
+                        <a (click)="collapseMenu()" class="dropdown-item" routerLink="/quy-trinh-lam-viec"><span  lang-i18n key="headermenu-quytrinh" default="Quy trình làm việc"></span></a>
                         <!--            <a class="dropdown-item" href="#">Hướng dẫn thanh toán</a>-->
                     </div>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" routerLink="/lien-he" aria-haspopup="true" aria-expanded="false">LIÊN HỆ
+                    <a class="nav-link" routerLink="/lien-he" aria-haspopup="true" aria-expanded="false"><span  lang-i18n key="headermenu-lienhe" default="LIÊN HỆ"></span>
                     </a>
                 </li>
             </ul>
