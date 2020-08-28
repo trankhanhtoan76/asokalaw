@@ -13,6 +13,7 @@ import {FormsModule} from "@angular/forms";
 import {NewsrecentComponent} from './newsdetail/newsrecent/newsrecent.component';
 import {NewsmostviewsComponent} from './newsdetail/newsmostviews/newsmostviews.component';
 import {NewsPaginationComponent} from './news-pagination/news-pagination.component';
+import {GlobalModule} from "../global/global.module";
 
 const routes: Routes = [
     {path: 'danh-muc/:category', component: NewsComponent},
@@ -40,7 +41,8 @@ const routes: Routes = [
     imports: [
         CommonModule,
         RouterModule.forRoot(routes),
-        FormsModule
+        FormsModule,
+        GlobalModule
     ]
 })
 export class NewsModule {

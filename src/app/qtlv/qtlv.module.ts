@@ -3,6 +3,7 @@ import {CommonModule} from '@angular/common';
 import {QtlvComponent} from './qtlv.component';
 import {RouterModule, Routes} from '@angular/router';
 import {FormsModule} from "@angular/forms";
+import {GlobalModule} from "../global/global.module";
 
 const routes: Routes = [
   {path: 'quy-trinh-lam-viec', component: QtlvComponent}
@@ -13,7 +14,8 @@ const routes: Routes = [
     imports: [
         CommonModule,
         RouterModule.forRoot(routes),
-        FormsModule
+        FormsModule,
+        GlobalModule
     ]
 })
 export class QtlvModule {

@@ -9,6 +9,7 @@ import { Dnt3nExcusionComponent } from './dnt3n-excusion/dnt3n-excusion.componen
 import { Dnt3nSupportComponent } from './dnt3n-support/dnt3n-support.component';
 import { Dnt3nQuestionComponent } from './dnt3n-question/dnt3n-question.component';
 import {FormsModule} from "@angular/forms";
+import {GlobalModule} from "../global/global.module";
 
 const routes: Routes = [
   {path: 'doanh-nghiep-tren-3-nam', component: Dnt3nComponent}
@@ -27,7 +28,8 @@ const routes: Routes = [
     imports: [
         CommonModule,
         RouterModule.forRoot(routes),
-        FormsModule
+        FormsModule,
+        GlobalModule
     ]
 })
 export class Dnt3nModule { }
