@@ -70,25 +70,22 @@ export class NewsdetailComponent implements OnInit {
                     postAPI(param, function (res): void {
                         self.category = res;
                     });
-
-                    /**
-                     * get recent
-                     */
-                    for (const categoryId of categorysRelated) {
-                        const param = new FormData();
-                        param.append('action', 'get_records');
-                        param.append('query', `
-                            select *
-                            from post
-                            where category_id like '${categoryId}' and id<>'${self.data.id}'
-                            order by created_at desc
-                            limit 5
-                        `);
-                        postAPI(param, function (res): void {
-                            self.recent = self.recent.concat(res);
-                        });
-                    }
                 }
+                /**
+                 * get recent
+                 */
+                const param2 = new FormData();
+                param2.append('action', 'get_records');
+                param2.append('query', `
+                    select *
+                    from post
+                    where id<>'${self.data.id}'
+                    order by created_at desc
+                    limit 5
+                `);
+                postAPI(param2, function (res): void {
+                    self.recent = self.recent.concat(res);
+                });
             });
         });
     }
