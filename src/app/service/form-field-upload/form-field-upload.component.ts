@@ -1,4 +1,5 @@
 import {Component, Input, OnInit, Output, EventEmitter} from '@angular/core';
+import {GlobalService} from "../global.service";
 
 @Component({
     selector: 'app-form-field-upload',
@@ -15,7 +16,7 @@ export class FormFieldUploadComponent implements OnInit {
     };
     value = '';
 
-    constructor() {
+    constructor(public global: GlobalService) {
     }
 
     ngOnInit(): void {

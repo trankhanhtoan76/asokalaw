@@ -1,4 +1,5 @@
 import {Component, OnInit, Output, EventEmitter} from '@angular/core';
+import {GlobalService} from "../../service/global.service";
 
 declare var $: any;
 
@@ -10,7 +11,7 @@ declare var $: any;
 export class PLSKPricingComponent implements OnInit {
     @Output() changepackage = new EventEmitter;
 
-    constructor() {
+    constructor(public global: GlobalService) {
     }
 
     ngOnInit(): void {

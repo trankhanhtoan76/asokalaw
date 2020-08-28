@@ -1,6 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {SpinnerService} from "../service/spinner.service";
 import {EmailService} from "../service/email.service";
+import {GlobalService} from "../service/global.service";
 
 declare var $: any;
 
@@ -29,7 +30,7 @@ export class HomepricingComponent implements OnInit {
     p;
     e;
 
-    constructor(private spinner: SpinnerService, private smtp: EmailService) {
+    constructor(private spinner: SpinnerService, private smtp: EmailService,public global: GlobalService) {
     }
 
     ngOnInit(): void {

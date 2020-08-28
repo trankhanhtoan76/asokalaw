@@ -1,6 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {EmailService} from '../../service/email.service';
 import {SpinnerService} from '../../service/spinner.service';
+import {GlobalService} from "../../service/global.service";
 
 declare var $: any;
 
@@ -26,7 +27,7 @@ export class DkdtsupportComponent implements OnInit {
     e;
     p;
 
-    constructor(private smtp: EmailService, private spinner: SpinnerService) {
+    constructor(private smtp: EmailService, private spinner: SpinnerService,public global: GlobalService) {
     }
 
     ngOnInit(): void {

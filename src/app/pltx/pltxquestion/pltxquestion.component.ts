@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {GlobalService} from "../../service/global.service";
 declare var $: any;
 @Component({
   selector: 'app-pltxquestion',
@@ -7,7 +8,7 @@ declare var $: any;
 })
 export class PltxquestionComponent implements OnInit {
   //OK
-  constructor() { }
+  constructor(public global: GlobalService) { }
   // <Change>
   ngOnInit(): void {
     $('.s6head').click(function (e) {

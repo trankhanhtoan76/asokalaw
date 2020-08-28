@@ -19,7 +19,7 @@ export class NewsComponent implements OnInit {
     offset = 0;
     showBtnGetMore = true;
 
-    constructor(private router: ActivatedRoute, public _global: GlobalService, private _router: Router) {
+    constructor(private router: ActivatedRoute, public _global: GlobalService, private _router: Router,public global: GlobalService) {
     }
 
     ngOnInit(): void {

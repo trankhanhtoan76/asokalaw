@@ -1,5 +1,6 @@
 import {Component, OnInit, Output, EventEmitter, Input} from '@angular/core';
 import {FormValidateService} from "../form-validate.service";
+import {GlobalService} from "../global.service";
 
 @Component({
     selector: 'app-form-group-field-info',
@@ -18,7 +19,7 @@ export class FormGroupFieldInfoComponent implements OnInit {
     p: boolean;
     e: boolean;
 
-    constructor(public form: FormValidateService) {
+    constructor(public form: FormValidateService,public global: GlobalService) {
     }
 
     ngOnInit(): void {

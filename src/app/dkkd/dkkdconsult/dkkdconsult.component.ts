@@ -1,4 +1,5 @@
 import {Component, OnInit, Output, EventEmitter} from '@angular/core';
+import {GlobalService} from "../../service/global.service";
 
 declare var $: any;
 
@@ -11,7 +12,7 @@ export class DkkdconsultComponent implements OnInit {
     @Output() consultEvent = new EventEmitter();
     consult;
 
-    constructor() {
+    constructor(public global: GlobalService) {
     }
 
     ngOnInit(): void {

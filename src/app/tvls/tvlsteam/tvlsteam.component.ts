@@ -1,4 +1,5 @@
 import {Component, OnInit} from '@angular/core';
+import {GlobalService} from "../../service/global.service";
 
 declare var $: any;
 
@@ -9,7 +10,7 @@ declare var $: any;
 })
 export class TvlsteamComponent implements OnInit {
 
-  constructor() {
+  constructor(public global: GlobalService) {
   }
 
   ngOnInit(): void {

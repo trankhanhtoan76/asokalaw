@@ -1,4 +1,5 @@
 import {Component, OnInit} from '@angular/core';
+import {GlobalService} from "../../service/global.service";
 
 @Component({
     selector: 'app-dkkdquestion',
@@ -113,7 +114,7 @@ export class DkkdquestionComponent implements OnInit {
             ]
         }
     ];
-    constructor() {
+    constructor(public global: GlobalService) {
     }
 
     ngOnInit(): void {

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {GlobalService} from "../../service/global.service";
 
 @Component({
   selector: 'app-dnt3n-reason',
@@ -10,7 +11,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Dnt3nReasonComponent implements OnInit {
 
-  constructor() { }
+  constructor(public global: GlobalService) { }
 
   ngOnInit(): void {
   }

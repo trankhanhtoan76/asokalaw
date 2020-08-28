@@ -1,5 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {SpinnerService} from '../../service/spinner.service';
+import {GlobalService} from "../../service/global.service";
 
 declare var $: any;
 declare var Email: any;
@@ -25,7 +26,7 @@ export class DkkdComponent implements OnInit {
         {img:'/assets/media/DKKD/video3.jpg',id:'4IvZSmZYWwg'},
     ];
 
-    constructor(private spinner: SpinnerService) {
+    constructor(private spinner: SpinnerService,public global: GlobalService) {
     }
 
     ngOnInit(): void {

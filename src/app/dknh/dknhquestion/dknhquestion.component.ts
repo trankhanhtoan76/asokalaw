@@ -1,4 +1,5 @@
 import {Component, OnInit} from '@angular/core';
+import {GlobalService} from "../../service/global.service";
 
 declare var $: any;
 
@@ -170,7 +171,7 @@ export class DknhquestionComponent implements OnInit {
         }
     ];
 
-    constructor() {
+    constructor(public global: GlobalService) {
     }
 
     ngOnInit(): void {

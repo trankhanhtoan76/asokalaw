@@ -1,4 +1,5 @@
 import {Component, OnInit, Output, EventEmitter} from '@angular/core';
+import {GlobalService} from "../../service/global.service";
 
 declare var $: any;
 
@@ -15,7 +16,7 @@ export class Dnd3nMissingComponent implements OnInit {
     s2 = 'Đăng ký giấy phép ngành nghề có điều kiện';
     s3 = 'Đăng ký nhãn hiệu';
     s4 = 'Khác';
-    constructor() {
+    constructor(public global: GlobalService) {
     }
 
     ngOnInit(): void {

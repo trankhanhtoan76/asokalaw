@@ -1,4 +1,5 @@
 import {Component, OnInit} from '@angular/core';
+import {GlobalService} from "../service/global.service";
 
 @Component({
     selector: 'app-homevideos',
@@ -13,7 +14,7 @@ export class HomevideosComponent implements OnInit {
         {img: "/assets/media/vid4.png", id: 'ege5lEtvPWA'}
     ];
 
-    constructor() {
+    constructor(public global: GlobalService) {
     }
 
     ngOnInit(): void {

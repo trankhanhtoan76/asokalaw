@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {GlobalService} from "../../service/global.service";
 
 @Component({
   selector: 'app-tvlsservice',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TvlsserviceComponent implements OnInit {
 
-  constructor() { }
+  constructor(public global: GlobalService) { }
 
   ngOnInit(): void {
   }

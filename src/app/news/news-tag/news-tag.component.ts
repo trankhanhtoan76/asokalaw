@@ -1,4 +1,5 @@
 import {Component, Input, OnInit} from '@angular/core';
+import {GlobalService} from "../../service/global.service";
 
 @Component({
     selector: 'app-news-tag',
@@ -9,7 +10,7 @@ export class NewsTagComponent implements OnInit {
     @Input() data: string;
     displayTags: any;
 
-    constructor() {
+    constructor(public global: GlobalService) {
     }
 
     ngOnInit(): void {

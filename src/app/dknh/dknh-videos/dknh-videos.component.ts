@@ -1,4 +1,5 @@
 import {Component, OnInit} from '@angular/core';
+import {GlobalService} from "../../service/global.service";
 
 declare var $: any;
 
@@ -11,7 +12,7 @@ export class DknhVideosComponent implements OnInit {
     videos;
     hadInit: boolean;
 
-    constructor() {
+    constructor(public global: GlobalService) {
         this.videos = [
             {img: "/assets/media/DKNH/video01.jpg", id: 'EKf1NEDWnQA'},
             {img: "/assets/media/DKNH/video02.jpg", id: 'bb42zrvKOWQ'},

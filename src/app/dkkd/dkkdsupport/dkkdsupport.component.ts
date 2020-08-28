@@ -1,5 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {SpinnerService} from '../../service/spinner.service';
+import {GlobalService} from "../../service/global.service";
 
 declare var $: any;
 declare var Email: any;
@@ -20,7 +21,7 @@ export class DkkdsupportComponent implements OnInit {
     p;
     e;
 
-    constructor(private spinner: SpinnerService) {
+    constructor(private spinner: SpinnerService,public global: GlobalService) {
         this.service = [false, false, false, false, false, false, false];
         this.serviceT = [
             'Thay đổi đăng ký kinh doanh',

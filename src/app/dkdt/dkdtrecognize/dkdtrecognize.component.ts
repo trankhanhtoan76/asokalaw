@@ -1,4 +1,5 @@
 import {Component, OnInit, Output, EventEmitter} from '@angular/core';
+import {GlobalService} from "../../service/global.service";
 
 declare var $: any;
 
@@ -11,7 +12,7 @@ export class DkdtrecognizeComponent implements OnInit {
     @Output() onclickregister = new EventEmitter();
     @Output() onclickchangepackage = new EventEmitter();
 
-    constructor() {
+    constructor(public global: GlobalService) {
     }
 
     ngOnInit(): void {

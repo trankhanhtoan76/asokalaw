@@ -1,5 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {SpinnerService} from "../service/spinner.service";
+import {GlobalService} from "../service/global.service";
 
 declare var $: any;
 declare var Email: any;
@@ -21,7 +22,7 @@ export class ChnnComponent implements OnInit {
     cv;
     reason;
 
-    constructor(private spinner: SpinnerService) {
+    constructor(private spinner: SpinnerService, public global: GlobalService) {
     }
 
     ngOnInit(): void {

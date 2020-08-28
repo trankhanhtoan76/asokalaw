@@ -1,4 +1,5 @@
 import {Component, OnInit} from '@angular/core';
+import {GlobalService} from "../service/global.service";
 
 declare var $: any;
 
@@ -15,7 +16,7 @@ export class TvlsComponent implements OnInit {
     checkService3: boolean;
     isShowForm2: boolean;
 
-    constructor() {
+    constructor(public global: GlobalService) {
     }
 
     ngOnInit(): void {

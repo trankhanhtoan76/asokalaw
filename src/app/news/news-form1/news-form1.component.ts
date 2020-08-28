@@ -2,6 +2,7 @@ import {Component, OnInit} from '@angular/core';
 import {SpinnerService} from "../../service/spinner.service";
 import {EmailService} from "../../service/email.service";
 import {FormValidateService} from "../../service/form-validate.service";
+import {GlobalService} from "../../service/global.service";
 
 declare var $: any;
 
@@ -19,7 +20,7 @@ export class NewsForm1Component implements OnInit {
     e;
     submitClick;
 
-    constructor(private spinner: SpinnerService, private smtp: EmailService, public form: FormValidateService) {
+    constructor(private spinner: SpinnerService, private smtp: EmailService, public form: FormValidateService,public global: GlobalService) {
     }
 
     ngOnInit(): void {
