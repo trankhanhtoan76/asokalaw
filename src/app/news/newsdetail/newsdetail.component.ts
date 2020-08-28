@@ -74,12 +74,15 @@ export class NewsdetailComponent implements OnInit {
                 /**
                  * get recent
                  */
+                let wlocale;
+                if (self.global.locale == 'vi') wlocale = 'is_english_only<>1';
+                else wlocale = 'is_vi_only<>1';
                 const param2 = new FormData();
                 param2.append('action', 'get_records');
                 param2.append('query', `
                     select *
                     from post
-                    where id<>'${self.data.id}'
+                    where id<>'${self.data.id}' and ${wlocale}
                     order by created_at desc
                     limit 5
                 `);
