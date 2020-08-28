@@ -1,9 +1,9 @@
-<section *ngIf="data" id="mainvisual" class="news">
+<section *ngIf="category" id="mainvisual" class="news">
     <div class="container">
         <div class="row">
             <div class="col-md-6">
-                <h2>{{global.locale == 'vi' ? data.category_name : data.en_category_name}}</h2>
-                <p class="main-txt">{{global.locale == 'vi' ? data.category_description : data.en_category_description}}</p>
+                <h2>{{global.locale == 'vi' ? category.name : category.en_name}}</h2>
+                <p class="main-txt">{{global.locale == 'vi' ? category.description : category.en_description}}</p>
             </div>
         </div>
     </div>
@@ -16,10 +16,10 @@
                     <h2 class="big">{{global.locale == 'vi' ? data.title : data.en_title}}</h2>
                     <div class="news-label">
                         <p class="news-tag">
-                            <span routerLink="/{{global.locale=='vi'?'danh-muc':'category'}}/{{global.locale=='vi'?data.category_slug:data.category_en_slug}}" class="badge badge-secondary">
-                                <img src="/assets/site/image/news01_tag.svg">
-                                {{global.locale == 'vi' ? data.category_name : data.en_category_name}}
-                            </span>
+<!--                            <span routerLink="/{{global.locale=='vi'?'danh-muc':'category'}}/{{global.locale=='vi'?data.category_slug:data.category_en_slug}}" class="badge badge-secondary">-->
+<!--                                <img src="/assets/site/image/news01_tag.svg">-->
+<!--                                {{global.locale == 'vi' ? data.category_name : data.en_category_name}}-->
+<!--                            </span>-->
                             <span>{{data.modified_at|date:'dd/MM/yyyy'}}</span></p>
                     </div>
                     <div [innerHTML]="global.locale == 'vi' ? data.description : data.en_description"></div>
@@ -36,7 +36,7 @@
         <div class="row">
             <div class="col-md-8">
                 <div class="news-post">
-                    <app-newsrecent *ngIf="recent" [data]="recent"></app-newsrecent>
+                    <app-newsrecent *ngIf="recent.length>0" [data]="recent"></app-newsrecent>
                 </div>
             </div>
         </div>

@@ -7,7 +7,7 @@ import {GlobalService} from "../../../service/global.service";
     styleUrls: ['./newsrecent.component.css']
 })
 export class NewsrecentComponent implements OnInit {
-    @Input() data;
+    @Input('data') posts;
 
     constructor(public global: GlobalService) {
     }
