@@ -20,7 +20,7 @@ const routes: Routes = [
     {path: 'tin-tuc/:post', component: NewsdetailComponent},
     {path: 'news/:post', component: NewsdetailComponent},
     {path: 'tin-tuc', component: NewsComponent},
-    {path: 'news', component: NewsComponent},
+    {path: 'news', component: NewsComponent}
 ];
 
 @NgModule({

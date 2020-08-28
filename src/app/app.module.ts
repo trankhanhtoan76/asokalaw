@@ -87,6 +87,7 @@ import { DkkdSubfooterComponent } from './dkkd/dkkd-subfooter/dkkd-subfooter.com
 import {GlobalService} from "./service/global.service";
 import { TvlsquestionComponent } from './tvls/tvlsquestion/tvlsquestion.component';
 import { DkdtquestionComponent } from './dkdt/dkdtquestion/dkdtquestion.component';
+import {NewsdetailComponent} from "./news/newsdetail/newsdetail.component";
 
 const routes: Routes = [
     {path: '', component: HomeComponent},
@@ -94,7 +95,8 @@ const routes: Routes = [
     {path: 'dang-ky-nhan-hieu', component: DknhComponent},
     {path: 'dang-ky-dau-tu', component: DkdtComponent},
     {path: 'phap-ly-thuong-xuyen', component: PltxComponent},
-    {path: 'tu-van-luat-su', component: TvlsComponent}
+    {path: 'tu-van-luat-su', component: TvlsComponent},
+    {path: '**', component: NewsdetailComponent},
 ];
 
 @NgModule({
