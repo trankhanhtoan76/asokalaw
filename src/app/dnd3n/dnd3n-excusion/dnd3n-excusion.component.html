@@ -2,39 +2,39 @@
     <div class="container">
         <div class="row">
             <div class="col-md-5">
-                <h1 style="margin-bottom: 3rem;">Phát triển bền<br class="pc"> vững suốt 03 năm đầu</h1>
+                <h1 style="margin-bottom: 3rem;">{{global.locale=='vi'?'Phát triển bền':'Phát triển bền aaa'}}<br class="pc">{{global.locale=='vi'?' vững suốt 03 năm đầu':' vững suốt 03 năm đầu aaa'}}</h1>
                 <div class="mission-txt" style="margin-bottom: 3rem;">
-                    <p>Trong "sơ đồ lộ trình doanh nghiệp", bạn đang ở giai đoạn vàng để phát triển kinh doanh. Chúng tôi hiểu điều đó và sẵn sàng trở thành một người cộng sự đắc lực của bạn để giải quyết các vấn đề về pháp lý - hợp đồng - lao động - thuế. Nếu biết sử dụng đúng giải pháp, công ty của bạn sẽ có bàn đạp để bước qua giai đoạn tăng trưởng của doanh nghiệp trên 03 năm.</p>
+                    <p lang-i18n key="dnd3n-sodolotrinh" default='Trong "sơ đồ lộ trình doanh nghiệp", bạn đang ở giai đoạn vàng để phát triển kinh doanh. Chúng tôi hiểu điều đó và sẵn sàng trở thành một người cộng sự đắc lực của bạn để giải quyết các vấn đề về pháp lý - hợp đồng - lao động - thuế. Nếu biết sử dụng đúng giải pháp, công ty của bạn sẽ có bàn đạp để bước qua giai đoạn tăng trưởng của doanh nghiệp trên 03 năm.'></p>
                 </div>
-                <p class="m-0 pc"><a href="#" onclick="$('#dnd3nform1').modal('show')" class="btn btn-warning" style="padding: 0.75rem 3rem" data-toggle="modal" data-target="#createModal">Tư vấn cho tôi</a></p>
-                <p class="m-0 sp center" style="margin-top: 2rem;"><a href="#" onclick="$('#dnd3nform1').modal('show')" class="btn btn-warning" style="padding: 0.75rem 3rem" data-toggle="modal" data-target="#createModal">Tư vấn cho tôi</a></p>
+                <p class="m-0 pc"><a href="#" onclick="$('#dnd3nform1').modal('show')" class="btn btn-warning" style="padding: 0.75rem 3rem" data-toggle="modal" data-target="#createModal">{{global.locale=='vi'?'Tư vấn cho tôi':'Tư vấn cho tôi aaa'}}</a></p>
+                <p class="m-0 sp center" style="margin-top: 2rem;"><a href="#" onclick="$('#dnd3nform1').modal('show')" class="btn btn-warning" style="padding: 0.75rem 3rem" data-toggle="modal" data-target="#createModal">{{global.locale=='vi'?'Tư vấn cho tôi':'Tư vấn cho tôi aaa'}}</a></p>
             </div>
             <div class="col-md-7">
                 <div class="mission-circle">
                     <p class="mission-circle-img"><img src="/assets/media/DND3N/phat-trien-ben-vung/business process 2.png" style="max-width: 100%"></p>
                    <div class="pc">
                        <div class="mission-circle-list list01">
-                           <p>DỊCH VỤ CẦN THIẾT</p>
+                           <p > {{global.locale=='vi'?'DỊCH VỤ CẦN THIẾT':'DỊCH VỤ CẦN THIẾT aaa'}}</p>
                            <ul>
-                               <li><a routerLink="/phap-ly-thuong-xuyen">Quản trị “4 trong 1”</a></li>
-                               <li><a routerLink="/">Ngành nghề có điều kiện</a></li>
-                               <li><a routerLink="/dang-ky-nhan-hieu">Đăng ký nhãn hiệu</a></li>
+                               <li><a routerLink="/phap-ly-thuong-xuyen"> {{global.locale=='vi'?'Quản trị “4 trong 1”':'Quản trị “4 trong 1” aaa'}}</a></li>
+                               <li><a routerLink="/">{{global.locale=='vi'?'Ngành nghề có điều kiện':'Ngành nghề có điều kiện aaa'}}</a></li>
+                               <li><a routerLink="/dang-ky-nhan-hieu">{{global.locale=='vi'?'Đăng ký nhãn hiệu':'Đăng ký nhãn hiệu aaa'}}</a></li>
                            </ul>
                        </div>
                        <div class="mission-circle-list list02 gray-color">
-                           <p>DỊCH VỤ CẦN THIẾT</p>
+                           <p>{{global.locale=='vi'?'DỊCH VỤ CẦN THIẾT':'DỊCH VỤ CẦN THIẾT aaa'}}</p>
                            <ul>
-                               <li><a routerLink="/tu-van-luat-su">Tư vấn luật sư</a></li>
-                               <li><a routerLink="/dang-ky-kinh-doanh">Đăng ký kinh doanh</a></li>
-                               <li><a routerLink="/dang-ky-dau-tu">Đăng ký đầu tư</a></li>
+                               <li><a routerLink="/tu-van-luat-su">{{global.locale=='vi'?'Tư vấn luật sư':'Tư vấn luật sư aaa'}}</a></li>
+                               <li><a routerLink="/dang-ky-kinh-doanh">{{global.locale=='vi'?'Đăng ký kinh doanh':'Đăng ký kinh doanh aaa'}}</a></li>
+                               <li><a routerLink="/dang-ky-dau-tu">{{global.locale=='vi'?'Đăng ký đầu tư':'Đăng ký đầu tư aaa'}}</a></li>
                            </ul>
                        </div>
                        <div class="mission-circle-list list03 gray-color">
-                           <p>DỊCH VỤ CẦN THIẾT</p>
+                           <p>{{global.locale=='vi'?'DỊCH VỤ CẦN THIẾT':'DỊCH VỤ CẦN THIẾT aaa'}}</p>
                            <ul>
-                               <li><a routerLink="/giai-quyet-tranh-chap">Giải quyết tranh chấp</a></li>
-                               <li><a routerLink="/phap-ly-su-kien">Pháp lý sự kiện</a></li>
-                               <li><a routerLink="/">Tạm ngưng - Giải thể</a></li>
+                               <li><a routerLink="/giai-quyet-tranh-chap">{{global.locale=='vi'?'Giải quyết tranh chấp':'Giải quyết tranh chấp aaa'}}</a></li>
+                               <li><a routerLink="/phap-ly-su-kien"> {{global.locale=='vi'?'Pháp lý sự kiện':'Pháp lý sự kiện aaa'}}</a></li>
+                               <li><a routerLink="/">{{global.locale=='vi'?'Tạm ngưng - Giải thể':'Tạm ngưng - Giải thể aaa'}}</a></li>
                            </ul>
                        </div>
                    </div>

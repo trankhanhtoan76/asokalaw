@@ -2,14 +2,14 @@
   <div class="container">
     <div class="row">
       <div class="col-md-7">
-        <h1>Ngăn chặn kịp thời lỗ hổng kinh doanh</h1>
-        <p class="main-txt"><b>"Lỗ hổng nhỏ có thể làm đắm con thuyền lớn"</b>. Doanh nghiệp trên 03 năm thường xuất hiện các lỗ hổng pháp lý. Asoka Law giúp bạn:</p>
+        <h1>{{global.locale=='vi'?'Ngăn chặn kịp thời lỗ hổng kinh doanh':'Ngăn chặn kịp thời lỗ hổng kinh doanh aaa'}}</h1>
+        <p class="main-txt"><b>{{global.locale=='vi'?'"Lỗ hổng nhỏ có thể làm đắm con thuyền lớn"':'"Lỗ hổng nhỏ có thể làm đắm con thuyền lớn"'}}</b>{{global.locale=='vi'?'. Doanh nghiệp trên 03 năm thường xuất hiện các lỗ hổng pháp lý. Asoka Law giúp bạn:':'. Doanh nghiệp trên 03 năm thường xuất hiện các lỗ hổng pháp lý. Asoka Law giúp bạn: aaa'}}</p>
         <ul class="main-list">
-          <li><p>Kịp thời củng cố hệ thống vận hành</p></li>
-          <li><p>Cắt lỗ hoặc chuyển hướng kinh doanh nhanh chóng</p></li>
+          <li><p>{{global.locale=='vi'?'Kịp thời củng cố hệ thống vận hành':'Kịp thời củng cố hệ thống vận hành aaa'}}</p></li>
+          <li><p>{{global.locale=='vi'?'Cắt lỗ hoặc chuyển hướng kinh doanh nhanh chóng':'Cắt lỗ hoặc chuyển hướng kinh doanh nhanh chóng aaa'}}</p></li>
         </ul>  
-        <div class="pc"><button (click)="showForm()" style="padding: 0.75rem 3rem;" class="btn btn-outline-warning">Tư vấn cho tôi</button></div>
-        <div class="sp"><button (click)="showForm()" style="padding: 0.75rem 3rem;" class="btn btn-warning">Tư vấn cho tôi</button></div>
+        <div class="pc"><button (click)="showForm()" style="padding: 0.75rem 3rem;" class="btn btn-outline-warning">{{global.locale=='vi'?'Tư vấn cho tôi':'Tư vấn cho tôi aaa'}}</button></div>
+        <div class="sp"><button (click)="showForm()" style="padding: 0.75rem 3rem;" class="btn btn-warning">{{global.locale=='vi'?'Tư vấn cho tôi':'Tư vấn cho tôi aaa'}}</button></div>
       </div>
     </div>
   </div>
@@ -24,15 +24,15 @@
   <div class="container">
       <div class="row align-items-center">
           <div class="col-md-8">
-              <h5 class="pc" style="font-weight: 300; line-height: 2.5rem; margin: 0">Chúng tôi đã giúp <span class="font-weight-bold" style="font-size: 1.25rem;">cho 1000+ doanh nghiệp phát triển ổn định</span><br>nhờ việc nhận diện đúng "sức khoẻ pháp lý" và kịp thời vá lỗ hổng.</h5>
-              <h5 class="sp center" style="font-weight: 300; line-height: 2.5rem; margin: 0">Chúng tôi đã giúp <span class="font-weight-bold" style="font-size: 1.25rem;">cho 1000+ doanh nghiệp phát triển ổn định</span> nhờ việc nhận diện đúng "sức khoẻ pháp lý" và kịp thời vá lỗ hổng.</h5>
+              <h5 class="pc" style="font-weight: 300; line-height: 2.5rem; margin: 0">{{global.locale=='vi'?'Chúng tôi đã giúp':'Chúng tôi đã giúp aaa'}} <span class="font-weight-bold" style="font-size: 1.25rem;">{{global.locale=='vi'?'cho 1000+ doanh nghiệp phát triển ổn định':'cho 1000+ doanh nghiệp phát triển ổn định aaa'}}</span><br>{{global.locale=='vi'?'nhờ việc nhận diện đúng "sức khoẻ pháp lý" và kịp thời vá lỗ hổng.':'nhờ việc nhận diện đúng "sức khoẻ pháp lý" và kịp thời vá lỗ hổng. aaa'}}</h5>
+              <h5 class="sp center" style="font-weight: 300; line-height: 2.5rem; margin: 0">{{global.locale=='vi'?'Chúng tôi đã giúp':'Chúng tôi đã giúp aaa'}} <span class="font-weight-bold" style="font-size: 1.25rem;">{{global.locale=='vi'?'cho 1000+ doanh nghiệp phát triển ổn định':'cho 1000+ doanh nghiệp phát triển ổn định aaa'}}</span><br>{{global.locale=='vi'?'nhờ việc nhận diện đúng "sức khoẻ pháp lý" và kịp thời vá lỗ hổng.':'nhờ việc nhận diện đúng "sức khoẻ pháp lý" và kịp thời vá lỗ hổng. aaa'}}</h5>
           </div>
           <div class="col-md-4">
               <div class="text-right pc">
-                  <button (click)="showForm()" class="btn btn-warning shadow" style="padding: 0.75rem 3rem;">Yêu cầu tư vấn</button>
+                  <button (click)="showForm()" class="btn btn-warning shadow" style="padding: 0.75rem 3rem;">{{global.locale=='vi'?'Yêu cầu tư vấn':'Yêu cầu tư vấn aaa'}}</button>
               </div>
               <div class="sp center" style="margin-top: 2rem;">
-                  <button (click)="showForm()" class="btn btn-warning shadow" style="padding: 0.75rem 3rem;">Yêu cầu tư vấn</button>
+                  <button (click)="showForm()" class="btn btn-warning shadow" style="padding: 0.75rem 3rem;">{{global.locale=='vi'?'Yêu cầu tư vấn':'Yêu cầu tư vấn aaa'}}</button>
               </div>
           </div>
       </div>
@@ -49,18 +49,18 @@
             <div class="modal-body">
                 <div class="form-group">
                     <input (keyup)="n=true" [class.is-invalid]="!fieldValid(name)&&n" [class.is-valid]="fieldValid(name)&&n" type="text" class="form-control" [(ngModel)]="name" name="name" placeholder="Họ tên *">
-                    <i *ngIf="!fieldValid(name) && n"><small class="text-danger">Bắt buộc nhập họ tên.</small></i>
+                    <i *ngIf="!fieldValid(name) && n"><small class="text-danger">{{global.locale=='vi'?'Bắt buộc nhập họ tên.':'Bắt buộc nhập họ tên. aaa'}}</small></i>
                 </div>
                 <div class="form-group">
                     <input (keyup)="p=true" [class.is-invalid]="!fieldValid(phone,'phone')&&p" [class.is-valid]="fieldValid(phone,'phone')&&p" class="form-control" [(ngModel)]="phone" name="phone" type="text" placeholder="Số điện thoại *"/>
-                    <i *ngIf="!fieldValid(phone,'phone') && p"><small class="text-danger">Bắt buộc nhập số điện thoại hợp lệ.</small></i>
+                    <i *ngIf="!fieldValid(phone,'phone') && p"><small class="text-danger">{{global.locale=='vi'?'Bắt buộc nhập số điện thoại hợp lệ.':'Bắt buộc nhập số điện thoại hợp lệ. aaa'}}</small></i>
                 </div>
                 <div class="form-group">
                     <input (keyup)="e=true" [class.is-invalid]="!fieldValid(email,'email')&&e" [class.is-valid]="fieldValid(email,'email')&&e" class="form-control" name="email" [(ngModel)]="email" type="text" placeholder="Email *"/>
-                    <i *ngIf="!fieldValid(email,'email') && e"><small class="text-danger">Bắt buộc nhập email hợp lệ.</small></i>
+                    <i *ngIf="!fieldValid(email,'email') && e"><small class="text-danger">{{global.locale=='vi'?'Bắt buộc nhập email hợp lệ.':'Bắt buộc nhập email hợp lệ. aaa'}}</small></i>
                 </div>
                 <div class="form-group">
-                    <label>Dịch vụ pháp lý yêu cầu tư vấn*</label>
+                    <label>{{global.locale=='vi'?'Dịch vụ pháp lý yêu cầu tư vấn*':'Dịch vụ pháp lý yêu cầu tư vấn* aaa'}}</label>
                     <div class="container-fluid">
                         <div class="row">
                             <div class="col-12">
@@ -101,7 +101,7 @@
                 </div>
             </div>
             <div class="modal-footer">
-                <button (click)="submit()" style="margin: auto; color: white;" type="button" class="btn btn-warning">Gửi yêu cầu</button>
+                <button (click)="submit()" style="margin: auto; color: white;" type="button" class="btn btn-warning">{{global.locale=='vi'?'Gửi yêu cầu':'Gửi yêu cầu aaa'}}</button>
             </div>
         </div>
     </div>

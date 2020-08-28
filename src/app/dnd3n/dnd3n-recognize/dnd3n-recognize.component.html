@@ -2,20 +2,20 @@
   <div class="container">
     <div class="row">
       <div class="col-md-12 center" style="margin-bottom: 2rem;">
-        <h1 style="margin: 2rem 0;">Giải quyết tận gốc các thiếu sót thủ tục pháp lý</h1>
-        <p>Kinh nghiệm thực hiện thủ tục pháp lý cho 1.000+ doanh nghiệp đã giúp chúng tôi đóng gói dịch vụ chặt chẽ theo quy trình vận hành của việc kinh doanh. Kết quả bạn nhận được sẽ đảm bảo cho doanh nghiệp hoạt động ổn định qua nhiều năm sau.</p>
+        <h1 style="margin: 2rem 0;">{{global.locale=='vi'?'Giải quyết tận gốc các thiếu sót thủ tục pháp lý':'Giải quyết tận gốc các thiếu sót thủ tục pháp lý aaa'}}</h1>
+        <p>{{global.locale=='vi'?'Kinh nghiệm thực hiện thủ tục pháp lý cho 1.000+ doanh nghiệp đã giúp chúng tôi đóng gói dịch vụ chặt chẽ theo quy trình vận hành của việc kinh doanh. Kết quả bạn nhận được sẽ đảm bảo cho doanh nghiệp hoạt động ổn định qua nhiều năm sau.':'Kinh nghiệm thực hiện thủ tục pháp lý cho 1.000+ doanh nghiệp đã giúp chúng tôi đóng gói dịch vụ chặt chẽ theo quy trình vận hành của việc kinh doanh. Kết quả bạn nhận được sẽ đảm bảo cho doanh nghiệp hoạt động ổn định qua nhiều năm sau. aaa'}}</p>
       </div>
     </div>
     <div class="row">
       <div class="col-md-7">
         <div class="recognize-block">
           <img style="max-width: 100%; top: -27px; left: -47px;" src="/assets/media/DND3N/giai-quyet-tan-goc/bg-quan-tri-doanh-nghiep-4-trong-1.svg">
-          <p class="alt-title">Quản trị doanh nghiệp “4 trong 1”</p>
+          <p class="alt-title">{{global.locale=='vi'?'Quản trị doanh nghiệp “4 trong 1”':'Quản trị doanh nghiệp “4 trong 1” aaa'}}</p>
           <div class="mission-txt">
-            <p>Khi doanh nghiệp bắt đầu đi vào hoạt động, chúng tôi khuyến khích sử dụng <b>Pháp Lý Thường Xuyên trọn gói "4 trong 1".</b> Bởi vì, không những tiết kiệm đến 87,60% chi phí quản lý mà còn tối ưu đến 04 vị trí nhân sự nội bộ.</p>
-            <p>Các chuyên gia của chúng tôi có kinh nghiệm tuyệt vời để giải quyết mọi vấn đề về <b>pháp lý - hợp đồng - lao động - thuế</b> cho doanh nghiệp. Bạn chỉ cần tập trung hoàn toàn vào việc kinh doanh.</p>
+            <p>{{global.locale=='vi'?'Khi doanh nghiệp bắt đầu đi vào hoạt động, chúng tôi khuyến khích sử dụng':'Khi doanh nghiệp bắt đầu đi vào hoạt động, chúng tôi khuyến khích sử dụng aaa'}} <b>{{global.locale=='vi'?'Pháp Lý Thường Xuyên trọn gói "4 trong 1".':'Pháp Lý Thường Xuyên trọn gói "4 trong 1". aaa'}}</b> {{global.locale=='vi'?'Bởi vì, không những tiết kiệm đến 87,60% chi phí quản lý mà còn tối ưu đến 04 vị trí nhân sự nội bộ.':'Bởi vì, không những tiết kiệm đến 87,60% chi phí quản lý mà còn tối ưu đến 04 vị trí nhân sự nội bộ. aaa'}}</p>
+            <p>{{global.locale=='vi'?'Các chuyên gia của chúng tôi có kinh nghiệm tuyệt vời để giải quyết mọi vấn đề về ':'Các chuyên gia của chúng tôi có kinh nghiệm tuyệt vời để giải quyết mọi vấn đề về  aaa'}}<b>{{global.locale=='vi'?'pháp lý - hợp đồng - lao động - thuế':'pháp lý - hợp đồng - lao động - thuế aaa'}}</b> {{global.locale=='vi'?'cho doanh nghiệp. Bạn chỉ cần tập trung hoàn toàn vào việc kinh doanh.':'cho doanh nghiệp. Bạn chỉ cần tập trung hoàn toàn vào việc kinh doanh. aaa'}}</p>
           </div>
-          <p><a routerLink="/phap-ly-thuong-xuyen">Xem giải pháp chi tiết quản trị “4 trong 1” &gt;&gt;</a></p>
+          <p><a routerLink="/phap-ly-thuong-xuyen">{{global.locale=='vi'?'Xem giải pháp chi tiết quản trị “4 trong 1” >>':'Xem giải pháp chi tiết quản trị “4 trong 1” >> aaa'}}</a></p>
         </div>
       </div>
       <div class="col-md-5">
@@ -25,11 +25,11 @@
     <div class="row" style="padding-top: 40px">
       <div class="col-md-5">
         <ul class="block-dk-list">
-          <li data-toggle="modal" data-target="#cnttModal">Công nghệ thông tin</li>
-          <li data-toggle="modal" data-target="#pphhModal">Phân phối hàng hoá</li>
-          <li data-toggle="modal" data-target="#dlauModal">Du lịch<br>Ăn uống</li>
-          <li data-toggle="modal" data-target="#ttqcModal">Truyền thông quảng cáo</li>
-          <li data-toggle="modal" data-target="#gdnnModal">Giáo dục nghề nghiệp</li>
+          <li data-toggle="modal" data-target="#cnttModal">{{global.locale=='vi'?'Công nghệ thông tin':'Công nghệ thông tin aaa'}}</li>
+          <li data-toggle="modal" data-target="#pphhModal">{{global.locale=='vi'?'Phân phối hàng hoá':'Phân phối hàng hoá aaa'}}</li>
+          <li data-toggle="modal" data-target="#dlauModal">{{global.locale=='vi'?'Du lịch':'Du lịch aaa'}}<br>{{global.locale=='vi'?'Ăn uống':'Ăn uống aaa'}}</li>
+          <li data-toggle="modal" data-target="#ttqcModal">{{global.locale=='vi'?'Truyền thông quảng cáo':'Truyền thông quảng cáo aaa'}}</li>
+          <li data-toggle="modal" data-target="#gdnnModal">{{global.locale=='vi'?'Giáo dục nghề nghiệp':'Giáo dục nghề nghiệp aaa'}}</li>
         </ul>
       </div>
 
@@ -38,33 +38,33 @@
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
-              <p>Tra cứu giấy phép ngành nghề có điều kiện miễn phí</p>
+              <p>{{global.locale=='vi'?'Tra cứu giấy phép ngành nghề có điều kiện miễn phí':'Tra cứu giấy phép ngành nghề có điều kiện miễn phí aaa'}}</p>
               <i class="fa fa-times close" aria-hidden="true" type="button" data-dismiss="modal"></i>
             </div>
             <div class="modal-body" style="margin-top: 15px;">
                 <div class="form-group">
                   <input (keyup)="n=true" [class.is-invalid]="!fieldValid(name)&&n" [class.is-valid]="fieldValid(name)&&n" type="text" class="form-control" [(ngModel)]="name" name="name" placeholder="Họ tên *">
-                  <i *ngIf="!fieldValid(name) && n"><small class="text-danger">Bắt buộc nhập họ tên.</small></i>
+                  <i *ngIf="!fieldValid(name) && n"><small class="text-danger">{{global.locale=='vi'?'Bắt buộc nhập họ tên.':'Bắt buộc nhập họ tên. aaa'}}</small></i>
                 </div>
                 <div class="form-group">
                     <input (keyup)="p=true" [class.is-invalid]="!fieldValid(phone,'phone')&&p" [class.is-valid]="fieldValid(phone,'phone')&&p" class="form-control" [(ngModel)]="phone" name="phone" type="text" placeholder="Số điện thoại *"/>
-                    <i *ngIf="!fieldValid(phone,'phone') && p"><small class="text-danger">Bắt buộc nhập số điện thoại hợp lệ.</small></i>
+                    <i *ngIf="!fieldValid(phone,'phone') && p"><small class="text-danger">{{global.locale=='vi'?'Bắt buộc nhập số điện thoại hợp lệ.':'Bắt buộc nhập số điện thoại hợp lệ. aaa'}}</small></i>
                 </div>
                 <div class="form-group">
                     <input (keyup)="e=true" [class.is-invalid]="!fieldValid(email,'email')&&e" [class.is-valid]="fieldValid(email,'email')&&e" class="form-control" name="email" [(ngModel)]="email" type="text" placeholder="Email *"/>
-                    <i *ngIf="!fieldValid(email,'email') && e"><small class="text-danger">Bắt buộc nhập email hợp lệ.</small></i>
+                    <i *ngIf="!fieldValid(email,'email') && e"><small class="text-danger">{{global.locale=='vi'?'Bắt buộc nhập email hợp lệ.':'Bắt buộc nhập email hợp lệ. aaa'}}</small></i>
                 </div>
-                <p class="form-small-header-V">Ngành ngề kinh doanh</p>
+                <p class="form-small-header-V"> {{global.locale=='vi'?'Ngành ngề kinh doanh':'Ngành ngề kinh doanh aaa'}}</p>
                 <textarea placeholder="Ghi đầy đủ theo giấy phép Đăng ký kinh doanhdoanh, kết quả nhận được càng chính xác. Ví dụ: giáo dục khác chưa được phân vào đâu: trung tâm ngoại ngữ"></textarea>
-                <p class="form-small-header-V">Tài liệu đính kèm</p>
+                <p class="form-small-header-V">{{global.locale=='vi'?'Tài liệu đính kèm':'Tài liệu đính kèm aaa'}}</p>
                 <ul class="list-group" id="list-record-attachment-V">
-                  <li class="list-group-item"><span>Giấy đăng ký kinh doanh 1</span><span class="icon-attachment-file-V"><i style="color: #00BFFF;cursor: pointer;" class="fa fa-paperclip" aria-hidden="true"></i> Tải lên tại đây</span></li>
-                  <li class="list-group-item"><span>Giấy đăng ký kinh doanh 2</span><span class="icon-attachment-file-V"><i style="color: #00BFFF;cursor: pointer;" class="fa fa-paperclip" aria-hidden="true"></i> Tải lên tại đây</span></li>
-                  <li class="list-group-item"><span>Tài liệu đăng ký kinh doanh khác</span><span class="icon-attachment-file-V"><i style="color: #00BFFF;cursor: pointer;" class="fa fa-paperclip" aria-hidden="true"></i> Tải lên tại đây</span></li>
+                  <li class="list-group-item"><span>{{global.locale=='vi'?'Giấy đăng ký kinh doanh 1':'Giấy đăng ký kinh doanh 1 aaa'}}</span><span class="icon-attachment-file-V"><i style="color: #00BFFF;cursor: pointer;" class="fa fa-paperclip" aria-hidden="true"></i>{{global.locale=='vi'?' Tải lên tại đây':' Tải lên tại đây aaa'}}</span></li>
+                  <li class="list-group-item"><span>{{global.locale=='vi'?'Giấy đăng ký kinh doanh 2':'Giấy đăng ký kinh doanh 2 aaa'}}</span><span class="icon-attachment-file-V"><i style="color: #00BFFF;cursor: pointer;" class="fa fa-paperclip" aria-hidden="true"></i>{{global.locale=='vi'?' Tải lên tại đây':' Tải lên tại đây aaa'}}</span></li>
+                  <li class="list-group-item"><span>{{global.locale=='vi'?'Tailieudangkikinhdoanh':' Tài liệu đăng ký kinh doanh khác aaa'}}</span><span class="icon-attachment-file-V"><i style="color: #00BFFF;cursor: pointer;" class="fa fa-paperclip" aria-hidden="true"></i>{{global.locale=='vi'?' Tải lên tại đây':' Tải lên tại đây aaa'}}</span></li>
                 </ul>
             </div>
             <div class="modal-footer" style="justify-content: center;">
-              <button type="button" style="margin-bottom: 20px;" class="btn btn-warning" data-dismiss="modal">ĐĂNG KÝ GIẤY PHÉP</button>
+              <button type="button" style="margin-bottom: 20px;" class="btn btn-warning" data-dismiss="modal">{{global.locale=='vi'?'ĐĂNG KÝ GIẤY PHÉP':'ĐĂNG KÝ GIẤY PHÉP aaa'}}</button>
             </div>
           </div>
         </div>
@@ -73,18 +73,18 @@
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
-              <p>Các loại giấy phép phổ biến của lĩnh vực Công nghệ thông tin</p>
+              <p>{{global.locale=='vi'?'Các loại giấy phép phổ biến của lĩnh vực Công nghệ thông tin':'Các loại giấy phép phổ biến của lĩnh vực Công nghệ thông tin aaa'}}</p>
               <i class="fa fa-times close" aria-hidden="true" type="button" data-dismiss="modal"></i>
             </div>
             <div class="modal-body" style="margin-top: 15px;">
-                <p class="form-small-header-V">Doanh nghiệp của bạn còn thiếu loại giấy phép nào ?</p>
+                <p class="form-small-header-V">{{global.locale=='vi'?'Doanh nghiệp của bạn còn thiếu loại giấy phép nào ?':'Doanh nghiệp của bạn còn thiếu loại giấy phép nào ? aaa'}}</p>
                 <div class="form-group" style="margin: 20px;">
                     <div class="container-fluid">
                         <div class="row">
                             <div class="col-12">
                                 <div class="form-check-inline">
                                     <input class="form-check-input" name="service" type="checkbox" id="service1">
-                                    <label class="form-check-label font-weight-normal" for="service1">Giấy phép thiết lập trang thông tin điện tử tổng hợp</label>
+                                    <label class="form-check-label font-weight-normal" for="service1">{{global.locale=='vi'?'Giấy phép thiết lập trang thông tin điện tử tổng hợp':'Giấy phép thiết lập trang thông tin điện tử tổng hợp aaa'}}</label>
                                 </div>
                             </div>
                         </div>
@@ -92,7 +92,7 @@
                             <div class="col-12">
                                 <div class="form-check-inline">
                                     <input class="form-check-input" name="service" type="checkbox" id="service2">
-                                    <label class="form-check-label font-weight-normal" for="service2">Giấy phép thiết lập trang mạng xã hội</label>
+                                    <label class="form-check-label font-weight-normal" for="service2">{{global.locale=='vi'?'Giấy phép thiết lập trang mạng xã hội':'Giấy phép thiết lập trang mạng xã hội aaa'}}</label>
                                 </div>
                             </div>
                         </div>
@@ -100,7 +100,7 @@
                             <div class="col-12">
                                 <div class="form-check-inline">
                                     <input class="form-check-input" name="service" type="checkbox" id="service3">
-                                    <label class="form-check-label font-weight-normal" for="service3">Thông báo trang thương mại điện tử bán hàng</label>
+                                    <label class="form-check-label font-weight-normal" for="service3">{{global.locale=='vi'?'Thông báo trang thương mại điện tử bán hàng':'Thông báo trang thương mại điện tử bán hàng aaa'}}</label>
                                 </div>
                             </div>
                         </div>
@@ -108,7 +108,7 @@
                             <div class="col-12">
                                 <div class="form-check-inline">
                                     <input class="form-check-input" name="service" type="checkbox" id="service4">
-                                    <label class="form-check-label font-weight-normal" for="service4">Đăng ký sàn giao dịch thương mại điện tử</label>
+                                    <label class="form-check-label font-weight-normal" for="service4">{{global.locale=='vi'?'Đăng ký sàn giao dịch thương mại điện tử':'Đăng ký sàn giao dịch thương mại điện tử aaa'}}</label>
                                 </div>
                             </div>
                         </div>
@@ -116,15 +116,15 @@
                             <div class="col-12">
                                 <div class="form-check-inline">
                                     <input class="form-check-input" name="service" type="checkbox" id="service4">
-                                    <label class="form-check-label font-weight-normal" for="service4">Thông báo ứng dụng thương mại điện tử bán hàng</label>
+                                    <label class="form-check-label font-weight-normal" for="service4">{{global.locale=='vi'?'Thông báo ứng dụng thương mại điện tử bán hàng':'Thông báo ứng dụng thương mại điện tử bán hàng aaa'}}</label>
                                 </div>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-12">
                                 <div class="form-check-inline">
+                                    <label class="form-check-label font-weight-normal" for="service4">{{global.locale=='vi'?'Đăng ký ứng dụng cung cấp dịch vụ thương mại điện tử':'Đăng ký ứng dụng cung cấp dịch vụ thương mại điện tử aaa'}}</label>
                                     <input class="form-check-input" name="service" type="checkbox" id="service4">
-                                    <label class="form-check-label font-weight-normal" for="service4">Đăng ký ứng dụng cung cấp dịch vụ thương mại điện tử</label>
                                 </div>
                             </div>
                         </div>
@@ -132,19 +132,19 @@
                 </div>
                 <div class="form-group">
                   <input (keyup)="n=true" [class.is-invalid]="!fieldValid(name)&&n" [class.is-valid]="fieldValid(name)&&n" type="text" class="form-control" [(ngModel)]="name" name="name" placeholder="Họ tên *">
-                  <i *ngIf="!fieldValid(name) && n"><small class="text-danger">Bắt buộc nhập họ tên.</small></i>
+                  <i *ngIf="!fieldValid(name) && n"><small class="text-danger">{{global.locale=='vi'?'Bắt buộc nhập họ tên.':'Bắt buộc nhập họ tên. aaa'}}</small></i>
                 </div>
                 <div class="form-group">
                     <input (keyup)="p=true" [class.is-invalid]="!fieldValid(phone,'phone')&&p" [class.is-valid]="fieldValid(phone,'phone')&&p" class="form-control" [(ngModel)]="phone" name="phone" type="text" placeholder="Số điện thoại *"/>
-                    <i *ngIf="!fieldValid(phone,'phone') && p"><small class="text-danger">Bắt buộc nhập số điện thoại hợp lệ.</small></i>
+                    <i *ngIf="!fieldValid(phone,'phone') && p"><small class="text-danger">{{global.locale=='vi'?'Bắt buộc nhập số điện thoại hợp lệ.':'Bắt buộc nhập số điện thoại hợp lệ. aaa'}}</small></i>
                 </div>
                 <div class="form-group">
                     <input (keyup)="e=true" [class.is-invalid]="!fieldValid(email,'email')&&e" [class.is-valid]="fieldValid(email,'email')&&e" class="form-control" name="email" [(ngModel)]="email" type="text" placeholder="Email *"/>
-                    <i *ngIf="!fieldValid(email,'email') && e"><small class="text-danger">Bắt buộc nhập email hợp lệ.</small></i>
+                    <i *ngIf="!fieldValid(email,'email') && e"><small class="text-danger">{{global.locale=='vi'?'Bắt buộc nhập email hợp lệ.':'Bắt buộc nhập email hợp lệ. aaa'}}</small></i>
                 </div>
             </div>
             <div class="modal-footer" style="justify-content: center;">
-              <button type="button" style="margin-bottom: 20px;" class="btn btn-warning" data-dismiss="modal">ĐĂNG KÝ GIẤY PHÉP</button>
+              <button type="button" style="margin-bottom: 20px;" class="btn btn-warning" data-dismiss="modal">{{global.locale=='vi'?'ĐĂNG KÝ GIẤY PHÉP':'ĐĂNG KÝ GIẤY PHÉP aaa'}}</button>
             </div>
           </div>
         </div>
@@ -153,18 +153,18 @@
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
-              <p>Các loại giấy phép phổ biến của lĩnh vực Phân phối hàng hoá đặc biệt</p>
+              <p>{{global.locale=='vi'?'Các loại giấy phép phổ biến của lĩnh vực Phân phối hàng hoá đặc biệt':'Các loại giấy phép phổ biến của lĩnh vực Phân phối hàng hoá đặc biệt aaa'}}</p>
               <i class="fa fa-times close" aria-hidden="true" type="button" data-dismiss="modal"></i>
             </div>
             <div class="modal-body" style="margin-top: 15px;">
-                <p class="form-small-header-V">Doanh nghiệp của bạn còn thiếu loại giấy phép nào ?</p>
+                <p class="form-small-header-V">{{global.locale=='vi'?'Doanh nghiệp của bạn còn thiếu loại giấy phép nào ?':'Doanh nghiệp của bạn còn thiếu loại giấy phép nào ? aaa'}}</p>
                 <div class="form-group" style="margin: 20px;">
                     <div class="container-fluid">
                         <div class="row">
                             <div class="col-12">
                                 <div class="form-check-inline">
                                     <input class="form-check-input" name="service" type="checkbox" id="service1">
-                                    <label class="form-check-label font-weight-normal">Giấy phép bán buôn rượu</label>
+                                    <label class="form-check-label font-weight-normal">{{global.locale=='vi'?'Giấy phép bán buôn rượu':'Giấy phép bán buôn rượu aaa'}}</label>
                                 </div>
                             </div>
                         </div>
@@ -172,7 +172,7 @@
                             <div class="col-12">
                                 <div class="form-check-inline">
                                     <input class="form-check-input" name="service" type="checkbox" id="service2">
-                                    <label class="form-check-label font-weight-normal">Giấy phép bán lẻ rượu</label>
+                                    <label class="form-check-label font-weight-normal">{{global.locale=='vi'?'Giấy phép bán lẻ rượu':'Giấy phép bán lẻ rượu aaa'}}</label>
                                 </div>
                             </div>
                         </div>
@@ -180,7 +180,7 @@
                             <div class="col-12">
                                 <div class="form-check-inline">
                                     <input class="form-check-input" name="service" type="checkbox" id="service3">
-                                    <label class="form-check-label font-weight-normal">Giấy phép lập cơ sở bán lẻ <span style="font-style:italic;">(công ty nước ngoài)</span></label>
+                                    <label class="form-check-label font-weight-normal">{{global.locale=='vi'?'Giấy phép lập cơ sở bán lẻ ':'Giấy phép lập cơ sở bán lẻ  aaa'}}<span style="font-style:italic;">{{global.locale=='vi'?'(công ty nước ngoài)':'(công ty nước ngoài) aaa'}}</span></label>
                                 </div>
                             </div>
                         </div>
@@ -188,7 +188,7 @@
                             <div class="col-12">
                                 <div class="form-check-inline">
                                     <input class="form-check-input" name="service" type="checkbox" id="service4">
-                                    <label class="form-check-label font-weight-normal">Giấy phép kinh doanh <span><span style="font-style:italic;">(công ty nước ngoài)</span></span></label>
+                                    <label class="form-check-label font-weight-normal">{{global.locale=='vi'?'Giấy phép kinh doanh':'Giấy phép kinh doanh aaa'}} <span><span style="font-style:italic;">{{global.locale=='vi'?'(công ty nước ngoài)':'(công ty nước ngoài) aaa'}}</span></span></label>
                                 </div>
                             </div>
                         </div>
@@ -196,7 +196,7 @@
                             <div class="col-12">
                                 <div class="form-check-inline">
                                     <input class="form-check-input" name="service" type="checkbox" id="service4">
-                                    <label class="form-check-label font-weight-normal">Nhượng quyền thương mại</label>
+                                    <label class="form-check-label font-weight-normal">{{global.locale=='vi'?'Nhượng quyền thương mại':'Nhượng quyền thương mại aaa'}}</label>
                                 </div>
                             </div>
                         </div>
@@ -204,19 +204,19 @@
                 </div>
                 <div class="form-group">
                   <input (keyup)="n=true" [class.is-invalid]="!fieldValid(name)&&n" [class.is-valid]="fieldValid(name)&&n" type="text" class="form-control" [(ngModel)]="name" name="name" placeholder="Họ tên *">
-                  <i *ngIf="!fieldValid(name) && n"><small class="text-danger">Bắt buộc nhập họ tên.</small></i>
+                  <i *ngIf="!fieldValid(name) && n"><small class="text-danger">{{global.locale=='vi'?'Bắt buộc nhập họ tên.':'Bắt buộc nhập họ tên. aaa'}}</small></i>
                 </div>
                 <div class="form-group">
                     <input (keyup)="p=true" [class.is-invalid]="!fieldValid(phone,'phone')&&p" [class.is-valid]="fieldValid(phone,'phone')&&p" class="form-control" [(ngModel)]="phone" name="phone" type="text" placeholder="Số điện thoại *"/>
-                    <i *ngIf="!fieldValid(phone,'phone') && p"><small class="text-danger">Bắt buộc nhập số điện thoại hợp lệ.</small></i>
+                    <i *ngIf="!fieldValid(phone,'phone') && p"><small class="text-danger">{{global.locale=='vi'?'Bắt buộc nhập số điện thoại hợp lệ.':'Bắt buộc nhập số điện thoại hợp lệ. aaa'}}</small></i>
                 </div>
                 <div class="form-group">
                     <input (keyup)="e=true" [class.is-invalid]="!fieldValid(email,'email')&&e" [class.is-valid]="fieldValid(email,'email')&&e" class="form-control" name="email" [(ngModel)]="email" type="text" placeholder="Email *"/>
-                    <i *ngIf="!fieldValid(email,'email') && e"><small class="text-danger">Bắt buộc nhập email hợp lệ.</small></i>
+                    <i *ngIf="!fieldValid(email,'email') && e"><small class="text-danger">{{global.locale=='vi'?'Bắt buộc nhập email hợp lệ.':'Bắt buộc nhập email hợp lệ. aaa'}}</small></i>
                 </div>
             </div>
             <div class="modal-footer" style="justify-content: center;">
-              <button type="button" style="margin-bottom: 20px;" class="btn btn-warning" data-dismiss="modal">ĐĂNG KÝ GIẤY PHÉP</button>
+              <button type="button" style="margin-bottom: 20px;" class="btn btn-warning" data-dismiss="modal">{{global.locale=='vi'?'ĐĂNG KÝ GIẤY PHÉP':'ĐĂNG KÝ GIẤY PHÉP aaa'}}</button>
             </div>
           </div>
         </div>
@@ -225,18 +225,18 @@
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
-              <p>Các loại giấy phép phổ biến của lĩnh vực Du lịch - Ăn uống</p>
+              <p>{{global.locale=='vi'?'Các loại giấy phép phổ biến của lĩnh vực Du lịch - Ăn uống':'Các loại giấy phép phổ biến của lĩnh vực Du lịch - Ăn uống aaa'}}</p>
               <i class="fa fa-times close" aria-hidden="true" type="button" data-dismiss="modal"></i>
             </div>
             <div class="modal-body" style="margin-top: 15px;">
-                <p class="form-small-header-V">Doanh nghiệp của bạn còn thiếu loại giấy phép nào ?</p>
+                <p class="form-small-header-V">{{global.locale=='vi'?'Doanh nghiệp của bạn còn thiếu loại giấy phép nào ?':'Doanh nghiệp của bạn còn thiếu loại giấy phép nào ? aaa'}}</p>
                 <div class="form-group" style="margin: 20px;">
                     <div class="container-fluid">
                         <div class="row">
                             <div class="col-12">
                                 <div class="form-check-inline">
                                     <input class="form-check-input" name="service" type="checkbox" id="service1">
-                                    <label class="form-check-label font-weight-normal" for="service1">Giấy phép kinh doanh lữ hành nội địa</label>
+                                    <label class="form-check-label font-weight-normal" for="service1">{{global.locale=='vi'?'Giấy phép kinh doanh lữ hành nội địa':'Giấy phép kinh doanh lữ hành nội địa aaa'}}</label>
                                 </div>
                             </div>
                         </div>
@@ -244,7 +244,7 @@
                             <div class="col-12">
                                 <div class="form-check-inline">
                                     <input class="form-check-input" name="service" type="checkbox" id="service2">
-                                    <label class="form-check-label font-weight-normal" for="service2">Giấy phép kinh doanhanh lữ hành quốc tế</label>
+                                    <label class="form-check-label font-weight-normal" for="service2">{{global.locale=='vi'?'Giấy phép kinh doanhanh lữ hành quốc tế':'Giấy phép kinh doanhanh lữ hành quốc tế aaa'}}</label>
                                 </div>
                             </div>
                         </div>
@@ -252,7 +252,7 @@
                             <div class="col-12">
                                 <div class="form-check-inline">
                                     <input class="form-check-input" name="service" type="checkbox" id="service3">
-                                    <label class="form-check-label font-weight-normal" for="service3">Công nhận cơ sở lưu trữ đạt tiêu chuẩn sao</label>
+                                    <label class="form-check-label font-weight-normal" for="service3">{{global.locale=='vi'?'Công nhận cơ sở lưu trữ đạt tiêu chuẩn sao':'Công nhận cơ sở lưu trữ đạt tiêu chuẩn sao aaa'}}</label>
                                 </div>
                             </div>
                         </div>
@@ -260,7 +260,7 @@
                             <div class="col-12">
                                 <div class="form-check-inline">
                                     <input class="form-check-input" name="service" type="checkbox" id="service4">
-                                    <label class="form-check-label font-weight-normal" for="service4">Công nhận cơ sở phục vụ khách du lịch</label>
+                                    <label class="form-check-label font-weight-normal" for="service4">{{global.locale=='vi'?'Công nhận cơ sở phục vụ khách du lịch':'Công nhận cơ sở phục vụ khách du lịch aaa'}}</label>
                                 </div>
                             </div>
                         </div>
@@ -268,7 +268,7 @@
                             <div class="col-12">
                                 <div class="form-check-inline">
                                     <input class="form-check-input" name="service" type="checkbox" id="service4">
-                                    <label class="form-check-label font-weight-normal" for="service4">Giấy chứng nhận vệ sinh an toàn thực phẩm</label>
+                                    <label class="form-check-label font-weight-normal" for="service4">{{global.locale=='vi'?'Giấy chứng nhận vệ sinh an toàn thực phẩm':'Giấy chứng nhận vệ sinh an toàn thực phẩm aaa'}}</label>
                                 </div>
                             </div>
                         </div>
@@ -276,7 +276,7 @@
                             <div class="col-12">
                                 <div class="form-check-inline">
                                     <input class="form-check-input" name="service" type="checkbox" id="service4">
-                                    <label class="form-check-label font-weight-normal" for="service4">Giấy phép kinh doanh rượu, thuốc lá</label>
+                                    <label class="form-check-label font-weight-normal" for="service4">{{global.locale=='vi'?'Giấy phép kinh doanh rượu, thuốc lá':'Giấy phép kinh doanh rượu, thuốc lá aaa'}}</label>
                                 </div>
                             </div>
                         </div>
@@ -284,19 +284,19 @@
                 </div>
                 <div class="form-group">
                   <input (keyup)="n=true" [class.is-invalid]="!fieldValid(name)&&n" [class.is-valid]="fieldValid(name)&&n" type="text" class="form-control" [(ngModel)]="name" name="name" placeholder="Họ tên *">
-                  <i *ngIf="!fieldValid(name) && n"><small class="text-danger">Bắt buộc nhập họ tên.</small></i>
+                  <i *ngIf="!fieldValid(name) && n"><small class="text-danger">{{global.locale=='vi'?'Bắt buộc nhập họ tên.':'Bắt buộc nhập họ tên. aaa'}}</small></i>
                 </div>
                 <div class="form-group">
                     <input (keyup)="p=true" [class.is-invalid]="!fieldValid(phone,'phone')&&p" [class.is-valid]="fieldValid(phone,'phone')&&p" class="form-control" [(ngModel)]="phone" name="phone" type="text" placeholder="Số điện thoại *"/>
-                    <i *ngIf="!fieldValid(phone,'phone') && p"><small class="text-danger">Bắt buộc nhập số điện thoại hợp lệ.</small></i>
+                    <i *ngIf="!fieldValid(phone,'phone') && p"><small class="text-danger">{{global.locale=='vi'?'Bắt buộc nhập số điện thoại hợp lệ.':'Bắt buộc nhập số điện thoại hợp lệ. aaa'}}</small></i>
                 </div>
                 <div class="form-group">
                     <input (keyup)="e=true" [class.is-invalid]="!fieldValid(email,'email')&&e" [class.is-valid]="fieldValid(email,'email')&&e" class="form-control" name="email" [(ngModel)]="email" type="text" placeholder="Email *"/>
-                    <i *ngIf="!fieldValid(email,'email') && e"><small class="text-danger">Bắt buộc nhập email hợp lệ.</small></i>
+                    <i *ngIf="!fieldValid(email,'email') && e"><small class="text-danger">{{global.locale=='vi'?'Bắt buộc nhập email hợp lệ.':'Bắt buộc nhập email hợp lệ. aaa'}}</small></i>
                 </div>
             </div>
             <div class="modal-footer" style="justify-content: center;">
-              <button type="button" style="margin-bottom: 20px;" class="btn btn-warning" data-dismiss="modal">ĐĂNG KÝ GIẤY PHÉP</button>
+              <button type="button" style="margin-bottom: 20px;" class="btn btn-warning" data-dismiss="modal">{{global.locale=='vi'?'ĐĂNG KÝ GIẤY PHÉP':'ĐĂNG KÝ GIẤY PHÉP aaa'}}</button>
             </div>
           </div>
         </div>
@@ -305,18 +305,18 @@
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
-              <p>Các loại giấy phép phổ biến của lĩnh vực Du lịch - Ăn uống</p>
+              <p>{{global.locale=='vi'?'Các loại giấy phép phổ biến của lĩnh vực Du lịch - Ăn uống':'Các loại giấy phép phổ biến của lĩnh vực Du lịch - Ăn uống aaa'}}</p>
               <i class="fa fa-times close" aria-hidden="true" type="button" data-dismiss="modal"></i>
             </div>
             <div class="modal-body" style="margin-top: 15px;">
-                <p class="form-small-header-V">Doanh nghiệp của bạn còn thiếu loại giấy phép nào ?</p>
+                <p class="form-small-header-V">{{global.locale=='vi'?'Doanh nghiệp của bạn còn thiếu loại giấy phép nào ?':'Doanh nghiệp của bạn còn thiếu loại giấy phép nào ? aaa'}}</p>
                 <div class="form-group" style="margin: 20px;">
                     <div class="container-fluid">
                         <div class="row">
                             <div class="col-12">
                                 <div class="form-check-inline">
                                     <input class="form-check-input" name="service" type="checkbox" id="service1">
-                                    <label class="form-check-label font-weight-normal" for="service1">Giấy phép biểu diễn nghệ thuật ca múa nhạc</label>
+                                    <label class="form-check-label font-weight-normal" for="service1">{{global.locale=='vi'?'Giấy phép biểu diễn nghệ thuật ca múa nhạc':'Giấy phép biểu diễn nghệ thuật ca múa nhạc aaa'}}</label>
                                 </div>
                             </div>
                         </div>
@@ -324,7 +324,7 @@
                             <div class="col-12">
                                 <div class="form-check-inline">
                                     <input class="form-check-input" name="service" type="checkbox" id="service2">
-                                    <label class="form-check-label font-weight-normal" for="service2">Giấy phép triển lãm tranh/ảnh tác phẩm nghệ thuật</label>
+                                    <label class="form-check-label font-weight-normal" for="service2">{{global.locale=='vi'?'Giấy phép triển lãm tranh/ảnh tác phẩm nghệ thuật':'Giấy phép triển lãm tranh/ảnh tác phẩm nghệ thuật aaa'}}</label>
                                 </div>
                             </div>
                         </div>
@@ -332,7 +332,7 @@
                             <div class="col-12">
                                 <div class="form-check-inline">
                                     <input class="form-check-input" name="service" type="checkbox" id="service3">
-                                    <label class="form-check-label font-weight-normal" for="service3">Giấy phép triển lãm hội chợ, triển lãm thương mại</label>
+                                    <label class="form-check-label font-weight-normal" for="service3">{{global.locale=='vi'?'Giấy phép triển lãm hội chợ, triển lãm thương mại':'Giấy phép triển lãm hội chợ, triển lãm thương mại aaa'}}</label>
                                 </div>
                             </div>
                         </div>
@@ -340,7 +340,7 @@
                             <div class="col-12">
                                 <div class="form-check-inline">
                                     <input class="form-check-input" name="service" type="checkbox" id="service4">
-                                    <label class="form-check-label font-weight-normal" for="service4">Giấy phép quảng cáo trên bảng hiệu, băng rôn</label>
+                                    <label class="form-check-label font-weight-normal" for="service4">{{global.locale=='vi'?'Giấy phép quảng cáo trên bảng hiệu, băng rôn':'Giấy phép quảng cáo trên bảng hiệu, băng rôn aaa'}}</label>
                                 </div>
                             </div>
                         </div>
@@ -348,7 +348,7 @@
                             <div class="col-12">
                                 <div class="form-check-inline">
                                     <input class="form-check-input" name="service" type="checkbox" id="service4">
-                                    <label class="form-check-label font-weight-normal" for="service4">Thông báo tổ chức chương trình khuyến mại</label>
+                                    <label class="form-check-label font-weight-normal" for="service4">{{global.locale=='vi'?'Thông báo tổ chức chương trình khuyến mại':'Thông báo tổ chức chương trình khuyến mại aaa'}}</label>
                                 </div>
                             </div>
                         </div>
@@ -356,7 +356,7 @@
                             <div class="col-12">
                                 <div class="form-check-inline">
                                     <input class="form-check-input" name="service" type="checkbox" id="service4">
-                                    <label class="form-check-label font-weight-normal" for="service4">Giấy phép tổ chức họp báo/thông cáo báo chí</label>
+                                    <label class="form-check-label font-weight-normal" for="service4">{{global.locale=='vi'?'Giấy phép tổ chức họp báo/thông cáo báo chí':'Giấy phép tổ chức họp báo/thông cáo báo chí aaa'}}</label>
                                 </div>
                             </div>
                         </div>
@@ -364,19 +364,19 @@
                 </div>
                 <div class="form-group">
                   <input (keyup)="n=true" [class.is-invalid]="!fieldValid(name)&&n" [class.is-valid]="fieldValid(name)&&n" type="text" class="form-control" [(ngModel)]="name" name="name" placeholder="Họ tên *">
-                  <i *ngIf="!fieldValid(name) && n"><small class="text-danger">Bắt buộc nhập họ tên.</small></i>
+                  <i *ngIf="!fieldValid(name) && n"><small class="text-danger">{{global.locale=='vi'?'Bắt buộc nhập họ tên.':'Bắt buộc nhập họ tên. aaa'}}</small></i>
                 </div>
                 <div class="form-group">
                     <input (keyup)="p=true" [class.is-invalid]="!fieldValid(phone,'phone')&&p" [class.is-valid]="fieldValid(phone,'phone')&&p" class="form-control" [(ngModel)]="phone" name="phone" type="text" placeholder="Số điện thoại *"/>
-                    <i *ngIf="!fieldValid(phone,'phone') && p"><small class="text-danger">Bắt buộc nhập số điện thoại hợp lệ.</small></i>
+                    <i *ngIf="!fieldValid(phone,'phone') && p"><small class="text-danger">{{global.locale=='vi'?'Bắt buộc nhập số điện thoại hợp lệ.':'Bắt buộc nhập số điện thoại hợp lệ. aaa'}}</small></i>
                 </div>
                 <div class="form-group">
                     <input (keyup)="e=true" [class.is-invalid]="!fieldValid(email,'email')&&e" [class.is-valid]="fieldValid(email,'email')&&e" class="form-control" name="email" [(ngModel)]="email" type="text" placeholder="Email *"/>
-                    <i *ngIf="!fieldValid(email,'email') && e"><small class="text-danger">Bắt buộc nhập email hợp lệ.</small></i>
+                    <i *ngIf="!fieldValid(email,'email') && e"><small class="text-danger">{{global.locale=='vi'?'Bắt buộc nhập email hợp lệ.':'Bắt buộc nhập email hợp lệ. aaa'}}</small></i>
                 </div>
             </div>
             <div class="modal-footer" style="justify-content: center;">
-              <button type="button" style="margin-bottom: 20px;" class="btn btn-warning" data-dismiss="modal">ĐĂNG KÝ GIẤY PHÉP</button>
+              <button type="button" style="margin-bottom: 20px;" class="btn btn-warning" data-dismiss="modal">{{global.locale=='vi'?'ĐĂNG KÝ GIẤY PHÉP':'ĐĂNG KÝ GIẤY PHÉP aaa'}}</button>
             </div>
           </div>
         </div>
@@ -385,18 +385,18 @@
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
-              <p>Các loại giấy phép phổ biến của lĩnh vực Giáo dục - Nghề nghiệp</p>
+              <p>{{global.locale=='vi'?'Các loại giấy phép phổ biến của lĩnh vực Giáo dục - Nghề nghiệp':'Các loại giấy phép phổ biến của lĩnh vực Giáo dục - Nghề nghiệp aaa'}}</p>
               <i class="fa fa-times close" aria-hidden="true" type="button" data-dismiss="modal"></i>
             </div>
             <div class="modal-body" style="margin-top: 15px;">
-                <p class="form-small-header-V">Doanh nghiệp của bạn còn thiếu loại giấy phép nào ?</p>
+                <p class="form-small-header-V">{{global.locale=='vi'?'Doanh nghiệp của bạn còn thiếu loại giấy phép nào ?':'Doanh nghiệp của bạn còn thiếu loại giấy phép nào ? aaa'}}</p>
                 <div class="form-group" style="margin: 20px;">
                     <div class="container-fluid">
                         <div class="row">
                             <div class="col-12">
                                 <div class="form-check-inline">
                                     <input class="form-check-input" name="service" type="checkbox" id="service1">
-                                    <label class="form-check-label font-weight-normal">Giấy phép thành lập trung tâm ngoại ngữ</label>
+                                    <label class="form-check-label font-weight-normal">{{global.locale=='vi'?'Giấy phép thành lập trung tâm ngoại ngữ':'Giấy phép thành lập trung tâm ngoại ngữ aaa'}}</label>
                                 </div>
                             </div>
                         </div>
@@ -404,7 +404,7 @@
                             <div class="col-12">
                                 <div class="form-check-inline">
                                     <input class="form-check-input" name="service" type="checkbox" id="service2">
-                                    <label class="form-check-label font-weight-normal">Giấy phép thành lập trung tâm tin học</label>
+                                    <label class="form-check-label font-weight-normal">{{global.locale=='vi'?'Giấy phép thành lập trung tâm tin học':'Giấy phép thành lập trung tâm tin học aaa'}}</label>
                                 </div>
                             </div>
                         </div>
@@ -412,7 +412,7 @@
                             <div class="col-12">
                                 <div class="form-check-inline">
                                     <input class="form-check-input" name="service" type="checkbox" id="service3">
-                                    <label class="form-check-label font-weight-normal">Giấy phép kinh doanh dịch vụ tư vấn dụ học</label>
+                                    <label class="form-check-label font-weight-normal">{{global.locale=='vi'?'Giấy phép kinh doanh dịch vụ tư vấn dụ học':'Giấy phép kinh doanh dịch vụ tư vấn dụ học aaa'}}</label>
                                 </div>
                             </div>
                         </div>
@@ -420,7 +420,7 @@
                             <div class="col-12">
                                 <div class="form-check-inline">
                                     <input class="form-check-input" name="service" type="checkbox" id="service4">
-                                    <label class="form-check-label font-weight-normal">Thành lập trung tâm đào tạo kỹ năng sống</label>
+                                    <label class="form-check-label font-weight-normal">{{global.locale=='vi'?'Thành lập trung tâm đào tạo kỹ năng sống':'Thành lập trung tâm đào tạo kỹ năng sống aaa'}}</label>
                                 </div>
                             </div>
                         </div>
@@ -428,7 +428,7 @@
                             <div class="col-12">
                                 <div class="form-check-inline">
                                     <input class="form-check-input" name="service" type="checkbox" id="service4">
-                                    <label class="form-check-label font-weight-normal">Thông báo ứng dụng thương mại điện tử bán hàng</label>
+                                    <label class="form-check-label font-weight-normal">{{global.locale=='vi'?'Thông báo ứng dụng thương mại điện tử bán hàng':'Thông báo ứng dụng thương mại điện tử bán hàng aaa'}}</label>
                                 </div>
                             </div>
                         </div>
@@ -436,7 +436,7 @@
                             <div class="col-12">
                                 <div class="form-check-inline">
                                     <input class="form-check-input" name="service" type="checkbox" id="service4">
-                                    <label class="form-check-label font-weight-normal">Thành lập trung tâm đào tạo kĩ năng sống</label>
+                                    <label class="form-check-label font-weight-normal">{{global.locale=='vi'?'Thành lập trung tâm đào tạo kĩ năng sống':'Thành lập trung tâm đào tạo kĩ năng sống aaa'}}</label>
                                 </div>
                             </div>
                         </div>
@@ -444,19 +444,19 @@
                 </div>
                 <div class="form-group">
                   <input (keyup)="n=true" [class.is-invalid]="!fieldValid(name)&&n" [class.is-valid]="fieldValid(name)&&n" type="text" class="form-control" [(ngModel)]="name" name="name" placeholder="Họ tên *">
-                  <i *ngIf="!fieldValid(name) && n"><small class="text-danger">Bắt buộc nhập họ tên.</small></i>
+                  <i *ngIf="!fieldValid(name) && n"><small class="text-danger">{{global.locale=='vi'?'Bắt buộc nhập họ tên.':'Bắt buộc nhập họ tên. aaa'}}</small></i>
                 </div>
                 <div class="form-group">
                     <input (keyup)="p=true" [class.is-invalid]="!fieldValid(phone,'phone')&&p" [class.is-valid]="fieldValid(phone,'phone')&&p" class="form-control" [(ngModel)]="phone" name="phone" type="text" placeholder="Số điện thoại *"/>
-                    <i *ngIf="!fieldValid(phone,'phone') && p"><small class="text-danger">Bắt buộc nhập số điện thoại hợp lệ.</small></i>
+                    <i *ngIf="!fieldValid(phone,'phone') && p"><small class="text-danger">{{global.locale=='vi'?'Bắt buộc nhập số điện thoại hợp lệ.':'Bắt buộc nhập số điện thoại hợp lệ. aaa'}}</small></i>
                 </div>
                 <div class="form-group">
                     <input (keyup)="e=true" [class.is-invalid]="!fieldValid(email,'email')&&e" [class.is-valid]="fieldValid(email,'email')&&e" class="form-control" name="email" [(ngModel)]="email" type="text" placeholder="Email *"/>
-                    <i *ngIf="!fieldValid(email,'email') && e"><small class="text-danger">Bắt buộc nhập email hợp lệ.</small></i>
+                    <i *ngIf="!fieldValid(email,'email') && e"><small class="text-danger">{{global.locale=='vi'?'Bắt buộc nhập email hợp lệ.':'Bắt buộc nhập email hợp lệ. aaa'}}</small></i>
                 </div>
             </div>
             <div class="modal-footer" style="justify-content: center;">
-              <button type="button" style="margin-bottom: 20px;" class="btn btn-warning" data-dismiss="modal">ĐĂNG KÝ GIẤY PHÉP</button>
+              <button type="button" style="margin-bottom: 20px;" class="btn btn-warning" data-dismiss="modal">{{global.locale=='vi'?'ĐĂNG KÝ GIẤY PHÉP':'ĐĂNG KÝ GIẤY PHÉP aaa'}}</button>
             </div>
           </div>
         </div>
@@ -466,15 +466,15 @@
       <div class="col-md-7">
         <div class="recognize-block">
           <img style="top: -20px; left: 147px;" src="/assets/media/DND3N/giai-quyet-tan-goc/bg-dang-ky-nganh-nghe-co-dieu-kien.svg">
-          <p class="alt-title">Đăng ký ngành nghề có điều kiện</p>
+          <p class="alt-title">{{global.locale=='vi'?'Đăng ký ngành nghề có điều kiện':'Đăng ký ngành nghề có điều kiện aaa'}}</p>
           <hr style="width: 60px; height: 0.5px; background-color: black; border: unset; margin-top: 10px; margin-bottom: 25px;">
           <div class="mission-txt">
-            <p>Asoka Law hỗ trợ bạn rà soát các ngành nghề kinh doanh bắt buộc có điều kiện. Đặc biệt, chúng tôi có kinh nghiệm chuyên sâu trong <b>05 lĩnh vực</b> .</p>
-            <p>Am hiểu thủ tục pháp lý của từng ngành nghề, Asoka sẽ tư vấn cho bạn hiểu rõ và hoàn thiện hồ sơ pháp lý đầy đủ theo quy định của cơ quan Nhà nước. Doanh nghiệp của bạn sẽ được rà soát, quản trị toàn diện về tình trạng pháp lý.</p>
+            <p>{{global.locale=='vi'?'Asoka Law hỗ trợ bạn rà soát các ngành nghề kinh doanh bắt buộc có điều kiện. Đặc biệt, chúng tôi có kinh nghiệm chuyên sâu trong ':'Asoka Law hỗ trợ bạn rà soát các ngành nghề kinh doanh bắt buộc có điều kiện. Đặc biệt, chúng tôi có kinh nghiệm chuyên sâu trong aaa'}}<b>{{global.locale=='vi'?'05 lĩnh vực':'05 lĩnh vực aaa'}}</b> .</p>
+            <p>{{global.locale=='vi'?'Am hiểu thủ tục pháp lý của từng ngành nghề, Asoka sẽ tư vấn cho bạn hiểu rõ và hoàn thiện hồ sơ pháp lý đầy đủ theo quy định của cơ quan Nhà nước. Doanh nghiệp của bạn sẽ được rà soát, quản trị toàn diện về tình trạng pháp lý.':'Am hiểu thủ tục pháp lý của từng ngành nghề, Asoka sẽ tư vấn cho bạn hiểu rõ và hoàn thiện hồ sơ pháp lý đầy đủ theo quy định của cơ quan Nhà nước. Doanh nghiệp của bạn sẽ được rà soát, quản trị toàn diện về tình trạng pháp lý. aaa'}}</p>
           </div>
-          <p style="color: #D5D5D5; font-style: italic">* Bấm vào từng lĩnh vực ở bên để tra cứu nhanh.</p>
-          <button style="margin-top: 30px; margin-bottom: 20px" data-toggle="modal" data-target="#search-free-V" class="btn btn-warning sub-button">Tra cứu miễn phí</button>
-          <p><i><a href="#">Kiểm tra toàn diện giấy phép có điều kiện</a></i></p>
+          <p style="color: #D5D5D5; font-style: italic">{{global.locale=='vi'?'* Bấm vào từng lĩnh vực ở bên để tra cứu nhanh.':'* Bấm vào từng lĩnh vực ở bên để tra cứu nhanh. aaa'}}</p>
+          <button style="margin-top: 30px; margin-bottom: 20px" data-toggle="modal" data-target="#search-free-V" class="btn btn-warning sub-button">{{global.locale=='vi'?'Tra cứu miễn phí':'Tra cứu miễn phí aaa'}}</button>
+          <p><i><a href="#">{{global.locale=='vi'?'Kiểm tra toàn diện giấy phép có điều kiện':'Kiểm tra toàn diện giấy phép có điều kiện aaa'}}</a></i></p>
         </div>
       </div>
     </div>
@@ -485,30 +485,30 @@
         <div class="col-md-6">
           <div class="recognize-block">
             <img style="top: -22px; left: -25px; max-width: 100px; width: 100%;" src="/assets/media/DND3N/giai-quyet-tan-goc/bg-dang-ky-nhan-hieu.svg">
-            <p class="alt-title">Đăng ký nhãn hiệu</p>
+            <p class="alt-title">{{global.locale=='vi'?'Đăng ký nhãn hiệu':'Đăng ký nhãn hiệu aaa'}}</p>
             <hr style="width: 40px; height: 0.5px; background-color: black; border: unset; margin-top: 10px; margin-bottom: 25px;">
             <div class="mission-txt">
-              <p>Chúng tôi giúp bạn bảo vệ tài sản trí tuệ của doanh nghiệp. Cần đảm bảo rằng, nhãn hiệu được chọn kinh doanh của công ty bạn là duy nhất và "nhanh chân" đăng ký trước. Nếu chậm trễ, các bên khác hoàn toàn có thể giành quyền đăng ký sở hữu, đồng nghĩa với việc bạn không được phép sử dụng nhãn hiệu đó để tiếp tục kinh doanh được nữa.</p>
+              <p>{{global.locale=='vi'?'Chúng tôi giúp bạn bảo vệ tài sản trí tuệ của doanh nghiệp. Cần đảm bảo rằng, nhãn hiệu được chọn kinh doanh của công ty bạn là duy nhất và "nhanh chân" đăng ký trước. Nếu chậm trễ, các bên khác hoàn toàn có thể giành quyền đăng ký sở hữu, đồng nghĩa với việc bạn không được phép sử dụng nhãn hiệu đó để tiếp tục kinh doanh được nữa.':'Chúng tôi giúp bạn bảo vệ tài sản trí tuệ của doanh nghiệp. Cần đảm bảo rằng, nhãn hiệu được chọn kinh doanh của công ty bạn là duy nhất và "nhanh chân" đăng ký trước. Nếu chậm trễ, các bên khác hoàn toàn có thể giành quyền đăng ký sở hữu, đồng nghĩa với việc bạn không được phép sử dụng nhãn hiệu đó để tiếp tục kinh doanh được nữa. aaa'}}</p>
             </div>
-            <p style="margin-top: 3rem;"><a routerLink="/dang-ky-nhan-hieu">Xem 5 lợi ích của đăng ký nhãn hiệu &gt;&gt;</a></p>
+            <p style="margin-top: 3rem;"><a routerLink="/dang-ky-nhan-hieu">{{global.locale=='vi'?'Xem 5 lợi ích của đăng ký nhãn hiệu >>':'Xem 5 lợi ích của đăng ký nhãn hiệu >> aaa'}}</a></p>
           </div>
         </div>
         <div class="col-md-1"></div>
         <div class="col-md-5">
             <p class="recognize-form-bg"></p>
             <form class="shadow backgrFormound" enctype="multipart/form-data" style="height:{{formHeight}}px">
-                <h2>TRA CỨU LOGO CỦA BẠN</h2>
+                <h2>{{global.locale=='vi'?'TRA CỨU LOGO CỦA BẠN':'TRA CỨU LOGO CỦA BẠN aaa'}}</h2>
                 <div class="form-group">
                     <input (keyup)="n=true" [class.is-invalid]="!fieldValid(name)&&n" [class.is-valid]="fieldValid(name)&&n" type="text" class="form-control" [(ngModel)]="name" name="name" placeholder="Họ tên *">
-                    <i *ngIf="!fieldValid(name) && n"><small class="text-danger">Bắt buộc nhập họ tên.</small></i>
+                    <i *ngIf="!fieldValid(name) && n"><small class="text-danger">{{global.locale=='vi'?'Bắt buộc nhập họ tên.':'Bắt buộc nhập họ tên. aaa'}}</small></i>
                 </div>
                 <div class="form-group">
                     <input (keyup)="p=true" [class.is-invalid]="!fieldValid(phone,'phone')&&p" [class.is-valid]="fieldValid(phone,'phone')&&p" class="form-control" [(ngModel)]="phone" name="phone" type="text" placeholder="Số điện thoại *"/>
-                    <i *ngIf="!fieldValid(phone,'phone') && p"><small class="text-danger">Bắt buộc nhập số điện thoại hợp lệ.</small></i>
+                    <i *ngIf="!fieldValid(phone,'phone') && p"><small class="text-danger">{{global.locale=='vi'?'Bắt buộc nhập số điện thoại hợp lệ.':'Bắt buộc nhập số điện thoại hợp lệ. aaa'}}</small></i>
                 </div>
                 <div class="form-group">
                     <input (keyup)="e=true" [class.is-invalid]="!fieldValid(email,'email')&&e" [class.is-valid]="fieldValid(email,'email')&&e" class="form-control" name="email" [(ngModel)]="email" type="text" placeholder="Email *"/>
-                    <i *ngIf="!fieldValid(email,'email') && e"><small class="text-danger">Bắt buộc nhập email hợp lệ.</small></i>
+                    <i *ngIf="!fieldValid(email,'email') && e"><small class="text-danger">{{global.locale=='vi'?'Bắt buộc nhập email hợp lệ.':'Bắt buộc nhập email hợp lệ. aaa'}}</small></i>
                 </div>
                 <div class="form-group">
                     <textarea style="resize:none;" [(ngModel)]="description" name="description" class="form-control" rows="3" placeholder="Tên nhãn hiệu, ngành nghề kinh doanh.&#x0a;Vd: Flow Media-Truyền thông marketing"></textarea>
@@ -516,7 +516,7 @@
                 <div class="row" style="padding: 0px 10px;">
                     <div class="form-group col-4">
                         <button style="margin-bottom: 5px;padding: 0px;" class="btn" type="button" (click)="fileInput1.click()">
-                            <span style="color:#0f74a8;text-decoration: underline;font-size: 11px">Logo đính kèm 1</span>
+                            <span style="color:#0f74a8;text-decoration: underline;font-size: 11px">{{global.locale=='vi'?'Logo đính kèm 1':'Logo đính kèm 1 aaa'}}</span>
                             <input #fileInput1 type="file" accept="image/*" (change)="onSelectFile($event,1)" style="display:none;"/>
                         </button>
                         <div *ngIf="logo1.data">
@@ -526,7 +526,7 @@
                     </div>
                     <div class="form-group col-4">
                         <button style="margin-bottom: 5px;padding: 0px;" class="btn" type="button" (click)="fileInput2.click()">
-                            <span style="color:#0f74a8;text-decoration: underline;font-size: 11px">Logo đính kèm 2</span>
+                            <span style="color:#0f74a8;text-decoration: underline;font-size: 11px">{{global.locale=='vi'?'Logo đính kèm 2':'Logo đính kèm 2 aaa'}}</span>
                             <input #fileInput2 type="file" accept="image/*" (change)="onSelectFile($event,2)" style="display:none;"/>
                         </button>
                         <div *ngIf="logo2.data">
@@ -536,7 +536,7 @@
                     </div>
                     <div class="form-group col-4">
                         <button style="margin-bottom: 5px;padding: 0px;" class="btn" type="button" (click)="fileInput3.click()">
-                            <span style="color:#0f74a8;text-decoration: underline;font-size: 11px">Logo đính kèm 3</span>
+                            <span style="color:#0f74a8;text-decoration: underline;font-size: 11px">{{global.locale=='vi'?'Logo đính kèm 3':'Logo đính kèm 3 aaa'}}</span>
                             <input #fileInput3 type="file" accept="image/*" (change)="onSelectFile($event,3)" style="display:none;"/>
                         </button>
                         <div *ngIf="logo3.data">
@@ -546,7 +546,7 @@
                     </div>
                 </div>
                 <div class="flex-center-hor">
-                    <button (click)="submit()" type="button" class="btn btn-warning">YÊU CẦU TRA CỨU NHANH</button>
+                    <button (click)="submit()" type="button" class="btn btn-warning">{{global.locale=='vi'?'YÊU CẦU TRA CỨU NHANH':'YÊU CẦU TRA CỨU NHANH aaa'}}</button>
                 </div>
             </form>
         </div>

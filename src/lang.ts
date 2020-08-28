@@ -2020,5 +2020,44 @@ export const langDefined = {
 //denday dknh->intro
 // end dknhintro
 
+// start tvlsservice
+    'tvlsservice-cacgoituvan': {
+        vi: "Các gói tư vấn phổ biến",
+        en: "Các gói tư vấn phổ biến aa"
+    },
+    'tvlsservice-nam2019': {
+        vi: "Năm 2019,",
+        en: "Năm 2019, aa"
+    },
+    'tvlsservice-dathuchien1000': {
+        vi: "Asoka Law đã thực hiện 1.000+ giờ tư vấn",
+        en: "Asoka Law đã thực hiện 1.000+ giờ tư vấn aa"
+    },
+    'tvlsservice-bancothedatlichyeucau': {
+        vi: ". Bạn có thể đặt lịch yêu cầu luật sư từ bất kỳ đâu, nhận tư vấn giải pháp chi tiết cho vấn đề của bạn mà không cần rời khỏi văn phòng.",
+        en: ". Bạn có thể đặt lịch yêu cầu luật sư từ bất kỳ đâu, nhận tư vấn giải pháp chi tiết cho vấn đề của bạn mà không cần rời khỏi văn phòng. aa"
+    },
+    'tvlsservice-tuvanchung': {
+        vi: "TƯ VẤN CHUNG",
+        en: "TƯ VẤN CHUNG aa"
+    },
+    'tvlsservice-1cauhoi': {
+        vi: "01 câu hỏi",
+        en: "01 câu hỏi aa"
+    },
+
+
+
+
+// end tvlsservice
+
+
+    //start DNd3n
+    'dnd3n-sodolotrinh': {
+        vi: "Trong \"sơ đồ lộ trình doanh nghiệp\", bạn đang ở giai đoạn vàng để phát triển kinh doanh. Chúng tôi hiểu điều đó và sẵn sàng trở thành một người cộng sự đắc lực của bạn để giải quyết các vấn đề về pháp lý - hợp đồng - lao động - thuế. Nếu biết sử dụng đúng giải pháp, công ty của bạn sẽ có bàn đạp để bước qua giai đoạn tăng trưởng của doanh nghiệp trên 03 năm.",
+        en: "Trong \"sơ đồ lộ trình doanh nghiệp\", bạn đang ở giai đoạn vàng để phát triển kinh doanh. Chúng tôi hiểu điều đó và sẵn sàng trở thành một người cộng sự đắc lực của bạn để giải quyết các vấn đề về pháp lý - hợp đồng - lao động - thuế. Nếu biết sử dụng đúng giải pháp, công ty của bạn sẽ có bàn đạp để bước qua giai đoạn tăng trưởng của doanh nghiệp trên 03 năm. aa"
+    },
+
+    //end dnd3n
 };
 
