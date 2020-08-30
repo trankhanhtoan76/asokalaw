@@ -3,13 +3,16 @@
         <div class="row">
             <div class="col-md-12 center sub">
                 <h1 class="sub-content">
-                    Nhận diện tranh chấp từ khi khởi phát
+                    {{global.locale=='vi'?'Nhận diện tranh chấp từ khi khởi phát':'Nhận diện tranh chấp từ khi khởi phát aaa'}}
                 </h1>
                 <p class="sub-content">
-                    Tranh chấp thường khởi đầu từ mâu thuẫn. Mâu thuẫn không được xử lý kịp thời, dễ dàng dẫn đến tranh
-                    chấp. Tại thời điểm mâu thuẫn bắt đầu trở nên nghiêm trọng, nên có luật sư can thiệp để giải quyết.
-                    Điều này giúp giảm thiểu đến trên 50% thiệt hại về tài sản và
-                    danh tiếng cho các bên.
+                    {{global.locale=='vi'?'Tranh chấp thường khởi đầu từ mâu thuẫn. Mâu thuẫn không được xử lý kịp thời, dễ dàng dẫn đến tranh\n' +
+                    '                    chấp. Tại thời điểm mâu thuẫn bắt đầu trở nên nghiêm trọng, nên có luật sư can thiệp để giải quyết.\n' +
+                    '                    Điều này giúp giảm thiểu đến trên 50% thiệt hại về tài sản và\n' +
+                    '                    danh tiếng cho các bên.':'Tranh chấp thường khởi đầu từ mâu thuẫn. Mâu thuẫn không được xử lý kịp thời, dễ dàng dẫn đến tranh\n' +
+                    '                    chấp. Tại thời điểm mâu thuẫn bắt đầu trở nên nghiêm trọng, nên có luật sư can thiệp để giải quyết.\n' +
+                    '                    Điều này giúp giảm thiểu đến trên 50% thiệt hại về tài sản và\n' +
+                    '                    danh tiếng cho các bên. aaa'}}
                 </p>
             </div>
 
@@ -25,12 +28,12 @@
 ">
                     <li class="nav-item nav-custom">
                         <a class="nav-link active" id="home-tab" data-toggle="tab" href="#ndn" role="tab"
-                           aria-controls="home" aria-selected="true">Ngoài doanh nghiệp</a>
+                           aria-controls="home" aria-selected="true">{{global.locale=='vi'?'Ngoài doanh nghiệp':'Ngoài doanh nghiệp aaa'}}</a>
 
                     </li>
                     <li class="nav-item nav-custom">
                         <a class="nav-link" id="profile-tab" data-toggle="tab" href="#tdn" role="tab"
-                           aria-controls="profile" aria-selected="false">Trong doanh nghiệp</a>
+                           aria-controls="profile" aria-selected="false">{{global.locale=='vi'?'Trong doanh nghiệp':'Trong doanh nghiệp aaa'}}</a>
 
                     </li>
 
@@ -43,7 +46,7 @@
 
                                     <a class="btn btn-link" data-toggle="collapse" data-target="#collapseOne"
                                        aria-expanded="true" aria-controls="collapseOne">
-                                        <i class="icon-left tt"></i>Đòi nợ - thanh toán<i class="icon-right"></i>
+                                        <i class="icon-left tt"></i>{{global.locale=='vi'?'Đòi nợ - thanh toán':'Đòi nợ - thanh toán aaa'}}<i class="icon-right"></i>
                                     </a>
 
                                 </div>
@@ -51,10 +54,13 @@
                                 <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
                                      data-parent="#accordion">
                                     <div class="card-body">
-                                        Việc yêu cầu thanh toán có thể xuất phát từ nhiều dạng thức như: doanh nghiệp
-                                        đặt hàng, thanh toán tiền nhưng bên cung ứng không cung cấp; doanh nghiệp thực
-                                        hiện dịch vụ nhưng khách hàng không thanh toán hoặc thanh toán không đủ phí dịch
-                                        vụ; hành vi vay nợ giữa các doanh nghiệp nhưng không thanh toán;...
+                                        {{global.locale=='vi'?'Việc yêu cầu thanh toán có thể xuất phát từ nhiều dạng thức như: doanh nghiệp\n' +
+                                        '                                        đặt hàng, thanh toán tiền nhưng bên cung ứng không cung cấp; doanh nghiệp thực\n' +
+                                        '                                        hiện dịch vụ nhưng khách hàng không thanh toán hoặc thanh toán không đủ phí dịch\n' +
+                                        '                                        vụ; hành vi vay nợ giữa các doanh nghiệp nhưng không thanh toán;...':'Việc yêu cầu thanh toán có thể xuất phát từ nhiều dạng thức như: doanh nghiệp\n' +
+                                        '                                        đặt hàng, thanh toán tiền nhưng bên cung ứng không cung cấp; doanh nghiệp thực\n' +
+                                        '                                        hiện dịch vụ nhưng khách hàng không thanh toán hoặc thanh toán không đủ phí dịch\n' +
+                                        '                                        vụ; hành vi vay nợ giữa các doanh nghiệp nhưng không thanh toán;... aaa'}}
                                     </div>
                                 </div>
                             </div>
@@ -63,7 +69,7 @@
 
                                     <a class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo"
                                        aria-expanded="true" aria-controls="collapseTwo">
-                                        <i class="icon-left shtt"></i>Sở hữu trí tuệ<i class="icon-right"></i>
+                                        <i class="icon-left shtt"></i>{{global.locale=='vi'?'Sở hữu trí tuệ':'Sở hữu trí tuệ aaa'}}<i class="icon-right"></i>
                                     </a>
 
                                 </div>
@@ -71,11 +77,15 @@
                                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
                                      data-parent="#accordion">
                                     <div class="card-body">
-                                        Hành vi xâm phạm sở hữu trí tuệ ngày càng phổ biến, thể hiện dưới các dạng thức
-                                        như: thực hiện mua bán hàng hóa, dịch vụ dưới nhãn hiệu không được phép của chủ
-                                        sở hữu; làm hàng nhái, hàng giả, kém chất lượng dưới kiểu dáng công nghiệp gây
-                                        nhầm lẫn với các bên nổi tiếng; ăn cắp bản quyền tác phẩm nghệ thuật, kịch bản,
-                                        ca khúc;...
+                                        {{global.locale=='vi'?'Hành vi xâm phạm sở hữu trí tuệ ngày càng phổ biến, thể hiện dưới các dạng thức\n' +
+                                        '                                        như: thực hiện mua bán hàng hóa, dịch vụ dưới nhãn hiệu không được phép của chủ\n' +
+                                        '                                        sở hữu; làm hàng nhái, hàng giả, kém chất lượng dưới kiểu dáng công nghiệp gây\n' +
+                                        '                                        nhầm lẫn với các bên nổi tiếng; ăn cắp bản quyền tác phẩm nghệ thuật, kịch bản,\n' +
+                                        '                                        ca khúc;...':'Hành vi xâm phạm sở hữu trí tuệ ngày càng phổ biến, thể hiện dưới các dạng thức\n' +
+                                        '                                        như: thực hiện mua bán hàng hóa, dịch vụ dưới nhãn hiệu không được phép của chủ\n' +
+                                        '                                        sở hữu; làm hàng nhái, hàng giả, kém chất lượng dưới kiểu dáng công nghiệp gây\n' +
+                                        '                                        nhầm lẫn với các bên nổi tiếng; ăn cắp bản quyền tác phẩm nghệ thuật, kịch bản,\n' +
+                                        '                                        ca khúc;... aaa'}}
                                     </div>
                                 </div>
                             </div>
@@ -85,7 +95,7 @@
                                     <a class="btn btn-link collapsed" data-toggle="collapse"
                                        data-target="#collapseThree"
                                        aria-expanded="true" aria-controls="collapseThree">
-                                        <i class="icon-left hdbt"></i>Hợp đồng - bồi thường<i class="icon-right"></i>
+                                        <i class="icon-left hdbt"></i>{{global.locale=='vi'?'Hợp đồng - bồi thường':'Hợp đồng - bồi thường aaa'}}<i class="icon-right"></i>
                                     </a>
 
                                 </div>
@@ -93,10 +103,13 @@
                                 <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
                                      data-parent="#accordion">
                                     <div class="card-body">
-                                        Vi phạm hợp đồng là việc một bên không thực hiện, thực hiện không đầy đủ hoặc
-                                        thực hiện không đúng nghĩa vụ theo thoả thuận giữa các bên như: sai lệch khối
-                                        lượng, số lượng mua bán hàng hóa; vi phạm chất lượng, tiến độ cung cứng dịch vụ;
-                                        đáp ứng không đúng về các quy định trong nhượng quyền thương mại;...
+                                        {{global.locale=='vi'?'Vi phạm hợp đồng là việc một bên không thực hiện, thực hiện không đầy đủ hoặc\n' +
+                                        '                                        thực hiện không đúng nghĩa vụ theo thoả thuận giữa các bên như: sai lệch khối\n' +
+                                        '                                        lượng, số lượng mua bán hàng hóa; vi phạm chất lượng, tiến độ cung cứng dịch vụ;\n' +
+                                        '                                        đáp ứng không đúng về các quy định trong nhượng quyền thương mại;...':'Vi phạm hợp đồng là việc một bên không thực hiện, thực hiện không đầy đủ hoặc\n' +
+                                        '                                        thực hiện không đúng nghĩa vụ theo thoả thuận giữa các bên như: sai lệch khối\n' +
+                                        '                                        lượng, số lượng mua bán hàng hóa; vi phạm chất lượng, tiến độ cung cứng dịch vụ;\n' +
+                                        '                                        đáp ứng không đúng về các quy định trong nhượng quyền thương mại;... aaa'}}
                                     </div>
                                 </div>
                             </div>
@@ -110,7 +123,7 @@
 
                                     <a class="btn btn-link" data-toggle="collapse" data-target="#collapseOnee"
                                        aria-expanded="true" aria-controls="collapseOnee">
-                                        <i class="icon-left qlct"></i>Tổ chức - quản lý công ty<i class="icon-right"></i>
+                                        <i class="icon-left qlct"></i> {{global.locale=='vi'?'Tổ chức - quản lý công ty':'Tổ chức - quản lý công ty aaa'}}<i class="icon-right"></i>
                                     </a>
 
                                 </div>
@@ -118,11 +131,15 @@
                                 <div id="collapseOnee" class="collapse show" aria-labelledby="headingOnee"
                                      data-parent="#accordionn">
                                     <div class="card-body">
-                                        Theo quy định của Luật Doanh Nghiệp và điều lệ công ty, chủ tịch thành viên/hội
-                                        đồng quản trị sẽ có các phân vùng nhiệm vụ công việc khác với giám đốc/tổng giám
-                                        đốc hay thành viên khác. Tuy nhiên trong quá trình hoạt động, nhiều doanh nghiệp
-                                        gặp phải tình trạng thành viên thực hiện sai lệch hoặc quá giới hạn phạm vi phân
-                                        quyền gây nên thiệt hại cho doanh nghiệp.
+                                        {{global.locale=='vi'?'Theo quy định của Luật Doanh Nghiệp và điều lệ công ty, chủ tịch thành viên/hội\n' +
+                                        '                                        đồng quản trị sẽ có các phân vùng nhiệm vụ công việc khác với giám đốc/tổng giám\n' +
+                                        '                                        đốc hay thành viên khác. Tuy nhiên trong quá trình hoạt động, nhiều doanh nghiệp\n' +
+                                        '                                        gặp phải tình trạng thành viên thực hiện sai lệch hoặc quá giới hạn phạm vi phân\n' +
+                                        '                                        quyền gây nên thiệt hại cho doanh nghiệp.':'Theo quy định của Luật Doanh Nghiệp và điều lệ công ty, chủ tịch thành viên/hội\n' +
+                                        '                                        đồng quản trị sẽ có các phân vùng nhiệm vụ công việc khác với giám đốc/tổng giám\n' +
+                                        '                                        đốc hay thành viên khác. Tuy nhiên trong quá trình hoạt động, nhiều doanh nghiệp\n' +
+                                        '                                        gặp phải tình trạng thành viên thực hiện sai lệch hoặc quá giới hạn phạm vi phân\n' +
+                                        '                                        quyền gây nên thiệt hại cho doanh nghiệp. aaa'}}
                                     </div>
                                 </div>
                             </div>
@@ -131,7 +148,7 @@
 
                                     <a class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwoo"
                                        aria-expanded="true" aria-controls="collapseTwoo">
-                                        <i class="icon-left vgts"></i>Vốn góp - tài sản<i class="icon-right"></i>
+                                        <i class="icon-left vgts"></i>{{global.locale=='vi'?'Vốn góp - tài sản':'Vốn góp - tài sản aaa'}}<i class="icon-right"></i>
                                     </a>
 
                                 </div>
@@ -139,11 +156,15 @@
                                 <div id="collapseTwoo" class="collapse" aria-labelledby="headingTwoo"
                                      data-parent="#accordionn">
                                     <div class="card-body">
-                                        Vấn đề góp vốn nếu không tuân thủ theo quy định của pháp luật, hoặc có các điều
-                                        khoản thỏa thuận rõ ràng giữa các thành viên cũng sẽ dễ dàng dẫn đến tranh chấp.
-                                        Điển hình như: thực hiện góp vốn không đúng tiến độ; góp không đủ; định giá sai
-                                        vốn góp; thỏa thuận góp vốn bằng công sức hay tài sản trí tuệ nhưng không được
-                                        công nhận thỏa đáng;...
+                                        {{global.locale=='vi'?'Vấn đề góp vốn nếu không tuân thủ theo quy định của pháp luật, hoặc có các điều\n' +
+                                        '                                        khoản thỏa thuận rõ ràng giữa các thành viên cũng sẽ dễ dàng dẫn đến tranh chấp.\n' +
+                                        '                                        Điển hình như: thực hiện góp vốn không đúng tiến độ; góp không đủ; định giá sai\n' +
+                                        '                                        vốn góp; thỏa thuận góp vốn bằng công sức hay tài sản trí tuệ nhưng không được\n' +
+                                        '                                        công nhận thỏa đáng;...':'Vấn đề góp vốn nếu không tuân thủ theo quy định của pháp luật, hoặc có các điều\n' +
+                                        '                                        khoản thỏa thuận rõ ràng giữa các thành viên cũng sẽ dễ dàng dẫn đến tranh chấp.\n' +
+                                        '                                        Điển hình như: thực hiện góp vốn không đúng tiến độ; góp không đủ; định giá sai\n' +
+                                        '                                        vốn góp; thỏa thuận góp vốn bằng công sức hay tài sản trí tuệ nhưng không được\n' +
+                                        '                                        công nhận thỏa đáng;... aaa'}}
                                     </div>
                                 </div>
                             </div>
@@ -153,7 +174,7 @@
                                     <a class="btn btn-link collapsed" data-toggle="collapse"
                                        data-target="#collapseThreee"
                                        aria-expanded="true" aria-controls="collapseThreee">
-                                        <i class="icon-left sdld"></i>Sử dụng lao động<i class="icon-right"></i>
+                                        <i class="icon-left sdld"></i>{{global.locale=='vi'?'Từ':'Từ aaa'}}{{global.locale=='vi'?'Sử dụng lao động':'Sử dụng lao động aaa'}}<i class="icon-right"></i>
                                     </a>
 
                                 </div>
@@ -161,11 +182,15 @@
                                 <div id="collapseThreee" class="collapse" aria-labelledby="headingThreee"
                                      data-parent="#accordionn">
                                     <div class="card-body">
-                                        Một số vấn đề về lao động thường xảy ra đối với doanh nghiệp như: kỷ luật, cách
-                                        chức, thuyên chuyển, sa thải lao động không đúng theo quy trình, hoặc không thực
-                                        hiện đầy đủ theo thủ tục của Luật Lao Động. Tại thời điểm xảy ra mẫu thuẫn, nếu
-                                        doanh nghiệp không được Luật sư tư vấn kịp thời nhằm xử lý khéo léo quá trình
-                                        thương lượng nội bộ thì có thể sẽ đến tranh chấp tại Tòa án.
+                                        {{global.locale=='vi'?'Một số vấn đề về lao động thường xảy ra đối với doanh nghiệp như: kỷ luật, cách\n' +
+                                        '                                        chức, thuyên chuyển, sa thải lao động không đúng theo quy trình, hoặc không thực\n' +
+                                        '                                        hiện đầy đủ theo thủ tục của Luật Lao Động. Tại thời điểm xảy ra mẫu thuẫn, nếu\n' +
+                                        '                                        doanh nghiệp không được Luật sư tư vấn kịp thời nhằm xử lý khéo léo quá trình\n' +
+                                        '                                        thương lượng nội bộ thì có thể sẽ đến tranh chấp tại Tòa án.':'Một số vấn đề về lao động thường xảy ra đối với doanh nghiệp như: kỷ luật, cách\n' +
+                                        '                                        chức, thuyên chuyển, sa thải lao động không đúng theo quy trình, hoặc không thực\n' +
+                                        '                                        hiện đầy đủ theo thủ tục của Luật Lao Động. Tại thời điểm xảy ra mẫu thuẫn, nếu\n' +
+                                        '                                        doanh nghiệp không được Luật sư tư vấn kịp thời nhằm xử lý khéo léo quá trình\n' +
+                                        '                                        thương lượng nội bộ thì có thể sẽ đến tranh chấp tại Tòa án. aaa'}}
                                     </div>
                                 </div>
                             </div>
@@ -179,9 +204,9 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="center">
-                    <button onclick="$('#gqtcform1').modal('show')" class="btn btn-warning sub-button">Đăng ký nhận tư vấn</button>
+                    <button onclick="$('#gqtcform1').modal('show')" class="btn btn-warning sub-button">{{global.locale=='vi'?'Từ':'Từ aaa'}}{{global.locale=='vi'?'Đăng ký nhận tư vấn':'Đăng ký nhận tư vấn aaa'}}</button>
                     <br>
-                    <i class="security"><span>*</span>Cam kết bảo mật thông tin</i>
+                    <i class="security"><span>*</span>{{global.locale=='vi'?'Cam kết bảo mật thông tin':'Cam kết bảo mật thông tin aaa'}}</i>
                 </div>
 
             </div>

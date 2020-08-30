@@ -3,13 +3,12 @@
     <div class="row">
       <div class="col-md-12 center sub">
         <h1 class="sub-content">
-          3 nguyên tắc mang lại thành công
+          {{global.locale=='vi'?'3 nguyên tắc mang lại thành công':'3 nguyên tắc mang lại thành công aaa'}}
         </h1>
         <p class="sub center">
-          Quy trình Luật sư đại diện thực hiện giải quyết tranh chấp tại Asoka Law được tuân thủ chặt chẽ theo
-          <b>nguyên tắc CBA.</b><br>
-          Kết quả của việc áp dụng thống nhất quy trình CBA này suốt những năm tháng hành nghề đã mang lại
-          thành công vượt trội đối với tất cả các vụ việc được chúng tôi đại diện.
+          {{global.locale=='vi'?'Quy trình Luật sư đại diện thực hiện giải quyết tranh chấp tại Asoka Law được tuân thủ chặt chẽ theo':'Quy trình Luật sư đại diện thực hiện giải quyết tranh chấp tại Asoka Law được tuân thủ chặt chẽ theo aaa'}}
+          <b>{{global.locale=='vi'?'nguyên tắc CBA.':'nguyên tắc CBA. aaa'}}</b><br>
+          {{global.locale=='vi'?'Kết quả của việc áp dụng thống nhất quy trình CBA này suốt những năm tháng hành nghề đã mang lại thành công vượt trội đối với tất cả các vụ việc được chúng tôi đại diện.':'Kết quả của việc áp dụng thống nhất quy trình CBA này suốt những năm tháng hành nghề đã mang lại thành công vượt trội đối với tất cả các vụ việc được chúng tôi đại diện. aaa'}}
         </p>
       </div>
 
@@ -26,47 +25,44 @@
       <div class="col-md-6">
         <div class="content">
           <div class="pot"><img
-            src="/assets/media/GQTC/nguyen_tac_thanh_cong/Asset 17.svg">
+                  src="/assets/media/GQTC/nguyen_tac_thanh_cong/Asset 17.svg">
           </div>
           <div class="content-body">
             <div class="pot">
               <img src="/assets/media/GQTC/nguyen_tac_thanh_cong/Asset 20.svg">
-              <b>arefulness</b> <i>(cẩn trọng thu thập thông tin)</i>
+              <b>{{global.locale=='vi'?'Từ':'Từ aaa'}}arefulness</b> <i>{{global.locale=='vi'?'(cẩn trọng thu thập thông tin)':'(cẩn trọng thu thập thông tin) aaa'}}</i>
             </div>
-            Cẩn trọng trong việc nghiên cứu hồ sơ, lắng nghe ý kiến của khách
-            hàng, thu thập các dữ liệu nhằm hoàn thiện tổng thể.
+            {{global.locale=='vi'?'Cẩn trọng trong việc nghiên cứu hồ sơ, lắng nghe ý kiến của khách hàng, thu thập các dữ liệu nhằm hoàn thiện tổng thể.':'Cẩn trọng trong việc nghiên cứu hồ sơ, lắng nghe ý kiến của khách hàng, thu thập các dữ liệu nhằm hoàn thiện tổng thể. aaa'}}
           </div>
         </div>
         <div class="content">
           <div class="pot"><img
-            src="/assets/media/GQTC/nguyen_tac_thanh_cong/Asset 18.svg">
+                  src="/assets/media/GQTC/nguyen_tac_thanh_cong/Asset 18.svg">
           </div>
           <div class="content-body">
             <div class="pot">
               <img src="/assets/media/GQTC/nguyen_tac_thanh_cong/Asset 21.svg">
-              <b>ackup</b> <i>(chuẩn bị phương án dự phòng)</i>
+              <b>{{global.locale=='vi'?'Từ':'Từ aaa'}}Backup</b> <i>{{global.locale=='vi'?'(chuẩn bị phương án dự phòng)':'(chuẩn bị phương án dự phòng) aaa'}}</i>
             </div>
-            Bảo vệ cho việc đạt được ý chí của khách hàng bằng cách lên phác
-            đồ xử lý vụ việc và luôn có sẵn phương án dự phòng rủi ro.
+            {{global.locale=='vi'?'Bảo vệ cho việc đạt được ý chí của khách hàng bằng cách lên phác đồ xử lý vụ việc và luôn có sẵn phương án dự phòng rủi ro.':'Bảo vệ cho việc đạt được ý chí của khách hàng bằng cách lên phác đồ xử lý vụ việc và luôn có sẵn phương án dự phòng rủi ro. aaa'}}
           </div>
         </div>
         <div class="content">
           <div class="pot"><img
-            src="/assets/media/GQTC/nguyen_tac_thanh_cong/Asset 19.svg">
+                  src="/assets/media/GQTC/nguyen_tac_thanh_cong/Asset 19.svg">
           </div>
           <div class="content-body">
             <div class="pot">
               <img src="/assets/media/GQTC/nguyen_tac_thanh_cong/Asset 22.svg">
-              <b>daptability</b> <i>(thích ứng để giải quyết nhanh)</i>
+              <b>{{global.locale=='vi'?'Từ':'Từ aaa'}}daptability</b> <i>{{global.locale=='vi'?'(thích ứng để giải quyết nhanh)':'(thích ứng để giải quyết nhanh) aaa'}}</i>
             </div>
-            Nếu có tình huống phát sinh ngoài dự liệu, phải thích ứng và giải
-            quyết nhanh chóng nhằm giành được thế chủ động.
+            {{global.locale=='vi'?'Nếu có tình huống phát sinh ngoài dự liệu, phải thích ứng và giải quyết nhanh chóng nhằm giành được thế chủ động.':'Nếu có tình huống phát sinh ngoài dự liệu, phải thích ứng và giải quyết nhanh chóng nhằm giành được thế chủ động. aaa'}}
           </div>
         </div>
         <div class="content button-three" style="display: block; width: fit-content; text-align: center;">
-          <button onclick="$('#gqtcform1').modal('show')" class="btn btn-warning sub-button">Đăng ký nhận tư vấn</button>
+          <button onclick="$('#gqtcform1').modal('show')" class="btn btn-warning sub-button">{{global.locale=='vi'?'Đăng ký nhận tư vấn':'Đăng ký nhận tư vấn aaa'}}</button>
           <br>
-          <i class="security"><span>*</span>Cam kết bảo mật thông tin</i>
+          <i class="security"><span>*</span>{{global.locale=='vi'?'Cam kết bảo mật thông tin':'Cam kết bảo mật thông tin aaa'}}</i>
         </div>
       </div>
       <!-- </Change> -->

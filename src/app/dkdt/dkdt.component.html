@@ -3,24 +3,18 @@
         <div class="row d-md-block d-none">
             <div class="col-md-7" style="padding-top: 170px; ">
                 <h1 style="line-height: 60px; font-weight: 500; font-family:'Montserrat',sans-serif; font-size: 45px; color: black;">
-                    Yên tâm kinh doanh trên lãnh thổ Việt Nam</h1>
-                <p style="margin-top: 40px; font-size: 16px; font-weight: 200; line-height: 30px;">Asoka Law đã giúp
-                    100+ nhà đầu tư nước ngoài kinh doanh thành công tại Việt Nam, từ khởi tạo đến khi phát triển
-                    thành công ty toàn cầu.</p>
+                    {{global.locale=='vi'?'Yên tâm kinh doanh trên lãnh thổ Việt Nam':'Yên tâm kinh doanh trên lãnh thổ Việt Nam aaa'}}</h1>
+                <p style="margin-top: 40px; font-size: 16px; font-weight: 200; line-height: 30px;">{{global.locale=='vi'?'Asoka Law đã giúp 100+ nhà đầu tư nước ngoài kinh doanh thành công tại Việt Nam, từ khởi tạo đến khi phát triển thành công ty toàn cầu.':'Asoka Law đã giúp 100+ nhà đầu tư nước ngoài kinh doanh thành công tại Việt Nam, từ khởi tạo đến khi phát triển thành công ty toàn cầu. aaa'}}</p>
                 <div>
-                    <button onclick="$('#dkdtform1').modal('show')" style="padding: 10px 40px; margin-top: 60px;" class="btn btn-warning shadow-lg">Xem báo giá chi tiết</button>
+                    <button onclick="$('#dkdtform1').modal('show')" style="padding: 10px 40px; margin-top: 60px;" class="btn btn-warning shadow-lg">{{global.locale=='vi'?'Xem báo giá chi tiết':'Xem báo giá chi tiết aaa'}}</button>
                 </div>
             </div>
         </div>
         <div class="row d-md-none d-block">
-            <div class="col-sm-12 pt-md-5"><h1 style=" text-align: center;font-family:'Montserrat'; color: black;">Yên
-                tâm kinh doanh trên lãnh
-                thổ Việt Nam</h1>
-                <p style=" text-align: center;font-weight: 200; line-height: 30px;">Asoka Law đã giúp 100+ nhà đầu
-                    tư nước ngoài kinh
-                    doanh thành công tại Việt Nam, từ khởi tạo đến khi phát triển thành công ty toàn cầu.</p>
+            <div class="col-sm-12 pt-md-5"><h1 style=" text-align: center;font-family:'Montserrat'; color: black;">{{global.locale=='vi'?'Yên tâm kinh doanh trên lãnh thổ Việt Nam':'Yên tâm kinh doanh trên lãnh thổ Việt Nam aaa'}}</h1>
+                <p style=" text-align: center;font-weight: 200; line-height: 30px;">{{global.locale=='vi'?'Asoka Law đã giúp 100+ nhà đầu tư nước ngoài kinh doanh thành công tại Việt Nam, từ khởi tạo đến khi phát triển thành công ty toàn cầu.':'Asoka Law đã giúp 100+ nhà đầu tư nước ngoài kinh doanh thành công tại Việt Nam, từ khởi tạo đến khi phát triển thành công ty toàn cầu. aaa'}}</p>
                 <div class="text-center">
-                    <button onclick="$('#dkdtform1').modal('show')" style="padding: 10px 40px;" class="btn btn-warning shadow-lg">Xem báo giá chi tiết</button>
+                    <button onclick="$('#dkdtform1').modal('show')" style="padding: 10px 40px;" class="btn btn-warning shadow-lg">{{global.locale=='vi'?'Xem báo giá chi tiết':'Xem báo giá chi tiết aaa'}}</button>
                 </div>
             </div>
         </div>
@@ -30,10 +24,10 @@
 <app-dkdtreason></app-dkdtreason>
 <app-global-lawyer (showregistrationform)="showRegistrationForm($event)">
     <div>
-        <h1 class="sub-content-no-fluid" style="padding-top: 45px!important;">Luật sư và cố vấn 10+ năm kinh nghiệm</h1>
+        <h1 class="sub-content-no-fluid" style="padding-top: 45px!important;">{{global.locale=='vi'?'Luật sư và cố vấn 10+ năm kinh nghiệm':'Luật sư và cố vấn 10+ năm kinh nghiệm aaa'}}</h1>
     </div>
     <p class="center sub-content-no-fluid" style="padding-bottom: 45px!important;">
-        Đội ngũ luật sư và cố vấn của chúng tôi đều trải qua 10+ năm kinh nghiệm trong lĩnh vực pháp lý doanh nghiệp và đầu tư. Chia sẻ với chúng tôi dự định kinh doanh của bạn tại Việt Nam, Asoka sẽ giúp bạn thực thi với một nền móng pháp lý vững chắc.
+        {{global.locale=='vi'?'Đội ngũ luật sư và cố vấn của chúng tôi đều trải qua 10+ năm kinh nghiệm trong lĩnh vực pháp lý doanh nghiệp và đầu tư. Chia sẻ với chúng tôi dự định kinh doanh của bạn tại Việt Nam, Asoka sẽ giúp bạn thực thi với một nền móng pháp lý vững chắc.':'Đội ngũ luật sư và cố vấn của chúng tôi đều trải qua 10+ năm kinh nghiệm trong lĩnh vực pháp lý doanh nghiệp và đầu tư. Chia sẻ với chúng tôi dự định kinh doanh của bạn tại Việt Nam, Asoka sẽ giúp bạn thực thi với một nền móng pháp lý vững chắc. aaa'}}
     </p>
 </app-global-lawyer>
 <app-dkdtfeedback></app-dkdtfeedback>
@@ -43,22 +37,20 @@
 <section class="sub bg-image center">
     <div class="container">
         <div class="row d-none d-md-flex">
-            <div class="col-md-8" style="text-align: left;">Chúng tôi tự hào là <b>cộng sự tận tâm cho 100+ nhà đầu
-                tư</b><br>nước ngoài kinh doanh thành công tại Việt Nam.
+            <div class="col-md-8" style="text-align: left;">{{global.locale=='vi'?'Chúng tôi tự hào là ':'Chúng tôi tự hào là  aaa'}}<b>{{global.locale=='vi'?'cộng sự tận tâm cho 100+ nhà đầu tư':'cộng sự tận tâm cho 100+ nhà đầu tư aaa'}}</b><br>{{global.locale=='vi'?'nước ngoài kinh doanh thành công tại Việt Nam.':'nước ngoài kinh doanh thành công tại Việt Nam. aaa'}}
             </div>
             <div class="col-md-4">
                 <div style="width: fit-content; float:right ; ">
-                    <button onclick="$('#dkdtform1').modal('show')" style="padding: 8px 15px; font-size: 16px;" class="btn btn-warning sub-button shadow">Yêu cầu tư vấn</button>
+                    <button onclick="$('#dkdtform1').modal('show')" style="padding: 8px 15px; font-size: 16px;" class="btn btn-warning sub-button shadow">{{global.locale=='vi'?'Yêu cầu tư vấn':'Yêu cầu tư vấn aaa'}}</button>
                 </div>
             </div>
         </div>
         <div class="row d-block d-md-none">
-            <div class="col-md-8">Chúng tôi tự hào là <b>cộng sự tận tâm cho 100+ nhà đầu
-                tư</b><br>nước ngoài kinh doanh thành công tại Việt Nam.
+            <div class="col-md-8">{{global.locale=='vi'?'Chúng tôi tự hào là ':'Chúng tôi tự hào là  aaa'}}<b>{{global.locale=='vi'?'cộng sự tận tâm cho 100+ nhà đầu tư':'cộng sự tận tâm cho 100+ nhà đầu tư aaa'}}</b><br>{{global.locale=='vi'?'nước ngoài kinh doanh thành công tại Việt Nam.':'nước ngoài kinh doanh thành công tại Việt Nam. aaa'}}
             </div>
             <div class="col-md-4 pt-3">
                 <div>
-                    <button onclick="$('#dkdtform1').modal('show')" style="padding: 8px 15px; font-size: 16px;" class="btn btn-warning sub-button shadow">Yêu cầu tư vấn</button>
+                    <button onclick="$('#dkdtform1').modal('show')" style="padding: 8px 15px; font-size: 16px;" class="btn btn-warning sub-button shadow">{{global.locale=='vi'?'Yêu cầu tư vấn':'Yêu cầu tư vấn aaa'}}</button>
                 </div>
             </div>
         </div>
@@ -74,25 +66,25 @@
             </div>
             <div class="modal-body">
                 <div class="form-group">
-                    <input (keyup)="n=true" [class.is-invalid]="!fieldValid(name)&&n" [class.is-valid]="fieldValid(name)&&n" type="text" class="form-control" [(ngModel)]="name" name="name" placeholder="Họ tên *">
-                    <i *ngIf="!fieldValid(name) && n"><small class="text-danger">Bắt buộc nhập họ tên.</small></i>
+                    <input (keyup)="n=true" [class.is-invalid]="!fieldValid(name)&&n" [class.is-valid]="fieldValid(name)&&n" type="text" class="form-control" [(ngModel)]="name" name="name" placeholder="{{global.locale=='vi'?'Họ tên *':'Họ tên * aaa'}}">
+                    <i *ngIf="!fieldValid(name) && n"><small class="text-danger">{{global.locale=='vi'?'Bắt buộc nhập họ tên.':'Bắt buộc nhập họ tên. aaa'}}</small></i>
                 </div>
                 <div class="form-group">
-                    <input (keyup)="p=true" [class.is-invalid]="!fieldValid(phone,'phone')&&p" [class.is-valid]="fieldValid(phone,'phone')&&p" class="form-control" [(ngModel)]="phone" name="phone" type="text" placeholder="Số điện thoại *"/>
-                    <i *ngIf="!fieldValid(phone,'phone') && p"><small class="text-danger">Bắt buộc nhập số điện thoại hợp lệ.</small></i>
+                    <input (keyup)="p=true" [class.is-invalid]="!fieldValid(phone,'phone')&&p" [class.is-valid]="fieldValid(phone,'phone')&&p" class="form-control" [(ngModel)]="phone" name="phone" type="text" placeholder="{{global.locale=='vi'?'Số điện thoại *':'Số điện thoại * aaa'}}"/>
+                    <i *ngIf="!fieldValid(phone,'phone') && p"><small class="text-danger">{{global.locale=='vi'?'Bắt buộc nhập số điện thoại hợp lệ.':'Bắt buộc nhập số điện thoại hợp lệ. aaa'}}</small></i>
                 </div>
                 <div class="form-group">
-                    <input (keyup)="e=true" [class.is-invalid]="!fieldValid(email,'email')&&e" [class.is-valid]="fieldValid(email,'email')&&e" class="form-control" name="email" [(ngModel)]="email" type="text" placeholder="Email *"/>
-                    <i *ngIf="!fieldValid(email,'email') && e"><small class="text-danger">Bắt buộc nhập email hợp lệ.</small></i>
+                    <input (keyup)="e=true" [class.is-invalid]="!fieldValid(email,'email')&&e" [class.is-valid]="fieldValid(email,'email')&&e" class="form-control" name="email" [(ngModel)]="email" type="text" placeholder="{{global.locale=='vi'?'Email *':'Email * aaa'}}"/>
+                    <i *ngIf="!fieldValid(email,'email') && e"><small class="text-danger">{{global.locale=='vi'?'Bắt buộc nhập email hợp lệ.':'Bắt buộc nhập email hợp lệ. aaa'}}</small></i>
                 </div>
                 <div class="form-group">
-                    <label>Chọn hình thức đăng ký đầu tư phù hợp với bạn</label>
+                    <label>{{global.locale=='vi'?'Chọn hình thức đăng ký đầu tư phù hợp với bạn':'Chọn hình thức đăng ký đầu tư phù hợp với bạn aaa'}}</label>
                     <div class="container-fluid">
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="form-check form-check-inline">
                                     <input [(ngModel)]="form" [checked]="form=='Thành lập doanh nghiệp mới'" name="form" class="form-check-input" type="radio" value="Thành lập doanh nghiệp mới">
-                                    <span class="form-check-label">Thành lập doanh nghiệp mới</span>
+                                    <span class="form-check-label">{{global.locale=='vi'?'Thành lập doanh nghiệp mới':'Thành lập doanh nghiệp mới aaa'}}</span>
                                 </div>
                             </div>
                         </div>
@@ -100,38 +92,38 @@
                             <div class="col-md-12">
                                 <div class="form-check form-check-inline">
                                     <input [(ngModel)]="form" [checked]="form=='Góp hoặc mua cổ phần/vốn góp'" name="form" class="form-check-input" type="radio" value="Góp hoặc mua cổ phần/vốn góp">
-                                    <span class="form-check-label">Góp hoặc mua cổ phần/vốn góp</span>
+                                    <span class="form-check-label">{{global.locale=='vi'?'Góp hoặc mua cổ phần/vốn góp':'Góp hoặc mua cổ phần/vốn góp aaa'}}</span>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="form-group">
-                    <label>Gói dịch vụ bạn muốn đăng ký</label>
+                    <label>{{global.locale=='vi'?'Gói dịch vụ bạn muốn đăng ký':'Gói dịch vụ bạn muốn đăng ký aaa'}}</label>
                     <div class="container-fluid">
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-check form-check-inline">
                                     <input [(ngModel)]="service" [checked]="service=='Gói tiết kiệm'" name="service" class="form-check-input" type="radio" value="Gói tiết kiệm">
-                                    <span class="form-check-label">Gói tiết kiệm</span>
+                                    <span class="form-check-label">{{global.locale=='vi'?'Gói tiết kiệm':'Gói tiết kiệm aaa'}}</span>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-check form-check-inline">
                                     <input [(ngModel)]="service" [checked]="service=='Gói toàn diện'" name="service" class="form-check-input" type="radio" value="Gói toàn diện">
-                                    <span class="form-check-label">Gói toàn diện</span>
+                                    <span class="form-check-label">{{global.locale=='vi'?'Gói toàn diện':'Gói toàn diện aaa'}}</span>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="form-group problem">
-                    <label>Mô tả dự định ban đầu của bạn</label>
+                    <label>{{global.locale=='vi'?'Mô tả dự định ban đầu của bạn':'Mô tả dự định ban đầu của bạn aaa'}}</label>
                     <textarea class="form-control" [(ngModel)]="description" name="description" rows="2"></textarea>
                 </div>
             </div>
             <div class="modal-footer" style="text-align: center;">
-                <button style="margin: auto; color: white;" (click)="submit()" type="button" class="btn btn-warning">Gửi yêu cầu</button>
+                <button style="margin: auto; color: white;" (click)="submit()" type="button" class="btn btn-warning">{{global.locale=='vi'?'Gửi yêu cầu':'Gửi yêu cầu aaa'}}</button>
             </div>
         </div>
     </div>

@@ -2,13 +2,9 @@
     <div class="container">
         <div class="row">
             <div class="col-md-6 title-banner">
-                <h1>Quản trị doanh nghiệp
-                    hiệu quả <b class="light-blue">"4 trong 1"</b></h1>
-                <p class="sub">Asoka Law có kinh nghiệm tuyệt vời để giải quyết 4 vấn đề <b class="font-weight-bold">pháp
-                    lý
-                    – hợp đồng – thuế – lao động</b>, nhằm tiết kiệm cho doanh nghiệp
-                    hơn 80% chi phí vận hành.</p>
-                <button onclick="$('#pltxform1').modal('show')" type="button" class="btn btn-warning">BẮT ĐẦU DÙNG THỬ</button>
+                <h1>{{global.locale=='vi'?'Quản trị doanh nghiệp hiệu quả ':'Quản trị doanh nghiệp hiệu quả  aaa'}}<b class="light-blue">{{global.locale=='vi'?'"4 trong 1"':'"4 trong 1" aaa'}}</b></h1>
+                <p class="sub">{{global.locale=='vi'?'Asoka Law có kinh nghiệm tuyệt vời để giải quyết 4 vấn đề ':'Asoka Law có kinh nghiệm tuyệt vời để giải quyết 4 vấn đề  aaa'}}<b class="font-weight-bold">{{global.locale=='vi'?'pháp lý – hợp đồng – thuế – lao động':'pháp lý – hợp đồng – thuế – lao động aaa'}}</b>{{global.locale=='vi'?', nhằm tiết kiệm cho doanh nghiệp hơn 80% chi phí vận hành.':', nhằm tiết kiệm cho doanh nghiệp hơn 80% chi phí vận hành. aaa'}}</p>
+                <button onclick="$('#pltxform1').modal('show')" type="button" class="btn btn-warning">{{global.locale=='vi'?'BẮT ĐẦU DÙNG THỬ':'BẮT ĐẦU DÙNG THỬ aaa'}}</button>
             </div>
         </div>
     </div>
@@ -31,49 +27,49 @@
                 </button>
             </div>
             <div class="modal-body">
-                <h4 class="text-center">Dùng thử miễn phí 0 đồng ngay hôm nay</h4>
+                <h4 class="text-center">{{global.locale=='vi'?'Dùng thử miễn phí 0 đồng ngay hôm nay':'Dùng thử miễn phí 0 đồng ngay hôm nay aaa'}}</h4>
                 <div class="form-group">
                     <input (keyup)="n=true" [class.is-invalid]="!fieldValid(name)&&n" [class.is-valid]="fieldValid(name)&&n" type="text" class="form-control" [(ngModel)]="name" name="name" placeholder="Họ tên *">
-                    <i *ngIf="!fieldValid(name) && n"><small class="text-danger">Bắt buộc nhập họ tên.</small></i>
+                    <i *ngIf="!fieldValid(name) && n"><small class="text-danger">{{global.locale=='vi'?'Bắt buộc nhập họ tên.':'Bắt buộc nhập họ tên. aaa'}}</small></i>
                 </div>
                 <div class="form-group">
                     <input (keyup)="p=true" [class.is-invalid]="!fieldValid(phone,'phone')&&p" [class.is-valid]="fieldValid(phone,'phone')&&p" class="form-control" [(ngModel)]="phone" name="phone" type="text" placeholder="Số điện thoại *"/>
-                    <i *ngIf="!fieldValid(phone,'phone') && p"><small class="text-danger">Bắt buộc nhập số điện thoại hợp lệ.</small></i>
+                    <i *ngIf="!fieldValid(phone,'phone') && p"><small class="text-danger">{{global.locale=='vi'?'Bắt buộc nhập số điện thoại hợp lệ.':'Bắt buộc nhập số điện thoại hợp lệ. aaa'}}</small></i>
                 </div>
                 <div class="form-group">
                     <input (keyup)="e=true" [class.is-invalid]="!fieldValid(email,'email')&&e" [class.is-valid]="fieldValid(email,'email')&&e" class="form-control" name="email" [(ngModel)]="email" type="text" placeholder="Email *"/>
-                    <i *ngIf="!fieldValid(email,'email') && e"><small class="text-danger">Bắt buộc nhập email hợp lệ.</small></i>
+                    <i *ngIf="!fieldValid(email,'email') && e"><small class="text-danger">{{global.locale=='vi'?'Bắt buộc nhập email hợp lệ.':'Bắt buộc nhập email hợp lệ. aaa'}}</small></i>
                 </div>
                 <div class="form-group">
-                    <label>Chọn gói dịch vụ phù hợp với nhu cầu của bạn</label>
+                    <label>{{global.locale=='vi'?'Chọn gói dịch vụ phù hợp với nhu cầu của bạn':'Chọn gói dịch vụ phù hợp với nhu cầu của bạn aaa'}}</label>
                     <div class="container-fluid">
                         <div class="row">
                             <div class="col-md-4">
                                 <div class="form-check form-check-inline">
                                     <input [(ngModel)]="package" [checked]="package=='Gói cơ bản'" name="package" class="form-check-input" type="radio" value="Gói cơ bản">
-                                    <span class="form-check-label">Gói cơ bản</span>
+                                    <span class="form-check-label">{{global.locale=='vi'?'Gói cơ bản':'Gói cơ bản aaa'}}</span>
                                 </div>
                             </div>
                             <div class="col-md-4">
                                 <div class="form-check form-check-inline">
                                     <input [(ngModel)]="package" [checked]="package=='Gói toàn diện'" name="package" class="form-check-input" type="radio" value="Gói toàn diện">
-                                    <span class="form-check-label">Gói toàn diện</span>
+                                    <span class="form-check-label">{{global.locale=='vi'?'Gói toàn diện':'Gói toàn diện aaa'}}</span>
                                 </div>
                             </div>
                             <div class="col-md-4">
                                 <div class="form-check form-check-inline">
                                     <input [(ngModel)]="package" [checked]="package=='Gói cộng sự'" name="package" class="form-check-input" type="radio" value="Gói cộng sự">
-                                    <span class="form-check-label">Gói cộng sự</span>
+                                    <span class="form-check-label">{{global.locale=='vi'?'Gói cộng sự':'Gói cộng sự aaa'}}</span>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <p><i><small>Chuyên viên của Asoka sẽ liên lạc với bạn ngay trong 05 phút để xác nhận thông tin này.</small></i><br/>
-                    <i><small>Bạn vui lòng kiểm tra điện thoại/tin nhắn/email để không bỏ sót thông tin từ chúng tôi. Xin cảm ơn.</small></i></p>
+                <p><i><small>{{global.locale=='vi'?'Chuyên viên của Asoka sẽ liên lạc với bạn ngay trong 05 phút để xác nhận thông tin này.':'Chuyên viên của Asoka sẽ liên lạc với bạn ngay trong 05 phút để xác nhận thông tin này. aaa'}}</small></i><br/>
+                    <i><small>{{global.locale=='vi'?'Bạn vui lòng kiểm tra điện thoại/tin nhắn/email để không bỏ sót thông tin từ chúng tôi. Xin cảm ơn.':'Bạn vui lòng kiểm tra điện thoại/tin nhắn/email để không bỏ sót thông tin từ chúng tôi. Xin cảm ơn. aaa'}}</small></i></p>
             </div>
             <div class="modal-footer" style="text-align: center;">
-                <button style="margin: auto; color: white;" (click)="submit()" type="button" class="btn btn-warning">Bắt đầu dùng thử</button>
+                <button style="margin: auto; color: white;" (click)="submit()" type="button" class="btn btn-warning">{{global.locale=='vi'?'Bắt đầu dùng thử':'Bắt đầu dùng thử aaa'}}</button>
             </div>
         </div>
     </div>

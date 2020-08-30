@@ -34,12 +34,12 @@
                             <span class="fa fa-star checked"></span>
                             <span class="fa fa-star checked"></span>
                         </p>
-                        <p class="btn-link btn-business">{{item.consult_count}} lượt đặt tư vấn</p>
+                        <p class="btn-link btn-business">{{item.consult_count}}{{global.locale=='vi'?' lượt đặt tư vấn':' lượt đặt tư vấn aaa'}}</p>
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-12" style="text-align: left;padding-top: 4%;">
                     <div class="experience-business">
-                        <h5 style="color: #00c4ffbf">Kinh nghiệm làm việc</h5>
+                        <h5 style="color: #00c4ffbf">{{global.locale=='vi'?'Kinh nghiệm làm việc':'Kinh nghiệm làm việc aaa'}}</h5>
                         <ng-container *ngIf="global.locale=='vi'">
                             <div *ngFor="let exp of item.exp" class="tab-business">
                                 <i class="fa fa-circle icon-child"></i>
@@ -56,7 +56,7 @@
                 </div>
                 <div class="col-md-4 col-sm-12" style="text-align: left;padding-top: 4%;">
                     <div style="">
-                        <h5 style="color: #00c4ffbf;font-family: 'Montserrat', sans-serif;">Bằng cấp & ngôn ngữ</h5>
+                        <h5 style="color: #00c4ffbf;font-family: 'Montserrat', sans-serif;">{{global.locale=='vi'?'Bằng cấp & ngôn ngữ':'Bằng cấp & ngôn ngữ aaa'}}</h5>
                         <ng-container *ngIf="global.locale=='vi'">
                             <div *ngFor="let cert of item.cert" class="tab-business">
                                 <i class="fa fa-circle icon-child"></i>
@@ -73,7 +73,7 @@
                 </div>
                 <div class="col-md-12 ">
                     <button (click)="submit(true)" class=" btn btn-warning padding" style="color: white;margin-bottom: 20px;" type="button">
-                        Đặt lịch tư vấn với luật sư
+                        {{global.locale=='vi'?'Đặt lịch tư vấn với luật sư':'Đặt lịch tư vấn với luật sư aaa'}}
                     </button>
                 </div>
             </div>

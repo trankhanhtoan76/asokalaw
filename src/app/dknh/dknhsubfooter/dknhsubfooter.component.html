@@ -1,11 +1,11 @@
 <section id="sub">
     <div class="subFooter">
         <div class="title-banner flex-center-hor flex-center-sub">
-            <h4><span style="color: grey;font-size: 1.25rem">Đăng ký nhãn hiệu sớm để</span>
-                <br>Bảo vệ nhãn hiệu độc quyền ngay hôm nay<br/></h4>
+            <h4><span style="color: grey;font-size: 1.25rem">{{global.locale=='vi'?'Đăng ký nhãn hiệu sớm để':'Đăng ký nhãn hiệu sớm để aaa'}}</span>
+                <br>{{global.locale=='vi'?'Bảo vệ nhãn hiệu độc quyền ngay hôm nay':'Bảo vệ nhãn hiệu độc quyền ngay hôm nay aaa'}}<br/></h4>
         </div>
         <div class="flex-center-hor">
-            <button onclick="$('#dknhform1').modal('show')" type="button" class="btn btn-warning">TƯ VẤN MIỄN PHÍ</button>
+            <button onclick="$('#dknhform1').modal('show')" type="button" class="btn btn-warning">{{global.locale=='vi'?'TƯ VẤN MIỄN PHÍ':'TƯ VẤN MIỄN PHÍ aaa'}}</button>
         </div>
     </div>
     <div class="container">
@@ -15,7 +15,7 @@
                         <img class="ingHeight" src="/assets/media/DKNH/SVG-Promote/Asset 30.svg">
                     </span>
                 <b class="fontSize">3000+</b>
-                <span>Logo đã đăng ký<br/>thành công</span>
+                <span>{{global.locale=='vi'?'Logo đã đăng ký':'Logo đã đăng ký aaa'}}<br/>{{global.locale=='vi'?'thành công':'thành công aaa'}}</span>
             </div>
             <div class="logo pc">
             </div>
@@ -26,7 +26,7 @@
                 <b class="fontSize">
                     50+
                 </b>
-                <span>Logo đăng ký<br/>quốc tế</span>
+                <span>{{global.locale=='vi'?'Logo đăng ký':'Logo đăng ký aaa'}}<br/>{{global.locale=='vi'?'quốc tế':'quốc tế aaa'}}</span>
             </div>
         </div>
     </div>

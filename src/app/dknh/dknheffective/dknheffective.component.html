@@ -4,10 +4,11 @@
     <div class="container center">
         <div class="row">
             <div class="col-md-12">
-                <h1 class="center" style="margin-bottom: 2rem">Asoka đồng hành bảo vệ nhãn hiệu độc quyền</h1>
-                <p style="text-align: -webkit-match-parent">Doanh nghiệp của bản không đơn độc một mình.Bằng tất cả sự
-                    tận tâm, chúng tôi đã <b style="color: black;">bảo vệ thành công cho 3000+</b> nhãn hiệu.
-                    <br>Doanh nghiệp hoàn toàn yên tâm kinh doanh với 5 lợi ích quan trọng này.<br/></p>
+                <h1 class="center" style="margin-bottom: 2rem">{{global.locale=='vi'?'Asoka đồng hành bảo vệ nhãn hiệu độc quyền':'Asoka đồng hành bảo vệ nhãn hiệu độc quyền aaa'}}</h1>
+                <p style="text-align: -webkit-match-parent">{{global.locale=='vi'?'Doanh nghiệp của bản không đơn độc một mình.Bằng tất cả sự\n' +
+                    '                    tận tâm, chúng tôi đã ':'Doanh nghiệp của bản không đơn độc một mình.Bằng tất cả sự\n' +
+                    '                    tận tâm, chúng tôi đã  aaa'}}<b style="color: black;">{{global.locale=='vi'?'bảo vệ thành công cho 3000+':'bảo vệ thành công cho 3000+ aaa'}}</b>{{global.locale=='vi'?'nhãn hiệu.':'nhãn hiệu. aaa'}}
+                    <br>{{global.locale=='vi'?'Doanh nghiệp hoàn toàn yên tâm kinh doanh với 5 lợi ích quan trọng này.':'Doanh nghiệp hoàn toàn yên tâm kinh doanh với 5 lợi ích quan trọng này. aaa'}}<br/></p>
                 <hr>
             </div>
         </div>
@@ -17,52 +18,57 @@
                     <div class="content-record">
                         <div class="float-left title-record">
                             <img src="/assets/media/DKNH/Quotes/Asset 6.svg">
-                            <h4>Xác lập quyền sở hữu</h4>
+                            <h4>{{global.locale=='vi'?'Xác lập quyền sở hữu':'Xác lập quyền sở hữu aaa'}}</h4>
                         </div>
                         <div class="desRecord float-right">
-                            <p> Khẳng định chủ quyền đối với nhãn hiệu dưới cơ sở được pháp luật chứng thực bằng
-                                Giấy chứng nhận đăng ký nhãn hiệu.
+                            <p> {{global.locale=='vi'?'Khẳng định chủ quyền đối với nhãn hiệu dưới cơ sở được pháp luật chứng thực bằng\n' +
+                                '                                Giấy chứng nhận đăng ký nhãn hiệu.':'Khẳng định chủ quyền đối với nhãn hiệu dưới cơ sở được pháp luật chứng thực bằng\n' +
+                                '                                Giấy chứng nhận đăng ký nhãn hiệu. aaa'}}
                             </p>
                         </div>
                     </div>
                     <div class="content-record">
                         <div class="float-left title-record">
                             <img src="/assets/media/DKNH/Quotes/Asset 6.svg">
-                            <h4>Tránh xâm nhập nhãn hiệu</h4>
+                            <h4>{{global.locale=='vi'?'Tránh xâm nhập nhãn hiệu':'Tránh xâm nhập nhãn hiệu aaa'}}</h4>
                         </div>
                         <div class="desRecord float-right">
-                            <p>Phòng tránh nguy cơ nhãn hiệu bị các bên khác "ăn cắp", "làm giả", "làm nhái", gây
-                                trùng, gây nhằm lẫn trong quá trình kinh doanh.</p>
+                            <p>{{global.locale=='vi'?'Phòng tránh nguy cơ nhãn hiệu bị các bên khác "ăn cắp", "làm giả", "làm nhái", gây\n' +
+                                '                                trùng, gây nhằm lẫn trong quá trình kinh doanh.':'Phòng tránh nguy cơ nhãn hiệu bị các bên khác "ăn cắp", "làm giả", "làm nhái", gây\n' +
+                                '                                trùng, gây nhằm lẫn trong quá trình kinh doanh. aaa'}}</p>
                         </div>
                     </div>
                     <div class="content-record">
                         <div class="float-left title-record">
                             <img src="/assets/media/DKNH/Quotes/Asset 6.svg">
-                            <h4> Yêu cầu bồi thường thiệt hại</h4>
+                            <h4> {{global.locale=='vi'?'Yêu cầu bồi thường thiệt hại':'Yêu cầu bồi thường thiệt hại aaa'}}</h4>
                         </div>
                         <div class="desRecord float-right">
-                            <p>Yêu cầu các bên xâm phạm dừng và bồi thường thiệt hại về các hình vi gây tổn thất
-                                cho doanh nghiệp sở hữu nhãn hiệu được bảo hộ.</p>
+                            <p>{{global.locale=='vi'?'Yêu cầu các bên xâm phạm dừng và bồi thường thiệt hại về các hình vi gây tổn thất\n' +
+                                '                                cho doanh nghiệp sở hữu nhãn hiệu được bảo hộ.':'Yêu cầu các bên xâm phạm dừng và bồi thường thiệt hại về các hình vi gây tổn thất\n' +
+                                '                                cho doanh nghiệp sở hữu nhãn hiệu được bảo hộ. aaa'}}</p>
                         </div>
                     </div>
                     <div class="content-record">
                         <div class="float-left title-record">
                             <img src="/assets/media/DKNH/Quotes/Asset 6.svg">
-                            <h4> Tiến hành khiếu nại khiếu kiện</h4>
+                            <h4> {{global.locale=='vi'?'Tiến hành khiếu nại khiếu kiện':'Tiến hành khiếu nại khiếu kiện aaa'}}</h4>
                         </div>
                         <div class="desRecord float-right">
-                            <p>Lập căn cứ pháp lý để phản đối việc cấp văn bằng cho các bên vô ý/cố ý gây trùng,
-                                gây
-                                nhằm lẫn đối với nhãn hiệu của chủ sở hữu.</p>
+                            <p>{{global.locale=='vi'?'Lập căn cứ pháp lý để phản đối việc cấp văn bằng cho các bên vô ý/cố ý gây trùng,\n' +
+                                '                                gây\n' +
+                                '                                nhằm lẫn đối với nhãn hiệu của chủ sở hữu.':'Lập căn cứ pháp lý để phản đối việc cấp văn bằng cho các bên vô ý/cố ý gây trùng,\n' +
+                                '                                gây\n' +
+                                '                                nhằm lẫn đối với nhãn hiệu của chủ sở hữu. aaa'}}</p>
                         </div>
                     </div>
                     <div class="content-record">
                         <div class="float-left title-record">
                             <img src="/assets/media/DKNH/Quotes/Asset 6.svg">
-                            <h4> Bảo vệ tài sản doanh nghiệp</h4>
+                            <h4> {{global.locale=='vi'?'Bảo vệ tài sản doanh nghiệp':'Bảo vệ tài sản doanh nghiệp aaa'}}</h4>
                         </div>
                         <div class="desRecord float-right">
-                            <p>Tăng giá trị tài sản về sở hữu trí tuệ của doanh nghiệp trong quá trình xây dựng/phát triển và chuyển giao doanh nghiệp.</p>
+                            <p>{{global.locale=='vi'?'Tăng giá trị tài sản về sở hữu trí tuệ của doanh nghiệp trong quá trình xây dựng/phát triển và chuyển giao doanh nghiệp.':'Tăng giá trị tài sản về sở hữu trí tuệ của doanh nghiệp trong quá trình xây dựng/phát triển và chuyển giao doanh nghiệp. aaa'}}</p>
                         </div>
                     </div>
                 </div>
@@ -72,7 +78,7 @@
             </div>
             <div class="container">
                 <div class="flex-center-hor">
-                    <button onclick="$('#dknhform1').modal('show')" type="button" class="btn btn-warning">ĐĂNG KÝ BẢO HỘ NHÃN HIỆU</button>
+                    <button onclick="$('#dknhform1').modal('show')" type="button" class="btn btn-warning">{{global.locale=='vi'?'ĐĂNG KÝ BẢO HỘ NHÃN HIỆU':'ĐĂNG KÝ BẢO HỘ NHÃN HIỆU aaa'}}</button>
                 </div>
             </div>
         </div>

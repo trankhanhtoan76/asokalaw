@@ -3,15 +3,11 @@
         <div class="row">
             <div class="col-md-12 center sub">
                 <h1 class="text-center">
-                    Chọn hình thức đầu tư phù hợp với bạn
+                    {{global.locale=='vi'?'Chọn hình thức đầu tư phù hợp với bạn':'Chọn hình thức đầu tư phù hợp với bạn aaa'}}
                 </h1>
                 <p class="text-center center">
-                    <b>Asoka Law chuyên hỗ trợ nhà đầu tư nước ngoài tại 02 hình thức</b>: (1) thành lập mới doanh
-                    nghiệp và (2) góp vốn, mua cổ phần, vốn góp.
-
-                    <br> Đây cũng là 02 hình thức đầu tư vào Việt Nam phù hợp nhất với cá nhân/ doanh nghiệp nước ngoài
-                    nhỏ
-                    và vừa.
+                    <b>{{global.locale=='vi'?'Asoka Law chuyên hỗ trợ nhà đầu tư nước ngoài tại 02 hình thức':'Asoka Law chuyên hỗ trợ nhà đầu tư nước ngoài tại 02 hình thức aaa'}}</b>{{global.locale=='vi'?': (1) thành lập mới doanh nghiệp và (2) góp vốn, mua cổ phần, vốn góp.':': (1) thành lập mới doanh nghiệp và (2) góp vốn, mua cổ phần, vốn góp. aaa'}}
+                    <br>{{global.locale=='vi'?' Đây cũng là 02 hình thức đầu tư vào Việt Nam phù hợp nhất với cá nhân/ doanh nghiệp nước ngoài nhỏ và vừa.':' Đây cũng là 02 hình thức đầu tư vào Việt Nam phù hợp nhất với cá nhân/ doanh nghiệp nước ngoài nhỏ và vừa. aaa'}}
                 </p>
             </div>
 
@@ -25,13 +21,13 @@
                 <ul class="nav nav-tabs pb-3" id="myTab" role="tablist">
                     <li class="">
                         <a (click)="changepackage('Thành lập doanh nghiệp mới','tab-tldnm-V')" class="nav-link text-center active" id="home-tab" data-toggle="tab" href=".ndn" role="tab"
-                           aria-controls="home" aria-selected="true">Thành lập<br> doanh nghiệp mới</a>
+                           aria-controls="home" aria-selected="true">{{global.locale=='vi'?'Thành lập':'Thành lập aaa'}}<br>{{global.locale=='vi'?' doanh nghiệp mới':' doanh nghiệp mới aaa'}}</a>
 
                     </li>
                     <li class="">
                         <a (click)="changepackage('Góp hoặc mua cổ phần/vốn góp','tab-mcp-V')" class="nav-link text-center"
                            id="profile-tab" data-toggle="tab" href=".tdn" role="tab"
-                           aria-controls="profile" aria-selected="false">Góp hoặc mua<br> cổ phần/vốn góp</a>
+                           aria-controls="profile" aria-selected="false">{{global.locale=='vi'?'Góp hoặc mua':'Góp hoặc mua aaa'}}<br>{{global.locale=='vi'?' cổ phần/vốn góp':' cổ phần/vốn góp aaa'}}</a>
 
                     </li>
 
@@ -41,14 +37,14 @@
 
                 <div class="tab-content" id="myTabContent">
                     <div class="tab-pane fade show active ndn" role="tabpanel" aria-labelledby="home-tab">
-                        <h5 class="d-none d-md-block">Thành lập doanh nghiệp mới</h5>
+                        <h5 class="d-none d-md-block">{{global.locale=='vi'?'Thành lập doanh nghiệp mới':'Thành lập doanh nghiệp mới aaa'}}</h5>
                         <div id="accordionn">
                             <div class="header_custom">
                                 <div class="header-content" id="headingOnee">
 
                                     <a class="btn btn-link" data-toggle="collapse" data-target="#collapseOnee"
                                        aria-expanded="true" aria-controls="collapseOnee">
-                                        Ưu điểm<i
+                                        {{global.locale=='vi'?'Ưu điểm':'Ưu điểm aaa'}}<i
                                             class="icon-right"></i>
                                     </a>
 
@@ -58,18 +54,15 @@
                                      data-parent="#accordionn">
                                     <div class="card-body">
                                         <div class="content-dkdt">
-                                            <i class="fa fa-circle"></i>Nhà đầu tư có thể tùy ý lập kế hoạch kinh doanh
-                                            mới hoàn toàn, dựa trên nguồn lực chủ động của bản thân và cộng sự.
+                                            <i class="fa fa-circle"></i>{{global.locale=='vi'?'Nhà đầu tư có thể tùy ý lập kế hoạch kinh doanh mới hoàn toàn, dựa trên nguồn lực chủ động của bản thân và cộng sự.':'Nhà đầu tư có thể tùy ý lập kế hoạch kinh doanh mới hoàn toàn, dựa trên nguồn lực chủ động của bản thân và cộng sự. aaa'}}
 
                                         </div>
                                         <div class="content-dkdt">
-                                            <i class="fa fa-circle"></i>Chủ động được việc tránh tham gia vào các ngành
-                                            nghề có sự hạn chế của nhà đầu tư nước ngoài.
+                                            <i class="fa fa-circle"></i>{{global.locale=='vi'?'Chủ động được việc tránh tham gia vào các ngành nghề có sự hạn chế của nhà đầu tư nước ngoài.':'Chủ động được việc tránh tham gia vào các ngành nghề có sự hạn chế của nhà đầu tư nước ngoài. aaa'}}
 
                                         </div>
                                         <div class="content-dkdt">
-                                            <i class="fa fa-circle"></i>Chủ doanh nghiệp mới có thể kiểm soát hồ sơ
-                                            doanh nghiệp ngay từ ban đầu, dễ dàng vận hành và quản lý tốt hơn.
+                                            <i class="fa fa-circle"></i>{{global.locale=='vi'?'Chủ doanh nghiệp mới có thể kiểm soát hồ sơ doanh nghiệp ngay từ ban đầu, dễ dàng vận hành và quản lý tốt hơn.':'Chủ doanh nghiệp mới có thể kiểm soát hồ sơ doanh nghiệp ngay từ ban đầu, dễ dàng vận hành và quản lý tốt hơn. aaa'}}
 
                                         </div>
 
@@ -81,7 +74,7 @@
 
                                     <a class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwoo"
                                        aria-expanded="true" aria-controls="collapseTwoo">
-                                        Nhược điểm<i class="icon-right"></i>
+                                        {{global.locale=='vi'?'Nhược điểm':'Nhược điểm aaa'}}<i class="icon-right"></i>
                                     </a>
 
                                 </div>
@@ -90,15 +83,12 @@
                                      data-parent="#accordionn">
                                     <div class="card-body">
                                         <div class="content-dkdt">
-                                            <i class="fa fa-circle"></i>Thủ tục đăng ký tương đối phức tạp hơn so với
-                                            việc mua vốn góp trong doanh nghiệp đã có sẵn.
+                                            <i class="fa fa-circle"></i>{{global.locale=='vi'?'Thủ tục đăng ký tương đối phức tạp hơn so với việc mua vốn góp trong doanh nghiệp đã có sẵn.':'Thủ tục đăng ký tương đối phức tạp hơn so với việc mua vốn góp trong doanh nghiệp đã có sẵn. aaa'}}
 
 
                                         </div>
                                         <div class="content-dkdt">
-                                            <i class="fa fa-circle"></i>Việc khởi tạo thị trường, khách hàng, thương
-                                            hiệu có thể mất thời gian hơn so với việc tham gia vào doanh nghiệp đã có
-                                            sẵn.
+                                            <i class="fa fa-circle"></i>{{global.locale=='vi'?'Việc khởi tạo thị trường, khách hàng, thương hiệu có thể mất thời gian hơn so với việc tham gia vào doanh nghiệp đã có sẵn.':'Việc khởi tạo thị trường, khách hàng, thương hiệu có thể mất thời gian hơn so với việc tham gia vào doanh nghiệp đã có sẵn. aaa'}}
 
 
                                         </div>
@@ -109,14 +99,14 @@
                         </div>
                     </div>
                     <div class="tab-pane fade tdn" role="tabpanel" aria-labelledby="profile-tab">
-                        <h5 class="d-none d-md-block">Góp vốn, mua cổ phần, phần vốn góp</h5>
+                        <h5 class="d-none d-md-block">{{global.locale=='vi'?'Góp vốn, mua cổ phần, phần vốn góp':'Góp vốn, mua cổ phần, phần vốn góp aaa'}}</h5>
                         <div id="accordion">
                             <div class="header_custom">
                                 <div class="header-content" id="headingOne">
 
                                     <a class="btn btn-link" data-toggle="collapse" data-target="#collapseOne"
                                        aria-expanded="true" aria-controls="collapseOne">
-                                        Ưu điểm<i class="icon-right"></i>
+                                        {{global.locale=='vi'?'Ưu điểm':'Ưu điểm aaa'}}<i class="icon-right"></i>
                                     </a>
 
                                 </div>
@@ -125,22 +115,13 @@
                                      data-parent="#accordion">
                                     <div class="card-body">
                                         <div class="content-dkdt">
-                                            <i class="fa fa-circle"></i>Nhà đầu tư nhanh chóng thực hiện được việc kinh
-                                            doanh dựa trên nền tảng
-                                            hồ
-                                            sơ/giấy phép doanh nghiệp cũ đã có sẵn.
+                                            <i class="fa fa-circle"></i>{{global.locale=='vi'?'Nhà đầu tư nhanh chóng thực hiện được việc kinh doanh dựa trên nền tảng hồ sơ/giấy phép doanh nghiệp cũ đã có sẵn.':'Nhà đầu tư nhanh chóng thực hiện được việc kinh doanh dựa trên nền tảng hồ sơ/giấy phép doanh nghiệp cũ đã có sẵn. aaa'}}
                                         </div>
                                         <div class="content-dkdt">
-                                            <i class="fa fa-circle"></i> Tiếp cận ngay với thị trường, khách hàng cũ, từ
-                                            đó việc phát triển kinh
-                                            doanh có
-                                            thể dễ dàng hơn so với việc thành lập doanh nghiệp mới hoàn toàn.
+                                            <i class="fa fa-circle"></i>{{global.locale=='vi'?' Tiếp cận ngay với thị trường, khách hàng cũ, từ đó việc phát triển kinh doanh có thể dễ dàng hơn so với việc thành lập doanh nghiệp mới hoàn toàn.':' Tiếp cận ngay với thị trường, khách hàng cũ, từ đó việc phát triển kinh doanh có thể dễ dàng hơn so với việc thành lập doanh nghiệp mới hoàn toàn. aaa'}}
                                         </div>
                                         <div class="content-dkdt">
-                                            <i class="fa fa-circle"></i> Thủ tục đăng ký góp vốn, mua cổ phần, phần vốn
-                                            góp nhìn chung tương đối
-                                            đơn
-                                            giản hơn so với việc thành lập doanh nghiệp mới.
+                                            <i class="fa fa-circle"></i>{{global.locale=='vi'?' Thủ tục đăng ký góp vốn, mua cổ phần, phần vốn góp nhìn chung tương đối đơn giản hơn so với việc thành lập doanh nghiệp mới.':' Thủ tục đăng ký góp vốn, mua cổ phần, phần vốn góp nhìn chung tương đối đơn giản hơn so với việc thành lập doanh nghiệp mới. aaa'}}
                                         </div>
 
 
@@ -152,7 +133,7 @@
 
                                     <a class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo"
                                        aria-expanded="true" aria-controls="collapseTwo">
-                                        Nhược điểm<i class="icon-right"></i>
+                                        {{global.locale=='vi'?' Nhược điểm':' Nhược điểm aaa'}}<i class="icon-right"></i>
                                     </a>
 
                                 </div>
@@ -161,13 +142,10 @@
                                      data-parent="#accordion">
                                     <div class="card-body">
                                         <div class="content-dkdt">
-                                            <i class="fa fa-circle"></i>Nhà đầu tư cần thận trọng trong quá trình soát
-                                            xét các vấn đề pháp lý của doanh nghiệp cũ trước khi quyết định góp vốn, mua
-                                            cổ phần/vốn góp.
+                                            <i class="fa fa-circle"></i>{{global.locale=='vi'?'Nhà đầu tư cần thận trọng trong quá trình soát xét các vấn đề pháp lý của doanh nghiệp cũ trước khi quyết định góp vốn, mua cổ phần/vốn góp.':'Nhà đầu tư cần thận trọng trong quá trình soát xét các vấn đề pháp lý của doanh nghiệp cũ trước khi quyết định góp vốn, mua cổ phần/vốn góp. aaa'}}
                                         </div>
                                         <div class="content-dkdt">
-                                            <i class="fa fa-circle"></i>Một số ngành nghề đang hoạt động tại doanh
-                                            nghiệp cũ có thể có hạn chế sự tham gia của nhà đầu tư nước ngoài.
+                                            <i class="fa fa-circle"></i>{{global.locale=='vi'?'Một số ngành nghề đang hoạt động tại doanh nghiệp cũ có thể có hạn chế sự tham gia của nhà đầu tư nước ngoài.':'Một số ngành nghề đang hoạt động tại doanh nghiệp cũ có thể có hạn chế sự tham gia của nhà đầu tư nước ngoài. aaa'}}
                                         </div>
                                     </div>
                                 </div>
@@ -189,13 +167,13 @@
                     <li class="nav-item nav-custom">
                         <a (click)="changepackage('Thành lập doanh nghiệp mới','tab-tldnm-V')" class="nav-link active" style="border-right:1px solid #bbb5b5;border-top-left-radius: 0rem; border-top-left-radius: 30px;border-bottom-left-radius: 30px;
     border-top-right-radius: 0rem; " id="home-tab" data-toggle="tab" href=".ndn" role="tab"
-                           aria-controls="home" aria-selected="true">Thành lập doanh nghiệp mới</a>
+                           aria-controls="home" aria-selected="true">{{global.locale=='vi'?'Thành lập doanh nghiệp mới':'Thành lập doanh nghiệp mới aaa'}}</a>
 
                     </li>
                     <li class="nav-item nav-custom">
                         <a (click)="changepackage('Góp hoặc mua cổ phần/vốn góp','tab-mcp-V')" class="nav-link" style="border-top-right-radius: 30px;border-bottom-right-radius: 30px; "
                            id="profile-tab" data-toggle="tab" href=".tdn" role="tab"
-                           aria-controls="profile" aria-selected="false">Góp hoặc mua cổ phần/vốn góp</a>
+                           aria-controls="profile" aria-selected="false">{{global.locale=='vi'?'Góp hoặc mua cổ phần/vốn góp':'Góp hoặc mua cổ phần/vốn góp aaa'}}</a>
 
                     </li>
 
@@ -206,20 +184,19 @@
             <div class="row  sub custom-tab home-tab hide-V" id="tab-mcp-V">
 
                 <div class="col-md-4">
-                    <h1>Đề xuất các gói phí từ Asoka Law</h1>
-                    Bấm chọn loại hình đầu tư phù hợp vơi nhu cầu của bạn
-                    để xem giá phí tương ứng.
+                    <h1>{{global.locale=='vi'?'Đề xuất các gói phí từ Asoka Law':'Đề xuất các gói phí từ Asoka Law aaa'}}</h1>
+                    {{global.locale=='vi'?'Bấm chọn loại hình đầu tư phù hợp vơi nhu cầu của bạn để xem giá phí tương ứng.':'Bấm chọn loại hình đầu tư phù hợp vơi nhu cầu của bạn để xem giá phí tương ứng. aaa'}}
                 </div>
                 <div class="col-md-4">
                     <div class="box shadow-lg" style="background-color: #FDF6F3;border: 1px solid #4caddb">
                         <div class="block-one">
                             <img class="sticky" src="/assets/media/DKKD/cac-goi-phi/Asset 6.svg">
                             <div class="title-block center">
-                                <h6>Gói tiết kiệm</h6>
+                                <h6>{{global.locale=='vi'?'Gói tiết kiệm':'Gói tiết kiệm aaa'}}</h6>
                             </div>
 
                             <div style="font-size: 10px; text-align: center">
-                                <sup style="font-size: 12px; top: -9px">Từ</sup><b style="font-size: 26px">
+                                <sup style="font-size: 12px; top: -9px">{{global.locale=='vi'?'Từ':'Từ aaa'}}</sup><b style="font-size: 26px">
                                 12.000.000 </b>VND
 
                             </div>
@@ -228,51 +205,34 @@
                         <div class="block-two center">
                             <p style="padding-top: 20px;
     min-height: 150px; font-size: 12px;">
-                                Dành cho nhà đầu tư đã có sẵn trợ lý,
-                                kế toán để hỗ trợ các thủ tục tại ngân
-                                hàng, chi cục thuế.
+                                {{global.locale=='vi'?'Dành cho nhà đầu tư đã có sẵn trợ lý, kế toán để hỗ trợ các thủ tục tại ngân hàng, chi cục thuế.':'Dành cho nhà đầu tư đã có sẵn trợ lý, kế toán để hỗ trợ các thủ tục tại ngân hàng, chi cục thuế. aaa'}}
                             </p>
-                            <button (click)="submit('Gói tiết kiệm')" class="btn btn-outline-warning" style="border-radius: 30px; padding: 5px 20px;">Đăng ký</button>
+                            <button (click)="submit('Gói tiết kiệm')" class="btn btn-outline-warning" style="border-radius: 30px; padding: 5px 20px;">{{global.locale=='vi'?'Đăng ký':'Đăng ký aaa'}}</button>
                             <div class="block-three collapse" id="multiCollapseExample1">
                                 <hr style="margin-bottom: 20px!important;">
                                 <p><img class="icon-block"
-                                        src="/assets/media/DKKD/cac-goi-phi/Asset 8.svg">Tư vấn
-                                    với
-                                    chuyên viên pháp lý</p>
+                                        src="/assets/media/DKKD/cac-goi-phi/Asset 8.svg">{{global.locale=='vi'?'Tư vấn với chuyên viên pháp lý':'Tư vấn với chuyên viên pháp lý aaa'}}</p>
                                 <p><img class="icon-block"
-                                        src="/assets/media/DKKD/cac-goi-phi/Asset 8.svg">Soạn
-                                    thảo hồ
-                                    sơ đăng ký mua vốn góp</p>
+                                        src="/assets/media/DKKD/cac-goi-phi/Asset 8.svg">{{global.locale=='vi'?'Soạn thảo hồ sơ đăng ký mua vốn góp':'Soạn thảo hồ sơ đăng ký mua vốn góp aaa'}}</p>
                                 <p><img class="icon-block"
-                                        src="/assets/media/DKKD/cac-goi-phi/Asset 8.svg">Nộp hồ
-                                    sơ
-                                    tại Sở Kế Hoạch và Đầu Tư</p>
+                                        src="/assets/media/DKKD/cac-goi-phi/Asset 8.svg">{{global.locale=='vi'?'Nộp hồ sơ tại Sở Kế Hoạch và Đầu Tư':'Nộp hồ sơ tại Sở Kế Hoạch và Đầu Tư aaa'}}</p>
                                 <p><img class="icon-block"
-                                        src="/assets/media/DKKD/cac-goi-phi/Asset 8.svg">Thông
-                                    báo
-                                    đáp ứng điều kiện mua vốn góp</p>
+                                        src="/assets/media/DKKD/cac-goi-phi/Asset 8.svg">{{global.locale=='vi'?'Thông báo đáp ứng điều kiện mua vốn góp':'Thông báo đáp ứng điều kiện mua vốn góp aaa'}}</p>
                                 <p><img class="icon-block"
-                                        src="/assets/media/DKKD/cac-goi-phi/Asset 8.svg">Soạn
-                                    thảo hồ
-                                    sơ thay đổi thành viên </p>
+                                        src="/assets/media/DKKD/cac-goi-phi/Asset 8.svg">{{global.locale=='vi'?'Soạn thảo hồ sơ thay đổi thành viên ':'Soạn thảo hồ sơ thay đổi thành viên  aaa'}}</p>
                                 <p><img class="icon-block"
-                                        src="/assets/media/DKKD/cac-goi-phi/Asset 8.svg">Nhận
-                                    giấy
-                                    chứng nhận đăng ký kinh doanh</p>
+                                        src="/assets/media/DKKD/cac-goi-phi/Asset 8.svg">{{global.locale=='vi'?'Nhận giấy chứng nhận đăng ký kinh doanh':'Nhận giấy chứng nhận đăng ký kinh doanh aaa'}}</p>
                                 <p class="disabled"><img class="icon-block"
-                                                         src="/assets/media/DKKD/cac-goi-phi/Asset 5.svg">Kê
-                                    khai thuế thu nhập cá nhân chuyển nhượng</p>
+                                                         src="/assets/media/DKKD/cac-goi-phi/Asset 5.svg">{{global.locale=='vi'?'Kê khai thuế thu nhập cá nhân chuyển nhượng':'Kê khai thuế thu nhập cá nhân chuyển nhượng aaa'}}</p>
                                 <p class="disabled"><img class="icon-block"
-                                                         src="/assets/media/DKKD/cac-goi-phi/Asset 5.svg">Nộp
-                                    thuế thu nhập cá nhân chuyển nhượng</p>
+                                                         src="/assets/media/DKKD/cac-goi-phi/Asset 5.svg">{{global.locale=='vi'?'Nộp thuế thu nhập cá nhân chuyển nhượng':'Nộp thuế thu nhập cá nhân chuyển nhượng aaa'}}</p>
 
                             </div>
 
                             <div class="text-center" style="margin-top: 10px"><a data-toggle="collapse" href="#multiCollapseExample1"
                                                                                  role="button" aria-expanded="false"
                                                                                  aria-controls="multiCollapseExample1"
-                                                                                 class="custom-collapse collapsed">Chi tiết hạng mục công
-                                việc</a>
+                                                                                 class="custom-collapse collapsed">{{global.locale=='vi'?'Chi tiết hạng mục công việc':'Chi tiết hạng mục công việc aaa'}}</a>
                             </div>
                         </div>
 
@@ -283,7 +243,7 @@
                     <div class="box shadow-lg">
                         <div class="block-one">
                             <div class="title-block center">
-                                <h6>Gói toàn diện</h6>
+                                <h6>{{global.locale=='vi'?'Gói toàn diện':'Gói toàn diện aaa'}}</h6>
                             </div>
 
                             <div style="font-size: 10px; text-align: center">
@@ -296,47 +256,28 @@
                         <div class="block-two center">
                             <p style="padding-top: 20px;
     min-height: 150px; font-size: 12px;">
-                                Phù hợp với nhà đầu tư muốn ủy
-                                quyền toàn bộ thủ tục cho Asoka Law.
-                                Bao gồm đại diện thực hiện mọi hồ sơ
-                                tại Sở Kế Hoạch & Đầu Tư, Ngân Hàng,
-                                Chi Cục Thuế.
+                                {{global.locale=='vi'?'Phù hợp với nhà đầu tư muốn ủy quyền toàn bộ thủ tục cho Asoka Law. Bao gồm đại diện thực hiện mọi hồ sơ tại Sở Kế Hoạch & Đầu Tư, Ngân Hàng, Chi Cục Thuế.':'Phù hợp với nhà đầu tư muốn ủy quyền toàn bộ thủ tục cho Asoka Law. Bao gồm đại diện thực hiện mọi hồ sơ tại Sở Kế Hoạch & Đầu Tư, Ngân Hàng, Chi Cục Thuế. aaa'}}
                             </p>
-                            <button (click)="submit('Gói toàn diện')" class="btn btn-warning" style="border-radius: 30px; padding: 5px 20px;">Đăng ký</button>
+                            <button (click)="submit('Gói toàn diện')" class="btn btn-warning" style="border-radius: 30px; padding: 5px 20px;">{{global.locale=='vi'?'Đăng ký':'Đăng ký aaa'}}</button>
                             <div class="block-three collapse" id="multiCollapseExample2">
                                 <hr style="margin-bottom: 20px!important;">
                                 <p><img class="icon-block"
-                                        src="/assets/media/DKKD/cac-goi-phi/Asset 8.svg">Tư vấn
-                                    với
-                                    <b style="font-size: 12px;">Luật sư và chuyên viên</b> (01 giờ)</p>
+                                        src="/assets/media/DKKD/cac-goi-phi/Asset 8.svg">{{global.locale=='vi'?'Tư vấn với':'Tư vấn với aaa'}}
+                                    <b style="font-size: 12px;">{{global.locale=='vi'?'Luật sư và chuyên viên':'Luật sư và chuyên viên aaa'}}</b>{{global.locale=='vi'?' (01 giờ)':' (01 giờ) aaa'}}</p>
                                 <p><img class="icon-block"
-                                        src="/assets/media/DKKD/cac-goi-phi/Asset 8.svg">Soạn
-                                    thảo hồ
-                                    sơ đăng ký mua vốn góp</p>
+                                        src="/assets/media/DKKD/cac-goi-phi/Asset 8.svg">{{global.locale=='vi'?'Soạn thảo hồ sơ đăng ký mua vốn góp':'Soạn thảo hồ sơ đăng ký mua vốn góp aaa'}}</p>
                                 <p><img class="icon-block"
-                                        src="/assets/media/DKKD/cac-goi-phi/Asset 8.svg">Nộp hồ
-                                    sơ
-                                    tại Sở Kế Hoạch và Đầu Tư</p>
+                                        src="/assets/media/DKKD/cac-goi-phi/Asset 8.svg">{{global.locale=='vi'?'Nộp hồ sơ tại Sở Kế Hoạch và Đầu Tư':'Nộp hồ sơ tại Sở Kế Hoạch và Đầu Tư aaa'}}</p>
                                 <p><img class="icon-block"
-                                        src="/assets/media/DKKD/cac-goi-phi/Asset 8.svg">Thông
-                                    báo
-                                    đáp ứng điều kiện mua vốn góp</p>
+                                        src="/assets/media/DKKD/cac-goi-phi/Asset 8.svg">{{global.locale=='vi'?'Thông báo đáp ứng điều kiện mua vốn góp':'Thông báo đáp ứng điều kiện mua vốn góp aaa'}}</p>
                                 <p><img class="icon-block"
-                                        src="/assets/media/DKKD/cac-goi-phi/Asset 8.svg">Soạn
-                                    thảo hồ
-                                    sơ thay đổi thành viên </p>
+                                        src="/assets/media/DKKD/cac-goi-phi/Asset 8.svg">{{global.locale=='vi'?'Soạn thảo hồ sơ thay đổi thành viên ':'Soạn thảo hồ sơ thay đổi thành viên  aaa'}}</p>
                                 <p><img class="icon-block"
-                                        src="/assets/media/DKKD/cac-goi-phi/Asset 8.svg">Nhận
-                                    giấy
-                                    chứng nhận đăng ký kinh doanh</p>
+                                        src="/assets/media/DKKD/cac-goi-phi/Asset 8.svg">{{global.locale=='vi'?'Nhận giấy chứng nhận đăng ký kinh doanh':'Nhận giấy chứng nhận đăng ký kinh doanh aaa'}}</p>
                                 <p><img class="icon-block"
-                                        src="/assets/media/DKKD/cac-goi-phi/Asset 8.svg">Kê khai
-                                    thuế
-                                    thu nhập cá nhân chuyển nhượng</p>
+                                        src="/assets/media/DKKD/cac-goi-phi/Asset 8.svg">{{global.locale=='vi'?'Kê khai thuế thu nhập cá nhân chuyển nhượng':'Kê khai thuế thu nhập cá nhân chuyển nhượng aaa'}}</p>
                                 <p><img class="icon-block"
-                                        src="/assets/media/DKKD/cac-goi-phi/Asset 8.svg">Nộp thuế
-                                    thu
-                                    nhập cá nhân chuyển nhượng</p>
+                                        src="/assets/media/DKKD/cac-goi-phi/Asset 8.svg">{{global.locale=='vi'?'Nộp thuế thu nhập cá nhân chuyển nhượng':'Nộp thuế thu nhập cá nhân chuyển nhượng aaa'}}</p>
 
 
                             </div>
@@ -344,8 +285,7 @@
                             <div class="text-center" style="margin-top: 10px"><a data-toggle="collapse" href="#multiCollapseExample2"
                                                                                  role="button" aria-expanded="false"
                                                                                  aria-controls="multiCollapseExample2"
-                                                                                 class="custom-collapse collapsed">Chi tiết hạng mục công
-                                việc</a>
+                                                                                 class="custom-collapse collapsed">{{global.locale=='vi'?'Chi tiết hạng mục công việc':'Chi tiết hạng mục công việc aaa'}}</a>
                             </div>
                         </div>
 
@@ -358,19 +298,18 @@
             <div class="row  sub custom-tab profile-tab" id="tab-tldnm-V">
 
                 <div class="col-md-4">
-                    <h1>Đề xuất các gói phí từ Asoka Law</h1>
-                    Bấm chọn loại hình đầu tư phù hợp vơi nhu cầu của bạn
-                    để xem giá phí tương ứng.
+                    <h1>{{global.locale=='vi'?'Đề xuất các gói phí từ Asoka Law':'Đề xuất các gói phí từ Asoka Law aaa'}}</h1>
+                    {{global.locale=='vi'?'Bấm chọn loại hình đầu tư phù hợp vơi nhu cầu của bạn để xem giá phí tương ứng.':'Bấm chọn loại hình đầu tư phù hợp vơi nhu cầu của bạn để xem giá phí tương ứng. aaa'}}
                 </div>
                 <div class="col-md-4">
                     <div class="box shadow-lg">
                         <div class="block-one">
                             <div class="title-block center">
-                                <h6>Gói tiết kiệm</h6>
+                                <h6>{{global.locale=='vi'?'Gói tiết kiệm':'Gói tiết kiệm aaa'}}</h6>
                             </div>
 
                             <div style="font-size: 10px; text-align: center">
-                                <sup style="font-size: 12px; top: -9px">Từ</sup><b style="font-size: 26px">
+                                <sup style="font-size: 12px; top: -9px">{{global.locale=='vi'?'Từ':'Từ aaa'}}</sup><b style="font-size: 26px">
                                 15.000.000 </b>VND
 
                             </div>
@@ -379,74 +318,49 @@
                         <div class="block-two center">
                             <p style="padding-top: 20px;
     min-height: 150px; font-size: 12px">
-                                Dành cho nhà đầu tư đã có sẵn trợ lý
-                                hoặc bộ phận kế toán nhằm hoàn
-                                thiện các thủ tục đăng ký tại Ngân
-                                Hàng, Cơ quan cung cấp chữ ký số,
-                                hóa đơn điện tử, Cục Thuế.
+                                {{global.locale=='vi'?'Dành cho nhà đầu tư đã có sẵn trợ lý hoặc bộ phận kế toán nhằm hoàn thiện các thủ tục đăng ký tại Ngân Hàng, Cơ quan cung cấp chữ ký số, hóa đơn điện tử, Cục Thuế.':'Dành cho nhà đầu tư đã có sẵn trợ lý hoặc bộ phận kế toán nhằm hoàn thiện các thủ tục đăng ký tại Ngân Hàng, Cơ quan cung cấp chữ ký số, hóa đơn điện tử, Cục Thuế. aaa'}}
                             </p>
-                            <button (click)="submit('Gói tiết kiệm')" class="btn btn-outline-warning" style="border-radius: 30px; padding: 5px 20px;">Đăng
-                                ký
+                            <button (click)="submit('Gói tiết kiệm')" class="btn btn-outline-warning" style="border-radius: 30px; padding: 5px 20px;">{{global.locale=='vi'?'Đăng ký':'Đăng ký aaa'}}
                             </button>
                             <div class="block-three collapse" id="multiCollapseExample3">
                                 <hr>
                                 <p><img class="icon-block"
-                                        src="/assets/media/DKKD/cac-goi-phi/Asset 8.svg">Tư vấn
-                                    với
-                                    chuyên viên pháp lý</p>
+                                        src="/assets/media/DKKD/cac-goi-phi/Asset 8.svg">{{global.locale=='vi'?'Tư vấn với chuyên viên pháp lý':'Tư vấn với chuyên viên pháp lý aaa'}}</p>
                                 <p><img class="icon-block"
-                                        src="/assets/media/DKKD/cac-goi-phi/Asset 8.svg">Soạn
-                                    thảo hồ
-                                    sơ đăng ký doanh nghiệp</p>
+                                        src="/assets/media/DKKD/cac-goi-phi/Asset 8.svg">{{global.locale=='vi'?'Soạn thảo hồ sơ đăng ký doanh nghiệp':'Soạn thảo hồ sơ đăng ký doanh nghiệp aaa'}}</p>
                                 <p><img class="icon-block"
-                                        src="/assets/media/DKKD/cac-goi-phi/Asset 8.svg">Nhận
-                                    giấy
-                                    chứng nhận đăng ký kinh doanh</p>
+                                        src="/assets/media/DKKD/cac-goi-phi/Asset 8.svg">{{global.locale=='vi'?'Nhận giấy chứng nhận đăng ký kinh doanh':'Nhận giấy chứng nhận đăng ký kinh doanh aaa'}}</p>
                                 <p><img class="icon-block"
-                                        src="/assets/media/DKKD/cac-goi-phi/Asset 8.svg">Công bố
-                                    thông tin doanh nghiệp</p>
+                                        src="/assets/media/DKKD/cac-goi-phi/Asset 8.svg">{{global.locale=='vi'?'Công bố thông tin doanh nghiệp':'Công bố thông tin doanh nghiệp aaa'}}</p>
                                 <p><img class="icon-block"
-                                        src="/assets/media/DKKD/cac-goi-phi/Asset 8.svg">Đăng ký
-                                    &
-                                    thông báo mẫu dấu</p>
+                                        src="/assets/media/DKKD/cac-goi-phi/Asset 8.svg">{{global.locale=='vi'?'Đăng ký & thông báo mẫu dấu':'Đăng ký & thông báo mẫu dấu aaa'}}</p>
                                 <p class="disabled"><img class="icon-block "
-                                                         src="/assets/media/DKKD/cac-goi-phi/Asset 5.svg">In
-                                    bảng hiệu doanh nghiệp (tiêu chuẩn)</p>
+                                                         src="/assets/media/DKKD/cac-goi-phi/Asset 5.svg">{{global.locale=='vi'?'In bảng hiệu doanh nghiệp (tiêu chuẩn)':'In bảng hiệu doanh nghiệp (tiêu chuẩn) aaa'}}</p>
                                 <p class="disabled"><img class="icon-block "
-                                                         src="/assets/media/DKKD/cac-goi-phi/Asset 5.svg">Đăng
-                                    ký mua chữ ký số (01-03 năm)</p>
+                                                         src="/assets/media/DKKD/cac-goi-phi/Asset 5.svg">{{global.locale=='vi'?'Đăng ký mua chữ ký số (01-03 năm)':'Đăng ký mua chữ ký số (01-03 năm) aaa'}}</p>
                                 <p class="disabled"><img class="icon-block "
-                                                         src="/assets/media/DKKD/cac-goi-phi/Asset 5.svg">Đăng
-                                    ký tài khoản ngân hàng theo chỉ định</p>
+                                                         src="/assets/media/DKKD/cac-goi-phi/Asset 5.svg">{{global.locale=='vi'?'Đăng ký tài khoản ngân hàng theo chỉ định':'Đăng ký tài khoản ngân hàng theo chỉ định aaa'}}</p>
                                 <p class="disabled"><img class="icon-block "
-                                                         src="/assets/media/DKKD/cac-goi-phi/Asset 5.svg">Thực
-                                    hiện kê khai thuế ban đầu tại Cục Thuế</p>
+                                                         src="/assets/media/DKKD/cac-goi-phi/Asset 5.svg">{{global.locale=='vi'?'Thực hiện kê khai thuế ban đầu tại Cục Thuế':'Thực hiện kê khai thuế ban đầu tại Cục Thuế aaa'}}</p>
                                 <p class="disabled"><img class="icon-block "
-                                                         src="/assets/media/DKKD/cac-goi-phi/Asset 5.svg">Đặt
-                                    in hóa đơn điện tử (1000 số)</p>
+                                                         src="/assets/media/DKKD/cac-goi-phi/Asset 5.svg">{{global.locale=='vi'?'Đặt in hóa đơn điện tử (1000 số)':'Đặt in hóa đơn điện tử (1000 số) aaa'}}</p>
                                 <p class="disabled"><img class="icon-block "
-                                                         src="/assets/media/DKKD/cac-goi-phi/Asset 5.svg">Hỗ
-                                    trợ nộp thuế môn bài (01 năm)</p>
+                                                         src="/assets/media/DKKD/cac-goi-phi/Asset 5.svg">{{global.locale=='vi'?'Hỗ trợ nộp thuế môn bài (01 năm)':'Hỗ trợ nộp thuế môn bài (01 năm) aaa'}}</p>
                                 <p class="disabled"><img class="icon-block "
-                                                         src="/assets/media/DKKD/cac-goi-phi/Asset 5.svg">Hướng
-                                    dẫn nộp tài khoản vốn (90 ngày)</p>
+                                                         src="/assets/media/DKKD/cac-goi-phi/Asset 5.svg">{{global.locale=='vi'?'Hướng dẫn nộp tài khoản vốn (90 ngày)':'Hướng dẫn nộp tài khoản vốn (90 ngày) aaa'}}</p>
                                 <p class="disabled"><img class="icon-block "
-                                                         src="/assets/media/DKKD/cac-goi-phi/Asset 5.svg">Lập
-                                    sổ cổ đông/chứng nhận góp vốn</p>
+                                                         src="/assets/media/DKKD/cac-goi-phi/Asset 5.svg">{{global.locale=='vi'?'Lập sổ cổ đông/chứng nhận góp vốn':'Lập sổ cổ đông/chứng nhận góp vốn aaa'}}</p>
                                 <p class="disabled"><img class="icon-block "
-                                                         src="/assets/media/DKKD/cac-goi-phi/Asset 5.svg">Lập
-                                    chứng nhận cổ phần/vốn góp</p>
+                                                         src="/assets/media/DKKD/cac-goi-phi/Asset 5.svg">{{global.locale=='vi'?'Lập chứng nhận cổ phần/vốn góp':'Lập chứng nhận cổ phần/vốn góp aaa'}}</p>
                                 <p class="disabled"><img class="icon-block "
-                                                         src="/assets/media/DKKD/cac-goi-phi/Asset 5.svg">Hướng
-                                    dẫn thủ tục pháp lý sau đăng ký</p>
+                                                         src="/assets/media/DKKD/cac-goi-phi/Asset 5.svg">{{global.locale=='vi'?'Hướng dẫn thủ tục pháp lý sau đăng ký':'Hướng dẫn thủ tục pháp lý sau đăng ký aaa'}}</p>
 
                             </div>
 
                             <div class="text-center" style="margin-top: 10px"><a data-toggle="collapse" href="#multiCollapseExample3"
                                                                                  role="button" aria-expanded="false"
                                                                                  aria-controls="multiCollapseExample3"
-                                                                                 class="custom-collapse collapsed">Chi tiết hạng mục công
-                                việc</a>
+                                                                                 class="custom-collapse collapsed">{{global.locale=='vi'?'Chi tiết hạng mục công việc':'Chi tiết hạng mục công việc aaa'}}</a>
                             </div>
                         </div>
 
@@ -458,11 +372,11 @@
                         <div class="block-one">
                             <img class="sticky" src="/assets/media/DKKD/cac-goi-phi/Asset 6.svg">
                             <div class="title-block center">
-                                <h6>Gói toàn diện</h6>
+                                <h6>{{global.locale=='vi'?'Gói toàn diện':'Gói toàn diện aaa'}}</h6>
                             </div>
 
                             <div style="font-size: 10px; text-align: center">
-                                <sup style="font-size: 12px; top: -9px">Từ</sup><b style="font-size: 26px">
+                                <sup style="font-size: 12px; top: -9px">{{global.locale=='vi'?'Từ':'Từ aaa'}}</sup><b style="font-size: 26px">
                                 25.000.000 </b>VND
 
                             </div>
@@ -471,85 +385,50 @@
                         <div class="block-two center">
                             <p style="padding-top: 20px;
     min-height: 150px; font-size: 12px">
-                                Phù hợp với nhà đầu tư muốn ủy
-                                quyền toàn bộ thủ tục cho Asoka Law.
-                                Bao gồm thực hiện mọi hồ sơ tại Sở
-                                Kế Hoạch & Đầu Tư, Ngân Hàng, Cơ
-                                quan Công An, Đơn vị cung cấp chữ ký
-                                số, hóa đơn, khai trình tại Cục Thuế.
+                                {{global.locale=='vi'?'Phù hợp với nhà đầu tư muốn ủy quyền toàn bộ thủ tục cho Asoka Law. Bao gồm thực hiện mọi hồ sơ tại Sở Kế Hoạch & Đầu Tư, Ngân Hàng, Cơ quan Công An, Đơn vị cung cấp chữ ký số, hóa đơn, khai trình tại Cục Thuế.':'Phù hợp với nhà đầu tư muốn ủy quyền toàn bộ thủ tục cho Asoka Law. Bao gồm thực hiện mọi hồ sơ tại Sở Kế Hoạch & Đầu Tư, Ngân Hàng, Cơ quan Công An, Đơn vị cung cấp chữ ký số, hóa đơn, khai trình tại Cục Thuế. aaa'}}
                             </p>
-                            <button (click)="submit('Gói toàn diện')" class="btn btn-outline-warning" style="border-radius: 30px; padding: 5px 20px;">Đăng
-                                ký
+                            <button (click)="submit('Gói toàn diện')" class="btn btn-outline-warning" style="border-radius: 30px; padding: 5px 20px;">{{global.locale=='vi'?'Đăng ký':'Đăng ký aaa'}}
                             </button>
                             <div class="block-three collapse" id="multiCollapseExample4">
                                 <hr>
                                 <p><img class="icon-block"
-                                        src="/assets/media/DKKD/cac-goi-phi/Asset 8.svg">Tư vấn
-                                    với
-                                    <b style="font-size: 12px;">Luật sư và chuyên viên</b> (01 giờ)</p>
+                                        src="/assets/media/DKKD/cac-goi-phi/Asset 8.svg">{{global.locale=='vi'?'Tư vấn với':'Tư vấn với aaa'}}
+                                    <b style="font-size: 12px;">{{global.locale=='vi'?'Luật sư và chuyên viên':'Luật sư và chuyên viên aaa'}}</b>{{global.locale=='vi'?' (01 giờ)':' (01 giờ) aaa'}}</p>
                                 <p><img class="icon-block"
-                                        src="/assets/media/DKKD/cac-goi-phi/Asset 8.svg">Soạn
-                                    thảo hồ
-                                    sơ đăng ký doanh nghiệp</p>
+                                        src="/assets/media/DKKD/cac-goi-phi/Asset 8.svg">{{global.locale=='vi'?'Soạn thảo hồ sơ đăng ký doanh nghiệp':'Soạn thảo hồ sơ đăng ký doanh nghiệp aaa'}}</p>
                                 <p><img class="icon-block"
-                                        src="/assets/media/DKKD/cac-goi-phi/Asset 8.svg">Nhận
-                                    giấy
-                                    chứng nhận đăng ký kinh doanh</p>
+                                        src="/assets/media/DKKD/cac-goi-phi/Asset 8.svg">{{global.locale=='vi'?'Nhận giấy chứng nhận đăng ký kinh doanh':'Nhận giấy chứng nhận đăng ký kinh doanh aaa'}}</p>
                                 <p><img class="icon-block"
-                                        src="/assets/media/DKKD/cac-goi-phi/Asset 8.svg">Công bố
-                                    thông tin doanh nghiệp</p>
+                                        src="/assets/media/DKKD/cac-goi-phi/Asset 8.svg">{{global.locale=='vi'?'Công bố thông tin doanh nghiệp':'Công bố thông tin doanh nghiệp aaa'}}</p>
                                 <p><img class="icon-block"
-                                        src="/assets/media/DKKD/cac-goi-phi/Asset 8.svg">Đăng ký
-                                    &
-                                    thông báo, khắc mẫu dấu</p>
+                                        src="/assets/media/DKKD/cac-goi-phi/Asset 8.svg">{{global.locale=='vi'?'Đăng ký & thông báo, khắc mẫu dấu':'Đăng ký & thông báo, khắc mẫu dấu aaa'}}</p>
                                 <p><img class="icon-block"
-                                        src="/assets/media/DKKD/cac-goi-phi/Asset 8.svg">In bảng
-                                    hiệu
-                                    doanh nghiệp (tiêu chuẩn)</p>
+                                        src="/assets/media/DKKD/cac-goi-phi/Asset 8.svg">{{global.locale=='vi'?'In bảng hiệu doanh nghiệp (tiêu chuẩn)':'In bảng hiệu doanh nghiệp (tiêu chuẩn) aaa'}}</p>
                                 <p><img class="icon-block"
-                                        src="/assets/media/DKKD/cac-goi-phi/Asset 8.svg">Đăng ký
-                                    mua
-                                    chữ ký số (01-03 năm)</p>
+                                        src="/assets/media/DKKD/cac-goi-phi/Asset 8.svg">{{global.locale=='vi'?'Đăng ký mua chữ ký số (01-03 năm)':'Đăng ký mua chữ ký số (01-03 năm) aaa'}}</p>
                                 <p><img class="icon-block"
-                                        src="/assets/media/DKKD/cac-goi-phi/Asset 8.svg">Đăng ký
-                                    tài
-                                    khoản ngân hàng theo chỉ định</p>
+                                        src="/assets/media/DKKD/cac-goi-phi/Asset 8.svg">{{global.locale=='vi'?'Đăng ký tài khoản ngân hàng theo chỉ định':'Đăng ký tài khoản ngân hàng theo chỉ định aaa'}}</p>
                                 <p><img class="icon-block"
-                                        src="/assets/media/DKKD/cac-goi-phi/Asset 8.svg">Thực
-                                    hiện kê
-                                    khai thuế ban đầu tại Cục Thuế</p>
+                                        src="/assets/media/DKKD/cac-goi-phi/Asset 8.svg">{{global.locale=='vi'?'Thực hiện kê khai thuế ban đầu tại Cục Thuế':'Thực hiện kê khai thuế ban đầu tại Cục Thuế aaa'}}</p>
                                 <p><img class="icon-block"
-                                        src="/assets/media/DKKD/cac-goi-phi/Asset 8.svg">Đặt in
-                                    hóa
-                                    đơn điện tử (1000 số)</p>
+                                        src="/assets/media/DKKD/cac-goi-phi/Asset 8.svg">{{global.locale=='vi'?'Đặt in hóa đơn điện tử (1000 số)':'Đặt in hóa đơn điện tử (1000 số) aaa'}}</p>
                                 <p><img class="icon-block"
-                                        src="/assets/media/DKKD/cac-goi-phi/Asset 8.svg">Hỗ trợ
-                                    nộp
-                                    thuế môn bài (01 năm)</p>
+                                        src="/assets/media/DKKD/cac-goi-phi/Asset 8.svg">{{global.locale=='vi'?'Hỗ trợ nộp thuế môn bài (01 năm)':'Hỗ trợ nộp thuế môn bài (01 năm) aaa'}}</p>
                                 <p><img class="icon-block"
-                                        src="/assets/media/DKKD/cac-goi-phi/Asset 8.svg">Hướng
-                                    dẫn
-                                    nộp tài khoản vốn (90 ngày)</p>
+                                        src="/assets/media/DKKD/cac-goi-phi/Asset 8.svg">{{global.locale=='vi'?'Hướng dẫn nộp tài khoản vốn (90 ngày)':'Hướng dẫn nộp tài khoản vốn (90 ngày) aaa'}}</p>
                                 <p><img class="icon-block"
-                                        src="/assets/media/DKKD/cac-goi-phi/Asset 8.svg">Lập sổ
-                                    cổ
-                                    đông/chứng nhận góp vốn</p>
+                                        src="/assets/media/DKKD/cac-goi-phi/Asset 8.svg">{{global.locale=='vi'?'Lập sổ cổ đông/chứng nhận góp vốn':'Lập sổ cổ đông/chứng nhận góp vốn aaa'}}</p>
                                 <p><img class="icon-block"
-                                        src="/assets/media/DKKD/cac-goi-phi/Asset 8.svg">Lập
-                                    chứng
-                                    nhận cổ phần/vốn góp</p>
+                                        src="/assets/media/DKKD/cac-goi-phi/Asset 8.svg">{{global.locale=='vi'?'Lập chứng nhận cổ phần/vốn góp':'Lập chứng nhận cổ phần/vốn góp aaa'}}</p>
                                 <p><img class="icon-block"
-                                        src="/assets/media/DKKD/cac-goi-phi/Asset 8.svg">Hướng
-                                    dẫn
-                                    thủ tục pháp lý sau đăng ký</p>
+                                        src="/assets/media/DKKD/cac-goi-phi/Asset 8.svg">{{global.locale=='vi'?'Hướng dẫn thủ tục pháp lý sau đăng ký':'Hướng dẫn thủ tục pháp lý sau đăng ký aaa'}}</p>
 
                             </div>
 
                             <div class="text-center" style="margin-top: 10px"><a data-toggle="collapse" href="#multiCollapseExample4"
                                                                                  role="button" aria-expanded="false"
                                                                                  aria-controls="multiCollapseExample4"
-                                                                                 class="custom-collapse collapsed">Chi tiết hạng mục công
-                                việc</a>
+                                                                                 class="custom-collapse collapsed">{{global.locale=='vi'?'Chi tiết hạng mục công việc':'Chi tiết hạng mục công việc aaa'}}</a>
                             </div>
                         </div>
 
@@ -562,21 +441,20 @@
         </div>
         <div class="row d-block d-md-none">
             <div class="col-sm-12 text-center pt-5">
-                <h1 class="text-center">Đề xuất các gói phí từ Asoka Law</h1>
-                Bấm chọn loại hình đầu tư phù hợp vơi nhu cầu của bạn
-                để xem giá phí tương ứng.
+                <h1 class="text-center">{{global.locale=='vi'?'Đề xuất các gói phí từ Asoka Law':'Đề xuất các gói phí từ Asoka Law aaa'}}</h1>
+                {{global.locale=='vi'?'Bấm chọn loại hình đầu tư phù hợp vơi nhu cầu của bạn để xem giá phí tương ứng.':'Bấm chọn loại hình đầu tư phù hợp vơi nhu cầu của bạn để xem giá phí tương ứng. aaa'}}
             </div>
             <div class="col-sm-12 form-check px-5 py-1 pt-3">
                 <input class="form-check-input" type="radio" name="checkBox" id="exampleRadios1" value="0"
                        checked>
                 <label class="form-check-label font-weight-bold" for="exampleRadios1">
-                    Thành lập doanh nghiệp mới
+                    {{global.locale=='vi'?'Thành lập doanh nghiệp mới':'Thành lập doanh nghiệp mới aaa'}}
                 </label>
             </div>
             <div class="col-sm-12 form-check  px-5 py-1">
                 <input class="form-check-input" type="radio" name="checkBox" id="exampleRadios2" value="1">
                 <label class="form-check-label font-weight-bold" for="exampleRadios2">
-                    Góp hoặc mua cổ phần/vốn góp
+                    {{global.locale=='vi'?'Góp hoặc mua cổ phần/vốn góp':'Góp hoặc mua cổ phần/vốn góp aaa'}}
                 </label>
             </div>
             
@@ -586,11 +464,11 @@
                         <div class="block-one">
                             <img class="sticky" src="/assets/media/DKKD/cac-goi-phi/Asset 6.svg">
                             <div class="title-block center">
-                                <h6>Gói tiết kiệm</h6>
+                                <h6>{{global.locale=='vi'?'Gói tiết kiệm':'Gói tiết kiệm aaa'}}</h6>
                             </div>
 
                             <div style="font-size: 10px; text-align: center">
-                                <sup style="font-size: 12px; top: -9px">Từ</sup><b style="font-size: 26px">
+                                <sup style="font-size: 12px; top: -9px">{{global.locale=='vi'?'Từ':'Từ aaa'}}</sup><b style="font-size: 26px">
                                 12.000.000 </b>VND
 
                             </div>
@@ -599,53 +477,35 @@
                         <div class="block-two center">
                             <p style="padding-top: 20px;
     min-height: 150px; font-size: 12px;">
-                                Dành cho nhà đầu tư đã có sẵn trợ lý,
-                                kế toán để hỗ trợ các thủ tục tại ngân
-                                hàng, chi cục thuế.
+                                {{global.locale=='vi'?'Dành cho nhà đầu tư đã có sẵn trợ lý, kế toán để hỗ trợ các thủ tục tại ngân hàng, chi cục thuế.':'Dành cho nhà đầu tư đã có sẵn trợ lý, kế toán để hỗ trợ các thủ tục tại ngân hàng, chi cục thuế. aaa'}}
                             </p>
-                            <button (click)="submit('Gói tiết kiệm')" class="btn btn-outline-warning" style="border-radius: 30px; padding: 5px 20px;">Đăng
-                                ký
+                            <button (click)="submit('Gói tiết kiệm')" class="btn btn-outline-warning" style="border-radius: 30px; padding: 5px 20px;">{{global.locale=='vi'?'Đăng ký':'Đăng ký aaa'}}
                             </button>
                             <div class="block-three collapse" id="multiCollapseExample1">
                                 <hr style="margin-bottom: 20px!important;">
                                 <p><img class="icon-block"
-                                        src="/assets/media/DKKD/cac-goi-phi/Asset 8.svg">Tư vấn
-                                    với
-                                    chuyên viên pháp lý</p>
+                                        src="/assets/media/DKKD/cac-goi-phi/Asset 8.svg">{{global.locale=='vi'?'Tư vấn với chuyên viên pháp lý':'Tư vấn với chuyên viên pháp lý aaa'}}</p>
                                 <p><img class="icon-block"
-                                        src="/assets/media/DKKD/cac-goi-phi/Asset 8.svg">Soạn
-                                    thảo hồ
-                                    sơ đăng ký mua vốn góp</p>
+                                        src="/assets/media/DKKD/cac-goi-phi/Asset 8.svg">{{global.locale=='vi'?'Soạn thảo hồ sơ đăng ký mua vốn góp':'Soạn thảo hồ sơ đăng ký mua vốn góp aaa'}}</p>
                                 <p><img class="icon-block"
-                                        src="/assets/media/DKKD/cac-goi-phi/Asset 8.svg">Nộp hồ
-                                    sơ
-                                    tại Sở Kế Hoạch và Đầu Tư</p>
+                                        src="/assets/media/DKKD/cac-goi-phi/Asset 8.svg">{{global.locale=='vi'?'Nộp hồ sơ tại Sở Kế Hoạch và Đầu Tư':'Nộp hồ sơ tại Sở Kế Hoạch và Đầu Tư aaa'}}</p>
                                 <p><img class="icon-block"
-                                        src="/assets/media/DKKD/cac-goi-phi/Asset 8.svg">Thông
-                                    báo
-                                    đáp ứng điều kiện mua vốn góp</p>
+                                        src="/assets/media/DKKD/cac-goi-phi/Asset 8.svg">{{global.locale=='vi'?'Thông báo đáp ứng điều kiện mua vốn góp':'Thông báo đáp ứng điều kiện mua vốn góp aaa'}}</p>
                                 <p><img class="icon-block"
-                                        src="/assets/media/DKKD/cac-goi-phi/Asset 8.svg">Soạn
-                                    thảo hồ
-                                    sơ thay đổi thành viên </p>
+                                        src="/assets/media/DKKD/cac-goi-phi/Asset 8.svg">{{global.locale=='vi'?'Soạn thảo hồ sơ thay đổi thành viên ':'Soạn thảo hồ sơ thay đổi thành viên  aaa'}}</p>
                                 <p><img class="icon-block"
-                                        src="/assets/media/DKKD/cac-goi-phi/Asset 8.svg">Nhận
-                                    giấy
-                                    chứng nhận đăng ký kinh doanh</p>
+                                        src="/assets/media/DKKD/cac-goi-phi/Asset 8.svg">{{global.locale=='vi'?'Nhận giấy chứng nhận đăng ký kinh doanh':'Nhận giấy chứng nhận đăng ký kinh doanh aaa'}}</p>
                                 <p class="disabled"><img class="icon-block"
-                                                         src="/assets/media/DKKD/cac-goi-phi/Asset 5.svg">Kê
-                                    khai thuế thu nhập cá nhân chuyển nhượng</p>
+                                                         src="/assets/media/DKKD/cac-goi-phi/Asset 5.svg">{{global.locale=='vi'?'Kê khai thuế thu nhập cá nhân chuyển nhượng':'Kê khai thuế thu nhập cá nhân chuyển nhượng aaa'}}</p>
                                 <p class="disabled"><img class="icon-block"
-                                                         src="/assets/media/DKKD/cac-goi-phi/Asset 5.svg">Nộp
-                                    thuế thu nhập cá nhân chuyển nhượng</p>
+                                                         src="/assets/media/DKKD/cac-goi-phi/Asset 5.svg">{{global.locale=='vi'?'Nộp thuế thu nhập cá nhân chuyển nhượng':'Nộp thuế thu nhập cá nhân chuyển nhượng aaa'}}</p>
 
                             </div>
 
                             <div class="text-center" style="margin-top: 10px"><a data-toggle="collapse" href="#multiCollapseExample1"
                                                                                  role="button" aria-expanded="false"
                                                                                  aria-controls="multiCollapseExample1"
-                                                                                 class="custom-collapse collapsed">Chi tiết hạng mục công
-                                việc</a>
+                                                                                 class="custom-collapse collapsed">{{global.locale=='vi'?'Chi tiết hạng mục công việc':'Chi tiết hạng mục công việc aaa'}}</a>
                             </div>
                         </div>
 
@@ -656,11 +516,11 @@
                     <div class="box shadow-lg">
                         <div class="block-one">
                             <div class="title-block center">
-                                <h6>Gói toàn diện</h6>
+                                <h6>{{global.locale=='vi'?'Gói toàn diện':'Gói toàn diện aaa'}}</h6>
                             </div>
 
                             <div style="font-size: 10px; text-align: center">
-                                <sup style="font-size: 12px; top: -9px">Từ</sup><b style="font-size: 26px">
+                                <sup style="font-size: 12px; top: -9px">{{global.locale=='vi'?'Từ':'Từ aaa'}}</sup><b style="font-size: 26px">
                                 15.000.000 </b>VND
 
                             </div>
@@ -669,49 +529,29 @@
                         <div class="block-two center">
                             <p style="padding-top: 20px;
     min-height: 150px; font-size: 12px;">
-                                Phù hợp với nhà đầu tư muốn ủy
-                                quyền toàn bộ thủ tục cho Asoka Law.
-                                Bao gồm đại diện thực hiện mọi hồ sơ
-                                tại Sở Kế Hoạch & Đầu Tư, Ngân Hàng,
-                                Chi Cục Thuế.
+                                {{global.locale=='vi'?'Phù hợp với nhà đầu tư muốn ủy quyền toàn bộ thủ tục cho Asoka Law. Bao gồm đại diện thực hiện mọi hồ sơtại Sở Kế Hoạch & Đầu Tư, Ngân Hàng, Chi Cục Thuế.':'Phù hợp với nhà đầu tư muốn ủy quyền toàn bộ thủ tục cho Asoka Law. Bao gồm đại diện thực hiện mọi hồ sơtại Sở Kế Hoạch & Đầu Tư, Ngân Hàng, Chi Cục Thuế. aaa'}}
                             </p>
-                            <button (click)="submit('Gói toàn diện')" class="btn btn-warning" style="border-radius: 30px; padding: 5px 20px;">Đăng
-                                ký
+                            <button (click)="submit('Gói toàn diện')" class="btn btn-warning" style="border-radius: 30px; padding: 5px 20px;">{{global.locale=='vi'?'Đăng ký':'Đăng ký aaa'}}
                             </button>
                             <div class="block-three collapse" id="multiCollapseExample2">
                                 <hr style="margin-bottom: 20px!important;">
                                 <p><img class="icon-block"
-                                        src="/assets/media/DKKD/cac-goi-phi/Asset 8.svg">Tư vấn
-                                    với
-                                    <b style="font-size: 12px;">Luật sư và chuyên viên</b> (01 giờ)</p>
+                                        src="/assets/media/DKKD/cac-goi-phi/Asset 8.svg">{{global.locale=='vi'?'Tư vấn với':'Tư vấn với aaa'}}
+                                    <b style="font-size: 12px;">{{global.locale=='vi'?'Luật sư và chuyên viên':'Luật sư và chuyên viên aaa'}}</b>{{global.locale=='vi'?' (01 giờ)':' (01 giờ) aaa'}}</p>
                                 <p><img class="icon-block"
-                                        src="/assets/media/DKKD/cac-goi-phi/Asset 8.svg">Soạn
-                                    thảo hồ
-                                    sơ đăng ký mua vốn góp</p>
+                                        src="/assets/media/DKKD/cac-goi-phi/Asset 8.svg">{{global.locale=='vi'?'Soạn thảo hồ sơ đăng ký mua vốn góp':'Soạn thảo hồ sơ đăng ký mua vốn góp aaa'}}</p>
                                 <p><img class="icon-block"
-                                        src="/assets/media/DKKD/cac-goi-phi/Asset 8.svg">Nộp hồ
-                                    sơ
-                                    tại Sở Kế Hoạch và Đầu Tư</p>
+                                        src="/assets/media/DKKD/cac-goi-phi/Asset 8.svg">{{global.locale=='vi'?'Nộp hồ sơ tại Sở Kế Hoạch và Đầu Tư':'Nộp hồ sơ tại Sở Kế Hoạch và Đầu Tư aaa'}}</p>
                                 <p><img class="icon-block"
-                                        src="/assets/media/DKKD/cac-goi-phi/Asset 8.svg">Thông
-                                    báo
-                                    đáp ứng điều kiện mua vốn góp</p>
+                                        src="/assets/media/DKKD/cac-goi-phi/Asset 8.svg">{{global.locale=='vi'?'Thông báo đáp ứng điều kiện mua vốn góp':'Thông báo đáp ứng điều kiện mua vốn góp aaa'}}</p>
                                 <p><img class="icon-block"
-                                        src="/assets/media/DKKD/cac-goi-phi/Asset 8.svg">Soạn
-                                    thảo hồ
-                                    sơ thay đổi thành viên </p>
+                                        src="/assets/media/DKKD/cac-goi-phi/Asset 8.svg">{{global.locale=='vi'?'Soạn thảo hồ sơ thay đổi thành viên ':'Soạn thảo hồ sơ thay đổi thành viên  aaa'}}</p>
                                 <p><img class="icon-block"
-                                        src="/assets/media/DKKD/cac-goi-phi/Asset 8.svg">Nhận
-                                    giấy
-                                    chứng nhận đăng ký kinh doanh</p>
+                                        src="/assets/media/DKKD/cac-goi-phi/Asset 8.svg">{{global.locale=='vi'?'Nhận giấy chứng nhận đăng ký kinh doanh':'Nhận giấy chứng nhận đăng ký kinh doanh aaa'}}</p>
                                 <p><img class="icon-block"
-                                        src="/assets/media/DKKD/cac-goi-phi/Asset 8.svg">Kê khai
-                                    thuế
-                                    thu nhập cá nhân chuyển nhượng</p>
+                                        src="/assets/media/DKKD/cac-goi-phi/Asset 8.svg">{{global.locale=='vi'?'Kê khai thuế thu nhập cá nhân chuyển nhượng':'Kê khai thuế thu nhập cá nhân chuyển nhượng aaa'}}</p>
                                 <p><img class="icon-block"
-                                        src="/assets/media/DKKD/cac-goi-phi/Asset 8.svg">Nộp thuế
-                                    thu
-                                    nhập cá nhân chuyển nhượng</p>
+                                        src="/assets/media/DKKD/cac-goi-phi/Asset 8.svg">{{global.locale=='vi'?'Nộp thuế thu nhập cá nhân chuyển nhượng':'Nộp thuế thu nhập cá nhân chuyển nhượng aaa'}}</p>
 
 
                             </div>
@@ -719,8 +559,7 @@
                             <div class="text-center" style="margin-top: 10px"><a data-toggle="collapse" href="#multiCollapseExample2"
                                                                                  role="button" aria-expanded="false"
                                                                                  aria-controls="multiCollapseExample2"
-                                                                                 class="custom-collapse collapsed">Chi tiết hạng mục công
-                                việc</a>
+                                                                                 class="custom-collapse collapsed">{{global.locale=='vi'?'Chi tiết hạng mục công việc':'Chi tiết hạng mục công việc aaa'}}</a>
                             </div>
                         </div>
 
@@ -734,11 +573,11 @@
                     <div class="box shadow-lg">
                         <div class="block-one">
                             <div class="title-block center">
-                                <h6>Gói tiết kiệm</h6>
+                                <h6>{{global.locale=='vi'?'Gói tiết kiệm':'Gói tiết kiệm aaa'}}</h6>
                             </div>
 
                             <div style="font-size: 10px; text-align: center">
-                                <sup style="font-size: 12px; top: -9px">Từ</sup><b style="font-size: 26px">
+                                <sup style="font-size: 12px; top: -9px">{{global.locale=='vi'?'Từ':'Từ aaa'}}</sup><b style="font-size: 26px">
                                 15.000.000 </b>VND
 
                             </div>
@@ -747,74 +586,49 @@
                         <div class="block-two center">
                             <p style="padding-top: 20px;
     min-height: 150px; font-size: 12px">
-                                Dành cho nhà đầu tư đã có sẵn trợ lý
-                                hoặc bộ phận kế toán nhằm hoàn
-                                thiện các thủ tục đăng ký tại Ngân
-                                Hàng, Cơ quan cung cấp chữ ký số,
-                                hóa đơn điện tử, Cục Thuế.
+                                {{global.locale=='vi'?'Dành cho nhà đầu tư đã có sẵn trợ lý hoặc bộ phận kế toán nhằm hoàn thiện các thủ tục đăng ký tại Ngân Hàng, Cơ quan cung cấp chữ ký số, hóa đơn điện tử, Cục Thuế.':'Dành cho nhà đầu tư đã có sẵn trợ lý hoặc bộ phận kế toán nhằm hoàn thiện các thủ tục đăng ký tại Ngân Hàng, Cơ quan cung cấp chữ ký số, hóa đơn điện tử, Cục Thuế. aaa'}}
                             </p>
-                            <button (click)="submit('Gói tiết kiệm')" class="btn btn-outline-warning" style="border-radius: 30px; padding: 5px 20px;">Đăng
-                                ký
+                            <button (click)="submit('Gói tiết kiệm')" class="btn btn-outline-warning" style="border-radius: 30px; padding: 5px 20px;">{{global.locale=='vi'?'Đăng ký':'Đăng ký aaa'}}
                             </button>
                             <div class="block-three collapse" id="multiCollapseExample3">
                                 <hr>
                                 <p><img class="icon-block"
-                                        src="/assets/media/DKKD/cac-goi-phi/Asset 8.svg">Tư vấn
-                                    với
-                                    chuyên viên pháp lý</p>
+                                        src="/assets/media/DKKD/cac-goi-phi/Asset 8.svg">{{global.locale=='vi'?'Tư vấn với chuyên viên pháp lý':'Tư vấn với chuyên viên pháp lý aaa'}}</p>
                                 <p><img class="icon-block"
-                                        src="/assets/media/DKKD/cac-goi-phi/Asset 8.svg">Soạn
-                                    thảo hồ
-                                    sơ đăng ký doanh nghiệp</p>
+                                        src="/assets/media/DKKD/cac-goi-phi/Asset 8.svg">{{global.locale=='vi'?'Soạn thảo hồ sơ đăng ký doanh nghiệp':'Soạn thảo hồ sơ đăng ký doanh nghiệp aaa'}}</p>
                                 <p><img class="icon-block"
-                                        src="/assets/media/DKKD/cac-goi-phi/Asset 8.svg">Nhận
-                                    giấy
-                                    chứng nhận đăng ký kinh doanh</p>
+                                        src="/assets/media/DKKD/cac-goi-phi/Asset 8.svg">{{global.locale=='vi'?'Nhận giấy chứng nhận đăng ký kinh doanh':'Nhận giấy chứng nhận đăng ký kinh doanh aaa'}}</p>
                                 <p><img class="icon-block"
-                                        src="/assets/media/DKKD/cac-goi-phi/Asset 8.svg">Công bố
-                                    thông tin doanh nghiệp</p>
+                                        src="/assets/media/DKKD/cac-goi-phi/Asset 8.svg">{{global.locale=='vi'?'Công bố thông tin doanh nghiệp':'Công bố thông tin doanh nghiệp aaa'}}</p>
                                 <p><img class="icon-block"
-                                        src="/assets/media/DKKD/cac-goi-phi/Asset 8.svg">Đăng ký
-                                    &
-                                    thông báo mẫu dấu</p>
+                                        src="/assets/media/DKKD/cac-goi-phi/Asset 8.svg">{{global.locale=='vi'?'Đăng ký & thông báo mẫu dấu':'Đăng ký & thông báo mẫu dấu aaa'}}</p>
                                 <p class="disabled"><img class="icon-block "
-                                                         src="/assets/media/DKKD/cac-goi-phi/Asset 5.svg">In
-                                    bảng hiệu doanh nghiệp (tiêu chuẩn)</p>
+                                                         src="/assets/media/DKKD/cac-goi-phi/Asset 5.svg">{{global.locale=='vi'?'In bảng hiệu doanh nghiệp (tiêu chuẩn)':'In bảng hiệu doanh nghiệp (tiêu chuẩn) aa'}}</p>
                                 <p class="disabled"><img class="icon-block "
-                                                         src="/assets/media/DKKD/cac-goi-phi/Asset 5.svg">Đăng
-                                    ký mua chữ ký số (01-03 năm)</p>
+                                                         src="/assets/media/DKKD/cac-goi-phi/Asset 5.svg">{{global.locale=='vi'?'Đăng ký mua chữ ký số (01-03 năm)':'Đăng ký mua chữ ký số (01-03 năm) aaa'}}</p>
                                 <p class="disabled"><img class="icon-block "
-                                                         src="/assets/media/DKKD/cac-goi-phi/Asset 5.svg">Đăng
-                                    ký tài khoản ngân hàng theo chỉ định</p>
+                                                         src="/assets/media/DKKD/cac-goi-phi/Asset 5.svg">{{global.locale=='vi'?'Đăng ký tài khoản ngân hàng theo chỉ định':'Đăng ký tài khoản ngân hàng theo chỉ định aaa'}}</p>
                                 <p class="disabled"><img class="icon-block "
-                                                         src="/assets/media/DKKD/cac-goi-phi/Asset 5.svg">Thực
-                                    hiện kê khai thuế ban đầu tại Cục Thuế</p>
+                                                         src="/assets/media/DKKD/cac-goi-phi/Asset 5.svg">{{global.locale=='vi'?'Thực hiện kê khai thuế ban đầu tại Cục Thuế':'Thực hiện kê khai thuế ban đầu tại Cục Thuế aaa'}}</p>
                                 <p class="disabled"><img class="icon-block "
-                                                         src="/assets/media/DKKD/cac-goi-phi/Asset 5.svg">Đặt
-                                    in hóa đơn điện tử (1000 số)</p>
+                                                         src="/assets/media/DKKD/cac-goi-phi/Asset 5.svg">{{global.locale=='vi'?'Đặt in hóa đơn điện tử (1000 số)':'Đặt in hóa đơn điện tử (1000 số) aaa'}}</p>
                                 <p class="disabled"><img class="icon-block "
-                                                         src="/assets/media/DKKD/cac-goi-phi/Asset 5.svg">Hỗ
-                                    trợ nộp thuế môn bài (01 năm)</p>
+                                                         src="/assets/media/DKKD/cac-goi-phi/Asset 5.svg">{{global.locale=='vi'?'Hỗ trợ nộp thuế môn bài (01 năm)':'Hỗ trợ nộp thuế môn bài (01 năm) aaa'}}</p>
                                 <p class="disabled"><img class="icon-block "
-                                                         src="/assets/media/DKKD/cac-goi-phi/Asset 5.svg">Hướng
-                                    dẫn nộp tài khoản vốn (90 ngày)</p>
+                                                         src="/assets/media/DKKD/cac-goi-phi/Asset 5.svg">{{global.locale=='vi'?'Hướng dẫn nộp tài khoản vốn (90 ngày)':'Hướng dẫn nộp tài khoản vốn (90 ngày) aaa'}}</p>
                                 <p class="disabled"><img class="icon-block "
-                                                         src="/assets/media/DKKD/cac-goi-phi/Asset 5.svg">Lập
-                                    sổ cổ đông/chứng nhận góp vốn</p>
+                                                         src="/assets/media/DKKD/cac-goi-phi/Asset 5.svg">{{global.locale=='vi'?'Lập sổ cổ đông/chứng nhận góp vốn':'Lập sổ cổ đông/chứng nhận góp vốn aaa'}}</p>
                                 <p class="disabled"><img class="icon-block "
-                                                         src="/assets/media/DKKD/cac-goi-phi/Asset 5.svg">Lập
-                                    chứng nhận cổ phần/vốn góp</p>
+                                                         src="/assets/media/DKKD/cac-goi-phi/Asset 5.svg">{{global.locale=='vi'?'Lập chứng nhận cổ phần/vốn góp':'Lập chứng nhận cổ phần/vốn góp aaa'}}</p>
                                 <p class="disabled"><img class="icon-block "
-                                                         src="/assets/media/DKKD/cac-goi-phi/Asset 5.svg">Hướng
-                                    dẫn thủ tục pháp lý sau đăng ký</p>
+                                                         src="/assets/media/DKKD/cac-goi-phi/Asset 5.svg">{{global.locale=='vi'?'Hướng dẫn thủ tục pháp lý sau đăng ký':'Hướng dẫn thủ tục pháp lý sau đăng ký aaa'}}</p>
 
                             </div>
 
                             <div class="text-center" style="margin-top: 10px"><a data-toggle="collapse" href="#multiCollapseExample3"
                                                                                  role="button" aria-expanded="false"
                                                                                  aria-controls="multiCollapseExample3"
-                                                                                 class="custom-collapse collapsed">Chi tiết hạng mục công
-                                việc</a>
+                                                                                 class="custom-collapse collapsed">{{global.locale=='vi'?'Chi tiết hạng mục công việc':'Chi tiết hạng mục công việc aaa'}}</a>
                             </div>
                         </div>
 
@@ -826,11 +640,11 @@
                         <div class="block-one">
                             <img class="sticky" src="/assets/media/DKKD/cac-goi-phi/Asset 6.svg">
                             <div class="title-block center">
-                                <h6>Gói toàn diện</h6>
+                                <h6>{{global.locale=='vi'?'Gói toàn diện':'Gói toàn diện aaa'}}</h6>
                             </div>
 
                             <div style="font-size: 10px; text-align: center">
-                                <sup style="font-size: 12px; top: -9px">Từ</sup><b style="font-size: 26px">
+                                <sup style="font-size: 12px; top: -9px">{{global.locale=='vi'?'Từ':'Từ aaa'}}</sup><b style="font-size: 26px">
                                 25.000.000 </b>VND
 
                             </div>
@@ -839,85 +653,50 @@
                         <div class="block-two center">
                             <p style="padding-top: 20px;
     min-height: 150px; font-size: 12px">
-                                Phù hợp với nhà đầu tư muốn ủy
-                                quyền toàn bộ thủ tục cho Asoka Law.
-                                Bao gồm thực hiện mọi hồ sơ tại Sở
-                                Kế Hoạch & Đầu Tư, Ngân Hàng, Cơ
-                                quan Công An, Đơn vị cung cấp chữ ký
-                                số, hóa đơn, khai trình tại Cục Thuế.
+                                {{global.locale=='vi'?'Phù hợp với nhà đầu tư muốn ủy quyền toàn bộ thủ tục cho Asoka Law. Bao gồm thực hiện mọi hồ sơ tại SởKế Hoạch & Đầu Tư, Ngân Hàng, Cơ quan Công An, Đơn vị cung cấp chữ ký số, hóa đơn, khai trình tại Cục Thuế.':'Phù hợp với nhà đầu tư muốn ủy quyền toàn bộ thủ tục cho Asoka Law. Bao gồm thực hiện mọi hồ sơ tại SởKế Hoạch & Đầu Tư, Ngân Hàng, Cơ quan Công An, Đơn vị cung cấp chữ ký số, hóa đơn, khai trình tại Cục Thuế. aaa'}}
                             </p>
-                            <button (click)="submit('Gói toàn diện')" class="btn btn-outline-warning" style="border-radius: 30px; padding: 5px 20px;">Đăng
-                                ký
+                            <button (click)="submit('Gói toàn diện')" class="btn btn-outline-warning" style="border-radius: 30px; padding: 5px 20px;">{{global.locale=='vi'?'Đăng ký':'Đăng ký aaa'}}
                             </button>
                             <div class="block-three collapse" id="multiCollapseExample4">
                                 <hr>
                                 <p><img class="icon-block"
-                                        src="/assets/media/DKKD/cac-goi-phi/Asset 8.svg">Tư vấn
-                                    với
-                                    <b style="font-size: 12px;">Luật sư và chuyên viên</b> (01 giờ)</p>
+                                        src="/assets/media/DKKD/cac-goi-phi/Asset 8.svg">{{global.locale=='vi'?'Tư vấn với':'Tư vấn với aaa'}}
+                                    <b style="font-size: 12px;">{{global.locale=='vi'?'Luật sư và chuyên viên':'Luật sư và chuyên viên aaa'}}</b>{{global.locale=='vi'?' (01 giờ)':' (01 giờ) aaa'}}</p>
                                 <p><img class="icon-block"
-                                        src="/assets/media/DKKD/cac-goi-phi/Asset 8.svg">Soạn
-                                    thảo hồ
-                                    sơ đăng ký doanh nghiệp</p>
+                                        src="/assets/media/DKKD/cac-goi-phi/Asset 8.svg">{{global.locale=='vi'?'Soạn thảo hồ sơ đăng ký doanh nghiệp':'Soạn thảo hồ sơ đăng ký doanh nghiệp aaa'}}</p>
                                 <p><img class="icon-block"
-                                        src="/assets/media/DKKD/cac-goi-phi/Asset 8.svg">Nhận
-                                    giấy
-                                    chứng nhận đăng ký kinh doanh</p>
+                                        src="/assets/media/DKKD/cac-goi-phi/Asset 8.svg">{{global.locale=='vi'?'Nhận giấy chứng nhận đăng ký kinh doanh':'Nhận giấy chứng nhận đăng ký kinh doanh aaa'}}</p>
                                 <p><img class="icon-block"
-                                        src="/assets/media/DKKD/cac-goi-phi/Asset 8.svg">Công bố
-                                    thông tin doanh nghiệp</p>
+                                        src="/assets/media/DKKD/cac-goi-phi/Asset 8.svg">{{global.locale=='vi'?'Công bố thông tin doanh nghiệp':'Công bố thông tin doanh nghiệp aaa'}}</p>
                                 <p><img class="icon-block"
-                                        src="/assets/media/DKKD/cac-goi-phi/Asset 8.svg">Đăng ký
-                                    &
-                                    thông báo, khắc mẫu dấu</p>
+                                        src="/assets/media/DKKD/cac-goi-phi/Asset 8.svg">{{global.locale=='vi'?'Đăng ký & thông báo, khắc mẫu dấu':'Đăng ký & thông báo, khắc mẫu dấu aaa'}}</p>
                                 <p><img class="icon-block"
-                                        src="/assets/media/DKKD/cac-goi-phi/Asset 8.svg">In bảng
-                                    hiệu
-                                    doanh nghiệp (tiêu chuẩn)</p>
+                                        src="/assets/media/DKKD/cac-goi-phi/Asset 8.svg">{{global.locale=='vi'?'In bảng hiệu doanh nghiệp (tiêu chuẩn)':'In bảng hiệu doanh nghiệp (tiêu chuẩn) aaa'}}</p>
                                 <p><img class="icon-block"
-                                        src="/assets/media/DKKD/cac-goi-phi/Asset 8.svg">Đăng ký
-                                    mua
-                                    chữ ký số (01-03 năm)</p>
+                                        src="/assets/media/DKKD/cac-goi-phi/Asset 8.svg">{{global.locale=='vi'?'Đăng ký mua chữ ký số (01-03 năm)':'Đăng ký mua chữ ký số (01-03 năm) aaa'}}</p>
                                 <p><img class="icon-block"
-                                        src="/assets/media/DKKD/cac-goi-phi/Asset 8.svg">Đăng ký
-                                    tài
-                                    khoản ngân hàng theo chỉ định</p>
+                                        src="/assets/media/DKKD/cac-goi-phi/Asset 8.svg">{{global.locale=='vi'?'Đăng ký tài khoản ngân hàng theo chỉ định':'Đăng ký tài khoản ngân hàng theo chỉ định aaa'}}</p>
                                 <p><img class="icon-block"
-                                        src="/assets/media/DKKD/cac-goi-phi/Asset 8.svg">Thực
-                                    hiện kê
-                                    khai thuế ban đầu tại Cục Thuế</p>
+                                        src="/assets/media/DKKD/cac-goi-phi/Asset 8.svg">{{global.locale=='vi'?'Thực hiện kê khai thuế ban đầu tại Cục Thuế':'Thực hiện kê khai thuế ban đầu tại Cục Thuế aaa'}}</p>
                                 <p><img class="icon-block"
-                                        src="/assets/media/DKKD/cac-goi-phi/Asset 8.svg">Đặt in
-                                    hóa
-                                    đơn điện tử (1000 số)</p>
+                                        src="/assets/media/DKKD/cac-goi-phi/Asset 8.svg">{{global.locale=='vi'?'Đặt in hóa đơn điện tử (1000 số)':'Đặt in hóa đơn điện tử (1000 số) aaa'}}</p>
                                 <p><img class="icon-block"
-                                        src="/assets/media/DKKD/cac-goi-phi/Asset 8.svg">Hỗ trợ
-                                    nộp
-                                    thuế môn bài (01 năm)</p>
+                                        src="/assets/media/DKKD/cac-goi-phi/Asset 8.svg">{{global.locale=='vi'?'Hỗ trợ nộp thuế môn bài (01 năm)':'Hỗ trợ nộp thuế môn bài (01 năm) aaa'}}</p>
                                 <p><img class="icon-block"
-                                        src="/assets/media/DKKD/cac-goi-phi/Asset 8.svg">Hướng
-                                    dẫn
-                                    nộp tài khoản vốn (90 ngày)</p>
+                                        src="/assets/media/DKKD/cac-goi-phi/Asset 8.svg">{{global.locale=='vi'?'Hướng dẫn nộp tài khoản vốn (90 ngày)':'Hướng dẫn nộp tài khoản vốn (90 ngày) aaa'}}</p>
                                 <p><img class="icon-block"
-                                        src="/assets/media/DKKD/cac-goi-phi/Asset 8.svg">Lập sổ
-                                    cổ
-                                    đông/chứng nhận góp vốn</p>
+                                        src="/assets/media/DKKD/cac-goi-phi/Asset 8.svg">{{global.locale=='vi'?'Lập sổ cổ đông/chứng nhận góp vốn':'Lập sổ cổ đông/chứng nhận góp vốn aaa'}}</p>
                                 <p><img class="icon-block"
-                                        src="/assets/media/DKKD/cac-goi-phi/Asset 8.svg">Lập
-                                    chứng
-                                    nhận cổ phần/vốn góp</p>
+                                        src="/assets/media/DKKD/cac-goi-phi/Asset 8.svg">{{global.locale=='vi'?'Lập chứng nhận cổ phần/vốn góp':'Lập chứng nhận cổ phần/vốn góp aaa'}}</p>
                                 <p><img class="icon-block"
-                                        src="/assets/media/DKKD/cac-goi-phi/Asset 8.svg">Hướng
-                                    dẫn
-                                    thủ tục pháp lý sau đăng ký</p>
+                                        src="/assets/media/DKKD/cac-goi-phi/Asset 8.svg">{{global.locale=='vi'?'Hướng dẫn thủ tục pháp lý sau đăng ký':'Hướng dẫn thủ tục pháp lý sau đăng ký aaa'}}</p>
 
                             </div>
 
                             <div class="text-center" style="margin-top: 10px"><a data-toggle="collapse" href="#multiCollapseExample4"
                                                                                  role="button" aria-expanded="false"
                                                                                  aria-controls="multiCollapseExample4"
-                                                                                 class="custom-collapse collapsed">Chi tiết hạng mục công
-                                việc</a>
+                                                                                 class="custom-collapse collapsed">{{global.locale=='vi'?'Chi tiết hạng mục công việc':'Chi tiết hạng mục công việc aaa'}}</a>
                             </div>
                         </div>
                     </div>

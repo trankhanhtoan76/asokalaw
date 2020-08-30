@@ -2,7 +2,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <h4 style="margin-left: 40px; margin-bottom: -20px; font-family: 'Montserrat'; font-weight: 500;">Video được xem nhiều nhất</h4>
+                <h4 style="margin-left: 40px; margin-bottom: -20px; font-family: 'Montserrat'; font-weight: 500;">{{global.locale=='vi'?'Video được xem nhiều nhất':'Video được xem nhiều nhất aaa'}}</h4>
             </div>
         </div>
         <div class="row">
@@ -11,7 +11,7 @@
                     <ng-container *ngFor="let video of videos">
                         <div class="slide-item fix-slide-dkn-videos-V">
                             <img style="cursor: pointer" [attr.data-target]="'#'+video.id" data-toggle="modal" class="img-responsive" src="{{video.img}}"/>
-                            <p style="padding-top: 10px;"><i class="fa fa-eye" aria-hidden="true"></i><span style="color: #9f9fb1;"> 1.8k lượt xem</span></p>
+                            <p style="padding-top: 10px;"><i class="fa fa-eye" aria-hidden="true"></i><span style="color: #9f9fb1;">{{global.locale=='vi'?'1.8k lượt xem':'1.8k lượt xem aaa'}} </span></p>
                         </div>
                     </ng-container>
                 </div>

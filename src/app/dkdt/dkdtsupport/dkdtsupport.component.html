@@ -2,9 +2,9 @@
     <div class="container">
         <div class="row center">
             <div class="col-md-12">
-                <h1 style="padding-top: 30px;">Bạn đang tìm kiếm dịch vụ hỗ trợ thêm sau khi đầu tư?</h1>
+                <h1 style="padding-top: 30px;">{{global.locale=='vi'?'Bạn đang tìm kiếm dịch vụ hỗ trợ thêm sau khi đầu tư?':'Bạn đang tìm kiếm dịch vụ hỗ trợ thêm sau khi đầu tư? aaa'}}</h1>
                 <p class="center sub">
-                    Bạn muốn ổn định cuộc sống sau khi đầu tư? Đừng lo, chúng tôi sẵn sàng cung cấp các giải pháp hỗ trợ kịp thời.
+                    {{global.locale=='vi'?'Bạn muốn ổn định cuộc sống sau khi đầu tư? Đừng lo, chúng tôi sẵn sàng cung cấp các giải pháp hỗ trợ kịp thời.':'Bạn muốn ổn định cuộc sống sau khi đầu tư? Đừng lo, chúng tôi sẵn sàng cung cấp các giải pháp hỗ trợ kịp thời. aaa'}}
                 </p>
             </div>
         </div>
@@ -12,13 +12,15 @@
             <div class="col-md-4 center">
                 <div class="external" style="margin: auto;width: 310px; position: relative;">
                     <div class="cover center">
-                        <p class="external-title center">Giấy phép lao động</p>
-                        <p style="min-height: 80px;" class="">Dành cho người nước ngoài lao động tại Việt Nam</p>
-                        <button (click)="showRegistrationForm(1)" style="    border-radius: 30px; width: 120px; height: 40px; text-align: center; margin-bottom: 20px;" class="btn btn-warning">Đăng ký</button>
-                        <p class="center"><a href="" data-toggle="modal" data-target="#modal-dk-V-1">Xem chi tiết</a></p>
+                        <p class="external-title center">{{global.locale=='vi'?'Giấy phép lao động':'Giấy phép lao động aaa'}}</p>
+                        <p style="min-height: 80px;" class="">{{global.locale=='vi'?'Dành cho người nước ngoài lao động tại Việt Nam':'Dành cho người nước ngoài lao động tại Việt Nam aaa'}}</p>
+                        <button (click)="showRegistrationForm(1)" style="    border-radius: 30px; width: 120px; height: 40px; text-align: center; margin-bottom: 20px;" class="btn btn-warning">{{global.locale=='vi'?'Đăng ký':'Đăng ký aaa'}}</button>
+                        <p class="center"><a href="" data-toggle="modal" data-target="#modal-dk-V-1">{{global.locale=='vi'?'Xem chi tiết':'Xem chi tiết aaa'}}</a></p>
                     </div>
                     <img class="external-image" src="/assets/media/DKDT/dich-vu-ho-tro-them/1-Giay-phep-lao-dong.png">
-                    <button (click)="showRegistrationForm(1)" class="btn btn-outline-warning external-body">Đăng ký</button>
+                    <button (click)="showRegistrationForm(1)" class="btn btn-outline-warning external-body">
+
+                    </button>
                     <div class="external-footer center">
                         <div style="
     margin: auto;
@@ -26,7 +28,7 @@
     top: 18px;
     left: 18px;
 ">
-                            <p><b>Giấy phép lao động</b></p>
+                            <p><b>{{global.locale=='vi'?'Giấy phép lao động':'Giấy phép lao động aaa'}}</b></p>
                             <p>Từ 6.900.000 vnđ</p>
                         </div>
                     </div>
@@ -37,15 +39,15 @@
                 <div class="modal-dialog">
                   <div class="modal-content">
                     <div class="modal-header">
-                      <p>Giấy phép lao động</p>
+                      <p>{{global.locale=='vi'?'Giấy phép lao động':'Giấy phép lao động aaa'}}</p>
                       <!-- <button type="button" class="close" data-dismiss="modal">&times;</button> -->
                     </div>
                     <div class="modal-body">
-                        <p>Là thủ tục bắt buộc nhằm xác nhận người nước ngoài vào làm việc tại Việt Nam thuộc hoặc không thuộc diện cấp giấy phép lao động</p>
+                        <p>{{global.locale=='vi'?'Là thủ tục bắt buộc nhằm xác nhận người nước ngoài vào làm việc tại Việt Nam thuộc hoặc không thuộc diện cấp giấy phép lao động':'Là thủ tục bắt buộc nhằm xác nhận người nước ngoài vào làm việc tại Việt Nam thuộc hoặc không thuộc diện cấp giấy phép lao động aaa'}}</p>
                         <img src="/assets/media/DKDT/dich-vu-ho-tro-them/anh-mo-ta-giay-phep-lao-dong.jpg">
                     </div>
                     <div class="modal-footer" style="justify-content: center;">
-                      <button type="button" style="margin-bottom: 25px;" class="btn btn-warning" data-dismiss="modal" (click)="showRegistrationForm(1)">ĐĂNG KÝ</button>
+                      <button type="button" style="margin-bottom: 25px;" class="btn btn-warning" data-dismiss="modal" (click)="showRegistrationForm(1)">{{global.locale=='vi'?'Đăng ký':'Đăng ký aaa'}}</button>
                     </div>
                   </div>
                 </div>
@@ -54,13 +56,13 @@
             <div class="col-md-4 center">
                 <div class="external" style="margin: auto;width: 310px; position: relative;">
                     <div class="cover center">
-                        <p class="external-title center">Thẻ tạm trú nhà đầu tư</p>
-                        <p style="min-height: 80px;" class="">Dành cho nhà đầu tư nước ngoài sinh sống có thời hạn tại Việt Nam</p>
-                        <button (click)="showRegistrationForm(2)" style="    border-radius: 30px; width: 120px; height: 40px; text-align: center; margin-bottom: 20px;" class="btn btn-warning">Đăng ký</button>
-                        <p class="center"><a href="" data-toggle="modal" data-target="#modal-dk-V-2">Xem chi tiết</a></p>
+                        <p class="external-title center">{{global.locale=='vi'?'Thẻ tạm trú nhà đầu tư':'Thẻ tạm trú nhà đầu tư aaa'}}</p>
+                        <p style="min-height: 80px;" class="">{{global.locale=='vi'?'Dành cho nhà đầu tư nước ngoài sinh sống có thời hạn tại Việt Nam':'Dành cho nhà đầu tư nước ngoài sinh sống có thời hạn tại Việt Nam aaa'}}</p>
+                        <button (click)="showRegistrationForm(2)" style="    border-radius: 30px; width: 120px; height: 40px; text-align: center; margin-bottom: 20px;" class="btn btn-warning">{{global.locale=='vi'?'Đăng ký':'Đăng ký aaa'}}</button>
+                        <p class="center"><a href="" data-toggle="modal" data-target="#modal-dk-V-2">{{global.locale=='vi'?'Xem chi tiết':'Xem chi tiết aaa'}}</a></p>
                     </div>
                     <img class="external-image" src="/assets/media/DKDT/dich-vu-ho-tro-them/2-the-tam-tru.png">
-                    <button (click)="showRegistrationForm(2)" class="btn btn-outline-warning external-body">Đăng ký</button>
+                    <button (click)="showRegistrationForm(2)" class="btn btn-outline-warning external-body">{{global.locale=='vi'?'Đăng ký':'Đăng ký aaa'}}</button>
                     <div class="external-footer center">
                         <div style="
     margin: auto;
@@ -68,7 +70,7 @@
     top: 18px;
     left: 18px;
 ">
-                            <p><b>Thẻ tạm trú nhà đầu tư</b></p>
+                            <p><b>{{global.locale=='vi'?'Thẻ tạm trú nhà đầu tư':'Thẻ tạm trú nhà đầu tư aaa'}}</b></p>
                             <p>Từ 6.900.000 vnđ</p>
                         </div>
 
@@ -80,15 +82,15 @@
                 <div class="modal-dialog">
                   <div class="modal-content">
                     <div class="modal-header">
-                      <p>Thẻ tạm trú</p>
+                      <p>{{global.locale=='vi'?'Thẻ tạm trú nhà đầu tư':'Thẻ tạm trú nhà đầu tư aaa'}}</p>
                       <!-- <button type="button" class="close" data-dismiss="modal">&times;</button> -->
                     </div>
                     <div class="modal-body">
-                        <p>Là thủ tục bắt buộc nhằm xác nhận người nước ngoài lưu trú tại Việt Nam trong thời gian từ 01 - 03 năm và được phép gia hạn.</p>
+                        <p>{{global.locale=='vi'?'Là thủ tục bắt buộc nhằm xác nhận người nước ngoài lưu trú tại Việt Nam trong thời gian từ 01 - 03 năm và được phép gia hạn.':'Là thủ tục bắt buộc nhằm xác nhận người nước ngoài lưu trú tại Việt Nam trong thời gian từ 01 - 03 năm và được phép gia hạn. aaa'}}</p>
                         <img src="/assets/media/DKDT/dich-vu-ho-tro-them/anh-mo-ta-giay-tam-tru.jpg">
                     </div>
                     <div class="modal-footer" style="justify-content: center;">
-                      <button type="button" style="margin-bottom: 25px;" class="btn btn-warning" data-dismiss="modal" (click)="showRegistrationForm(2)">ĐĂNG KÝ</button>
+                      <button type="button" style="margin-bottom: 25px;" class="btn btn-warning" data-dismiss="modal" (click)="showRegistrationForm(2)">{{global.locale=='vi'?'Đăng ký':'Đăng ký aaa'}}</button>
                     </div>
                   </div>
                 </div>
@@ -97,13 +99,13 @@
             <div class="col-md-4 center">
                 <div class="external" style="margin: auto;width: 310px; position: relative;">
                     <div class="cover center">
-                        <p class="external-title center">Pháp lý thường xuyên</p>
-                        <p style="min-height: 80px;" class="">Dành cho doanh nghiệp nước ngoài tại Việt Nam, chưa có trợ lý, nhân sự, kế toán viên.</p>
-                        <button (click)="showRegistrationForm(3)" style="    border-radius: 30px; width: 120px; height: 40px; text-align: center; margin-bottom: 20px;" class="btn btn-warning">Đăng ký</button>
-                        <p class="center"><a href="/phap-ly-thuong-xuyen">Xem chi tiết</a></p>
+                        <p class="external-title center">{{global.locale=='vi'?'Pháp lý thường xuyên':'Pháp lý thường xuyên aaa'}}</p>
+                        <p style="min-height: 80px;" class="">{{global.locale=='vi'?'Dành cho doanh nghiệp nước ngoài tại Việt Nam, chưa có trợ lý, nhân sự, kế toán viên.':'Dành cho doanh nghiệp nước ngoài tại Việt Nam, chưa có trợ lý, nhân sự, kế toán viên. aaa'}}</p>
+                        <button (click)="showRegistrationForm(3)" style="    border-radius: 30px; width: 120px; height: 40px; text-align: center; margin-bottom: 20px;" class="btn btn-warning">{{global.locale=='vi'?'Đăng ký':'Đăng ký aaa'}}</button>
+                        <p class="center"><a href="/phap-ly-thuong-xuyen">{{global.locale=='vi'?'Xem chi tiết':'Xem chi tiết aaa'}}</a></p>
                     </div>
                     <img class="external-image" src="/assets/media/DKDT/dich-vu-ho-tro-them/3-phap-ly-thuong-xuyen.png">
-                    <button (click)="showRegistrationForm(3)" class="btn btn-outline-warning external-body">Đăng ký</button>
+                    <button (click)="showRegistrationForm(3)" class="btn btn-outline-warning external-body">{{global.locale=='vi'?'Đăng ký':'Đăng ký aaa'}}</button>
                     <div class="external-footer center">
                         <div style="
     margin: auto;
@@ -111,7 +113,7 @@
     top: 18px;
     left: 18px;
 ">
-                            <p><b>Pháp lý thường xuyên</b></p>
+                            <p><b>{{global.locale=='vi'?'Pháp lý thường xuyên':'Pháp lý thường xuyên aaa'}}</b></p>
                             <p>Từ 4.600.000 vnđ</p>
                         </div>
                     </div>
@@ -122,18 +124,18 @@
             <div class="col-md-4 center">
                 <div class="external" style="margin: auto;width: 310px; position: relative;">
                     <div class="cover center">
-                        <p class="external-title center">Giấy phép lao động</p>
-                        <p style="min-height: 80px;" class="">Dành cho người nước ngoài lao động tại Việt Nam</p>
-                        <button (click)="showRegistrationForm(1)" style="    border-radius: 30px; width: 120px; height: 40px; text-align: center; margin-bottom: 20px;" class="btn btn-warning">Đăng ký</button>
-                        <p class="center"><a>Xem chi tiết</a></p>
+                        <p class="external-title center">{{global.locale=='vi'?'Giấy phép lao động':'Giấy phép lao động aaa'}}</p>
+                        <p style="min-height: 80px;" class="">{{global.locale=='vi'?'Dành cho người nước ngoài lao động tại Việt Nam':'Dành cho người nước ngoài lao động tại Việt Nam aaa'}}</p>
+                        <button (click)="showRegistrationForm(1)" style="    border-radius: 30px; width: 120px; height: 40px; text-align: center; margin-bottom: 20px;" class="btn btn-warning">{{global.locale=='vi'?'Đăng ký':'Đăng ký aaa'}}</button>
+                        <p class="center"><a>{{global.locale=='vi'?'Xem chi tiết':'Xem chi tiết aaa'}}</a></p>
                     </div>
                     <img class="external-image"
                          src="/assets/media/DKDT/dich-vu-ho-tro-them/1-Giay-phep-lao-dong.png">
-                    <button (click)="showRegistrationForm(1)" class="btn btn-outline-warning external-body">Đăng ký</button>
+                    <button (click)="showRegistrationForm(1)" class="btn btn-outline-warning external-body">{{global.locale=='vi'?'Đăng ký':'Đăng ký aaa'}}</button>
                     <div class="external-footer center">
                         <div style=" margin: auto; position: absolute; top: 18px; left: 18px;">
-                            <p><b>Giấy phép lao động</b></p>
-                            <p>Từ 6.900.000 vnđ</p>
+                            <p><b>{{global.locale=='vi'?'Giấy phép lao động':'Giấy phép lao động aaa'}}</b></p>
+                            <p>{{global.locale=='vi'?'Từ 6.900.000 vnđ':'Từ 6.900.000 vnđ aaa'}}</p>
                         </div>
                     </div>
                 </div>
@@ -141,18 +143,17 @@
             <div class="col-md-4 center">
                 <div class="external" style="margin: auto;width: 310px; position: relative;">
                     <div class="cover center">
-                        <p class="external-title center">Thẻ tạm trú nhà đầu tư</p>
-                        <p style="min-height: 80px;" class="">Dành cho nhà đầu tư nước ngoài
-                            sinh sống có thời hạn tại Việt Nam</p>
-                        <button (click)="showRegistrationForm(2)" style="    border-radius: 30px; width: 120px; height: 40px; text-align: center; margin-bottom: 20px;" class="btn btn-warning">Đăng ký</button>
-                        <p class="center"><a href="#">Xem chi tiết</a></p>
+                        <p class="external-title center">{{global.locale=='vi'?'Thẻ tạm trú nhà đầu tư':'Thẻ tạm trú nhà đầu tư aaa'}}</p>
+                        <p style="min-height: 80px;" class="">{{global.locale=='vi'?'Dành cho nhà đầu tư nước ngoài sinh sống có thời hạn tại Việt Nam':'Dành cho nhà đầu tư nước ngoài sinh sống có thời hạn tại Việt Nam aaa'}}</p>
+                        <button (click)="showRegistrationForm(2)" style="    border-radius: 30px; width: 120px; height: 40px; text-align: center; margin-bottom: 20px;" class="btn btn-warning">{{global.locale=='vi'?'Đăng ký':'Đăng ký aaa'}}</button>
+                        <p class="center"><a href="#">{{global.locale=='vi'?'Xem chi tiết':'Xem chi tiết aaa'}}</a></p>
                     </div>
                     <img class="external-image"
                          src="/assets/media/DKDT/dich-vu-ho-tro-them/2-the-tam-tru.png">
-                    <button (click)="showRegistrationForm(2)" class="btn btn-outline-warning external-body">Đăng ký</button>
+                    <button (click)="showRegistrationForm(2)" class="btn btn-outline-warning external-body">{{global.locale=='vi'?'Đăng ký':'Đăng ký aaa'}}</button>
                     <div class="external-footer center">
                         <div style=" margin: auto; position: absolute; top: 18px; left: 18px;">
-                            <p><b>Thẻ tạm trú nhà đầu tư</b></p>
+                            <p><b>{{global.locale=='vi'?'Thẻ tạm trú nhà đầu tư':'Thẻ tạm trú nhà đầu tư aaa'}}</b></p>
                             <p>Từ 6.900.000 vnđ</p>
                         </div>
 
@@ -162,16 +163,14 @@
             <div class="col-md-4 center">
                 <div class="external" style="margin: auto;width: 310px; position: relative;">
                     <div class="cover center">
-                        <p class="external-title center">Pháp lý thường xuyên</p>
-                        <p style="min-height: 80px;" class="">Dành cho doanh nghiệp nước ngoài
-                            tại Việt Nam, chưa có trợ lý, nhân sự,
-                            kế toán viên.</p>
-                        <button (click)="showRegistrationForm(3)" style="    border-radius: 30px; width: 120px; height: 40px; text-align: center; margin-bottom: 20px;" class="btn btn-warning">Đăng ký</button>
-                        <p class="center"><a href="#">Xem chi tiết</a></p>
+                        <p class="external-title center">{{global.locale=='vi'?'Pháp lý thường xuyên':'Pháp lý thường xuyên aaa'}}</p>
+                        <p style="min-height: 80px;" class="">{{global.locale=='vi'?'Dành cho doanh nghiệp nước ngoài tại Việt Nam, chưa có trợ lý, nhân sự, kế toán viên.':'Dành cho doanh nghiệp nước ngoài tại Việt Nam, chưa có trợ lý, nhân sự, kế toán viên. aaa'}}</p>
+                        <button (click)="showRegistrationForm(3)" style="    border-radius: 30px; width: 120px; height: 40px; text-align: center; margin-bottom: 20px;" class="btn btn-warning">{{global.locale=='vi'?'Đăng ký':'Đăng ký aaa'}}</button>
+                        <p class="center"><a href="#">{{global.locale=='vi'?'Xem chi tiết':'Xem chi tiết aaa'}}</a></p>
                     </div>
                     <img class="external-image"
                          src="/assets/media/DKDT/dich-vu-ho-tro-them/3-phap-ly-thuong-xuyen.png">
-                    <button (click)="showRegistrationForm(3)" class="btn btn-outline-warning external-body">Đăng ký</button>
+                    <button (click)="showRegistrationForm(3)" class="btn btn-outline-warning external-body">{{global.locale=='vi'?'Đăng ký':'Đăng ký aaa'}}</button>
                     <div class="external-footer center">
                         <div style="
     margin: auto;
@@ -179,8 +178,8 @@
     top: 18px;
     left: 18px;
 ">
-                            <p><b>Pháp lý thường xuyên</b></p>
-                            <p>Từ 4.600.000 vnđ</p>
+                            <p><b>{{global.locale=='vi'?'Pháp lý thường xuyên':'Pháp lý thường xuyên aaa'}}</b></p>
+                            <p>{{global.locale=='vi'?'Từ':'Từ aaa'}} 4.600.000 vnđ</p>
                         </div>
                     </div>
                 </div>
@@ -199,19 +198,19 @@
             </div>
             <div class="modal-body">
                 <div class="form-group">
-                    <input (keyup)="n=true" [class.is-invalid]="!fieldValid(name)&&n" [class.is-valid]="fieldValid(name)&&n" type="text" class="form-control" [(ngModel)]="name" name="name" placeholder="Họ tên *">
-                    <i *ngIf="!fieldValid(name) && n"><small class="text-danger">Bắt buộc nhập họ tên.</small></i>
+                    <input (keyup)="n=true" [class.is-invalid]="!fieldValid(name)&&n" [class.is-valid]="fieldValid(name)&&n" type="text" class="form-control" [(ngModel)]="name" name="name" placeholder="{{global.locale=='vi'?'Họ tên *':'Họ tên * aaa'}}">
+                    <i *ngIf="!fieldValid(name) && n"><small class="text-danger">{{global.locale=='vi'?'Bắt buộc nhập họ tên.':'Bắt buộc nhập họ tên. aaa'}}</small></i>
                 </div>
                 <div class="form-group">
-                    <input (keyup)="p=true" [class.is-invalid]="!fieldValid(phone,'phone')&&p" [class.is-valid]="fieldValid(phone,'phone')&&p" class="form-control" [(ngModel)]="phone" name="phone" type="text" placeholder="Số điện thoại *"/>
-                    <i *ngIf="!fieldValid(phone,'phone') && p"><small class="text-danger">Bắt buộc nhập số điện thoại hợp lệ.</small></i>
+                    <input (keyup)="p=true" [class.is-invalid]="!fieldValid(phone,'phone')&&p" [class.is-valid]="fieldValid(phone,'phone')&&p" class="form-control" [(ngModel)]="phone" name="phone" type="text" placeholder="{{global.locale=='vi'?'Số điện thoại *':'Số điện thoại * aaa'}}"/>
+                    <i *ngIf="!fieldValid(phone,'phone') && p"><small class="text-danger">{{global.locale=='vi'?'Bắt buộc nhập số điện thoại hợp lệ.':'Bắt buộc nhập số điện thoại hợp lệ. aaa'}}</small></i>
                 </div>
                 <div class="form-group">
                     <input (keyup)="e=true" [class.is-invalid]="!fieldValid(email,'email')&&e" [class.is-valid]="fieldValid(email,'email')&&e" class="form-control" name="email" [(ngModel)]="email" type="text" placeholder="Email *"/>
-                    <i *ngIf="!fieldValid(email,'email') && e"><small class="text-danger">Bắt buộc nhập email hợp lệ.</small></i>
+                    <i *ngIf="!fieldValid(email,'email') && e"><small class="text-danger">{{global.locale=='vi'?'Bắt buộc nhập email hợp lệ.':'Bắt buộc nhập email hợp lệ. aaa'}}</small></i>
                 </div>
                 <div class="form-group problem-checkbox">
-                    <label>Dịch vụ bạn muốn đăng ký</label>
+                    <label>{{global.locale=='vi'?'Dịch vụ bạn muốn đăng ký':'Dịch vụ bạn muốn đăng ký aaa'}}</label>
                     <div class="row">
                         <div class="col-md-12">
                             <div class="form-check form-check-inline">
@@ -248,7 +247,7 @@
                 </div>
             </div>
             <div class="modal-footer" style="text-align: center;">
-                <button style="margin: auto; color: white;" (click)="submit()" type="button" class="btn btn-warning">Gửi yêu cầu</button>
+                <button style="margin: auto; color: white;" (click)="submit()" type="button" class="btn btn-warning">{{global.locale=='vi'?'Gửi yêu cầu':'Gửi yêu cầu aaa'}}</button>
             </div>
         </div>
     </div>

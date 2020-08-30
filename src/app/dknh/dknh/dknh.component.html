@@ -3,25 +3,25 @@
         <div class="row">
             <div class="col-md-6 title-banner">
                 <div>
-                    <h1 class="title-dknh">Đăng ký logo "chính chủ"
-                        <b class="light-blue" style="font-size: 3.5rem">24h</b> nhận ngay kết quả</h1>
+                    <h1 class="title-dknh">{{global.locale=='vi'?'Đăng ký logo "chính chủ"':'Đăng ký logo "chính chủ" aaa'}}
+                        <b class="light-blue" style="font-size: 3.5rem">{{global.locale=='vi'?'24h':'24h aaa'}}</b> {{global.locale=='vi'?'nhận ngay kết quả':'nhận ngay kết quả aaa'}}</h1>
                 </div>
                 <div class="row title-dknh-m">
                     <div class="tab-record">
-                        <p class="unit align-left widthTabRecord"><i class="fa fa-circle float-left"></i>Không phí ẩn</p>
+                        <p class="unit align-left widthTabRecord"><i class="fa fa-circle float-left"></i>{{global.locale=='vi'?'Không phí ẩn':'Không phí ẩn aaa'}}</p>
                     </div>
                     <div class="tab-record">
-                        <p class="unit align-left widthTabRecord"><i class="fa fa-circle float-left"></i>Tra cứu miễn phí</p>
+                        <p class="unit align-left widthTabRecord"><i class="fa fa-circle float-left"></i>{{global.locale=='vi'?'Tra cứu miễn phí':'Tra cứu miễn phí aaa'}}</p>
                     </div>
                     <div class="tab-record ">
-                        <p class="unit align-left widthTabRecord"><i class="fa fa-circle float-left"></i>Ký & giao hồ sơ tận nơi</p>
+                        <p class="unit align-left widthTabRecord"><i class="fa fa-circle float-left"></i>{{global.locale=='vi'?'Ký & giao hồ sơ tận nơi':'Ký & giao hồ sơ tận nơi aaa'}}</p>
                     </div>
                 </div>
                 <div class="pc">
-                    <button onclick="$('#dknhform1').modal('show')" type="button" class="btn btn-warning">TRA CỨU NHANH</button>
+                    <button onclick="$('#dknhform1').modal('show')" type="button" class="btn btn-warning">{{global.locale=='vi'?'TRA CỨU NHANH':'TRA CỨU NHANH aaa'}}</button>
                 </div>
                 <div class="sp center">
-                    <button onclick="$('#dknhform1').modal('show')" type="button" class="btn btn-warning">TRA CỨU NHANH</button>
+                    <button onclick="$('#dknhform1').modal('show')" type="button" class="btn btn-warning">{{global.locale=='vi'?'TRA CỨU NHANH':'TRA CỨU NHANH aaa'}}</button>
                 </div>
             </div>
         </div>
@@ -50,7 +50,7 @@
             <div class="modal-body">
                 <app-form-group-field-info [submitClick]="submitClick" (dataName)="name=$event" (dataPhone)="phone=$event" (dataEmail)="email=$event"></app-form-group-field-info>
                 <div class="form-group">
-                    <textarea [(ngModel)]="description" name="description" class="form-control" rows="3" placeholder="Tên nhãn hiệu, ngành nghề kinh doanh. Vd: Flow Media-Truyền thông marketing"></textarea>
+                    <textarea [(ngModel)]="description" name="description" class="form-control" rows="3" placeholder="{{global.locale=='vi'?'Tên nhãn hiệu, ngành nghề kinh doanh. Vd: Flow Media-Truyền thông marketing':'Tên nhãn hiệu, ngành nghề kinh doanh. Vd: Flow Media-Truyền thông marketing aaa'}}"></textarea>
                 </div>
                 <div class="row">
                     <div class="form-group col-4">
@@ -64,7 +64,7 @@
                     </div>
                 </div>
                 <div class="flex-center-hor">
-                    <button (click)="submit()" type="button" class="btn btn-warning">Gửi yêu cầu</button>
+                    <button (click)="submit()" type="button" class="btn btn-warning">{{global.locale=='vi'?'Gửi yêu cầu':'Gửi yêu cầu aaa'}}</button>
                 </div>
             </div>
         </div>

@@ -1,118 +1,116 @@
 <section id="list-service" class="sub">
     <div class="container center">
         <div class="row title padding-record-title">
-            <h1>So sánh các gói giá của Asoka Law <br>Dùng thử miễn phí trong 7 ngày</h1>
+            <h1>{{global.locale=='vi'?'So sánh các gói giá của Asoka Law ':'So sánh các gói giá của Asoka Law  aaa'}}<br>{{global.locale=='vi'?'Dùng thử miễn phí trong 7 ngày':'Dùng thử miễn phí trong 7 ngày aaa'}}</h1>
         </div>
 
         <div class="row sub">
             <div class="col-md-4 service-content">
-                <h5 class="font-weight-normal">GÓI CƠ BẢN</h5>
+                <h5 class="font-weight-normal">{{global.locale=='vi'?'GÓI CƠ BẢN':'GÓI CƠ BẢN aaa'}}</h5>
                 <hr>
                 <div class="summary">
 
                     <p class="price">2.990.000<span class="sub-price">vnđ/tháng</span></p>
                     <div class="sub">
-                        <button (click)="onChangePackage('Gói cơ bản')" class=" btn btn-outline-warning padding" type="button">DÙNG THỬ MIỄN PHÍ</button>
+                        <button (click)="onChangePackage('Gói cơ bản')" class=" btn btn-outline-warning padding" type="button">{{global.locale=='vi'?'DÙNG THỬ MIỄN PHÍ':'DÙNG THỬ MIỄN PHÍ aaa'}}</button>
                     </div>
-                    <p class="unit">Tiết kiệm <b class="light-blue">87.23%</b>/năm</p>
-                    <p class="unit">Tối đa 03 lao động</p>
+                    <p class="unit">{{global.locale=='vi'?'Tiết kiệm':'Tiết kiệm aaa'}} <b class="light-blue">87.23%</b>{{global.locale=='vi'?'/năm':'/year aaa'}}</p>
+                    <p class="unit">{{global.locale=='vi'?'Tối đa 03 lao động':'Tối đa 03 lao động aaa'}}</p>
                 </div>
                 <div class="d-block d-md-none" style="width: 100%; text-align: right;"><a class="more-service"
                                                                                           href="#simple-service"
                                                                                           data-toggle="collapse"
                                                                                           role="button"
-                                                                                          aria-expanded="false">Xem chi
-                    tiết <i class="fa fa-chevron-down"></i></a></div>
+                                                                                          aria-expanded="false">{{global.locale=='vi'?'Xem chi tiết':'Xem chi tiết aaa'}} <i class="fa fa-chevron-down"></i></a></div>
                 <div class="collapse collapsed" id="simple-service">
                     <hr>
                     <div class="summary-detail">
                         <div class="summary-item">
-                            <p class="summary-title">TƯ VẤN PHÁP LÝ</p>
+                            <p class="summary-title">{{global.locale=='vi'?'TƯ VẤN PHÁP LÝ':'TƯ VẤN PHÁP LÝ aaa'}}</p>
                             <div class="record">
                                 <img src="\assets\media\PLTX\service\Asset5.svg"
                                      class="float-left">
-                                <p class="unit align-left">Trả lời câu hỏi pháp lý theo yêu cầu. <b>Qua email</b>
-                                    <i>(02 vấn đề/tháng)</i></p>
+                                <p class="unit align-left">{{global.locale=='vi'?'Trả lời câu hỏi pháp lý theo yêu cầu. ':'Trả lời câu hỏi pháp lý theo yêu cầu.  aaa'}}<b>{{global.locale=='vi'?'Qua email':'Qua email aaa'}}</b>
+                                    <i>{{global.locale=='vi'?'(02 vấn đề/tháng)':'(02 vấn đề/tháng) aaa'}}</i></p>
                             </div>
                         </div>
                         <div class="summary-item">
-                            <p class="summary-title">HỢP ĐỒNG</p>
+                            <p class="summary-title">{{global.locale=='vi'?'HỢP ĐỒNG':'HỢP ĐỒNG aaa'}}</p>
                             <div class="record">
                                 <img src="\assets\media\PLTX\service\Asset5.svg"
                                      class="float-left">
-                                <p class="unit align-left">Rà soát/tư vấn hợp đồng đối tác gửi đến. <b>Qua email</b>
-                                    <i>(02 vấn đề/tháng)</i></p>
+                                <p class="unit align-left">{{global.locale=='vi'?'Rà soát/tư vấn hợp đồng đối tác gửi đến. ':'Rà soát/tư vấn hợp đồng đối tác gửi đến.  aaa'}}<b>{{global.locale=='vi'?'Qua email':'Qua email aaa'}}</b>
+                                    <i>{{global.locale=='vi'?'(02 vấn đề/tháng)':'(02 vấn đề/tháng) aaa'}}</i></p>
                             </div>
                             <div class="record">
                                 <img src="\assets\media\PLTX\service\Asset5.svg"
                                      class="float-left">
-                                <p class="unit align-left">Soạn thảo hợp đồng giao dịch gửi đối tác <i>(01 hợp
-                                    đồng/tháng)</i></p>
+                                <p class="unit align-left">{{global.locale=='vi'?'Soạn thảo hợp đồng giao dịch gửi đối tác ':'Soạn thảo hợp đồng giao dịch gửi đối tác  aaa'}}<i>{{global.locale=='vi'?'(01 hợp đồng/tháng)':'(01 hợp đồng/tháng) aaa'}}</i></p>
                             </div>
                             <div class="record">
                                 <img src="\assets\media\PLTX\service\Asset5.svg"
                                      class="float-left">
-                                <p class="unit align-left">Soạn thảo văn bản giao dịch nội bộ <i>(02 văn bản/tháng)</i>
-                                </p>
-                            </div>
-                        </div>
-                        <div class="summary-item">
-                            <p class="summary-title">QUẢN TRỊ LAO ĐỘNG</p>
-                            <div class="record">
-                                <img src="\assets\media\PLTX\service\Asset5.svg"
-                                     class="float-left">
-                                <p class="unit align-left">Soạn thảo Biên bản thử việc <i>(02 văn bản/tháng)</i></p>
-                            </div>
-                            <div class="record">
-                                <img src="\assets\media\PLTX\service\Asset5.svg"
-                                     class="float-left">
-                                <p class="unit align-left">Soạn thảo Hợp đồng lao động <i>(02 hợp đồng/tháng)</i></p>
-                            </div>
-                            <div class="record">
-                                <img src="\assets\media\PLTX\service\Asset5.svg"
-                                     class="float-left">
-                                <p class="unit align-left">Đăng ký khai trình lao động <i>(tối đa 03 lao động/tháng)</i>
-                                </p>
-                            </div>
-                            <div class="record">
-                                <img src="\assets\media\PLTX\service\Asset5.svg"
-                                     class="float-left">
-                                <p class="unit align-left">Đăng ký bảo hiểm xã hội <i>(03 lao động/quý)</i></p>
-                            </div>
-                            <div class="record">
-                                <img src="\assets\media\PLTX\service\Asset5.svg"
-                                     class="float-left">
-                                <p class="unit align-left">Soạn thảo nội quy lao động <i>(01 mẫu đơn giản)</i></p>
-                            </div>
-                            <div class="record">
-                                <img src="\assets\media\PLTX\service\Asset5.svg"
-                                     class="float-left">
-                                <p class="unit align-left">Đăng ký thang bảng lương <i>(01 lần)</i></p>
-                            </div>
-                            <div class="record">
-                                <img src="\assets\media\PLTX\service\Asset5.svg"
-                                     class="float-left">
-                                <p class="unit align-left">Hướng dẫn nộp bảo hiểm xã hội định kỳ <i>(01 lần/tháng)</i>
+                                <p class="unit align-left">{{global.locale=='vi'?'Soạn thảo văn bản giao dịch nội bộ ':'Soạn thảo văn bản giao dịch nội bộ  aaa'}}<i>{{global.locale=='vi'?'(02 văn bản/tháng)':'(02 văn bản/tháng) aaa'}}</i>
                                 </p>
                             </div>
                         </div>
                         <div class="summary-item">
-                            <p class="summary-title">THUẾ</p>
+                            <p class="summary-title">{{global.locale=='vi'?'QUẢN TRỊ LAO ĐỘNG':'QUẢN TRỊ LAO ĐỘNG aaa'}}</p>
                             <div class="record">
                                 <img src="\assets\media\PLTX\service\Asset5.svg"
                                      class="float-left">
-                                <p class="unit align-left">Báo cáo thuế giá trị gia tăng <i>(tối đa 20 hóa đơn/quý)</i>
+                                <p class="unit align-left">{{global.locale=='vi'?'Soạn thảo Biên bản thử việc ':'Soạn thảo Biên bản thử việc  aaa'}}<i>{{global.locale=='vi'?'(02 văn bản/tháng)':'(02 văn bản/tháng) aaa'}}</i></p>
+                            </div>
+                            <div class="record">
+                                <img src="\assets\media\PLTX\service\Asset5.svg"
+                                     class="float-left">
+                                <p class="unit align-left">{{global.locale=='vi'?'Soạn thảo Hợp đồng lao động ':'Soạn thảo Hợp đồng lao động  aaa'}}<i>{{global.locale=='vi'?'(02 hợp đồng/tháng)':'(02 hợp đồng/tháng) aaa'}}</i></p>
+                            </div>
+                            <div class="record">
+                                <img src="\assets\media\PLTX\service\Asset5.svg"
+                                     class="float-left">
+                                <p class="unit align-left">{{global.locale=='vi'?'Đăng ký khai trình lao động ':'Đăng ký khai trình lao động  aaa'}}<i>{{global.locale=='vi'?'(tối đa 03 lao động/tháng)':'(tối đa 03 lao động/tháng) aaa'}}</i>
                                 </p>
                             </div>
                             <div class="record">
                                 <img src="\assets\media\PLTX\service\Asset5.svg"
                                      class="float-left">
-                                <p class="unit align-left">Hướng dẫn viết hóa đơn GTGT <i>(10 hóa đơn/quý)</i></p>
+                                <p class="unit align-left">{{global.locale=='vi'?'Đăng ký bảo hiểm xã hội ':'Đăng ký bảo hiểm xã hội  aaa'}}<i>{{global.locale=='vi'?'(03 lao động/quý)':'(03 lao động/quý) aaa'}}</i></p>
                             </div>
                             <div class="record">
                                 <img src="\assets\media\PLTX\service\Asset5.svg"
                                      class="float-left">
-                                <p class="unit align-left">Hướng dẫn nộp thuế GTGT định kỳ <i>(01 lần/quý)</i></p>
+                                <p class="unit align-left">{{global.locale=='vi'?'Soạn thảo nội quy lao động ':'Soạn thảo nội quy lao động  aaa'}}<i>{{global.locale=='vi'?'(01 mẫu đơn giản)':'(01 mẫu đơn giản) aaa'}}</i></p>
+                            </div>
+                            <div class="record">
+                                <img src="\assets\media\PLTX\service\Asset5.svg"
+                                     class="float-left">
+                                <p class="unit align-left">{{global.locale=='vi'?'Đăng ký thang bảng lương ':'Đăng ký thang bảng lương  aaa'}}<i>{{global.locale=='vi'?'(01 lần)':'(01 lần) aaa'}}</i></p>
+                            </div>
+                            <div class="record">
+                                <img src="\assets\media\PLTX\service\Asset5.svg"
+                                     class="float-left">
+                                <p class="unit align-left">{{global.locale=='vi'?'Hướng dẫn nộp bảo hiểm xã hội định kỳ ':'Hướng dẫn nộp bảo hiểm xã hội định kỳ  aaa'}}<i>{{global.locale=='vi'?'(01 lần/tháng)':'(01 lần/tháng) aaa'}}</i>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="summary-item">
+                            <p class="summary-title">{{global.locale=='vi'?'THUẾ':'THUẾ aaa'}}</p>
+                            <div class="record">
+                                <img src="\assets\media\PLTX\service\Asset5.svg"
+                                     class="float-left">
+                                <p class="unit align-left">{{global.locale=='vi'?'Báo cáo thuế giá trị gia tăng ':'Báo cáo thuế giá trị gia tăng  aaa'}}<i>{{global.locale=='vi'?'(tối đa 20 hóa đơn/quý)':'(tối đa 20 hóa đơn/quý) aaa'}}</i>
+                                </p>
+                            </div>
+                            <div class="record">
+                                <img src="\assets\media\PLTX\service\Asset5.svg"
+                                     class="float-left">
+                                <p class="unit align-left">{{global.locale=='vi'?'Hướng dẫn viết hóa đơn GTGT ':'Hướng dẫn viết hóa đơn GTGT  aaa'}}<i>{{global.locale=='vi'?'(10 hóa đơn/quý)':'(10 hóa đơn/quý) aaa'}}</i></p>
+                            </div>
+                            <div class="record">
+                                <img src="\assets\media\PLTX\service\Asset5.svg"
+                                     class="float-left">
+                                <p class="unit align-left">{{global.locale=='vi'?'Hướng dẫn nộp thuế GTGT định kỳ':'Hướng dẫn nộp thuế GTGT định kỳ aaa'}} <i>{{global.locale=='vi'?'(01 lần/quý)':'(01 lần/quý) aaa'}}</i></p>
                             </div>
                         </div>
 
@@ -122,92 +120,91 @@
                     <hr>
                     <div class="summary-detail">
                         <div class="summary-item">
-                            <p class="summary-title">TƯ VẤN PHÁP LÝ</p>
+                            <p class="summary-title">{{global.locale=='vi'?'TƯ VẤN PHÁP LÝ':'TƯ VẤN PHÁP LÝ aaa'}}</p>
                             <div class="record">
                                 <img src="\assets\media\PLTX\service\Asset5.svg"
                                      class="float-left">
-                                <p class="unit align-left">Trả lời câu hỏi pháp lý theo yêu cầu. <b>Qua email</b>
-                                    <i>(02 vấn đề/tháng)</i></p>
+                                <p class="unit align-left">{{global.locale=='vi'?'Trả lời câu hỏi pháp lý theo yêu cầu. ':'Trả lời câu hỏi pháp lý theo yêu cầu.  aaa'}}<b>{{global.locale=='vi'?'Qua email':'Qua email aaa'}}</b>
+                                    <i>{{global.locale=='vi'?'(02 vấn đề/tháng)':'(02 vấn đề/tháng) aaa'}}</i></p>
                             </div>
                         </div>
                         <div class="summary-item">
-                            <p class="summary-title">HỢP ĐỒNG</p>
+                            <p class="summary-title">{{global.locale=='vi'?'HỢP ĐỒNG':'(02 vấn đề/tháng) aaa'}}</p>
                             <div class="record">
                                 <img src="\assets\media\PLTX\service\Asset5.svg"
                                      class="float-left">
-                                <p class="unit align-left">Rà soát/tư vấn hợp đồng đối tác gửi đến. <b>Qua email</b>
-                                    <i>(02 vấn đề/tháng)</i></p>
+                                <p class="unit align-left">{{global.locale=='vi'?'Rà soát/tư vấn hợp đồng đối tác gửi đến. ':'Rà soát/tư vấn hợp đồng đối tác gửi đến.  aaa'}}<b>{{global.locale=='vi'?'Qua email':'Qua email aaa'}}</b>
+                                    <i>{{global.locale=='vi'?'(02 vấn đề/tháng)':'(02 vấn đề/tháng) aaa'}}</i></p>
                             </div>
                             <div class="record">
                                 <img src="\assets\media\PLTX\service\Asset5.svg"
                                      class="float-left">
-                                <p class="unit align-left">Soạn thảo hợp đồng giao dịch gửi đối tác <i>(01 hợp
-                                    đồng/tháng)</i></p>
+                                <p class="unit align-left">{{global.locale=='vi'?'Soạn thảo hợp đồng giao dịch gửi đối tác ':'Soạn thảo hợp đồng giao dịch gửi đối tác  aaa'}}<i>{{global.locale=='vi'?'(01 hợp đồng/tháng)':'(01 hợp đồng/tháng) aaa'}}</i></p>
                             </div>
                             <div class="record">
                                 <img src="\assets\media\PLTX\service\Asset5.svg"
                                      class="float-left">
-                                <p class="unit align-left">Soạn thảo văn bản giao dịch nội bộ <i>(02 văn bản/tháng)</i>
-                                </p>
-                            </div>
-                        </div>
-                        <div class="summary-item">
-                            <p class="summary-title">QUẢN TRỊ LAO ĐỘNG</p>
-                            <div class="record">
-                                <img src="\assets\media\PLTX\service\Asset5.svg"
-                                     class="float-left">
-                                <p class="unit align-left">Soạn thảo Biên bản thử việc <i>(02 văn bản/tháng)</i></p>
-                            </div>
-                            <div class="record">
-                                <img src="\assets\media\PLTX\service\Asset5.svg"
-                                     class="float-left">
-                                <p class="unit align-left">Soạn thảo Hợp đồng lao động <i>(02 hợp đồng/tháng)</i></p>
-                            </div>
-                            <div class="record">
-                                <img src="\assets\media\PLTX\service\Asset5.svg"
-                                     class="float-left">
-                                <p class="unit align-left">Đăng ký khai trình lao động <i>(tối đa 03 lao động/tháng)</i>
-                                </p>
-                            </div>
-                            <div class="record">
-                                <img src="\assets\media\PLTX\service\Asset5.svg"
-                                     class="float-left">
-                                <p class="unit align-left">Đăng ký bảo hiểm xã hội <i>(03 lao động/quý)</i></p>
-                            </div>
-                            <div class="record">
-                                <img src="\assets\media\PLTX\service\Asset5.svg"
-                                     class="float-left">
-                                <p class="unit align-left">Soạn thảo nội quy lao động <i>(01 mẫu đơn giản)</i></p>
-                            </div>
-                            <div class="record">
-                                <img src="\assets\media\PLTX\service\Asset5.svg"
-                                     class="float-left">
-                                <p class="unit align-left">Đăng ký thang bảng lương <i>(01 lần)</i></p>
-                            </div>
-                            <div class="record">
-                                <img src="\assets\media\PLTX\service\Asset5.svg"
-                                     class="float-left">
-                                <p class="unit align-left">Hướng dẫn nộp bảo hiểm xã hội định kỳ <i>(01 lần/tháng)</i>
+                                <p class="unit align-left">{{global.locale=='vi'?'Soạn thảo văn bản giao dịch nội bộ ':'Soạn thảo văn bản giao dịch nội bộ  aaa'}}<i>{{global.locale=='vi'?'(02 văn bản/tháng)':'(02 văn bản/tháng) aaa'}}</i>
                                 </p>
                             </div>
                         </div>
                         <div class="summary-item">
-                            <p class="summary-title">THUẾ</p>
+                            <p class="summary-title">{{global.locale=='vi'?'QUẢN TRỊ LAO ĐỘNG':'QUẢN TRỊ LAO ĐỘNG aaa'}}</p>
                             <div class="record">
                                 <img src="\assets\media\PLTX\service\Asset5.svg"
                                      class="float-left">
-                                <p class="unit align-left">Báo cáo thuế giá trị gia tăng <i>(tối đa 20 hóa đơn/quý)</i>
+                                <p class="unit align-left">{{global.locale=='vi'?'Soạn thảo Biên bản thử việc ':'Soạn thảo Biên bản thử việc  aaa'}}<i>{{global.locale=='vi'?'(02 văn bản/tháng)':'(02 văn bản/tháng) aaa'}}</i></p>
+                            </div>
+                            <div class="record">
+                                <img src="\assets\media\PLTX\service\Asset5.svg"
+                                     class="float-left">
+                                <p class="unit align-left">{{global.locale=='vi'?'Soạn thảo Hợp đồng lao động ':'Soạn thảo Hợp đồng lao động  aaa'}}<i>{{global.locale=='vi'?'(02 hợp đồng/tháng)':'(02 hợp đồng/tháng) aaa'}}</i></p>
+                            </div>
+                            <div class="record">
+                                <img src="\assets\media\PLTX\service\Asset5.svg"
+                                     class="float-left">
+                                <p class="unit align-left">{{global.locale=='vi'?'Đăng ký khai trình lao động ':'Đăng ký khai trình lao động  aaa'}}<i>{{global.locale=='vi'?'(tối đa 03 lao động/tháng)':'(tối đa 03 lao động/tháng) aaa'}}</i>
                                 </p>
                             </div>
                             <div class="record">
                                 <img src="\assets\media\PLTX\service\Asset5.svg"
                                      class="float-left">
-                                <p class="unit align-left">Hướng dẫn viết hóa đơn GTGT <i>(10 hóa đơn/quý)</i></p>
+                                <p class="unit align-left">{{global.locale=='vi'?'Đăng ký bảo hiểm xã hội ':'Đăng ký bảo hiểm xã hội  aaa'}}<i>{{global.locale=='vi'?'(03 lao động/quý)':'(03 lao động/quý) aaa'}}</i></p>
                             </div>
                             <div class="record">
                                 <img src="\assets\media\PLTX\service\Asset5.svg"
                                      class="float-left">
-                                <p class="unit align-left">Hướng dẫn nộp thuế GTGT định kỳ <i>(01 lần/quý)</i></p>
+                                <p class="unit align-left">{{global.locale=='vi'?'Soạn thảo nội quy lao động ':'Soạn thảo nội quy lao động  aaa'}}<i>{{global.locale=='vi'?'(01 mẫu đơn giản)':'(01 mẫu đơn giản) aaa'}}</i></p>
+                            </div>
+                            <div class="record">
+                                <img src="\assets\media\PLTX\service\Asset5.svg"
+                                     class="float-left">
+                                <p class="unit align-left">{{global.locale=='vi'?'Đăng ký thang bảng lương ':'Đăng ký thang bảng lương  aaa'}}<i>{{global.locale=='vi'?'(01 lần)':'(01 lần) aaa'}}</i></p>
+                            </div>
+                            <div class="record">
+                                <img src="\assets\media\PLTX\service\Asset5.svg"
+                                     class="float-left">
+                                <p class="unit align-left">{{global.locale=='vi'?'Hướng dẫn nộp bảo hiểm xã hội định kỳ ':'Hướng dẫn nộp bảo hiểm xã hội định kỳ  aaa'}}<i>{{global.locale=='vi'?'(01 lần/tháng)':'(01 lần/tháng) aaa'}}</i>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="summary-item">
+                            <p class="summary-title">{{global.locale=='vi'?'THUẾ':'THUẾ aaa'}}</p>
+                            <div class="record">
+                                <img src="\assets\media\PLTX\service\Asset5.svg"
+                                     class="float-left">
+                                <p class="unit align-left">{{global.locale=='vi'?'Báo cáo thuế giá trị gia tăng ':'Báo cáo thuế giá trị gia tăng  aaa'}}<i>{{global.locale=='vi'?'(tối đa 20 hóa đơn/quý)':'(tối đa 20 hóa đơn/quý) aaa'}}</i>
+                                </p>
+                            </div>
+                            <div class="record">
+                                <img src="\assets\media\PLTX\service\Asset5.svg"
+                                     class="float-left">
+                                <p class="unit align-left">{{global.locale=='vi'?'Hướng dẫn viết hóa đơn GTGT ':'Hướng dẫn viết hóa đơn GTGT  aaa'}}<i>{{global.locale=='vi'?'(10 hóa đơn/quý)':'(10 hóa đơn/quý) aaa'}}</i></p>
+                            </div>
+                            <div class="record">
+                                <img src="\assets\media\PLTX\service\Asset5.svg"
+                                     class="float-left">
+                                <p class="unit align-left">{{global.locale=='vi'?'Hướng dẫn nộp thuế GTGT định kỳ ':'Hướng dẫn nộp thuế GTGT định kỳ  aaa'}}<i>{{global.locale=='vi'?'(01 lần/quý)':'(01 lần/quý) aaa'}}</i></p>
                             </div>
                         </div>
 
@@ -219,213 +216,206 @@
                 <div class="banner-small">
                     <img src="/assets/media/PLTX/service/Asset4.svg">
                 </div>
-                <h5 class="font-weight-normal">GÓI TOÀN DIỆN</h5>
+                <h5 class="font-weight-normal">{{global.locale=='vi'?'GÓI TOÀN DIỆN':'GÓI TOÀN DIỆN aaa'}}</h5>
                 <hr>
                 <div class="summary">
 
-                    <p class="price">5.990.000<span class="sub-price">vnđ/tháng</span></p>
+                    <p class="price">5.990.000<span class="sub-price">{{global.locale=='vi'?'vnđ/tháng':'vnđ/tháng aaa'}}</span></p>
                     <div class="sub">
-                        <button (click)="onChangePackage('Gói toàn diện')" class=" btn btn-warning padding" type="button">DÙNG THỬ MIỄN PHÍ</button>
+                        <button (click)="onChangePackage('Gói toàn diện')" class=" btn btn-warning padding" type="button">{{global.locale=='vi'?'DÙNG THỬ MIỄN PHÍ':'DÙNG THỬ MIỄN PHÍ aaa'}}</button>
                     </div>
-                    <p class="unit">Tiết kiệm <b class="light-blue">87.60%</b>/năm</p>
-                    <p class="unit">Tối đa 06 lao động</p>
+                    <p class="unit">{{global.locale=='vi'?'Tiết kiệm ':'Tiết kiệm  aaa'}}<b class="light-blue">87.60%</b>{{global.locale=='vi'?'/năm':'/năm aaa'}}</p>
+                    <p class="unit">{{global.locale=='vi'?'Tối đa 06 lao động':'Tối đa 06 lao động aaa'}}</p>
 
                 </div>
 
                 <hr>
                 <div class="summary-detail">
                     <div class="summary-item">
-                        <p class="summary-title">TƯ VẤN PHÁP LÝ</p>
+                        <p class="summary-title">{{global.locale=='vi'?'TƯ VẤN PHÁP LÝ':'TƯ VẤN PHÁP LÝ aaa'}}</p>
                         <div class="record">
                             <img src="\assets\media\PLTX\service\Asset5.svg" class="float-left">
-                            <p class="unit align-left">Trả lời câu hỏi pháp lý theo yêu cầu. <b>Qua email/điện thoại</b>
-                                <i>(04 vấn đề/tháng)</i></p>
+                            <p class="unit align-left">{{global.locale=='vi'?'Trả lời câu hỏi pháp lý theo yêu cầu. ':'Trả lời câu hỏi pháp lý theo yêu cầu.  aaa'}}<b>{{global.locale=='vi'?'Qua email/điện thoại':'Qua email/điện thoại aaa'}}</b>
+                                <i>{{global.locale=='vi'?'(04 vấn đề/tháng)':'(04 vấn đề/tháng) aaa'}}</i></p>
                         </div>
                     </div>
                     <div class="summary-item">
-                        <p class="summary-title">HỢP ĐỒNG</p>
+                        <p class="summary-title">{{global.locale=='vi'?'HỢP ĐỒNG':'HỢP ĐỒNG aaa'}}</p>
                         <div class="record">
                             <img src="\assets\media\PLTX\service\Asset5.svg" class="float-left">
-                            <p class="unit align-left">Rà soát/tư vấn hợp đồng đối tác gửi đến. <b>Qua
-                                email/điện thoại</b>
-                                <i>(04 vấn đề/tháng)</i></p>
+                            <p class="unit align-left">{{global.locale=='vi'?'Rà soát/tư vấn hợp đồng đối tác gửi đến. ':'Rà soát/tư vấn hợp đồng đối tác gửi đến.  aaa'}}<b>{{global.locale=='vi'?'Qua email/điện thoại':'Qua email/điện thoại aaa'}}</b>
+                                <i>{{global.locale=='vi'?'(04 vấn đề/tháng)':'(04 vấn đề/tháng) aaa'}}</i></p>
                         </div>
                         <div class="record">
                             <img src="\assets\media\PLTX\service\Asset5.svg" class="float-left">
-                            <p class="unit align-left">Soạn thảo hợp đồng giao dịch gửi đối tác <i>(03 hợp
-                                đồng/tháng)</i></p>
+                            <p class="unit align-left">{{global.locale=='vi'?'Soạn thảo hợp đồng giao dịch gửi đối tác ':'Soạn thảo hợp đồng giao dịch gửi đối tác  aaa'}}<i>{{global.locale=='vi'?'(03 hợp đồng/tháng)':'(03 hợp đồng/tháng) aaa'}}</i></p>
                         </div>
                         <div class="record">
                             <img src="\assets\media\PLTX\service\Asset5.svg" class="float-left">
-                            <p class="unit align-left">Soạn thảo văn bản giao dịch nội bộ <i>(04 văn bản/tháng)</i></p>
+                            <p class="unit align-left">{{global.locale=='vi'?'Soạn thảo văn bản giao dịch nội bộ ':'Soạn thảo văn bản giao dịch nội bộ aaa'}}<i>{{global.locale=='vi'?'(04 văn bản/tháng)':'(04 văn bản/tháng) aaa'}}</i></p>
                         </div>
                     </div>
                     <div class="summary-item">
-                        <p class="summary-title">QUẢN TRỊ LAO ĐỘNG</p>
+                        <p class="summary-title">{{global.locale=='vi'?'QUẢN TRỊ LAO ĐỘNG':'QUẢN TRỊ LAO ĐỘNG aaa'}}</p>
                         <div class="record">
                             <img src="\assets\media\PLTX\service\Asset5.svg" class="float-left">
-                            <p class="unit align-left">Soạn thảo Biên bản thử việc <i>(04 văn bản/tháng)</i></p>
+                            <p class="unit align-left">{{global.locale=='vi'?'Soạn thảo Biên bản thử việc ':'Soạn thảo Biên bản thử việc  aaa'}}<i>{{global.locale=='vi'?'(04 văn bản/tháng)':'(04 văn bản/tháng) aaa'}}</i></p>
                         </div>
                         <div class="record">
                             <img src="\assets\media\PLTX\service\Asset5.svg" class="float-left">
-                            <p class="unit align-left">Soạn thảo Hợp đồng lao động <i>(04 hợp đồng/tháng)</i></p>
+                            <p class="unit align-left">{{global.locale=='vi'?'Soạn thảo Hợp đồng lao động ':'Soạn thảo Hợp đồng lao động  aaa'}}<i>{{global.locale=='vi'?'(04 hợp đồng/tháng)':'(04 hợp đồng/tháng) aaa'}}</i></p>
                         </div>
                         <div class="record">
                             <img src="\assets\media\PLTX\service\Asset5.svg" class="float-left">
-                            <p class="unit align-left">Đăng ký khai trình lao động <i>(tối đa 06 lao động/tháng)</i></p>
+                            <p class="unit align-left">{{global.locale=='vi'?'Đăng ký khai trình lao động ':'Đăng ký khai trình lao động  aaa'}}<i>{{global.locale=='vi'?'(tối đa 06 lao động/tháng)':'(tối đa 06 lao động/tháng) aaa'}}</i></p>
                         </div>
                         <div class="record">
                             <img src="\assets\media\PLTX\service\Asset5.svg" class="float-left">
-                            <p class="unit align-left">Đăng ký bảo hiểm xã hội <i>(06 lao động/quý)</i></p>
+                            <p class="unit align-left">{{global.locale=='vi'?'Đăng ký bảo hiểm xã hội ':'Đăng ký bảo hiểm xã hội  aaa'}}<i>{{global.locale=='vi'?'(06 lao động/quý)':'(06 lao động/quý) aaa'}}</i></p>
                         </div>
                         <div class="record">
                             <img src="\assets\media\PLTX\service\Asset5.svg" class="float-left">
-                            <p class="unit align-left">Soạn thảo nội quy lao động <i>(01 mẫu đơn giản)</i></p>
+                            <p class="unit align-left">{{global.locale=='vi'?'Soạn thảo nội quy lao động ':'Soạn thảo nội quy lao động  aaa'}}<i>{{global.locale=='vi'?'(01 mẫu đơn giản)':'(01 mẫu đơn giản) aaa'}}</i></p>
                         </div>
                         <div class="record">
                             <img src="\assets\media\PLTX\service\Asset5.svg" class="float-left">
-                            <p class="unit align-left">Đăng ký thang bảng lương <i>(01 lần)</i></p>
+                            <p class="unit align-left">{{global.locale=='vi'?'Đăng ký thang bảng lương ':'Đăng ký thang bảng lương   aaa'}}<i>{{global.locale=='vi'?'(01 lần)':'(01 lần) aaa'}}</i></p>
                         </div>
                         <div class="record">
                             <img src="\assets\media\PLTX\service\Asset5.svg" class="float-left">
-                            <p class="unit align-left">Hướng dẫn nộp bảo hiểm xã hội định kỳ <i>(01 lần/tháng)</i></p>
+                            <p class="unit align-left">{{global.locale=='vi'?'Hướng dẫn nộp bảo hiểm xã hội định kỳ ':'Hướng dẫn nộp bảo hiểm xã hội định kỳ  aaa'}}<i>{{global.locale=='vi'?'(01 lần/tháng)':'(01 lần/tháng) aaa'}}</i></p>
                         </div>
                     </div>
                     <div class="summary-item">
-                        <p class="summary-title">THUẾ</p>
+                        <p class="summary-title">{{global.locale=='vi'?'THUẾ':'THUẾ aaa'}}</p>
                         <div class="record">
                             <img src="\assets\media\PLTX\service\Asset5.svg" class="float-left">
-                            <p class="unit align-left">Báo cáo thuế giá trị gia tăng <i>(tối đa 50 hóa đơn/quý)</i></p>
+                            <p class="unit align-left">{{global.locale=='vi'?'Báo cáo thuế giá trị gia tăng ':'Báo cáo thuế giá trị gia tăng  aaa'}}<i>{{global.locale=='vi'?'(tối đa 50 hóa đơn/quý)':'(tối đa 50 hóa đơn/quý) aaa'}}</i></p>
                         </div>
                         <div class="record">
                             <img src="\assets\media\PLTX\service\Asset5.svg" class="float-left">
-                            <p class="unit align-left">Hướng dẫn viết hóa đơn GTGT <i>(10 hóa đơn/quý)</i></p>
+                            <p class="unit align-left">{{global.locale=='vi'?'Hướng dẫn viết hóa đơn GTGT ':'Hướng dẫn viết hóa đơn GTGT  aaa'}}<i>{{global.locale=='vi'?'(10 hóa đơn/quý)':'(10 hóa đơn/quý) aaa'}}</i></p>
                         </div>
                         <div class="record">
                             <img src="\assets\media\PLTX\service\Asset5.svg" class="float-left">
-                            <p class="unit align-left">Hướng dẫn nộp thuế GTGT định kỳ <i>(01 lần/quý)</i></p>
+                            <p class="unit align-left">{{global.locale=='vi'?'Hướng dẫn nộp thuế GTGT định kỳ ':'Hướng dẫn nộp thuế GTGT định kỳ  aaa'}}<i>{{global.locale=='vi'?'(01 lần/quý)':'(01 lần/quý) aaa'}}</i></p>
                         </div>
                     </div>
 
                 </div>
             </div>
             <div class="col-md-4 service-content">
-                <h5 class="font-weight-normal">GÓI CỘNG SỰ</h5>
+                <h5 class="font-weight-normal">{{global.locale=='vi'?'GÓI CỘNG SỰ':'GÓI CỘNG SỰ aaa'}}</h5>
                 <hr>
                 <div class="summary">
 
-                    <p class="price">12.000.000 <span class="sub-price">vnđ/tháng</span></p>
+                    <p class="price">12.000.000 <span class="sub-price">{{global.locale=='vi'?'vnđ/tháng':'vnđ/tháng aaa'}}</span></p>
                     <div class="sub">
-                        <button (click)="onChangePackage('Gói cộng sự')" class=" btn btn-outline-warning padding" type="button">DÙNG THỬ MIỄN PHÍ</button>
+                        <button (click)="onChangePackage('Gói cộng sự')" class=" btn btn-outline-warning padding" type="button">{{global.locale=='vi'?'DÙNG THỬ MIỄN PHÍ':'DÙNG THỬ MIỄN PHÍ aaa'}}</button>
                     </div>
-                    <p class="unit">Tiết kiệm <b class="light-blue">83.90%</b>/năm</p>
-                    <p class="unit">Tối đa 10 lao động</p>
+                    <p class="unit">{{global.locale=='vi'?'Tiết kiệm':'Tiết kiệm aaa'}} <b class="light-blue">83.90%</b>{{global.locale=='vi'?'/năm':'/year aaa'}}</p>
+                    <p class="unit">{{global.locale=='vi'?'Tối đa 10 lao động':'Tối đa 10 lao động aaa'}}</p>
                 </div>
                 <div class="d-block d-md-none" style="width: 100%; text-align: right;"><a class="more-service"
                                                                                           href="#parner-service"
                                                                                           data-toggle="collapse"
                                                                                           role="button"
-                                                                                          aria-expanded="false">Xem chi
-                    tiết <i class="fa fa-chevron-down"></i></a></div>
+                                                                                          aria-expanded="false">{{global.locale=='vi'?'Xem chi tiết':'Xem chi tiết aaa'}} <i class="fa fa-chevron-down"></i></a></div>
                 <div class="collapse collapsed" id="parner-service">
                     <hr>
                     <div class="summary-detail">
                         <div class="summary-item">
-                            <p class="summary-title">TƯ VẤN PHÁP LÝ</p>
+                            <p class="summary-title">{{global.locale=='vi'?'TƯ VẤN PHÁP LÝ':'TƯ VẤN PHÁP LÝ aaa'}}</p>
                             <div class="record">
                                 <img src="\assets\media\PLTX\service\Asset5.svg"
                                      class="float-left">
-                                <p class="unit align-left">Trả lời câu hỏi pháp lý theo yêu cầu. <b>Qua
-                                    email/điện thoại/gặp trực tiếp</b>
-                                    <i>(06 vấn đề/tháng)</i></p>
+                                <p class="unit align-left">{{global.locale=='vi'?'Trả lời câu hỏi pháp lý theo yêu cầu. ':'Trả lời câu hỏi pháp lý theo yêu cầu.  aaa'}}<b>{{global.locale=='vi'?'Qua email/điện thoại/gặp trực tiếp':'Qua email/điện thoại/gặp trực tiếp aaa'}}</b>
+                                    <i>{{global.locale=='vi'?'(06 vấn đề/tháng)':'(06 vấn đề/tháng) aaa'}}</i></p>
                             </div>
                             <div class="record">
                                 <img src="\assets\media\PLTX\service\Asset5.svg"
                                      class="float-left">
-                                <p class="unit align-left">Luật sư tham gia đàm phán/họp tại văn phòng <i>(01
-                                    giờ/tháng)</i>
+                                <p class="unit align-left">{{global.locale=='vi'?'Luật sư tham gia đàm phán/họp tại văn phòng ':'Luật sư tham gia đàm phán/họp tại văn phòng  aaa'}}<i>{{global.locale=='vi'?'(01 giờ/tháng)':'(01 giờ/tháng) aaa'}}</i>
                                 </p>
                             </div>
                         </div>
                         <div class="summary-item">
-                            <p class="summary-title">HỢP ĐỒNG</p>
+                            <p class="summary-title">{{global.locale=='vi'?'HỢP ĐỒNG':'HỢP ĐỒNG aaa'}}</p>
                             <div class="record">
                                 <img src="\assets\media\PLTX\service\Asset5.svg"
                                      class="float-left">
-                                <p class="unit align-left">Rà soát/tư vấn hợp đồng đối tác gửi đến. <b>Qua
-                                    email/điện thoại/gặp trực tiếp </b>
-                                    <i>(05 vấn đề/tháng)</i></p>
+                                <p class="unit align-left">{{global.locale=='vi'?'Rà soát/tư vấn hợp đồng đối tác gửi đến. ':'Rà soát/tư vấn hợp đồng đối tác gửi đến.  aaa'}}<b>{{global.locale=='vi'?'Qua email/điện thoại/gặp trực tiếp ':'Qua email/điện thoại/gặp trực tiếp  aaa'}}</b>
+                                    <i>{{global.locale=='vi'?'(05 vấn đề/tháng)':'(05 vấn đề/tháng) aaa'}}</i></p>
                             </div>
                             <div class="record">
                                 <img src="\assets\media\PLTX\service\Asset5.svg"
                                      class="float-left">
-                                <p class="unit align-left">Soạn thảo hợp đồng giao dịch gửi đối tác <i>(05 hợp
-                                    đồng/tháng)</i></p>
+                                <p class="unit align-left">{{global.locale=='vi'?'Soạn thảo hợp đồng giao dịch gửi đối tác ':'Soạn thảo hợp đồng giao dịch gửi đối tác  aaa'}}<i>{{global.locale=='vi'?'(05 hợp đồng/tháng)':'(05 hợp đồng/tháng) aaa'}}</i></p>
                             </div>
                             <div class="record">
                                 <img src="\assets\media\PLTX\service\Asset5.svg"
                                      class="float-left">
-                                <p class="unit align-left">Soạn thảo văn bản giao dịch nội bộ <i>(05 văn bản/tháng)</i>
+                                <p class="unit align-left">{{global.locale=='vi'?'Soạn thảo văn bản giao dịch nội bộ ':'Soạn thảo văn bản giao dịch nội bộ  aaa'}}<i>{{global.locale=='vi'?'(05 văn bản/tháng)':'(05 văn bản/tháng) aaa'}}</i>
                                 </p>
                             </div>
                         </div>
                         <div class="summary-item">
-                            <p class="summary-title">QUẢN TRỊ LAO ĐỘNG</p>
+                            <p class="summary-title">{{global.locale=='vi'?'QUẢN TRỊ LAO ĐỘNG':'QUẢN TRỊ LAO ĐỘNG aaa'}}</p>
                             <div class="record">
                                 <img src="\assets\media\PLTX\service\Asset5.svg"
                                      class="float-left">
-                                <p class="unit align-left">Soạn thảo Biên bản thử việc <i>(05 văn bản/tháng)</i></p>
+                                <p class="unit align-left">{{global.locale=='vi'?'Soạn thảo Biên bản thử việc ':'Soạn thảo Biên bản thử việc  aaa'}}<i>{{global.locale=='vi'?'(05 văn bản/tháng)':'(05 văn bản/tháng) aaa'}}</i></p>
                             </div>
                             <div class="record">
                                 <img src="\assets\media\PLTX\service\Asset5.svg"
                                      class="float-left">
-                                <p class="unit align-left">Soạn thảo Hợp đồng lao động <i>(05 hợp đồng/tháng)</i></p>
+                                <p class="unit align-left">{{global.locale=='vi'?'Soạn thảo Hợp đồng lao động ':'Soạn thảo Hợp đồng lao động  aaa'}}<i>{{global.locale=='vi'?'(05 hợp đồng/tháng)':'(05 hợp đồng/tháng) aaa'}}</i></p>
                             </div>
                             <div class="record">
                                 <img src="\assets\media\PLTX\service\Asset5.svg"
                                      class="float-left">
-                                <p class="unit align-left">Đăng ký khai trình lao động <i>(tối đa 10 lao động/tháng)</i>
+                                <p class="unit align-left">{{global.locale=='vi'?'Đăng ký khai trình lao động ':'Đăng ký khai trình lao động  aaa'}}<i>{{global.locale=='vi'?'(tối đa 10 lao động/tháng)':'(tối đa 10 lao động/tháng) aaa'}}</i>
                                 </p>
                             </div>
                             <div class="record">
                                 <img src="\assets\media\PLTX\service\Asset5.svg"
                                      class="float-left">
-                                <p class="unit align-left">Đăng ký bảo hiểm xã hội <i>(10 lao động/quý)</i></p>
+                                <p class="unit align-left">{{global.locale=='vi'?'Đăng ký bảo hiểm xã hội ':'Đăng ký bảo hiểm xã hội  aaa'}}<i>{{global.locale=='vi'?'(10 lao động/quý)':'(10 lao động/quý) aaa'}}</i></p>
                             </div>
                             <div class="record">
                                 <img src="\assets\media\PLTX\service\Asset5.svg"
                                      class="float-left">
-                                <p class="unit align-left">Soạn thảo nội quy lao động <i>(01 mẫu đơn giản)</i></p>
+                                <p class="unit align-left">{{global.locale=='vi'?'Soạn thảo nội quy lao động ':'Soạn thảo nội quy lao động  aaa'}}<i>{{global.locale=='vi'?'(01 mẫu đơn giản)':'(01 mẫu đơn giản) aaa'}}</i></p>
                             </div>
                             <div class="record">
                                 <img src="\assets\media\PLTX\service\Asset5.svg"
                                      class="float-left">
-                                <p class="unit align-left">Đăng ký thang bảng lương <i>(01 lần)</i></p>
+                                <p class="unit align-left">{{global.locale=='vi'?'Đăng ký thang bảng lương ':'Đăng ký thang bảng lương  aaa'}}<i>{{global.locale=='vi'?'(01 lần)':'(01 lần) aaa'}}</i></p>
                             </div>
                             <div class="record">
                                 <img src="\assets\media\PLTX\service\Asset5.svg"
                                      class="float-left">
-                                <p class="unit align-left">Hướng dẫn nộp bảo hiểm xã hội định kỳ <i>(01 lần/tháng)</i>
+                                <p class="unit align-left">{{global.locale=='vi'?'Hướng dẫn nộp bảo hiểm xã hội định kỳ ':'Hướng dẫn nộp bảo hiểm xã hội định kỳ  aaa'}}<i>{{global.locale=='vi'?'(01 lần/tháng)':'(01 lần/tháng) aaa'}}</i>
                                 </p>
                             </div>
                         </div>
                         <div class="summary-item">
-                            <p class="summary-title">THUẾ</p>
+                            <p class="summary-title">{{global.locale=='vi'?'THUẾ':'THUẾ aaa'}}</p>
                             <div class="record">
                                 <img src="\assets\media\PLTX\service\Asset5.svg"
                                      class="float-left">
-                                <p class="unit align-left">Báo cáo thuế giá trị gia tăng <i>(tối đa 100 hóa đơn/quý)</i>
+                                <p class="unit align-left">{{global.locale=='vi'?'Báo cáo thuế giá trị gia tăng ':'Báo cáo thuế giá trị gia tăng  aaa'}}<i>{{global.locale=='vi'?'(tối đa 100 hóa đơn/quý)':'(tối đa 100 hóa đơn/quý) aaa'}}</i>
                                 </p>
                             </div>
                             <div class="record">
                                 <img src="\assets\media\PLTX\service\Asset5.svg"
                                      class="float-left">
-                                <p class="unit align-left">Hướng dẫn viết hóa đơn GTGT <i>(50 hóa đơn/quý)</i></p>
+                                <p class="unit align-left">{{global.locale=='vi'?'Hướng dẫn viết hóa đơn GTGT ':'Hướng dẫn viết hóa đơn GTGT  aaa'}}<i>{{global.locale=='vi'?'(50 hóa đơn/quý)':'(50 hóa đơn/quý) aaa'}}</i></p>
                             </div>
                             <div class="record">
                                 <img src="\assets\media\PLTX\service\Asset5.svg"
                                      class="float-left">
-                                <p class="unit align-left">Hướng dẫn nộp thuế GTGT định kỳ <i>(01 lần/quý)</i></p>
+                                <p class="unit align-left">{{global.locale=='vi'?'Hướng dẫn nộp thuế GTGT định kỳ ':'Hướng dẫn nộp thuế GTGT định kỳ  aaa'}}<i>{{global.locale=='vi'?'(01 lần/quý)':'(01 lần/quý) aaa'}}</i></p>
                             </div>
                         </div>
 
@@ -435,101 +425,97 @@
                     <hr>
                     <div class="summary-detail">
                         <div class="summary-item">
-                            <p class="summary-title">TƯ VẤN PHÁP LÝ</p>
+                            <p class="summary-title">{{global.locale=='vi'?'TƯ VẤN PHÁP LÝ':'TƯ VẤN PHÁP LÝ aaa'}}</p>
                             <div class="record">
                                 <img src="\assets\media\PLTX\service\Asset5.svg"
                                      class="float-left">
-                                <p class="unit align-left">Trả lời câu hỏi pháp lý theo yêu cầu. <b>Qua
-                                    email/điện thoại/gặp trực tiếp</b>
-                                    <i>(06 vấn đề/tháng)</i></p>
+                                <p class="unit align-left">{{global.locale=='vi'?'Trả lời câu hỏi pháp lý theo yêu cầu. ':'Trả lời câu hỏi pháp lý theo yêu cầu.  aaa'}}<b>{{global.locale=='vi'?'Qua email/điện thoại/gặp trực tiếp':'Qua email/điện thoại/gặp trực tiếp aaa'}}</b>
+                                    <i>{{global.locale=='vi'?'(06 vấn đề/tháng)':'(06 vấn đề/tháng) aaa'}}</i></p>
                             </div>
                             <div class="record">
                                 <img src="\assets\media\PLTX\service\Asset5.svg"
                                      class="float-left">
-                                <p class="unit align-left">Luật sư tham gia đàm phán/họp tại văn phòng <i>(01
-                                    giờ/tháng)</i>
+                                <p class="unit align-left">{{global.locale=='vi'?'Luật sư tham gia đàm phán/họp tại văn phòng ':'Luật sư tham gia đàm phán/họp tại văn phòng  aaa'}}<i>{{global.locale=='vi'?'(01 giờ/tháng)':'(01 giờ/tháng) aaa'}}</i>
                                 </p>
                             </div>
                         </div>
                         <div class="summary-item">
-                            <p class="summary-title">HỢP ĐỒNG</p>
+                            <p class="summary-title">{{global.locale=='vi'?'HỢP ĐỒNG':'HỢP ĐỒNG aaa'}}</p>
                             <div class="record">
                                 <img src="\assets\media\PLTX\service\Asset5.svg"
                                      class="float-left">
-                                <p class="unit align-left">Rà soát/tư vấn hợp đồng đối tác gửi đến. <b>Qua
-                                    email/điện thoại/gặp trực tiếp </b>
-                                    <i>(05 vấn đề/tháng)</i></p>
+                                <p class="unit align-left">{{global.locale=='vi'?'Rà soát/tư vấn hợp đồng đối tác gửi đến. ':'Rà soát/tư vấn hợp đồng đối tác gửi đến.  aaa'}}<b>{{global.locale=='vi'?'Qua email/điện thoại/gặp trực tiếp ':'Qua email/điện thoại/gặp trực tiếp  aaa'}}</b>
+                                    <i>{{global.locale=='vi'?'(05 vấn đề/tháng)':'(05 vấn đề/tháng) aaa'}}</i></p>
                             </div>
                             <div class="record">
                                 <img src="\assets\media\PLTX\service\Asset5.svg"
                                      class="float-left">
-                                <p class="unit align-left">Soạn thảo hợp đồng giao dịch gửi đối tác <i>(05 hợp
-                                    đồng/tháng)</i></p>
+                                <p class="unit align-left">{{global.locale=='vi'?'Soạn thảo hợp đồng giao dịch gửi đối tác ':'Soạn thảo hợp đồng giao dịch gửi đối tác  aaa'}}<i>{{global.locale=='vi'?'(05 hợp đồng/tháng)':'(05 hợp đồng/tháng) aaa'}}</i></p>
                             </div>
                             <div class="record">
                                 <img src="\assets\media\PLTX\service\Asset5.svg"
                                      class="float-left">
-                                <p class="unit align-left">Soạn thảo văn bản giao dịch nội bộ <i>(05 văn bản/tháng)</i>
+                                <p class="unit align-left">{{global.locale=='vi'?'Soạn thảo văn bản giao dịch nội bộ ':'Soạn thảo văn bản giao dịch nội bộ  aaa'}}<i>{{global.locale=='vi'?'(05 văn bản/tháng)':'(05 văn bản/tháng) aaa'}}</i>
                                 </p>
                             </div>
                         </div>
                         <div class="summary-item">
-                            <p class="summary-title">QUẢN TRỊ LAO ĐỘNG</p>
+                            <p class="summary-title">{{global.locale=='vi'?'QUẢN TRỊ LAO ĐỘNG':'QUẢN TRỊ LAO ĐỘNG aaa'}}</p>
                             <div class="record">
                                 <img src="\assets\media\PLTX\service\Asset5.svg"
                                      class="float-left">
-                                <p class="unit align-left">Soạn thảo Biên bản thử việc <i>(05 văn bản/tháng)</i></p>
+                                <p class="unit align-left">{{global.locale=='vi'?'Soạn thảo Biên bản thử việc ':'Soạn thảo Biên bản thử việc  aaa'}}<i>{{global.locale=='vi'?'(05 văn bản/tháng)':'(05 văn bản/tháng) aaa'}}</i></p>
                             </div>
                             <div class="record">
                                 <img src="\assets\media\PLTX\service\Asset5.svg"
                                      class="float-left">
-                                <p class="unit align-left">Soạn thảo Hợp đồng lao động <i>(05 hợp đồng/tháng)</i></p>
+                                <p class="unit align-left">{{global.locale=='vi'?'Soạn thảo Hợp đồng lao động ':'Soạn thảo Hợp đồng lao động  aaa'}}<i>{{global.locale=='vi'?'(05 hợp đồng/tháng)':'(05 hợp đồng/tháng) aaa'}}</i></p>
                             </div>
                             <div class="record">
                                 <img src="\assets\media\PLTX\service\Asset5.svg"
                                      class="float-left">
-                                <p class="unit align-left">Đăng ký khai trình lao động <i>(tối đa 10 lao động/tháng)</i>
+                                <p class="unit align-left">{{global.locale=='vi'?'Đăng ký khai trình lao động ':'Đăng ký khai trình lao động  aaa'}}<i>{{global.locale=='vi'?'(tối đa 10 lao động/tháng)':'(tối đa 10 lao động/tháng) aaa'}}</i>
                                 </p>
                             </div>
                             <div class="record">
                                 <img src="\assets\media\PLTX\service\Asset5.svg"
                                      class="float-left">
-                                <p class="unit align-left">Đăng ký bảo hiểm xã hội <i>(10 lao động/quý)</i></p>
+                                <p class="unit align-left">{{global.locale=='vi'?'Đăng ký bảo hiểm xã hội ':'Đăng ký bảo hiểm xã hội  aaa'}}<i>{{global.locale=='vi'?'(10 lao động/quý)':'(10 lao động/quý) aaa'}}</i></p>
                             </div>
                             <div class="record">
                                 <img src="\assets\media\PLTX\service\Asset5.svg"
                                      class="float-left">
-                                <p class="unit align-left">Soạn thảo nội quy lao động <i>(01 mẫu đơn giản)</i></p>
+                                <p class="unit align-left">{{global.locale=='vi'?'Soạn thảo nội quy lao động ':'Soạn thảo nội quy lao động  aaa'}}<i>{{global.locale=='vi'?'(01 mẫu đơn giản)':'(01 mẫu đơn giản) aaa'}}</i></p>
                             </div>
                             <div class="record">
                                 <img src="\assets\media\PLTX\service\Asset5.svg"
                                      class="float-left">
-                                <p class="unit align-left">Đăng ký thang bảng lương <i>(01 lần)</i></p>
+                                <p class="unit align-left">{{global.locale=='vi'?'Đăng ký thang bảng lương ':'Đăng ký thang bảng lương  aaa'}}<i>{{global.locale=='vi'?'(01 lần)':'(01 lần) aaa'}}</i></p>
                             </div>
                             <div class="record">
                                 <img src="\assets\media\PLTX\service\Asset5.svg"
                                      class="float-left">
-                                <p class="unit align-left">Hướng dẫn nộp bảo hiểm xã hội định kỳ <i>(01 lần/tháng)</i>
+                                <p class="unit align-left">{{global.locale=='vi'?'Hướng dẫn nộp bảo hiểm xã hội định kỳ ':'Hướng dẫn nộp bảo hiểm xã hội định kỳ  aaa'}}<i>{{global.locale=='vi'?'(01 lần/tháng)':'(01 lần/tháng) aaa'}}</i>
                                 </p>
                             </div>
                         </div>
                         <div class="summary-item">
-                            <p class="summary-title">THUẾ</p>
+                            <p class="summary-title">{{global.locale=='vi'?'THUẾ':'THUẾ aaa'}}</p>
                             <div class="record">
                                 <img src="\assets\media\PLTX\service\Asset5.svg"
                                      class="float-left">
-                                <p class="unit align-left">Báo cáo thuế giá trị gia tăng <i>(tối đa 100 hóa đơn/quý)</i>
+                                <p class="unit align-left">{{global.locale=='vi'?'Báo cáo thuế giá trị gia tăng ':'Báo cáo thuế giá trị gia tăng  aaa'}}<i>{{global.locale=='vi'?'(tối đa 100 hóa đơn/quý)':'(tối đa 100 hóa đơn/quý) aaa'}}</i>
                                 </p>
                             </div>
                             <div class="record">
                                 <img src="\assets\media\PLTX\service\Asset5.svg"
                                      class="float-left">
-                                <p class="unit align-left">Hướng dẫn viết hóa đơn GTGT <i>(50 hóa đơn/quý)</i></p>
+                                <p class="unit align-left">{{global.locale=='vi'?'Hướng dẫn viết hóa đơn GTGT ':'Hướng dẫn viết hóa đơn GTGT  aaa'}}<i>{{global.locale=='vi'?'(50 hóa đơn/quý)':'(50 hóa đơn/quý) aaa'}}</i></p>
                             </div>
                             <div class="record">
                                 <img src="\assets\media\PLTX\service\Asset5.svg"
                                      class="float-left">
-                                <p class="unit align-left">Hướng dẫn nộp thuế GTGT định kỳ <i>(01 lần/quý)</i></p>
+                                <p class="unit align-left">{{global.locale=='vi'?'Hướng dẫn nộp thuế GTGT định kỳ ':'Hướng dẫn nộp thuế GTGT định kỳ  aaa'}}<i>{{global.locale=='vi'?'(01 lần/quý)':'(01 lần/quý) aaa'}}</i></p>
                             </div>
                         </div>
 

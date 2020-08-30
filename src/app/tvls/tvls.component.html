@@ -2,29 +2,29 @@
     <div class="container">
         <div class="row">
             <div class="col-md-6 title-banner">
-                <h1>Kết nối ngay với top luật sư giỏi nhất</h1>
+                <h1>{{global.locale=='vi'?'Kết nối ngay với top luật sư giỏi nhất':'Kết nối ngay với top luật sư giỏi nhất aaa'}}</h1>
                 <br>
-                <span>Hơn <b style="color: #ffc107; font-size: large;">6.890 giờ tư vấn</b> đã được thực hiện bởi luật sư/cố vấn của Asoka Law. Dễ dàng tiếp cận ngay</span>
+                <span>{{global.locale=='vi'?'Hơn':'Hơn aaa'}} <b style="color: #ffc107; font-size: large;">{{global.locale=='vi'?'6.890 giờ tư vấn':'6.890 giờ tư vấn aaa'}}</b>{{global.locale=='vi'?' đã được thực hiện bởi luật sư/cố vấn của Asoka Law. Dễ dàng tiếp cận ngay':' đã được thực hiện bởi luật sư/cố vấn của Asoka Law. Dễ dàng tiếp cận ngay aaa'}}</span>
                 <div class=" row search">
                     <div class="shadow container-search flex-center-vertically">
                         <div class="row row-search">
                             <i class="fa fa-search"></i>
                             <select [(ngModel)]="type" name="type" class="input-search">
-                                <option value="0">Chọn lĩnh vực bạn cần tư vấn</option>
-                                <option value="Doanh nghiệp">Doanh nghiệp</option>
-                                <option value="Sở hữu trí tuệ">Sở hữu trí tuệ</option>
-                                <option value="Tranh chấp thương mại">Tranh chấp thương mại</option>
-                                <option value="Lao động - nhân sự">Lao động - nhân sự</option>
-                                <option value="Sự kiện - truyền thông">Sự kiện - truyền thông</option>
-                                <option value="Đăng ký đầu tư">Đăng ký đầu tư</option>
-                                <option value="Ngân hàng - bảo hiểm">Ngân hàng - bảo hiểm</option>
-                                <option value="Định cư - du học">Định cư - du học</option>
-                                <option value="Lĩnh vực khác">Lĩnh vực khác</option>
+                                <option value="0">{{global.locale=='vi'?'Chọn lĩnh vực bạn cần tư vấn':'Chọn lĩnh vực bạn cần tư vấn aaa'}}</option>
+                                <option value="Doanh nghiệp">{{global.locale=='vi'?'Doanh nghiệp':'Doanh nghiệp aaa'}}</option>
+                                <option value="Sở hữu trí tuệ">{{global.locale=='vi'?'Sở hữu trí tuệ':'Sở hữu trí tuệ aaa'}}</option>
+                                <option value="Tranh chấp thương mại">{{global.locale=='vi'?'Tranh chấp thương mại':'Tranh chấp thương mại aaa'}}</option>
+                                <option value="Lao động - nhân sự">{{global.locale=='vi'?'Lao động - nhân sự':'Lao động - nhân sự aaa'}}</option>
+                                <option value="Sự kiện - truyền thông">{{global.locale=='vi'?'Sự kiện - truyền thông':'Sự kiện - truyền thông aaa'}}</option>
+                                <option value="Đăng ký đầu tư">{{global.locale=='vi'?'Đăng ký đầu tư':'Đăng ký đầu tư aaa'}}</option>
+                                <option value="Ngân hàng - bảo hiểm">{{global.locale=='vi'?'Ngân hàng - bảo hiểm':'Ngân hàng - bảo hiểm aaa'}}</option>
+                                <option value="Định cư - du học">{{global.locale=='vi'?'Định cư - du học':'Định cư - du học aaa'}}</option>
+                                <option value="Lĩnh vực khác">{{global.locale=='vi'?'Lĩnh vực khác':'Lĩnh vực khác aaa'}}</option>
                             </select>
                             <i class="fa fa-caret-down"></i>
                         </div>
                     </div>
-                    <button (click)="showForm1()" class="shadow btn btn-warning text-color-search">Đặt lịch ngay</button>
+                    <button (click)="showForm1()" class="shadow btn btn-warning text-color-search">{{global.locale=='vi'?'Đặt lịch ngay':'Đặt lịch ngay aaa'}}</button>
                 </div>
             </div>
         </div>
@@ -34,7 +34,7 @@
 <app-tvlsservice></app-tvlsservice>
 <app-tvlseffective></app-tvlseffective>
 <app-global-lawyer (showregistrationform)="showForm1($event)">
-    <h1 class="sub-content-no-fluid" style="padding-top: 45px!important;">Đội ngũ luật sư & cố vấn phù hợp cho bạn</h1>
+    <h1 class="sub-content-no-fluid" style="padding-top: 45px!important;">{{global.locale=='vi'?'Đội ngũ luật sư & cố vấn phù hợp cho bạn':'Đội ngũ luật sư & cố vấn phù hợp cho bạn aaa'}}</h1>
 </app-global-lawyer>
 <app-tvlsconsult></app-tvlsconsult>
 <app-tvlssupport></app-tvlssupport>
@@ -52,17 +52,17 @@
                 </button>
             </div>
             <div class="modal-body">
-                <h4 class="text-center" style="margin-bottom: 20px">Chọn gói tư vấn phù hợp với bạn</h4>
+                <h4 class="text-center" style="margin-bottom: 20px">{{global.locale=='vi'?'Chọn gói tư vấn phù hợp với bạn':'Chọn gói tư vấn phù hợp với bạn aaa'}}</h4>
                 <div class="row" (mouseenter)="selectService(1)">
                     <div class="col-1 vertical-middle align-right">
                         <input [(ngModel)]="service" type="radio" [checked]="checkService1" name="service" value="Tư vấn chung"/>
                     </div>
                     <div class="col-9 vertical-middle align-left" [class.text-warning]="checkService1">
-                        <b [class.text-warning]="checkService1">Tư vấn chung</b> giá phí 2 triệu đồng cho một câu hỏi, thời gian trả lời tư vấn tối đa 3 ngày
+                        <b [class.text-warning]="checkService1">{{global.locale=='vi'?'Tư vấn chung':'Tư vấn chung aaa'}}</b>{{global.locale=='vi'?' giá phí 2 triệu đồng cho một câu hỏi, thời gian trả lời tư vấn tối đa 3 ngày':' giá phí 2 triệu đồng cho một câu hỏi, thời gian trả lời tư vấn tối đa 3 ngày aaa'}}
                     </div>
                     <div class="col-2 vertical-middle align-left">
                         <button (click)="showForm2()" class="btn btn-outline-warning d-inline text-nowrap">
-                            Tiếp tục <i class="fa fa-arrow-right text-warning"></i>
+                            {{global.locale=='vi'?'Tiếp tục ':'Tiếp tục  aaa'}}<i class="fa fa-arrow-right text-warning"></i>
                         </button>
                     </div>
                 </div>
@@ -71,11 +71,11 @@
                         <input [(ngModel)]="service" [checked]="checkService2" type="radio" name="service" value="Giải pháp chi tiết"/>
                     </div>
                     <div class="col-9 vertical-middle align-left" [class.text-warning]="checkService2">
-                        <b [class.text-warning]="checkService2">Giải pháp chi tiết</b> giá phí 500.000đ đồng cho một câu hỏi, thời gian trả lời tư vấn tối đa 1 ngày
+                        <b [class.text-warning]="checkService2">{{global.locale=='vi'?'Giải pháp chi tiết':'Giải pháp chi tiết aaa'}}</b>{{global.locale=='vi'?' giá phí 500.000đ đồng cho một câu hỏi, thời gian trả lời tư vấn tối đa 1 ngày':' giá phí 500.000đ đồng cho một câu hỏi, thời gian trả lời tư vấn tối đa 1 ngày aaa'}}
                     </div>
                     <div class="col-2 vertical-middle align-left">
                         <button (click)="showForm3()" class="btn btn-outline-warning d-inline text-nowrap">
-                            Tiếp tục <i class="fa fa-arrow-right text-warning"></i>
+                            {{global.locale=='vi'?'Tiếp tục ':'Tiếp tục  aaa'}}<i class="fa fa-arrow-right text-warning"></i>
                         </button>
                     </div>
                 </div>
@@ -84,11 +84,11 @@
                         <input [(ngModel)]="service" [checked]="checkService3" type="radio" name="service" value="Tư vấn trực tiếp"/>
                     </div>
                     <div class="col-9 vertical-middle align-left" [class.text-warning]="checkService3">
-                        <b [class.text-warning]="checkService3">Tư vấn trực tiếp</b> giá phí 1.000.000 đồng cho mỗi 30 phút, thời gian tư vấn tối đa 1 ngày
+                        <b [class.text-warning]="checkService3">{{global.locale=='vi'?'Tư vấn trực tiếp':'Tư vấn trực tiếp aaa'}}</b>{{global.locale=='vi'?' giá phí 1.000.000 đồng cho mỗi 30 phút, thời gian tư vấn tối đa 1 ngày':' giá phí 1.000.000 đồng cho mỗi 30 phút, thời gian tư vấn tối đa 1 ngày aaa'}}
                     </div>
                     <div class="col-2 vertical-middle align-left">
                         <button (click)="showForm4()" class="btn btn-outline-warning d-inline text-nowrap">
-                            Tiếp tục <i class="fa fa-arrow-right text-warning"></i>
+                            {{global.locale=='vi'?'Tiếp tục ':'Tiếp tục aaa'}}<i class="fa fa-arrow-right text-warning"></i>
                         </button>
                     </div>
                 </div>
@@ -105,7 +105,7 @@
                 </button>
             </div>
             <div class="modal-body text-center">
-                <h4>Đừng bỏ lỡ tư vấn miễn phí từ luật sư của Asoka Law</h4>
+                <h4>{{global.locale=='vi'?'Đừng bỏ lỡ tư vấn miễn phí từ luật sư của Asoka Law':'Đừng bỏ lỡ tư vấn miễn phí từ luật sư của Asoka Law aaa'}}</h4>
                 <iframe src="https://www.youtube.com/embed/bb42zrvKOWQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </div>

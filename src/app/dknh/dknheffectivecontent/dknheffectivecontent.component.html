@@ -1,7 +1,7 @@
 <section id="effectiveContent" class="sub">
     <div class="container centerContainer">
         <div class="row title padding-record-title">
-            <h1>Hồ sơ đăng ký nhãn hiệu được Cục Sở Hữu Trí Tuệ xử lý như thế nào?</h1>
+            <h1>{{global.locale=='vi'?'Hồ sơ đăng ký nhãn hiệu được Cục Sở Hữu Trí Tuệ xử lý như thế nào?':'Hồ sơ đăng ký nhãn hiệu được Cục Sở Hữu Trí Tuệ xử lý như thế nào? aaa'}}</h1>
         </div>
         <div class="effective-content">
             <div class="row">
@@ -10,13 +10,15 @@
                         <img class="image-effective d-none d-md-block" src="/assets/media/DKNH/file/Asset 13.svg">
                     </div>
                     <div class="float-left content-record-effective">
-                        <h5>1. Nhận hồ sơ và thẩm định hình thức đơn</h5>
-                        <p class="fontWeight w-75 pc">Thời gian: 01 tháng từ ngày nhận đơn.
-                            Nếu đơn hợp lệ về hình thức, Cục Sở Hữu Trí Tuệ gửi công văn chấp thuận <a id="dknh-cv01" href="/assets/media/DKNH/cv01.jpg">(mẫu công văn)</a>.
-                            Nếu đơn cần sửa đổi, Cục Sở Hữu Trí Tuệ gửi công văn yêu cầu sửa đổi <a id="dknh-cv02" href="/assets/media/DKNH/cv02.jpg">(mẫu công văn)</a>.</p>
-                        <p class="fontWeight sp">Thời gian: 01 tháng từ ngày nhận đơn.
-                            Nếu đơn hợp lệ về hình thức, Cục Sở Hữu Trí Tuệ gửi công văn chấp thuận <a id="dknh-cv011" href="/assets/media/DKNH/cv01.jpg">(mẫu công văn)</a>.
-                            Nếu đơn cần sửa đổi, Cục Sở Hữu Trí Tuệ gửi công văn yêu cầu sửa đổi <a id="dknh-cv021" href="/assets/media/DKNH/cv02.jpg">(mẫu công văn)</a>.</p>
+                        <h5>{{global.locale=='vi'?'1. Nhận hồ sơ và thẩm định hình thức đơn':'1. Nhận hồ sơ và thẩm định hình thức đơn aaa'}}</h5>
+                        <p class="fontWeight w-75 pc">{{global.locale=='vi'?'Thời gian: 01 tháng từ ngày nhận đơn.\n' +
+                            '                            Nếu đơn hợp lệ về hình thức, Cục Sở Hữu Trí Tuệ gửi công văn chấp thuận ':'Thời gian: 01 tháng từ ngày nhận đơn.\n' +
+                            '                            Nếu đơn hợp lệ về hình thức, Cục Sở Hữu Trí Tuệ gửi công văn chấp thuận  aaa'}}<a id="dknh-cv01" href="/assets/media/DKNH/cv01.jpg">{{global.locale=='vi'?'(mẫu công văn)':'(mẫu công văn) aaa'}}</a>.
+                            {{global.locale=='vi'?'Nếu đơn cần sửa đổi, Cục Sở Hữu Trí Tuệ gửi công văn yêu cầu sửa đổi ':'Nếu đơn cần sửa đổi, Cục Sở Hữu Trí Tuệ gửi công văn yêu cầu sửa đổi  aaa'}}<a id="dknh-cv02" href="/assets/media/DKNH/cv02.jpg">{{global.locale=='vi'?'(mẫu công văn)':'(mẫu công văn) aaa'}}</a>.</p>
+                        <p class="fontWeight sp">{{global.locale=='vi'?'Thời gian: 01 tháng từ ngày nhận đơn.\n' +
+                            '                            Nếu đơn hợp lệ về hình thức, Cục Sở Hữu Trí Tuệ gửi công văn chấp thuận':'Thời gian: 01 tháng từ ngày nhận đơn.\n' +
+                            '                            Nếu đơn hợp lệ về hình thức, Cục Sở Hữu Trí Tuệ gửi công văn chấp thuận aaa'}} <a id="dknh-cv011" href="/assets/media/DKNH/cv01.jpg">{{global.locale=='vi'?'(mẫu công văn)':'(mẫu công văn) aaa'}}</a>.
+                            {{global.locale=='vi'?'Nếu đơn cần sửa đổi, Cục Sở Hữu Trí Tuệ gửi công văn yêu cầu sửa đổi ':'Nếu đơn cần sửa đổi, Cục Sở Hữu Trí Tuệ gửi công văn yêu cầu sửa đổi  aaa'}}<a id="dknh-cv021" href="/assets/media/DKNH/cv02.jpg">{{global.locale=='vi'?'(mẫu công văn)':'(mẫu công văn) aaa'}}</a>.</p>
                     </div>
                     <div style="width: 80%;">
                         <img class="footer-image" src="/assets/media/DKNH/file/Asset 12.svg">
@@ -27,11 +29,12 @@
                         <img class="image-effective d-none d-md-block" src="/assets/media/DKNH/file/Asset 14.svg">
                     </div>
                     <div class="float-left content-record-effective">
-                        <h5>2. Cục Sở hữu trí tuệ đăng công báo</h5>
-                        <p class="fontWeight w-75 pc">Thời gian: 02 tháng từ ngày chấp nhận đơn.
-                            Cục Sở hữu trí tuệ công bố đơn tại Công báo sở hữu công nghiệp <a id="dknh-cv03" href="/assets/media/DKNH/cv03.jpg">(mẫu công báo)</a></p>
-                        <p class="fontWeight sp">Thời gian: 02 tháng từ ngày chấp nhận đơn.
-                            Cục Sở hữu trí tuệ công bố đơn tại Công báo sở hữu công nghiệp <a id="dknh-cv031" href="/assets/media/DKNH/cv03.jpg">(mẫu công báo)</a></p>
+                        <h5>{{global.locale=='vi'?'2. Cục Sở hữu trí tuệ đăng công báo':'2. Cục Sở hữu trí tuệ đăng công báo aaa'}}</h5>
+                        <p class="fontWeight w-75 pc">{{global.locale=='vi'?'Thời gian: 02 tháng từ ngày chấp nhận đơn.':'Thời gian: 02 tháng từ ngày chấp nhận đơn. aaa'}}
+                            {{global.locale=='vi'?'Cục Sở hữu trí tuệ công bố đơn tại Công báo sở hữu công nghiệp ':'Cục Sở hữu trí tuệ công bố đơn tại Công báo sở hữu công nghiệp  aaa'}}<a id="dknh-cv03" href="/assets/media/DKNH/cv03.jpg">{{global.locale=='vi'?'(mẫu công báo)':'(mẫu công báo) aaa'}}</a></p>
+                        <p class="fontWeight sp">{{global.locale=='vi'?'Thời gian: 02 tháng từ ngày chấp nhận đơn.\n' +
+                            '                            Cục Sở hữu trí tuệ công bố đơn tại Công báo sở hữu công nghiệp':'Thời gian: 02 tháng từ ngày chấp nhận đơn.\n' +
+                            '                            Cục Sở hữu trí tuệ công bố đơn tại Công báo sở hữu công nghiệp aaa'}} <a id="dknh-cv031" href="/assets/media/DKNH/cv03.jpg">{{global.locale=='vi'?'(mẫu công báo)':'(mẫu công báo) aaa'}}</a></p>
                     </div>
                     <div style="width: 80%;">
                         <img class="footer-image" src="/assets/media/DKNH/file/Asset 12.svg">
@@ -42,13 +45,15 @@
                         <img class="image-effective d-none d-md-block" src="/assets/media/DKNH/file/Asset 15.svg">
                     </div>
                     <div class="float-left content-record-effective">
-                        <h5>3. Thẩm định nội dung đơn</h5>
-                        <p class="fontWeight w-75 pc">Thời gian: 09 tháng từ ngày đăng công báo.
-                            Nếu đơn hợp lệ về nội dung, Cục Sở Hữu Trí Tuệ gửi công văn chấp thuận <a id="dknh-cv07" href="/assets/media/DKNH/cv05.jpg">(mẫu công văn)</a>.
-                            Nếu đơn cần sửa đổi, Cục Sở Hữu Trí Tuệ gửi công văn yêu cầu sửa đổi <a id="dknh-cv04" href="/assets/media/DKNH/cv04.jpg">(mẫu công văn)</a>.</p>
-                        <p class="fontWeight sp">Thời gian: 09 tháng từ ngày đăng công báo.
-                            Nếu đơn hợp lệ về nội dung, Cục Sở Hữu Trí Tuệ gửi công văn chấp thuận <a id="dknh-cv071" href="/assets/media/DKNH/cv05.jpg">(mẫu công văn)</a>.
-                            Nếu đơn cần sửa đổi, Cục Sở Hữu Trí Tuệ gửi công văn yêu cầu sửa đổi <a id="dknh-cv041" href="/assets/media/DKNH/cv04.jpg">(mẫu công văn)</a>.</p>
+                        <h5>{{global.locale=='vi'?'3. Thẩm định nội dung đơn':'3. Thẩm định nội dung đơn aaa'}}</h5>
+                        <p class="fontWeight w-75 pc">{{global.locale=='vi'?'Thời gian: 09 tháng từ ngày đăng công báo.\n' +
+                            '                            Nếu đơn hợp lệ về nội dung, Cục Sở Hữu Trí Tuệ gửi công văn chấp thuận':'Thời gian: 09 tháng từ ngày đăng công báo.\n' +
+                            '                            Nếu đơn hợp lệ về nội dung, Cục Sở Hữu Trí Tuệ gửi công văn chấp thuận aaa'}} <a id="dknh-cv07" href="/assets/media/DKNH/cv05.jpg">{{global.locale=='vi'?'(mẫu công văn)':'(mẫu công văn) aaa'}}</a>.
+                            {{global.locale=='vi'?'Nếu đơn cần sửa đổi, Cục Sở Hữu Trí Tuệ gửi công văn yêu cầu sửa đổi':'Nếu đơn cần sửa đổi, Cục Sở Hữu Trí Tuệ gửi công văn yêu cầu sửa đổi aaa'}} <a id="dknh-cv04" href="/assets/media/DKNH/cv04.jpg">{{global.locale=='vi'?'(mẫu công văn)':'(mẫu công văn) aaa'}}</a>.</p>
+                        <p class="fontWeight sp">{{global.locale=='vi'?'Thời gian: 09 tháng từ ngày đăng công báo.\n' +
+                            '                            Nếu đơn hợp lệ về nội dung, Cục Sở Hữu Trí Tuệ gửi công văn chấp thuận':'Thời gian: 09 tháng từ ngày đăng công báo.\n' +
+                            '                            Nếu đơn hợp lệ về nội dung, Cục Sở Hữu Trí Tuệ gửi công văn chấp thuận aaa'}} <a id="dknh-cv071" href="/assets/media/DKNH/cv05.jpg">{{global.locale=='vi'?'(mẫu công văn)':'(mẫu công văn) aaa'}}</a>.
+                            {{global.locale=='vi'?'Nếu đơn cần sửa đổi, Cục Sở Hữu Trí Tuệ gửi công văn yêu cầu sửa đổi ':'Nếu đơn cần sửa đổi, Cục Sở Hữu Trí Tuệ gửi công văn yêu cầu sửa đổi  aaa'}}<a id="dknh-cv041" href="/assets/media/DKNH/cv04.jpg">{{global.locale=='vi'?'(mẫu công văn)':'(mẫu công văn) aaa'}}</a>.</p>
                     </div>
                     <div style="width: 80%;">
                         <img class="footer-image" src="/assets/media/DKNH/file/Asset 12.svg">
@@ -59,11 +64,11 @@
                         <img class="image-effective d-none d-md-block" src="/assets/media/DKNH/file/Asset 16.svg">
                     </div>
                     <div class="float-left content-record-effective">
-                        <h5>4. Thu phí cấp văn bằng</h5>
-                        <p class="fontWeight w-75 pc">Cục Sở Hữu Trí Tuệ yêu cầu chủ sở hữu nhãn hiệu tiến hành nộp phí cấp văn bằng
-                            <a id="dknh-cv05" href="/assets/media/DKNH/cv05.jpg">(công văn yêu cầu nộp phí)</a>. Chủ sở hữu nộp phí và chờ cấp văn bằng.</p>
-                        <p class="fontWeight sp">Cục Sở Hữu Trí Tuệ yêu cầu chủ sở hữu nhãn hiệu tiến hành nộp phí cấp văn bằng
-                            <a id="dknh-cv051" href="/assets/media/DKNH/cv05.jpg">(công văn yêu cầu nộp phí)</a>. Chủ sở hữu nộp phí và chờ cấp văn bằng.</p>
+                        <h5>{{global.locale=='vi'?'4. Thu phí cấp văn bằng':'4. Thu phí cấp văn bằng aaa'}}</h5>
+                        <p class="fontWeight w-75 pc">{{global.locale=='vi'?'Cục Sở Hữu Trí Tuệ yêu cầu chủ sở hữu nhãn hiệu tiến hành nộp phí cấp văn bằng':'Cục Sở Hữu Trí Tuệ yêu cầu chủ sở hữu nhãn hiệu tiến hành nộp phí cấp văn bằng aaa'}}
+                            <a id="dknh-cv05" href="/assets/media/DKNH/cv05.jpg">{{global.locale=='vi'?'(công văn yêu cầu nộp phí)':'(công văn yêu cầu nộp phí) aaa'}}</a>. {{global.locale=='vi'?'Chủ sở hữu nộp phí và chờ cấp văn bằng.':'Chủ sở hữu nộp phí và chờ cấp văn bằng. aaa'}}</p>
+                        <p class="fontWeight sp">{{global.locale=='vi'?'Cục Sở Hữu Trí Tuệ yêu cầu chủ sở hữu nhãn hiệu tiến hành nộp phí cấp văn bằng':'Cục Sở Hữu Trí Tuệ yêu cầu chủ sở hữu nhãn hiệu tiến hành nộp phí cấp văn bằng aaa'}}
+                            <a id="dknh-cv051" href="/assets/media/DKNH/cv05.jpg">{{global.locale=='vi'?'(công văn yêu cầu nộp phí)':'(công văn yêu cầu nộp phí) aaa'}}</a>. {{global.locale=='vi'?'Chủ sở hữu nộp phí và chờ cấp văn bằng.':'Chủ sở hữu nộp phí và chờ cấp văn bằng. aaa'}}</p>
                     </div>
                     <div style="width: 80%;">
                         <img class="footer-image" src="/assets/media/DKNH/file/Asset 12.svg">
@@ -74,13 +79,17 @@
                         <img class="image-effective d-none d-md-block" src="/assets/media/DKNH/file/Asset 17.svg">
                     </div>
                     <div class="float-left content-record-effective">
-                        <h5>5. Cấp giấy chứng nhận Đăng ký nhãn hiệu</h5>
-                        <p class="fontWeight w-75 pc">Thời gian: 02 tháng từ ngày nộp phí.
-                            Chủ sở hữu nhãn hiệu nhận Giấy chứng nhận đăng ký nhãn hiệu sau thời gian từ 1 đến 1,5
-                            năm kể từ thời điểm nộp đơn <a id="dknh-cv06" href="/assets/media/DKNH/cv06.jpg">(giấy chứng nhận)</a>.</p>
-                        <p class="fontWeight sp">Thời gian: 02 tháng từ ngày nộp phí.
-                            Chủ sở hữu nhãn hiệu nhận Giấy chứng nhận đăng ký nhãn hiệu sau thời gian từ 1 đến 1,5
-                            năm kể từ thời điểm nộp đơn <a id="dknh-cv061" href="/assets/media/DKNH/cv06.jpg">(giấy chứng nhận)</a>.</p>
+                        <h5>{{global.locale=='vi'?'5. Cấp giấy chứng nhận Đăng ký nhãn hiệu':'5. Cấp giấy chứng nhận Đăng ký nhãn hiệu aaa'}}</h5>
+                        <p class="fontWeight w-75 pc">{{global.locale=='vi'?'Thời gian: 02 tháng từ ngày nộp phí.\n' +
+                            '                            Chủ sở hữu nhãn hiệu nhận Giấy chứng nhận đăng ký nhãn hiệu sau thời gian từ 1 đến 1,5\n' +
+                            '                            năm kể từ thời điểm nộp đơn':'Thời gian: 02 tháng từ ngày nộp phí.\n' +
+                            '                            Chủ sở hữu nhãn hiệu nhận Giấy chứng nhận đăng ký nhãn hiệu sau thời gian từ 1 đến 1,5\n' +
+                            '                            năm kể từ thời điểm nộp đơn aaa'}} <a id="dknh-cv06" href="/assets/media/DKNH/cv06.jpg">{{global.locale=='vi'?'(giấy chứng nhận)':'(giấy chứng nhận) aaa'}}</a>.</p>
+                        <p class="fontWeight sp">{{global.locale=='vi'?'Thời gian: 02 tháng từ ngày nộp phí.\n' +
+                            '                            Chủ sở hữu nhãn hiệu nhận Giấy chứng nhận đăng ký nhãn hiệu sau thời gian từ 1 đến 1,5\n' +
+                            '                            năm kể từ thời điểm nộp đơn ':'Thời gian: 02 tháng từ ngày nộp phí.\n' +
+                            '                            Chủ sở hữu nhãn hiệu nhận Giấy chứng nhận đăng ký nhãn hiệu sau thời gian từ 1 đến 1,5\n' +
+                            '                            năm kể từ thời điểm nộp đơn  aaa'}}<a id="dknh-cv061" href="/assets/media/DKNH/cv06.jpg">{{global.locale=='vi'?'(giấy chứng nhận)':'(giấy chứng nhận) aaa'}}</a>.</p>
                     </div>
                 </div>
             </div>

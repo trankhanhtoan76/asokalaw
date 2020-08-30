@@ -2,13 +2,15 @@
     <div class="container d-none d-md-block">
         <div class="row">
             <div class="col-md-10" style="margin-top: 150px; ">
-                <h1 style="line-height: 60px; font-weight: 500; font-family:'Montserrat',sans-serif !important; font-size: 45px; color: #000000;">Thiết lập doanh nghiệp toàn diện<br> tiết kiệm <span class="highlight">80%</span> chi phí</h1>
-                <p style="margin-top: 40px; font-size: 16px; font-weight: 200; line-height: 30px; padding-right: 300px;" lang-i18n key="cong-su-dac-luc" default="Asoka Law là cộng sự đắc lực cho 1000+ doanh nghiệp từ khi khởi tạo, không
-                    bỏ sót thủ tục, bàn giao hồ sơ gốc đầy đủ. Doanh nghiệp hoàn toàn yên tâm
-                    khi bắt đầu kinh doanh">
-                </p>
+                <h1 style="line-height: 60px; font-weight: 500; font-family:'Montserrat',sans-serif !important; font-size: 45px; color: #000000;">{{global.locale=='vi'?'Thiết lập doanh nghiệp toàn diện':'Thiết lập doanh nghiệp toàn diện aaa'}}<br> {{global.locale=='vi'?'tiết kiệm':'tiết kiệm aaa'}} <span class="highlight">{{global.locale=='vi'?'80%':'80% aaa'}}</span> {{global.locale=='vi'?'chi phí':'chi phí aaa'}}</h1>
+                <p style="margin-top: 40px; font-size: 16px; font-weight: 200; line-height: 30px; padding-right: 300px;" >{{global.locale=='vi'?'Asoka Law là cộng sự đắc lực cho 1000+ doanh nghiệp từ khi khởi tạo, không\n' +
+                    '                    bỏ sót thủ tục, bàn giao hồ sơ gốc đầy đủ. Doanh nghiệp hoàn toàn yên tâm\n' +
+                    '                    khi bắt đầu kinh doanh':'Asoka Law là cộng sự đắc lực cho 1000+ doanh nghiệp từ khi khởi tạo, không\n' +
+                    '                    bỏ sót thủ tục, bàn giao hồ sơ gốc đầy đủ. Doanh nghiệp hoàn toàn yên tâm\n' +
+                    '                    khi bắt đầu kinh doanh aaa'}}</p>
+
                 <div>
-                    <button (click)="showdkkdform1()" style="padding: 10px 40px; margin-top: 60px;" class="btn btn-outline-warning btn-banner" lang-i18n key="dkkd-dkngay" default="Đăng ký ngay"></button>
+                    <button (click)="showdkkdform1()" style="padding: 10px 40px; margin-top: 60px;" class="btn btn-outline-warning btn-banner">{{global.locale=='vi'?'Đăng ký ngay':'Đăng ký ngay aaa'}}</button>
                 </div>
             </div>
         </div>
@@ -16,12 +18,14 @@
     <div class="container d-block d-md-none">
         <div class="row">
             <div class="col-md-10">
-                <h1 style="font-family:'Montserrat',sans-serif !important;">Thiết lập doanh nghiệp toàn diện tiết kiệm <span class="highlight">80%</span> chi phí</h1>
-                <p class="center-mobile py-2"  lang-i18n key="cong-su-dac-luc" default="Asoka Law là cộng sự đắc lực cho 1000+ doanh nghiệp từ khi khởi tạo, không
-                    bỏ sót thủ tục, bàn giao hồ sơ gốc đầy đủ. Doanh nghiệp hoàn toàn yên tâm
-                    khi bắt đầu kinh doanh"></p>
+                <h1 style="font-family:'Montserrat',sans-serif !important;">{{global.locale=='vi'?'Thiết lập doanh nghiệp toàn diện tiết kiệm ':'Thiết lập doanh nghiệp toàn diện tiết kiệm  aaa'}}<span class="highlight">{{global.locale=='vi'?'80%':'80% aaa'}}</span> {{global.locale=='vi'?'chi phí':'chi phí aaa'}}</h1>
+                <p class="center-mobile py-2" >{{global.locale=='vi'?'Asoka Law là cộng sự đắc lực cho 1000+ doanh nghiệp từ khi khởi tạo, không\n' +
+                    '                    bỏ sót thủ tục, bàn giao hồ sơ gốc đầy đủ. Doanh nghiệp hoàn toàn yên tâm\n' +
+                    '                    khi bắt đầu kinh doanh':'Asoka Law là cộng sự đắc lực cho 1000+ doanh nghiệp từ khi khởi tạo, không\n' +
+                    '                    bỏ sót thủ tục, bàn giao hồ sơ gốc đầy đủ. Doanh nghiệp hoàn toàn yên tâm\n' +
+                    '                    khi bắt đầu kinh doanh aaa'}}</p>
                 <div class="text-center">
-                    <button (click)="showdkkdform1()" class="btn btn-outline-warning" lang-i18n key="dkkd-dkngay" default="Đăng ký ngay"></button>
+                    <button (click)="showdkkdform1()" class="btn btn-outline-warning">{{global.locale=='vi'?'Đăng ký ngay':'Đăng ký ngay aaa'}}</button>
                 </div>
             </div>
         </div>
@@ -48,63 +52,63 @@
             </div>
             <div class="modal-body">
                 <div class="form-group">
-                    <input (keyup)="n=true" [class.is-invalid]="!fieldValid(name)&&n" [class.is-valid]="fieldValid(name)&&n" type="text" class="form-control" [(ngModel)]="name" name="name" placeholder="Họ tên *">
-                    <i *ngIf="!fieldValid(name) && n"><small class="text-danger">Bắt buộc nhập họ tên.</small></i>
+                    <input (keyup)="n=true" [class.is-invalid]="!fieldValid(name)&&n" [class.is-valid]="fieldValid(name)&&n" type="text" class="form-control" [(ngModel)]="name" name="name" placeholder="{{global.locale=='vi'?'Họ tên *':'Họ tên * aaa'}}">
+                    <i *ngIf="!fieldValid(name) && n"><small class="text-danger">{{global.locale=='vi'?'Bắt buộc nhập họ tên.':'Bắt buộc nhập họ tên. aaa'}}</small></i>
                 </div>
                 <div class="form-group">
-                    <input (keyup)="p=true" [class.is-invalid]="!fieldValid(phone,'phone')&&p" [class.is-valid]="fieldValid(phone,'phone')&&p" class="form-control" [(ngModel)]="phone" name="phone" type="text" placeholder="Số điện thoại *"/>
-                    <i *ngIf="!fieldValid(phone,'phone') && p"><small class="text-danger">Bắt buộc nhập số điện thoại hợp lệ.</small></i>
+                    <input (keyup)="p=true" [class.is-invalid]="!fieldValid(phone,'phone')&&p" [class.is-valid]="fieldValid(phone,'phone')&&p" class="form-control" [(ngModel)]="phone" name="phone" type="text" placeholder="{{global.locale=='vi'?'Số điện thoại *':'Số điện thoại * aaa'}}"/>
+                    <i *ngIf="!fieldValid(phone,'phone') && p"><small class="text-danger">{{global.locale=='vi'?'Bắt buộc nhập số điện thoại hợp lệ.':'Bắt buộc nhập số điện thoại hợp lệ. aaa'}}</small></i>
                 </div>
                 <div class="form-group">
-                    <input (keyup)="e=true" [class.is-invalid]="!fieldValid(email,'email')&&e" [class.is-valid]="fieldValid(email,'email')&&e" class="form-control" name="email" [(ngModel)]="email" type="text" placeholder="Email *"/>
-                    <i *ngIf="!fieldValid(email,'email') && e"><small class="text-danger">Bắt buộc nhập email hợp lệ.</small></i>
+                    <input (keyup)="e=true" [class.is-invalid]="!fieldValid(email,'email')&&e" [class.is-valid]="fieldValid(email,'email')&&e" class="form-control" name="email" [(ngModel)]="email" type="text" placeholder="{{global.locale=='vi'?'Email *':'Email * aaa'}}"/>
+                    <i *ngIf="!fieldValid(email,'email') && e"><small class="text-danger">{{global.locale=='vi'?'Bắt buộc nhập email hợp lệ.':'Bắt buộc nhập email hợp lệ. aaa'}}</small></i>
                 </div>
                 <div class="form-group">
-                    <label>Loại hình công ty bạn muốn đăng ký</label>
+                    <label>{{global.locale=='vi'?'Loại hình công ty bạn muốn đăng ký':'Loại hình công ty bạn muốn đăng ký aaa'}}</label>
                     <select class="form-control" name="type_company" [(ngModel)]="typeCompany">
-                        <option value="Công ty TNHH 1 thành viên">Công ty TNHH 1 thành viên</option>
-                        <option value="Công ty TNHH 2 thành viên trở lên">Công ty TNHH 2 thành viên trở lên</option>
-                        <option value="Công ty cổ phần">Công ty cổ phần</option>
-                        <option value="Doanh nghiệp tư nhân">Doanh nghiệp tư nhân</option>
-                        <option value="Công ty hợp danh">Công ty hợp danh</option>
-                        <option value="Hộ kinh doanh cá thể">Hộ kinh doanh cá thể</option>
+                        <option value="Công ty TNHH 1 thành viên">{{global.locale=='vi'?'Công ty TNHH 1 thành viên':'Công ty TNHH 1 thành viên aaa'}}</option>
+                        <option value="Công ty TNHH 2 thành viên trở lên">{{global.locale=='vi'?'Công ty TNHH 2 thành viên trở lên':'Công ty TNHH 2 thành viên trở lên aaa'}}</option>
+                        <option value="Công ty cổ phần">{{global.locale=='vi'?'Công ty cổ phần':'Công ty cổ phần aaa'}}</option>
+                        <option value="Doanh nghiệp tư nhân">{{global.locale=='vi'?'Doanh nghiệp tư nhân':'Doanh nghiệp tư nhân aaa'}}</option>
+                        <option value="Công ty hợp danh">{{global.locale=='vi'?'Công ty hợp danh':'Công ty hợp danh aaa'}}</option>
+                        <option value="Hộ kinh doanh cá thể">{{global.locale=='vi'?'Hộ kinh doanh cá thể':'Hộ kinh doanh cá thể aaa'}}</option>
                     </select>
                 </div>
                 <div class="form-group">
-                    <label>Lựa chọn gói pháp lý phù hợp với nhu cầu của bạn</label>
+                    <label>{{global.locale=='vi'?'Lựa chọn gói pháp lý phù hợp với nhu cầu của bạn':'Lựa chọn gói pháp lý phù hợp với nhu cầu của bạn aaa'}}</label>
                     <div class="container-fluid">
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-check form-check-inline">
-                                    <input [(ngModel)]="package" [checked]="package=='Gói cơ bản'" name="package" class="form-check-input" type="radio" value="Gói cơ bản">
-                                    <span class="form-check-label">Gói cơ bản</span>
+                                    <input [(ngModel)]="package" [checked]="package=='Gói cơ bản'" name="package" class="form-check-input" type="radio" value="{{global.locale=='vi'?'Gói cơ bản':'Gói cơ bản aaa'}}">
+                                    <span class="form-check-label">{{global.locale=='vi'?'Gói cơ bản':'Gói cơ bản aaa'}}</span>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-check form-check-inline">
-                                    <input [(ngModel)]="package" [checked]="package=='Gói toàn diện'" name="package" class="form-check-input" type="radio" value="Gói toàn diện">
-                                    <span class="form-check-label">Gói toàn diện</span>
+                                    <input [(ngModel)]="package" [checked]="package=='Gói toàn diện'" name="package" class="form-check-input" type="radio" value="{{global.locale=='vi'?'Gói toàn diện':'Gói toàn diện aaa'}}">
+                                    <span class="form-check-label">{{global.locale=='vi'?'Gói toàn diện':'Gói toàn diện aaa'}}</span>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="form-group">
-                    <label>Bạn cần tư vấn thêm</label>
+                    <label>{{global.locale=='vi'?'Bạn cần tư vấn thêm':'Bạn cần tư vấn thêm aaa'}}</label>
                     <div class="container-fluid">
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="form-check form-check-inline">
-                                    <input [(ngModel)]="consult" [checked]="consult=='Tư vấn miễn phí cùng chuyên viên pháp lý'" name="consult" class="form-check-input" type="radio" value="Tư vấn miễn phí cùng chuyên viên pháp lý">
-                                    <span class="form-check-label">Tư vấn miễn phí cùng chuyên viên pháp lý</span>
+                                    <input [(ngModel)]="consult" [checked]="consult=='Tư vấn miễn phí cùng chuyên viên pháp lý'" name="consult" class="form-check-input" type="radio" value="{{global.locale=='vi'?'Tư vấn miễn phí cùng chuyên viên pháp lý':'Tư vấn miễn phí cùng chuyên viên pháp lý aaa'}}">
+                                    <span class="form-check-label">{{global.locale=='vi'?'Tư vấn miễn phí cùng chuyên viên pháp lý':'Tư vấn miễn phí cùng chuyên viên pháp lý aaa'}}</span>
                                 </div>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="form-check form-check-inline">
-                                    <input [(ngModel)]="consult" [checked]="consult=='Tư vấn chuyên sâu với luật sư'" name="consult" class="form-check-input" type="radio" value="Tư vấn chuyên sâu với luật sư">
-                                    <span class="form-check-label">Tư vấn chuyên sâu với luật sư</span>
+                                    <input [(ngModel)]="consult" [checked]="consult=='Tư vấn chuyên sâu với luật sư'" name="consult" class="form-check-input" type="radio" value="{{global.locale=='vi'?'Tư vấn chuyên sâu với luật sư':'Tư vấn chuyên sâu với luật sư aaa'}}">
+                                    <span class="form-check-label">{{global.locale=='vi'?'Tư vấn chuyên sâu với luật sư':'Tư vấn chuyên sâu với luật sư aaa'}}</span>
                                 </div>
                             </div>
                         </div>
@@ -112,7 +116,7 @@
                 </div>
             </div>
             <div class="modal-footer" style="text-align: center;">
-                <button style="margin: auto; color: white;" (click)="submit()" type="button" class="btn btn-warning">Gửi yêu cầu</button>
+                <button style="margin: auto; color: white;" (click)="submit()" type="button" class="btn btn-warning">{{global.locale=='vi'?'Gửi yêu cầu':'Gửi yêu cầu aaa'}}</button>
             </div>
         </div>
     </div>

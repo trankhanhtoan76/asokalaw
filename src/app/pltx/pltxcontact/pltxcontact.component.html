@@ -3,15 +3,15 @@
   <div class="container">
       <div class="row align-items-center">
           <div class="col-md-8">
-              <h5 class="pc" style="font-weight: 300; line-height: 2.5rem; margin: 0">Hơn 50 doanh nghiệp đang sử dụng dịch vụ<br><span class="font-weight-bold" style="font-size: 1.25rem;">Pháp lý thường xuyên</span> tại Asoka Law</h5>
-              <h5 class="sp center" style="font-weight: 300; line-height: 2.5rem; margin: 0">Hơn 50 doanh nghiệp đang sử dụng dịch vụ <span class="font-weight-bold" style="font-size: 1.25rem;">Pháp lý thường xuyên</span> tại Asoka Law</h5>
+              <h5 class="pc" style="font-weight: 300; line-height: 2.5rem; margin: 0">{{global.locale=='vi'?'Hơn 50 doanh nghiệp đang sử dụng dịch vụ':'Hơn 50 doanh nghiệp đang sử dụng dịch vụ aaa'}}<br><span class="font-weight-bold" style="font-size: 1.25rem;">{{global.locale=='vi'?'Pháp lý thường xuyên':'Pháp lý thường xuyên aaa'}}</span>{{global.locale=='vi'?' tại Asoka Law':' tại Asoka Law aaa'}}</h5>
+              <h5 class="sp center" style="font-weight: 300; line-height: 2.5rem; margin: 0">{{global.locale=='vi'?'Hơn 50 doanh nghiệp đang sử dụng dịch vụ':'Hơn 50 doanh nghiệp đang sử dụng dịch vụ aaa'}}<span class="font-weight-bold" style="font-size: 1.25rem;">{{global.locale=='vi'?'Pháp lý thường xuyên':'Pháp lý thường xuyên aaa'}}</span>{{global.locale=='vi'?' tại Asoka Law':' tại Asoka Law aaa'}}</h5>
           </div>
           <div class="col-md-4">
               <div class="text-right pc">
-                  <button onclick="$('#pltxform1').modal('show')" class="btn btn-warning" style="padding: 0.75rem 3rem;">DÙNG THỬ MIỄN PHÍ</button>
+                  <button onclick="$('#pltxform1').modal('show')" class="btn btn-warning" style="padding: 0.75rem 3rem;">{{global.locale=='vi'?'DÙNG THỬ MIỄN PHÍ':'DÙNG THỬ MIỄN PHÍ aaa'}}</button>
               </div>
               <div class="sp center" style="margin-top: 2rem;">
-                  <button onclick="$('#pltxform1').modal('show')" class="btn btn-warning sub-button shadow" style="padding: 0.75rem 3rem;">DÙNG THỬ MIỄN PHÍ</button>
+                  <button onclick="$('#pltxform1').modal('show')" class="btn btn-warning sub-button shadow" style="padding: 0.75rem 3rem;">{{global.locale=='vi'?'DÙNG THỬ MIỄN PHÍ':'DÙNG THỬ MIỄN PHÍ aaa'}}</button>
               </div>
           </div>
       </div>

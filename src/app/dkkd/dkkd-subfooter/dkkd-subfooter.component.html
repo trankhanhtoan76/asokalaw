@@ -1,14 +1,14 @@
 <div class="subFooter">
     <div class="center">
         <h4 id="fix-dkkd-quote">
-            Khởi đầu công việc kinh doanh thuận lợi<br/>
-            bằng việc tư vấn với Asoka Law
+            {{global.locale=='vi'?'Khởi đầu công việc kinh doanh thuận lợi':'Khởi đầu công việc kinh doanh thuận lợi aaa'}}<br/>
+            {{global.locale=='vi'?'bằng việc tư vấn với Asoka Law':'bằng việc tư vấn với Asoka Law aaa'}}
         </h4>
         <p style="padding-bottom: 10px;">
-            <span style="font-weight: bold">1000+</span> khách hàng thành lập doanh nghiệp tại Asoka được hỗ trợ toàn diện
+            <span style="font-weight: bold">{{global.locale=='vi'?'1000+':'1000+ aaa'}}</span> {{global.locale=='vi'?'khách hàng thành lập doanh nghiệp tại Asoka được hỗ trợ toàn diện':'khách hàng thành lập doanh nghiệp tại Asoka được hỗ trợ toàn diện aaa'}}
         </p>
     </div>
     <div class="flex-center-hor">
-        <button onclick="$('#dkkdform1').modal('show')" type="button" class="btn btn-warning">TƯ VẤN CHO TÔI</button>
+        <button onclick="$('#dkkdform1').modal('show')" type="button" class="btn btn-warning">{{global.locale=='vi'?'TƯ VẤN CHO TÔI':'TƯ VẤN CHO TÔI aaa'}}</button>
     </div>
 </div>

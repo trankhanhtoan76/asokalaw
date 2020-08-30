@@ -1,6 +1,6 @@
 <div class="style1 input-group mb-3">
-    <input [class.is-invalid]="!fieldValid(email,'email')" [class.is-valid]="fieldValid(email,'email')" type="text" class="style2 form-control" style="color: white;" name="email" [(ngModel)]="email" placeholder="Vui lòng nhập email của bạn"/>
+    <input [class.is-invalid]="!fieldValid(email,'email')" [class.is-valid]="fieldValid(email,'email')" type="text" class="style2 form-control" style="color: white;" name="email" [(ngModel)]="email" placeholder="{{global.locale=='vi'?'Vui lòng nhập email của bạn':'Please enter email address'}}"/>
     <div class="input-group-append">
-        <button [disabled]="!fieldValid(email,'email')" (click)="submit()" class="style3 btn btn-warning" style="border-radius:5px;" type="button">Gửi</button>
+        <button [disabled]="!fieldValid(email,'email')" (click)="submit()" class="style3 btn btn-warning" style="border-radius:5px;" type="button">{{global.locale=='vi'?'Gửi':'Send'}}</button>
     </div>
 </div>

@@ -9,19 +9,19 @@
             <div class="modal-body" style="overflow-x: hidden">
                 <div class="form-group">
                     <input (keyup)="n=true" [class.is-invalid]="!fieldValid(name)&&n" [class.is-valid]="fieldValid(name)&&n" type="text" class="form-control" [(ngModel)]="name" name="name" placeholder="Họ tên *">
-                    <i *ngIf="!fieldValid(name) && n"><small class="text-danger">Bắt buộc nhập họ tên.</small></i>
+                    <i *ngIf="!fieldValid(name) && n"><small class="text-danger">{{global.locale=='vi'?'Bắt buộc nhập họ tên.':'Bắt buộc nhập họ tên. aaa'}}</small></i>
                 </div>
                 <div class="form-group">
                     <input (keyup)="p=true" [class.is-invalid]="!fieldValid(phone,'phone')&&p" [class.is-valid]="fieldValid(phone,'phone')&&p" class="form-control" [(ngModel)]="phone" name="phone" type="text" placeholder="Số điện thoại *"/>
-                    <i *ngIf="!fieldValid(phone,'phone') && p"><small class="text-danger">Bắt buộc nhập số điện thoại hợp lệ.</small></i>
+                    <i *ngIf="!fieldValid(phone,'phone') && p"><small class="text-danger">{{global.locale=='vi'?'Bắt buộc nhập số điện thoại hợp lệ.':'Bắt buộc nhập số điện thoại hợp lệ. aaa'}}</small></i>
                 </div>
                 <div class="form-group">
                     <input (keyup)="e=true" [class.is-invalid]="!fieldValid(email,'email')&&e" [class.is-valid]="fieldValid(email,'email')&&e" class="form-control" name="email" [(ngModel)]="email" type="text" placeholder="Email *"/>
-                    <i *ngIf="!fieldValid(email,'email') && e"><small class="text-danger">Bắt buộc nhập email hợp lệ.</small></i>
+                    <i *ngIf="!fieldValid(email,'email') && e"><small class="text-danger">{{global.locale=='vi'?'Bắt buộc nhập email hợp lệ.':'Bắt buộc nhập email hợp lệ. aaa'}}</small></i>
                 </div>
                 <div class="row" style="margin-bottom: 15px">
                     <div class="col-4 vertical-middle">
-                        <label style="margin-bottom: 0">Số lượng câu hỏi: </label>
+                        <label style="margin-bottom: 0">{{global.locale=='vi'?'Số lượng câu hỏi: ':'Số lượng câu hỏi:  aaa'}}</label>
                     </div>
                     <div class="col-4 vertical-middle">
                         <div class="input-group">
@@ -39,15 +39,15 @@
                     </div>
                 </div>
                 <div class="form-group">
-                    <label>Nhập nội dung câu hỏi dự kiến của bạn</label>
+                    <label>{{global.locale=='vi'?'Nhập nội dung câu hỏi dự kiến của bạn':'Nhập nội dung câu hỏi dự kiến của bạn aaa'}}</label>
                     <textarea
                             placeholder="Bạn vui lòng điền câu hỏi ở đây. Nội dung câu hỏi càng cụ thể, câu trả lời bạn nhận được từ luật sư/cố vấn càng rõ ràng.&#x0a;Ví dụ:&#x0a;1. Tôi muốn được tư vấn về thủ tục thành lập công ty cổ phần.&#x0a;2. Sau khi thành lập công ty, tôi muốn mở chi nhánh thì làm thế nào?&#x0a;3. Tôi muốn đăng ký nhãn hiệu của công ty thì cần điều kiện gì?"
                             rows="6" class="form-control tvlstextareaform" [(ngModel)]="description" name="description"></textarea>
                 </div>
                 <div class="form-group">
-                    Tài liệu đính kèm:
+                    {{global.locale=='vi'?'Tài liệu đính kèm:':'Tài liệu đính kèm: aaa'}}
                     <button *ngIf="!attachment" style="margin-bottom: 5px;color: #0f74a8;text-decoration: underline" class="btn" type="button" (click)="fileInput1.click()">
-                        <span style="color: #0f74a8" class="far fa-paperclip"></span> tải lên tại đây
+                        <span style="color: #0f74a8" class="far fa-paperclip"></span>{{global.locale=='vi'?' tải lên tại đây':' tải lên tại đây aaa'}}
                         <input #fileInput1 type="file" (change)="onSelectFile($event)" style="display:none;"/>
                     </button>
                     <ng-container *ngIf="attachment">
@@ -56,21 +56,21 @@
                     </ng-container>
                 </div>
                 <div class="form-group vertical-middle">
-                    Tạm tính: <span style="color: #0f74a8;font-size: 25px;font-weight: bold">{{total | number}} vnđ</span>
+                    {{global.locale=='vi'?'Tạm tính:':'Tạm tính: aaa'}} <span style="color: #0f74a8;font-size: 25px;font-weight: bold">{{total | number}} vnđ</span>
                 </div>
-                <p class="tvlstextareaform">Chuyên viên của Asoka sẽ liên lạc với bạn ngay trong vòng 5 phút để xác nhận yêu cầu tư vấn.<br/>
-                    Bạn vui lòng kiểm tra tin nhắn điện thoại/email để không bỏ sót thông tin từ chúng tôi. Xin cảm ơn.</p>
+                <p class="tvlstextareaform">{{global.locale=='vi'?'Chuyên viên của Asoka sẽ liên lạc với bạn ngay trong vòng 5 phút để xác nhận yêu cầu tư vấn.':'Chuyên viên của Asoka sẽ liên lạc với bạn ngay trong vòng 5 phút để xác nhận yêu cầu tư vấn. aaa'}}<br/>
+                    {{global.locale=='vi'?'Bạn vui lòng kiểm tra tin nhắn điện thoại/email để không bỏ sót thông tin từ chúng tôi. Xin cảm ơn.':'Bạn vui lòng kiểm tra tin nhắn điện thoại/email để không bỏ sót thông tin từ chúng tôi. Xin cảm ơn. aaa'}}</p>
                 <div class="form-group">
                     <label>
                         <input (change)="checkTerm=!checkTerm" value="1" type="checkbox">
-                        Tôi đã đọc và đồng ý với các điều khoản
-                        <span style="text-decoration: underline;color:#0f74a8;font-style: italic">Xem chi tiết</span>
+                        {{global.locale=='vi'?'Tôi đã đọc và đồng ý với các điều khoản':'Tôi đã đọc và đồng ý với các điều khoản aaa'}}
+                        <span style="text-decoration: underline;color:#0f74a8;font-style: italic">{{global.locale=='vi'?'Xem chi tiết':'Xem chi tiết aaa'}}</span>
                     </label><br/>
-                    <i *ngIf="!checkTerm&&t"><small class="text-danger">Bắt buộc đồng ý với các điều khoản.</small></i>
+                    <i *ngIf="!checkTerm&&t"><small class="text-danger">{{global.locale=='vi'?'Bắt buộc đồng ý với các điều khoản.':'Bắt buộc đồng ý với các điều khoản. aaa'}}</small></i>
                 </div>
             </div>
             <div class="modal-footer" style="text-align: center;">
-                <button style="margin: auto; color: white;" (click)="submit()" type="button" class="btn btn-warning">Gửi yêu cầu</button>
+                <button style="margin: auto; color: white;" (click)="submit()" type="button" class="btn btn-warning">{{global.locale=='vi'?'Gửi yêu cầu':'Gửi yêu cầu aaa'}}</button>
             </div>
         </div>
     </div>

@@ -1,7 +1,7 @@
 <section id='feedback' class="sub">
     <div class="container center">
         <div class="text-center">
-            <h1 style="padding-bottom: 20px">Nhận xét từ khách hàng đã sử dụng dịch vụ</h1>
+            <h1 style="padding-bottom: 20px">{{global.locale=='vi'?'Nhận xét từ khách hàng đã sử dụng dịch vụ':'Nhận xét từ khách hàng đã sử dụng dịch vụ aaa'}}</h1>
         </div>
         <div class="feedback-slide-pltx d-none d-md-block">
             <div *ngFor="let item of data" class="feedback-item">
@@ -65,7 +65,7 @@
             <div class="col-md-6">
                 <div style="display: flex;margin: auto;text-align: center;width: fit-content;">
                     <img src="/assets/media/PLTX/effect/Asset%2010.svg">
-                    <p>Tư vấn miễn phí: 096 191 4328</p>
+                    <p>{{global.locale=='vi'?'Tư vấn miễn phí: 096 191 4328':'Tư vấn miễn phí: 096 191 4328 aaa'}}</p>
                 </div>
             </div>
             <div class="col-md-3">
@@ -77,7 +77,7 @@
         <div class="call d-block d-md-none">
             <div style="display: flex;margin: auto;text-align: center;width: fit-content;">
                 <img src="/assets/media/PLTX/effect/Asset%2010.svg">
-                <p>Tư vấn miễn phí: 096 191 4328</p>
+                <p>{{global.locale=='vi'?'Tư vấn miễn phí: 096 191 4328':'Tư vấn miễn phí: 096 191 4328 aaa'}}</p>
             </div>
         </div>
     </div>

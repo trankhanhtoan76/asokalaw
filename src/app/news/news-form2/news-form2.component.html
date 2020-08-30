@@ -2,15 +2,15 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <h4 class="news-title center mb-5" style="color: #213070;">NHẬN TƯ VẤN MIỄN PHÍ CÁC VẤN ĐỀ PHÁP LÝ CỦA BẠN</h4>
+                <h4 class="news-title center mb-5" style="color: #213070;">{{global.locale=='vi'?'NHẬN TƯ VẤN MIỄN PHÍ CÁC VẤN ĐỀ PHÁP LÝ CỦA BẠN':'NHẬN TƯ VẤN MIỄN PHÍ CÁC VẤN ĐỀ PHÁP LÝ CỦA BẠN aaa'}}</h4>
                 <form class="news-form">
                     <div class="form-group">
                         <input (keyup)="n=true" [class.is-invalid]="!form.fieldValid(name)&&n" [class.is-valid]="form.fieldValid(name)&&n" type="text" class="form-control" [(ngModel)]="name" name="name" placeholder="Họ tên *">
-                        <i *ngIf="!form.fieldValid(name) && n"><small class="text-danger">Bắt buộc nhập họ tên.</small></i>
+                        <i *ngIf="!form.fieldValid(name) && n"><small class="text-danger">{{global.locale=='vi'?'Bắt buộc nhập họ tên.':'Bắt buộc nhập họ tên. aaa'}}</small></i>
                     </div>
                     <div class="form-group">
                         <input (keyup)="e=true" [class.is-invalid]="!form.fieldValid(email,'email')&&(e||submitClick)" [class.is-valid]="form.fieldValid(email,'email')" class="form-control" name="email" [(ngModel)]="email" type="text" placeholder="Email *"/>
-                        <i *ngIf="!form.fieldValid(email,'email')&&(e||submitClick)"><small class="text-danger">Bắt buộc nhập email hợp lệ.</small></i>
+                        <i *ngIf="!form.fieldValid(email,'email')&&(e||submitClick)"><small class="text-danger">{{global.locale=='vi'?'Bắt buộc nhập email hợp lệ.':'Bắt buộc nhập email hợp lệ. aaa'}}</small></i>
                     </div>
                     <div class="form-group">
                         <div class="container">
@@ -78,7 +78,7 @@
                             </div>
                         </div>
                     </div>
-                    <button (click)="submit()" type="button" class="btn btn-warning d-block">Gửi yêu cầu</button>
+                    <button (click)="submit()" type="button" class="btn btn-warning d-block">{{global.locale=='vi'?'Gửi yêu cầu':'Gửi yêu cầu aaa'}}</button>
                 </form>
             </div>
         </div>

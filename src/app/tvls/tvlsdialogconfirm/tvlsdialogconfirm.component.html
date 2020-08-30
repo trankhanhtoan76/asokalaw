@@ -2,9 +2,9 @@
     <div class="modal-dialog modal-sm" role="document">
         <div class="modal-content">
             <div class="modal-body">
-                <p>Bạn có chắc muốn hủy yêu cầu</p>
-                <button style="width: 80px" (click)="yesClick()" type="button" class="btn btn-outline-secondary float-left">Có</button>
-                <button style="width: 80px" (click)="noClick()" type="button" class="btn btn-outline-warning float-right">Không</button>
+                <p>{{global.locale=='vi'?'Bạn có chắc muốn hủy yêu cầu':'Bạn có chắc muốn hủy yêu cầu aaa'}}</p>
+                <button style="width: 80px" (click)="yesClick()" type="button" class="btn btn-outline-secondary float-left">{{global.locale=='vi'?'Có':'Có aaa'}}</button>
+                <button style="width: 80px" (click)="noClick()" type="button" class="btn btn-outline-warning float-right">{{global.locale=='vi'?'Không':'Không aaa'}}</button>
             </div>
         </div>
     </div>
