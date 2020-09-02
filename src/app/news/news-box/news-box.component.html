@@ -21,7 +21,7 @@
         </div>
     </div>
     <h2 style="cursor: pointer" routerLink="/{{global.locale=='vi'?data.slug:data.en_slug}}">{{global.locale == 'vi' ? data.title : data.en_title}}</h2>
-    <p>{{global.locale == 'vi' ? data.short_description : data.en_short_description}}</p>
+    <p class="news-txt">{{global.locale == 'vi' ? data.short_description : data.en_short_description}}</p>
     <a routerLink="/{{global.locale=='vi'?data.slug:data.en_slug}}" class="news-btn btn btn-outline-dark">
         {{global.locale=='vi'?'Đọc tiếp':'Đọc tiếp aaa'}}<span><img src="/assets/media/chnn/news01_Asset 7.svg"></span>
     </a>
