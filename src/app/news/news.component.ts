@@ -14,18 +14,20 @@ export class NewsComponent implements OnInit {
     category = {
         id: '',
         tags: '',
-        en_tags: ""
+        en_tags: "",
+        level: 1
     };
     offset = 0;
     showBtnGetMore = true;
+    allCategorys = [];
 
-    constructor(private router: ActivatedRoute, public _global: GlobalService, private _router: Router,public global: GlobalService) {
+    constructor(private router: ActivatedRoute, public _global: GlobalService, private _router: Router, public global: GlobalService) {
     }
 
     ngOnInit(): void {
+        const self = this;
         if (this._router.url == '/tin-tuc' || this._router.url == '/news') {
             this.category_slug = 'tin-tuc';
-            const self = this;
             const param = new FormData();
             param.append('action', 'get_record');
             param.append('query', `select * from category where slug='${this.category_slug}' or en_slug='${this.category_slug}'`);
@@ -36,17 +38,39 @@ export class NewsComponent implements OnInit {
         } else {
             this.router.paramMap.subscribe(paramMap => {
                 this.category_slug = paramMap.get('category');
-                const self = this;
-                const param = new FormData();
-                param.append('action', 'get_record');
-                param.append('query', `select * from category where slug='${this.category_slug}' or en_slug='${this.category_slug}'`);
-                postAPI(param, function (res): void {
-                    self.category = res;
-                    self.getPosts(10);
-                });
+                if(this.category_slug) {
+                    const param = new FormData();
+                    param.append('action', 'get_record');
+                    param.append('query', `select * from category where slug='${this.category_slug}' or en_slug='${this.category_slug}'`);
+                    postAPI(param, function (res): void {
+                        self.posts = [];
+                        self.offset = 0;
+                        self.category = res;
+                        self.getPosts(10);
+                    });
+                }
             });
         }
 
+        /**
+         * get all category
+         */
+        const param = new FormData();
+        param.append('action', 'get_records');
+        param.append('query', `select *
+                               from category`);
+        postAPI(param, function (res): void {
+            self.allCategorys = res;
+            self.allCategorys = self.convertToKey(self.allCategorys, 'id');
+        });
+    }
+
+    convertToKey(arr: any, arrkey: string): any {
+        let result = {};
+        for (const key in arr) {
+            result[arr[key][arrkey]] = arr[key];
+        }
+        return result;
     }
 
     getPosts(limit: number) {
@@ -56,13 +80,23 @@ export class NewsComponent implements OnInit {
         const self = this;
         const data = new FormData();
         data.append('action', 'get_records');
-        data.append('query', `
+        if (this.category_slug == 'tin-tuc') {
+            data.append('query', `
+                select *
+                from post
+                where is_publish = 1 and ${wlocale}
+                order by created_at desc
+                limit ${limit} offset ${this.offset}
+                `);
+        } else {
+            data.append('query', `
                 select *
                 from post
                 where category_id like '%${this.category.id}%' and is_publish = 1 and ${wlocale}
                 order by created_at desc
                 limit ${limit} offset ${this.offset}
                 `);
+        }
 
         postAPI(data, function (res): void {
             if (res.length < limit) self.showBtnGetMore = false;

@@ -6,10 +6,10 @@
         <div class="row">
             <div class="col-sm-8">
                 <p class="news-tag">
-<!--                    <span routerLink="/{{global.locale=='vi'?'danh-muc':'category'}}/{{global.locale=='vi'?data.category_slug:data.category_en_slug}}" class="badge badge-secondary">-->
-<!--                        <img src="/assets/media/chnn/news01_tag.svg">-->
-<!--                        {{global.locale == 'vi' ? data.category_name : data.en_category_name}}-->
-<!--                    </span>-->
+                    <span routerLink="/{{global.locale=='vi'?'danh-muc':'category'}}/{{global.locale=='vi'?currentCategory.slug:currentCategory.en_slug}}" class="badge badge-secondary">
+                        <img src="/assets/media/chnn/news01_tag.svg">
+                        {{global.locale == 'vi' ? currentCategory.name : currentCategory.en_name}}
+                    </span>
                     <span>{{data.modified_at|date:'dd/MM/yyyy'}}</span>
                 </p>
             </div>
@@ -20,7 +20,7 @@
             </div>
         </div>
     </div>
-    <h2 style="cursor: pointer" routerLink="/{{global.locale=='vi'?data.slug:data.en_slug}}">{{global.locale == 'vi' ? data.title : data.en_title}}</h2>
+    <h2 style="cursor: pointer;padding-top:0;" routerLink="/{{global.locale=='vi'?data.slug:data.en_slug}}">{{global.locale == 'vi' ? data.title : data.en_title}}</h2>
     <p class="news-txt">{{global.locale == 'vi' ? data.short_description : data.en_short_description}}</p>
     <a routerLink="/{{global.locale=='vi'?data.slug:data.en_slug}}" class="news-btn btn btn-outline-dark">
         {{global.locale=='vi'?'Đọc tiếp':'Đọc tiếp aaa'}}<span><img src="/assets/media/chnn/news01_Asset 7.svg"></span>

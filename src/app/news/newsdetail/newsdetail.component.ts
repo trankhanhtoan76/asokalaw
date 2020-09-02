@@ -34,14 +34,23 @@ export class NewsdetailComponent implements OnInit {
     }
 
     ngOnInit(): void {
-        this._router.paramMap.subscribe(paramMap => {
-            this.slug = paramMap.get('post');
-            this.detail();
-        });
         this.router.events.subscribe((evt) => {
-            if (/^\/[^\/]+$/.test(this.router.url)) {
-                this.slug = this.router.url.slice(1);
-                this.detail();
+            // @ts-ignore
+            if (/^\/!(danh-muc|category)\//.test(evt.url)) {
+                if (/^\/[^\/]+$/.test(this.router.url)) {
+                    this.slug = this.router.url.slice(1);
+                    this.data = {
+                        description: undefined,
+                        en_description: undefined,
+                        title: undefined,
+                        en_title: undefined,
+                        modified_at: undefined,
+                        tags: undefined,
+                        en_tags: undefined,
+                        id: undefined
+                    };
+                    this.detail();
+                }
             }
         });
         if (/^\/[^\/]+$/.test(this.router.url)) {
@@ -111,7 +120,7 @@ export class NewsdetailComponent implements OnInit {
             param2.append('query', `
                     select *
                     from post
-                    where id<>'${self.data.id}' and ${wlocale}
+                    where id<>'${self.data.id}' and ${wlocale} and is_publish=1
                     order by created_at desc
                     limit 5
                 `);
