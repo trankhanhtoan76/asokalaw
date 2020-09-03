@@ -2,11 +2,11 @@
     <div class="container">
         <div class="row">
             <div class="col-md-6 title-banner">
-                <h1>{{global.locale=='vi'?'Kết nối ngay với top luật sư giỏi nhất':'Kết nối ngay với top luật sư giỏi nhất aaa'}}</h1>
+                <h1 style="margin-top: 18%;">{{global.locale=='vi'?'Kết nối ngay với top luật sư giỏi nhất':'Kết nối ngay với top luật sư giỏi nhất aaa'}}</h1>
                 <br>
                 <span>{{global.locale=='vi'?'Hơn':'Hơn aaa'}} <b style="color: #ffc107; font-size: large;">{{global.locale=='vi'?'6.890 giờ tư vấn':'6.890 giờ tư vấn aaa'}}</b>{{global.locale=='vi'?' đã được thực hiện bởi luật sư/cố vấn của Asoka Law. Dễ dàng tiếp cận ngay':' đã được thực hiện bởi luật sư/cố vấn của Asoka Law. Dễ dàng tiếp cận ngay aaa'}}</span>
-                <div class=" row search">
-                    <div class="shadow container-search flex-center-vertically">
+                <div class=" row search timkiem-tvls">
+                    <div class="shadow container-search flex-center-vertically tvls-shadow">
                         <div class="row row-search">
                             <i class="fa fa-search"></i>
                             <select [(ngModel)]="type" name="type" class="input-search">
@@ -21,10 +21,10 @@
                                 <option value="Định cư - du học">{{global.locale=='vi'?'Định cư - du học':'Định cư - du học aaa'}}</option>
                                 <option value="Lĩnh vực khác">{{global.locale=='vi'?'Lĩnh vực khác':'Lĩnh vực khác aaa'}}</option>
                             </select>
-                            <i class="fa fa-caret-down"></i>
+                            <i class="fa fa-caret-down" ></i>
                         </div>
                     </div>
-                    <button (click)="showForm1()" class="shadow btn btn-warning text-color-search">{{global.locale=='vi'?'Đặt lịch ngay':'Đặt lịch ngay aaa'}}</button>
+                    <button (click)="showForm1()" class="shadow btn btn-warning text-color-search nut-tvls">{{global.locale=='vi'?'Đặt lịch ngay':'Đặt lịch ngay aaa'}}</button>
                 </div>
             </div>
         </div>
@@ -36,12 +36,18 @@
 <app-global-lawyer (showregistrationform)="showForm1($event)">
     <h1 class="sub-content-no-fluid" style="padding-top: 45px!important;">{{global.locale=='vi'?'Đội ngũ luật sư & cố vấn phù hợp cho bạn':'Đội ngũ luật sư & cố vấn phù hợp cho bạn aaa'}}</h1>
 </app-global-lawyer>
-<app-tvlsconsult></app-tvlsconsult>
+<app-servicemostused></app-servicemostused>
+<!--<app-tvlsconsult></app-tvlsconsult>-->
 <app-tvlssupport></app-tvlssupport>
+<div class="tuvanmienphi" style="text-align: center;" >
+    <button (click)="showForm1()" type="button" class="btn btn-warning">TƯ VẤN MIỄN PHÍ</button>
+</div>
+
 <app-tvlsfeedback></app-tvlsfeedback>
 <app-tvlsquestion></app-tvlsquestion>
 <app-tvlsmostview></app-tvlsmostview>
 <app-tvlscontact></app-tvlscontact>
+
 
 <div class="modal fade" id="form1" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document" style="top:20%">

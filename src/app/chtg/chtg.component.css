@@ -77,7 +77,7 @@
   border-left: 1px solid gray;
 }
 
-.textTitle {
+. {
   color: #ffc30d;
   font-size: 18px;
   font-weight: 500;
@@ -946,7 +946,12 @@ img.nextArrowBtnVideo {
 }
 
 .textTitle {
+  font-weight: bold;
   cursor: pointer;
+}
+.textTitle:active
+{
+  color:#FFC107;
 }
 
 .icon {

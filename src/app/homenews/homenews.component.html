@@ -1,3 +1,4 @@
+
 <section *ngIf="news" id="slide-info" class="sub">
     <div class="container center">
         <div class="row title padding-record-title">
@@ -6,7 +7,7 @@
         <div class="list-slide">
             <div *ngFor="let item of news" class="slide-item">
                 <div class="container">
-                    <div class="btn-time">{{item.created_at|date:"dd/MM/yyy"}}</div>
+                    <div class="btn-time">{{item.created_at|date:"dd t\'h'\áng MM \ \ yyy"}}</div>
                 </div>
                 <div>
                     <img class="img-info" src="{{item.image}}">

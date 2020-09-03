@@ -119,8 +119,8 @@ export const langDefined = {
         en: "1236 times"
     },
     '2000k': {
-        vi: "2000.000 VNĐ",
-        en: "VND 2000,000"
+        vi: "2.000.000 VNĐ",
+        en: "VND 2.000.000"
     },
     'homme-gia-phi-tu-1900k': {
         vi: "Giá phí từ: 1.900.000 VNĐ",
