@@ -1,22 +1,25 @@
-$(document).ready(function(){
-    $('.customer-logos').slick({
-        slidesToShow: 6,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 1000,
-        arrows: false,
-        dots: false,
-        pauseOnHover: false,
-        responsive: [{
-            breakpoint: 768,
-            settings: {
-                slidesToShow: 4
+/*
+    Carousel
+*/
+$('#carousel-example').on('slide.bs.carousel', function (e) {
+    /*
+        CC 2.0 License Iatek LLC 2018 - Attribution required
+    */
+    var $e = $(e.relatedTarget);
+    var idx = $e.index();
+    var itemsPerSlide = 5;
+    var totalItems = $('.carousel-item').length;
+
+    if (idx >= totalItems-(itemsPerSlide-1)) {
+        var it = itemsPerSlide - (totalItems - idx);
+        for (var i=0; i<it; i++) {
+            // append slides to end
+            if (e.direction=="left") {
+                $('.carousel-item').eq(i).appendTo('.carousel-inner');
             }
-        }, {
-            breakpoint: 520,
-            settings: {
-                slidesToShow: 3
+            else {
+                $('.carousel-item').eq(0).appendTo('.carousel-inner');
             }
-        }]
-    });
+        }
+    }
 });

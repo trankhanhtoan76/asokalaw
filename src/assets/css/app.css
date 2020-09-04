@@ -1131,7 +1131,7 @@ video {
 }
 
 .btn-outline-warning:hover {
-    color: #fff;
+    color: #fff !important;
     background-color: #ffc107;
     border-color: #ffc107;
 }
@@ -1201,6 +1201,7 @@ h1 {
 }
 
 .experience-business {
+    padding-left: 5%;
     padding-right: 10%;
     border-right: 1px solid black;
 }
@@ -3371,6 +3372,22 @@ h1,h2,.padding-header{
     {
         width: 80% !important;
     }
+    .mission-txt.thugontext1
+    {
+        width: 100% !important;
+    }
+    h1.thugontext2
+    {
+        width: 100% !important;
+    }
+    p.thugontext3
+    {
+        width: 100% !important;
+    }
+
+    #modalHomeAdvice {
+            margin-top: 30% !important;
+        }
 }
 .ifeedback
 {
@@ -3391,3 +3408,4 @@ a.btn.btn-outline-warning.nut-xdsls-gqtc:hover
 {
     color:white !important;
 }
+

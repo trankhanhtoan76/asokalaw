@@ -540,6 +540,10 @@ p.des-record {
 }
 
 @media (max-width: 768px) {
+  .modal-dialog
+  {
+    margin-top: 30%;
+  }
   #PLTX-banner {
     padding-top: 4rem;
     background-image: url(/assets/media/PLTX/PLTX-Banner-Mobile-Ver.jpg);

@@ -28,11 +28,11 @@ export class PLSKStudyContentComponent implements OnInit {
         slidesToScroll: 1,
         autoplay: false,
         autoplaySpeed: 4000,
-        nextArrow: '<img src="/assets/media/DKDT/ly-do-dkdt/Asset 33.svg" class="prevArrowBtnFeedback feedback">',
+        nextArrow: '<img id="next33" src="/assets/media/DKDT/ly-do-dkdt/Asset 33.svg" class="prevArrowBtnFeedback feedback">',
         prevArrow: '<img src="/assets/media/DKDT/ly-do-dkdt/Asset 32.svg" class=" nextArrowBtnFeedback feedback">',
         customPaging: function(slider, i) {
           if (i === 0) {
-            return '01. Sự kiện cần xin giấy phép';
+            return '<p style="color:blue;">1. Sự kiện cần xin giấy phép</p>';
           } else if (i === 1) {
             return '02. Thủ tục xin giấy phép';
           } else if (i === 2) {
@@ -77,3 +77,4 @@ export class PLSKStudyContentComponent implements OnInit {
     }
   }
 }
+

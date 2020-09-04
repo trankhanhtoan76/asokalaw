@@ -59,4 +59,8 @@
     .mission-circle {
 		padding: 0;
 	}
+	.modal-dialog
+	{
+		margin-top: 30% !important;
+	}
 }

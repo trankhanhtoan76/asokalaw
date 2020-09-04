@@ -36,8 +36,7 @@
 <app-global-lawyer (showregistrationform)="showForm1($event)">
     <h1 class="sub-content-no-fluid" style="padding-top: 45px!important;">{{global.locale=='vi'?'Đội ngũ luật sư & cố vấn phù hợp cho bạn':'Đội ngũ luật sư & cố vấn phù hợp cho bạn aaa'}}</h1>
 </app-global-lawyer>
-<app-servicemostused></app-servicemostused>
-<!--<app-tvlsconsult></app-tvlsconsult>-->
+<app-tvlsconsult></app-tvlsconsult>
 <app-tvlssupport></app-tvlssupport>
 <div class="tuvanmienphi" style="text-align: center;" >
     <button (click)="showForm1()" type="button" class="btn btn-warning">TƯ VẤN MIỄN PHÍ</button>
@@ -50,7 +49,7 @@
 
 
 <div class="modal fade" id="form1" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog modal-lg" role="document" style="top:20%">
+    <div class="modal-dialog modal-lg" role="document" style="top:30%">
         <div class="modal-content">
             <div class="modal-header" style="border: none; padding: unset; padding-top: 1rem;">
                 <button onclick="$('#prevformclose').modal('show')" type="button" class="close" data-dismiss="modal" style="padding: unset; padding-right: 2rem" aria-label="Close">

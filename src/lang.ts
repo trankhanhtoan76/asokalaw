@@ -380,7 +380,7 @@ export const langDefined = {
         vi: "Chúng tôi tin rằng dịch vụ tốt xuất phát từ sự thấu hiểu nhu cầu của khách\n" +
             "                    hàng. Do vậy, Asoka dành thời gian đóng gói kỹ dịch vụ phù hợp với độ tuổi,\n" +
             "                    ngành nghề kinh doanh của doanh nghiệp. Doanh nghiệp có thể dễ dàng lựa\n" +
-            "                    chọn và sử dụng",
+            "                    chọn và sử dụng.",
         en: "We believe that the best service is the understanding of Clients' needs. So, Asoka Law spent time to package our legal services suitable to the ages, business lines of Companies. Clients then can choose and use the servies easily."
     },
 

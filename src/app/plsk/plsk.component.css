@@ -1356,6 +1356,11 @@ img.nextArrowBtnNews {
   margin-top: unset;
 }
 @media (max-width: 768px) {
+  .modal-dialog
+  {
+    margin-top: 30%;
+
+  }
   .header {
     background-image: url(/assets/media/TVLS/TVLS-Banner-mobile-ver.jpg);
     background-size: cover;

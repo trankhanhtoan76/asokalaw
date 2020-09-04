@@ -106,7 +106,7 @@
         <p class="title"><b lang-i18n key="home-giai-quyet-tranhchap" default="Giải quyết tranh chấp">{{global.locale=='vi'?'Giải quyết tranh chấp':'Giải quyết tranh chấp aaa'}}</b></p>
       </div>
       <div class="col-12 text-center">
-        <button type="button" class="btn btn-warning" data-toggle="modal"
+        <button type="button" class="btn btn-warning" data-toggle="modal" (click)="submit()"
                 onclick="modalShow(null, null, null,null,'problem,problem-checkbox')"  lang-i18n key="home-dang-ky-dich-vu" default="ĐĂNG KÝ DỊCH VỤ">
         </button>
       </div>

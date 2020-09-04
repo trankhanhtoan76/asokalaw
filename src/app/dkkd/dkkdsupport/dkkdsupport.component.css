@@ -1499,6 +1499,11 @@ hr {
 
 
 @media (max-width: 768px) {
+    .modal-dialog
+    {
+        margin-top: 30%;
+
+    }
     .header {
         background-image: url(../../../assets/media/DKKD/banner/banner-mobile.jpg);
         background-size: cover;

@@ -1420,4 +1420,11 @@ p.des-record {
     margin: 4rem 0;
 }
 
+@media only screen and (max-width: 768px) {
 
+    .modal-dialog
+    {
+        margin-top: 30%;
+
+    }
+}
