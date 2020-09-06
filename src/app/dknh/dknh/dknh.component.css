@@ -1428,3 +1428,7 @@ p.des-record {
 
     }
 }
+.modal-dialog
+{
+    top:10%;
+}

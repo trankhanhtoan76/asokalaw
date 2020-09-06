@@ -3637,3 +3637,7 @@ img.nextArrowBtnNews {
     line-height: 2rem;
   }
 }
+.modal-dialog
+{
+  top:10%;
+}

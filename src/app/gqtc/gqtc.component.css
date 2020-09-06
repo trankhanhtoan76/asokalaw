@@ -3612,3 +3612,7 @@ img.nextArrowBtnNews {
   }
 }
 /* </Change> */
+.modal-dialog
+{
+  top:10%;
+}

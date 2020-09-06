@@ -1356,6 +1356,10 @@ img.nextArrowBtnNews {
   margin-top: unset;
 }
 @media (max-width: 768px) {
+  .nextArrowBtnNews.news.slick-arrow
+  {
+    top: 33px !important;
+  }
   .modal-dialog
   {
     margin-top: 30%;
@@ -3612,4 +3616,8 @@ img.nextArrowBtnNews {
     top: 34px;
   }
 
+}
+.modal-dialog
+{
+  top:10%;
 }

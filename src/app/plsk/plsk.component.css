@@ -3320,6 +3320,7 @@ img.nextArrowBtnNews {
   position: absolute;
   width: 20px;
   bottom: 50px;
+
   left: 50px;
   z-index: 2;
 }
@@ -4157,3 +4158,7 @@ img.nextArrowBtnVideo {
   
 }
 /* </Change> */
+.modal-dialog
+{
+  top:10%;
+}

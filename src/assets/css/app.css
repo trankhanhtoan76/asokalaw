@@ -3154,7 +3154,7 @@ p.tvlstextareaform {
     border: 1px solid #ffa500;
 }
 h1,h2,.padding-header{
-    padding-top:1rem;
+    padding-top:4rem;
 }
 
 /* code of V */
@@ -3402,7 +3402,7 @@ div.tab-content-record div.tab-record p
 }
 .brand-logo img
 {
-    height: 100px;
+    height: 80px;
 }
 a.btn.btn-outline-warning.nut-xdsls-gqtc:hover
 {

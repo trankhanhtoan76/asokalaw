@@ -1350,6 +1350,10 @@ img.nextArrowBtnNews {
   margin-top: unset;
 }
 @media (max-width: 768px) {
+  img.nextArrowBtnNews
+  {
+    top: 16% !important;
+  }
   .header {
     background-image: url(/assets/media/TVLS/TVLS-Banner-mobile-ver.jpg);
     background-size: cover;
@@ -2259,7 +2263,7 @@ img.prevArrowBtnNews {
 img.nextArrowBtnNews {
   position: absolute;
   z-index: 1000;
-  top: 110px;
+  top: 80px !important;
   right: 0;
   color: #BFAFB2;
 }

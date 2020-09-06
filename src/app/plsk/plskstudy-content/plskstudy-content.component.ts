@@ -28,8 +28,8 @@ export class PLSKStudyContentComponent implements OnInit {
         slidesToScroll: 1,
         autoplay: false,
         autoplaySpeed: 4000,
-        nextArrow: '<img id="next33" src="/assets/media/DKDT/ly-do-dkdt/Asset 33.svg" class="prevArrowBtnFeedback feedback">',
-        prevArrow: '<img src="/assets/media/DKDT/ly-do-dkdt/Asset 32.svg" class=" nextArrowBtnFeedback feedback">',
+        nextArrow: '<img id="next33" src="/assets/media/DKDT/ly-do-dkdt/Asset 33.svg" class="prevArrowBtnFeedback feedback" style="margin-bottom: 20px;">',
+        prevArrow: '<img src="/assets/media/DKDT/ly-do-dkdt/Asset 32.svg" class=" nextArrowBtnFeedback feedback" style="margin-bottom: 20px;">',
         customPaging: function(slider, i) {
           if (i === 0) {
             return '<p style="color:blue;">1. Sự kiện cần xin giấy phép</p>';

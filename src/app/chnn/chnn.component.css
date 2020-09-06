@@ -1303,6 +1303,7 @@ hr.blue {
 .job-box01 {
   background: url('/assets/media/chnn/job_b01_bg.jpg') center no-repeat;
   background-size: 100% auto;
+  background-position: 0% -8%;
   padding-top: 3rem;
 }
 .job-box02-bg01 {

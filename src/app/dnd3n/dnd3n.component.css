@@ -2256,3 +2256,7 @@ img.nextArrowBtnNews {
   }
 }
 
+.modal-dialog
+{
+  top:10%;
+}

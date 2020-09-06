@@ -946,6 +946,9 @@ img.nextArrowBtnVideo {
 }
 
 .textTitle {
+  font-size: 20px;
+  color: #fec811;
+  margin-bottom: 10px !important;
   font-weight: bold;
   cursor: pointer;
 }
