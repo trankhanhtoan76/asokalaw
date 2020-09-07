@@ -51,8 +51,8 @@ export class GlobalLawyerComponent implements OnInit {
                 // focusOnSelect: true,
                 slidesToScroll: 1,
                 autoplaySpeed: 4000,
-                nextArrow: '<img src="/assets/media/landingpage/Asset 83.svg" class="nextArrowBtnNews news" style="width:25px;position: absolute;z-index: 1000;top: 80px;right: 0;color: #BFAFB2;">',
-                prevArrow: '<img src="/assets/media/landingpage/Asset 84.svg" class="prevArrowBtnNews news" style="width:25px;position: absolute;z-index: 1000;top: 80px;left: 0;color: #BFAFB2;">',
+                nextArrow: '<img src="/assets/media/landingpage/Asset 83.svg" class="nutmuiten nuttienlen">',
+                prevArrow: '<img src="/assets/media/landingpage/Asset 84.svg" class="nutmuiten nutluilai">',
                 responsive: [
                     {
                         breakpoint: 768,

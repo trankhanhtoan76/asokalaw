@@ -2764,6 +2764,18 @@ hr.blue {
 .sp {
     display: none;
 }
+.nutmuiten {
+    width:25px;
+    position: absolute;
+    z-index: 1000;
+    top: 80px;
+    left: 0;
+    color: #BFAFB2;
+}
+.nutmuiten.nuttienlen {
+    left: auto;
+    right: 0;
+}
 
 @media only screen and (max-width: 768px) {
     .pc {
@@ -3324,7 +3336,19 @@ h1,h2,.padding-header{
 #teacher .slick-track {
     padding: 4rem 0;
 }
+#study ul.slick-dots .slick-active
+{
+    color: blue;
+}
 @media only screen and (max-width: 768px) {
+    #fix-dkdtbusiness-V
+    {
+        height: auto;
+    }
+    .nutmuiten {
+        width: 15px;
+        top: 40px;
+    }
     .study-slick .slick-dots li {
         width: 100%;
     }
