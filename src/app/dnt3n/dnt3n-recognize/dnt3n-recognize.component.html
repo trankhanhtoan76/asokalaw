@@ -21,7 +21,7 @@
           <div class="mission-txt">
             <p>{{global.locale=='vi'?'Là gói dịch vụ dành riêng cho doanh nghiệp đã hoạt động, muốn dành thời gian để rà soát lại hệ thống vận hành doanh nghiệp. Chúng tôi thực hiện rà soát và đưa ra Thư tư vấn cho doanh nghiệp tại 04 khía cạnh cốt lõi: pháp lý cho sản phẩm, dịch vụ - hệ thống hợp đồng - quản trị lao động và tuân thủ thuế. Kết quả là doanh nghiệp sẽ có nhận được phương án giải quyết, vá lỗi vận hành. Sức khỏe pháp lý được củng cố sẽ khiến doanh nghiệp phát triển vững mạnh.':'Là gói dịch vụ dành riêng cho doanh nghiệp đã hoạt động, muốn dành thời gian để rà soát lại hệ thống vận hành doanh nghiệp. Chúng tôi thực hiện rà soát và đưa ra Thư tư vấn cho doanh nghiệp tại 04 khía cạnh cốt lõi: pháp lý cho sản phẩm, dịch vụ - hệ thống hợp đồng - quản trị lao động và tuân thủ thuế. Kết quả là doanh nghiệp sẽ có nhận được phương án giải quyết, vá lỗi vận hành. Sức khỏe pháp lý được củng cố sẽ khiến doanh nghiệp phát triển vững mạnh. aaa'}}</p>
           </div>
-          <button style="margin-top: 30px; margin-bottom: 20px" class="btn btn-warning sub-button">{{global.locale=='vi'?'Xem báo giá chi tiết':'Xem báo giá chi tiết aaa'}}
+          <button  onclick = "$('#dnt3nform-banggia-gqtc-rasoatloi').modal('show')" style="margin-top: 30px; margin-bottom: 20px" class="btn btn-warning sub-button">{{global.locale=='vi'?'Xem báo giá chi tiết':'Xem báo giá chi tiết aaa'}}
           </button>
           <p><a routerLink="/phap-ly-thuong-xuyen">{{global.locale=='vi'?'Giải pháp quản trị tinh gọn "4 trong 1" >>':'Giải pháp quản trị tinh gọn "4 trong 1" >> aaa'}}</a></p>
         </div>
@@ -85,11 +85,11 @@
           <img style="width: 14%;
     position: absolute;
     top: 0; right: 0;" src="/assets/media/GQTC/lua_chon_goi_phu_hop/bg1.svg">
-          <div class="container-fluid sub-fluid">
+          <div class="container-fluid sub-fluid" style="padding: 0 !important;">
 
             <div class="row">
               <div class="col-md-12 center">
-                <h1 class="" style="font-size: 14px;">
+                <h1 class="" style="font-size: 25px;">
                   {{global.locale=='vi'?'Lựa chọn gói phí giải quyết tranh chấp phù hợp':'Lựa chọn gói phí giải quyết tranh chấp phù hợp aaa'}}
                 </h1>
                 <p class="sub-content center">
@@ -125,7 +125,7 @@
                     <p style=" margin-bottom: 30px"><i style="font-weight: 100;">{{global.locale=='vi'?'*Giá phí từ':'*Giá phí từ aaa'}} <b>{{global.locale=='vi'?'15.000.000':'15.000.000 aaa'}}</b>
                       vnđ</i></p>
                     <div class="footer-block center">
-                      <button (click)="onChangePackage('Gói thương lượng')" class="btn btn-outline-warning sub-button">{{global.locale=='vi'?'Yêu cầu tư vấn miễn phí':'Yêu cầu tư vấn miễn phí aaa'}}</button>
+                      <button onclick="$('#daidiengqtcform1').modal('show')" class="btn btn-outline-warning sub-button">{{global.locale=='vi'?'Yêu cầu tư vấn miễn phí':'Yêu cầu tư vấn miễn phí aaa'}}</button>
                       <br>
                       <i class="security">{{global.locale=='vi'?'*Cam kết bảo mật thông tin':'*Cam kết bảo mật thông tin aaa'}}</i>
                     </div>
@@ -186,7 +186,7 @@
                                 '                                kết quả vụ việc aaa'}} </p>
                     </div>
                     <hr>
-                    <div class="block-three">
+                    <div class="block-three" style="margin-top: 30px !important;padding: 10px !important;border-radius: 5px !important;border-style: dashed !important;border-color: rgba(145, 145, 145, 0.24) !important;min-height: 180px !important;margin-bottom: 30px !important;">
                       <img style="position: absolute;
     width: 43%;
     bottom: 33px;
@@ -245,7 +245,7 @@
                                 '                                kết quả vụ việc aaa'}} </p>
                     </div>
                     <hr>
-                    <div class="block-three">
+                    <div class="block-three" style="margin-top: 30px !important;padding: 10px !important;border-radius: 5px !important;border-style: dashed !important;border-color: rgba(145, 145, 145, 0.24) !important;min-height: 180px !important;margin-bottom: 30px !important;">
                       <img style="position: absolute;
     width: 43%;
     bottom: 33px;
@@ -282,7 +282,7 @@
                     <p style=" margin-bottom: 30px"><i style="font-weight: 100;">{{global.locale=='vi'?'*Giá phí từ':'*Giá phí từ aaa'}} <b>{{global.locale=='vi'?'30.000.000':'30.000.000 aaa'}}</b>
                       vnđ</i></p>
                     <div class="footer-block center">
-                      <button (click)="onChangePackage('Gói tranh tụng')" class="btn btn-outline-warning sub-button">{{global.locale=='vi'?'Yêu cầu tư vấn miễn phí':'Yêu cầu tư vấn miễn phí aaa'}}</button>
+                      <button class="btn btn-outline-warning sub-button" onclick= "$('#daidiengqtcform1').modal('show')">{{global.locale=='vi'?'Yêu cầu tư vấn miễn phí':'Yêu cầu tư vấn miễn phí aaa'}}</button>
                       <br>
                       <i class="security">{{global.locale=='vi'?'*Cam kết bảo mật thông tin':'*Cam kết bảo mật thông tin aaa'}}</i>
                     </div>
@@ -336,7 +336,7 @@
 
                     </div>
                     <hr>
-                    <div class="block-three">
+                    <div class="block-three" style="margin-top: 30px !important;padding: 10px !important;border-radius: 5px !important;border-style: dashed !important;border-color: rgba(145, 145, 145, 0.24) !important;min-height: 180px !important;margin-bottom: 30px !important;">
                       <img style="position: absolute;
     width: 43%;
     bottom: 33px;
@@ -390,7 +390,7 @@
 
                     </div>
                     <hr>
-                    <div class="block-three">
+                    <div class="block-three" style="margin-top: 30px !important;padding: 10px !important;border-radius: 5px !important;border-style: dashed !important;border-color: rgba(145, 145, 145, 0.24) !important;min-height: 180px !important;margin-bottom: 30px !important;">
                       <img style="position: absolute;
     width: 43%;
     bottom: 33px;
@@ -432,7 +432,7 @@
                     <p style=" margin-bottom: 30px"><i style="font-weight: 100;">{{global.locale=='vi'?'*Giá phí từ':'*Giá phí từ aaa'}} <b>{{global.locale=='vi'?'40.000.000':'40.000.000 aaa'}}</b>
                       vnđ</i></p>
                     <div class="footer-block center">
-                      <button (click)="onChangePackage('Gói toàn diện')" class="btn btn-outline-warning sub-button">{{global.locale=='vi'?'Yêu cầu tư vấn miễn phí':'Yêu cầu tư vấn miễn phí aaa'}}</button>
+                      <button  class="btn btn-outline-warning sub-button" onclick= "$('#daidiengqtcform1').modal('show')">{{global.locale=='vi'?'Yêu cầu tư vấn miễn phí':'Yêu cầu tư vấn miễn phí aaa'}}</button>
                       <br>
                       <i class="security">{{global.locale=='vi'?'*Cam kết bảo mật thông tin':'*Cam kết bảo mật thông tin aaa'}}</i>
                     </div>
@@ -485,7 +485,7 @@
 
                     </div>
                     <hr>
-                    <div class="block-three">
+                    <div class="block-three" style="margin-top: 30px !important;padding: 10px !important;border-radius: 5px !important;border-style: dashed !important;border-color: rgba(145, 145, 145, 0.24) !important;min-height: 180px !important;margin-bottom: 30px !important;">
                       <img style="position: absolute;
     width: 34%;
     bottom: 28px;
@@ -541,7 +541,7 @@
 
                     </div>
                     <hr>
-                    <div class="block-three">
+                    <div class="block-three" style="margin-top: 30px !important;padding: 10px !important;border-radius: 5px !important;border-style: dashed !important;border-color: rgba(145, 145, 145, 0.24) !important;min-height: 180px !important;margin-bottom: 30px !important;">
                       <img style="position: absolute;
     width: 34%;
     bottom: 28px;
@@ -570,12 +570,11 @@
                   <hr>
                 </div>
               </div>
-              <div class="col-md-8 col-sm-12 call-mobile">
-                <a href="tel:0961914328">
+              <div class="col-md-8 col-sm-12 ">
                   <div style="display: flex;margin: auto;text-align: center;width: fit-content;">
-                    <img src="/assets/media/PLTX/effect/Asset%2010.svg">
-                    <p>{{global.locale=='vi'?'Tư vấn giải quyết tranh chấp miễn phí: 096 191 4328':'Tư vấn giải quyết tranh chấp miễn phí: 096 191 4328 aaa'}} </p></div>
-                </a>
+                    <p><u style="color: #7CC6E8; margin-bottom: 2px;"><a href="/giai-quyet-tranh-chap">{{global.locale=='vi'?'Quy trình giải quyết tranh chấp >>':'Quy trình giải quyết tranh chấp >> aaa'}}</a> </u></p>
+                  </div>
+              </div>
               </div>
               <div class="col-md-2 d-none d-md-block">
                 <div class="step-hr">
@@ -584,12 +583,166 @@
               </div>
             </div>
             <!-- </Change> -->
-          </div>
+
         </section>
       </div>
       <div class="modal-footer">
         <button (click)="submit()" style="margin: auto; color: white;" type="button" class="btn btn-warning">{{global.locale=='vi'?'Gửi yêu cầu':'Gửi yêu cầu aaa'}}</button>
       </div>
+    </div>
+  </div>
+</div>
+<!--Form giong ben GQTC-->
+<div class="modal fade " id="daidiengqtcform1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog giongbenGQTC" role="document">
+    <div class="modal-content">
+      <div class="modal-header" style="border: none; padding: unset; padding-top: 1rem;">
+        <button type="button" class="close" data-dismiss="modal" style="padding: unset; padding-right: 2rem" aria-label="Close">
+          <span aria-hidden="true" style="font-size: 26px">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="form-group">
+          <input  type="text" class="form-control" name="name" placeholder="{{global.locale=='vi'?'Họ tên *':'Họ tên * aaa'}}">
+<!--          <i *ngIf="!fieldValid(name) && n"><small class="text-danger">{{global.locale=='vi'?'Bắt buộc nhập họ tên.':'Bắt buộc nhập họ tên. aaa'}}</small></i>-->
+        </div>
+        <div class="form-group">
+          <input class="form-control" name="phone" type="text" placeholder="{{global.locale=='vi'?'Số điện thoại *':'Số điện thoại * aaa'}}"/>
+<!--          <i *ngIf="!fieldValid(phone,'phone') && p"><small class="text-danger">{{global.locale=='vi'?'Bắt buộc nhập số điện thoại hợp lệ.':'Bắt buộc nhập số điện thoại hợp lệ. aaa'}}</small></i>-->
+        </div>
+        <div class="form-group">
+          <input class="form-control" name="email" type="text" placeholder="{{global.locale=='vi'?'Email *':'Email * aaa'}}"/>
+<!--          <i *ngIf="!fieldValid(email,'email') && e"><small class="text-danger">{{global.locale=='vi'?'Bắt buộc nhập email hợp lệ.':'Bắt buộc nhập email hợp lệ. aaa'}}</small></i>-->
+        </div>
+        <div class="form-group">
+          <label>{{global.locale=='vi'?'Chọn gói dịch vụ phù hợp với nhu cầu của bạn':'Chọn gói dịch vụ phù hợp với nhu cầu của bạn aaa'}}</label>
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="form-check form-check-inline">
+                  <input  class="form-check-input" type="radio" value="Gói thương lượng">
+                  <span class="form-check-label">{{global.locale=='vi'?'Gói thương lượng':'Gói thương lượng aaa'}}</span>
+                </div>
+              </div>
+              <div class="col-md-12">
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" value="Gói tranh tụng">
+                  <span class="form-check-label">{{global.locale=='vi'?'Gói tranh tụng':'Gói tranh tụng aaa'}}</span>
+                </div>
+              </div>
+              <div class="col-md-12">
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" value="Gói toàn diện">
+                  <span class="form-check-label">{{global.locale=='vi'?'Gói toàn diện':'Gói toàn diện âa'}}</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="col-form-label">{{global.locale=='vi'?'Diễn tả sơ bộ tình trạng tranh chấp của doanh nghiệp bạn':'Diễn tả sơ bộ tình trạng tranh chấp của doanh nghiệp bạn aaa'}}<sup>*</sup></label>
+          <textarea class="form-control" name="description"></textarea>
+        </div>
+        <div class="form-group">
+          {{global.locale=='vi'?'Tài liệu đính kèm (nếu có):':'Tài liệu đính kèm (nếu có): aaa'}}
+          <button style="margin-bottom: 5px;color: #0f74a8;text-decoration: underline" class="btn" type="button" (click)="fileInput1.click()">
+            <span style="color: #0f74a8" class="far fa-paperclip"></span>{{global.locale=='vi'?' Tải lên tại đây':' Tải lên tại đây aaa'}}
+            <input #fileInput1 type="file" style="display:none;"/>
+          </button>
+          <ng-container >
+            <span class="fa fa-times-circle" style="color:red;cursor: pointer"></span>
+          </ng-container>
+        </div>
+      </div>
+      <div class="modal-footer" style="text-align: center;">
+        <button style="margin: auto; color: white;" (click)="submit()" type="button" class="btn btn-warning">{{global.locale=='vi'?'Gửi yêu cầu':'Gửi yêu cầu aaa'}}</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--POP UP RA SOAT LOI-->
+
+<div class="modal fade" id="dnt3nform-banggia-gqtc-rasoatloi">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header" style="border: none; padding: unset; padding-top: 1rem;">
+        <button type="button" class="close" style="padding: unset; padding-right: 2rem" aria-label="Close" data-dismiss="modal">
+          <span aria-hidden="true" style="font-size: 26px">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <section id="2banggiarasoatloi" style="position: relative;">
+          <img style="width: 14%;
+    position: absolute;
+    bottom: 0; left: 0;" src="/assets/media/GQTC/lua_chon_goi_phu_hop/bg2.svg">
+          <img style="width: 14%;
+    position: absolute;
+    top: 0; right: 0;" src="/assets/media/GQTC/lua_chon_goi_phu_hop/bg1.svg">
+          <div class="container-fluid sub-fluid" style="padding: 0 !important;">
+            <div class="row  sub custom-tab profile-tab" id="tab-tldnm-V">
+
+              <div class="col-md-6" style="margin-bottom: 30px; margin-top: 10px;">
+                <div class="box shadow-lg">
+                  <div class="block-one">
+                    <div class="title-block center">
+                      <h6>{{global.locale=='vi'?'GÓI TẠM NGƯNG':'GÓI TẠM NGƯNG aaa'}}</h6>
+                    </div>
+
+                    <div style="font-size: 10px; text-align: center">
+                      <sup style="font-size: 12px; top: -9px">{{global.locale=='vi'?'Từ':'Từ aaa'}}</sup><b style="font-size: 26px">
+                      2.500.000 </b>VND
+
+                    </div>
+                  </div>
+                  <hr>
+                  <div class="block-two center">
+                    <p style="padding-top: 20px; min-height: 80px; font-size: 12px">
+                      {{global.locale=='vi'?' Doanh nghiệp gặp khó khăn, tạm\n' +
+                            'dừng hoạt động để tìm cách giải quyết.':' Doanh nghiệp gặp khó khăn, tạm\n' +
+                            'dừng hoạt động để tìm cách giải quyết.'}}
+                    </p>
+                    <button class="btn btn-outline-warning" style="border-radius: 30px; padding: 5px 20px;">{{global.locale=='vi'?'Đăng ký tư vấn ngay':'Đăng ký tư vấn ngay aaa'}}
+                    </button>
+
+                  </div>
+
+
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="box shadow-lg" style="border: 1px solid #9BD2ED; background-color: #F6FBFE">
+                  <div class="block-one">
+                    <img class="sticky" src="/assets/media/DKKD/cac-goi-phi/Asset 6.svg">
+                    <div class="title-block center">
+                      <h6>{{global.locale=='vi'?'GÓI GIẢI THỂ':'GÓI GIẢI THỂ aaa'}}</h6>
+                    </div>
+
+                    <div style="font-size: 10px; text-align: center">
+                      <sup style="font-size: 12px; top: -9px">{{global.locale=='vi'?'Từ':'Từ aaa'}}</sup><b style="font-size: 26px">
+                      9.900.000 </b>VND
+
+                    </div>
+                  </div>
+                  <hr>
+                  <div class="block-two center">
+                    <p style="padding-top: 20px;
+    min-height: 80px; font-size: 12px">
+                      {{global.locale=='vi'?'Doanh nghiệp quyết định chấm dứt toàn bộ hoạt động kinh doanh.':'Doanh nghiệp quyết định chấm dứt toàn bộ hoạt động kinh doanh.'}}
+                    </p>
+                    <button class="btn btn-outline-warning" style="border-radius: 30px; padding: 5px 20px;">{{global.locale=='vi'?'Đăng ký tư vấn ngay':'Đăng ký tư vấn ngay aaa'}}
+                    </button>
+                  </div>
+
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </section>
+      </div>
+
     </div>
   </div>
 </div>

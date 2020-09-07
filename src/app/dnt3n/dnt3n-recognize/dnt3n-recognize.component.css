@@ -5,4 +5,34 @@
 .modal-dialog
 {
     max-width: 80%;
+
+}
+
+@media only screen and (max-width: 768px) {
+    .modal-dialog
+    {
+        max-width: 100%;
+    }
+    .sub-content {
+        padding: 0 !important;
+    }
+    .modal-dialog.giongbenGQTC
+    {
+        max-width: 80% !important;
+        margin: auto;
+    }
+    #dnt3nform-banggia-gqtc-rasoatloi div.modal-dialog
+    {
+        max-width: 100% !important;
+    }
+
+}
+
+.modal-dialog.giongbenGQTC
+{
+    max-width: 50%;
+}
+#dnt3nform-banggia-gqtc-rasoatloi div.modal-dialog
+{
+    max-width: 60%;
 }

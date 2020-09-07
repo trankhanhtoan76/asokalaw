@@ -1,6 +1,6 @@
 /*--------------------------------PLTX----------------------------------*/
 #PLTX-banner {
-  background-image: url(/assets/media/PLTX/banner.jpg);
+  background-image: url('/assets/media/PLTX/banner.jpg');
   background-size: cover;
   background-position: bottom;
   height: 700px;
