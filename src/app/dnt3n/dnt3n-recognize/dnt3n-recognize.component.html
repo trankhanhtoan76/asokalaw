@@ -36,7 +36,7 @@
           <div class="mission-txt">
             <p>{{global.locale=='vi'?'Là dịch vụ pháp lý áp dụng cho các doanh nghiệp đang phát sinh mâu thuẫn, cần luật sư tham gia nhằm giải quyết. Mâu thuẫn ở đây bao gồm các vấn đề nội bộ trong doanh nghiệp hoặc ngoài doanh nghiệp, như: hợp đồng, đòi nợ, bồi thường, sở hữu trí tuệ,...':'Là dịch vụ pháp lý áp dụng cho các doanh nghiệp đang phát sinh mâu thuẫn, cần luật sư tham gia nhằm giải quyết. Mâu thuẫn ở đây bao gồm các vấn đề nội bộ trong doanh nghiệp hoặc ngoài doanh nghiệp, như: hợp đồng, đòi nợ, bồi thường, sở hữu trí tuệ,... aaa'}}</p>
           </div>
-          <button style="margin-top: 30px; margin-bottom: 20px" class="btn btn-warning sub-button">{{global.locale=='vi'?'Xem báo giá chi tiết':'Xem báo giá chi tiết aaa'}}
+          <button onclick="$('#dnt3nform-banggia-gqtc').modal('show')" style="margin-top: 30px; margin-bottom: 20px" class="btn btn-warning sub-button">{{global.locale=='vi'?'Xem báo giá chi tiết':'Xem báo giá chi tiết aaa'}}
           </button>
           <p><a routerLink="/tu-van-luat-su">{{global.locale=='vi'?'Xem danh sách tất cả luật sư >>':'Xem danh sách tất cả luật sư >> aaa'}}</a></p>
         </div>
@@ -68,3 +68,528 @@
     </div>
   </div>
 </section>
+<!--Popup-->
+<div class="modal fade" id="dnt3nform-banggia-gqtc">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header" style="border: none; padding: unset; padding-top: 1rem;">
+        <button type="button" class="close" style="padding: unset; padding-right: 2rem" aria-label="Close" data-dismiss="modal">
+          <span aria-hidden="true" style="font-size: 26px">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <section id="suitable" style="position: relative;">
+          <img style="width: 14%;
+    position: absolute;
+    bottom: 0; left: 0;" src="/assets/media/GQTC/lua_chon_goi_phu_hop/bg2.svg">
+          <img style="width: 14%;
+    position: absolute;
+    top: 0; right: 0;" src="/assets/media/GQTC/lua_chon_goi_phu_hop/bg1.svg">
+          <div class="container-fluid sub-fluid">
+
+            <div class="row">
+              <div class="col-md-12 center">
+                <h1 class="" style="font-size: 14px;">
+                  {{global.locale=='vi'?'Lựa chọn gói phí giải quyết tranh chấp phù hợp':'Lựa chọn gói phí giải quyết tranh chấp phù hợp aaa'}}
+                </h1>
+                <p class="sub-content center">
+                  {{global.locale=='vi'?'Mỗi một tranh chấp sẽ có một tình trạng khác nhau. Dựa vào hồ sơ do khách hàng cung cấp và các tài\n' +
+                        '                    liệu thu thập, chúng tôi sẽ đưa ra phương án xử lý thích hợp.\n' +
+                        '\n' +
+                        '                    Bạn cũng có thể tham khảo các mức phí niêm yết và hướng dẫn khuyên dùng từ Asoka Law để lựa chọn\n' +
+                        '                    phương thức giải quyết phù hợp.':'Mỗi một tranh chấp sẽ có một tình trạng khác nhau. Dựa vào hồ sơ do khách hàng cung cấp và các tài\n' +
+                        '                    liệu thu thập, chúng tôi sẽ đưa ra phương án xử lý thích hợp.\n' +
+                        '\n' +
+                        '                    Bạn cũng có thể tham khảo các mức phí niêm yết và hướng dẫn khuyên dùng từ Asoka Law để lựa chọn\n' +
+                        '                    phương thức giải quyết phù hợp. aaa'}}
+                </p>
+              </div>
+
+            </div>
+            <div class="row sub">
+              <div class="col-md-4">
+                <div class="box">
+                  <div class="block-one">
+                    <div class="title-block center">
+                      <h4>{{global.locale=='vi'?'Gói thương lượng':'Gói thương lượng aaa'}}</h4>
+                      <hr>
+                    </div>
+                    <p><b>{{global.locale=='vi'?'Khuyên dùng với':'Khuyên dùng với aaa'}}</b></p>
+                    <p style="font-weight: 400;min-height: 105px; text-align: justify">
+                      {{global.locale=='vi'?'Mâu thuẫn ở mức độ nhẹ. Khách hàng\n' +
+                            '                            nhận định các bên có thể ngồi lại đàm\n' +
+                            '                            phán phương án giải quyết với nhau.':'Mâu thuẫn ở mức độ nhẹ. Khách hàng\n' +
+                            '                            nhận định các bên có thể ngồi lại đàm\n' +
+                            '                            phán phương án giải quyết với nhau. aaa'}}
+                    </p>
+                    <p style=" margin-bottom: 30px"><i style="font-weight: 100;">{{global.locale=='vi'?'*Giá phí từ':'*Giá phí từ aaa'}} <b>{{global.locale=='vi'?'15.000.000':'15.000.000 aaa'}}</b>
+                      vnđ</i></p>
+                    <div class="footer-block center">
+                      <button (click)="onChangePackage('Gói thương lượng')" class="btn btn-outline-warning sub-button">{{global.locale=='vi'?'Yêu cầu tư vấn miễn phí':'Yêu cầu tư vấn miễn phí aaa'}}</button>
+                      <br>
+                      <i class="security">{{global.locale=='vi'?'*Cam kết bảo mật thông tin':'*Cam kết bảo mật thông tin aaa'}}</i>
+                    </div>
+                    <div class="d-block d-md-none" style="width: 100%; text-align: right;"><a class="more-suitable"
+                                                                                              href="#partone"
+                                                                                              data-toggle="collapse"
+                                                                                              role="button"
+                                                                                              aria-expanded="false">{{global.locale=='vi'?'Xem\n' +
+                            '                            chi\n' +
+                            '                            tiết':'Xem\n' +
+                            '                            chi\n' +
+                            '                            tiết aaa'}} <i class="fa fa-chevron-down"></i></a></div>
+                  </div>
+                  <div class="d-none d-md-block">
+                    <hr>
+                    <div class="block-two">
+                      <p><img class="icon-block"
+                              src="/assets/media/GQTC/lua_chon_goi_phu_hop/Asset 26.svg">
+                        {{global.locale=='vi'?'Thu\n' +
+                                '                                thập,\n' +
+                                '                                phân tích chứng':'Thu\n' +
+                                '                                thập,\n' +
+                                '                                phân tích chứng aaa'}} </p>
+                      <p><img class="icon-block"
+                              src="/assets/media/GQTC/lua_chon_goi_phu_hop/Asset 26.svg">
+                        {{global.locale=='vi'?'Đề\n' +
+                                '                                xuất\n' +
+                                '                                phương án xử lý ':'Đề\n' +
+                                '                                xuất\n' +
+                                '                                phương án xử lý aaa'}}</p>
+                      <p><img class="icon-block"
+                              src="/assets/media/GQTC/lua_chon_goi_phu_hop/Asset 26.svg">
+                        {{global.locale=='vi'?'Soạn\n' +
+                                '                                thảo\n' +
+                                '                                đơn thư yêu cầu':'Soạn\n' +
+                                '                                thảo\n' +
+                                '                                đơn thư yêu cầu aaa'}} </p>
+                      <p><img class="icon-block"
+                              src="/assets/media/GQTC/lua_chon_goi_phu_hop/Asset 26.svg">
+                        {{global.locale=='vi'?'Đại\n' +
+                                '                                diện\n' +
+                                '                                đàm phán các bên':'Đại\n' +
+                                '                                diện\n' +
+                                '                                đàm phán các bên aaa'}} </p>
+                      <p><img class="icon-block"
+                              src="/assets/media/GQTC/lua_chon_goi_phu_hop/Asset 26.svg">
+                        {{global.locale=='vi'?'Theo\n' +
+                                '                                dõi\n' +
+                                '                                tiến trình thực ':'Theo\n' +
+                                '                                dõi\n' +
+                                '                                tiến trình thực  aaa'}}</p>
+                      <p><img class="icon-block"
+                              src="/assets/media/GQTC/lua_chon_goi_phu_hop/Asset 26.svg">
+                        {{global.locale=='vi'?'Nhận,\n' +
+                                '                                trả\n' +
+                                '                                kết quả vụ việc':'Nhận,\n' +
+                                '                                trả\n' +
+                                '                                kết quả vụ việc aaa'}} </p>
+                    </div>
+                    <hr>
+                    <div class="block-three">
+                      <img style="position: absolute;
+    width: 43%;
+    bottom: 33px;
+    right: -34px;" src="/assets/media/GQTC/lua_chon_goi_phu_hop/kq1.svg">
+                      <p class="result-block">{{global.locale=='vi'?'Kết quả:':'Kết quả: aaa'}}</p>
+                      <p><i>{{global.locale=='vi'?'Biên bản xác nhận các bên đạt\n' +
+                              '                                được thỏa thuận, tranh chấp kết':'Biên bản xác nhận các bên đạt\n' +
+                              '                                được thỏa thuận, tranh chấp kết aaa'}}
+                        thúc.</i></p>
+                    </div>
+                  </div>
+                  <div class="collapse collapsed" id="partone">
+                    <hr>
+                    <div class="block-two">
+                      <p><img class="icon-block"
+                              src="/assets/media/GQTC/lua_chon_goi_phu_hop/Asset 26.svg">
+                        {{global.locale=='vi'?'Thu\n' +
+                                '                                thập,\n' +
+                                '                                phân tích chứng':'Thu\n' +
+                                '                                thập,\n' +
+                                '                                phân tích chứng aaa'}} </p>
+                      <p><img class="icon-block"
+                              src="/assets/media/GQTC/lua_chon_goi_phu_hop/Asset 26.svg">
+                        {{global.locale=='vi'?'Đề\n' +
+                                '                                xuất\n' +
+                                '                                phương án xử lý':'Đề\n' +
+                                '                                xuất\n' +
+                                '                                phương án xử lý aaa'}} </p>
+                      <p><img class="icon-block"
+                              src="/assets/media/GQTC/lua_chon_goi_phu_hop/Asset 26.svg">
+                        {{global.locale=='vi'?'Soạn\n' +
+                                '                                thảo\n' +
+                                '                                đơn thư yêu cầu ':'Soạn\n' +
+                                '                                thảo\n' +
+                                '                                đơn thư yêu cầu  aaa'}}</p>
+                      <p><img class="icon-block"
+                              src="/assets/media/GQTC/lua_chon_goi_phu_hop/Asset 26.svg">
+                        {{global.locale=='vi'?'Đại\n' +
+                                '                                diện\n' +
+                                '                                đàm phán các bên':'Đại\n' +
+                                '                                diện\n' +
+                                '                                đàm phán các bên aaa'}} </p>
+                      <p><img class="icon-block"
+                              src="/assets/media/GQTC/lua_chon_goi_phu_hop/Asset 26.svg">
+                        {{global.locale=='vi'?'Theo\n' +
+                                '                                dõi\n' +
+                                '                                tiến trình thực':'Theo\n' +
+                                '                                dõi\n' +
+                                '                                tiến trình thực aaa'}} </p>
+                      <p><img class="icon-block"
+                              src="/assets/media/GQTC/lua_chon_goi_phu_hop/Asset 26.svg">
+                        {{global.locale=='vi'?'Nhận,\n' +
+                                '                                trả\n' +
+                                '                                kết quả vụ việc':'Nhận,\n' +
+                                '                                trả\n' +
+                                '                                kết quả vụ việc aaa'}} </p>
+                    </div>
+                    <hr>
+                    <div class="block-three">
+                      <img style="position: absolute;
+    width: 43%;
+    bottom: 33px;
+    right: -34px;" src="/assets/media/GQTC/lua_chon_goi_phu_hop/kq1.svg">
+                      <p class="result-block">{{global.locale=='vi'?'Kết quả:':'Kết quả: aaa'}}</p>
+                      <p><i>{{global.locale=='vi'?'Biên bản xác nhận các bên đạt\n' +
+                              '                                được thỏa thuận, tranh chấp kết\n' +
+                              '                                thúc.':'Biên bản xác nhận các bên đạt\n' +
+                              '                                được thỏa thuận, tranh chấp kết\n' +
+                              '                                thúc. aaa'}}</i></p>
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+              <div class="col-md-4">
+                <div class="box">
+                  <div class="block-one">
+                    <div class="title-block center">
+                      <h4>{{global.locale=='vi'?'Gói tranh tụng':'Gói tranh tụng aaa'}}</h4>
+                      <hr>
+                    </div>
+                    <p><b>{{global.locale=='vi'?'Khuyên dùng với':'Khuyên dùng với aaa'}}</b></p>
+                    <p style="font-weight: 400;min-height: 105px; text-align: justify">
+                      {{global.locale=='vi'?'Mâu thuẫn ở mức độ nghiêm trọng.\n' +
+                            '                            Khách hàng nhận định các bên không thể\n' +
+                            '                            tự đàm phán. Cần có Cơ quan Tòa án đưa\n' +
+                            '                            ra phán quyết cuối cùng.':'Mâu thuẫn ở mức độ nghiêm trọng.\n' +
+                            '                            Khách hàng nhận định các bên không thể\n' +
+                            '                            tự đàm phán. Cần có Cơ quan Tòa án đưa\n' +
+                            '                            ra phán quyết cuối cùng. aaa'}}
+                    </p>
+                    <p style=" margin-bottom: 30px"><i style="font-weight: 100;">{{global.locale=='vi'?'*Giá phí từ':'*Giá phí từ aaa'}} <b>{{global.locale=='vi'?'30.000.000':'30.000.000 aaa'}}</b>
+                      vnđ</i></p>
+                    <div class="footer-block center">
+                      <button (click)="onChangePackage('Gói tranh tụng')" class="btn btn-outline-warning sub-button">{{global.locale=='vi'?'Yêu cầu tư vấn miễn phí':'Yêu cầu tư vấn miễn phí aaa'}}</button>
+                      <br>
+                      <i class="security">{{global.locale=='vi'?'*Cam kết bảo mật thông tin':'*Cam kết bảo mật thông tin aaa'}}</i>
+                    </div>
+                    <div class="d-block d-md-none" style="width: 100%; text-align: right;"><a class="more-suitable"
+                                                                                              href="#parttwo"
+                                                                                              data-toggle="collapse"
+                                                                                              role="button"
+                                                                                              aria-expanded="false">{{global.locale=='vi'?'Xem\n' +
+                            '                            chi\n' +
+                            '                            tiết':'Xem\n' +
+                            '                            chi\n' +
+                            '                            tiết aaa'}} <i class="fa fa-chevron-down"></i></a></div>
+                  </div>
+                  <div class="d-none d-md-block">
+                    <hr>
+                    <div class="block-two">
+                      <p><img class="icon-block"
+                              src="/assets/media/GQTC/lua_chon_goi_phu_hop/Asset 26.svg">
+                        {{global.locale=='vi'?'Thu\n' +
+                                '                                thập, phân tích chứng cứ':'Thu\n' +
+                                '                                thập, phân tích chứng cứ aaa'}} </p>
+                      <p><img class="icon-block"
+                              src="/assets/media/GQTC/lua_chon_goi_phu_hop/Asset 26.svg">
+                        {{global.locale=='vi'?'Soạn\n' +
+                                '                                thảo hồ sơ khởi kiện':'Soạn\n' +
+                                '                                thảo hồ sơ khởi kiện aaa'}}  </p>
+                      <p><img class="icon-block"
+                              src="/assets/media/GQTC/lua_chon_goi_phu_hop/Asset 26.svg">
+                        {{global.locale=='vi'?'Liên\n' +
+                                '                                hệ đương sự liên quan':'Liên\n' +
+                                '                                hệ đương sự liên quan aaa'}} </p>
+                      <p><img class="icon-block"
+                              src="/assets/media/GQTC/lua_chon_goi_phu_hop/Asset 26.svg">
+                        {{global.locale=='vi'?'Tham\n' +
+                                '                                gia các phiên triệu tập':'Tham\n' +
+                                '                                gia các phiên triệu tập aaa'}} </p>
+                      <p><img class="icon-block"
+                              src="/assets/media/GQTC/lua_chon_goi_phu_hop/Asset 26.svg">
+                        {{global.locale=='vi'?'Luật\n' +
+                                '                                sư thực hiện tranh tụng':'Luật\n' +
+                                '                                sư thực hiện tranh tụng aaa'}} </p>
+                      <p><img class="icon-block"
+                              src="/assets/media/GQTC/lua_chon_goi_phu_hop/Asset 26.svg">
+                        Theo
+                        {{global.locale=='vi'?'dõi tiến trình tố tụng ':'dõi tiến trình tố tụng  aaa'}}</p>
+                      <p><img class="icon-block"
+                              src="/assets/media/GQTC/lua_chon_goi_phu_hop/Asset 26.svg">
+                        {{global.locale=='vi'?'Nhận,\n' +
+                                '                                trả kết quả bản án':'Nhận,\n' +
+                                '                                trả kết quả bản án aaa'}} </p>
+
+                    </div>
+                    <hr>
+                    <div class="block-three">
+                      <img style="position: absolute;
+    width: 43%;
+    bottom: 33px;
+    right: -34px;" src="/assets/media/GQTC/lua_chon_goi_phu_hop/kq1.svg">
+                      <p class="result-block">{{global.locale=='vi'?'Kết quả:':'Kết quả: aaa'}}</p>
+                      <p><i>{{global.locale=='vi'?'Quyết định/bản án có hiệu lực\n' +
+                              '                                pháp luật về việc xét xử tranh chấp\n' +
+                              '                                giữa các bên':'Quyết định/bản án có hiệu lực\n' +
+                              '                                pháp luật về việc xét xử tranh chấp\n' +
+                              '                                giữa các bên aaa'}}</i></p>
+                    </div>
+                  </div>
+                  <div class="collapse collapsed" id="parttwo">
+                    <hr>
+                    <div class="block-two">
+                      <p><img class="icon-block"
+                              src="/assets/media/GQTC/lua_chon_goi_phu_hop/Asset 26.svg">
+                        {{global.locale=='vi'?'Thu\n' +
+                                '                                thập, phân tích chứng cứ':'Thu\n' +
+                                '                                thập, phân tích chứng cứ aaa'}} </p>
+                      <p><img class="icon-block"
+                              src="/assets/media/GQTC/lua_chon_goi_phu_hop/Asset 26.svg">
+                        {{global.locale=='vi'?'Soạn\n' +
+                                '                                thảo hồ sơ khởi kiện ':'Soạn\n' +
+                                '                                thảo hồ sơ khởi kiện  aaa'}}</p>
+                      <p><img class="icon-block"
+                              src="/assets/media/GQTC/lua_chon_goi_phu_hop/Asset 26.svg">
+                        {{global.locale=='vi'?'Liên\n' +
+                                '                                hệ đương sự liên quan ':'Liên\n' +
+                                '                                hệ đương sự liên quan  aaa'}}</p>
+                      <p><img class="icon-block"
+                              src="/assets/media/GQTC/lua_chon_goi_phu_hop/Asset 26.svg">
+                        {{global.locale=='vi'?'Tham\n' +
+                                '                                gia các phiên triệu tập':'Tham\n' +
+                                '                                gia các phiên triệu tập aaa'}} </p>
+                      <p><img class="icon-block"
+                              src="/assets/media/GQTC/lua_chon_goi_phu_hop/Asset 26.svg">
+                        {{global.locale=='vi'?'Luật\n' +
+                                '                                sư thực hiện tranh tụng':'Luật\n' +
+                                '                                sư thực hiện tranh tụng aaa'}} </p>
+                      <p><img class="icon-block"
+                              src="/assets/media/GQTC/lua_chon_goi_phu_hop/Asset 26.svg">
+                        {{global.locale=='vi'?'Theo\n' +
+                                '                                dõi tiến trình tố tụng':'Theo\n' +
+                                '                                dõi tiến trình tố tụng aaa'}} </p>
+                      <p><img class="icon-block"
+                              src="/assets/media/GQTC/lua_chon_goi_phu_hop/Asset 26.svg">
+                        {{global.locale=='vi'?'Nhận,\n' +
+                                '                                trả kết quả bản án':'Nhận,\n' +
+                                '                                trả kết quả bản án aaa'}} </p>
+
+                    </div>
+                    <hr>
+                    <div class="block-three">
+                      <img style="position: absolute;
+    width: 43%;
+    bottom: 33px;
+    right: -34px;" src="/assets/media/GQTC/lua_chon_goi_phu_hop/kq1.svg">
+                      <p class="result-block">{{global.locale=='vi'?'Kết quả:':'Kết quả: aaa'}}</p>
+                      <p><i>{{global.locale=='vi'?'Quyết định/bản án có hiệu lực\n' +
+                              '                                pháp luật về việc xét xử tranh chấp\n' +
+                              '                                giữa các bên':'Quyết định/bản án có hiệu lực\n' +
+                              '                                pháp luật về việc xét xử tranh chấp\n' +
+                              '                                giữa các bên aaa'}}</i></p>
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+              <div class="col-md-4">
+                <div class="box pro shadow-lg">
+                  <img style="width: 26%;
+    position: absolute;
+    top: -2px;
+    right: 0px;
+}" src="/assets/media/GQTC/lua_chon_goi_phu_hop/Asset 38.svg">
+                  <div class="block-one">
+                    <div class="title-block center">
+                      <h4>{{global.locale=='vi'?'Gói toàn diện':'Gói toàn diện aaa'}}</h4>
+                      <hr>
+                    </div>
+                    <p><b>{{global.locale=='vi'?'Khuyên dùng với':'Khuyên dùng với aaa'}}</b></p>
+                    <p style="font-weight: 400;min-height: 105px; text-align: justify">
+                      {{global.locale=='vi'?'Khách hàng muốn ủy thác toàn quyền\n' +
+                            '                            cho Luật sư quyết định các phương án\n' +
+                            '                            phù với thực trạng, diễn biến của bên\n' +
+                            '                            tranh chấp.':'Khách hàng muốn ủy thác toàn quyền\n' +
+                            '                            cho Luật sư quyết định các phương án\n' +
+                            '                            phù với thực trạng, diễn biến của bên\n' +
+                            '                            tranh chấp. aaa'}}
+                    </p>
+                    <p style=" margin-bottom: 30px"><i style="font-weight: 100;">{{global.locale=='vi'?'*Giá phí từ':'*Giá phí từ aaa'}} <b>{{global.locale=='vi'?'40.000.000':'40.000.000 aaa'}}</b>
+                      vnđ</i></p>
+                    <div class="footer-block center">
+                      <button (click)="onChangePackage('Gói toàn diện')" class="btn btn-outline-warning sub-button">{{global.locale=='vi'?'Yêu cầu tư vấn miễn phí':'Yêu cầu tư vấn miễn phí aaa'}}</button>
+                      <br>
+                      <i class="security">{{global.locale=='vi'?'*Cam kết bảo mật thông tin':'*Cam kết bảo mật thông tin aaa'}}</i>
+                    </div>
+                    <div class="d-block d-md-none" style="width: 100%; text-align: right;"><a class="more-suitable"
+                                                                                              href="#partthree"
+                                                                                              data-toggle="collapse"
+                                                                                              role="button"
+                                                                                              aria-expanded="false">{{global.locale=='vi'?'Xem\n' +
+                            '                            chi\n' +
+                            '                            tiết ':'Xem\n' +
+                            '                            chi\n' +
+                            '                            tiết  aaa'}}<i class="fa fa-chevron-down"></i></a></div>
+                  </div>
+                  <div class="d-none d-md-block">
+                    <hr>
+                    <div class="block-two">
+                      <p><img class="icon-block"
+                              src="/assets/media/GQTC/lua_chon_goi_phu_hop/Asset 27.svg">
+                        {{global.locale=='vi'?'Thu thập, phân tích chứng cứ ':'Từ aaa'}}</p>
+                      <p><img class="icon-block"
+                              src="/assets/media/GQTC/lua_chon_goi_phu_hop/Asset 27.svg">
+                        {{global.locale=='vi'?'Đề xuất phương án xử lý':'Đề xuất phương án xử lý aaa'}} </p>
+                      <p><img class="icon-block"
+                              src="/assets/media/GQTC/lua_chon_goi_phu_hop/Asset 27.svg">
+                        {{global.locale=='vi'?'Soạn thảo đơn thư yêu cầu':'Soạn thảo đơn thư yêu cầu aaa'}} </p>
+                      <p><img class="icon-block"
+                              src="/assets/media/GQTC/lua_chon_goi_phu_hop/Asset 27.svg">
+                        {{global.locale=='vi'?'Đại diện đàm phán các bên':'Đại diện đàm phán các bên aaa'}} </p>
+                      <p><img class="icon-block"
+                              src="/assets/media/GQTC/lua_chon_goi_phu_hop/Asset 27.svg">
+                        {{global.locale=='vi'?'Soạn thảo hồ sơ khởi kiện':'Soạn thảo hồ sơ khởi kiện aaa'}}  </p>
+                      <p><img class="icon-block"
+                              src="/assets/media/GQTC/lua_chon_goi_phu_hop/Asset 27.svg">
+                        {{global.locale=='vi'?'Liên hệ đương sự liên quan':'Liên hệ đương sự liên quan aaa'}} </p>
+                      <p><img class="icon-block"
+                              src="/assets/media/GQTC/lua_chon_goi_phu_hop/Asset 27.svg">
+                        {{global.locale=='vi'?'Tham gia các phiên triệu tập':'Tham gia các phiên triệu tập aaa'}} </p>
+                      <p><img class="icon-block"
+                              src="/assets/media/GQTC/lua_chon_goi_phu_hop/Asset 27.svg">
+                        {{global.locale=='vi'?'Luật sư thực hiện tranh tụng':'Luật sư thực hiện tranh tụng aaa'}} </p>
+                      <p><img class="icon-block"
+                              src="/assets/media/GQTC/lua_chon_goi_phu_hop/Asset 27.svg">
+                        {{global.locale=='vi'?'Theo dõi tiến trình tố tụng':'Theo dõi tiến trình tố tụng aaa'}} </p>
+                      <p><img class="icon-block"
+                              src="/assets/media/GQTC/lua_chon_goi_phu_hop/Asset 27.svg">
+                        {{global.locale=='vi'?'Nhận, trả kết quả bản án':'Nhận, trả kết quả bản án aaa'}} </p>
+                      <p><img class="icon-block"
+                              src="/assets/media/GQTC/lua_chon_goi_phu_hop/Asset 27.svg">
+                        {{global.locale=='vi'?'Theo dõi thủ tục thi hành án':'Theo dõi thủ tục thi hành án aaa'}} </p>
+
+                    </div>
+                    <hr>
+                    <div class="block-three">
+                      <img style="position: absolute;
+    width: 34%;
+    bottom: 28px;
+    right: -12px;" src="/assets/media/GQTC/lua_chon_goi_phu_hop/kq2.svg">
+                      <p class="result-block">{{global.locale=='vi'?'Kết quả:':'Kết quả: aaa'}}</p>
+                      <p><i>{{global.locale=='vi'?'Biên bản xác nhận các bên đạt được\n' +
+                              '                                thỏa thuận, tranh chấp kết thúc hoặc\n' +
+                              '                                quyết định/bản án có hiệu lực pháp\n' +
+                              '                                luật về việc xét xử tranh chấp giữa\n' +
+                              '                                các bên':'Biên bản xác nhận các bên đạt được\n' +
+                              '                                thỏa thuận, tranh chấp kết thúc hoặc\n' +
+                              '                                quyết định/bản án có hiệu lực pháp\n' +
+                              '                                luật về việc xét xử tranh chấp giữa\n' +
+                              '                                các bên aaa'}}</i></p>
+                    </div>
+                  </div>
+                  <div class="collapse collapsed" id="partthree">
+                    <hr>
+                    <div class="block-two">
+                      <p><img class="icon-block"
+                              src="/assets/media/GQTC/lua_chon_goi_phu_hop/Asset 27.svg">
+                        {{global.locale=='vi'?'Thu thập, phân tích chứng cứ':'Thu thập, phân tích chứng cứ aaa'}} </p>
+                      <p><img class="icon-block"
+                              src="/assets/media/GQTC/lua_chon_goi_phu_hop/Asset 27.svg">
+                        {{global.locale=='vi'?'Đề xuất phương án xử lý ':'Đề xuất phương án xử lý  aaa'}}</p>
+                      <p><img class="icon-block"
+                              src="/assets/media/GQTC/lua_chon_goi_phu_hop/Asset 27.svg">
+                        {{global.locale=='vi'?'Soạn thảo đơn thư yêu cầu':'Soạn thảo đơn thư yêu cầu aaa'}}  </p>
+                      <p><img class="icon-block"
+                              src="/assets/media/GQTC/lua_chon_goi_phu_hop/Asset 27.svg">
+                        {{global.locale=='vi'?'Đại diện đàm phán các bên':'Đại diện đàm phán các bên aaa'}}  </p>
+                      <p><img class="icon-block"
+                              src="/assets/media/GQTC/lua_chon_goi_phu_hop/Asset 27.svg">
+                        {{global.locale=='vi'?'Soạn thảo hồ sơ khởi kiện':'Soạn thảo hồ sơ khởi kiện aaa'}} </p>
+                      <p><img class="icon-block"
+                              src="/assets/media/GQTC/lua_chon_goi_phu_hop/Asset 27.svg">
+                        {{global.locale=='vi'?'Liên hệ đương sự liên quan':'Liên hệ đương sự liên quan aaa'}}  </p>
+                      <p><img class="icon-block"
+                              src="/assets/media/GQTC/lua_chon_goi_phu_hop/Asset 27.svg">
+                        {{global.locale=='vi'?'Tham gia các phiên triệu tập':'Tham gia các phiên triệu tập aaa'}} </p>
+                      <p><img class="icon-block"
+                              src="/assets/media/GQTC/lua_chon_goi_phu_hop/Asset 27.svg">
+                        {{global.locale=='vi'?'Luật sư thực hiện tranh tụng':'Luật sư thực hiện tranh tụng aaa'}}  </p>
+                      <p><img class="icon-block"
+                              src="/assets/media/GQTC/lua_chon_goi_phu_hop/Asset 27.svg">
+                        {{global.locale=='vi'?'Theo dõi tiến trình tố tụng':'Theo dõi tiến trình tố tụng aaa'}}  </p>
+                      <p><img class="icon-block"
+                              src="/assets/media/GQTC/lua_chon_goi_phu_hop/Asset 27.svg">
+                        {{global.locale=='vi'?' Nhận, trả kết quả bản án':' Nhận, trả kết quả bản án aaa'}} </p>
+                      <p><img class="icon-block"
+                              src="/assets/media/GQTC/lua_chon_goi_phu_hop/Asset 27.svg">
+                        {{global.locale=='vi'?'Theo dõi thủ tục thi hành án':'Theo dõi thủ tục thi hành án aaa'}}  </p>
+
+                    </div>
+                    <hr>
+                    <div class="block-three">
+                      <img style="position: absolute;
+    width: 34%;
+    bottom: 28px;
+    right: -12px;" src="/assets/media/GQTC/lua_chon_goi_phu_hop/kq2.svg">
+                      <p class="result-block">{{global.locale=='vi'?'Kết quả:':'Kết quả: aaa'}} </p>
+                      <p><i>{{global.locale=='vi'?'Biên bản xác nhận các bên đạt được\n' +
+                              '                                thỏa thuận, tranh chấp kết thúc hoặc\n' +
+                              '                                quyết định/bản án có hiệu lực pháp\n' +
+                              '                                luật về việc xét xử tranh chấp giữa\n' +
+                              '                                các bên':'Biên bản xác nhận các bên đạt được\n' +
+                              '                                thỏa thuận, tranh chấp kết thúc hoặc\n' +
+                              '                                quyết định/bản án có hiệu lực pháp\n' +
+                              '                                luật về việc xét xử tranh chấp giữa\n' +
+                              '                                các bên aaa'}} </i></p>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+            <!-- <Change> -->
+            <div class="call row" style="margin-top: 3rem;">
+              <div class="col-md-2 d-none d-md-block">
+                <div class="step-hr">
+                  <hr>
+                </div>
+              </div>
+              <div class="col-md-8 col-sm-12 call-mobile">
+                <a href="tel:0961914328">
+                  <div style="display: flex;margin: auto;text-align: center;width: fit-content;">
+                    <img src="/assets/media/PLTX/effect/Asset%2010.svg">
+                    <p>{{global.locale=='vi'?'Tư vấn giải quyết tranh chấp miễn phí: 096 191 4328':'Tư vấn giải quyết tranh chấp miễn phí: 096 191 4328 aaa'}} </p></div>
+                </a>
+              </div>
+              <div class="col-md-2 d-none d-md-block">
+                <div class="step-hr">
+                  <hr class="right">
+                </div>
+              </div>
+            </div>
+            <!-- </Change> -->
+          </div>
+        </section>
+      </div>
+      <div class="modal-footer">
+        <button (click)="submit()" style="margin: auto; color: white;" type="button" class="btn btn-warning">{{global.locale=='vi'?'Gửi yêu cầu':'Gửi yêu cầu aaa'}}</button>
+      </div>
+    </div>
+  </div>
+</div>
