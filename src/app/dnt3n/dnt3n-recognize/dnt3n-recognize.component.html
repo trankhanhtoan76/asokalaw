@@ -21,7 +21,7 @@
           <div class="mission-txt">
             <p>{{global.locale=='vi'?'Là gói dịch vụ dành riêng cho doanh nghiệp đã hoạt động, muốn dành thời gian để rà soát lại hệ thống vận hành doanh nghiệp. Chúng tôi thực hiện rà soát và đưa ra Thư tư vấn cho doanh nghiệp tại 04 khía cạnh cốt lõi: pháp lý cho sản phẩm, dịch vụ - hệ thống hợp đồng - quản trị lao động và tuân thủ thuế. Kết quả là doanh nghiệp sẽ có nhận được phương án giải quyết, vá lỗi vận hành. Sức khỏe pháp lý được củng cố sẽ khiến doanh nghiệp phát triển vững mạnh.':'Là gói dịch vụ dành riêng cho doanh nghiệp đã hoạt động, muốn dành thời gian để rà soát lại hệ thống vận hành doanh nghiệp. Chúng tôi thực hiện rà soát và đưa ra Thư tư vấn cho doanh nghiệp tại 04 khía cạnh cốt lõi: pháp lý cho sản phẩm, dịch vụ - hệ thống hợp đồng - quản trị lao động và tuân thủ thuế. Kết quả là doanh nghiệp sẽ có nhận được phương án giải quyết, vá lỗi vận hành. Sức khỏe pháp lý được củng cố sẽ khiến doanh nghiệp phát triển vững mạnh. aaa'}}</p>
           </div>
-          <button style="margin-top: 30px; margin-bottom: 20px" class="btn btn-warning sub-button">{{global.locale=='vi'?'Xem báo giá chi tiết':'Xem báo giá chi tiết aaa'}}
+          <button onclick = "$('#dnt3nform-banggia-gqtc-rasoatloi').modal('show')" style="margin-top: 30px; margin-bottom: 20px" class="btn btn-warning sub-button">{{global.locale=='vi'?'Xem báo giá chi tiết':'Xem báo giá chi tiết aaa'}}
           </button>
           <p><a routerLink="/phap-ly-thuong-xuyen">{{global.locale=='vi'?'Giải pháp quản trị tinh gọn "4 trong 1" >>':'Giải pháp quản trị tinh gọn "4 trong 1" >> aaa'}}</a></p>
         </div>
@@ -68,7 +68,7 @@
     </div>
   </div>
 </section>
-<!--Popup-->
+<!--Popup -->
 <div class="modal fade" id="dnt3nform-banggia-gqtc">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
@@ -661,7 +661,7 @@
   </div>
 </div>
 
-<!--POP UP RA SOAT LOI-->
+<!--POP UP TAM NGUNG GIAI THE-->
 
 <div class="modal fade" id="dnt3nform-banggia-gqtc-tamngung-giaithe">
   <div class="modal-dialog" role="document">
@@ -672,7 +672,7 @@
         </button>
       </div>
       <div class="modal-body">
-        <section id="2banggiarasoatloi" style="position: relative;">
+        <section id="2banggiatamngunggiathe" style="position: relative;">
           <img style="width: 14%;
     position: absolute;
     bottom: 0; left: 0;" src="/assets/media/GQTC/lua_chon_goi_phu_hop/bg2.svg">
@@ -702,7 +702,7 @@
                             'dừng hoạt động để tìm cách giải quyết.':' Doanh nghiệp gặp khó khăn, tạm\n' +
                             'dừng hoạt động để tìm cách giải quyết.'}}
                     </p>
-                    <button class="btn btn-outline-warning" style="border-radius: 30px; padding: 5px 20px;">{{global.locale=='vi'?'Đăng ký tư vấn ngay':'Đăng ký tư vấn ngay aaa'}}
+                    <button onclick="$('#dnt3nform-formdangkychungcho1va3').modal('show')" class="btn btn-outline-warning" style="border-radius: 30px; padding: 5px 20px;">{{global.locale=='vi'?'Đăng ký tư vấn ngay':'Đăng ký tư vấn ngay aaa'}}
                     </button>
 
                   </div>
@@ -730,7 +730,7 @@
     min-height: 80px; font-size: 12px">
                       {{global.locale=='vi'?'Doanh nghiệp quyết định chấm dứt toàn bộ hoạt động kinh doanh.':'Doanh nghiệp quyết định chấm dứt toàn bộ hoạt động kinh doanh.'}}
                     </p>
-                    <button class="btn btn-outline-warning" style="border-radius: 30px; padding: 5px 20px;">{{global.locale=='vi'?'Đăng ký tư vấn ngay':'Đăng ký tư vấn ngay aaa'}}
+                    <button onclick="$('#dnt3nform-formdangkychungcho1va3').modal('show')" class="btn btn-outline-warning" style="border-radius: 30px; padding: 5px 20px;">{{global.locale=='vi'?'Đăng ký tư vấn ngay':'Đăng ký tư vấn ngay aaa'}}
                     </button>
                   </div>
 
@@ -746,3 +746,165 @@
     </div>
   </div>
 </div>
+
+<!--POP UP RA SOAT LOI-->
+<div class="modal fade" id="dnt3nform-banggia-gqtc-rasoatloi">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header" style="border: none; padding: unset; padding-top: 1rem;">
+        <button type="button" class="close" style="padding: unset; padding-right: 2rem" aria-label="Close" data-dismiss="modal">
+          <span aria-hidden="true" style="font-size: 26px">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <section id="2banggiarasoatloi" style="position: relative;">
+          <img style="width: 14%;
+    position: absolute;
+    bottom: 0; left: 0;" src="/assets/media/GQTC/lua_chon_goi_phu_hop/bg2.svg">
+          <img style="width: 14%;
+    position: absolute;
+    top: 0; right: 0;" src="/assets/media/GQTC/lua_chon_goi_phu_hop/bg1.svg">
+          <div class="container-fluid sub-fluid" style="padding: 0 !important;">
+
+            <div class="row">
+              <div class="col-md-6" style="text-align: center !important;">
+                <div class="service-content  shadow-lg" style="margin-top: 50px; border-radius: 15px; padding: 40px 40px;background: #fff"><h3 style="font-weight: bold; color: #ffa812; font-size: 22px; font-family:'Montserrat';">{{global.locale=='vi'?'GÓI CƠ BẢN':'GÓI CƠ BẢN aaa'}}</h3><br>
+                  <div><p class="" style="font-size: 40px; padding-bottom: 20px"><span style="font-size: 12px;font-weight: 200;position: relative;top: -22px; padding-right: 5px">Từ</span>{{global.locale=='vi'?'5.900.000':'5.900.000 aaa'}} <span class="sub-title">{{global.locale=='vi'?'VNĐ':'VNĐ aaa'}}</span></p></div>
+                 <p>Dưới 05 lao động</p>
+                  <hr style="margin-bottom: 20px !important;margin: auto !important;width: 30%;border: 2px solid #fac115;background: #7ec8e9;margin-left: 0;">
+                  <p class="align-left" style="margin-top: 20px;"><b>Rà soát pháp lý doanh nghiệp</b></p>
+                  <div class="price-ul">
+
+                    <div class="price-li"><span class=" icon"><img src="/assets/media/DKKD/cac-goi-phi/Asset 8.svg"></span>{{global.locale=='vi'?'Kiểm tra ngành nghề kinh doanh':'Kiểm tra ngành nghề kinh doanh aaa'}}</div>
+                    <div class="price-li"><span class=" icon"><img src="/assets/media/DKKD/cac-goi-phi/Asset 8.svg"></span>{{global.locale=='vi'?'Thủ tục cho sản phẩm lưu hành':'Thủ tục cho sản phẩm lưu hành aaa'}}</div>
+                    <div class="price-li"><span class=" icon"><img src="/assets/media/DKKD/cac-goi-phi/Asset 8.svg"></span>{{global.locale=='vi'?'Giấy phép hoạt động cần bổ sung':'Giấy phép hoạt động cần bổ sung aaa'}}</div>
+                    <div class="price-li"><span class=" icon"><img src="/assets/media/DKKD/cac-goi-phi/Asset 8.svg"></span>{{global.locale=='vi'?'Tình trạng đăng ký sở hữu trí tuệ':'Tình trạng đăng ký sở hữu trí tuệ aaa'}}</div>
+                    <p class="align-left"><b>Rà soát hợp đồng</b></p>
+                    <div class="price-li"><span class=" icon"><img src="/assets/media/DKKD/cac-goi-phi/Asset 8.svg"></span>{{global.locale=='vi'?'Hợp đồng cung cấp dịch vụ':'Hợp đồng cung cấp dịch vụ aaa'}}</div>
+                    <div class="price-li"><span class=" icon"><img src="/assets/media/DKKD/cac-goi-phi/Asset 8.svg"></span>{{global.locale=='vi'?'Hợp đồng hợp tác kinh doanh':'Hợp đồng hợp tác kinh doanh aaa'}}</div>
+                    <div class="price-li"><span class=" icon"><img src="/assets/media/DKKD/cac-goi-phi/Asset 8.svg"></span>{{global.locale=='vi'?'Hợp đồng với các đối tác':'Hợp đồng với các đối tác aaa'}}</div>
+                    <p class="align-left" style="color:#BCC7CF !important;"><b>Rà soát quản trị lao động</b></p>
+                    <div class="price-li disabled"><span class=" icon"> <img src="/assets/media/DKKD/cac-goi-phi/Asset 5.svg"></span>{{global.locale=='vi'?'Hệ thống văn bản thử việc':'Hệ thống văn bản thử việc aaa'}}</div>
+                    <div class="price-li disabled"><span class=" icon"> <img src="/assets/media/DKKD/cac-goi-phi/Asset 5.svg"></span>{{global.locale=='vi'?'Hợp đồng lao động chính thức':'Hợp đồng lao động chính thức aaa'}}</div>
+                    <div class="price-li disabled"><span class=" icon"> <img src="/assets/media/DKKD/cac-goi-phi/Asset 5.svg"></span>{{global.locale=='vi'?'Kết thúc lao động - nghỉ việc':'Kết thúc lao động - nghỉ việc aaa'}}</div>
+                    <div class="price-li disabled"><span class=" icon"> <img src="/assets/media/DKKD/cac-goi-phi/Asset 5.svg"></span>{{global.locale=='vi'?'Quy định thang bảng lương':'Quy định thang bảng lương aaa'}}</div>
+                    <div class="price-li disabled"><span class=" icon"> <img src="/assets/media/DKKD/cac-goi-phi/Asset 5.svg"></span>{{global.locale=='vi'?'Nội quy - quy chế lao động':'Nội quy - quy chế lao động aaa'}}</div>
+                    <div class="price-li disabled"><span class=" icon"> <img src="/assets/media/DKKD/cac-goi-phi/Asset 5.svg"></span>{{global.locale=='vi'?'Khai trình lao động':'Khai trình lao động aaa'}}</div>
+                    <div class="price-li disabled"><span class=" icon"> <img src="/assets/media/DKKD/cac-goi-phi/Asset 5.svg"></span>{{global.locale=='vi'?'Các khoản bảo hiểm, phí':'Các khoản bảo hiểm, phí aaa'}}</div>
+                    <p class="align-left" style="color:#BCC7CF !important;"><b>Rà soát thuế</b></p>
+                    <div class="price-li disabled"><span class=" icon"> <img src="/assets/media/DKKD/cac-goi-phi/Asset 5.svg"></span>{{global.locale=='vi'?'Nội quy - quy chế lao động':'Nội quy - quy chế lao động aaa'}}</div>
+                    <div class="price-li disabled"><span class=" icon"> <img src="/assets/media/DKKD/cac-goi-phi/Asset 5.svg"></span>{{global.locale=='vi'?'Khai trình lao động':'Khai trình lao động aaa'}}</div>
+                    <div class="price-li disabled"><span class=" icon"> <img src="/assets/media/DKKD/cac-goi-phi/Asset 5.svg"></span>{{global.locale=='vi'?'Các khoản bảo hiểm, phí':'Các khoản bảo hiểm, phí aaa'}}</div>
+                  </div>
+                  <div class="center button-type">
+                    <button onclick="$('#dnt3nform-formdangkychungcho1va3').modal('show')" class="btn btn-outline-warning">{{global.locale=='vi'?'Đăng ký ngay':'Đăng ký ngay aaa'}}</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6" style="text-align: center;">
+                <div class="service-content  shadow-lg" style="    margin-top: 50px; border-radius: 15px; padding: 40px 40px; background-color: #fff1ea;">
+                  <div style="top: 50px; right: 15px;" class="banner-small"><img src="/assets/media/PLTX/service/Asset4.svg"></div>
+                  <h3 style="font-weight: bold; color: #ffa812; font-size: 22px; font-family:'Montserrat';">{{global.locale=='vi'?'GÓI TOÀN DIỆN':'GÓI TOÀN DIỆN aaa'}}</h3><br>
+                  <div><p class="" style="font-size: 40px; padding-bottom: 20px"><span style="font-size: 12px;font-weight: 200;position: relative;top: -22px; padding-right: 5px">Từ</span>{{global.locale=='vi'?'8.900.000 ':'8.900.000 aaa'}}<span class="sub-title">{{global.locale=='vi'?'VNĐ':'VNĐ aaa'}}</span></p></div>
+                  <p>Từ 06 - 10 lao động</p>
+                  <hr style="margin-bottom: 20px !important;margin: auto !important;width: 30%;border: 2px solid #fac115;background: #7ec8e9;margin-left: 0;">
+                  <p class="align-left"  style="margin-top: 20px;"><b>Rà soát pháp lý doanh nghiệp</b></p>
+                  <div class="price-ul">
+
+                    <div class="price-li"><span class=" icon"><img src="/assets/media/DKKD/cac-goi-phi/Asset 8.svg"></span>{{global.locale=='vi'?'Kiểm tra ngành nghề kinh doanh':'Kiểm tra ngành nghề kinh doanh aaa'}}</div>
+                    <div class="price-li"><span class=" icon"><img src="/assets/media/DKKD/cac-goi-phi/Asset 8.svg"></span>{{global.locale=='vi'?'Thủ tục cho sản phẩm lưu hành':'Thủ tục cho sản phẩm lưu hành aaa'}}</div>
+                    <div class="price-li"><span class=" icon"><img src="/assets/media/DKKD/cac-goi-phi/Asset 8.svg"></span>{{global.locale=='vi'?'Giấy phép hoạt động cần bổ sung':'Giấy phép hoạt động cần bổ sung aaa'}}</div>
+                    <div class="price-li"><span class=" icon"><img src="/assets/media/DKKD/cac-goi-phi/Asset 8.svg"></span>{{global.locale=='vi'?'Tình trạng đăng ký sở hữu trí tuệ':'Tình trạng đăng ký sở hữu trí tuệ aaa'}}</div>
+                    <p class="align-left"><b>Rà soát hợp đồng</b></p>
+                    <div class="price-li"><span class=" icon"><img src="/assets/media/DKKD/cac-goi-phi/Asset 8.svg"></span>{{global.locale=='vi'?'Hợp đồng cung cấp dịch vụ':'Hợp đồng cung cấp dịch vụ aaa'}}</div>
+                    <div class="price-li"><span class=" icon"><img src="/assets/media/DKKD/cac-goi-phi/Asset 8.svg"></span>{{global.locale=='vi'?'Hợp đồng hợp tác kinh doanh':'Hợp đồng hợp tác kinh doanh aaa'}}</div>
+                    <div class="price-li"><span class=" icon"><img src="/assets/media/DKKD/cac-goi-phi/Asset 8.svg"></span>{{global.locale=='vi'?'Hợp đồng với các đối tác':'Hợp đồng với các đối tác aaa'}}</div>
+                    <p class="align-left" style="color:#BCC7CF !important;"><b>Rà soát quản trị lao động</b></p>
+                    <div class="price-li "><span class=" icon"> <img src="/assets/media/DKKD/cac-goi-phi/Asset 8.svg"></span>{{global.locale=='vi'?'Hệ thống văn bản thử việc':'Hệ thống văn bản thử việc aaa'}}</div>
+                    <div class="price-li "><span class=" icon"> <img src="/assets/media/DKKD/cac-goi-phi/Asset 8.svg"></span>{{global.locale=='vi'?'Hợp đồng lao động chính thức':'Hợp đồng lao động chính thức aaa'}}</div>
+                    <div class="price-li "><span class=" icon"> <img src="/assets/media/DKKD/cac-goi-phi/Asset 8.svg"></span>{{global.locale=='vi'?'Kết thúc lao động - nghỉ việc':'Kết thúc lao động - nghỉ việc aaa'}}</div>
+                    <div class="price-li "><span class=" icon"> <img src="/assets/media/DKKD/cac-goi-phi/Asset 8.svg"></span>{{global.locale=='vi'?'Quy định thang bảng lương':'Quy định thang bảng lương aaa'}}</div>
+                    <div class="price-li "><span class=" icon"> <img src="/assets/media/DKKD/cac-goi-phi/Asset 8.svg"></span>{{global.locale=='vi'?'Nội quy - quy chế lao động':'Nội quy - quy chế lao động aaa'}}</div>
+                    <div class="price-li "><span class=" icon"> <img src="/assets/media/DKKD/cac-goi-phi/Asset 8.svg"></span>{{global.locale=='vi'?'Khai trình lao động':'Khai trình lao động aaa'}}</div>
+                    <div class="price-li "><span class=" icon"> <img src="/assets/media/DKKD/cac-goi-phi/Asset 8.svg"></span>{{global.locale=='vi'?'Các khoản bảo hiểm, phí':'Các khoản bảo hiểm, phí aaa'}}</div>
+                    <p class="align-left" style="color:#BCC7CF !important;"><b>Rà soát thuế</b></p>
+                    <div class="price-li "><span class=" icon"> <img src="/assets/media/DKKD/cac-goi-phi/Asset 8.svg"></span>{{global.locale=='vi'?'Nội quy - quy chế lao động':'Nội quy - quy chế lao động aaa'}}</div>
+                    <div class="price-li "><span class=" icon"> <img src="/assets/media/DKKD/cac-goi-phi/Asset 8.svg"></span>{{global.locale=='vi'?'Khai trình lao động':'Khai trình lao động aaa'}}</div>
+                    <div class="price-li "><span class=" icon"> <img src="/assets/media/DKKD/cac-goi-phi/Asset 8.svg"></span>{{global.locale=='vi'?'Các khoản bảo hiểm, phí':'Các khoản bảo hiểm, phí aaa'}}</div>
+                  </div>
+
+                  <div class="center button-type">
+                    <button  onclick="$('#dnt3nform-formdangkychungcho1va3').modal('show')" class="btn btn-warning " style="color: white">{{global.locale=='vi'?'Đăng ký ngay':'Đăng ký ngay aaa'}}</button>
+
+
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+</div>
+<!--Form đăng ký chung cho 1 và 3-->
+            <div class="modal fade formchung1va3" id="dnt3nform-formdangkychungcho1va3" tabindex="-1" role="dialog" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header" style="border: none; padding: unset; padding-top: 1rem;">
+                    <button type="button" class="close" data-dismiss="modal" style="padding: unset; padding-right: 2rem" aria-label="Close">
+                      <span aria-hidden="true" style="font-size: 26px">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="form-group">
+                      <input type="text" class="form-control" name="name" placeholder="{{global.locale=='vi'?'Họ tên *':'Họ tên * aaa'}}">
+<!--                      <i><small class="text-danger">{{global.locale=='vi'?'Bắt buộc nhập họ tên.':'Bắt buộc nhập họ tên. aaa'}}</small></i>-->
+                    </div>
+                    <div class="form-group">
+                      <input class="form-control"  name="phone" type="text" placeholder="{{global.locale=='vi'?'Số điện thoại *':'Số điện thoại * aaa'}}"/>
+<!--                      <i ><small class="text-danger">{{global.locale=='vi'?'Bắt buộc nhập số điện thoại hợp lệ.':'Bắt buộc nhập số điện thoại hợp lệ. aaa'}}</small></i>-->
+                    </div>
+                    <div class="form-group">
+                      <input class="form-control" name="email" type="text" placeholder="{{global.locale=='vi'?'Email *':'Email * aaa'}}"/>
+<!--                      <i ><small class="text-danger">{{global.locale=='vi'?'Bắt buộc nhập email hợp lệ.':'Bắt buộc nhập email hợp lệ. aaa'}}</small></i>-->
+                    </div>
+                    <div class="form-group">
+                      <input class="form-control" name="tencongty" type="text" placeholder="{{global.locale=='vi'?'Tên công ty *':'Tên công ty * aaa'}}"/>
+                    </div>
+                    <div class="form-group">
+                      <textarea class="form-control" name="linhvuckinhdoanh" type="text" placeholder="{{global.locale=='vi'?'Lĩnh vực kinh doanh *':'Lĩnh vực kinh doanh * aaa'}}"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                      <label>{{global.locale=='vi'?'Quy mô công ty':'Quy mô công ty aaa'}}</label>
+                      <div class="container-fluid">
+                        <div class="row">
+                          <div class="col-md-6">
+                            <div class="form-check form-check-inline">
+                              <input name="package" class="form-check-input" type="radio" value="{{global.locale=='vi'?'Dưới 05 lao động':'Dưới 05 lao động aaa'}}">
+                              <span class="form-check-label">{{global.locale=='vi'?'Dưới 05 lao động':'Dưới 05 lao động aaa'}}</span>
+                            </div>
+                          </div>
+                          <div class="col-md-6" style="margin-bottom: 20px;">
+                            <div class="form-check form-check-inline">
+                              <input name="package" class="form-check-input" type="radio" value="{{global.locale=='vi'?'Từ 06 đến 10 lao động':'Từ 06 đến 10 lao động aaa'}}">
+                              <span class="form-check-label">{{global.locale=='vi'?'Từ 06 đến 10 lao động':'Từ 06 đến 10 lao động aaa'}}</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                      <textarea class="form-control" name="motatinhtrang" type="text" placeholder="{{global.locale=='vi'?'Nhập câu hỏi hoặc mô tả tình trạng công ty bạn tại đây *':'Nhập câu hỏi hoặc mô tả tình trạng công ty bạn tại đây * aaa'}}"></textarea>
+                      </div>
+                    </div>
+
+                  </div>
+
+                  <div class="modal-footer" style="text-align: center;">
+                    <button style="margin: auto; color: white;" type="button" class="btn btn-warning">{{global.locale=='vi'?'Gửi yêu cầu':'Gửi yêu cầu aaa'}}</button>
+                  </div>
+                </div>
+              </div>
+            </div>

@@ -18,6 +18,7 @@ export class TvlsteamComponent implements OnInit {
 
   ngAfterContentInit(): void {
     $('.controller-tabs-popular').slick({
+      //test
       infinite: true,
       slidesToShow: 4,
       slidesToScroll: 1,
@@ -34,6 +35,7 @@ export class TvlsteamComponent implements OnInit {
           }
         }]
     });
+
     $('.controller-tabs-popular').on('beforeChange', function(event, slick, currentSlide, nextSlide) {
 
       let activeEle, dataTarget;

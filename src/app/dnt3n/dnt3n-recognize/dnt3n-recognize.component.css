@@ -25,6 +25,11 @@
     {
         max-width: 100% !important;
     }
+    .formchung1va3
+    {
+        margin: auto;
+        max-width: 100% !important;
+    }
 
 }
 
@@ -34,5 +39,9 @@
 }
 #dnt3nform-banggia-gqtc-tamngung-giaithe div.modal-dialog
 {
+    max-width: 60%;
+}
+.formchung1va3 div.modal-content{
+    margin: 0 auto !important;
     max-width: 60%;
 }
