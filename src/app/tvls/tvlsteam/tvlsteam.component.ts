@@ -18,7 +18,6 @@ export class TvlsteamComponent implements OnInit {
 
   ngAfterContentInit(): void {
     $('.controller-tabs-popular').slick({
-      //test
       infinite: true,
       slidesToShow: 4,
       slidesToScroll: 1,
