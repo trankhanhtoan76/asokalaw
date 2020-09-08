@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, EventEmitter, OnInit, Output} from '@angular/core';
 import {GlobalService} from "../../service/global.service";
 
 @Component({
@@ -10,10 +10,15 @@ import {GlobalService} from "../../service/global.service";
   ]
 })
 export class Dnt3nRecognizeComponent implements OnInit {
+  @Output() changepackage = new EventEmitter;
 
   constructor(public global: GlobalService) { }
 
   ngOnInit(): void {
   }
+
+    submit() {
+
+    }
 
 }
