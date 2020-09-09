@@ -7,14 +7,11 @@ import {SpinnerService} from "../../service/spinner.service";
 declare var $: any;
 
 @Component({
-    selector: 'app-dnt3n-recognize',
-    templateUrl: './dnt3n-recognize.component.html',
-    styleUrls: [
-        '../dnt3n.component.css',
-        './dnt3n-recognize.component.css'
-    ]
+    selector: 'app-dnt3n-form3',
+    templateUrl: './dnt3n-form3.component.html',
+    styleUrls: ['../dnt3n.component.css', './dnt3n-form3.component.css']
 })
-export class Dnt3nRecognizeComponent implements OnInit {
+export class Dnt3nForm3Component implements OnInit {
     name;
     email;
     phone;
@@ -31,8 +28,10 @@ export class Dnt3nRecognizeComponent implements OnInit {
     s1e = 'Dưới 05 lao động aaa';
     s2 = 'Từ 06 đến 10 lao động';
     s2e = 'Từ 06 đến 10 lao động aaa';
-    p1 = 'Gói cơ bản';
-    p2 = 'Gói toàn diện';
+    p1 = 'Gói tạm ngưng';
+    p1e = 'Gói tạm ngưng aaa';
+    p2 = 'Gói giải thể';
+    p2e = 'Gói giải thể aaa';
 
     constructor(public global: GlobalService, public form: FormValidateService, private smtp: EmailService, private spinner: SpinnerService) {
     }
@@ -56,12 +55,13 @@ export class Dnt3nRecognizeComponent implements OnInit {
             {label: 'Gói', value: this.package},
             {label: 'Mô tả', value: this.description},
         ];
-        const subject = '[Website] Khách hàng đăng ký pháp lý doanh nghiệp: ' + this.name;
-        this.smtp.send2(subject, 'Doanh nghiệp trên 3 năm - Rà soát và vá lỗi', body).then(
+        const subject = '[Website] Khách hàng đăng ký: ' + this.name;
+        const subSubject = 'Doanh nghiệp trên 3 năm - Tạm ngưng - giải thể';
+        this.smtp.send2(subject, subSubject, body).then(
             message => {
                 this.spinner.hide();
                 $('#alert-success').modal('show');
-                $('#dnt3nform-formdangkychungcho1va3').modal('hide');
+                $('#dnt3nform3').modal('hide');
             }
         );
     }
