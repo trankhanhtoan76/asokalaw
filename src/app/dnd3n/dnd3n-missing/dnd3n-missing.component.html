@@ -2,46 +2,43 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12 center sub">
-                <h1 class="center" style="margin-bottom: 2rem;" > {{global.locale=='vi'?'Doanh nghiệp của bạn có đang bỏ sót thủ tục nào?':'Doanh nghiệp của bạn có đang bỏ sót thủ tục nào? aaa'}}</h1>
-                <p class="center"> {{global.locale=='vi'?'Khi công ty đi vào hoạt động, nếu không nắm rõ quy định pháp lý cho ngành nghề, sản phẩm/dịch vụ kinh doanh, bạn có thể sẽ tạo ra các "lỗ hổng" trong việc vận hành công ty hoặc bỏ sót những thủ tục quan trọng này.':'Khi công ty đi vào hoạt động, nếu không nắm rõ quy định pháp lý cho ngành nghề, sản phẩm/dịch vụ kinh doanh, bạn có thể sẽ tạo ra các "lỗ hổng" trong việc vận hành công ty hoặc bỏ sót những thủ tục quan trọng này. aaa'}}</p>
+                <h1 class="center" style="margin-bottom: 2rem;" > {{global.locale=='vi'?'Doanh nghiệp của bạn có đang bỏ sót thủ tục nào?':'Have your businesses missed any procedures?'}}</h1>
+                <p class="center"> {{global.locale=='vi'?'Khi công ty đi vào hoạt động, nếu không nắm rõ quy định pháp lý cho ngành nghề, sản phẩm/dịch vụ kinh doanh, bạn có thể sẽ tạo ra các "lỗ hổng" trong việc vận hành công ty hoặc bỏ sót những thủ tục quan trọng này.':'When running a business, if you do not know legal regulations for the respective business line(s), product(s)/service(s), you might create "holes" in the operation or miss important procedures.'}}</p>
                 <hr style="width: 100%; max-width: 180px; border: 1.5px solid #7ec8e9; margin: 1rem auto">
             </div>
         </div>
         <div class="row" style="padding-top: 20px">
             <div class="col-md-4">
                 <div class="block-missing first">
-                    <p class="alt-title">{{global.locale=='vi'?'Quản trị':'Quản trị aaa'}}<br>
-                        {{global.locale=='vi'?'thuế - hợp đồng - lao động':'thuế - hợp đồng - lao động aaa'}}</p>
+                    <p class="alt-title">{{global.locale=='vi'?'Quản trị':'Tax, contract'}}<br>
+                        {{global.locale=='vi'?'thuế - hợp đồng - lao động':' and labor administration'}}</p>
                     <hr style="width:100%; max-width: 40px; border: 1px solid #7ec8e9; margin: 1rem 0;">
                     <img src="/assets/media/DND3N/bo-sot-thu-tuc/Asset 3.svg">
                     <p style="    min-height: 250px;"> {{global.locale=='vi'?'Theo đuổi lợi nhuận; không tìm được nhân sự để thực hiện đầy đủ các công việc hành chính, nhân sự, thuế theo luật định; chi phí cho lao động chuyên môn quá cao... Đó là những lý do phổ biến khiến bạn rơi vào nguy cơ bị "hổng" về hệ thống hợp\n' +
-                        '                        đồng, khai trình lao động đúng luật, nộp báo cáo thuế đúng thời hạn.':'Theo đuổi lợi nhuận; không tìm được nhân sự để thực hiện đầy đủ các công việc hành chính, nhân sự, thuế theo luật định; chi phí cho lao động chuyên môn quá cao... Đó là những lý do phổ biến khiến bạn rơi vào nguy cơ bị "hổng" về hệ thống hợp\n' +
-                        '                        đồng, khai trình lao động đúng luật, nộp báo cáo thuế đúng thời hạn. aaa'}}</p>
-                    <div class="center"><button (click)="selectService(s1)" class="btn btn-outline-warning" style="margin-top: 0px; margin-bottom: 0px;">{{global.locale=='vi'?'Đăng ký':'Đăng ký aaa'}}</button></div>
+                        '                        đồng, khai trình lao động đúng luật, nộp báo cáo thuế đúng thời hạn.':'Caught up in pursuing profits; unable to find personnel to fully perform administrative, human resources, and tax tasks according to the law; sky-high costs for specialized labor; and so on - these are common reasons that put you at risk of lacking knowledge in contract system, legal labor reporting, filing tax reports on time.'}}</p>
+                    <div class="center"><button (click)="selectService(s1)" class="btn btn-outline-warning" style="margin-top: 0px; margin-bottom: 0px;">{{global.locale=='vi'?'Đăng ký':'Get Started'}}</button></div>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="block-missing">
-                    <p class="alt-title">{{global.locale=='vi'?'Đăng ký':'Đăng ký aaa'}}<br>
-                        {{global.locale=='vi'?'ngành nghề có điều kiện':'ngành nghề có điều kiện aaa'}}</p>
+                    <p class="alt-title">{{global.locale=='vi'?'Đăng ký':'Registration'}}<br>
+                        {{global.locale=='vi'?'ngành nghề có điều kiện':' of conditional business lines'}}</p>
                     <hr style="width:100%; max-width: 40px; border: 1px solid #7ec8e9; margin: 1rem 0;">
                     <img src="/assets/media/DND3N/bo-sot-thu-tuc/Asset 2.svg">
                     <p style="    min-height: 250px;">{{global.locale=='vi'?'Tại một số ngành nghề ảnh hưởng đến trật tự an ninh xã hội và sức khoẻ người tiêu dùng, ví dụ như: du lịch, nhà hàng, khách sạn, thẩm mỹ viện,... sau khi có giấy chứng nhận đăng ký doanh nghiệp, pháp luật còn yêu cầu có giấy chứng nhận đủ điều\n' +
-                        '                        kiện về cơ sở vật chất, vốn, nhân sự. Bởi vậy, bạn cần phải rà soát kỹ về ngành nghề nhằm tránh tình trạng kinh doanh không đủ giấy phép.':'Tại một số ngành nghề ảnh hưởng đến trật tự an ninh xã hội và sức khoẻ người tiêu dùng, ví dụ như: du lịch, nhà hàng, khách sạn, thẩm mỹ viện,... sau khi có giấy chứng nhận đăng ký doanh nghiệp, pháp luật còn yêu cầu có giấy chứng nhận đủ điều\n' +
-                        '                        kiện về cơ sở vật chất, vốn, nhân sự. Bởi vậy, bạn cần phải rà soát kỹ về ngành nghề nhằm tránh tình trạng kinh doanh không đủ giấy phép. aaa'}}</p>
-                    <div class="center"><button (click)="selectService(s2)" class="btn btn-outline-warning" style="margin-top: 0px; margin-bottom: 0px;">{{global.locale=='vi'?'Đăng ký':'Đăng ký aaa'}}</button></div>
+                        '                        kiện về cơ sở vật chất, vốn, nhân sự. Bởi vậy, bạn cần phải rà soát kỹ về ngành nghề nhằm tránh tình trạng kinh doanh không đủ giấy phép.':'In some industries affecting social security and consumer health (for example: tourism, restaurants, hotels, and beauty salons), after obtaining the BRC, the enterprise is required to have a certificate of eligibility for facilities, capital, and personnel. Therefore, business lines need to be carefully reviewed to ensure that needed licenses are sufficient.'}}</p>
+                    <div class="center"><button (click)="selectService(s2)" class="btn btn-outline-warning" style="margin-top: 0px; margin-bottom: 0px;">{{global.locale=='vi'?'Đăng ký':'Get Started'}}</button></div>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="block-missing">
-                    <p class="alt-title">{{global.locale=='vi'?'Đăng ký':'Đăng ký aaa'}}<br>
-                        {{global.locale=='vi'?'tài sản sở hữu trí tuệ':'tài sản sở hữu trí tuệ aaa'}} </p>
+                    <p class="alt-title">{{global.locale=='vi'?'Đăng ký':'Registration'}}<br>
+                        {{global.locale=='vi'?'tài sản sở hữu trí tuệ':' of intellectual property'}} </p>
                     <hr style="width:100%; max-width: 40px; border: 1px solid #7ec8e9; margin: 1rem 0;">
                     <img src="/assets/media/DND3N/bo-sot-thu-tuc/Asset 1.svg">
                     <p style="    min-height: 250px;">{{global.locale=='vi'?'Khách hàng quyết định mua sản phẩm, dịch vụ của một doanh nghiệp là nhờ uy tín được xây dựng qua thương hiệu. Nếu bạn không đăng ký xác lập quyền sở hữu đối với nhãn hiệu của mình ngay từ thời điểm bắt đầu kinh doanh, thì có thể xảy ra rủi ro:\n' +
-                        '                        thương hiệu mình xây dựng rơi vào tay người khác.':'Khách hàng quyết định mua sản phẩm, dịch vụ của một doanh nghiệp là nhờ uy tín được xây dựng qua thương hiệu. Nếu bạn không đăng ký xác lập quyền sở hữu đối với nhãn hiệu của mình ngay từ thời điểm bắt đầu kinh doanh, thì có thể xảy ra rủi ro:\n' +
-                        '                        thương hiệu mình xây dựng rơi vào tay người khác. aaa'}}</p>
-                    <div class="center"><button (click)="selectService(s3)" class="btn btn-outline-warning" style="margin-top: 0px; margin-bottom: 0px;">{{global.locale=='vi'?'Đăng ký':'Đăng ký aaa'}}</button></div>
+                        '                        thương hiệu mình xây dựng rơi vào tay người khác.':'Thanks to the reputation built through branding, customers decide to buy the products/ services of a business. If you skip the trademark registration step from the very beginning of doing business, there might be the risk of losing your brand into someone else is hands.'}}</p>
+                    <div class="center"><button (click)="selectService(s3)" class="btn btn-outline-warning" style="margin-top: 0px; margin-bottom: 0px;">{{global.locale=='vi'?'Đăng ký':'Get Started'}}</button></div>
                 </div>
             </div>
         </div>

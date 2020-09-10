@@ -2055,7 +2055,7 @@ export const langDefined = {
     //start DNd3n
     'dnd3n-sodolotrinh': {
         vi: "Trong \"sơ đồ lộ trình doanh nghiệp\", bạn đang ở giai đoạn vàng để phát triển kinh doanh. Chúng tôi hiểu điều đó và sẵn sàng trở thành một người cộng sự đắc lực của bạn để giải quyết các vấn đề về pháp lý - hợp đồng - lao động - thuế. Nếu biết sử dụng đúng giải pháp, công ty của bạn sẽ có bàn đạp để bước qua giai đoạn tăng trưởng của doanh nghiệp trên 03 năm.",
-        en: "Trong \"sơ đồ lộ trình doanh nghiệp\", bạn đang ở giai đoạn vàng để phát triển kinh doanh. Chúng tôi hiểu điều đó và sẵn sàng trở thành một người cộng sự đắc lực của bạn để giải quyết các vấn đề về pháp lý - hợp đồng - lao động - thuế. Nếu biết sử dụng đúng giải pháp, công ty của bạn sẽ có bàn đạp để bước qua giai đoạn tăng trưởng của doanh nghiệp trên 03 năm. aa"
+        en: "According to the \"business roadmap\", you are in the golden stage for developing business. Understanding that, we are ready to become your great partner to solve legal - contract - labor - tax issues. When using the right solution, your company will have a stepping stone to go through the growth period of businesses established over three years."
     },
 
     //end dnd3n
