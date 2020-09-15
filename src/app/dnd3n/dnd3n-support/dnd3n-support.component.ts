@@ -19,7 +19,7 @@ export class Dnd3nSupportComponent implements OnInit {
     email: string;
     service = [];
     description: string;
-    s1 = 'Luật sư đại diện sử lý tranh chấp';
+    s1 = 'Luật sư đại diện giải quyết tranh chấp';
     s2 = 'Thay đổi đăng ký kinh doanh';
     s3 = 'Quản trị pháp lý thường xuyên';
     s4 = 'Đăng ký đầu tư';
