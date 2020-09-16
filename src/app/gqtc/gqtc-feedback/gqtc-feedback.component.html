@@ -1,12 +1,12 @@
 <!-- <Change> -->
 <section id="feedback">
     <div class="container">
-        <h1 class="center" style="margin: 3rem 0;">{{global.locale=='vi'?'Vụ việc Asoka Law đã xử lý thành công':'Vụ việc Asoka Law đã xử lý thành công aaa'}}</h1>
+        <h1 class="center" style="margin: 3rem 0;">{{global.locale=='vi'?'Vụ việc Asoka Law đã xử lý thành công':'Successful cases by Asoka Law'}}</h1>
         <div class="feedback-slide-pltx">
             <div *ngFor="let item of data" class="feedback-slider-item">
                 <p class="pltx-des">{{global.locale == 'vi' ? item.description : item.en_description}}</p>
                 <hr class="pltx-line">
-                <p class="pltx-cate"><span>{{global.locale=='vi'?'Loại vụ việc':'Loại vụ việc aaa'}}</span>{{global.locale == 'vi' ? item.title : item.en_title}}</p>
+                <p class="pltx-cate"><span>{{global.locale=='vi'?'Loại vụ việc':'Case type'}}</span>{{global.locale == 'vi' ? item.title : item.en_title}}</p>
             </div>
         </div>
     </div>
