@@ -1724,7 +1724,7 @@ export const langDefined = {
     },
     'dkkdpricing-Từ': {
         vi: "Từ",
-        en: "Từ  aa"
+        en: "From"
     },
     'dkkdpricing-tuvansobovoichuyenvien': {
         vi: "Tư vấn sơ bộ với chuyên viên pháp lý",
@@ -2027,7 +2027,7 @@ export const langDefined = {
     },
     'tvlsservice-nam2019': {
         vi: "Năm 2019,",
-        en: "Năm 2019, aa"
+        en: "Năm 2019,"
     },
     'tvlsservice-dathuchien1000': {
         vi: "Asoka Law đã thực hiện 1.000+ giờ tư vấn",
@@ -2039,11 +2039,11 @@ export const langDefined = {
     },
     'tvlsservice-tuvanchung': {
         vi: "TƯ VẤN CHUNG",
-        en: "TƯ VẤN CHUNG aa"
+        en: "General Consultation"
     },
     'tvlsservice-1cauhoi': {
         vi: "01 câu hỏi",
-        en: "01 câu hỏi aa"
+        en: "01 QUESTION"
     },
 
 
