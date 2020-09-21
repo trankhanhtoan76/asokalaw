@@ -27,7 +27,7 @@ export class DkkdsupportComponent implements OnInit {
             'Thay đổi đăng ký kinh doanh',
             'Quản trị pháp lý thường xuyên',
             'Đăng ký sở hữu trí tuệ',
-            'Luật sư đại diện sử lý tranh chấp',
+            'Luật sư đại diện giải quyết tranh chấp',
             'Đăng ký lưu hành sản phẩm trên thị trường',
             'Đăng ký giấy phép hành nghề có điều kiện',
             'Dịch vụ khác'
