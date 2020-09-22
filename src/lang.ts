@@ -701,7 +701,7 @@ export const langDefined = {
     },
     'headermenu-tamnhinsumenh': {
         vi: "Tầm nhìn sứ mệnh",
-        en: "Vision mission"
+        en: "Vision-mission"
     },
     'headermenu-cohoinghenghiep': {
         vi: "Cơ hội nghề nghiệp",
