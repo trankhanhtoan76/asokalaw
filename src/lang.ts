@@ -1523,11 +1523,11 @@ export const langDefined = {
     // start dkkdbussiness
     'dkkdbussiness-congty1thanhvien': {
         vi: "Công ty TNHH 1 thành viên",
-        en: "Single-member Limited Liability Company"
+        en: "Single-member Limited Liability Company (SLLC)"
     },
     'dkkdbussiness-laq1doanhnghiep': {
         vi: "Là doanh nghiệp do 1 tổ chức hoặc cá nhân sở hữu, chịu trách nhiệm trong phạm vi số vốn điều lệ của công ty. ",
-        en: "Là doanh nghiệp do 1 tổ chức hoặc cá nhân sở hữu, chịu trách nhiệm trong phạm vi số vốn điều lệ của công ty.  aa"
+        en: "Owned by an individual or organization known as the member whose liability is limited within the company's charter."
     },
     'dkkdbussiness-uudiem': {
         vi: "Ưu điểm",
@@ -1535,19 +1535,19 @@ export const langDefined = {
     },
     'dkkdbussiness-chusohuutoanquyenquyetdinh': {
         vi: "Chủ sở hữu toàn quyền quyết định trong các vấn đề của doanh nghiệp.",
-        en: "Chủ sở hữu toàn quyền quyết định trong các vấn đề của doanh nghiệp.  aa"
+        en: "Owners have full control over their company matters."
     },
     'dkkdbussiness-dedangquanlyitruiro': {
         vi: "Dễ dàng quản lý, ít rủi ro vì chỉ chịu trách nhiệm trong phần vốn góp.",
-        en: "Dễ dàng quản lý, ít rủi ro vì chỉ chịu trách nhiệm trong phần vốn góp.  aa"
+        en: "Easy to manage and low-risk because the members are not personally liable for their companies' debts."
     },
     'dkkdbussiness-khongduocphathanh': {
         vi: "Không được phát hành cổ phần nên không huy động được vốn (nếu muốn huy động thêm vốn thì phải chuyển đổi loại hình thành TNHH 2 thành viên trở lên hoặc công ty cổ phần).",
-        en: "Không được phát hành cổ phần nên không huy động được vốn (nếu muốn huy động thêm vốn thì phải chuyển đổi loại hình thành TNHH 2 thành viên trở lên hoặc công ty cổ phần). aaa"
+        en: "Unable to raise capital as a SLLC is not allowed to issue shares (if the company wants to raise capital, it must register to change into a multi-member LLC or a joint stock compani)."
     },
     'dkkdbussiness-khitinhthuethunhap': {
         vi: "Khi tính thuế thu nhập doanh nghiệp, tiền lương của chủ sở hữu ko được khấu trừ.",
-        en: "Khi tính thuế thu nhập doanh nghiệp, tiền lương của chủ sở hữu ko được khấu trừ.  aa"
+        en: "When corporate income tax is calculated, the owner's salary is not deductible."
     },
     'dkkdbussiness-congty2thanhvien': {
         vi: "Công ty TNHH 2 thành viên trở lên",
@@ -1592,35 +1592,35 @@ export const langDefined = {
     //binh2808
     'dkkdbussiness-codongchiutrachnhiem': {
         vi: "Cổ đông chịu trách nhiệm trong phạm vi vốn góp.",
-        en: "Cổ đông chịu trách nhiệm trong phạm vi vốn góp. aa"
+        en: "The liability for shareholders is limited to their value of investment in the business."
     },
     'dkkdbussiness-coquyenphathanhcophan': {
         vi: "có quyền phát hành cổ phần các loại để huy động vốn.",
-        en: "có quyền phát hành cổ phần các loại để huy động vốn. aa"
+        en: "Is allowed to issue a range of shares to raise capital."
     },
     'dkkdbussiness-viecquanlyphuoctap': {
         vi: "Việc quản lý phức tạp.",
-        en: "Việc quản lý phức tạp. aa"
+        en: "Complicated management."
     },
     'dkkdbussiness-chedotaichinh': {
         vi: "Chế độ tài chính, kế toán, kiểm soát tương đối khó hơn các mô hình doanh nghiệp khác.",
-        en: "Chế độ tài chính, kế toán, kiểm soát tương đối khó hơn các mô hình doanh nghiệp khác. aa"
+        en: "Financial, accounting and controlling activities are more difficult than in other business models."
     },
     'dkkdbussiness-congtyhopdanh': {
         vi: "Công ty Hợp danh",
-        en: "Công ty Hợp danh aa"
+        en: "Partnership"
     },
     'dkkdbussiness-ladoanhnghiepitnhat2thanhvien': {
         vi: "Là doanh nghiệp do ít nhất 02 thành viên là cá nhân làm chủ sở hữu chung của công ty, cùng nhau kinh doanh dưới một tên chung (gọi là thành viên hợp danh). Ngoài các thành viên hợp danh, công ty có thể có thêm thành viên góp vốn.",
-        en: "Là doanh nghiệp do ít nhất 02 thành viên là cá nhân làm chủ sở hữu chung của công ty, cùng nhau kinh doanh dưới một tên chung (gọi là thành viên hợp danh). Ngoài các thành viên hợp danh, công ty có thể có thêm thành viên góp vốn. aa"
+        en: " An enterprise with at least 2 members who are individuals acting as joint owners of the company, doing business together under the same name (known as general partners). In addition, there might be capital contributors in the company."
     },
     'dkkdbussiness-taoduocsutintuongchokhachhang': {
         vi: "Tạo được sự tin tưởng cho khách hàng vì kinh doanh dựa trên nền tảng uy tín và tài sản của thành viên hợp danh.",
-        en: "Tạo được sự tin tưởng cho khách hàng vì kinh doanh dựa trên nền tảng uy tín và tài sản của thành viên hợp danh. aa"
+        en: "Able to gain trust in business relationships as a partnership is based on the general partners' reputation and assets."
     },
     'dkkdbussiness-thanhvienhopdanhkhongduocquyen': {
         vi: "Thành viên hợp danh không được quyền chuyển một phần hoặc toàn bộ phần vốn góp của mình tại công ty cho người khác nếu không được sự chấp thuận của các thành viên hợp danh còn lại.",
-        en: "Thành viên hợp danh không được quyền chuyển một phần hoặc toàn bộ phần vốn góp của mình tại công ty cho người khác nếu không được sự chấp thuận của các thành viên hợp danh còn lại. aa"
+        en: "General partners are not allowed to transfer part or all of their capital contribution in the company to other entities without the consent of the remaining general partners."
     },
     'dkkdbussiness-doanhnghieptunnhan': {
         vi: "Doanh nghiệp tư nhân",
