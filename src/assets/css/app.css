@@ -3332,13 +3332,15 @@ h1,h2,.padding-header{
 }
 .study-slick .slick-dots li {
     width: 30%;
+    margin-bottom: 10px;
 }
 #teacher .slick-track {
     padding: 4rem 0;
 }
 #study ul.slick-dots .slick-active
 {
-    color: blue;
+    color: #7DBDDE;
+    font-weight: 900;
 }
 @media only screen and (max-width: 768px) {
     #fix-dkdtbusiness-V

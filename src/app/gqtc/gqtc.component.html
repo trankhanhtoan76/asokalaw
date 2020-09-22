@@ -10,7 +10,7 @@
     line-height: 30px;
    ">{{global.locale=='vi'?'12+ năm kinh nghiệm, 1000+ phiên giải quyết tranh chấp. Đội ngũ luật sư Asoka Law đạt tỷ lệ kỳ vọng của khách hàng đến 80%, trong việc ngăn chặn mâu thuẫn bùng phát và bảo vệ lợi ích hợp pháp của doanh nghiệp.':'With over 12 year experience, 1000+ dispute resolution sessions, Asoka\'s lawyers has achieved approximately 80% of clients\' expectations in successfully preventing conflicts '}}</p>
                 <div>
-                    <a (click)="gotoTo('dnls12nkn')" style="color:#FFC107;padding: 0.75rem 3rem ; margin-top: 60px;border-width: 2px;" class="btn btn-outline-warning nut-xdsls-gqtc">{{global.locale=='vi'?'Xem danh sách luật sư':'Xem danh sách luật sư aaa'}}
+                    <a (click)="gotoTo('dsls')" style="color:#FFC107;padding: 0.75rem 3rem ; margin-top: 60px;border-width: 2px;" class="btn btn-outline-warning nut-xdsls-gqtc">{{global.locale=='vi'?'Xem danh sách luật sư':'Xem danh sách luật sư aaa'}}
                     </a>
                 </div>
             </div>
@@ -19,7 +19,7 @@
 </section>
 <app-gqtc-recognize></app-gqtc-recognize>
 <app-global-lawyer (showregistrationform)="showForm()">
-    <h1 class="sub-content-no-fluid" style="padding-top: 45px!important;">
+    <h1 class="sub-content-no-fluid" style="padding-top: 45px!important;" id="dsls">
         {{global.locale=='vi'?'Đội ngũ Luật sư 12+ năm kinh nghiệm':'Đội ngũ Luật sư 12+ năm kinh nghiệm aaa'}}
     </h1>
     <p class="center sub-content-no-fluid" style="padding-bottom: 45px!important;">
