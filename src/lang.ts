@@ -18,7 +18,7 @@ export const langDefined = {
     },
     'chon-linh-vuc-ban-quan-tam': {
         vi: "Chọn lĩnh vực bạn quan tâm",
-        en: "Choose a topic of interest"
+        en: ""
     },
     'doanh-nghiep': {
         vi: "Doanh nghiệp",
@@ -218,7 +218,7 @@ export const langDefined = {
     },
     'home-dangkykinhdoanh': {
         vi: " Đăng ký kinh doanh ",
-        en: " Business registrationt"
+        en: " Business registration"
     },
 
     'home-phap-ly-thuong-xuyen': {
@@ -492,7 +492,7 @@ export const langDefined = {
     },
     'home-dichvuphaplytheoyeucau': {
         vi: "Dịch vụ pháp lý yêu cầu tư vấn*",
-        en: "Legal services on demand*"
+        en: "Choose a service"
     },
     'vadidate-en1': {
         vi: "Bắt buộc nhập họ tên.",
@@ -556,7 +556,7 @@ export const langDefined = {
 
     'home-guiyeucau': {
         vi: "Gửi yêu cầu",
-        en: "Send"
+        en: "SEND REQUEST NOW"
     },
 
     'home-ketnoivoichungtoi': {
@@ -701,7 +701,7 @@ export const langDefined = {
     },
     'headermenu-tamnhinsumenh': {
         vi: "Tầm nhìn sứ mệnh",
-        en: "Vision-mission"
+        en: "Vision-Mission"
     },
     'headermenu-cohoinghenghiep': {
         vi: "Cơ hội nghề nghiệp",
@@ -726,6 +726,8 @@ export const langDefined = {
     'headermenu-dangkikinhdoanh': {
         vi: "Đăng ký kinh doanh",
         en: "Business Registration"
+
+
     },
     'headermenu-dangkidautu': {
         vi: "Đăng ký đầu tư",
@@ -862,7 +864,7 @@ export const langDefined = {
     },
     'dang-ky-kinh-doanh': {
         vi: "Đăng ký kinh doanh",
-        en: "Đăng ký kinh doanh a"
+        en: "Business registration"
     },
     'dang-ky-dau-tu': {
         vi: "Đăng ký đầu tư",

@@ -17,7 +17,7 @@
                     <img src="/assets/media/landingpage/price/1.svg">
                     <h2 lang-i18n key="home-khoi-tao-doanh-nghiep" default="Khởi tạo<br/>doanh nghiệp" ></h2>
                     <div class="price-list-price">
-                        <p><sup lang-i18n key="home-tu" default="Từ" ></sup>200.000<sup>VNĐ</sup></p>
+                        <p><sup lang-i18n key="home-tu" default="Từ" ></sup>{{global.locale=='vi'?'200.000':'25'}}<sup>{{global.locale=='vi'?'VNĐ':'USD'}}</sup></p>
                     </div>
                     <p class="sub-title" lang-i18n key="home-dich-vu-pho-bien" default="Dịch vụ phổ biến" ></p>
                     <div class="list-rule">
@@ -36,7 +36,7 @@
                     <img src="/assets/media/landingpage/price/3.svg">
                     <h2  lang-i18n key="home-doanhnghiep01-03nam" default="Doanh nghiệp<br/>01 đến 03 năm"></h2>
                     <div class="price-list-price">
-                        <p><sup lang-i18n key="home-tu" default="Từ" ></sup>1.990.000<sup>VNĐ</sup></p>
+                        <p><sup lang-i18n key="home-tu" default="Từ" ></sup>{{global.locale=='vi'?'1.990.000':'250'}}<sup>{{global.locale=='vi'?'VNĐ':'USD'}}</sup></p>
                     </div>
                     <p class="sub-title" lang-i18n key="home-dich-vu-pho-bien" default="Dịch vụ phổ biến" ></p>
                     <div class="list-rule">
@@ -55,7 +55,7 @@
                     <img src="/assets/media/landingpage/price/4.svg">
                     <h2  lang-i18n key="home-doanhnghieptren3nam" default="Doanh nghiệp<br/>trên 03 năm"></h2>
                     <div class="price-list-price">
-                        <p><sup  lang-i18n key="home-tu" default="Từ" ></sup>2.990.000<sup>VNĐ</sup></p>
+                        <p><sup  lang-i18n key="home-tu" default="Từ" ></sup>{{global.locale=='vi'?'2.590.000':'250'}}<sup>{{global.locale=='vi'?'VNĐ':'USD'}}</sup></p>
                     </div>
                     <p class="sub-title" lang-i18n key="home-dich-vu-pho-bien" default="Dịch vụ phổ biến" ></p>
                     <div class="list-rule">
@@ -139,15 +139,15 @@
             </div>
             <div class="modal-body">
                 <div class="form-group">
-                    <input (keyup)="n=true" [class.is-invalid]="!fieldValid(name)&&n" [class.is-valid]="fieldValid(name)&&n" type="text" class="form-control" [(ngModel)]="name" name="name" placeholder="Họ tên *">
+                    <input (keyup)="n=true" [class.is-invalid]="!fieldValid(name)&&n" [class.is-valid]="fieldValid(name)&&n" type="text" class="form-control" [(ngModel)]="name" name="name" placeholder="{{global.locale == 'vi' ? 'Họ tên' : 'Fullname'}}">
                     <i *ngIf="!fieldValid(name) && n"><small class="text-danger"   lang-i18n key="vadidate-en1" default="Bắt buộc nhập họ tên." ></small></i>
                 </div>
                 <div class="form-group">
-                    <input (keyup)="p=true" [class.is-invalid]="!fieldValid(phone,'phone')&&p" [class.is-valid]="fieldValid(phone,'phone')&&p" class="form-control" [(ngModel)]="phone" name="phone" type="text" placeholder="Số điện thoại *"/>
+                    <input (keyup)="p=true" [class.is-invalid]="!fieldValid(phone,'phone')&&p" [class.is-valid]="fieldValid(phone,'phone')&&p" class="form-control" [(ngModel)]="phone" name="phone" type="text" placeholder="{{global.locale == 'vi' ? 'Số điện thoại' : 'Phone number'}}"/>
                     <i *ngIf="!fieldValid(phone,'phone') && p"><small class="text-danger"   lang-i18n key="vadidate-en2" default="Bắt buộc nhập số điện thoại hợp lệ." ></small></i>
                 </div>
                 <div class="form-group">
-                    <input (keyup)="e=true" [class.is-invalid]="!fieldValid(email,'email')&&e" [class.is-valid]="fieldValid(email,'email')&&e" class="form-control" name="email" [(ngModel)]="email" type="text" placeholder="Email *"/>
+                    <input (keyup)="e=true" [class.is-invalid]="!fieldValid(email,'email')&&e" [class.is-valid]="fieldValid(email,'email')&&e" class="form-control" name="email" [(ngModel)]="email" type="text" placeholder="Email"/>
                     <i *ngIf="!fieldValid(email,'email') && e"><small class="text-danger"  lang-i18n key="vadidate-en3" default="Bắt buộc nhập email hợp lệ." ></small></i>
                 </div>
                 <div class="form-group">
@@ -220,7 +220,7 @@
                     </div>
                 </div>
                 <div class="form-group">
-                    <textarea [(ngModel)]="description" name="description" class="form-control" id="questiontext" rows="3" placeholder="Vấn đề bạn cần tư vấn"></textarea>
+                    <textarea [(ngModel)]="description" name="description" class="form-control" id="questiontext" rows="3" placeholder="{{global.locale == 'vi' ? 'Vấn đề bạn cần tư vấn' : 'Your question(s) for consultation'}}"></textarea>
                 </div>
             </div>
             <div class="modal-footer">

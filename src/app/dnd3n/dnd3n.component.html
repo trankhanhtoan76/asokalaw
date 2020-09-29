@@ -45,19 +45,19 @@
             </div>
             <div class="modal-body">
                 <div class="form-group">
-                    <input (keyup)="n=true" [class.is-invalid]="!fieldValid(name)&&n" [class.is-valid]="fieldValid(name)&&n" type="text" class="form-control" [(ngModel)]="name" name="name" placeholder="Họ tên *">
+                    <input (keyup)="n=true" [class.is-invalid]="!fieldValid(name)&&n" [class.is-valid]="fieldValid(name)&&n" type="text" class="form-control" [(ngModel)]="name" name="name" placeholder="{{global.locale=='vi'?'Họ tên *':'Fullname'}}">
                     <i *ngIf="!fieldValid(name) && n"><small class="text-danger">{{global.locale=='vi'?'Bắt buộc nhập họ tên.':'Please enter your name. '}}</small></i>
                 </div>
                 <div class="form-group">
-                    <input (keyup)="p=true" [class.is-invalid]="!fieldValid(phone,'phone')&&p" [class.is-valid]="fieldValid(phone,'phone')&&p" class="form-control" [(ngModel)]="phone" name="phone" type="text" placeholder="Số điện thoại *"/>
+                    <input (keyup)="p=true" [class.is-invalid]="!fieldValid(phone,'phone')&&p" [class.is-valid]="fieldValid(phone,'phone')&&p" class="form-control" [(ngModel)]="phone" name="phone" type="text" placeholder="{{global.locale=='vi'?'Số điện thoại *':'Phone number'}}"/>
                     <i *ngIf="!fieldValid(phone,'phone') && p"><small class="text-danger">{{global.locale=='vi'?'Bắt buộc nhập số điện thoại hợp lệ.':'Invalid phone number. '}}</small></i>
                 </div>
                 <div class="form-group">
-                    <input (keyup)="e=true" [class.is-invalid]="!fieldValid(email,'email')&&e" [class.is-valid]="fieldValid(email,'email')&&e" class="form-control" name="email" [(ngModel)]="email" type="text" placeholder="Email *"/>
+                    <input (keyup)="e=true" [class.is-invalid]="!fieldValid(email,'email')&&e" [class.is-valid]="fieldValid(email,'email')&&e" class="form-control" name="email" [(ngModel)]="email" type="text" placeholder="Email "/>
                     <i *ngIf="!fieldValid(email,'email') && e"><small class="text-danger">{{global.locale=='vi'?'Bắt buộc nhập email hợp lệ.':'Invalid email address. '}}</small></i>
                 </div>
                 <div class="form-group">
-                    <label>{{global.locale=='vi'?'Dịch vụ pháp lý yêu cầu tư vấn*':'Dịch vụ pháp lý yêu cầu tư vấn* aaa'}}</label>
+                    <label>{{global.locale=='vi'?'Dịch vụ pháp lý yêu cầu tư vấn*':'Choose a service'}}</label>
                     <div class="container-fluid">
                         <div class="row">
                             <div class="col-12">
@@ -94,11 +94,11 @@
                     </div>
                 </div>
                 <div class="form-group">
-                    <textarea [(ngModel)]="description" name="description" class="form-control" id="questiontext" rows="3" placeholder="Nhập câu hỏi mô tả tình trạng công ty bạn tại đây"></textarea>
+                    <textarea [(ngModel)]="description" name="description" class="form-control" id="questiontext" rows="3" placeholder="{{global.locale=='vi'?'Nhập câu hỏi mô tả tình trạng công ty bạn tại đây':'Insert your question(s) or describe the company\'s status'}}"></textarea>
                 </div>
             </div>
             <div class="modal-footer">
-                <button (click)="submit()" style="margin: auto; color: white;" type="button" class="btn btn-warning">{{global.locale=='vi'?'Gửi yêu cầu':'Gửi yêu cầu aaa'}}</button>
+                <button (click)="submit()" style="margin: auto; color: white;" type="button" class="btn btn-warning">{{global.locale=='vi'?'Gửi yêu cầu':'Send Request'}}</button>
             </div>
         </div>
     </div>
