@@ -3,25 +3,25 @@
         <div class="row">
             <div class="col-md-6 title-banner">
                 <div>
-                    <h1 class="title-dknh">{{global.locale=='vi'?'Đăng ký logo "chính chủ"':'Đăng ký logo "chính chủ" aaa'}}
-                        <b class="light-blue" style="font-size: 3.0rem">{{global.locale=='vi'?'24h':'24h aaa'}}</b> {{global.locale=='vi'?'nhận ngay kết quả':'nhận ngay kết quả aaa'}}</h1>
+                    <h1 class="title-dknh">{{global.locale=='vi'?'Đăng ký logo "chính chủ"':'Register your authentic logos & '}}
+                        <b class="light-blue" style="font-size: 3.0rem">{{global.locale=='vi'?'24h':''}}</b> {{global.locale=='vi'?'nhận ngay kết quả':'receive results within 24 hours.'}}</h1>
                 </div>
                 <div class="row title-dknh-m">
                     <div class="tab-record">
-                        <p class="unit align-left widthTabRecord"><i class="fa fa-circle float-left"></i>{{global.locale=='vi'?'Không phí ẩn':'Không phí ẩn aaa'}}</p>
+                        <p class="unit align-left widthTabRecord"><i class="fa fa-circle float-left"></i>{{global.locale=='vi'?'Không phí ẩn':'No hidden fees'}}</p>
                     </div>
                     <div class="tab-record">
-                        <p class="unit align-left widthTabRecord"><i class="fa fa-circle float-left"></i>{{global.locale=='vi'?'Tra cứu miễn phí':'Tra cứu miễn phí aaa'}}</p>
+                        <p class="unit align-left widthTabRecord"><i class="fa fa-circle float-left"></i>{{global.locale=='vi'?'Tra cứu miễn phí':'Free logo check-up'}}</p>
                     </div>
                     <div class="tab-record ">
-                        <p class="unit align-left widthTabRecord"><i class="fa fa-circle float-left"></i>{{global.locale=='vi'?'Ký & giao hồ sơ tận nơi':'Ký & giao hồ sơ tận nơi aaa'}}</p>
+                        <p class="unit align-left widthTabRecord"><i class="fa fa-circle float-left"></i>{{global.locale=='vi'?'Ký & giao hồ sơ tận nơi':'Sign and deliver documents on site'}}</p>
                     </div>
                 </div>
                 <div class="pc">
-                    <button onclick="$('#dknhform1').modal('show')" type="button" class="btn btn-warning">{{global.locale=='vi'?'TRA CỨU NHANH':'TRA CỨU NHANH aaa'}}</button>
+                    <button onclick="$('#dknhform1').modal('show')" type="button" class="btn btn-warning">{{global.locale=='vi'?'TRA CỨU NHANH':'QUICK LOGO CHECK-UP'}}</button>
                 </div>
                 <div class="sp center">
-                    <button onclick="$('#dknhform1').modal('show')" type="button" class="btn btn-warning">{{global.locale=='vi'?'TRA CỨU NHANH':'TRA CỨU NHANH aaa'}}</button>
+                    <button onclick="$('#dknhform1').modal('show')" type="button" class="btn btn-warning">{{global.locale=='vi'?'TRA CỨU NHANH':'QUICK LOGO CHECK-UP'}}</button>
                 </div>
             </div>
         </div>
@@ -50,21 +50,21 @@
             <div class="modal-body">
                 <app-form-group-field-info [submitClick]="submitClick" (dataName)="name=$event" (dataPhone)="phone=$event" (dataEmail)="email=$event"></app-form-group-field-info>
                 <div class="form-group">
-                    <textarea [(ngModel)]="description" name="description" class="form-control" rows="3" placeholder="{{global.locale=='vi'?'Tên nhãn hiệu, ngành nghề kinh doanh. Vd: Flow Media-Truyền thông marketing':'Tên nhãn hiệu, ngành nghề kinh doanh. Vd: Flow Media-Truyền thông marketing aaa'}}"></textarea>
+                    <textarea [(ngModel)]="description" name="description" class="form-control" rows="3" placeholder="{{global.locale=='vi'?'Tên nhãn hiệu, ngành nghề kinh doanh. Vd: Flow Media-Truyền thông marketing':'Trademark name - business lines Ex: Flow Media - Marketing solutions'}}"></textarea>
                 </div>
                 <div class="row">
                     <div class="form-group col-4">
-                        <app-form-field-upload label="Logo đính kèm 1" type="image" (data)="this.logo1=$event"></app-form-field-upload>
+                        <app-form-field-upload label="{{global.locale=='vi'?'Logo đính kèm 1':'Attached Logo 1'}}" type="image" (data)="this.logo1=$event"></app-form-field-upload>
                     </div>
                     <div class="form-group col-4">
-                        <app-form-field-upload label="Logo đính kèm 2" type="image" (data)="this.logo2=$event"></app-form-field-upload>
+                        <app-form-field-upload label="{{global.locale=='vi'?'Logo đính kèm 2':'Attached Logo 2'}}" type="image" (data)="this.logo2=$event"></app-form-field-upload>
                     </div>
                     <div class="form-group col-4">
-                        <app-form-field-upload label="Logo đính kèm 3" type="image" (data)="this.logo3=$event"></app-form-field-upload>
+                        <app-form-field-upload label="{{global.locale=='vi'?'Logo đính kèm 3':'Attached Logo 3'}}" type="image" (data)="this.logo3=$event"></app-form-field-upload>
                     </div>
                 </div>
                 <div class="flex-center-hor">
-                    <button (click)="submit()" type="button" class="btn btn-warning">{{global.locale=='vi'?'Gửi yêu cầu':'Gửi yêu cầu aaa'}}</button>
+                    <button (click)="submit()" type="button" class="btn btn-warning">{{global.locale=='vi'?'Gửi yêu cầu':'Send request'}}</button>
                 </div>
             </div>
         </div>

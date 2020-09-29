@@ -1215,7 +1215,7 @@ export const langDefined = {
     },
     'tu-van-mien-phi': {
         vi: "Tư vấn miễn phí: 096 191 4328",
-        en: "Tư vấn miễn phí: 096 191 4328 a"
+        en: "Contact for Free Advice: 096 191 4328"
     },
     // end dkdtfeedback
 
@@ -1515,7 +1515,7 @@ export const langDefined = {
     },
     'dkkd3step-tuvanmienphi': {
         vi: "Tư vấn miễn phí: 096 191 4328",
-        en: "Tư vấn miễn phí: 096 191 4328 aa"
+        en: "Contact for Free Advice: 096 191 4328"
     },
 
 // end dkkd3stepregistrate
@@ -2039,7 +2039,7 @@ export const langDefined = {
     },
     'tvlsservice-tuvanchung': {
         vi: "TƯ VẤN CHUNG",
-        en: "General Consultation"
+        en: "GENERAL CONSULTATION"
     },
     'tvlsservice-1cauhoi': {
         vi: "01 câu hỏi",

@@ -7,7 +7,7 @@
                 </h1>
                 <p class="text-center center">
                     <b>{{global.locale=='vi'?'Asoka Law chuyên hỗ trợ nhà đầu tư nước ngoài tại 02 hình thức':'Asoka Law specializes in supporting foreign investors through 02 activities'}}</b>{{global.locale=='vi'?': (1) thành lập mới doanh nghiệp và (2) góp vốn, mua cổ phần, vốn góp.':': (1) establishing new businesses and (2) contributing capital, buying shares and capital contribution.'}}
-                    <br>{{global.locale=='vi'?' Đây cũng là 02 hình thức đầu tư vào Việt Nam phù hợp nhất với cá nhân/ doanh nghiệp nước ngoài nhỏ và vừa.':' These are also 02 investment forms in Viet Nam most suitable for foreign individuals/ small and medium enterprises.'}}
+                    {{global.locale=='vi'?' Đây cũng là 02 hình thức đầu tư vào Việt Nam phù hợp nhất với cá nhân/ doanh nghiệp nước ngoài nhỏ và vừa.':' These are also 02 investment forms in Viet Nam most suitable for foreign individuals/ small and medium enterprises.'}}
                 </p>
             </div>
 
@@ -115,10 +115,11 @@
                                      data-parent="#accordion">
                                     <div class="card-body">
                                         <div class="content-dkdt">
+
+                                        <i class="fa fa-circle"></i>{{global.locale=='vi'?'Nhà đầu tư nhanh chóng thực hiện được việc kinh doanh dựa trên nền tảng hồ sơ/giấy phép doanh nghiệp cũ đã có sẵn.':' Quickly operating businesses with existing business licenses/profiles.'}}
                                         </div>
-                                        <i class="fa fa-circle"></i>{{global.locale=='vi'?'Nhà đầu tư nhanh chóng thực hiện được việc kinh doanh dựa trên nền tảng hồ sơ/giấy phép doanh nghiệp cũ đã có sẵn.':' Quickly operating businesses with existing business licenses/ profiles.'}}
                                         <div class="content-dkdt">
-                                            <i class="fa fa-circle"></i>{{global.locale=='vi'?' Tiếp cận ngay với thị trường, khách hàng cũ, từ đó việc phát triển kinh doanh có thể dễ dàng hơn so với việc thành lập doanh nghiệp mới hoàn toàn.':'  Immediately approaching old markets and customers, therefore developing businesses more easily compared to setting up completely new ones.'}}
+                                            <i class="fa fa-circle"></i>{{global.locale=='vi'?' Tiếp cận ngay với thị trường, khách hàng cũ, từ đó việc phát triển kinh doanh có thể dễ dàng hơn so với việc thành lập doanh nghiệp mới hoàn toàn.':' Immediately approaching old markets and customers, therefore developing businesses more easily compared to setting up completely new ones.'}}
                                         </div>
                                         <div class="content-dkdt">
                                             <i class="fa fa-circle"></i>{{global.locale=='vi'?' Thủ tục đăng ký góp vốn, mua cổ phần, phần vốn góp nhìn chung tương đối đơn giản hơn so với việc thành lập doanh nghiệp mới.':' Simpler procedures for registration of contributing capital, buying shares & capital contribution compared to establishing new businesses.'}}
@@ -172,10 +173,11 @@
                     </li>
                     <li class="nav-item nav-custom">
                         <a (click)="changepackage('Góp hoặc mua cổ phần/vốn góp','tab-mcp-V')" class="nav-link" style="border-top-right-radius: 30px;border-bottom-right-radius: 30px; "
-                           id="profile-tab" data-toggle="tab" href=".tdn" role="tab"
-                           aria-controls="profile" aria-selected="false">{{global.locale=='vi'?'Góp hoặc mua cổ phần/vốn góp':'Establishing new enterprises '}}</a>
+                          id="profile-tab" data-toggle="tab" href=".tdn" role="tab"
+                           aria-controls="profile" aria-selected="false">{{global.locale=='vi'?'Góp hoặc mua cổ phần/vốn góp':'Contribute or purchase shares/capital contributions '}}</a>
 
                     </li>
+                    <!--tdn-->
 
                 </ul>
             </div>
@@ -196,7 +198,7 @@
                             </div>
 
                             <div style="font-size: 10px; text-align: center">
-                                <sup style="font-size: 12px; top: -9px">{{global.locale=='vi'?'Từ':'Economic package'}}</sup><b style="font-size: 26px">
+                                <sup style="font-size: 12px; top: -9px">{{global.locale=='vi'?'Từ':'From'}}</sup><b style="font-size: 26px">
                                 12.000.000 </b>VND
 
                             </div>
@@ -299,7 +301,7 @@
 
                 <div class="col-md-4">
                     <h1>{{global.locale=='vi'?'Đề xuất các gói phí từ Asoka Law':'Recommended packages from Asoka Law '}}</h1>
-                    {{global.locale=='vi'?'Bấm chọn loại hình đầu tư phù hợp vơi nhu cầu của bạn để xem giá phí tương ứng.':'Recommended packages from Asoka Law '}}
+                    {{global.locale=='vi'?'Bấm chọn loại hình đầu tư phù hợp vơi nhu cầu của bạn để xem giá phí tương ứng.':'Click to choose the investment type that suits your needs to see the corresponding fees '}}
                 </div>
                 <div class="col-md-4">
                     <div class="box shadow-lg">

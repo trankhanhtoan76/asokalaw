@@ -1,12 +1,12 @@
 <form class="form-adv">
-    <h4>{{global.locale=='vi'?'Tư vấn pháp lý miễn phí':'Tư vấn pháp lý miễn phí aaa'}}</h4>
+    <h4>{{global.locale=='vi'?'Tư vấn pháp lý miễn phí':'FREE LEGAL ADVISE'}}</h4>
     <hr>
     <div class="form-group">
-        <input type="text" class="form-control" [(ngModel)]="name" name="name" placeholder="Họ tên">
+        <input type="text" class="form-control" [(ngModel)]="name" name="name" placeholder="{{global.locale=='vi'?'Họ và tên *':'Full name *'}}">
     </div>
     <div class="form-group">
         <input (keyup)="e=true" [class.is-invalid]="!form.fieldValid(email,'email')&&(e||submitClick)" [class.is-valid]="form.fieldValid(email,'email')" class="form-control" name="email" [(ngModel)]="email" type="text" placeholder="Email *"/>
-        <i *ngIf="!form.fieldValid(email,'email')&&(e||submitClick)"><small class="text-danger">{{global.locale=='vi'?'Bắt buộc nhập email hợp lệ.':'Bắt buộc nhập email hợp lệ. aaa'}}</small></i>
+        <i *ngIf="!form.fieldValid(email,'email')&&(e||submitClick)"><small class="text-danger">{{global.locale=='vi'?'Bắt buộc nhập email hợp lệ.':'Invalid email address.'}}</small></i>
     </div>
-    <div class="form-adv-btn"><button (click)="submit()" type="button" class="btn btn-warning">{{global.locale=='vi'?'Gửi yêu cầu':'Gửi yêu cầu aaa'}}</button></div>
+    <div class="form-adv-btn"><button (click)="submit()" type="button" class="btn btn-warning">{{global.locale=='vi'?'Gửi yêu cầu':'Send request'}}</button></div>
 </form>

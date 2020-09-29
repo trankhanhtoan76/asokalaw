@@ -49,18 +49,18 @@
             <div class="modal-body">
                 <div class="form-group">
                     <input (keyup)="n=true" [class.is-invalid]="!fieldValid(name)&&n" [class.is-valid]="fieldValid(name)&&n" type="text" class="form-control" [(ngModel)]="name" name="name" placeholder="{{global.locale=='vi'?'Họ tên *':'Full name*'}}">
-                    <i *ngIf="!fieldValid(name) && n"><small class="text-danger">{{global.locale=='vi'?'Bắt buộc nhập họ tên.':'Bắt buộc nhập họ tên. aaa'}}</small></i>
+                    <i *ngIf="!fieldValid(name) && n"><small class="text-danger">{{global.locale=='vi'?'Bắt buộc nhập họ tên.':'Please enter your name.'}}</small></i>
                 </div>
                 <div class="form-group">
                     <input (keyup)="p=true" [class.is-invalid]="!fieldValid(phone,'phone')&&p" [class.is-valid]="fieldValid(phone,'phone')&&p" class="form-control" [(ngModel)]="phone" name="phone" type="text" placeholder="{{global.locale=='vi'?'Số điện thoại *':'Mobile number*'}}"/>
-                    <i *ngIf="!fieldValid(phone,'phone') && p"><small class="text-danger">{{global.locale=='vi'?'Bắt buộc nhập số điện thoại hợp lệ.':'Bắt buộc nhập số điện thoại hợp lệ. aaa'}}</small></i>
+                    <i *ngIf="!fieldValid(phone,'phone') && p"><small class="text-danger">{{global.locale=='vi'?'Bắt buộc nhập số điện thoại hợp lệ.':'Invalid phone number.'}}</small></i>
                 </div>
                 <div class="form-group">
                     <input (keyup)="e=true" [class.is-invalid]="!fieldValid(email,'email')&&e" [class.is-valid]="fieldValid(email,'email')&&e" class="form-control" name="email" [(ngModel)]="email" type="text" placeholder="{{global.locale=='vi'?'Email *':'Email *'}}"/>
-                    <i *ngIf="!fieldValid(email,'email') && e"><small class="text-danger">{{global.locale=='vi'?'Bắt buộc nhập email hợp lệ.':'Bắt buộc nhập email hợp lệ. aaa'}}</small></i>
+                    <i *ngIf="!fieldValid(email,'email') && e"><small class="text-danger">{{global.locale=='vi'?'Bắt buộc nhập email hợp lệ.':'Invalid email address.'}}</small></i>
                 </div>
                 <div class="form-group">
-                    <label>{{global.locale=='vi'?'Loại hình công ty bạn muốn đăng ký':'Loại hình công ty bạn muốn đăng ký aaa'}}</label>
+                    <label>{{global.locale=='vi'?'Loại hình công ty bạn muốn đăng ký':'Select a company type'}}</label>
                     <select class="form-control" name="type_company" [(ngModel)]="typeCompany">
                         <option value="Công ty TNHH 1 thành viên">{{global.locale=='vi'?'Công ty TNHH 1 thành viên':'Single-member Limited Liability Company '}}</option>
                         <option value="Công ty TNHH 2 thành viên trở lên">{{global.locale=='vi'?'Công ty TNHH 2 thành viên trở lên':'Multiple member limited liability company (MLLC)'}}</option>
@@ -71,7 +71,7 @@
                     </select>
                 </div>
                 <div class="form-group">
-                    <label>{{global.locale=='vi'?'Lựa chọn gói pháp lý phù hợp với nhu cầu của bạn':'Lựa chọn gói pháp lý phù hợp với nhu cầu của bạn aaa'}}</label>
+                    <label>{{global.locale=='vi'?'Lựa chọn gói pháp lý phù hợp với nhu cầu của bạn':'Select a service package '}}</label>
                     <div class="container-fluid">
                         <div class="row">
                             <div class="col-md-6">
@@ -90,7 +90,7 @@
                     </div>
                 </div>
                 <div class="form-group">
-                    <label>{{global.locale=='vi'?'Bạn cần tư vấn thêm':'Bạn cần tư vấn thêm aaa'}}</label>
+                    <label>{{global.locale=='vi'?'Bạn cần tư vấn thêm':'You need more advice'}}</label>
                     <div class="container-fluid">
                         <div class="row">
                             <div class="col-md-12">
@@ -112,7 +112,7 @@
                 </div>
             </div>
             <div class="modal-footer" style="text-align: center;">
-                <button style="margin: auto; color: white;" (click)="submit()" type="button" class="btn btn-warning">{{global.locale=='vi'?'Gửi yêu cầu':'Send require'}}</button>
+                <button style="margin: auto; color: white;" (click)="submit()" type="button" class="btn btn-warning">{{global.locale=='vi'?'Gửi yêu cầu':'Send request now'}}</button>
             </div>
         </div>
     </div>

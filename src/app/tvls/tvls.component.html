@@ -34,12 +34,12 @@
 <app-tvlsservice></app-tvlsservice>
 <app-tvlseffective></app-tvlseffective>
 <app-global-lawyer (showregistrationform)="showForm1($event)">
-    <h1 class="sub-content-no-fluid" style="padding-top: 45px!important;">{{global.locale=='vi'?'Đội ngũ luật sư & cố vấn phù hợp cho bạn':'Đội ngũ luật sư & cố vấn phù hợp cho bạn aaa'}}</h1>
+    <h1 class="sub-content-no-fluid" style="padding-top: 45px!important;">{{global.locale=='vi'?'Đội ngũ luật sư & cố vấn phù hợp cho bạn':'Asoka Law\'s Team of Lawyer and Advisors '}}</h1>
 </app-global-lawyer>
 <app-tvlsconsult></app-tvlsconsult>
 <app-tvlssupport></app-tvlssupport>
 <div class="tuvanmienphi" style="text-align: center;" >
-    <button (click)="showForm1()" type="button" class="btn btn-warning">TƯ VẤN DỊCH VỤ</button>
+    <button (click)="showForm1()" type="button" class="btn btn-warning">{{global.locale=='vi'?'TƯ VẤN DỊCH VỤ':'GET FREE CONSULTATION'}}</button>
 </div>
 
 <app-tvlsfeedback></app-tvlsfeedback>

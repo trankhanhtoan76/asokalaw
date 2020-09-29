@@ -103,7 +103,7 @@
                                 <div class="create-lawyer-info">
                                     <p class="create-lawyer-name"><span>{{global.locale=='vi'?'Luật sư':'Lawyer'}} <span>{{global.locale=='vi'?'Tâm Dương':'Tam Duong'}}</span></span><span>{{global.locale=='vi'?'Truyền thông - Sự kiện & Doanh nghiệp':'Truyền thông - Sự kiện & Doanh nghiệp aaa'}}</span></p>
                                     <p class="create-lawyer-star">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
-                                    <p class="create-lawyer-review">{{global.locale=='vi'?'168 lượt đặt tư vấn':'168 lượt đặt tư vấn aaa'}}</p>
+                                    <p class="create-lawyer-review">{{global.locale=='vi'?'168 lượt đặt tư vấn':'168 cases booked'}}</p>
                                 </div>
                             </li>
                             <li>
@@ -111,7 +111,7 @@
                                 <div class="create-lawyer-info">
                                     <p class="create-lawyer-name"><span>{{global.locale=='vi'?'Luật sư':'Lawyer'}} <span>{{global.locale=='vi'?'Đặng Thành Tài':'Dang Thanh Tai'}}</span></span><span>{{global.locale=='vi'?'Tranh chấp Hàng hải - Thương mại & Doanh nghiệp':'Tranh chấp Hàng hải - Thương mại & Doanh nghiệp aaa'}}</span></p>
                                     <p class="create-lawyer-star">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
-                                    <p class="create-lawyer-review">{{global.locale=='vi'?'159 lượt đặt tư vấn':'159 lượt đặt tư vấn aaa'}}</p>
+                                    <p class="create-lawyer-review">{{global.locale=='vi'?'159 lượt đặt tư vấn':'159 cases booked'}}</p>
                                 </div>
                             </li>
                         </ul>
@@ -123,7 +123,7 @@
                                 <div class="create-lawyer-info">
                                     <p class="create-lawyer-name"><span>{{global.locale=='vi'?'Cố vấn thuế ':'Cố vấn thuế  aaa'}}<span>{{global.locale=='vi'?'Lê Bình':'Le Binh'}}</span></span><span>{{global.locale=='vi'?'Kế toán - Thuế - Lao động - BHXH Doanh nghiệp':'Kế toán - Thuế - Lao động - BHXH Doanh nghiệp aaa'}}</span></p>
                                     <p class="create-lawyer-star">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
-                                    <p class="create-lawyer-review">{{global.locale=='vi'?'145 lượt đặt tư vấn':'145 lượt đặt tư vấn aaa'}}</p>
+                                    <p class="create-lawyer-review">{{global.locale=='vi'?'145 lượt đặt tư vấn':'145 cases booked'}}</p>
                                 </div>
                             </li>
                             <li>
@@ -131,7 +131,7 @@
                                 <div class="create-lawyer-info">
                                     <p class="create-lawyer-name"><span>{{global.locale=='vi'?'Luật sư':'Luật sư aaa'}} <span>{{global.locale=='vi'?'Nguyễn Sơn Trà':'Nguyen Son Tra'}}</span></span><span>{{global.locale=='vi'?'Giải quyết tranh chấp - Thu hồi nợ - Hôn nhân gia đình - Thừa kế & Một số vấn đề dân sự khác':'Giải quyết tranh chấp - Thu hồi nợ - Hôn nhân gia đình - Thừa kế & Một số vấn đề dân sự khác aaa'}}</span></p>
                                     <p class="create-lawyer-star">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
-                                    <p class="create-lawyer-review">{{global.locale=='vi'?'261 lượt đặt tư vấn':'261 lượt đặt tư vấn aaa'}}</p>
+                                    <p class="create-lawyer-review">{{global.locale=='vi'?'261 lượt đặt tư vấn':'261 cases booked'}}</p>
                                 </div>
                             </li>
                         </ul>
@@ -403,16 +403,16 @@
                     <button type="button" class="form-close" data-dismiss="modal">&times;</button>
                     <form>
                         <div class="form-group">
-                            <input (keyup)="n=true" [class.is-invalid]="!fieldValid(name)&&n" [class.is-valid]="fieldValid(name)&&n" type="text" class="form-control" [(ngModel)]="name" name="name" placeholder="Họ tên *">
-                            <i *ngIf="!fieldValid(name) && n"><small class="text-danger">{{global.locale=='vi'?'Bắt buộc nhập họ tên.':'Bắt buộc nhập họ tên. aaa'}}</small></i>
+                            <input (keyup)="n=true" [class.is-invalid]="!fieldValid(name)&&n" [class.is-valid]="fieldValid(name)&&n" type="text" class="form-control" [(ngModel)]="name" name="name" placeholder="{{global.locale=='vi'?'Họ và tên *':'Full name *'}}">
+                            <i *ngIf="!fieldValid(name) && n"><small class="text-danger">{{global.locale=='vi'?'Bắt buộc nhập họ tên.':'Please enter your name. '}}</small></i>
                         </div>
                         <div class="form-group">
-                            <input (keyup)="p=true" [class.is-invalid]="!fieldValid(phone,'phone')&&p" [class.is-valid]="fieldValid(phone,'phone')&&p" class="form-control" [(ngModel)]="phone" name="phone" type="text" placeholder="Số điện thoại *"/>
-                            <i *ngIf="!fieldValid(phone,'phone') && p"><small class="text-danger">{{global.locale=='vi'?'Bắt buộc nhập số điện thoại hợp lệ.':'Bắt buộc nhập số điện thoại hợp lệ. aaa'}}</small></i>
+                            <input (keyup)="p=true" [class.is-invalid]="!fieldValid(phone,'phone')&&p" [class.is-valid]="fieldValid(phone,'phone')&&p" class="form-control" [(ngModel)]="phone" name="phone" type="text" placeholder="{{global.locale=='vi'?'Số điện thoại *':'Phone number *'}}"/>
+                            <i *ngIf="!fieldValid(phone,'phone') && p"><small class="text-danger">{{global.locale=='vi'?'Bắt buộc nhập số điện thoại hợp lệ.':'Invalid phone number. '}}</small></i>
                         </div>
                         <div class="form-group">
                             <input (keyup)="e=true" [class.is-invalid]="!fieldValid(email,'email')&&e" [class.is-valid]="fieldValid(email,'email')&&e" class="form-control" name="email" [(ngModel)]="email" type="text" placeholder="Email *"/>
-                            <i *ngIf="!fieldValid(email,'email') && e"><small class="text-danger">{{global.locale=='vi'?'Bắt buộc nhập email hợp lệ.':'Bắt buộc nhập email hợp lệ. aaa'}}</small></i>
+                            <i *ngIf="!fieldValid(email,'email') && e"><small class="text-danger">{{global.locale=='vi'?'Bắt buộc nhập email hợp lệ.':'Invalid email address. '}}</small></i>
                         </div>
                         <div class="form-group">
                             <label class="form-label">{{global.locale=='vi'?'Dịch vụ pháp lý yêu cầu tư vấn*':'Dịch vụ pháp lý yêu cầu tư vấn* aaa'}}</label>

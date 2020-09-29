@@ -10,7 +10,7 @@
     line-height: 30px;
    ">{{global.locale=='vi'?'12+ năm kinh nghiệm, 1000+ phiên giải quyết tranh chấp. Đội ngũ luật sư Asoka Law đạt tỷ lệ kỳ vọng của khách hàng đến 80%, trong việc ngăn chặn mâu thuẫn bùng phát và bảo vệ lợi ích hợp pháp của doanh nghiệp.':'With over 12 year experience, 1000+ dispute resolution sessions, Asoka\'s lawyers has achieved approximately 80% of clients\' expectations in successfully preventing conflicts '}}</p>
                 <div>
-                    <a (click)="gotoTo('dsls')" style="color:#FFC107;padding: 0.75rem 3rem ; margin-top: 60px;border-width: 2px;" class="btn btn-outline-warning nut-xdsls-gqtc">{{global.locale=='vi'?'Xem danh sách luật sư':'Xem danh sách luật sư aaa'}}
+                    <a (click)="gotoTo('dsls')" style="color:#FFC107;padding: 0.75rem 3rem ; margin-top: 60px;border-width: 2px;" class="btn btn-outline-warning nut-xdsls-gqtc">{{global.locale=='vi'?'Xem danh sách luật sư':'See lawyer list'}}
                     </a>
                 </div>
             </div>
@@ -20,10 +20,10 @@
 <app-gqtc-recognize></app-gqtc-recognize>
 <app-global-lawyer (showregistrationform)="showForm()">
     <h1 class="sub-content-no-fluid" style="padding-top: 45px!important;" id="dsls">
-        {{global.locale=='vi'?'Đội ngũ Luật sư 12+ năm kinh nghiệm':'Đội ngũ Luật sư 12+ năm kinh nghiệm aaa'}}
+        {{global.locale=='vi'?'Đội ngũ Luật sư 12+ năm kinh nghiệm':' Team of lawyers with 12+ year experience\n'}}
     </h1>
     <p class="center sub-content-no-fluid" style="padding-bottom: 45px!important;">
-        {{global.locale=='vi'?'Các luật sư của Asoka Law đã tham gia +1000 phiên giải quyết tranh chấp cho doanh nghiệp. Từ các vụ việc phổ biến như: đòi nợ, yêu cầu bồi thường thiệt hại hợp đồng, cho đến các vụ việc mang tính đặc thù như: xử lý vi phạm về hàng hải, thế chấp, bất động sản, bảo hiểm... Mạng lưới luật sư đại diện giải quyết tranh chấp của chúng tôi hiện có ở: Tp. Hồ Chí Minh, Hà Nội, Đà Nẵng, Vũng Tàu, Nha Trang.':'Các luật sư của Asoka Law đã tham gia +1000 phiên giải quyết tranh chấp cho doanh nghiệp. Từ các vụ việc phổ biến như: đòi nợ, yêu cầu bồi thường thiệt hại hợp đồng, cho đến các vụ việc mang tính đặc thù như: xử lý vi phạm về hàng hải, thế chấp, bất động sản, bảo hiểm... Mạng lưới luật sư đại diện giải quyết tranh chấp của chúng tôi hiện có ở: Tp. Hồ Chí Minh, Hà Nội, Đà Nẵng, Vũng Tàu, Nha Trang. aaa'}}
+        {{global.locale=='vi'?'Các luật sư của Asoka Law đã tham gia +1000 phiên giải quyết tranh chấp cho doanh nghiệp. Từ các vụ việc phổ biến như: đòi nợ, yêu cầu bồi thường thiệt hại hợp đồng, cho đến các vụ việc mang tính đặc thù như: xử lý vi phạm về hàng hải, thế chấp, bất động sản, bảo hiểm... Mạng lưới luật sư đại diện giải quyết tranh chấp của chúng tôi hiện có ở: Tp. Hồ Chí Minh, Hà Nội, Đà Nẵng, Vũng Tàu, Nha Trang.':'Asoka Law\'s attorneys have participated in +1000 business dispute resolution sessions, from common cases like debt collection, contract damage claims, to specific cases such as: handling maritime violations, mortgages, real estate, and insurance. Our lawyer network for dispute resolution is available in: Ho Chi Minh City, Hanoi, Da Nang, Vung Tau, and Nha Trang.'}}
     </p>
 </app-global-lawyer>
 <app-gqtc-three-rule></app-gqtc-three-rule>
@@ -41,19 +41,19 @@
             </div>
             <div class="modal-body">
                 <div class="form-group">
-                    <input (keyup)="n=true" [class.is-invalid]="!fieldValid(name)&&n" [class.is-valid]="fieldValid(name)&&n" type="text" class="form-control" [(ngModel)]="name" name="name" placeholder="{{global.locale=='vi'?'Họ tên *':'Name *'}}">
-                    <i *ngIf="!fieldValid(name) && n"><small class="text-danger">{{global.locale=='vi'?'Bắt buộc nhập họ tên.':'Bắt buộc nhập họ tên. aaa'}}</small></i>
+                    <input (keyup)="n=true" [class.is-invalid]="!fieldValid(name)&&n" [class.is-valid]="fieldValid(name)&&n" type="text" class="form-control" [(ngModel)]="name" name="name" placeholder="{{global.locale=='vi'?'Họ tên *':'Full Name *'}}">
+                    <i *ngIf="!fieldValid(name) && n"><small class="text-danger">{{global.locale=='vi'?'Bắt buộc nhập họ tên.':'Please enter your name.'}}</small></i>
                 </div>
                 <div class="form-group">
                     <input (keyup)="p=true" [class.is-invalid]="!fieldValid(phone,'phone')&&p" [class.is-valid]="fieldValid(phone,'phone')&&p" class="form-control" [(ngModel)]="phone" name="phone" type="text" placeholder="{{global.locale=='vi'?'Số điện thoại *':'Telephone Number *'}}"/>
-                    <i *ngIf="!fieldValid(phone,'phone') && p"><small class="text-danger">{{global.locale=='vi'?'Bắt buộc nhập số điện thoại hợp lệ.':'Bắt buộc nhập số điện thoại hợp lệ. aaa'}}</small></i>
+                    <i *ngIf="!fieldValid(phone,'phone') && p"><small class="text-danger">{{global.locale=='vi'?'Bắt buộc nhập số điện thoại hợp lệ.':'Invalid phone number.'}}</small></i>
                 </div>
                 <div class="form-group">
                     <input (keyup)="e=true" [class.is-invalid]="!fieldValid(email,'email')&&e" [class.is-valid]="fieldValid(email,'email')&&e" class="form-control" name="email" [(ngModel)]="email" type="text" placeholder="{{global.locale=='vi'?'Email *':'Email *'}}"/>
-                    <i *ngIf="!fieldValid(email,'email') && e"><small class="text-danger">{{global.locale=='vi'?'Bắt buộc nhập email hợp lệ.':'Bắt buộc nhập email hợp lệ. aaa'}}</small></i>
+                    <i *ngIf="!fieldValid(email,'email') && e"><small class="text-danger">{{global.locale=='vi'?'Bắt buộc nhập email hợp lệ.':'Invalid email address.'}}</small></i>
                 </div>
                 <div class="form-group">
-                    <label>{{global.locale=='vi'?'Chọn gói dịch vụ phù hợp với nhu cầu của bạn':'Chọn gói dịch vụ phù hợp với nhu cầu của bạn aaa'}}</label>
+                    <label>{{global.locale=='vi'?'Chọn gói dịch vụ phù hợp với nhu cầu của bạn':'Choose a service'}}</label>
                     <div class="container-fluid">
                         <div class="row">
                             <div class="col-md-12">
@@ -78,7 +78,7 @@
                     </div>
                 </div>
                 <div class="form-group">
-                    <label class="col-form-label">{{global.locale=='vi'?'Diễn tả sơ bộ tình trạng tranh chấp của doanh nghiệp bạn':'Diễn tả sơ bộ tình trạng tranh chấp của doanh nghiệp bạn aaa'}}<sup>*</sup></label>
+                    <label class="col-form-label">{{global.locale=='vi'?'Diễn tả sơ bộ tình trạng tranh chấp của doanh nghiệp bạn':'Briefly describe the dispute situation of your business '}}<sup>*</sup></label>
                     <textarea class="form-control" name="description" [(ngModel)]="description"></textarea>
                 </div>
                 <div class="form-group">
@@ -94,7 +94,7 @@
                 </div>
             </div>
             <div class="modal-footer" style="text-align: center;">
-                <button style="margin: auto; color: white;" (click)="submit()" type="button" class="btn btn-warning">{{global.locale=='vi'?'Gửi yêu cầu':'Send require'}}</button>
+                <button style="margin: auto; color: white;" (click)="submit()" type="button" class="btn btn-warning">{{global.locale=='vi'?'Gửi yêu cầu':'SEND REQUEST NOW'}}</button>
             </div>
         </div>
     </div>

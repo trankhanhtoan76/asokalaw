@@ -32,7 +32,8 @@ export class PLSKStudyContentComponent implements OnInit {
         prevArrow: '<img src="/assets/media/DKDT/ly-do-dkdt/Asset 32.svg" class=" nextArrowBtnFeedback feedback" style="margin-bottom: 30px;">',
         customPaging: function(slider, i) {
           if (i === 0) {
-            return '01. Sự kiện cần xin giấy phép';
+            return '01. Sự kiện cần xin giấ' +
+                'y phép';
           } else if (i === 1) {
             return '02. Thủ tục xin giấy phép';
           } else if (i === 2) {

@@ -24,10 +24,10 @@
 <app-dkdtreason></app-dkdtreason>
 <app-global-lawyer (showregistrationform)="showRegistrationForm($event)">
     <div>
-        <h1 class="sub-content-no-fluid" style="padding-top: 45px!important;">{{global.locale=='vi'?'Luật sư và cố vấn 10+ năm kinh nghiệm':'Luật sư và cố vấn 10+ năm kinh nghiệm aaa'}}</h1>
+        <h1 class="sub-content-no-fluid" style="padding-top: 45px!important;">{{global.locale=='vi'?'Luật sư và cố vấn 10+ năm kinh nghiệm':'Lawyers and advisors 10+ years of experience'}}</h1>
     </div>
     <p class="center sub-content-no-fluid" style="padding-bottom: 45px!important;">
-        {{global.locale=='vi'?'Đội ngũ luật sư và cố vấn của chúng tôi đều trải qua 10+ năm kinh nghiệm trong lĩnh vực pháp lý doanh nghiệp và đầu tư. Chia sẻ với chúng tôi dự định kinh doanh của bạn tại Việt Nam, Asoka sẽ giúp bạn thực thi với một nền móng pháp lý vững chắc.':'Đội ngũ luật sư và cố vấn của chúng tôi đều trải qua 10+ năm kinh nghiệm trong lĩnh vực pháp lý doanh nghiệp và đầu tư. Chia sẻ với chúng tôi dự định kinh doanh của bạn tại Việt Nam, Asoka sẽ giúp bạn thực thi với một nền móng pháp lý vững chắc. aaa'}}
+        {{global.locale=='vi'?'Đội ngũ luật sư và cố vấn của chúng tôi đều trải qua 10+ năm kinh nghiệm trong lĩnh vực pháp lý doanh nghiệp và đầu tư. Chia sẻ với chúng tôi dự định kinh doanh của bạn tại Việt Nam, Asoka sẽ giúp bạn thực thi với một nền móng pháp lý vững chắc.':'Our team of lawyers and advisors have 10+ years of experience in corporate legal and investment. Share with us your business intentions in Vietnam, and Asoka will help you enforce with a strong legal foundation.'}}
     </p>
 </app-global-lawyer>
 <app-dkdtfeedback></app-dkdtfeedback>
@@ -41,7 +41,7 @@
             </div>
             <div class="col-md-4">
                 <div style="width: fit-content; float:right ; ">
-                    <button onclick="$('#dkdtform1').modal('show')" style="padding: 8px 15px; font-size: 16px;" class="btn btn-warning sub-button shadow">{{global.locale=='vi'?'Yêu cầu tư vấn':'Yêu cầu tư vấn aaa'}}</button>
+                    <button onclick="$('#dkdtform1').modal('show')" style="padding: 8px 15px; font-size: 16px;" class="btn btn-warning sub-button shadow">{{global.locale=='vi'?'Yêu cầu tư vấn':'Send request now'}}</button>
                 </div>
             </div>
         </div>
@@ -50,7 +50,7 @@
             </div>
             <div class="col-md-4 pt-3">
                 <div>
-                    <button onclick="$('#dkdtform1').modal('show')" style="padding: 8px 15px; font-size: 16px;" class="btn btn-warning sub-button shadow">{{global.locale=='vi'?'Yêu cầu tư vấn':'Yêu cầu tư vấn aaa'}}</button>
+                    <button onclick="$('#dkdtform1').modal('show')" style="padding: 8px 15px; font-size: 16px;" class="btn btn-warning sub-button shadow">{{global.locale=='vi'?'Yêu cầu tư vấn':'Send request now'}}</button>
                 </div>
             </div>
         </div>
@@ -67,15 +67,15 @@
             <div class="modal-body">
                 <div class="form-group">
                     <input (keyup)="n=true" [class.is-invalid]="!fieldValid(name)&&n" [class.is-valid]="fieldValid(name)&&n" type="text" class="form-control" [(ngModel)]="name" name="name" placeholder="{{global.locale=='vi'?'Họ tên *':'Full Name *'}}">
-                    <i *ngIf="!fieldValid(name) && n"><small class="text-danger">{{global.locale=='vi'?'Bắt buộc nhập họ tên.':'Bắt buộc nhập họ tên. aaa'}}</small></i>
+                    <i *ngIf="!fieldValid(name) && n"><small class="text-danger">{{global.locale=='vi'?'Bắt buộc nhập họ tên.':'Please enter your name.'}}</small></i>
                 </div>
                 <div class="form-group">
                     <input (keyup)="p=true" [class.is-invalid]="!fieldValid(phone,'phone')&&p" [class.is-valid]="fieldValid(phone,'phone')&&p" class="form-control" [(ngModel)]="phone" name="phone" type="text" placeholder="{{global.locale=='vi'?'Số điện thoại *':'Telephone number *'}}"/>
-                    <i *ngIf="!fieldValid(phone,'phone') && p"><small class="text-danger">{{global.locale=='vi'?'Bắt buộc nhập số điện thoại hợp lệ.':'Bắt buộc nhập số điện thoại hợp lệ. aaa'}}</small></i>
+                    <i *ngIf="!fieldValid(phone,'phone') && p"><small class="text-danger">{{global.locale=='vi'?'Bắt buộc nhập số điện thoại hợp lệ.':'Invalid phone number.'}}</small></i>
                 </div>
                 <div class="form-group">
                     <input (keyup)="e=true" [class.is-invalid]="!fieldValid(email,'email')&&e" [class.is-valid]="fieldValid(email,'email')&&e" class="form-control" name="email" [(ngModel)]="email" type="text" placeholder="{{global.locale=='vi'?'Email *':'Email *'}}"/>
-                    <i *ngIf="!fieldValid(email,'email') && e"><small class="text-danger">{{global.locale=='vi'?'Bắt buộc nhập email hợp lệ.':'Bắt buộc nhập email hợp lệ. aaa'}}</small></i>
+                    <i *ngIf="!fieldValid(email,'email') && e"><small class="text-danger">{{global.locale=='vi'?'Bắt buộc nhập email hợp lệ.':'Invalid email address.'}}</small></i>
                 </div>
                 <div class="form-group">
                     <label>{{global.locale=='vi'?'Chọn hình thức đăng ký đầu tư phù hợp với bạn':'Choose a suitable investment method:'}}</label>
@@ -99,7 +99,7 @@
                     </div>
                 </div>
                 <div class="form-group">
-                    <label>{{global.locale=='vi'?'Gói dịch vụ bạn muốn đăng ký':'Gói dịch vụ bạn muốn đăng ký aaa'}}</label>
+                    <label>{{global.locale=='vi'?'Gói dịch vụ bạn muốn đăng ký':'Select a service package'}}</label>
                     <div class="container-fluid">
                         <div class="row">
                             <div class="col-md-6">
@@ -118,12 +118,12 @@
                     </div>
                 </div>
                 <div class="form-group problem">
-                    <label>{{global.locale=='vi'?'Mô tả dự định ban đầu của bạn':'Mô tả dự định ban đầu của bạn aaa'}}</label>
+                    <label>{{global.locale=='vi'?'Mô tả dự định ban đầu của bạn':'Describe your investment plan'}}</label>
                     <textarea class="form-control" [(ngModel)]="description" name="description" rows="2"></textarea>
                 </div>
             </div>
             <div class="modal-footer" style="text-align: center;">
-                <button style="margin: auto; color: white;" (click)="submit()" type="button" class="btn btn-warning">{{global.locale=='vi'?'Gửi yêu cầu':'Send require'}}</button>
+                <button style="margin: auto; color: white;" (click)="submit()" type="button" class="btn btn-warning">{{global.locale=='vi'?'Gửi yêu cầu':'SEND REQUEST NOW'}}</button>
             </div>
         </div>
     </div>
