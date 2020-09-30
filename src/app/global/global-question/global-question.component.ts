@@ -1,5 +1,6 @@
 import {Component, Input, OnInit} from '@angular/core';
 import {DomSanitizer, SafeHtml} from "@angular/platform-browser";
+import {GlobalService} from "../../service/global.service";
 
 declare var $: any;
 
@@ -13,7 +14,7 @@ export class GlobalQuestionComponent implements OnInit {
     @Input() contentsright;
     hadInit: boolean;
 
-    constructor(private _sanitizer: DomSanitizer) {
+    constructor(private _sanitizer: DomSanitizer, public global: GlobalService) {
     }
 
     ngOnInit(): void {
