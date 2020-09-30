@@ -86,7 +86,7 @@
             </div>
             <div class="modal-body">
                 <div class="form-group">
-                    <input (keyup)="n=true" [class.is-invalid]="!fieldValid(name)&&n" [class.is-valid]="fieldValid(name)&&n" type="text" class="form-control" [(ngModel)]="name" name="name" placeholder="{{global.locale=='vi'?'Họ tên *':'Name *'}}">
+                    <input (keyup)="n=true" [class.is-invalid]="!fieldValid(name)&&n" [class.is-valid]="fieldValid(name)&&n" type="text" class="form-control" [(ngModel)]="name" name="name" placeholder="{{global.locale=='vi'?'Họ tên *':'Full name *'}}">
                     <i *ngIf="!fieldValid(name) && n"><small class="text-danger">{{global.locale=='vi'?'Bắt buộc nhập họ tên.':'Please enter your name. '}}</small></i>
                 </div>
                 <div class="form-group">

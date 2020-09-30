@@ -21,11 +21,11 @@
                                 <div class="box shadow-lg" style="border: 1px solid #7A7C7D;">
                                     <div class="block-one">
                                         <div class="title-block center">
-                                            <h6>{{global.locale == 'vi' ? 'GÓI TẠM NGƯNG' : 'GÓI TẠM NGƯNG aaa'}}</h6>
+                                            <h6>{{global.locale == 'vi' ? 'GÓI TẠM NGƯNG' : 'TEMPORARY SUSPENSION PACKAGE'}}</h6>
                                         </div>
 
                                         <div style="font-size: 10px; text-align: center">
-                                            <sup style="font-size: 12px; top: -9px">{{global.locale == 'vi' ? 'Từ' : 'Từ aaa'}}</sup><b style="font-size: 26px">
+                                            <sup style="font-size: 12px; top: -9px">{{global.locale == 'vi' ? 'Từ' : 'From'}}</sup><b style="font-size: 26px">
                                             2.500.000 </b>VND
 
                                         </div>
@@ -34,10 +34,9 @@
                                     <div class="block-two center">
                                         <p style="padding-top: 20px; min-height: 80px; font-size: 12px">
                                             {{global.locale == 'vi' ? ' Doanh nghiệp gặp khó khăn, tạm\n' +
-                                            'dừng hoạt động để tìm cách giải quyết.' : ' Doanh nghiệp gặp khó khăn, tạm\n' +
-                                            'dừng hoạt động để tìm cách giải quyết.'}}
+                                            'dừng hoạt động để tìm cách giải quyết.' : ' Businesses in trouble, having to suspend their operations to find solutions'}}
                                         </p>
-                                        <button (click)="package=p1" onclick="$('#dnt3nform3').modal('show')" class="btn btn-outline-warning" style="border-radius: 30px; padding: 5px 20px;">{{global.locale == 'vi' ? 'Đăng ký tư vấn ngay' : 'Đăng ký tư vấn ngay aaa'}}
+                                        <button (click)="package=p1" onclick="$('#dnt3nform3').modal('show')" class="btn btn-outline-warning" style="border-radius: 30px; padding: 5px 20px;">{{global.locale == 'vi' ? 'Đăng ký tư vấn ngay' : 'Schedule Consultation Now'}}
                                         </button>
 
                                     </div>
@@ -50,11 +49,11 @@
                                     <div class="block-one">
 <!--                                        <img class="sticky" src="/assets/media/DKKD/cac-goi-phi/Asset 6.svg">-->
                                         <div class="title-block center">
-                                            <h6>{{global.locale == 'vi' ? 'GÓI GIẢI THỂ' : 'GÓI GIẢI THỂ aaa'}}</h6>
+                                            <h6>{{global.locale == 'vi' ? 'GÓI GIẢI THỂ' : 'DISSOLUTION PACKAGE'}}</h6>
                                         </div>
 
                                         <div style="font-size: 10px; text-align: center">
-                                            <sup style="font-size: 12px; top: -9px">{{global.locale == 'vi' ? 'Từ' : 'Từ aaa'}}</sup><b style="font-size: 26px">
+                                            <sup style="font-size: 12px; top: -9px">{{global.locale == 'vi' ? 'Từ' : 'From'}}</sup><b style="font-size: 26px">
                                             9.900.000 </b>VND
 
                                         </div>
@@ -63,9 +62,9 @@
                                     <div class="block-two center">
                                         <p style="padding-top: 20px;
     min-height: 80px; font-size: 12px">
-                                            {{global.locale == 'vi' ? 'Doanh nghiệp quyết định chấm dứt toàn bộ hoạt động kinh doanh.' : 'Doanh nghiệp quyết định chấm dứt toàn bộ hoạt động kinh doanh.'}}
+                                            {{global.locale == 'vi' ? 'Doanh nghiệp quyết định chấm dứt toàn bộ hoạt động kinh doanh.' : 'Enterprises deciding to terminate all business activities.'}}
                                         </p>
-                                        <button (click)="package=p2" onclick="$('#dnt3nform3').modal('show')" class="btn btn-outline-warning" style="border-radius: 30px; padding: 5px 20px;">{{global.locale == 'vi' ? 'Đăng ký tư vấn ngay' : 'Đăng ký tư vấn ngay aaa'}}
+                                        <button (click)="package=p2" onclick="$('#dnt3nform3').modal('show')" class="btn btn-outline-warning" style="border-radius: 30px; padding: 5px 20px;">{{global.locale == 'vi' ? 'Đăng ký tư vấn ngay' : 'Schedule Consultation Now'}}
                                         </button>
                                     </div>
 
@@ -92,26 +91,26 @@
             </div>
             <div class="modal-body">
                 <div class="form-group">
-                    <input (keyup)="n=true" [class.is-invalid]="!form.fieldValid(name)&&n" [class.is-valid]="form.fieldValid(name)&&n" type="text" class="form-control" [(ngModel)]="name" name="name" placeholder="Họ tên *">
+                    <input (keyup)="n=true" [class.is-invalid]="!form.fieldValid(name)&&n" [class.is-valid]="form.fieldValid(name)&&n" type="text" class="form-control" [(ngModel)]="name" name="name" placeholder="{{global.locale=='vi'?'Họ tên *':'Full name*'}}">
                     <i *ngIf="!form.fieldValid(name) && n"><small class="text-danger">{{global.locale == 'vi' ? 'Bắt buộc nhập họ tên.' : 'Please enter your name. '}}</small></i>
                 </div>
                 <div class="form-group">
-                    <input (keyup)="p=true" [class.is-invalid]="!form.fieldValid(phone,'phone')&&p" [class.is-valid]="form.fieldValid(phone,'phone')&&p" type="text" class="form-control" [(ngModel)]="phone" name="phone" placeholder="Số điện thoại *">
-                    <i *ngIf="!form.fieldValid(name) && n"><small class="text-danger">{{global.locale == 'vi' ? 'Bắt buộc nhập họ tên.' : 'Please enter your name. '}}</small></i>
+                    <input (keyup)="p=true" [class.is-invalid]="!form.fieldValid(phone,'phone')&&p" [class.is-valid]="form.fieldValid(phone,'phone')&&p" type="text" class="form-control" [(ngModel)]="phone" name="phone" placeholder="{{global.locale=='vi'?'Số điện thoại *':'Phone number *'}}">
+                    <i *ngIf="!form.fieldValid(name) && n"><small class="text-danger">{{global.locale == 'vi' ? 'Bắt buộc nhập số điện thoại.' : 'Please enter your phone. '}}</small></i>
                 </div>
                 <div class="form-group">
                     <input (keyup)="e=true" [class.is-invalid]="!form.fieldValid(email,'email')&&(e||submitClick)" [class.is-valid]="form.fieldValid(email,'email')" class="form-control" name="email" [(ngModel)]="email" type="text" placeholder="Email *"/>
                     <i *ngIf="!form.fieldValid(email,'email')&&(e||submitClick)"><small class="text-danger">{{global.locale == 'vi' ? 'Bắt buộc nhập email hợp lệ.' : 'Invalid email address. '}}</small></i>
                 </div>
                 <div class="form-group">
-                    <input type="text" class="form-control" [(ngModel)]="company" name="company" placeholder="Tên công ty">
+                    <input type="text" class="form-control" [(ngModel)]="company" name="company" placeholder="{{global.locale=='vi'?'Tên công ty':'Company name'}}">
                 </div>
                 <div class="form-group">
-                    <textarea class="form-control" [(ngModel)]="business" name="business" placeholder="Lĩnh vực kinh doanh"></textarea>
+                    <textarea class="form-control" [(ngModel)]="business" name="business" placeholder="{{global.locale=='vi'?'Lĩnh vực kinh doanh':'Field of Business'}}"></textarea>
                 </div>
 
                 <div class="form-group" style="margin-bottom: 1rem">
-                    <label>{{global.locale == 'vi' ? 'Quy mô công ty' : 'Quy mô công ty aaa'}}</label>
+                    <label>{{global.locale == 'vi' ? 'Quy mô công ty' : 'Company size'}}</label>
                     <div class="container-fluid">
                         <div class="row">
                             <div class="col-md-6">
@@ -130,12 +129,12 @@
                     </div>
                 </div>
                 <div class="form-group">
-                    <textarea [(ngModel)]="description" class="form-control" name="description" placeholder="{{global.locale=='vi'?'Nhập câu hỏi hoặc mô tả tình trạng công ty bạn tại đây *':'Nhập câu hỏi hoặc mô tả tình trạng công ty bạn tại đây * aaa'}}"></textarea>
+                    <textarea [(ngModel)]="description" class="form-control" name="description" placeholder="{{global.locale=='vi'?'Nhập câu hỏi hoặc mô tả tình trạng công ty bạn tại đây *':'Insert your question(s) or describe the company\'s status * '}}"></textarea>
                 </div>
             </div>
 
             <div class="modal-footer" style="text-align: center;">
-                <button (click)="submit()" style="margin: auto; color: white;" type="button" class="btn btn-warning">{{global.locale == 'vi' ? 'Gửi yêu cầu' : 'Gửi yêu cầu aaa'}}</button>
+                <button (click)="submit()" style="margin: auto; color: white;" type="button" class="btn btn-warning">{{global.locale == 'vi' ? 'Gửi yêu cầu' : 'Send request'}}</button>
             </div>
         </div>
     </div>

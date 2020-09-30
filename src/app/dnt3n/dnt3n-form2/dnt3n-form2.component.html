@@ -464,7 +464,7 @@
                     <i *ngIf="!form.fieldValid(email,'email')&&(e||submitClick)"><small class="text-danger">{{global.locale == 'vi' ? 'Bắt buộc nhập email hợp lệ.' : 'Invalid email address. '}}</small></i>
                 </div>
                 <div class="form-group">
-                    <label>{{global.locale == 'vi' ? 'Chọn gói dịch vụ phù hợp với nhu cầu của bạn' : 'Chọn gói dịch vụ phù hợp với nhu cầu của bạn aaa'}}</label>
+                    <label>{{global.locale == 'vi' ? 'Chọn gói dịch vụ phù hợp với nhu cầu của bạn' : 'Choose a package '}}</label>
                     <div class="container-fluid">
                         <div class="row">
                             <div class="col-md-12">
@@ -489,13 +489,13 @@
                     </div>
                 </div>
                 <div class="form-group">
-                    <label class="col-form-label">{{global.locale == 'vi' ? 'Diễn tả sơ bộ tình trạng tranh chấp của doanh nghiệp bạn' : 'Diễn tả sơ bộ tình trạng tranh chấp của doanh nghiệp bạn aaa'}}<sup>*</sup></label>
+                    <label class="col-form-label">{{global.locale == 'vi' ? 'Diễn tả sơ bộ tình trạng tranh chấp của doanh nghiệp bạn' : 'Briefly describe the dispute situation of your business: '}}<sup>*</sup></label>
                     <textarea class="form-control" name="description" [(ngModel)]="description"></textarea>
                 </div>
                 <div class="form-group">
-                    {{global.locale == 'vi' ? 'Tài liệu đính kèm (nếu có):' : 'Tài liệu đính kèm (nếu có): aaa'}}
+                    {{global.locale == 'vi' ? 'Tài liệu đính kèm (nếu có):' : 'Attached documents (if any): '}}
                     <button *ngIf="!attachment" style="margin-bottom: 5px;color: #0f74a8;text-decoration: underline" class="btn" type="button" (click)="fileInput1.click()">
-                        <span style="color: #0f74a8" class="far fa-paperclip"></span>{{global.locale == 'vi' ? ' Tải lên tại đây' : ' Tải lên tại đây aaa'}}
+                        <span style="color: #0f74a8" class="far fa-paperclip"></span>{{global.locale == 'vi' ? ' Tải lên tại đây' : ' Upload here'}}
                         <input #fileInput1 type="file" (change)="onSelectFile($event)" style="display:none;"/>
                     </button>
                     <ng-container *ngIf="attachment">

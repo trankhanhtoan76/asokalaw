@@ -23,7 +23,7 @@
                     </div>
                     <button onclick="$('#dnt3nform-banggia-gqtc-rasoatloi').modal('show')" style="margin-top: 30px; margin-bottom: 20px" class="btn btn-warning sub-button">{{global.locale == 'vi' ? 'Xem báo giá chi tiết' : 'See detail quotations'}}
                     </button>
-                    <p><a routerLink="/phap-ly-thuong-xuyen">{{global.locale == 'vi' ? 'Giải pháp quản trị tinh gọn "4 trong 1" >>' : 'Giải pháp quản trị tinh gọn "4 trong 1" >> aaa'}}</a></p>
+                    <p><a routerLink="/phap-ly-thuong-xuyen">{{global.locale == 'vi' ? 'Giải pháp quản trị tinh gọn "4 trong 1" >>' : '"4 in 1" Effective Business Management >>'}}</a></p>
                 </div>
             </div>
         </div>
@@ -38,7 +38,7 @@
                     </div>
                     <button onclick="$('#dnt3nform-banggia-gqtc').modal('show')" style="margin-top: 30px; margin-bottom: 20px" class="btn btn-warning sub-button">{{global.locale == 'vi' ? 'Xem báo giá chi tiết' : 'See detail quotations'}}
                     </button>
-                    <p><a routerLink="/tu-van-luat-su">{{global.locale == 'vi' ? 'Xem danh sách tất cả luật sư >>' : 'Xem danh sách tất cả luật sư >> aaa'}}</a></p>
+                    <p><a routerLink="/tu-van-luat-su">{{global.locale == 'vi' ? 'Xem danh sách tất cả luật sư >>' : 'See lawyers list >> '}}</a></p>
                 </div>
             </div>
             <div class="col-md-6">
@@ -81,7 +81,7 @@
             </div>
             <div class="modal-body">
                 <div class="form-group">
-                    <input type="text" class="form-control" name="name" placeholder="{{global.locale=='vi'?'Họ tên *':'Name *'}}">
+                    <input type="text" class="form-control" name="name" placeholder="{{global.locale=='vi'?'Họ tên *':'Full name *'}}">
                     <!--          <i *ngIf="!fieldValid(name) && n"><small class="text-danger">{{global.locale=='vi'?'Bắt buộc nhập họ tên.':'Please enter your name. '}}</small></i>-->
                 </div>
                 <div class="form-group">
@@ -93,7 +93,7 @@
                     <!--          <i *ngIf="!fieldValid(email,'email') && e"><small class="text-danger">{{global.locale=='vi'?'Bắt buộc nhập email hợp lệ.':'Invalid email address. '}}</small></i>-->
                 </div>
                 <div class="form-group">
-                    <label>{{global.locale == 'vi' ? 'Chọn gói dịch vụ phù hợp với nhu cầu của bạn' : 'Chọn gói dịch vụ phù hợp với nhu cầu của bạn aaa'}}</label>
+                    <label>{{global.locale == 'vi' ? 'Chọn gói dịch vụ phù hợp với nhu cầu của bạn' : 'Choose a package '}}</label>
                     <div class="container-fluid">
                         <div class="row">
                             <div class="col-md-12">
@@ -118,13 +118,13 @@
                     </div>
                 </div>
                 <div class="form-group">
-                    <label class="col-form-label">{{global.locale == 'vi' ? 'Diễn tả sơ bộ tình trạng tranh chấp của doanh nghiệp bạn' : 'Diễn tả sơ bộ tình trạng tranh chấp của doanh nghiệp bạn aaa'}}<sup>*</sup></label>
+                    <label class="col-form-label">{{global.locale == 'vi' ? 'Diễn tả sơ bộ tình trạng tranh chấp của doanh nghiệp bạn' : 'Briefly describe the dispute situation of your business: '}}<sup>*</sup></label>
                     <textarea class="form-control" name="description"></textarea>
                 </div>
                 <div class="form-group">
-                    {{global.locale == 'vi' ? 'Tài liệu đính kèm (nếu có):' : 'Tài liệu đính kèm (nếu có): aaa'}}
+                    {{global.locale == 'vi' ? 'Tài liệu đính kèm (nếu có):' : 'Attached documents (if any): '}}
                     <button style="margin-bottom: 5px;color: #0f74a8;text-decoration: underline" class="btn" type="button" (click)="fileInput1.click()">
-                        <span style="color: #0f74a8" class="far fa-paperclip"></span>{{global.locale == 'vi' ? ' Tải lên tại đây' : ' Tải lên tại đây aaa'}}
+                        <span style="color: #0f74a8" class="far fa-paperclip"></span>{{global.locale == 'vi' ? ' Tải lên tại đây' : ' Upload here'}}
                         <input #fileInput1 type="file" style="display:none;"/>
                     </button>
                     <ng-container>
@@ -198,7 +198,7 @@
                             <div class="col-md-6" style="text-align: center;">
                                 <div class="service-content  shadow-lg" style="    margin-top: 50px; border-radius: 15px; padding: 40px 40px; background-color: #fff1ea;">
                                     <div style="top: 50px; right: 15px;" class="banner-small"><img src="/assets/media/PLTX/service/Asset4.svg"></div>
-                                    <h3 style="font-weight: bold; color: #ffa812; font-size: 22px; font-family:'Montserrat';">{{global.locale == 'vi' ? 'GÓI TOÀN DIỆN' : 'GÓI TOÀN DIỆN aaa'}}</h3><br>
+                                    <h3 style="font-weight: bold; color: #ffa812; font-size: 22px; font-family:'Montserrat';">{{global.locale == 'vi' ? 'GÓI TOÀN DIỆN' : 'COMPREHENSIVE PACKAGE'}}</h3><br>
                                     <div><p class="" style="font-size: 40px; padding-bottom: 20px"><span style="font-size: 12px;font-weight: 200;position: relative;top: -22px; padding-right: 5px">{{global.locale == 'vi' ? 'Từ' : 'From'}}</span>{{global.locale == 'vi' ? '8.900.000 ' : '8.900.00 '}}<span class="sub-title">{{global.locale == 'vi' ? 'VNĐ' : 'VND'}}</span></p></div>
                                     <p>{{global.locale == 'vi' ? 'Từ 06 - 10 lao động' : '06 -10 employees'}}</p>
                                     <hr style="margin-bottom: 20px !important;margin: auto !important;width: 30%;border: 2px solid #fac115;background: #7ec8e9;margin-left: 0;">
@@ -250,7 +250,7 @@
             </div>
             <div class="modal-body">
                 <div class="form-group">
-                    <input (keyup)="n=true" [class.is-invalid]="!form.fieldValid(name)&&n" [class.is-valid]="form.fieldValid(name)&&n" type="text" class="form-control" [(ngModel)]="name" name="name" placeholder="{{global.locale == 'vi' ? 'Họ tên *' : 'Name *'}}">
+                    <input (keyup)="n=true" [class.is-invalid]="!form.fieldValid(name)&&n" [class.is-valid]="form.fieldValid(name)&&n" type="text" class="form-control" [(ngModel)]="name" name="name" placeholder="{{global.locale == 'vi' ? 'Họ tên *' : 'Full name *'}}">
                     <i *ngIf="!form.fieldValid(name) && n"><small class="text-danger">{{global.locale == 'vi' ? 'Bắt buộc nhập họ tên.' : 'Please enter your name. '}}</small></i>
                 </div>
                 <div class="form-group">

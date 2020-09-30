@@ -58,9 +58,9 @@
                 <textarea placeholder="Ghi đầy đủ theo giấy phép Đăng ký kinh doanhdoanh, kết quả nhận được càng chính xác. Ví dụ: giáo dục khác chưa được phân vào đâu: trung tâm ngoại ngữ"></textarea>
                 <p class="form-small-header-V">{{global.locale=='vi'?'Tài liệu đính kèm':'Attachments'}}</p>
                 <ul class="list-group" id="list-record-attachment-V">
-                  <li class="list-group-item"><span>{{global.locale=='vi'?'Giấy đăng ký kinh doanh 1':'Business Registration Certificate 1'}}</span><span class="icon-attachment-file-V"><i style="color: #00BFFF;cursor: pointer;" class="fa fa-paperclip" aria-hidden="true"></i>{{global.locale=='vi'?' Tải lên tại đây':' Tải lên tại đây aaa'}}</span></li>
-                  <li class="list-group-item"><span>{{global.locale=='vi'?'Giấy đăng ký kinh doanh 2':'Business Registration Certificate 2'}}</span><span class="icon-attachment-file-V"><i style="color: #00BFFF;cursor: pointer;" class="fa fa-paperclip" aria-hidden="true"></i>{{global.locale=='vi'?' Tải lên tại đây':' Tải lên tại đây aaa'}}</span></li>
-                  <li class="list-group-item"><span>{{global.locale=='vi'?'Tài liệu đăng ký kinh doanh khác':'Other business registration documents'}}</span><span class="icon-attachment-file-V"><i style="color: #00BFFF;cursor: pointer;" class="fa fa-paperclip" aria-hidden="true"></i>{{global.locale=='vi'?' Tải lên tại đây':' Tải lên tại đây aaa'}}</span></li>
+                  <li class="list-group-item"><span>{{global.locale=='vi'?'Giấy đăng ký kinh doanh 1':'Business Registration Certificate 1'}}</span><span class="icon-attachment-file-V"><i style="color: #00BFFF;cursor: pointer;" class="fa fa-paperclip" aria-hidden="true"></i>{{global.locale=='vi'?' Tải lên tại đây':' Upload here'}}</span></li>
+                  <li class="list-group-item"><span>{{global.locale=='vi'?'Giấy đăng ký kinh doanh 2':'Business Registration Certificate 2'}}</span><span class="icon-attachment-file-V"><i style="color: #00BFFF;cursor: pointer;" class="fa fa-paperclip" aria-hidden="true"></i>{{global.locale=='vi'?' Tải lên tại đây':' Upload here'}}</span></li>
+                  <li class="list-group-item"><span>{{global.locale=='vi'?'Tài liệu đăng ký kinh doanh khác':'Other business registration documents'}}</span><span class="icon-attachment-file-V"><i style="color: #00BFFF;cursor: pointer;" class="fa fa-paperclip" aria-hidden="true"></i>{{global.locale=='vi'?' Tải lên tại đây':' Upload here'}}</span></li>
                 </ul>
             </div>
             <div class="modal-footer" style="justify-content: center;">
@@ -132,7 +132,7 @@
                     </div>
                 </div>
                 <div class="form-group">
-                  <input (keyup)="n=true" [class.is-invalid]="!fieldValid(name)&&n" [class.is-valid]="fieldValid(name)&&n" type="text" class="form-control" [(ngModel)]="name" name="name" placeholder="{{global.locale=='vi'?'Họ tên *':'Fullname'}}">
+                  <input (keyup)="n=true" [class.is-invalid]="!fieldValid(name)&&n" [class.is-valid]="fieldValid(name)&&n" type="text" class="form-control" [(ngModel)]="name" name="name" placeholder="{{global.locale=='vi'?'Họ tên *':'Full name *'}}">
                   <i *ngIf="!fieldValid(name) && n"><small class="text-danger">{{global.locale=='vi'?'Bắt buộc nhập họ tên.':'Please enter your name. '}}</small></i>
                 </div>
                 <div class="form-group">
@@ -204,7 +204,7 @@
                     </div>
                 </div>
                 <div class="form-group">
-                  <input (keyup)="n=true" [class.is-invalid]="!fieldValid(name)&&n" [class.is-valid]="fieldValid(name)&&n" type="text" class="form-control" [(ngModel)]="name" name="name" placeholder="{{global.locale=='vi'?'Họ tên *':'Fullname'}}">
+                  <input (keyup)="n=true" [class.is-invalid]="!fieldValid(name)&&n" [class.is-valid]="fieldValid(name)&&n" type="text" class="form-control" [(ngModel)]="name" name="name" placeholder="{{global.locale=='vi'?'Họ tên *':'Full name *'}}">
                   <i *ngIf="!fieldValid(name) && n"><small class="text-danger">{{global.locale=='vi'?'Bắt buộc nhập họ tên.':'Please enter your name. '}}</small></i>
                 </div>
                 <div class="form-group">
@@ -284,7 +284,7 @@
                     </div>
                 </div>
                 <div class="form-group">
-                  <input (keyup)="n=true" [class.is-invalid]="!fieldValid(name)&&n" [class.is-valid]="fieldValid(name)&&n" type="text" class="form-control" [(ngModel)]="name" name="name" placeholder="{{global.locale=='vi'?'Họ tên *':'Fullname'}}">
+                  <input (keyup)="n=true" [class.is-invalid]="!fieldValid(name)&&n" [class.is-valid]="fieldValid(name)&&n" type="text" class="form-control" [(ngModel)]="name" name="name" placeholder="{{global.locale=='vi'?'Họ tên *':'Full name *'}}">
                   <i *ngIf="!fieldValid(name) && n"><small class="text-danger">{{global.locale=='vi'?'Bắt buộc nhập họ tên.':'Please enter your name. '}}</small></i>
                 </div>
                 <div class="form-group">
@@ -364,15 +364,15 @@
                     </div>
                 </div>
                 <div class="form-group">
-                  <input (keyup)="n=true" [class.is-invalid]="!fieldValid(name)&&n" [class.is-valid]="fieldValid(name)&&n" type="text" class="form-control" [(ngModel)]="name" name="name" placeholder="{{global.locale=='vi'?'Họ tên *':'Fullname'}}">
+                  <input (keyup)="n=true" [class.is-invalid]="!fieldValid(name)&&n" [class.is-valid]="fieldValid(name)&&n" type="text" class="form-control" [(ngModel)]="name" name="name" placeholder="{{global.locale=='vi'?'Họ tên *':'Full name *'}}">
                   <i *ngIf="!fieldValid(name) && n"><small class="text-danger">{{global.locale=='vi'?'Bắt buộc nhập họ tên.':'Please enter your name. '}}</small></i>
                 </div>
                 <div class="form-group">
-                    <input (keyup)="p=true" [class.is-invalid]="!fieldValid(phone,'phone')&&p" [class.is-valid]="fieldValid(phone,'phone')&&p" class="form-control" [(ngModel)]="phone" name="phone" type="text" placeholder="{{global.locale=='vi'?'Số điện thoại *':'Phone number'}}"/>
+                    <input (keyup)="p=true" [class.is-invalid]="!fieldValid(phone,'phone')&&p" [class.is-valid]="fieldValid(phone,'phone')&&p" class="form-control" [(ngModel)]="phone" name="phone" type="text" placeholder="{{global.locale=='vi'?'Số điện thoại *':'Phone number *'}}"/>
                     <i *ngIf="!fieldValid(phone,'phone') && p"><small class="text-danger">{{global.locale=='vi'?'Bắt buộc nhập số điện thoại hợp lệ.':'Invalid phone number. '}}</small></i>
                 </div>
                 <div class="form-group">
-                    <input (keyup)="e=true" [class.is-invalid]="!fieldValid(email,'email')&&e" [class.is-valid]="fieldValid(email,'email')&&e" class="form-control" name="email" [(ngModel)]="email" type="text" placeholder="Email"/>
+                    <input (keyup)="e=true" [class.is-invalid]="!fieldValid(email,'email')&&e" [class.is-valid]="fieldValid(email,'email')&&e" class="form-control" name="email" [(ngModel)]="email" type="text" placeholder="Email *"/>
                     <i *ngIf="!fieldValid(email,'email') && e"><small class="text-danger">{{global.locale=='vi'?'Bắt buộc nhập email hợp lệ.':'Invalid email address. '}}</small></i>
                 </div>
             </div>
@@ -444,7 +444,7 @@
                     </div>
                 </div>
                 <div class="form-group">
-                  <input (keyup)="n=true" [class.is-invalid]="!fieldValid(name)&&n" [class.is-valid]="fieldValid(name)&&n" type="text" class="form-control" [(ngModel)]="name" name="name" placeholder="{{global.locale=='vi'?'Họ tên *':'Fullname'}}">
+                  <input (keyup)="n=true" [class.is-invalid]="!fieldValid(name)&&n" [class.is-valid]="fieldValid(name)&&n" type="text" class="form-control" [(ngModel)]="name" name="name" placeholder="{{global.locale=='vi'?'Họ tên *':'Full name *'}}">
                   <i *ngIf="!fieldValid(name) && n"><small class="text-danger">{{global.locale=='vi'?'Bắt buộc nhập họ tên.':'Please enter your name. '}}</small></i>
                 </div>
                 <div class="form-group">
@@ -474,7 +474,7 @@
             <p>{{global.locale=='vi'?'Am hiểu thủ tục pháp lý của từng ngành nghề, Asoka sẽ tư vấn cho bạn hiểu rõ và hoàn thiện hồ sơ pháp lý đầy đủ theo quy định của cơ quan Nhà nước. Doanh nghiệp của bạn sẽ được rà soát, quản trị toàn diện về tình trạng pháp lý.':'Understanding the legal procedures of each profession, Asoka will advise you to understand and prepare all necessary legal documents following the regulations of State agencies. Your business will be comprehensively reviewed and managed in terms of legal status.'}}</p>
           </div>
           <p style="color: #D5D5D5; font-style: italic">{{global.locale=='vi'?'* Bấm vào từng lĩnh vực ở bên để tra cứu nhanh.':'* Click on each field on the side for quick lookup.'}}</p>
-          <button style="margin-top: 30px; margin-bottom: 20px" data-toggle="modal" data-target="#search-free-V" class="btn btn-warning sub-button">{{global.locale=='vi'?'Tra cứu miễn phí':'CTA: Search fo free'}}</button>
+          <button style="margin-top: 30px; margin-bottom: 20px" data-toggle="modal" data-target="#search-free-V" class="btn btn-warning sub-button">{{global.locale=='vi'?'Tra cứu miễn phí':'Search fo free'}}</button>
           <p><i><a href="#">{{global.locale=='vi'?'Kiểm tra toàn diện giấy phép có điều kiện':'Comprehensive conditional license check-up'}}</a></i></p>
         </div>
       </div>
@@ -500,15 +500,15 @@
             <form class="shadow backgrFormound" enctype="multipart/form-data" style="height:{{formHeight}}px">
                 <h2>{{global.locale=='vi'?'TRA CỨU LOGO CỦA BẠN':'Lookup your logo'}}</h2>
                 <div class="form-group">
-                    <input (keyup)="n=true" [class.is-invalid]="!fieldValid(name)&&n" [class.is-valid]="fieldValid(name)&&n" type="text" class="form-control" [(ngModel)]="name" name="name" placeholder="{{global.locale=='vi'?'Họ tên *':'Fullname'}}">
+                    <input (keyup)="n=true" [class.is-invalid]="!fieldValid(name)&&n" [class.is-valid]="fieldValid(name)&&n" type="text" class="form-control" [(ngModel)]="name" name="name" placeholder="{{global.locale=='vi'?'Họ tên *':'Full name *'}}">
                     <i *ngIf="!fieldValid(name) && n"><small class="text-danger">{{global.locale=='vi'?'Bắt buộc nhập họ tên.':'Please enter your name. '}}</small></i>
                 </div>
                 <div class="form-group">
-                    <input (keyup)="p=true" [class.is-invalid]="!fieldValid(phone,'phone')&&p" [class.is-valid]="fieldValid(phone,'phone')&&p" class="form-control" [(ngModel)]="phone" name="phone" type="text" placeholder="{{global.locale=='vi'?'Số điện thoại *':'Phone number '}}"/>
+                    <input (keyup)="p=true" [class.is-invalid]="!fieldValid(phone,'phone')&&p" [class.is-valid]="fieldValid(phone,'phone')&&p" class="form-control" [(ngModel)]="phone" name="phone" type="text" placeholder="{{global.locale=='vi'?'Số điện thoại *':'Phone number *'}}"/>
                     <i *ngIf="!fieldValid(phone,'phone') && p"><small class="text-danger">{{global.locale=='vi'?'Bắt buộc nhập số điện thoại hợp lệ.':'Invalid phone number. '}}</small></i>
                 </div>
                 <div class="form-group">
-                    <input (keyup)="e=true" [class.is-invalid]="!fieldValid(email,'email')&&e" [class.is-valid]="fieldValid(email,'email')&&e" class="form-control" name="email" [(ngModel)]="email" type="text" placeholder="Email"/>
+                    <input (keyup)="e=true" [class.is-invalid]="!fieldValid(email,'email')&&e" [class.is-valid]="fieldValid(email,'email')&&e" class="form-control" name="email" [(ngModel)]="email" type="text" placeholder="Email *"/>
                     <i *ngIf="!fieldValid(email,'email') && e"><small class="text-danger">{{global.locale=='vi'?'Bắt buộc nhập email hợp lệ.':'Invalid email address. '}}</small></i>
                 </div>
                 <div class="form-group">

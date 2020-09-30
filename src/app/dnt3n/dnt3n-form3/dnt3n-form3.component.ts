@@ -25,13 +25,13 @@ export class Dnt3nForm3Component implements OnInit {
     submitClick;
     service;
     s1 = 'Dưới 05 lao động';
-    s1e = 'Dưới 05 lao động aaa';
+    s1e = 'Under 5 employees';
     s2 = 'Từ 06 đến 10 lao động';
-    s2e = 'Từ 06 đến 10 lao động aaa';
+    s2e = '06 -10 employees';
     p1 = 'Gói tạm ngưng';
-    p1e = 'Gói tạm ngưng aaa';
+    p1e = 'Temporary Suspension Package';
     p2 = 'Gói giải thể';
-    p2e = 'Gói giải thể aaa';
+    p2e = 'Dissolution Package';
 
     constructor(public global: GlobalService, public form: FormValidateService, private smtp: EmailService, private spinner: SpinnerService) {
     }

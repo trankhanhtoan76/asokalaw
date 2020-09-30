@@ -17,7 +17,7 @@
                             <p>{{global.locale=='vi'?'963 lượt sử dụng':'Used: 963 times'}}</p>
                         </div>
                     </div>
-                    <button (click)="selectOneService(s2);showForm()" style="position: absolute;" class="btn btn-outline-warning custom-color-white">{{global.locale=='vi'?'Tư vấn dịch vụ':'Tư vấn dịch vụ aaa'}}</button>
+                    <button (click)="selectOneService(s2);showForm()" style="position: absolute;" class="btn btn-outline-warning custom-color-white">{{global.locale=='vi'?'Tư vấn dịch vụ':'Get free consultation'}}</button>
                 </div>
             </div>
             <div class="slide-support-item col-md-3">
@@ -30,7 +30,7 @@
                             <p>{{global.locale=='vi'?'300 lượt sử dụng':'Used: 300 times'}}</p>
                         </div>
                     </div>
-                    <button (click)="selectOneService(s3);showForm()" style="position: absolute;" class="btn btn-outline-warning custom-color-white">{{global.locale=='vi'?'Tư vấn dịch vụ':'Tư vấn dịch vụ aaa'}}</button>
+                    <button (click)="selectOneService(s3);showForm()" style="position: absolute;" class="btn btn-outline-warning custom-color-white">{{global.locale=='vi'?'Tư vấn dịch vụ':'Get free consultation'}}</button>
                 </div>
             </div>
 
@@ -38,13 +38,13 @@
                 <div class="">
                     <img src="/assets/media/DNT3N/Cac-dich-vu/tm.jpg">
                     <div class="center support-title">
-                        <p>{{global.locale=='vi'?'Nhượng quyền thương mại':'Nhượng quyền thương mại aaa'}}</p>
+                        <p>{{global.locale=='vi'?'Nhượng quyền thương mại':'Franchising'}}</p>
                         <div class="row">
                             <i class="fa fa-thumbs-up"></i>
-                            <p>{{global.locale=='vi'?'189 lượt sử dụng':'189 lượt sử dụng aaa'}}</p>
+                            <p>{{global.locale=='vi'?'189 lượt sử dụng':'Used: 189 times'}}</p>
                         </div>
                     </div>
-                    <button (click)="selectOneService(s5);showForm()" style="position: absolute;" class="btn btn-outline-warning custom-color-white">{{global.locale=='vi'?'Tư vấn dịch vụ':'Tư vấn dịch vụ aaa'}}</button>
+                    <button (click)="selectOneService(s5);showForm()" style="position: absolute;" class="btn btn-outline-warning custom-color-white">{{global.locale=='vi'?'Tư vấn dịch vụ':'Get free consultation'}}</button>
                 </div>
             </div>
             <div class="slide-support-item col-md-3">
@@ -58,7 +58,7 @@
                         </div>
                     </div>
                 </div>
-                <button (click)="selectOneService(s1);showForm()" style="position: absolute;" class="btn btn-outline-warning custom-color-white">{{global.locale=='vi'?'Tư vấn dịch vụ':'Tư vấn dịch vụ aaa'}}</button>
+                <button (click)="selectOneService(s1);showForm()" style="position: absolute;" class="btn btn-outline-warning custom-color-white">{{global.locale=='vi'?'Tư vấn dịch vụ':'Get free consultation'}}</button>
             </div>
             <div class="slide-support-item col-md-3">
                 <div style="position: relative;">
@@ -70,7 +70,7 @@
                             <p>{{global.locale=='vi'?'568 lượt sử dụng':'Used: 568 times'}}</p>
                         </div>
                     </div>
-                    <button (click)="selectOneService(s4);showForm()" style="position: absolute;" class="btn btn-outline-warning custom-color-white">{{global.locale=='vi'?'CTA: Tư vấn dịch vụ':'Get free consultation'}}</button>
+                    <button (click)="selectOneService(s4);showForm()" style="position: absolute;" class="btn btn-outline-warning custom-color-white">{{global.locale=='vi'?'Tư vấn dịch vụ':'Get free consultation'}}</button>
                 </div>
             </div>
         </div>
@@ -87,11 +87,11 @@
             </div>
             <div class="modal-body">
                 <div class="form-group">
-                    <input (keyup)="n=true" [class.is-invalid]="!fieldValid(name)&&n" [class.is-valid]="fieldValid(name)&&n" type="text" class="form-control" [(ngModel)]="name" name="name" placeholder="Họ tên *">
+                    <input (keyup)="n=true" [class.is-invalid]="!fieldValid(name)&&n" [class.is-valid]="fieldValid(name)&&n" type="text" class="form-control" [(ngModel)]="name" name="name" placeholder="{{global.locale=='vi'?'Họ tên *':'Full name*'}}">
                     <i *ngIf="!fieldValid(name) && n"><small class="text-danger"> {{global.locale=='vi'?'Bắt buộc nhập họ tên.':'Please enter your name. '}}</small></i>
                 </div>
                 <div class="form-group">
-                    <input (keyup)="p=true" [class.is-invalid]="!fieldValid(phone,'phone')&&p" [class.is-valid]="fieldValid(phone,'phone')&&p" class="form-control" [(ngModel)]="phone" name="phone" type="text" placeholder="Số điện thoại *"/>
+                    <input (keyup)="p=true" [class.is-invalid]="!fieldValid(phone,'phone')&&p" [class.is-valid]="fieldValid(phone,'phone')&&p" class="form-control" [(ngModel)]="phone" name="phone" type="text" placeholder="{{global.locale=='vi'?'Số điện thoại *':'Phone number *'}}"/>
                     <i *ngIf="!fieldValid(phone,'phone') && p"><small class="text-danger">{{global.locale=='vi'?'Bắt buộc nhập số điện thoại hợp lệ.':'Invalid phone number. '}}</small></i>
                 </div>
                 <div class="form-group">
@@ -99,7 +99,7 @@
                     <i *ngIf="!fieldValid(email,'email') && e"><small class="text-danger">{{global.locale=='vi'?'Bắt buộc nhập email hợp lệ.':'Invalid email address. '}}</small></i>
                 </div>
                 <div class="form-group">
-                    <label>{{global.locale=='vi'?'Dịch vụ pháp lý yêu cầu tư vấn*':'Dịch vụ pháp lý yêu cầu tư vấn* aaa'}}</label>
+                    <label>{{global.locale=='vi'?'Dịch vụ pháp lý yêu cầu tư vấn*':'Requested Legal Service(s)*'}}</label>
                     <div class="container-fluid">
                         <div class="row">
                             <div class="col-12">
@@ -148,7 +148,7 @@
                 </div>
             </div>
             <div class="modal-footer">
-                <button (click)="submit()" style="margin: auto; color: white;" type="button" class="btn btn-warning">{{global.locale=='vi'?'Gửi yêu cầu':'Gửi yêu cầu aaa'}}</button>
+                <button (click)="submit()" style="margin: auto; color: white;" type="button" class="btn btn-warning">{{global.locale=='vi'?'Gửi yêu cầu':'Send request now'}}</button>
             </div>
         </div>
     </div>

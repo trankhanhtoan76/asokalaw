@@ -29,7 +29,7 @@
             <div class="modal-body">
                 <h4 class="text-center">{{global.locale=='vi'?'Dùng thử miễn phí 0 đồng ngay hôm nay':'Dùng thử miễn phí 0 đồng ngay hôm nay aaa'}}</h4>
                 <div class="form-group">
-                    <input (keyup)="n=true" [class.is-invalid]="!fieldValid(name)&&n" [class.is-valid]="fieldValid(name)&&n" type="text" class="form-control" [(ngModel)]="name" name="name" placeholder="{{global.locale=='vi'?'Họ tên *':'Name *'}}">
+                    <input (keyup)="n=true" [class.is-invalid]="!fieldValid(name)&&n" [class.is-valid]="fieldValid(name)&&n" type="text" class="form-control" [(ngModel)]="name" name="name" placeholder="{{global.locale=='vi'?'Họ tên *':'Full name *'}}">
                     <i *ngIf="!fieldValid(name) && n"><small class="text-danger">{{global.locale=='vi'?'Bắt buộc nhập họ tên.':'Please enter your name. '}}</small></i>
                 </div>
                 <div class="form-group">
@@ -41,7 +41,7 @@
                     <i *ngIf="!fieldValid(email,'email') && e"><small class="text-danger">{{global.locale=='vi'?'Bắt buộc nhập email hợp lệ.':'Invalid email address. '}}</small></i>
                 </div>
                 <div class="form-group">
-                    <label>{{global.locale=='vi'?'Chọn gói dịch vụ phù hợp với nhu cầu của bạn':'Chọn gói dịch vụ phù hợp với nhu cầu của bạn aaa'}}</label>
+                    <label>{{global.locale=='vi'?'Chọn gói dịch vụ phù hợp với nhu cầu của bạn':'Choose a package '}}</label>
                     <div class="container-fluid">
                         <div class="row">
                             <div class="col-md-4">
@@ -65,8 +65,8 @@
                         </div>
                     </div>
                 </div>
-                <p><i><small>{{global.locale=='vi'?'Chuyên viên của Asoka sẽ liên lạc với bạn ngay trong 05 phút để xác nhận thông tin này.':'Chuyên viên của Asoka sẽ liên lạc với bạn ngay trong 05 phút để xác nhận thông tin này. aaa'}}</small></i><br/>
-                    <i><small>{{global.locale=='vi'?'Bạn vui lòng kiểm tra điện thoại/tin nhắn/email để không bỏ sót thông tin từ chúng tôi. Xin cảm ơn.':'Bạn vui lòng kiểm tra điện thoại/tin nhắn/email để không bỏ sót thông tin từ chúng tôi. Xin cảm ơn. aaa'}}</small></i></p>
+                <p><i><small>{{global.locale=='vi'?'Chuyên viên của Asoka sẽ liên lạc với bạn ngay trong 05 phút để xác nhận thông tin này.':'Asoka\'s specialists will contact you in 5 minutes to confirm the information registered.'}}</small></i><br/>
+                    <i><small>{{global.locale=='vi'?'Bạn vui lòng kiểm tra điện thoại/tin nhắn/email để không bỏ sót thông tin từ chúng tôi. Xin cảm ơn.':'Please check your phone, message or email box to not miss any information from us. Thank You! '}}</small></i></p>
             </div>
             <div class="modal-footer" style="text-align: center;">
                 <button style="margin: auto; color: white;" (click)="submit()" type="button" class="btn btn-warning">{{global.locale=='vi'?'Bắt đầu dùng thử':'Get Started'}}</button>

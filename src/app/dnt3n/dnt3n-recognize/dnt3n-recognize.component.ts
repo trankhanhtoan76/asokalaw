@@ -28,9 +28,9 @@ export class Dnt3nRecognizeComponent implements OnInit {
     submitClick;
     service;
     s1 = 'Dưới 05 lao động';
-    s1e = 'Dưới 05 lao động aaa';
+    s1e = 'Under 5 employees';
     s2 = 'Từ 06 đến 10 lao động';
-    s2e = 'Từ 06 đến 10 lao động aaa';
+    s2e = '06 -10 employees';
     p1 = 'Gói cơ bản';
     p2 = 'Gói toàn diện';
 

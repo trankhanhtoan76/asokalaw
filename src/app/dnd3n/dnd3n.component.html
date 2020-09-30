@@ -21,15 +21,15 @@
   <div class="container">
       <div class="row align-items-center">
           <div class="col-md-8">
-              <h5 class="pc" style="font-weight: 300; line-height: 2.5rem; margin: 0; font-size: 1.5rem;">{{global.locale=='vi'?'1000+ khách hàng của Asoka Law đã':'1000+ khách hàng của Asoka Law đã aaa'}}<span class="font-weight-bold" style="font-size: 1.5rem;">{{global.locale=='vi'?' tiết kiệm được 87% chi phí':' tiết kiệm được 87% chi phí aaa'}}</span><br>{{global.locale=='vi'?'cho 4 vấn đề: thuế - lao động - hợp đồng - pháp lý.':'cho 4 vấn đề: thuế - lao động - hợp đồng - pháp lý. aaa'}}</h5>
-              <h5 class="sp center" style="font-size: 1.5rem;font-weight: 300; line-height: 2.5rem; margin: 0">{{global.locale=='vi'?'1000+ khách hàng của Asoka Law đã':'1000+ khách hàng của Asoka Law đã aaa'}}<span class="font-weight-bold" style="font-size: 1.5rem !important;">{{global.locale=='vi'?' tiết kiệm được 87% chi phí':' tiết kiệm được 87% chi phí aaa'}}</span><br>{{global.locale=='vi'?'cho 4 vấn đề: thuế - lao động - hợp đồng - pháp lý.':'cho 4 vấn đề: thuế - lao động - hợp đồng - pháp lý. aaa'}}</h5>
+              <h5 class="pc" style="font-weight: 300; line-height: 2.5rem; margin: 0; font-size: 1.5rem;">{{global.locale=='vi'?'1000+ khách hàng của Asoka Law đã':'1000+ Asoka Law clients have '}}<span class="font-weight-bold" style="font-size: 1.5rem;">{{global.locale=='vi'?' tiết kiệm được 87% chi phí':' saved 87% of expenses '}}</span>{{global.locale=='vi'?'cho 4 vấn đề: thuế - lao động - hợp đồng - pháp lý.':'for 4 matters: Tax - Labor - Contract - Legality.'}}</h5>
+              <h5 class="sp center" style="font-size: 1.5rem;font-weight: 300; line-height: 2.5rem; margin: 0">{{global.locale=='vi'?'1000+ khách hàng của Asoka Law đã':'1000+ Asoka Law clients have '}}<span class="font-weight-bold" style="font-size: 1.5rem !important;">{{global.locale=='vi'?' tiết kiệm được 87% chi phí':' saved 87% of expenses '}}</span>{{global.locale=='vi'?'cho 4 vấn đề: thuế - lao động - hợp đồng - pháp lý.':'for 4 matters: Tax - Labor - Contract - Legality.'}}</h5>
           </div>
           <div class="col-md-4">
               <div class="text-right pc">
-                  <button onclick="$('#dnd3nform1').modal('show')" class="btn btn-warning shadow" style="padding: 0.75rem 3rem;">{{global.locale=='vi'?'TƯ VẤN CHO TÔI':'TƯ VẤN CHO TÔI aaa'}}</button>
+                  <button onclick="$('#dnd3nform1').modal('show')" class="btn btn-warning shadow" style="padding: 0.75rem 3rem;">{{global.locale=='vi'?'TƯ VẤN CHO TÔI':'CONSULT ME'}}</button>
               </div>
               <div class="sp center" style="margin-top: 2rem;">
-                  <button onclick="$('#dnd3nform1').modal('show')" class="btn btn-warning shadow" style="padding: 0.75rem 3rem;">{{global.locale=='vi'?'TƯ VẤN CHO TÔI':'TƯ VẤN CHO TÔI aaa'}}</button>
+                  <button onclick="$('#dnd3nform1').modal('show')" class="btn btn-warning shadow" style="padding: 0.75rem 3rem;">{{global.locale=='vi'?'TƯ VẤN CHO TÔI':'CONSULT ME'}}</button>
               </div>
           </div>
       </div>
@@ -45,15 +45,15 @@
             </div>
             <div class="modal-body">
                 <div class="form-group">
-                    <input (keyup)="n=true" [class.is-invalid]="!fieldValid(name)&&n" [class.is-valid]="fieldValid(name)&&n" type="text" class="form-control" [(ngModel)]="name" name="name" placeholder="{{global.locale=='vi'?'Họ tên *':'Fullname'}}">
+                    <input (keyup)="n=true" [class.is-invalid]="!fieldValid(name)&&n" [class.is-valid]="fieldValid(name)&&n" type="text" class="form-control" [(ngModel)]="name" name="name" placeholder="{{global.locale=='vi'?'Họ tên *':'Full name *'}}">
                     <i *ngIf="!fieldValid(name) && n"><small class="text-danger">{{global.locale=='vi'?'Bắt buộc nhập họ tên.':'Please enter your name. '}}</small></i>
                 </div>
                 <div class="form-group">
-                    <input (keyup)="p=true" [class.is-invalid]="!fieldValid(phone,'phone')&&p" [class.is-valid]="fieldValid(phone,'phone')&&p" class="form-control" [(ngModel)]="phone" name="phone" type="text" placeholder="{{global.locale=='vi'?'Số điện thoại *':'Phone number'}}"/>
+                    <input (keyup)="p=true" [class.is-invalid]="!fieldValid(phone,'phone')&&p" [class.is-valid]="fieldValid(phone,'phone')&&p" class="form-control" [(ngModel)]="phone" name="phone" type="text" placeholder="{{global.locale=='vi'?'Số điện thoại *':'Phone number *'}}"/>
                     <i *ngIf="!fieldValid(phone,'phone') && p"><small class="text-danger">{{global.locale=='vi'?'Bắt buộc nhập số điện thoại hợp lệ.':'Invalid phone number. '}}</small></i>
                 </div>
                 <div class="form-group">
-                    <input (keyup)="e=true" [class.is-invalid]="!fieldValid(email,'email')&&e" [class.is-valid]="fieldValid(email,'email')&&e" class="form-control" name="email" [(ngModel)]="email" type="text" placeholder="Email "/>
+                    <input (keyup)="e=true" [class.is-invalid]="!fieldValid(email,'email')&&e" [class.is-valid]="fieldValid(email,'email')&&e" class="form-control" name="email" [(ngModel)]="email" type="text" placeholder="Email *"/>
                     <i *ngIf="!fieldValid(email,'email') && e"><small class="text-danger">{{global.locale=='vi'?'Bắt buộc nhập email hợp lệ.':'Invalid email address. '}}</small></i>
                 </div>
                 <div class="form-group">

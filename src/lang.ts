@@ -42,7 +42,11 @@ export const langDefined = {
     },
     'home-dangkydautu': {
         vi: " Đăng ký đầu tư",
-        en: " Investment"
+        en: " Investment Registration"
+    },
+    'home-dangkydautu22': {
+        vi: " Đăng ký đầu tư",
+        en: " Investment Registration"
     },
     'home-nganhang-baohiem': {
         vi: "Ngân hàng - bảo hiểm",
@@ -496,15 +500,15 @@ export const langDefined = {
     },
     'vadidate-en1': {
         vi: "Bắt buộc nhập họ tên.",
-        en: "Feild is required "
+        en: "Please enter your name. "
     },
     'vadidate-en2': {
         vi: "Bắt buộc nhập số điện thoại hợp lệ.",
-        en: "Feild is required "
+        en: "Invalid phone number. "
     },
     'vadidate-en3': {
         vi: "Bắt buộc nhập email hợp lệ.",
-        en: "Feild is required "
+        en: "Invalid email address. "
     },
 
     'home-tu-vantructuyen': {
@@ -1173,7 +1177,7 @@ export const langDefined = {
     },
     'dat-lich-tu-van-voi-luat-su': {
         vi: "Đặt lịch tư vấn với luật sư",
-        en: "Đặt lịch tư vấn với luật sư a"
+        en: "Schedule a lawyer consultation"
     },
     'tra': {
         vi: "Trà",
@@ -1918,7 +1922,7 @@ export const langDefined = {
     // start dknh-videos
     'dknh-video': {
         vi: "Video được xem nhiều nhất",
-        en: "Video được xem nhiều nhất aa"
+        en: "Most watched video"
     },
     'dknh-18k': {
         vi: " 1.8k lượt xem",

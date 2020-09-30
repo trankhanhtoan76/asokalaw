@@ -25,11 +25,11 @@ export class Dnt3nForm2Component implements OnInit {
     submitClick;
     service;
     s1 = 'Gói thương lượng';
-    s1e = 'Gói thương lượng aaa';
+    s1e = 'Negotiation Package';
     s2 = 'Gói tranh tụng';
-    s2e = 'Gói tranh tụng aaa';
+    s2e = 'Litigation Package';
     s3 = 'Gói toàn diện';
-    s3e = 'Gói toàn diện aaa';
+    s3e = 'Comprehensive Package';
     attachment: string;
     attachmentName: string;
 
