@@ -30,10 +30,31 @@ export class HomepricingComponent implements OnInit {
     p;
     e;
 
-    constructor(private spinner: SpinnerService, private smtp: EmailService,public global: GlobalService) {
+    constructor(private spinner: SpinnerService, private smtp: EmailService, public global: GlobalService) {
     }
 
     ngOnInit(): void {
+        if (this.global.locale == 'vi') {
+            this.s1 = 'Đăng ký kinh doanh';
+            this.s2 = 'Đăng ký nhãn hiệu';
+            this.s3 = 'Pháp lý thường xuyên';
+            this.s4 = 'Pháp lý sự kiện';
+            this.s5 = 'Tư vấn trực tuyến';
+            this.s6 = 'Giải quyết tranh chấp';
+            this.s7 = 'Đăng ký đầu tư';
+            this.s8 = 'Ngành nghề điều kiện';
+            this.s9 = 'Tạm ngưng giải thể';
+        } else {
+            this.s1 = 'Business Registration';
+            this.s2 = 'Trademark Registration';
+            this.s3 = 'Regular Legal Services';
+            this.s4 = 'Event-Related Legal Services';
+            this.s5 = 'online counseling';
+            this.s6 = 'Dispute Settlement';
+            this.s7 = 'Investment Registration';
+            this.s8 = 'Field of condition';
+            this.s9 = 'suspend dissolution';
+        }
     }
 
     fieldValid(value, type?): boolean {

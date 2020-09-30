@@ -33,6 +33,16 @@ export class NewsForm2Component implements OnInit {
     }
 
     ngOnInit(): void {
+        if(this.global.locale!='vi'){
+            this.s1 = 'Business Registration';
+            this.s2 = 'Trademark registration';
+            this.s3 = 'Investment Registration';
+            this.s4 = 'Regular Legal Services';
+            this.s5 = 'Lawyers consultation';
+            this.s6 = 'Events related legal matters';
+            this.s7 = 'Dispute resolution';
+            this.s8 = 'Other Fields';
+        }
     }
 
     selectService(e) {

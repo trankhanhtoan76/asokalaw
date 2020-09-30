@@ -29,6 +29,17 @@ export class Dnt3nComponent implements OnInit {
     }
 
     ngOnInit(): void {
+        if(this.global.locale=='vi'){
+            this.s1 = 'Rà soát và vá lỗi công ty đang hoạt động';
+            this.s2 = 'Đại diện giải quyết tranh chấp';
+            this.s3 = 'Tạm ngưng hoặc giải thể công ty';
+            this.s4 = 'Khác';
+        }else{
+            this.s1 = 'Reviewing and fixing mistakes in operations';
+            this.s2 = 'Representing to settle disputes';
+            this.s3 = 'Enterprise Temporary suspension/ Dissolution';
+            this.s4 = 'Others';
+        }
     }
 
     fieldValid(value, type?): boolean {

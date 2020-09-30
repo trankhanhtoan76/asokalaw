@@ -37,6 +37,15 @@ export class PltxsupportComponent implements OnInit {
     }
 
     ngOnInit(): void {
+        if(this.global.locale!='vi'){
+            this.s1 = 'Changing business registration';
+            this.s2 = 'Investment Registration';
+            this.s3 = 'Intellectual property protection';
+            this.s4 = 'Dispute resolution through lawyers';
+            this.s5 = 'Product circulation registration';
+            this.s6 = 'Licenses for conditional business lines';
+            this.s7 = 'Other services';
+        }
     }
 
     fieldValid(value, type?): boolean {

@@ -27,11 +27,17 @@ export class DkdtsupportComponent implements OnInit {
     e;
     p;
 
-    constructor(private smtp: EmailService, private spinner: SpinnerService,public global: GlobalService) {
+    constructor(private smtp: EmailService, private spinner: SpinnerService, public global: GlobalService) {
     }
 
     ngOnInit(): void {
-        $('#dkdtsupport-sp01','#dkdtsupport-sp02').magnificPopup({type: 'image'});
+        $('#dkdtsupport-sp01', '#dkdtsupport-sp02').magnificPopup({type: 'image'});
+        if (this.global.locale != 'vi') {
+            this.s1 = 'Work permits for foreigners';
+            this.s2 = 'Investor temporary residence card';
+            this.s3 = 'Legal routine';
+            this.s4 = 'Other services';
+        }
     }
 
     fieldValid(value, type?): boolean {

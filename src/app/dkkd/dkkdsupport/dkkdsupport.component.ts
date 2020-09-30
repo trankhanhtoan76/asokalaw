@@ -35,6 +35,17 @@ export class DkkdsupportComponent implements OnInit {
     }
 
     ngOnInit(): void {
+        if(this.global.locale!='vi'){
+            this.serviceT = [
+                'Change in business registration',
+                'Regular legal management',
+                'Intellectual property protection',
+                'Dispute resolution through lawyers',
+                'Product circulation registration',
+                'Licenses for conditional business lines',
+                'Other services'
+            ];
+        }
     }
 
     fieldValid(value, type?): boolean {

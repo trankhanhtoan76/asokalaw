@@ -28,10 +28,23 @@ export class Dnd3nSupportComponent implements OnInit {
     e;
     p;
 
-    constructor(private spinner: SpinnerService, private smtp: EmailService,public global: GlobalService) {
+    constructor(private spinner: SpinnerService, private smtp: EmailService, public global: GlobalService) {
     }
 
     ngOnInit(): void {
+        if (this.global.locale == 'vi') {
+            this.s1 = 'Luật sư đại diện giải quyết tranh chấp';
+            this.s2 = 'Thay đổi đăng ký kinh doanh';
+            this.s3 = 'Quản trị pháp lý thường xuyên';
+            this.s4 = 'Đăng ký đầu tư';
+            this.s5 = 'Nhượng quyền thương mại';
+        }else{
+            this.s1 = 'Dispute resolution through lawyers';
+            this.s2 = 'Change of Business';
+            this.s3 = 'Regular legal administration';
+            this.s4 = 'Investment registration';
+            this.s5 = 'Franchising licenses';
+        }
     }
 
     fieldValid(value, type?): boolean {
@@ -152,18 +165,18 @@ export class Dnd3nSupportComponent implements OnInit {
             prevArrow: '<img src="/assets/media/landingpage/news/left.svg" class="prevArrowBtnVideo news">',
             responsive: [
                 {
-                  breakpoint: 768,
-                  settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 2,
-                  }
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2,
+                    }
                 },
                 {
-                  breakpoint: 576,
-                  settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                  }
+                    breakpoint: 576,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                    }
                 }
             ]
         });
