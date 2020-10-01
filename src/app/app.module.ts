@@ -88,6 +88,8 @@ import {GlobalService} from "./service/global.service";
 import { TvlsquestionComponent } from './tvls/tvlsquestion/tvlsquestion.component';
 import { DkdtquestionComponent } from './dkdt/dkdtquestion/dkdtquestion.component';
 import {NewsdetailComponent} from "./news/newsdetail/newsdetail.component";
+import { HdttComponent } from './hdtt/hdtt.component';
+import { CskhComponent } from './cskh/cskh.component';
 
 const routes: Routes = [
     {path: '', component: HomeComponent},
@@ -96,6 +98,8 @@ const routes: Routes = [
     {path: 'dang-ky-dau-tu', component: DkdtComponent},
     {path: 'phap-ly-thuong-xuyen', component: PltxComponent},
     {path: 'tu-van-luat-su', component: TvlsComponent},
+    {path: 'huong-dan-thanh-toan', component: HdttComponent},
+    {path: 'chinh-sach-khach-hang', component: CskhComponent},
     {path: '**', component: NewsdetailComponent},
 ];
 
@@ -169,7 +173,9 @@ const routes: Routes = [
         DknhVideosComponent,
         DkkdSubfooterComponent,
         TvlsquestionComponent,
-        DkdtquestionComponent
+        DkdtquestionComponent,
+        HdttComponent,
+        CskhComponent
     ],
     imports: [
         BrowserModule,
