@@ -946,10 +946,10 @@ img.nextArrowBtnVideo {
 }
 
 .textTitle {
-  font-size: 20px;
+  font-size: 16px;
   color: #fec811;
   margin-bottom: 10px !important;
-  font-weight: bold;
+  font-weight: 400;
   cursor: pointer;
 }
 .textTitle:active
