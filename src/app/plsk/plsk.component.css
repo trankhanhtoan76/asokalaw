@@ -1356,6 +1356,7 @@ img.nextArrowBtnNews {
   margin-top: unset;
 }
 @media (max-width: 768px) {
+
   .modal-dialog
   {
     margin-top: 30%;
@@ -4155,7 +4156,6 @@ img.nextArrowBtnVideo {
   padding: 0.5rem 0.5rem 0.25rem;
 }
 @media only screen and (max-width: 768px) {
-  
 }
 /* </Change> */
 .modal-dialog
