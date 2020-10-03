@@ -36,8 +36,13 @@ export class Dnd3nRecognizeComponent implements OnInit {
     n;
     p;
     e;
+    service1 = [];
+    service2 = [];
+    service3 = [];
+    service4 = [];
+    service5 = [];
 
-    constructor(private spinner: SpinnerService, private smtp: EmailService,public global: GlobalService) {
+    constructor(private spinner: SpinnerService, private smtp: EmailService, public global: GlobalService) {
     }
 
     ngOnInit(): void {
@@ -175,6 +180,166 @@ export class Dnd3nRecognizeComponent implements OnInit {
             message => {
                 this.spinner.hide();
                 $('#alert-success').modal('show');
+            }
+        );
+    }
+
+    selectService1(e) {
+        const index = this.service1.indexOf(e.target.value);
+        if (index == -1) {
+            this.service1.push(e.target.value);
+        } else {
+            this.service1.splice(index, 1);
+        }
+    }
+
+    submit1(): void {
+        this.e = this.n = this.p = true;
+        if (!this.formValid()) return;
+
+        this.spinner.show('sending');
+        const serviceString = '<li>' + this.service1.join('</li><li>') + '</li>';
+        const body = [
+            {label: 'Họ tên', value: this.name},
+            {label: 'Số điện thoại', value: this.phone},
+            {label: 'Email', value: this.email},
+            {label: 'Doanh nghiệp của bạn còn thiếu loại giấy phép nào ?', value: serviceString}
+        ];
+        const subject = '[Website] Khách hàng đăng ký dịch vụ: ' + this.name;
+        let attachments = [];
+        this.smtp.send2(subject, 'Doanh nghiệp dưới 3 năm: Các loại giấy phép phổ biến của lĩnh vực Công nghệ thông tin', body, attachments).then(
+            message => {
+                this.spinner.hide();
+                $('#alert-success').modal('show');
+                $('#cnttModal').modal('hide');
+            }
+        );
+    }
+
+    selectService2(e) {
+        const index = this.service2.indexOf(e.target.value);
+        if (index == -1) {
+            this.service2.push(e.target.value);
+        } else {
+            this.service2.splice(index, 1);
+        }
+    }
+
+    submit2(): void {
+        this.e = this.n = this.p = true;
+        if (!this.formValid()) return;
+
+        this.spinner.show('sending');
+        const serviceString = '<li>' + this.service2.join('</li><li>') + '</li>';
+        const body = [
+            {label: 'Họ tên', value: this.name},
+            {label: 'Số điện thoại', value: this.phone},
+            {label: 'Email', value: this.email},
+            {label: 'Doanh nghiệp của bạn còn thiếu loại giấy phép nào ?', value: serviceString}
+        ];
+        const subject = '[Website] Khách hàng đăng ký dịch vụ: ' + this.name;
+        let attachments = [];
+        this.smtp.send2(subject, 'Doanh nghiệp dưới 3 năm: Các loại giấy phép phổ biến của lĩnh vực Phân phối hàng hoá đặc biệt', body, attachments).then(
+            message => {
+                this.spinner.hide();
+                $('#alert-success').modal('show');
+                $('#pphhModal').modal('hide');
+            }
+        );
+    }
+
+    selectService3(e) {
+        const index = this.service3.indexOf(e.target.value);
+        if (index == -1) {
+            this.service3.push(e.target.value);
+        } else {
+            this.service3.splice(index, 1);
+        }
+    }
+
+    submit3(): void {
+        this.e = this.n = this.p = true;
+        if (!this.formValid()) return;
+
+        this.spinner.show('sending');
+        const serviceString = '<li>' + this.service3.join('</li><li>') + '</li>';
+        const body = [
+            {label: 'Họ tên', value: this.name},
+            {label: 'Số điện thoại', value: this.phone},
+            {label: 'Email', value: this.email},
+            {label: 'Doanh nghiệp của bạn còn thiếu loại giấy phép nào ?', value: serviceString}
+        ];
+        const subject = '[Website] Khách hàng đăng ký dịch vụ: ' + this.name;
+        let attachments = [];
+        this.smtp.send2(subject, 'Doanh nghiệp dưới 3 năm: Các loại giấy phép phổ biến của lĩnh vực Du lịch - Ăn uống', body, attachments).then(
+            message => {
+                this.spinner.hide();
+                $('#alert-success').modal('show');
+                $('#dlauModal').modal('hide');
+            }
+        );
+    }
+
+    selectService4(e) {
+        const index = this.service4.indexOf(e.target.value);
+        if (index == -1) {
+            this.service4.push(e.target.value);
+        } else {
+            this.service4.splice(index, 1);
+        }
+    }
+
+    submit4(): void {
+        this.e = this.n = this.p = true;
+        if (!this.formValid()) return;
+
+        this.spinner.show('sending');
+        const serviceString = '<li>' + this.service4.join('</li><li>') + '</li>';
+        const body = [
+            {label: 'Họ tên', value: this.name},
+            {label: 'Số điện thoại', value: this.phone},
+            {label: 'Email', value: this.email},
+            {label: 'Doanh nghiệp của bạn còn thiếu loại giấy phép nào ?', value: serviceString}
+        ];
+        const subject = '[Website] Khách hàng đăng ký dịch vụ: ' + this.name;
+        let attachments = [];
+        this.smtp.send2(subject, 'Doanh nghiệp dưới 3 năm: Các loại giấy phép phổ biến của lĩnh vực Truyền thông - Quảng cáo', body, attachments).then(
+            message => {
+                this.spinner.hide();
+                $('#alert-success').modal('show');
+                $('#ttqcModal').modal('hide');
+            }
+        );
+    }
+
+    selectService5(e) {
+        const index = this.service5.indexOf(e.target.value);
+        if (index == -1) {
+            this.service5.push(e.target.value);
+        } else {
+            this.service5.splice(index, 1);
+        }
+    }
+
+    submit5(): void {
+        this.e = this.n = this.p = true;
+        if (!this.formValid()) return;
+
+        this.spinner.show('sending');
+        const serviceString = '<li>' + this.service5.join('</li><li>') + '</li>';
+        const body = [
+            {label: 'Họ tên', value: this.name},
+            {label: 'Số điện thoại', value: this.phone},
+            {label: 'Email', value: this.email},
+            {label: 'Doanh nghiệp của bạn còn thiếu loại giấy phép nào ?', value: serviceString}
+        ];
+        const subject = '[Website] Khách hàng đăng ký dịch vụ: ' + this.name;
+        let attachments = [];
+        this.smtp.send2(subject, 'Doanh nghiệp dưới 3 năm: Các loại giấy phép phổ biến của lĩnh vực Giáo dục - Nghề nghiệp', body, attachments).then(
+            message => {
+                this.spinner.hide();
+                $('#alert-success').modal('show');
+                $('#gdnnModal').modal('hide');
             }
         );
     }
