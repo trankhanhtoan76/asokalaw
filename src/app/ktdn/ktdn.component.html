@@ -90,7 +90,7 @@
                     </p>
                 </div>
                 <div class="pc">
-                    <p><button onclick="$('#ktdnform1').modal('show')" class="btn btn-warning" style="padding: 1rem 3rem; margin: 2rem 0 1.5rem">{{global.locale=='vi'?'Đặt lịch tư vấn':'Schedule a consultation'}}</button></p>
+                    <p><button (click)="selectServiceOnly(s1)" class="btn btn-warning" style="padding: 1rem 3rem; margin: 2rem 0 1.5rem">{{global.locale=='vi'?'Đặt lịch tư vấn':'Schedule a consultation'}}</button></p>
                     <p class="m-0"><a routerLink="/tu-van-luat-su" style="text-decoration: underline; color: #4cb1e0">{{global.locale=='vi'?'Xem danh sách tất cả luật sư >>':'See lawyers list >>'}}</a></p>
                 </div>
             </div>
@@ -170,7 +170,7 @@
                     <p class="m-0 center"><a routerLink='/dang-ky-kinh-doanh' style="text-decoration: underline; color: #4cb1e0">{{global.locale=='vi'?'View business registration procedure >>':'View business registration procedure >>'}}</a></p>
                 </div>
                 <div class="pc">
-                    <p><button onclick="$('#ktdnform1').modal('show')" class="btn btn-warning" style="padding: 1rem 3rem; margin: 2rem 0 1.5rem">{{global.locale=='vi'?'Xem báo giá chi tiết':'See detailed quotation'}}</button></p>
+                    <p><button (click)="selectServiceOnly(s2)" class="btn btn-warning" style="padding: 1rem 3rem; margin: 2rem 0 1.5rem">{{global.locale=='vi'?'Xem báo giá chi tiết':'See detailed quotation'}}</button></p>
                     <p class="m-0"><a routerLink='/dang-ky-kinh-doanh' style="text-decoration: underline; color: #4cb1e0">{{global.locale=='vi'?'Xem quy trình đăng ký kinh doanh >>':'View business registration procedure >>'}}</a></p>
                 </div>
             </div>
@@ -199,7 +199,7 @@
                     <p class="m-0 center"><a router="/dang-ky-dau-tu" style="text-decoration: underline; color: #4cb1e0">{{global.locale=='vi'?'Xem quy trình đăng ký đầu tư >>':'View invest registration procedure >>'}}</a></p>
                 </div>
                 <div class="pc">
-                    <p><button onclick="$('#ktdnform1').modal('show')" class="btn btn-warning" style="padding: 1rem 3rem; margin: 2rem 0 1.5rem">{{global.locale=='vi'?'Xem báo giá chi tiết':'See detailed quotation'}}</button></p>
+                    <p><button (click)="selectServiceOnly(s3)" class="btn btn-warning" style="padding: 1rem 3rem; margin: 2rem 0 1.5rem">{{global.locale=='vi'?'Xem báo giá chi tiết':'See detailed quotation'}}</button></p>
                     <p class="m-0"><a routerLink="/dang-ky-dau-tu" style="text-decoration: underline; color: #4cb1e0">{{global.locale=='vi'?'Xem quy trình đăng ký đầu tư >>':'View invest registration procedure >>'}}</a></p>
                 </div>
             </div>
@@ -452,26 +452,26 @@
                                 <div class="row">
                                     <div class="col-md-12">
                                         <div class="form-check form-check-inline">
-                                            <input (change)="selectService($event)" name="service" class="form-check-input" type="checkbox" id="tvtt" value="Tư vấn trực tiếp với luật sư">
-                                            <label class="form-check-label" for="tvtt">{{global.locale=='vi'?'Tư vấn trực tiếp với luật sư':'Direct lawyer consultation'}}</label>
+                                            <input (change)="selectService($event)" [checked]="isSelected(s1)" name="service" class="form-check-input" type="checkbox" id="tvtt" value="Tư vấn trực tiếp với luật sư">
+                                            <label class="form-check-label" for="tvtt">{{s1}}</label>
                                         </div>
                                     </div>
                                     <div class="col-md-12">
                                         <div class="form-check form-check-inline">
-                                            <input (change)="selectService($event)" name="service" class="form-check-input" type="checkbox" id="dkkdvn" value="Đăng ký kinh doanh công ty 100% vốn Việt Nam">
-                                            <label class="form-check-label" for="dkkdvn">{{global.locale=='vi'?'Đăng ký kinh doanh công ty 100% vốn Việt Nam':'Business registration with 100% Vietnamese capital'}}</label>
+                                            <input (change)="selectService($event)" [checked]="isSelected(s2)" name="service" class="form-check-input" type="checkbox" id="dkkdvn" value="Đăng ký kinh doanh công ty 100% vốn Việt Nam">
+                                            <label class="form-check-label" for="dkkdvn">{{s2}}</label>
                                         </div>
                                     </div>
                                     <div class="col-md-12">
                                         <div class="form-check form-check-inline">
-                                            <input (change)="selectService($event)" name="service" class="form-check-input" type="checkbox" id="dkkdnn" value="Đăng ký đầu tư công ty vốn nước ngoài">
-                                            <label class="form-check-label" for="dkkdnn">{{global.locale=='vi'?'Đăng ký đầu tư công ty vốn nước ngoài':'Investment registration for foreign capital companies'}}</label>
+                                            <input (change)="selectService($event)" [checked]="isSelected(s3)" name="service" class="form-check-input" type="checkbox" id="dkkdnn" value="Đăng ký đầu tư công ty vốn nước ngoài">
+                                            <label class="form-check-label" for="dkkdnn">{{s3}}</label>
                                         </div>
                                     </div>
                                     <div class="col-md-12">
                                         <div class="form-check form-check-inline">
-                                            <input (change)="selectService($event)" name="service" class="form-check-input" type="checkbox" id="orther" value="Khác">
-                                            <label class="form-check-label" for="orther">{{global.locale=='vi'?'Khác':'Others'}}</label>
+                                            <input (change)="selectService($event)" [checked]="isSelected(s4)" name="service" class="form-check-input" type="checkbox" id="orther" value="Khác">
+                                            <label class="form-check-label" for="orther">{{s4}}</label>
                                         </div>
                                     </div>
                                 </div>

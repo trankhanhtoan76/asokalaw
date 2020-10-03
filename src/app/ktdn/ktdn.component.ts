@@ -19,8 +19,16 @@ export class KtdnComponent implements OnInit {
     n;
     p;
     e;
+    s1;
+    s2;
+    s3;
+    s4;
 
-    constructor(private spinner: SpinnerService, private smtp: EmailService,public global: GlobalService) {
+    constructor(private spinner: SpinnerService, private smtp: EmailService, public global: GlobalService) {
+        this.s1 = this.global.locale == 'vi' ? 'Tư vấn trực tiếp với luật sư' : 'Direct lawyer consultation';
+        this.s2 = this.global.locale == 'vi' ? 'Đăng ký kinh doanh công ty 100% vốn Việt Nam' : 'Business registration with 100% Vietnamese capital';
+        this.s3 = this.global.locale == 'vi' ? 'Đăng ký đầu tư công ty vốn nước ngoài' : 'Investment registration for foreign capital companies';
+        this.s4 = this.global.locale == 'vi' ? 'Khác' : 'Others';
     }
 
     ngOnInit(): void {
@@ -73,6 +81,15 @@ export class KtdnComponent implements OnInit {
         } else {
             this.service.splice(index, 1);
         }
+    }
+
+    isSelected(value): boolean {
+        return this.service.indexOf(value) != -1;
+    }
+
+    selectServiceOnly(value) {
+        this.service = [value];
+        $('#ktdnform1').modal('show')
     }
 
     submit(): void {
