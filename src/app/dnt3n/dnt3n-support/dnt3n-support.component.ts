@@ -37,7 +37,7 @@ export class Dnt3nSupportComponent implements OnInit {
     fieldValid(value, type?): boolean {
         if (value) {
             if (type == 'phone') {
-                return /^[0-9]{10,15}$/.test(value);
+                return /^\+?[0-9\s]{10,15}$/.test(value);
             } else if (type == 'email') {
                 return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(value);
             }
@@ -48,6 +48,9 @@ export class Dnt3nSupportComponent implements OnInit {
 
     formValid(fields?: any): boolean {
         if (!fields) {
+            this.name = this.name.trim();
+            this.email = this.email.trim();
+            this.phone = this.phone.trim();
             return this.fieldValid(this.name) && this.fieldValid(this.email, 'email') && this.fieldValid(this.phone, 'phone');
         } else {
             for (const key in fields) {
