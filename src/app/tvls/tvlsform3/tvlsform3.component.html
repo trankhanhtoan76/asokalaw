@@ -39,7 +39,7 @@
                     </div>
                 </div>
                 <div class="form-group">
-                    <label>{{global.locale=='vi'?'Nhập nội dung câu hỏi dự kiến của bạn':'Nhập nội dung câu hỏi dự kiến của bạn aaa'}}</label>
+                    <label>{{global.locale=='vi'?'Nhập nội dung câu hỏi dự kiến của bạn':'Your questions'}}</label>
                     <textarea
                             placeholder="{{global.locale=='vi'?'Bạn vui lòng điền câu hỏi ở đây. Nội dung câu hỏi càng cụ thể, câu trả lời bạn nhận được từ luật sư/cố vấn càng rõ ràng. &#x0a; Ví dụ: &#x0a; 1. Tôi muốn được tư vấn về thủ tục thành lập công ty cổ phần. &#x0a; 2. Sau khi thành lập công ty, tôi muốn mở chi nhánh thì làm thế nào? &#x0a; 3. Tôi muốn đăng ký nhãn hiệu của công ty thì cần điều kiện gì?':'Please type your questions here. The more specific the question is, the clearer the answer you will receive from our lawyers/specialists. &#x0a; For example: &#x0a; 1. Consult me on the procedures of joint-stock company establishment. &#x0a; 2. After establishment, what should I do if I want to set up a branch office? &#x0a; 3. Consulte me on the requirements of company trademark registration.'}}"
                             rows="6" class="form-control tvlstextareaform" [(ngModel)]="description" name="description"></textarea>
@@ -64,7 +64,7 @@
                     <label>
                         <input (change)="checkTerm=!checkTerm" value="1" type="checkbox">
                         {{global.locale=='vi'?'Tôi đã đọc và đồng ý với các điều khoản':'I have read and accepted the terms and the conditions'}}
-                        <span style="text-decoration: underline;color:#0f74a8;font-style: italic">{{global.locale=='vi'?'Xem chi tiết':'See details'}}</span>
+                        <span style="text-decoration: underline;color:#0f74a8;font-style: italic"><a href="/chinh-sach-khach-hang">{{global.locale=='vi'?'Xem chi tiết':'See details'}}</a></span>
                     </label><br/>
                     <i *ngIf="!checkTerm&&t"><small class="text-danger">{{global.locale=='vi'?'Bắt buộc đồng ý với các điều khoản.':'Required to agree to the terms.'}}</small></i>
                 </div>

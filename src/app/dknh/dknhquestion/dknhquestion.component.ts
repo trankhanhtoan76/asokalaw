@@ -112,7 +112,7 @@ export class DknhquestionComponent implements OnInit {
                 },
                 {
                     t: 'Hình như tôi thấy bên khác làm nhanh hơn',
-                    c: 'Không thể có bên khác làm nhanh hơn, bởi tất cả các bên đại diện để đăng ký nhãn hiệu đều chỉ có vai trò là người nộp đơn giùm anh/chị, còn cơ quan xử lý là Cục Sở Hữu Trí Tuệ. Thời gian xử lý đơn phụ thuộc vào số lượng hồ sơ mà các nhân viên cục phải xử lý nên có thể xê xích như trên.'
+                    c: 'Không thể có bên khác làm nhanh hơn, bởi tất cả các bên đại diện để đăng ký nhãn hiệu đều chỉ có vai trò là người nộp đơn giùm anh/chị, còn cơ quan xử lý là Cục Sở Hữu Trí Tuệ. Thời gian xử lý đơn phụ thuộc vào số lượng hồ sơ mà các nhân viên Cục phải xử lý nên có thể xê xích như trên.'
                 },
                 {
                     t: 'Văn bằng bảo hộ có thời hạn bao lâu?',
@@ -221,7 +221,7 @@ export class DknhquestionComponent implements OnInit {
                         },
                         {
                             t: 'How to know if a logo is eligible for registration?',
-                            c: 'To know whether your logo is eligible for exclusive logo registration, you need to determine: 1. Is your logo truly a logo (a sign made of words, images or words associated with images, expressed in one or more colors)? 2. Is your logo able to differentiate its goods and services from other businesses\' goods and services of the same type? If the anwers to the above questions are yes, you can register your logo for protection.'
+                            c: 'To know whether your logo is eligible for exclusive logo registration, you need to determine: 1. Is your logo truly a logo (a sign made of words, images or words associated with images, expressed in one or more colors)? 2. Is your logo able to differentiate its goods and services from other businesses\'s goods and services of the same type? If the anwers to the above questions are yes, you can register your logo for protection.'
                         },
                         {
                             t: 'Does Asoka Law offer free logo checking?',

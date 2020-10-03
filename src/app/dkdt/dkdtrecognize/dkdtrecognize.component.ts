@@ -21,9 +21,9 @@ export class DkdtrecognizeComponent implements OnInit {
     ngAfterContentInit(): void {
         $('.custom-collapse').on('click', function (elem) {
             if ($(this).hasClass('collapsed')) {
-                $(this).text('Thu gọn');
+                $(this).text('Collapse');
             } else {
-                $(this).text('Chi tiết hạng mục công việc');
+                $(this).text('Task description');
             }
         });
         $('input[name="checkBox"]').on('change', function () {

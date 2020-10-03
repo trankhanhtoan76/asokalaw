@@ -14,32 +14,68 @@
                     <p class="mission-circle-img"><img src="/assets/media/DND3N/phat-trien-ben-vung/business process 2.png" style="max-width: 100%"></p>
                    <div class="pc">
                        <div class="mission-circle-list list01">
-                           <p > {{global.locale=='vi'?'DỊCH VỤ CẦN THIẾT':'NESCESSARY SERVICES'}}</p>
+                           <p>{{global.locale=='vi'?'DỊCH VỤ CẦN THIẾT':'SERVICE NEEDED'}}</p>
                            <ul>
-                               <li><a routerLink="/phap-ly-thuong-xuyen"> {{global.locale=='vi'?'Quản trị “4 trong 1”':'"4-in-1" administration'}}</a></li>
-                               <li><a routerLink="/">{{global.locale=='vi'?'Ngành nghề có điều kiện':'Conditional business lines'}}</a></li>
-                               <li><a routerLink="/dang-ky-nhan-hieu">{{global.locale=='vi'?'Đăng ký nhãn hiệu':'Trademark registration'}}</a></li>
-                           </ul>
-                       </div>
-                       <div class="mission-circle-list list02 gray-color">
-                           <p>{{global.locale=='vi'?'DỊCH VỤ CẦN THIẾT':'NESCESSARY SERVICES'}}</p>
-                           <ul>
-                               <li><a routerLink="/tu-van-luat-su">{{global.locale=='vi'?'Tư vấn luật sư':'Lawyers consultation'}}</a></li>
-                               <li><a routerLink="/dang-ky-kinh-doanh">{{global.locale=='vi'?'Đăng ký kinh doanh':'Business registration'}}</a></li>
+                               <li><a routerLink="/tu-van-luat-su">{{global.locale=='vi'?'Tư vấn luật sư':'Lawyer consultation'}}</a></li>
+                               <li><a routerLink="/dang-ky-kinh-doanh">{{global.locale=='vi'?'Đăng ký kinh doanh':'Business Registration'}}</a></li>
                                <li><a routerLink="/dang-ky-dau-tu">{{global.locale=='vi'?'Đăng ký đầu tư':'Investment registration'}}</a></li>
                            </ul>
                        </div>
-                       <div class="mission-circle-list list03 gray-color">
-                           <p>{{global.locale=='vi'?'DỊCH VỤ CẦN THIẾT':'NESCESSARY SERVICES'}}</p>
+                       <div class="mission-circle-list list02">
+                           <p>{{global.locale=='vi'?'DỊCH VỤ CẦN THIẾT':'SERVICE NEEDED'}}</p>
+                           <ul>
+                               <li>
+                                   <a routerLink="/phap-ly-thuong-xuyen">{{global.locale=='vi'?'Quản trị “4 trong 1”':'4-in-1 administration'}}</a>
+                               </li>
+                               <li>{{global.locale=='vi'?'Ngành nghề có điều kiện':'Industry conditional'}}</li>
+                               <li><a routerLink="/dang-ky-nhan-hieu">{{global.locale=='vi'?'Đăng ký nhãn hiệu':'Registering trademark'}}</a></li>
+                           </ul>
+
+                       </div>
+                       <div class="mission-circle-list list03">
+                           <p>{{global.locale=='vi'?'DỊCH VỤ CẦN THIẾT':'SERVICE NEEDED'}}</p>
                            <ul>
                                <li><a routerLink="/giai-quyet-tranh-chap">{{global.locale=='vi'?'Giải quyết tranh chấp':'Dispute resolution'}}</a></li>
-                               <li><a routerLink="/phap-ly-su-kien"> {{global.locale=='vi'?'Pháp lý sự kiện':'Events related legal matters'}}</a></li>
-                               <li><a routerLink="/">{{global.locale=='vi'?'Tạm ngưng - Giải thể':'Suspension - dissolution'}}</a></li>
+                               <li><a routerLink="/phap-ly-su-kien">{{global.locale=='vi'?'Pháp lý sự kiện':'Events legal'}}</a></li>
+                               <li>{{global.locale=='vi'?'Tạm ngưng - Giải thể':'Suspension - dissolution'}}</li>
                            </ul>
+
                        </div>
                    </div>
                 </div>
             </div>
         </div>
+        <!--            test-->
+        <div class="row d-block d-md-none" style="margin-left: 10%; margin-top: 15px;">
+            <div class="mission1-mobile">
+                <p style="color: #0c4c76 !important;font-weight: 500;">{{global.locale=='vi'?'KHỞI TẠO DOANH NGHIỆP':'BUSINESS ESTABLISHMENT'}}</p>
+                <ul>
+                    <li style="list-style: inside !important;"><a routerLink="/tu-van-luat-su" style=" color: #0c4c76 !important; font-size: 12px !important; font-weight: 500 !important; margin-bottom: 5px !important;">{{global.locale=='vi'?'Tư vấn luật sư':'Lawyer consultation'}}</a></li>
+                    <li  style="list-style: inside !important;"><a routerLink="/dang-ky-kinh-doanh" style="list-style: disc !important; color: #0c4c76 !important; font-size: 12px !important; font-weight: 500 !important; margin-bottom: 5px !important;">{{global.locale=='vi'?'Đăng ký kinh doanh':'Business Registration'}}</a></li>
+                    <li style="list-style: inside !important;"><a routerLink="/dang-ky-dau-tu" style="list-style: disc !important; color: #0c4c76 !important; font-size: 12px !important; font-weight: 500 !important; margin-bottom: 5px !important;">{{global.locale=='vi'?'Đăng ký đầu tư':'Investment registration'}}</a></li>
+                </ul>
+            </div>
+            <div class="mission2-mobile">
+                <p style="color: #0c4c76 !important;font-weight: 500;">{{global.locale=='vi'?'DOANH NGHIỆP DƯỚI 03 NĂM':'BUSINESSES UNDER 03 YEARS'}}</p>
+                <ul>
+                    <li style="list-style: inside !important;">
+                        <a routerLink="/phap-ly-thuong-xuyen" style=" color: #0c4c76 !important; font-size: 12px !important; font-weight: 500 !important; margin-bottom: 5px !important;">{{global.locale=='vi'?'Quản trị “4 trong 1”':'4-in-1 administration'}}</a>
+                    </li>
+                    <li style="list-style: inside !important;" ><a routerLink="/giai-quyet-tranh-chap" style=" color: #0c4c76 !important; font-size: 12px !important; font-weight: 500 !important; margin-bottom: 5px !important;">{{global.locale=='vi'?'Ngành nghề có điều kiện':'Industry conditional'}}</a></li>
+                    <li style="list-style: inside !important;"><a routerLink="/dang-ky-nhan-hieu" style=" color: #0c4c76 !important; font-size: 12px !important; font-weight: 500 !important; margin-bottom: 5px !important;">{{global.locale=='vi'?'Đăng ký nhãn hiệu':'Registering trademark'}}</a></li>
+                </ul>
+
+            </div>
+            <div class="mission3-moblie">
+                <p style="color: #0c4c76 !important;font-weight: 500;">{{global.locale=='vi'?'DOANH NGHIỆP TRÊN 03 NĂM':'BUSINESSES OVER 03 YEARS'}}</p>
+                <ul>
+                    <li style="list-style: inside !important;"><a routerLink="/giai-quyet-tranh-chap" style=" color: #0c4c76 !important; font-size: 12px !important; font-weight: 500 !important; margin-bottom: 5px !important;">{{global.locale=='vi'?'Giải quyết tranh chấp':'Dispute resolution'}}</a></li>
+                    <li style="list-style: inside !important;"><a routerLink="/phap-ly-su-kien" style=" color: #0c4c76 !important; font-size: 12px !important; font-weight: 500 !important; margin-bottom: 5px !important;">{{global.locale=='vi'?'Pháp lý sự kiện':'Events legal'}}</a></li>
+                    <li style="list-style: inside !important;"><a routerLink="/#" style=" color: #0c4c76 !important; font-size: 12px !important; font-weight: 500 !important; margin-bottom: 5px !important;">{{global.locale=='vi'?'Tạm ngưng - Giải thể':'Suspension - dissolution'}}</a></li>
+                </ul>
+
+            </div>
+        </div>
+        <!--            end test-->
     </div>
 </section>

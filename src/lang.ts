@@ -18,7 +18,7 @@ export const langDefined = {
     },
     'chon-linh-vuc-ban-quan-tam': {
         vi: "Chọn lĩnh vực bạn quan tâm",
-        en: ""
+        en: "Choose your field of interest"
     },
     'doanh-nghiep': {
         vi: "Doanh nghiệp",
@@ -135,8 +135,8 @@ export const langDefined = {
         en: "Regular legal services"
     },
     '1109luot': {
-        vi: "1.109 lượt",
-        en: "1.109 times"
+        vi: "1109 lượt",
+        en: "1109 times"
     },
 
     'home-3tr': {

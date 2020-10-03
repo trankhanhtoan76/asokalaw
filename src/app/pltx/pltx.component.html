@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col-md-6 title-banner">
                 <h1>{{global.locale=='vi'?'Quản trị doanh nghiệp hiệu quả ':'"4 in 1" Effective Business Management'}}<b class="light-blue">{{global.locale=='vi'?'"4 trong 1"':''}}</b></h1>
-                <p class="sub">{{global.locale=='vi'?'Asoka Law có kinh nghiệm tuyệt vời để giải quyết 4 vấn đề ':'Asoka Law is experienced in dealing with 4 types of '}}<b class="font-weight-bold">{{global.locale=='vi'?'pháp lý – hợp đồng – thuế – lao động':' issues, including legal, contract, tax, and labor '}}</b>{{global.locale=='vi'?', nhằm tiết kiệm cho doanh nghiệp hơn 80% chi phí vận hành.':', in order to save businesses more than 80% of operating costs.'}}</p>
+                <p class="sub">{{global.locale=='vi'?'Asoka Law có kinh nghiệm tuyệt vời để giải quyết 4 vấn đề ':'Asoka Law is experienced in dealing with 4 types of '}}<b class="font-weight-bold">{{global.locale=='vi'?'pháp lý – hợp đồng – thuế – lao động':' issues, including legal, contract, tax, and labor'}}</b>{{global.locale=='vi'?', nhằm tiết kiệm cho doanh nghiệp hơn 80% chi phí vận hành.':', in order to save businesses more than 80% of operating costs.'}}</p>
                 <button onclick="$('#pltxform1').modal('show')" type="button" class="btn btn-warning">{{global.locale=='vi'?'BẮT ĐẦU DÙNG THỬ':'Get Started'}}</button>
             </div>
         </div>
@@ -27,7 +27,7 @@
                 </button>
             </div>
             <div class="modal-body">
-                <h4 class="text-center">{{global.locale=='vi'?'Dùng thử miễn phí 0 đồng ngay hôm nay':'Dùng thử miễn phí 0 đồng ngay hôm nay aaa'}}</h4>
+                <h4 class="text-center">{{global.locale=='vi'?'Dùng thử miễn phí 0 đồng ngay hôm nay':'Free Trial - Try It Today'}}</h4>
                 <div class="form-group">
                     <input (keyup)="n=true" [class.is-invalid]="!fieldValid(name)&&n" [class.is-valid]="fieldValid(name)&&n" type="text" class="form-control" [(ngModel)]="name" name="name" placeholder="{{global.locale=='vi'?'Họ tên *':'Full name *'}}">
                     <i *ngIf="!fieldValid(name) && n"><small class="text-danger">{{global.locale=='vi'?'Bắt buộc nhập họ tên.':'Please enter your name. '}}</small></i>
