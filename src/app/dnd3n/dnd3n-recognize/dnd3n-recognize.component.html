@@ -55,16 +55,44 @@
                                 <i *ngIf="!fieldValid(email,'email') && e"><small class="text-danger">{{global.locale == 'vi' ? 'Bắt buộc nhập email hợp lệ.' : 'Invalid email address. '}}</small></i>
                             </div>
                             <p class="form-small-header-V"> {{global.locale == 'vi' ? 'Ngành ngề kinh doanh' : 'Business lines'}}</p>
-                            <textarea placeholder="Ghi đầy đủ theo giấy phép Đăng ký kinh doanhdoanh, kết quả nhận được càng chính xác. Ví dụ: giáo dục khác chưa được phân vào đâu: trung tâm ngoại ngữ"></textarea>
+                            <textarea name="desciption2" [(ngModel)]="description2" placeholder="Ghi đầy đủ theo giấy phép Đăng ký kinh doanhdoanh, kết quả nhận được càng chính xác. Ví dụ: giáo dục khác chưa được phân vào đâu: trung tâm ngoại ngữ"></textarea>
                             <p class="form-small-header-V">{{global.locale == 'vi' ? 'Tài liệu đính kèm' : 'Attachments'}}</p>
-                            <ul class="list-group" id="list-record-attachment-V">
-                                <li class="list-group-item"><span>{{global.locale == 'vi' ? 'Giấy đăng ký kinh doanh 1' : 'Business Registration Certificate 1'}}</span><span class="icon-attachment-file-V"><i style="color: #00BFFF;cursor: pointer;" class="fa fa-paperclip" aria-hidden="true"></i>{{global.locale == 'vi' ? ' Tải lên tại đây' : ' Upload here'}}</span></li>
-                                <li class="list-group-item"><span>{{global.locale == 'vi' ? 'Giấy đăng ký kinh doanh 2' : 'Business Registration Certificate 2'}}</span><span class="icon-attachment-file-V"><i style="color: #00BFFF;cursor: pointer;" class="fa fa-paperclip" aria-hidden="true"></i>{{global.locale == 'vi' ? ' Tải lên tại đây' : ' Upload here'}}</span></li>
-                                <li class="list-group-item"><span>{{global.locale == 'vi' ? 'Tài liệu đăng ký kinh doanh khác' : 'Other business registration documents'}}</span><span class="icon-attachment-file-V"><i style="color: #00BFFF;cursor: pointer;" class="fa fa-paperclip" aria-hidden="true"></i>{{global.locale == 'vi' ? ' Tải lên tại đây' : ' Upload here'}}</span></li>
-                            </ul>
+                            <div class="form-group">
+                                <span>{{global.locale == 'vi' ? 'Giấy đăng ký kinh doanh 1' : 'Business Registration Certificate 1'}}</span>
+                                <button *ngIf="!attachment1" style="margin-bottom: 5px;color: #0f74a8;text-decoration: underline" class="btn" type="button" (click)="fileInput11.click()">
+                                    <span style="color: #0f74a8" class="far fa-paperclip"></span>{{global.locale=='vi'?' tải lên tại đây':' Upload file'}}
+                                    <input #fileInput11 type="file" (change)="onSelectFile1($event)" style="display:none;"/>
+                                </button>
+                                <ng-container *ngIf="attachment1">
+                                    <span style="color: #0f74a8;font-weight: bold;margin-left: 5px">{{attachmentName1}}</span>
+                                    <span (click)="onRemoveSelectedFile1()" class="fa fa-times-circle" style="color:red;cursor: pointer"></span>
+                                </ng-container>
+                            </div>
+                            <div class="form-group">
+                                <span>{{global.locale == 'vi' ? 'Giấy đăng ký kinh doanh 2' : 'Business Registration Certificate 2'}}</span>
+                                <button *ngIf="!attachment2" style="margin-bottom: 5px;color: #0f74a8;text-decoration: underline" class="btn" type="button" (click)="fileInput12.click()">
+                                    <span style="color: #0f74a8" class="far fa-paperclip"></span>{{global.locale=='vi'?' tải lên tại đây':' Upload file'}}
+                                    <input #fileInput12 type="file" (change)="onSelectFile2($event)" style="display:none;"/>
+                                </button>
+                                <ng-container *ngIf="attachment2">
+                                    <span style="color: #0f74a8;font-weight: bold;margin-left: 5px">{{attachmentName2}}</span>
+                                    <span (click)="onRemoveSelectedFile2()" class="fa fa-times-circle" style="color:red;cursor: pointer"></span>
+                                </ng-container>
+                            </div>
+                            <div class="form-group">
+                                <span>{{global.locale == 'vi' ? 'Tài liệu đăng ký kinh doanh khác' : 'Other business registration documents'}}</span>
+                                <button *ngIf="!attachment3" style="margin-bottom: 5px;color: #0f74a8;text-decoration: underline" class="btn" type="button" (click)="fileInput13.click()">
+                                    <span style="color: #0f74a8" class="far fa-paperclip"></span>{{global.locale=='vi'?' tải lên tại đây':' Upload file'}}
+                                    <input #fileInput13 type="file" (change)="onSelectFile3($event)" style="display:none;"/>
+                                </button>
+                                <ng-container *ngIf="attachment3">
+                                    <span style="color: #0f74a8;font-weight: bold;margin-left: 5px">{{attachmentName3}}</span>
+                                    <span (click)="onRemoveSelectedFile3()" class="fa fa-times-circle" style="color:red;cursor: pointer"></span>
+                                </ng-container>
+                            </div>
                         </div>
                         <div class="modal-footer" style="justify-content: center;">
-                            <button type="button" style="margin-bottom: 20px;" class="btn btn-warning" data-dismiss="modal">{{global.locale == 'vi' ? 'ĐĂNG KÝ GIẤY PHÉP' : 'REGISTERING LICENSES'}}</button>
+                            <button type="button" style="margin-bottom: 20px;" class="btn btn-warning" (click)="submit6()">{{global.locale == 'vi' ? 'ĐĂNG KÝ GIẤY PHÉP' : 'REGISTERING LICENSES'}}</button>
                         </div>
                     </div>
                 </div>

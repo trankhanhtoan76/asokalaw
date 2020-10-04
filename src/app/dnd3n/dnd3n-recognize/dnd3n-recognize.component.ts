@@ -33,6 +33,7 @@ export class Dnd3nRecognizeComponent implements OnInit {
     email: string;
     phone: string;
     description: string;
+    description2: string;
     n;
     p;
     e;
@@ -41,47 +42,18 @@ export class Dnd3nRecognizeComponent implements OnInit {
     service3 = [];
     service4 = [];
     service5 = [];
+    attachmentName1;
+    attachmentName2;
+    attachmentName3;
+    attachment1;
+    attachment2;
+    attachment3;
+    currentReadfile = 0;
 
     constructor(private spinner: SpinnerService, private smtp: EmailService, public global: GlobalService) {
     }
 
     ngOnInit(): void {
-    }
-
-    fieldValid(value, type?): boolean {
-        if (value) {
-            if (type == 'phone') {
-                return /^\+?[0-9\s]{10,15}$/.test(value);
-            } else if (type == 'email') {
-                return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(value);
-            }
-            return true;
-        }
-        return false;
-    }
-
-    formValid(fields?: any): boolean {
-        if (!fields) {
-            this.name = this.name.trim();
-            this.email = this.email.trim();
-            this.phone = this.phone.trim();
-            return this.fieldValid(this.name) && this.fieldValid(this.email, 'email') && this.fieldValid(this.phone, 'phone');
-        } else {
-            for (const key in fields) {
-                if (fields.hasOwnProperty('key')) {
-                    if (fields[key].hasOwnProperty('name')) {
-                        if (fields[key].hasOwnProperty('type')) {
-                            if (!this.fieldValid(fields[key].name, fields[key].type))
-                                return false;
-                        } else {
-                            if (!this.fieldValid(fields[key].name))
-                                return false;
-                        }
-                    }
-                }
-            }
-            return true;
-        }
     }
 
     onRemoveSelectedFile(logo) {
@@ -120,6 +92,7 @@ export class Dnd3nRecognizeComponent implements OnInit {
 
     readFile(e) {
         let reader = e.target;
+
         if (this.onSelectLogo == 1) {
             this.logo1.data = reader.result;
         } else if (this.onSelectLogo == 2) {
@@ -129,6 +102,95 @@ export class Dnd3nRecognizeComponent implements OnInit {
         }
 
         this.changeFormHeight();
+    }
+
+    onRemoveSelectedFile1() {
+        this.attachmentName1 = '';
+        this.attachment1 = '';
+    }
+
+    onSelectFile1(e) {
+        const file = e.dataTransfer ? e.dataTransfer.files[0] : e.target.files[0];
+        const reader = new FileReader();
+        this.currentReadfile = 1;
+        this.attachmentName1 = e.srcElement.value.replace(/^.*[\\\/]/, '')
+        reader.onload = this.readFile2.bind(this);
+        reader.readAsDataURL(file);
+    }
+
+    readFile2(e) {
+        let reader = e.target;
+        if (this.currentReadfile == 1) {
+            this.attachment1 = reader.result;
+        } else if (this.currentReadfile == 2) {
+            this.attachment2 = reader.result;
+        } else {
+            this.attachment3 = reader.result;
+        }
+    }
+
+    onRemoveSelectedFile2() {
+        this.attachmentName2 = '';
+        this.attachment2 = '';
+    }
+
+    onSelectFile2(e) {
+        const file = e.dataTransfer ? e.dataTransfer.files[0] : e.target.files[0];
+        const reader = new FileReader();
+        this.currentReadfile = 2;
+        this.attachmentName2 = e.srcElement.value.replace(/^.*[\\\/]/, '')
+        reader.onload = this.readFile2.bind(this);
+        reader.readAsDataURL(file);
+    }
+
+    onRemoveSelectedFile3() {
+        this.attachmentName3 = '';
+        this.attachment3 = '';
+    }
+
+    onSelectFile3(e) {
+        const file = e.dataTransfer ? e.dataTransfer.files[0] : e.target.files[0];
+        const reader = new FileReader();
+        this.currentReadfile = 3;
+        this.attachmentName3 = e.srcElement.value.replace(/^.*[\\\/]/, '')
+        reader.onload = this.readFile2.bind(this);
+        reader.readAsDataURL(file);
+    }
+
+    fieldValid(value, type?): boolean {
+        if (value) {
+            if (type == 'phone') {
+                return /^\+?[0-9\s]{10,15}$/.test(value);
+            } else if (type == 'email') {
+                return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(value);
+            }
+            return true;
+        }
+        return false;
+    }
+
+    formValid(fields?: any): boolean {
+        if (!fields) {
+            this.name = this.name.trim();
+            this.email = this.email.trim();
+            this.phone = this.phone.trim();
+            return this.fieldValid(this.name) && this.fieldValid(this.email, 'email') && this.fieldValid(this.phone, 'phone');
+        } else {
+            for (const key in fields) {
+                if (fields.hasOwnProperty('key')) {
+                    if (fields[key].hasOwnProperty('name')) {
+                        if (fields[key].hasOwnProperty('type')) {
+                            if (!this.fieldValid(fields[key].name, fields[key].type))
+                                return false;
+                        } else {
+                            if (!this.fieldValid(fields[key].name))
+                                return false;
+                        }
+                    }
+                }
+            }
+            return true;
+        }
     }
 
     changeFormHeight() {
@@ -340,6 +402,32 @@ export class Dnd3nRecognizeComponent implements OnInit {
                 this.spinner.hide();
                 $('#alert-success').modal('show');
                 $('#gdnnModal').modal('hide');
+            }
+        );
+    }
+
+    submit6(): void {
+        this.e = this.n = this.p = true;
+        if (!this.formValid()) return;
+
+        this.spinner.show('sending');
+        const serviceString = '<li>' + this.service5.join('</li><li>') + '</li>';
+        const body = [
+            {label: 'Họ tên', value: this.name},
+            {label: 'Số điện thoại', value: this.phone},
+            {label: 'Email', value: this.email},
+            {label: 'Mô tả', value: this.description2},
+        ];
+        const subject = '[Website] Khách hàng đăng ký dịch vụ: ' + this.name;
+        let attachments = [];
+        if (this.attachment1) attachments.push({name: this.attachmentName1, data: this.attachment1});
+        if (this.attachment2) attachments.push({name: this.attachmentName2, data: this.attachment2});
+        if (this.attachment3) attachments.push({name: this.attachmentName3, data: this.attachment3});
+        this.smtp.send2(subject, 'Doanh nghiệp dưới 3 năm: Tra cứu giấy phép ngành nghề có điều kiện miễn phí', body, attachments).then(
+            message => {
+                this.spinner.hide();
+                $('#alert-success').modal('show');
+                $('#search-free-V').modal('hide');
             }
         );
     }
