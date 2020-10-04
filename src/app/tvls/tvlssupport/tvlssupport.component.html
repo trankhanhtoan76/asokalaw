@@ -82,3 +82,86 @@
     </div>
   </div>
 </section>
+<div class="tuvanmienphi" style="text-align: center;" >
+    <button onclick="$('#tvlssupportModal').modal('show')" type="button" class="btn btn-warning">{{global.locale=='vi'?'TƯ VẤN DỊCH VỤ':'GET FREE CONSULTATION'}}</button>
+</div>
+<div class="modal modal-dk-V-list" id="tvlssupportModal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <p>{{global.locale == 'vi' ? 'Đăng ký tư vấn dịch vụ' : 'Sign up for a service consultant\n'}}</p>
+                <i class="fa fa-times close" aria-hidden="true" type="button" data-dismiss="modal"></i>
+            </div>
+            <div class="modal-body" style="margin-top: 15px;">
+                <div class="form-group">
+                    <input (keyup)="n=true" [class.is-invalid]="!fieldValid(name)&&n" [class.is-valid]="fieldValid(name)&&n" type="text" class="form-control" [(ngModel)]="name" name="name" placeholder="{{global.locale=='vi'?'Họ tên *':'Full name *'}}">
+                    <i *ngIf="!fieldValid(name) && n"><small class="text-danger">{{global.locale == 'vi' ? 'Bắt buộc nhập họ tên.' : 'Please enter your name. '}}</small></i>
+                </div>
+                <div class="form-group">
+                    <input (keyup)="p=true" [class.is-invalid]="!fieldValid(phone,'phone')&&p" [class.is-valid]="fieldValid(phone,'phone')&&p" class="form-control" [(ngModel)]="phone" name="phone" type="text" placeholder="{{global.locale=='vi'?'Số điện thoại *':'Phone number'}}"/>
+                    <i *ngIf="!fieldValid(phone,'phone') && p"><small class="text-danger">{{global.locale == 'vi' ? 'Bắt buộc nhập số điện thoại hợp lệ.' : 'Invalid phone number. '}}</small></i>
+                </div>
+                <div class="form-group">
+                    <input (keyup)="e=true" [class.is-invalid]="!fieldValid(email,'email')&&e" [class.is-valid]="fieldValid(email,'email')&&e" class="form-control" name="email" [(ngModel)]="email" type="text" placeholder="Email"/>
+                    <i *ngIf="!fieldValid(email,'email') && e"><small class="text-danger">{{global.locale == 'vi' ? 'Bắt buộc nhập email hợp lệ.' : 'Invalid email address. '}}</small></i>
+                </div>
+                <div class="form-group" style="margin: 20px;">
+                    <div class="container-fluid">
+                        <p class="form-small-header-V">{{global.locale == 'vi' ? 'Dịch vụ' : 'Service:'}}</p>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="form-check-inline">
+                                    <input (change)="selectService($event)" [value]="s1" class="form-check-input" name="s1" type="checkbox" id="s1">
+                                    <label class="form-check-label font-weight-normal" for="s1">{{s1}}</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="form-check-inline">
+                                    <input (change)="selectService($event)" [value]="s2" class="form-check-input" name="s2" type="checkbox" id="s2">
+                                    <label class="form-check-label font-weight-normal" for="s2">{{s2}}</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="form-check-inline">
+                                    <input (change)="selectService($event)" [value]="s3" class="form-check-input" name="s3" type="checkbox" id="s3">
+                                    <label class="form-check-label font-weight-normal" for="s3">{{s3}}</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="form-check-inline">
+                                    <input (change)="selectService($event)" [value]="s4" class="form-check-input" name="s4" type="checkbox" id="s4">
+                                    <label class="form-check-label font-weight-normal" for="s4">{{s4}}</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="form-check-inline">
+                                    <input (change)="selectService($event)" [value]="s5" class="form-check-input" name="s5" type="checkbox" id="s5">
+                                    <label class="form-check-label font-weight-normal" for="s5">{{s5}}</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="form-check-inline">
+                                    <input (change)="selectService($event)" [value]="s6" class="form-check-input" name="s1" type="checkbox" id="s6">
+                                    <label class="form-check-label font-weight-normal" for="s6">{{s6}}</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer" style="justify-content: center;">
+                <button (click)="submit()" type="button" style="margin-bottom: 20px;" class="btn btn-warning" >{{global.locale == 'vi' ? 'ĐĂNG KÝ GIẤY PHÉP' : 'REGISTERING LICENSES'}}</button>
+            </div>
+        </div>
+    </div>
+</div>
