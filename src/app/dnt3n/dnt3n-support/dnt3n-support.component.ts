@@ -29,6 +29,13 @@ export class Dnt3nSupportComponent implements OnInit {
     p;
 
     constructor(private spinner: SpinnerService, private smtp: EmailService,public global: GlobalService) {
+        if(this.global.locale!='vi'){
+            this.s1 = 'Dispute Settlement';
+            this.s2 = 'Change of Business';
+            this.s3 = 'Regular Legal Service';
+            this.s4 = 'Investment Registration';
+            this.s5 = 'Franchising';
+        }
     }
 
     ngOnInit(): void {
