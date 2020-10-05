@@ -192,7 +192,7 @@
                 <div class="col-md-4">
                     <div class="box shadow-lg" style="background-color: #FDF6F3;border: 1px solid #4caddb">
                         <div class="block-one">
-                            <img class="sticky" src="/assets/media/DKKD/cac-goi-phi/Asset 6.svg">
+                            <img class="sticky" [src]="global.locale=='vi'?'/assets/media/DKKD/cac-goi-phi/Asset 36.svg':'/assets/media/DKKD/cac-goi-phi/Asset 36.svg'" >
                             <div class="title-block center">
                                 <h6>{{global.locale=='vi'?'Gói tiết kiệm':'Economic package'}}</h6>
                             </div>
@@ -371,7 +371,7 @@
                 <div class="col-md-4">
                     <div class="box shadow-lg" style="border: 1px solid #9BD2ED; background-color: #F6FBFE">
                         <div class="block-one">
-                            <img class="sticky" src="/assets/media/DKKD/cac-goi-phi/Asset 6.svg">
+                            <img class="sticky" [src]="global.locale=='vi'?'/assets/media/DKKD/cac-goi-phi/Asset 37.svg':'/assets/media/DKKD/cac-goi-phi/Asset 37.svg'" >
                             <div class="title-block center">
                                 <h6>{{global.locale=='vi'?'Gói toàn diện':'Comprehensive package'}}</h6>
                             </div>
@@ -529,7 +529,7 @@
                 <div class="col-sm-12 p-4">
                     <div class="box shadow-lg" style="border: 1px solid #9BD2ED; background-color: #F6FBFE">
                         <div class="block-one">
-                            <img class="sticky" src="/assets/media/DKKD/cac-goi-phi/Asset 6.svg">
+                            <img class="sticky" [src]="global.locale=='vi'?'/assets/media/DKKD/cac-goi-phi/Asset 37.svg':'/assets/media/DKKD/cac-goi-phi/Asset 37.svg'">
                             <div class="title-block center">
                                 <h6>{{global.locale=='vi'?'Gói toàn diện':'Comprehensive package'}}</h6>
                             </div>
@@ -544,7 +544,7 @@
                         <div class="block-two center">
                             <p style="padding-top: 20px;
     min-height: 150px; font-size: 12px">
-                                {{global.locale=='vi'?'Phù hợp với nhà đầu tư muốn ủy quyền toàn bộ thủ tục cho Asoka Law. Bao gồm thực hiện mọi hồ sơ tại SởKế Hoạch & Đầu Tư, Ngân Hàng, Cơ quan Công An, Đơn vị cung cấp chữ ký số, hóa đơn, khai trình tại Cục Thuế.':'Phù hợp với nhà đầu tư muốn ủy quyền toàn bộ thủ tục cho Asoka Law. Bao gồm thực hiện mọi hồ sơ tại SởKế Hoạch & Đầu Tư, Ngân Hàng, Cơ quan Công An, Đơn vị cung cấp chữ ký số, hóa đơn, khai trình tại Cục Thuế. aaa'}}
+                                {{global.locale=='vi'?'Phù hợp với nhà đầu tư muốn ủy quyền toàn bộ thủ tục cho Asoka Law. Bao gồm thực hiện mọi hồ sơ tại SởKế Hoạch & Đầu Tư, Ngân Hàng, Cơ quan Công An, Đơn vị cung cấp chữ ký số, hóa đơn, khai trình tại Cục Thuế.':'For investors who want to authorize Asoka Law for all procedures of investment, including representing to perform all tasks at the Department of Planning & Investment, Banks, and Tax Departments.'}}
                             </p>
                             <button (click)="submit('Gói toàn diện')" class="btn btn-outline-warning" style="border-radius: 30px; padding: 5px 20px;">{{global.locale=='vi'?'Đăng ký':'Register'}}
                             </button>
@@ -597,7 +597,7 @@
                 <div class="col-sm-12 p-4">
                     <div class="box shadow-lg" style="background-color: #FDF6F3;border: 1px solid #4caddb">
                         <div class="block-one">
-                            <img class="sticky" src="/assets/media/DKKD/cac-goi-phi/Asset 6.svg">
+                            <img class="sticky"  [src]="global.locale=='vi'?'/assets/media/DKKD/cac-goi-phi/Asset 36.svg':'/assets/media/DKKD/cac-goi-phi/Asset 36.svg'">
                             <div class="title-block center">
                                 <h6>{{global.locale=='vi'?'Gói tiết kiệm':'Economic package'}}</h6>
                             </div>
@@ -664,7 +664,7 @@
                         <div class="block-two center">
                             <p style="padding-top: 20px;
     min-height: 150px; font-size: 12px;">
-                                {{global.locale=='vi'?'Phù hợp với nhà đầu tư muốn ủy quyền toàn bộ thủ tục cho Asoka Law. Bao gồm đại diện thực hiện mọi hồ sơtại Sở Kế Hoạch & Đầu Tư, Ngân Hàng, Chi Cục Thuế.':'Phù hợp với nhà đầu tư muốn ủy quyền toàn bộ thủ tục cho Asoka Law. Bao gồm đại diện thực hiện mọi hồ sơtại Sở Kế Hoạch & Đầu Tư, Ngân Hàng, Chi Cục Thuế. aaa'}}
+                                {{global.locale=='vi'?'Phù hợp với nhà đầu tư muốn ủy quyền toàn bộ thủ tục cho Asoka Law. Bao gồm đại diện thực hiện mọi hồ sơtại Sở Kế Hoạch & Đầu Tư, Ngân Hàng, Chi Cục Thuế.':'For investors who want to authorize Asoka Law for all procedures of investment, including representing to perform all tasks at the Department of Planning & Investment, Banks, and Tax Departments.'}}
                             </p>
                             <button (click)="submit('Gói toàn diện')" class="btn btn-warning" style="border-radius: 30px; padding: 5px 20px;">{{global.locale=='vi'?'Đăng ký':'Register'}}
                             </button>

@@ -22,7 +22,7 @@
             </div>
             <div class="col-md-5">
                 <p class="mb-0 mission-img">
-                    <img src="/assets/media/chnn/mission_img01.jpg" style="max-width: 100%">
+                    <img [src]="global.locale=='vi'?'/assets/media/chnn/mission_img01.jpg':'/assets/media/chnn/Tam-nhin-su-menh-1png.png'" style="max-width: 100%">
                 </p>
             </div>
         </div>
@@ -121,7 +121,7 @@
             </div>
             <div class="col-md-7">
                 <div class="mission-circle">
-                    <p class="mission-circle-img"><img src="/assets/media/chnn/mission_circle.png" style="max-width: 100%"></p>
+                    <p class="mission-circle-img"><img [src]="global.locale=='vi'?'/assets/media/chnn/mission_circle.png':'/assets/media/chnn/Tam-nhin-su-menh-2.png'" style="max-width: 100%"></p>
                     <div class="pc">
                         <div class="mission-circle-list list01">
                             <p>{{global.locale=='vi'?'DỊCH VỤ CẦN THIẾT':'SERVICE NEEDED'}}</p>

@@ -2,9 +2,9 @@
     <div class="container">
         <div class="row">
             <div class="col-md-7" style="margin-top: 70px; ">
-                <img style="margin-top: 20px" class="image-header" src="/assets/media/PLSK/Banner/text-banner-1.svg">
+                <img style="margin-top: 20px" class="image-header"  [src]="global.locale=='vi'?'/assets/media/PLSK/Banner/text-banner-1.svg':'/assets/media/PLSK/Banner/pha-bo-moi.svg'">
                 <br/>
-                <img style="margin-left: -30px;margin-top: 10px; width: 80%" class="image-header" src="/assets/media/PLSK/Banner/text-banner-2.svg">
+                <img style="margin-left: -30px;margin-top: 10px; width: 80%" class="image-header" [src]="global.locale=='vi'?'/assets/media/PLSK/Banner/text-banner-2.svg':'/assets/media/PLSK/Banner/rao can phap ly.svg'">
                 <p style="margin-top: 40px; width: 80%; color: white;
     font-weight: 200;
     line-height: 30px;

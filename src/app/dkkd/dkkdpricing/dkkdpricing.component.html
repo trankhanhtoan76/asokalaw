@@ -29,7 +29,7 @@
         </div>
         <div class="col-md-4">
             <div class="service-content  shadow-lg" style="    margin-top: 50px; border-radius: 15px; padding: 40px 40px; background-color: #fff1ea;">
-                <div style="top: 50px; right: 15px;" class="banner-small"><img src="/assets/media/PLTX/service/Asset4.svg"></div>
+                <div style="top: 50px; right: 15px;" class="banner-small"><img [src]="global.locale=='vi'?'/assets/media/PLTX/service/Asset4.svg':'/assets/media/PLTX/service/Asset 18.svg'" ></div>
                 <h3 style="font-weight: bold; color: #ffa812; font-size: 22px; font-family:'Montserrat';">{{global.locale=='vi'?'GÓI TOÀN DIỆN':'COMPREHENSIVE PACK'}}</h3><br>
                 <div><p class="align-left" style="font-size: 40px; padding-bottom: 20px"><span style="font-size: 12px;font-weight: 200;position: relative;top: -22px; padding-right: 5px">{{global.locale=='vi'?'Từ':'From'}}</span>{{global.locale=='vi'?'6.000.000 ':'6.000.000'}}<span class="sub-title">{{global.locale=='vi'?'VNĐ':'VND'}}</span></p></div>
                 <div class="price-ul">

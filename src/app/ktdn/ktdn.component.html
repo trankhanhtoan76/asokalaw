@@ -248,7 +248,7 @@
             </div>
             <div class="col-md-7">
                 <div class="mission-circle">
-                    <p class="mission-circle-img"><img src="/assets/site/images/create_process.png" style="max-width: 100%"></p>
+                    <p class="mission-circle-img"><img [src]="global.locale=='vi'?'/assets/site/images/create_process.png':'/assets/site/images/KHOI-TAO-01.jpg'" style="max-width: 100%"></p>
                     <div class="pc">
                         <div class="mission-circle-list list01">
                             <p>{{global.locale=='vi'?'DỊCH VỤ CẦN THIẾT':'NECESSARY SERVICES'}}</p>
@@ -262,7 +262,7 @@
                             <p>{{global.locale=='vi'?'DỊCH VỤ CẦN THIẾT':'NECESSARY SERVICES'}}</p>
                             <ul>
                                 <li><a routerLink="/phap-ly-thuong-xuyen">{{global.locale=='vi'?'Quản trị “4 trong 1”':'“4-in-1“ administration'}}</a></li>
-                                <li><a routerLink="/">{{global.locale=='vi'?'Ngành nghề có điều kiện':'Ngành nghề có điều kiện'}}</a></li>
+                                <li><a routerLink="/">{{global.locale=='vi'?'Ngành nghề có điều kiện':'Industry conditional'}}</a></li>
                                 <li><a routerLink="/dang-ky-nhan-hieu">{{global.locale=='vi'?'Đăng ký nhãn hiệu':'Trademark registration'}}</a></li>
                             </ul>
                         </div>
@@ -412,15 +412,15 @@
     <div class="container">
         <div class="row align-items-center">
             <div class="col-md-7">
-                <h4 class="pc" style="font-weight: 400; line-height: 2.5rem; margin: 0">{{global.locale=='vi'?'Đừng bỏ lỡ 02 giờ tư vấn quý giá với luật sư ':'Don\'t miss out on free 2 consulting hours '}}<span style="text-decoration: line-through; font-size: 1.5rem; font-weight: 400">{{global.locale=='vi'?'(trị giá gốc 4,5 triệu đồng)':'(worth VND 4,500,000)'}}</span>{{global.locale=='vi'?' trước khi thành lập doanh nghiệp':' before setting up a company.'}}</h4>
-                <h4 class="sp center" style="font-weight: 400; line-height: 2.5rem; margin: 0">{{global.locale=='vi'?'Đừng bỏ lỡ 02 giờ tư vấn quý giá với luật sư ':'Don\'t miss out on free 2 consulting hours '}}<span style="text-decoration: line-through; font-size: 1.5rem; font-weight: 400">{{global.locale=='vi'?'(trị giá gốc 4,5 triệu đồng)':'(worth VND 4,500,000)'}}</span>{{global.locale=='vi'?' trước khi thành lập doanh nghiệp':' before setting up a company.'}}</h4>
+                <h4 class="pc" style="font-weight: 400; line-height: 2.5rem; margin: 0; font-size: 2rem;">{{global.locale=='vi'?'Đừng bỏ lỡ 02 giờ tư vấn quý giá với luật sư ':'Don\'t miss out on free 2 consulting hours '}}<span style="text-decoration: line-through; font-size: 2rem; font-weight: 400">{{global.locale=='vi'?'(trị giá gốc 4,5 triệu đồng)':'(worth VND 4,500,000)'}}</span>{{global.locale=='vi'?' trước khi thành lập doanh nghiệp':' before setting up a company.'}}</h4>
+                <h4 class="sp center" style="font-weight: 400; line-height: 2.5rem; margin: 0 ;font-size: 2rem;">{{global.locale=='vi'?'Đừng bỏ lỡ 02 giờ tư vấn quý giá với luật sư ':'Don\'t miss out on free 2 consulting hours '}}<span style="text-decoration: line-through; font-size: 2rem; font-weight: 400">{{global.locale=='vi'?'(trị giá gốc 4,5 triệu đồng)':'(worth VND 4,500,000)'}}</span>{{global.locale=='vi'?' trước khi thành lập doanh nghiệp':' before setting up a company.'}}</h4>
             </div>
             <div class="col-md-5">
                 <div class="text-right pc">
-                    <button onclick="$('#ktdnform1').modal('show')" class="btn btn-warning" style="padding: 0.75rem 3rem;">{{global.locale=='vi'?'TƯ VẤN CHO TÔI':'GET FREE ADVICE'}}</button>
+                    <button onclick="$('#ktdnform1').modal('show')" class="btn btn-warning" style="padding: 1rem 5rem !important;">{{global.locale=='vi'?'TƯ VẤN CHO TÔI':'GET FREE ADVICE'}}</button>
                 </div>
                 <div class="sp center" style="margin-top: 2rem;">
-                    <button onclick="$('#ktdnform1').modal('show')" class="btn btn-warning" style="padding: 0.75rem 3rem;">{{global.locale=='vi'?'TƯ VẤN CHO TÔI':'GET FREE ADVICE'}}</button>
+                    <button onclick="$('#ktdnform1').modal('show')" class="btn btn-warning" style="padding: 1rem 5rem !important;">{{global.locale=='vi'?'TƯ VẤN CHO TÔI':'GET FREE ADVICE'}}</button>
                 </div>
             </div>
         </div>
