@@ -1,6 +1,6 @@
 <div *ngIf="data" class="news-content">
     <p class="news-banner">
-        <img style="width: 100%" src="{{data.image}}" style="max-width: 100%">
+        <img style="width: 100%" src="{{global.locale=='vi'?data.image:data.en_image}}" style="max-width: 100%">
     </p>
     <div class="news-label">
         <div class="row">
