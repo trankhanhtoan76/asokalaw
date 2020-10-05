@@ -7,10 +7,10 @@
         <div class="list-slide">
             <div *ngFor="let item of news" class="slide-item">
                 <div class="container">
-                    <div class="btn-time">{{item.created_at|date:"dd t\'h'\áng MM \ - \ yyy"}}</div>
+                    <div class="btn-time">{{item.created_at|date:"dd - MM - yyyy"}}</div>
                 </div>
                 <div>
-                    <img class="img-info" src="{{item.image}}">
+                    <img class="img-info" src="{{global.locale=='vi'?item.image:item.en_image}}">
                 </div>
                 <div class="title-info">
                     <h4 style="cursor: pointer" routerLink="/{{global.locale=='vi'?item.slug:item.en_slug}}">{{global.locale == 'vi' ? item.title : item.en_title}}</h4>
