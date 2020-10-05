@@ -55,7 +55,7 @@
                                 <i *ngIf="!fieldValid(email,'email') && e"><small class="text-danger">{{global.locale == 'vi' ? 'Bắt buộc nhập email hợp lệ.' : 'Invalid email address. '}}</small></i>
                             </div>
                             <p class="form-small-header-V"> {{global.locale == 'vi' ? 'Ngành ngề kinh doanh' : 'Business lines'}}</p>
-                            <textarea name="desciption2" [(ngModel)]="description2" placeholder="Ghi đầy đủ theo giấy phép Đăng ký kinh doanhdoanh, kết quả nhận được càng chính xác. Ví dụ: giáo dục khác chưa được phân vào đâu: trung tâm ngoại ngữ"></textarea>
+                            <textarea name="desciption2" [(ngModel)]="description2" placeholder="{{global.locale == 'vi' ? 'Ghi đầy đủ theo giấy phép Đăng ký kinh doanh, kết quả nhận được càng chính xác. Ví dụ: giáo dục khác chưa được phân vào đâu: trung tâm ngoại ngữ. ' : 'The more clearly specified, the more accurately you get the Enterprise Certificate, for example: Other education n.e.c., Foreign language center. '}}"></textarea>
                             <p class="form-small-header-V">{{global.locale == 'vi' ? 'Tài liệu đính kèm' : 'Attachments'}}</p>
                             <div class="form-group">
                                 <span>{{global.locale == 'vi' ? 'Giấy đăng ký kinh doanh 1' : 'Business Registration Certificate 1'}}</span>
