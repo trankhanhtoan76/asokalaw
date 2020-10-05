@@ -1582,3 +1582,8 @@ hr {
 {
   top:10%;
 }
+@media only screen and (max-width: 768px) {
+  .modal-dialog {
+    margin-top: 10% !important;
+  }
+}

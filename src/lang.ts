@@ -110,7 +110,7 @@ export const langDefined = {
     },
     '200k': {
         vi: "200.000 VNĐ",
-        en: "VND 200,000"
+        en: "VND 200.000"
     },
     'home-dang-ky-kinh doanh': {
         vi: "Đăng ký kinh doanh",
@@ -141,7 +141,7 @@ export const langDefined = {
 
     'home-3tr': {
         vi: "3.000.000 VNĐ",
-        en: "VND 3,000,000"
+        en: "VND 3.000.000"
     },
 
     'home-dangkynhanhieu': {
@@ -149,12 +149,12 @@ export const langDefined = {
         en: " Trademark registration"
     },
     '2268luot': {
-        vi: "2.268 lượt",
-        en: "2.268 times"
+        vi: "2268 lượt",
+        en: "2268 times"
     },
     'home-3tr5': {
         vi: "3.500.000 VNĐ",
-        en: "VND 3,500,000"
+        en: "VND 3.500.000"
     },
     'home-phaplysukien': {
         vi: " Pháp lý sự kiện",
@@ -166,11 +166,11 @@ export const langDefined = {
     },
     'home-6tr': {
         vi: "6.000.000 VNĐ",
-        en: "VND 6,000,000"
+        en: "VND 6.000.000"
     },
     'home-giaphitu15tr': {
         vi: "Giá phí từ: 15.000.000 VNĐ",
-        en: "Price from: VND 15,000,000"
+        en: "Price from: VND 15.000.000"
     },
     'home-giai-quyet-tranhchap': {
         vi: " Giải quyết tranh chấp",
@@ -338,7 +338,7 @@ export const langDefined = {
     },
     'home-khongchi-co-luatsu': {
         vi: "Không chỉ có luật sư/chuyên viên trực tiếp làm việc tại Văn Phòng nhằm giải quyết các vấn đề pháp lý phổ biến cho doanh nghiệp, Asoka Law còn có mối quan hệ hợp tác với các luật sư/cố vấn tại các chuyên ngành cần chuyên môn sâu nhằm hỗ trợ khách hàng giải quyết tốt nhất ở các hồ sơ đặc thù. Chúng tôi tự hào có mối quan hệ hợp tác với trên 30 luật sư/cố vấn chuyên môn ở các lĩnh vực như hàng hải, bảo hiểm, truyền thông, nhượng quyền...",
-        en: "Beside the Lawyers/Legal Executives working in our office for your companies' issues, Asoka Law also works with the other Lawyer/Counsel experting in different fields to support Clients with special cases. We are proud that Asoka Law is a partner of over 30 Lawyers/counsels in some fields: maritime, insurance, media, concession"
+        en: "Beside the Lawyers/Legal Executives working in our office for your companies' issues, Asoka Law also works with the other Lawyer/Advisor experting in different fields to support Clients with special cases. We are proud that Asoka Law is a partner of over 30 Lawyers/Advisor in some fields: maritime, insurance, media, concession"
     },
     'home-luatsu-tamduong': {
         vi: "Chọn lĩnh vực bạn quan tâm",
@@ -1630,7 +1630,7 @@ export const langDefined = {
     },
     'dkkdbussiness-doanhnghieptunnhan': {
         vi: "Doanh nghiệp tư nhân",
-        en: "Doanh nghiệp tư nhân aa"
+        en: "Doanh nghiệp tư nhân"
     },
     'dkkdbussiness-ladoanhnghiepdo1canhanlamchu': {
         vi: "Là doanh nghiệp do một cá nhân làm chủ và tự chịu trách nhiệm bằng toàn bộ tài sản của mình về mọi hoạt động của doanh nghiệp.",

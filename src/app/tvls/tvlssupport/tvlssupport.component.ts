@@ -32,7 +32,7 @@ export class TvlssupportComponent implements OnInit {
             this.s3 = 'Intellectual property protection';
             this.s4 = 'Product circulation registration';
             this.s5 = 'Investment registration';
-            this.s6 = 'Regular legal administration';
+            this.s6 = 'Regular legal management';
         }
     }
 
