@@ -23,7 +23,7 @@
             </div>
         </div>
         <div class="row" style="padding-top: 40px">
-            <div class="col-md-5">
+            <div class="col-md-5 d-none d-md-block">
                 <ul class="block-dk-list">
                     <li data-toggle="modal" data-target="#cnttModal">{{global.locale == 'vi' ? 'Công nghệ thông tin' : 'Information Technology'}}</li>
                     <li data-toggle="modal" data-target="#pphhModal">{{global.locale == 'vi' ? 'Phân phối hàng hoá' : 'Goods distribution'}}</li>
@@ -499,6 +499,15 @@
                     <div class="mission-txt">
                         <p>{{global.locale == 'vi' ? 'Asoka Law hỗ trợ bạn rà soát các ngành nghề kinh doanh bắt buộc có điều kiện. Đặc biệt, chúng tôi có kinh nghiệm chuyên sâu trong ' : 'Asoka Law assists you in reviewing mandatory conditional business lines. Especially, we have extensive experience in '}}<b>{{global.locale == 'vi' ? '05 lĩnh vực.' : '05 areas.'}}</b></p>
                         <p>{{global.locale == 'vi' ? 'Am hiểu thủ tục pháp lý của từng ngành nghề, Asoka sẽ tư vấn cho bạn hiểu rõ và hoàn thiện hồ sơ pháp lý đầy đủ theo quy định của cơ quan Nhà nước. Doanh nghiệp của bạn sẽ được rà soát, quản trị toàn diện về tình trạng pháp lý.' : 'Understanding the legal procedures of each profession, Asoka will advise you to understand and prepare all necessary legal documents following the regulations of State agencies. Your business will be comprehensively reviewed and managed in terms of legal status.'}}</p>
+                    </div>
+                    <div class="col-md-5 d-block d-md-none">
+                        <ul class="block-dk-list">
+                            <li data-toggle="modal" data-target="#cnttModal">{{global.locale == 'vi' ? 'Công nghệ thông tin' : 'Information Technology'}}</li>
+                            <li data-toggle="modal" data-target="#pphhModal">{{global.locale == 'vi' ? 'Phân phối hàng hoá' : 'Goods distribution'}}</li>
+                            <li data-toggle="modal" data-target="#dlauModal">{{global.locale == 'vi' ? 'Du lịch' : 'Food-Beverage '}}<br>{{global.locale == 'vi' ? 'Ăn uống' : 'and Tourism'}}</li>
+                            <li data-toggle="modal" data-target="#ttqcModal">{{global.locale == 'vi' ? 'Truyền thông quảng cáo' : 'Media advertisement'}}</li>
+                            <li data-toggle="modal" data-target="#gdnnModal">{{global.locale == 'vi' ? 'Giáo dục nghề nghiệp' : 'Vocational training'}}</li>
+                        </ul>
                     </div>
                     <p style="color: #D5D5D5; font-style: italic">{{global.locale == 'vi' ? '* Bấm vào từng lĩnh vực ở bên để tra cứu nhanh.' : '* Click on each field on the side for quick lookup.'}}</p>
                     <button style="margin-top: 30px; margin-bottom: 20px" data-toggle="modal" data-target="#search-free-V" class="btn btn-warning sub-button">{{global.locale == 'vi' ? 'Tra cứu miễn phí' : 'Search fo free'}}</button>
