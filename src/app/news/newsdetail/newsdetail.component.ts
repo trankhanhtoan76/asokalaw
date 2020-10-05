@@ -66,7 +66,7 @@ export class NewsdetailComponent implements OnInit {
         param.append('query', `
                 select *
                 from post
-                where slug = '${this.slug}' or slug = '${this.slug}'
+                where slug = '${this.slug}' or en_slug = '${this.slug}'
             `);
         postAPI(param, function (res): void {
             self.data = res;
