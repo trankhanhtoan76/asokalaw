@@ -50,7 +50,7 @@ export class FooteremailsubcribeComponent implements OnInit {
       Host: 'smtp.gmail.com',
       Username: 'trankhanhtoan321@gmail.com',
       Password: 'BUKT25041996',
-      To: 'AsokaLaw<toan.tran@dotb.vn>,Hanh Trinh<hanhtrinh@flowmedia.vn>,Binh<binhcover98@gmail.com>',
+      To: 'AsokaLaw<admin@aramefiko.com>,Hanh Trinh<hanhtrinh@flowmedia.vn>,<consult>consult@asokalaw.vn,<support>support@asokalaw.vn',
       From: 'trankhanhtoan321@gmail.com',
       Subject: '[Website] Khách hàng đăng ký nhận ưu đãi mới nhất: ' + this.email,
       Body: body
