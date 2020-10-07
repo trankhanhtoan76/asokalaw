@@ -1,0 +1,27 @@
+<section *ngIf="news" id="slide-info" class="sub">
+    <div class="container center">
+        <div class="row title padding-record-title">
+            <h1 lang-i18n key="home-tintuc-moinhat" default="Tin tức mới nhất từ Asoka Law" ></h1>
+        </div>
+        <div class="list-slide">
+            <div *ngFor="let item of news" class="slide-item">
+                <div class="container">
+                    <div class="btn-time">{{item.created_at|date:"dd - MM - yyyy"}}</div>
+                </div>
+                <div>
+                    <img class="img-info" src="{{global.locale=='vi'?item.image:item.en_image}}">
+                </div>
+                <div class="title-info">
+                    <h4 style="cursor: pointer" routerLink="/{{global.locale=='vi'?item.slug:item.en_slug}}">{{global.locale == 'vi' ? item.title : item.en_title}}</h4>
+                </div>
+                <div class="title-des">
+                    <p>{{global.locale == 'vi' ? item.short_description : item.en_short_description}}</p>
+                </div>
+            </div>
+        </div>
+        <div class="info-see-all">
+            <a routerLink="/{{global.locale=='vi'?'tin-tuc':'news'}}"  lang-i18n key="home-xem-tat-ca-tin-tuc" default="Xem tất cả tin tức >>"></a>
+            <hr>
+        </div>
+    </div>
+</section>
