@@ -34,9 +34,9 @@ export class GlobalService {
         youtube: '',
         linkin: '',
         facebook: '',
-        seo_title:'',
-        seo_keywords:'',
-        seo_description:''
+        seo_title: '',
+        seo_keywords: '',
+        seo_description: ''
     };
     locale: string;
     langDefined: any;
@@ -72,14 +72,40 @@ export class GlobalService {
 
     initLocale() {
         const url = new URL(window.location.href);
-        const lang = url.searchParams.get('lang');
+        let lang = url.searchParams.get('lang');
         if (lang) {
             this.locale = lang;
             setCookie('asokalawlang', lang);
         } else {
-            this.locale = getCookie('asokalawlang');
-            if (!this.locale) {
-                this.locale = 'vi';
+            const englishURI = [
+                '/vision-mission',
+                '/careers',
+                '/business-establishment',
+                '/business-under-3-years',
+                '/business-over-3-years',
+                '/trademark-registration',
+                '/business-registration',
+                '/investment-registration',
+                '/regular-legal-service',
+                '/lawyer-consultation',
+                '/event-related-legal-service',
+                '/dispute-resolution',
+                '/news',
+                '/faq',
+                '/working-process',
+                '/contact-us',
+                '/terms-of-use',
+                '/payment-terms'
+            ];
+            if (englishURI.includes(window.location.pathname)) {
+                lang = 'en';
+                this.locale = lang;
+                setCookie('asokalawlang', lang);
+            } else {
+                this.locale = getCookie('asokalawlang');
+                if (!this.locale) {
+                    this.locale = 'vi';
+                }
             }
         }
     }

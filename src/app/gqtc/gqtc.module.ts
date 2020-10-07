@@ -14,7 +14,8 @@ import {FormsModule} from "@angular/forms";
 import {GlobalModule} from "../global/global.module";
 
 const routes: Routes = [
-  {path: 'giai-quyet-tranh-chap', component: GqtcComponent}
+  {path: 'giai-quyet-tranh-chap', component: GqtcComponent},
+  {path: 'dispute-resolution', component: GqtcComponent},
 ];
 
 @NgModule({

@@ -7,7 +7,8 @@ import { KtdnFeedbackComponent } from './ktdn-feedback/ktdn-feedback.component';
 import {GlobalModule} from "../global/global.module";
 
 const routes: Routes = [
-    {path: 'khoi-tao-doanh-nghiep', component: KtdnComponent}
+    {path: 'khoi-tao-doanh-nghiep', component: KtdnComponent},
+    {path: 'business-establishment', component: KtdnComponent},
 ];
 
 @NgModule({

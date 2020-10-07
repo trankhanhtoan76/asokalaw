@@ -6,7 +6,8 @@ import {FormsModule} from "@angular/forms";
 import {GlobalModule} from "../global/global.module";
 
 const routes: Routes = [
-  {path: 'quy-trinh-lam-viec', component: QtlvComponent}
+  {path: 'quy-trinh-lam-viec', component: QtlvComponent},
+  {path: 'working-process', component: QtlvComponent}
 ];
 
 @NgModule({

@@ -94,12 +94,26 @@ import { CskhComponent } from './cskh/cskh.component';
 const routes: Routes = [
     {path: '', component: HomeComponent},
     {path: 'dang-ky-kinh-doanh', component: DkkdComponent},
+    {path: 'business-registration', component: DkkdComponent},
+
     {path: 'dang-ky-nhan-hieu', component: DknhComponent},
+    {path: 'trademark-registration', component: DknhComponent},
+
     {path: 'dang-ky-dau-tu', component: DkdtComponent},
+    {path: 'investment-registration', component: DkdtComponent},
+
     {path: 'phap-ly-thuong-xuyen', component: PltxComponent},
+    {path: 'regular-legal-service', component: PltxComponent},
+
     {path: 'tu-van-luat-su', component: TvlsComponent},
+    {path: 'lawyer-consultation', component: TvlsComponent},
+
     {path: 'huong-dan-thanh-toan', component: HdttComponent},
+    {path: 'payment-terms', component: HdttComponent},
+
     {path: 'chinh-sach-khach-hang', component: CskhComponent},
+    {path: 'terms-of-use', component: CskhComponent},
+
     {path: '**', component: NewsdetailComponent},
 ];
 

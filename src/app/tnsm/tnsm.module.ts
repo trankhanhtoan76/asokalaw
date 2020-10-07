@@ -5,7 +5,8 @@ import {RouterModule, Routes} from '@angular/router';
 import {GlobalModule} from "../global/global.module";
 
 const routes: Routes = [
-  {path: 'tam-nhin-su-menh', component: TnsmComponent}
+  {path: 'tam-nhin-su-menh', component: TnsmComponent},
+  {path: 'vision-mission', component: TnsmComponent}
 ];
 
 @NgModule({

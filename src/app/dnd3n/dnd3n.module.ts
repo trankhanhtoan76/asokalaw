@@ -13,7 +13,8 @@ import {FormsModule} from "@angular/forms";
 import {GlobalModule} from "../global/global.module";
 
 const routes: Routes = [
-  {path: 'doanh-nghiep-duoi-3-nam', component: Dnd3nComponent}
+  {path: 'doanh-nghiep-duoi-3-nam', component: Dnd3nComponent},
+  {path: 'business-under-3-years', component: Dnd3nComponent},
 ];
 
 @NgModule({

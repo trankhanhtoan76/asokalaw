@@ -14,7 +14,8 @@ import { Dnt3nForm2Component } from './dnt3n-form2/dnt3n-form2.component';
 import { Dnt3nForm3Component } from './dnt3n-form3/dnt3n-form3.component';
 
 const routes: Routes = [
-  {path: 'doanh-nghiep-tren-3-nam', component: Dnt3nComponent}
+  {path: 'doanh-nghiep-tren-3-nam', component: Dnt3nComponent},
+  {path: 'business-over-3-years', component: Dnt3nComponent}
 ];
 
 @NgModule({

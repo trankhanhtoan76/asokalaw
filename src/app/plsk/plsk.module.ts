@@ -12,7 +12,8 @@ import {FormsModule} from '@angular/forms';
 import {GlobalModule} from "../global/global.module";
 
 const routes: Routes = [
-  {path: 'phap-ly-su-kien', component: PlskComponent}
+  {path: 'phap-ly-su-kien', component: PlskComponent},
+  {path: 'event-related-legal-service', component: PlskComponent},
 ];
 
 @NgModule({

@@ -6,7 +6,8 @@ import {FormsModule} from "@angular/forms";
 import {GlobalModule} from "../global/global.module";
 
 const routes: Routes = [
-  {path: 'co-hoi-nghe-nghiep', component: ChnnComponent}
+  {path: 'co-hoi-nghe-nghiep', component: ChnnComponent},
+  {path: 'careers', component: ChnnComponent}
 ];
 
 @NgModule({
