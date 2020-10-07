@@ -90,6 +90,8 @@ import { DkdtquestionComponent } from './dkdt/dkdtquestion/dkdtquestion.componen
 import {NewsdetailComponent} from "./news/newsdetail/newsdetail.component";
 import { HdttComponent } from './hdtt/hdtt.component';
 import { CskhComponent } from './cskh/cskh.component';
+import { DknhNewsComponent } from './dknh/dknh-news/dknh-news.component';
+import { PltxNewsComponent } from './pltx/pltx-news/pltx-news.component';
 
 const routes: Routes = [
     {path: '', component: HomeComponent},
@@ -189,7 +191,9 @@ const routes: Routes = [
         TvlsquestionComponent,
         DkdtquestionComponent,
         HdttComponent,
-        CskhComponent
+        CskhComponent,
+        DknhNewsComponent,
+        PltxNewsComponent
     ],
     imports: [
         BrowserModule,
