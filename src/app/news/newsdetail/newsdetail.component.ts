@@ -70,20 +70,13 @@ export class NewsdetailComponent implements OnInit {
             self.data.en_description = self._sanitizer.bypassSecurityTrustHtml(self.data.en_description);
 
             if (self.global.locale == 'vi') {
-                self.location.replaceState(self.data.slug);
+                if(self.data.slug!=undefined){
+                    self.location.replaceState(self.data.slug);
+                }
             } else {
-                self.location.replaceState(self.data.en_slug);
-            }
-
-            //SEO-ARAMEFIKO
-            if (self.global.locale == 'vi') {
-                self.global.seo_title.next(res.seo_title);
-                self.global.seo_keywords.next(res.seo_keywords);
-                self.global.seo_description.next(res.seo_description);
-            } else {
-                self.global.seo_title.next(res.en_seo_title);
-                self.global.seo_keywords.next(res.en_seo_keywords);
-                self.global.seo_description.next(res.en_seo_description);
+                if(self.data.en_slug!=undefined) {
+                    self.location.replaceState(self.data.en_slug);
+                }
             }
 
             let categorysRelated = [];

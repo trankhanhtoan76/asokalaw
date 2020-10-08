@@ -75,14 +75,14 @@
                     <a class="nav-link" href data-toggle="dropdown" aria-haspopup="true" [attr.aria-expanded]="showMenu5"><span lang-i18n key="headermenu-khachhang" default="KHÁCH HÀNG"></span>
                     </a>
                     <div class="dropdown-menu" [ngClass]="{'show':showMenu5}">
-                        <a (click)="collapseMenu()" class="dropdown-item" [routerLink]="global.locale=='vi'?'/cau-hoi-thuong-gap':'/faq'"><span lang-i18n key="headermenu-chtg" default="Câu hỏi thường gặp"></span></a>
+                        <a (click)="collapseMenu()" class="dropdown-item" [routerLink]="global.locale=='vi'?'/cau-hoi-thuong-gap':'/faq'">{{global.locale == 'vi' ? 'Câu hỏi thường gặp' : 'FAQ'}}</a>
                         <a (click)="collapseMenu()" class="dropdown-item" [routerLink]="global.locale=='vi'?'/chinh-sach-khach-hang':'/terms-of-use'">{{global.locale == 'vi' ? 'Chính sách khách hàng' : 'Terms of use'}}</a>
-                        <a (click)="collapseMenu()" class="dropdown-item" [routerLink]="global.locale=='vi'?'/quy-trinh-lam-viec':'/working-process'"><span lang-i18n key="headermenu-quytrinh" default="Quy trình làm việc"></span></a>
+                        <a (click)="collapseMenu()" class="dropdown-item" [routerLink]="global.locale=='vi'?'/quy-trinh-lam-viec':'/working-process'">{{global.locale == 'vi' ? 'Quy trình làm việc' : 'Working process'}}</a>
                         <a (click)="collapseMenu()" class="dropdown-item" [routerLink]="global.locale=='vi'?'/huong-dan-thanh-toan':'/payment-terms'">{{global.locale == 'vi' ? 'Hướng dẫn thanh toán' : 'Payment terms'}}</a>
                     </div>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" routerLink="/lien-he" aria-haspopup="true" aria-expanded="false"><span lang-i18n key="headermenu-lienhe" default="LIÊN HỆ"></span>
+                    <a class="nav-link" [routerLink]="global.locale=='vi'?'/lien-he':'contact-us'" aria-haspopup="true" aria-expanded="false"><span lang-i18n key="headermenu-lienhe" default="LIÊN HỆ"></span>
                     </a>
                 </li>
             </ul>
