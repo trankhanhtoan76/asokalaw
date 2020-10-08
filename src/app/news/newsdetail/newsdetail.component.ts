@@ -39,21 +39,11 @@ export class NewsdetailComponent implements OnInit {
     ngOnInit(): void {
         this.router.events.subscribe((evt) => {
             // @ts-ignore
-            if (/^\/!(danh-muc|category)\//.test(evt.url)) {
-                if (/^\/[^\/]+$/.test(this.router.url)) {
-                    this.slug = this.router.url.slice(1);
-                    this.data = {
-                        description: undefined,
-                        en_description: undefined,
-                        title: undefined,
-                        en_title: undefined,
-                        modified_at: undefined,
-                        tags: undefined,
-                        en_tags: undefined,
-                        id: undefined,
-                        slug: "",
-                        en_slug: ""
-                    };
+            if(!/^\/danh-muc/.test(evt.url) && !/^\/category/.test(evt.url)){
+                // @ts-ignore
+                if(evt.url) {
+                    // @ts-ignore
+                    this.slug = evt.url.slice(1);
                     this.detail();
                 }
             }
