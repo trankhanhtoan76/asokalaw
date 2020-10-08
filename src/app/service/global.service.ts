@@ -96,9 +96,9 @@ export class GlobalService {
                 '/contact-us',
                 '/terms-of-use',
                 '/payment-terms',
-                '/legal-news',
-                '/promotion',
-                '/asoka-news'
+                '/category/legal-news',
+                '/category/promotion',
+                '/category/asoka-news'
             ];
             const vietnameseURI = [
                 '/tam-nhin-su-menh',
@@ -119,9 +119,9 @@ export class GlobalService {
                 '/lien-he',
                 '/chinh-sach-khach-hang',
                 '/huong-dan-thanh-toan',
-                '/tin-tuc-phap-ly',
-                '/uu-dai',
-                '/tin-tuc-asoka',
+                '/danh-muc/tin-tuc-phap-ly',
+                '/danh-muc/uu-dai',
+                '/danh-muc/tin-tuc-asoka',
             ];
             if (englishURI.includes(window.location.pathname)) {
                 lang = 'en';

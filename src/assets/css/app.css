@@ -3438,3 +3438,8 @@ a.btn.btn-outline-warning.nut-xdsls-gqtc:hover
     color:white !important;
 }
 
+.news-detail-aramefiko b,
+.news-detail-aramefiko strong {
+    font-weight: 600;
+    font-size: 18px
+}

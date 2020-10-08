@@ -69,9 +69,9 @@ export class HeaderComponent implements OnInit {
             '/lien-he': '/contact-us',
             '/chinh-sach-khach-hang': '/terms-of-use',
             '/huong-dan-thanh-toan': '/payment-terms',
-            '/tin-tuc-phap-ly': '/legal-news',
-            '/uu-dai': '/promotion',
-            '/tin-tuc-asoka': '/asoka-news'
+            '/danh-muc/tin-tuc-phap-ly': '/category/legal-news',
+            '/danh-muc/uu-dai': '/category/promotion',
+            '/danh-muc/tin-tuc-asoka': '/category/asoka-news'
         };
         const vietnameseURI = {
             '/vision-mission': '/tam-nhin-su-menh',
@@ -92,9 +92,9 @@ export class HeaderComponent implements OnInit {
             '/contact-us': '/lien-he',
             '/terms-of-use': '/chinh-sach-khach-hang',
             '/payment-terms': '/huong-dan-thanh-toan',
-            '/legal-news': '/tin-tuc-phap-ly',
-            '/promotion': '/uu-dai',
-            '/asoka-news': '/tin-tuc-asoka'
+            '/category/legal-news': '/danh-muc/tin-tuc-phap-ly',
+            '/category/promotion': '/danh-muc/uu-dai',
+            '/category/asoka-news': '/danh-muc/tin-tuc-asoka'
         };
         if (lang == 'en') {
             if (englishURI.hasOwnProperty(window.location.pathname)) {
