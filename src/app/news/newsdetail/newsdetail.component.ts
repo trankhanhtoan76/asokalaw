@@ -79,15 +79,22 @@ export class NewsdetailComponent implements OnInit {
             self.data.description = self._sanitizer.bypassSecurityTrustHtml(self.data.description);
             self.data.en_description = self._sanitizer.bypassSecurityTrustHtml(self.data.en_description);
 
-            if(self.global.locale=='vi'){
+            if (self.global.locale == 'vi') {
                 self.location.replaceState(self.data.slug);
-            }else{
+            } else {
                 self.location.replaceState(self.data.en_slug);
             }
 
-            self.global.seo_title.next(res.seo_title);
-            self.global.seo_keywords.next(res.seo_keywords);
-            self.global.seo_description.next(res.seo_description);
+            //SEO-ARAMEFIKO
+            if (self.global.locale == 'vi') {
+                self.global.seo_title.next(res.seo_title);
+                self.global.seo_keywords.next(res.seo_keywords);
+                self.global.seo_description.next(res.seo_description);
+            } else {
+                self.global.seo_title.next(res.en_seo_title);
+                self.global.seo_keywords.next(res.en_seo_keywords);
+                self.global.seo_description.next(res.en_seo_description);
+            }
 
             let categorysRelated = [];
             if (/\{/.test(res.category_id)) {
