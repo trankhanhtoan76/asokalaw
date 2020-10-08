@@ -50,7 +50,65 @@ export class HeaderComponent implements OnInit {
 
     changeLang(lang): void {
         setCookie('asokalawlang', lang);
-        window.location.reload();
+        const englishURI = {
+            '/tam-nhin-su-menh': '/vision-mission',
+            '/co-hoi-nghe-nghiep': '/careers',
+            '/khoi-tao-doanh-nghiep': '/business-establishment',
+            '/doanh-nghiep-duoi-3-nam': '/business-under-3-years',
+            '/doanh-nghiep-tren-3-nam': '/business-over-3-years',
+            '/dang-ky-nhan-hieu': '/trademark-registration',
+            '/dang-ky-kinh-doanh': '/business-registration',
+            '/dang-ky-dau-tu': '/investment-registration',
+            '/phap-ly-thuong-xuyen': '/regular-legal-service',
+            '/tu-van-luat-su': '/lawyer-consultation',
+            '/phap-ly-su-kien': '/event-related-legal-service',
+            '/giai-quyet-tranh-chap': '/dispute-resolution',
+            '/tin-tuc': '/news',
+            '/cau-hoi-thuong-gap': '/faq',
+            '/quy-trinh-lam-viec': '/working-process',
+            '/lien-he': '/contact-us',
+            '/chinh-sach-khach-hang': '/terms-of-use',
+            '/huong-dan-thanh-toan': '/payment-terms',
+            '/tin-tuc-phap-ly': '/legal-news',
+            '/uu-dai': '/promotion',
+            '/tin-tuc-asoka': '/asoka-news'
+        };
+        const vietnameseURI = {
+            '/vision-mission': '/tam-nhin-su-menh',
+            '/careers': '/co-hoi-nghe-nghiep',
+            '/business-establishment': '/khoi-tao-doanh-nghiep',
+            '/business-under-3-years': '/doanh-nghiep-duoi-3-nam',
+            '/business-over-3-years': '/doanh-nghiep-tren-3-nam',
+            '/trademark-registration': '/dang-ky-nhan-hieu',
+            '/business-registration': '/dang-ky-kinh-doanh',
+            '/investment-registration': '/dang-ky-dau-tu',
+            '/regular-legal-service': '/phap-ly-thuong-xuyen',
+            '/lawyer-consultation': '/tu-van-luat-su',
+            '/event-related-legal-service': '/phap-ly-su-kien',
+            '/dispute-resolution': '/giai-quyet-tranh-chap',
+            '/news': '/tin-tuc',
+            '/faq': '/cau-hoi-thuong-gap',
+            '/working-process': '/quy-trinh-lam-viec',
+            '/contact-us': '/lien-he',
+            '/terms-of-use': '/chinh-sach-khach-hang',
+            '/payment-terms': '/huong-dan-thanh-toan',
+            '/legal-news': '/tin-tuc-phap-ly',
+            '/promotion': '/uu-dai',
+            '/asoka-news': '/tin-tuc-asoka'
+        };
+        if (lang == 'en') {
+            if (englishURI.hasOwnProperty(window.location.pathname)) {
+                window.location.href = englishURI[window.location.pathname];
+            } else {
+                window.location.reload();
+            }
+        } else {
+            if (vietnameseURI.hasOwnProperty(window.location.pathname)) {
+                window.location.href = vietnameseURI[window.location.pathname];
+            } else {
+                window.location.reload();
+            }
+        }
     }
 
     isMobileScreen(): boolean {

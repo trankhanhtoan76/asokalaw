@@ -95,10 +95,40 @@ export class GlobalService {
                 '/working-process',
                 '/contact-us',
                 '/terms-of-use',
-                '/payment-terms'
+                '/payment-terms',
+                '/legal-news',
+                '/promotion',
+                '/asoka-news'
+            ];
+            const vietnameseURI = [
+                '/tam-nhin-su-menh',
+                '/co-hoi-nghe-nghiep',
+                '/khoi-tao-doanh-nghiep',
+                '/doanh-nghiep-duoi-3-nam',
+                '/doanh-nghiep-tren-3-nam',
+                '/dang-ky-nhan-hieu',
+                '/dang-ky-kinh-doanh',
+                '/dang-ky-dau-tu',
+                '/phap-ly-thuong-xuyen',
+                '/tu-van-luat-su',
+                '/phap-ly-su-kien',
+                '/giai-quyet-tranh-chap',
+                '/tin-tuc',
+                '/cau-hoi-thuong-gap',
+                '/quy-trinh-lam-viec',
+                '/lien-he',
+                '/chinh-sach-khach-hang',
+                '/huong-dan-thanh-toan',
+                '/tin-tuc-phap-ly',
+                '/uu-dai',
+                '/tin-tuc-asoka',
             ];
             if (englishURI.includes(window.location.pathname)) {
                 lang = 'en';
+                this.locale = lang;
+                setCookie('asokalawlang', lang);
+            }else if(vietnameseURI.includes(window.location.pathname)){
+                lang = 'vi';
                 this.locale = lang;
                 setCookie('asokalawlang', lang);
             } else {
