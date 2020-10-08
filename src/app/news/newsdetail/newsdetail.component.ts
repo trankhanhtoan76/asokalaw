@@ -1,9 +1,10 @@
 import {Component, OnInit} from '@angular/core';
 import {postAPI} from "../../helpers/api";
-import {ActivatedRoute, NavigationEnd, Router} from "@angular/router";
+import {ActivatedRoute, Router} from "@angular/router";
 import {GlobalService} from "../../service/global.service";
 import {DomSanitizer} from "@angular/platform-browser";
 import {serialize} from "../../helpers/serialize";
+import {Location} from '@angular/common'
 
 @Component({
     selector: 'app-newsdetail',
@@ -19,7 +20,9 @@ export class NewsdetailComponent implements OnInit {
         modified_at: undefined,
         tags: undefined,
         en_tags: undefined,
-        id: undefined
+        id: undefined,
+        slug: "",
+        en_slug: ""
     };
     category = {
         name: undefined,
@@ -30,7 +33,7 @@ export class NewsdetailComponent implements OnInit {
     recent = [];
     slug: string;
 
-    constructor(private _router: ActivatedRoute, public global: GlobalService, private _sanitizer: DomSanitizer, private router: Router) {
+    constructor(private _router: ActivatedRoute, public global: GlobalService, private _sanitizer: DomSanitizer, private router: Router, private location: Location) {
     }
 
     ngOnInit(): void {
@@ -47,7 +50,9 @@ export class NewsdetailComponent implements OnInit {
                         modified_at: undefined,
                         tags: undefined,
                         en_tags: undefined,
-                        id: undefined
+                        id: undefined,
+                        slug: "",
+                        en_slug: ""
                     };
                     this.detail();
                 }
@@ -73,6 +78,12 @@ export class NewsdetailComponent implements OnInit {
             console.log(res);
             self.data.description = self._sanitizer.bypassSecurityTrustHtml(self.data.description);
             self.data.en_description = self._sanitizer.bypassSecurityTrustHtml(self.data.en_description);
+
+            if(self.global.locale=='vi'){
+                self.location.replaceState(self.data.slug);
+            }else{
+                self.location.replaceState(self.data.en_slug);
+            }
 
             self.global.seo_title.next(res.seo_title);
             self.global.seo_keywords.next(res.seo_keywords);
