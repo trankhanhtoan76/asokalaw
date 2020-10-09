@@ -23,17 +23,18 @@ export class GlobalService {
         name: '',
         email: '',
         head_office: '',
+        en_head_office: '',
         branch_office: '',
+        en_branch_office: '',
+        license: '',
+        en_license: '',
         mailer_pass: '',
         phone: '',
         record_per_page: '',
         hot_line: '',
         youtube: '',
         linkin: '',
-        facebook: '',
-        seo_title: '',
-        seo_keywords: '',
-        seo_description: ''
+        facebook: ''
     };
     locale: string;
     langDefined: any;
@@ -107,7 +108,7 @@ export class GlobalService {
                 lang = 'en';
                 this.locale = lang;
                 setCookie('asokalawlang', lang);
-            }else if(vietnameseURI.includes(window.location.pathname)){
+            } else if (vietnameseURI.includes(window.location.pathname)) {
                 lang = 'vi';
                 this.locale = lang;
                 setCookie('asokalawlang', lang);
