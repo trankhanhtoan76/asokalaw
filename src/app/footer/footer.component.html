@@ -4,81 +4,81 @@
             <div class="col-md-4" style="padding-right: 50px">
                 <app-footerinfo></app-footerinfo>
                 <div class="space"></div>
-                <h4>{{global.locale=='vi'?'Hồ sơ năng lực Asoka Law':'Asoka Law\'s capacity profile'}}</h4>
-                <a href="/" style="text-decoration: underline;color: #4e9cca;">{{global.locale=='vi'?'(Xem chi tiết tại đây)':'(Click for more details)'}}</a>
+                <h4>{{global.locale == 'vi' ? 'Hồ sơ năng lực Asoka Law' : 'Asoka Law\'s capacity profile'}}</h4>
+                <a href="/" style="text-decoration: underline;color: #4e9cca;">{{global.locale == 'vi' ? '(Xem chi tiết tại đây)' : '(Click for more details)'}}</a>
             </div>
             <div class="col-md-3">
                 <div class="d-none d-md-block">
-                    <h4>{{global.locale=='vi'?'Pháp lý doanh nghiệp':'Legal Services for Businesses'}}</h4>
+                    <h4>{{global.locale == 'vi' ? 'Pháp lý doanh nghiệp' : 'Legal Services for Businesses'}}</h4>
                     <ul class="footer-ul">
-                        <li><a routerLink="/khoi-tao-doanh-nghiep">{{global.locale=='vi'?'Khởi tạo doanh nghiệp':'Business Establishment'}}</a></li>
-                        <li><a routerLink="/doanh-nghiep-duoi-3-nam">{{global.locale=='vi'?'Doanh nghiệp dưới 3 năm':'Businesses under 03 years'}}</a></li>
-                        <li><a routerLink="/doanh-nghiep-tran-3-nam">{{global.locale=='vi'?'Doanh nghiệp trên 3 năm':'Businesses over 03 years'}}</a></li>
+                        <li><a [routerLink]="global.locale=='vi'?'/khoi-tao-doanh-nghiep':'/business-establishment'">{{global.locale == 'vi' ? 'Khởi tạo doanh nghiệp' : 'Business Establishment'}}</a></li>
+                        <li><a [routerLink]="global.locale=='vi'?'/doanh-nghiep-duoi-3-nam':'/business-under-3-years'">{{global.locale == 'vi' ? 'Doanh nghiệp dưới 3 năm' : 'Businesses under 03 years'}}</a></li>
+                        <li><a [routerLink]="global.locale=='vi'?'/doanh-nghiep-tren-3-nam':'/business-over-3-years'">{{global.locale == 'vi' ? 'Doanh nghiệp trên 3 năm' : 'Businesses over 03 years'}}</a></li>
                     </ul>
-                    <h4>{{global.locale=='vi'?'Khách hàng':'Clients'}}</h4>
+                    <h4>{{global.locale == 'vi' ? 'Khách hàng' : 'Clients'}}</h4>
                     <ul class="footer-ul">
-                        <li><a routerLink="/cau-hoi-thuong-gap">{{global.locale=='vi'?'Câu hỏi thường gặp':'Frequently Asked Questions'}}</a></li>
-                        <li><a routerLink="/chinh-sach-khach-hang">{{global.locale=='vi'?'Chính sách khách hàng':'Client Policies'}}</a></li>
-                        <li><a routerLink="/quy-trinh-lam-viec">{{global.locale=='vi'?'Quy trình làm việc':'Working process'}}</a></li>
-                        <li><a routerLink="/huong-dan-thanh-toan">{{global.locale=='vi'?'Hướng dẫn thanh toán':'Payment Guide'}}</a></li>
+                        <li><a [routerLink]="global.locale=='vi'?'/cau-hoi-thuong-gap':'/faq'">{{global.locale == 'vi' ? 'Câu hỏi thường gặp' : 'Frequently Asked Questions'}}</a></li>
+                        <li><a [routerLink]="global.locale=='vi'?'/chinh-sach-khach-hang':'/terms-of-use'">{{global.locale == 'vi' ? 'Chính sách khách hàng' : 'Client Policies'}}</a></li>
+                        <li><a [routerLink]="global.locale=='vi'?'/quy-trinh-lam-viec':'/working-process'">{{global.locale == 'vi' ? 'Quy trình làm việc' : 'Working process'}}</a></li>
+                        <li><a [routerLink]="global.locale=='vi'?'/huong-dan-thanh-toan':'/payment-terms'">{{global.locale == 'vi' ? 'Hướng dẫn thanh toán' : 'Payment Guide'}}</a></li>
                     </ul>
                 </div>
                 <div class="d-block d-md-none">
-                    <h4 data-toggle="collapse" data-target="#collapsepldn" class="collapsed" aria-expanded="true" aria-controls="collapsefooter">{{global.locale=='vi'?'Pháp lý doanh nghiệp':'Legal Services for Businesses'}}
+                    <h4 data-toggle="collapse" data-target="#collapsepldn" class="collapsed" aria-expanded="true" aria-controls="collapsefooter">{{global.locale == 'vi' ? 'Pháp lý doanh nghiệp' : 'Legal Services for Businesses'}}
 
                         <i style="color: #fff; float:right;" class="fa fa-chevron-down"></i>
                     </h4>
                     <ul id="collapsepldn" class="footer-ul collapse">
-                        <li><a routerLink="/khoi-tao-doanh-nghiep">{{global.locale=='vi'?'Khởi tạo doanh nghiệp':'Business establishment'}}</a></li>
-                        <li><a routerLink="/doanh-nghiep-duoi-3-nam">{{global.locale=='vi'?'Doanh nghiệp dưới 3 năm':'Businesses under 03 years'}}</a></li>
-                        <li><a routerLink="/doanh-nghiep-tren-3-nam">{{global.locale=='vi'?'Doanh nghiệp trên 3 năm':'Businesses over 03 years'}}</a></li>
+                        <li><a [routerLink]="global.locale=='vi'?'/khoi-tao-doanh-nghiep':'/business-establishment'">{{global.locale == 'vi' ? 'Khởi tạo doanh nghiệp' : 'Business establishment'}}</a></li>
+                        <li><a [routerLink]="global.locale=='vi'?'/doanh-nghiep-duoi-3-nam':'/business-under-3-years'">{{global.locale == 'vi' ? 'Doanh nghiệp dưới 3 năm' : 'Businesses under 03 years'}}</a></li>
+                        <li><a [routerLink]="global.locale=='vi'?'/doanh-nghiep-tren-3-nam':'/business-over-3-years'">{{global.locale == 'vi' ? 'Doanh nghiệp trên 3 năm' : 'Businesses over 03 years'}}</a></li>
                     </ul>
                     <h4 data-toggle="collapse" data-target="#collapsekh" class="collapsed" aria-expanded="true" aria-controls="collapsefooter">
-                        {{global.locale=='vi'?'Khách hàng':'Clients'}}
+                        {{global.locale == 'vi' ? 'Khách hàng' : 'Clients'}}
                         <i style="color: #fff; float:right;" class="fa fa-chevron-down"></i>
                     </h4>
                     <ul id="collapsekh" class="footer-ul collapse">
-                        <li><a routerLink="/cauhoi-thuong-gap">{{global.locale=='vi'?'Câu hỏi thường gặp':'Frequently Asked Questions'}}</a></li>
-                        <li><a routerLink="/chinh-sach-khach-hang">{{global.locale=='vi'?'Chính sách khách hàng':'Client Policies'}}</a></li>
-                        <li><a routerLink="/quy-trinh-lam-viec">{{global.locale=='vi'?'Quy trình làm việc':'Working process'}}</a></li>
-                        <li><a href="/huong-dan-thanh-toan">{{global.locale=='vi'?'Hướng dẫn thanh toán':'Payment Guide'}}</a></li>
+                        <li><a [routerLink]="global.locale=='vi'?'/cau-hoi-thuong-gap':'/faq'">{{global.locale == 'vi' ? 'Câu hỏi thường gặp' : 'Frequently Asked Questions'}}</a></li>
+                        <li><a [routerLink]="global.locale=='vi'?'/chinh-sach-khach-hang':'/terms-of-use'">{{global.locale == 'vi' ? 'Chính sách khách hàng' : 'Client Policies'}}</a></li>
+                        <li><a [routerLink]="global.locale=='vi'?'/quy-trinh-lam-viec':'/working-process'">{{global.locale == 'vi' ? 'Quy trình làm việc' : 'Working process'}}</a></li>
+                        <li><a [routerLink]="global.locale=='vi'?'/huong-dan-thanh-toan':'/payment-terms'">{{global.locale == 'vi' ? 'Hướng dẫn thanh toán' : 'Payment Guide'}}</a></li>
                     </ul>
                 </div>
             </div>
             <div class="col-md-2">
                 <div class="d-none d-md-block">
-                    <h4>{{global.locale=='vi'?'Dịch vụ pháp lý':'Legal Services'}}</h4>
+                    <h4>{{global.locale == 'vi' ? 'Dịch vụ pháp lý' : 'Legal Services'}}</h4>
                     <ul class="footer-ul">
-                        <li><a routerLink="/tu-van-luat-su">{{global.locale=='vi'?'Tư vấn trực tuyến':'Online Consultation'}}</a></li>
-                        <li><a routerLink="/dang-ky-kinh-doanh">{{global.locale=='vi'?'Đăng ký kinh doanh':'Business Registration'}}</a></li>
-                        <li><a routerLink="/dang-ky-dau-tu">{{global.locale=='vi'?'Đăng ký đầu tư':'Investment Registration'}}</a></li>
-                        <li><a routerLink="/dang-ky-nhan-hieu">{{global.locale=='vi'?'Đăng ký nhãn hiệu':'Trademark registration'}}</a></li>
-                        <li><a routerLink="/phap-ly-thuong-xuyen">{{global.locale=='vi'?'Pháp lý thường xuyên':'Regular legal services'}}</a></li>
-                        <li><a routerLink="/phap-ly-su-kien">{{global.locale=='vi'?'Pháp lý sự kiện':'Event-Related Legal Services'}}</a></li>
-                        <li><a routerLink="/giai-quyet-tranh-chap">{{global.locale=='vi'?'Giải quyết tranh chấp':'Dispute Settlement'}}</a></li>
+                        <li><a [routerLink]="global.locale=='vi'?'/tu-van-luat-su':'/lawyer-consultation'">{{global.locale == 'vi' ? 'Tư vấn trực tuyến' : 'Online Consultation'}}</a></li>
+                        <li><a [routerLink]="global.locale=='vi'?'/dang-ky-kinh-doanh':'/business-registration'">{{global.locale == 'vi' ? 'Đăng ký kinh doanh' : 'Business Registration'}}</a></li>
+                        <li><a [routerLink]="global.locale=='vi'?'/dang-ky-dau-tu':'/investment-registration'">{{global.locale == 'vi' ? 'Đăng ký đầu tư' : 'Investment Registration'}}</a></li>
+                        <li><a [routerLink]="global.locale=='vi'?'/dang-ky-nhan-hieu':'/trademark-registration'">{{global.locale == 'vi' ? 'Đăng ký nhãn hiệu' : 'Trademark registration'}}</a></li>
+                        <li><a [routerLink]="global.locale=='vi'?'/phap-ly-thuong-xuyen':'/regular-legal-service'">{{global.locale == 'vi' ? 'Pháp lý thường xuyên' : 'Regular legal services'}}</a></li>
+                        <li><a [routerLink]="global.locale=='vi'?'/phap-ly-su-kien':'/event-related-legal-service'">{{global.locale == 'vi' ? 'Pháp lý sự kiện' : 'Event-Related Legal Services'}}</a></li>
+                        <li><a [routerLink]="global.locale=='vi'?'/giai-quyet-tranh-chap':'/dispute-resolution'">{{global.locale == 'vi' ? 'Giải quyết tranh chấp' : 'Dispute Settlement'}}</a></li>
                     </ul>
                 </div>
                 <div class="d-block d-md-none">
                     <h4 data-toggle="collapse" data-target="#collapsedvpl" class="collapsed" aria-expanded="true" aria-controls="collapsefooter">
-                        {{global.locale=='vi'?'Dịch vụ pháp lý':'Legal services'}}
+                        {{global.locale == 'vi' ? 'Dịch vụ pháp lý' : 'Legal services'}}
                         <i style="color: #fff; float:right;" class="fa fa-chevron-down"></i>
                     </h4>
                     <ul id="collapsedvpl" class="footer-ul collapse">
-                        <li><a routerLink="/tu-van-luat-su">{{global.locale=='vi'?'Tư vấn trực tuyến':'Online consultation'}}</a></li>
-                        <li><a routerLink="/dang-ky-kinh-doanh">{{global.locale=='vi'?'Đăng ký kinh doanh':'Business registration'}}</a></li>
-                        <li><a routerLink="/dang-ky-dau-tu">{{global.locale=='vi'?'Đăng ký đầu tư':'Investment Registration'}}</a></li>
-                        <li><a routerLink="/dang-ky-nhan-hieu">{{global.locale=='vi'?'Đăng ký nhãn hiệu':'Trademark Registration'}}</a></li>
-                        <li><a routerLink="/phap-ly-thuong-xuyen">{{global.locale=='vi'?'Pháp lý thường xuyên':'Regular Legal Services'}}</a></li>
-                        <li><a routerLink="/phap-ly-su-kien">{{global.locale=='vi'?'Pháp lý sự kiện':'Event-Related Legal Services'}}</a></li>
-                        <li><a routerLink="/giai-quyet-tranh-chap">{{global.locale=='vi'?'Giải quyết tranh chấp':'Dispute Settlement'}}</a></li>
+                        <li><a [routerLink]="global.locale=='vi'?'/tu-van-luat-su':'/lawyer-consultation'">{{global.locale == 'vi' ? 'Tư vấn trực tuyến' : 'Online consultation'}}</a></li>
+                        <li><a [routerLink]="global.locale=='vi'?'/dang-ky-kinh-doanh':'/business-registration'">{{global.locale == 'vi' ? 'Đăng ký kinh doanh' : 'Business registration'}}</a></li>
+                        <li><a [routerLink]="global.locale=='vi'?'/dang-ky-dau-tu':'/investment-registration'">{{global.locale == 'vi' ? 'Đăng ký đầu tư' : 'Investment Registration'}}</a></li>
+                        <li><a [routerLink]="global.locale=='vi'?'/dang-ky-nhan-hieu':'/trademark-registration'">{{global.locale == 'vi' ? 'Đăng ký nhãn hiệu' : 'Trademark Registration'}}</a></li>
+                        <li><a [routerLink]="global.locale=='vi'?'/phap-ly-thuong-xuyen':'/regular-legal-service'">{{global.locale == 'vi' ? 'Pháp lý thường xuyên' : 'Regular Legal Services'}}</a></li>
+                        <li><a [routerLink]="global.locale=='vi'?'/phap-ly-su-kien':'/event-related-legal-service'">{{global.locale == 'vi' ? 'Pháp lý sự kiện' : 'Event-Related Legal Services'}}</a></li>
+                        <li><a [routerLink]="global.locale=='vi'?'/giai-quyet-tranh-chap':'/dispute-resolution'">{{global.locale == 'vi' ? 'Giải quyết tranh chấp' : 'Dispute Settlement'}}</a></li>
                     </ul>
                 </div>
             </div>
             <div class="col-md-3">
-                <h4>{{global.locale=='vi'?'Đăng ký nhận ưu đãi mới nhất':'Get the Latest Offers'}}</h4>
+                <h4>{{global.locale == 'vi' ? 'Đăng ký nhận ưu đãi mới nhất' : 'Get the Latest Offers'}}</h4>
                 <app-footeremailsubcribe></app-footeremailsubcribe>
                 <div class="social" style="margin-top: 25px;">
-                    <p style="color: #afaead;">{{global.locale=='vi'?'Kết nối với chúng tôi ':'Connect with Us'}}<a href="{{global.settings.facebook}}" target="_blank" class="facebook">
+                    <p style="color: #afaead;">{{global.locale == 'vi' ? 'Kết nối với chúng tôi ' : 'Connect with Us'}}<a href="{{global.settings.facebook}}" target="_blank" class="facebook">
                         <img style="width: 28px" src="/assets/media/fb icon.svg">
                     </a>
                         <a href="{{global.settings.linkin}}" target="_blank" class="linkedin">
@@ -107,11 +107,11 @@
     padding: 30px 0;
     text-align: center;
     font-size: 12px;">
-        {{global.locale=='vi'?'© 2019 asokalaw.vn':'© 2019 asokalaw.vn'}}<br/>
+        {{global.locale == 'vi' ? '© 2019 asokalaw.vn' : '© 2019 asokalaw.vn'}}<br/>
         {{global.settings.name}}<br/>
-        {{global.locale=='vi'?'Trụ sở chính: ':'Head Quarter Address:'}}{{global.settings.head_office}}<br/>
-        {{global.locale=='vi'?'Chi nhánh: ':'Branch Office:'}}{{global.settings.branch_office}}<br/>
-        {{global.locale=='vi'?'Giấy ĐKHĐ số: 41.02.2946/TP/ĐKHĐ do Sở Tư pháp TP. Hồ Chí Minh cấp':'Operation Registration Certificate no. 41.02.2946/TP/ DKHD issued by HCMC\'s Department of Justice '}}
+        {{global.locale == 'vi' ? 'Trụ sở chính: ' : 'Head Quarter Address:'}}{{global.settings.head_office}}<br/>
+        {{global.locale == 'vi' ? 'Chi nhánh: ' : 'Branch Office:'}}{{global.settings.branch_office}}<br/>
+        {{global.locale == 'vi' ? 'Giấy ĐKHĐ số: 41.02.2946/TP/ĐKHĐ do Sở Tư pháp TP. Hồ Chí Minh cấp' : 'Operation Registration Certificate no. 41.02.2946/TP/ DKHD issued by HCMC\'s Department of Justice '}}
     </div>
     <a href="tel:0961914328" class="ifeedback"><img src="/assets/media/icon_phone.png" style="width: 50px; height: 50px;"/></a>
 </section>
