@@ -39,6 +39,13 @@ export class GlobalService {
     langDefined: any;
 
     constructor() {
+        var self = this;
+        const params = new FormData();
+        params.append('action', 'get_record');
+        params.append('query', 'select * from settings');
+        postAPI(params, function (res): void {
+            self.settings = res;
+        });
         this.initLocale();
         this.langDefined = langDefined;
     }

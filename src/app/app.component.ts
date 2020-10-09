@@ -95,27 +95,29 @@ export class AppComponent implements OnInit {
     setMeta(): void {
         var self = this;
         if (this.pmap.hasOwnProperty(window.location.pathname)) {
-            for (const page of this.pages) {
-                // @ts-ignore
-                if (page.id == this.pmap[window.location.pathname]) {
-                    if (this.global.locale == 'vi') {
-                        // @ts-ignore
-                        this._title.setTitle(page.seo_title);
-                        this._meta.removeTag('name="keywords"');
-                        // @ts-ignore
-                        this._meta.addTag({name: 'keywords', content: page.seo_keywords});
-                        this._meta.removeTag('name="description"');
-                        // @ts-ignore
-                        this._meta.addTag({name: 'description', content: page.seo_description});
-                    } else {
-                        // @ts-ignore
-                        this._title.setTitle(page.en_seo_title);
-                        this._meta.removeTag('name="keywords"');
-                        // @ts-ignore
-                        this._meta.addTag({name: 'keywords', content: page.en_seo_keywords});
-                        this._meta.removeTag('name="description"');
-                        // @ts-ignore
-                        this._meta.addTag({name: 'description', content: page.en_seo_description});
+            if(this.pages != undefined) {
+                for (const page of this.pages) {
+                    // @ts-ignore
+                    if (page.id == this.pmap[window.location.pathname]) {
+                        if (this.global.locale == 'vi') {
+                            // @ts-ignore
+                            this._title.setTitle(page.seo_title);
+                            this._meta.removeTag('name="keywords"');
+                            // @ts-ignore
+                            this._meta.addTag({name: 'keywords', content: page.seo_keywords});
+                            this._meta.removeTag('name="description"');
+                            // @ts-ignore
+                            this._meta.addTag({name: 'description', content: page.seo_description});
+                        } else {
+                            // @ts-ignore
+                            this._title.setTitle(page.en_seo_title);
+                            this._meta.removeTag('name="keywords"');
+                            // @ts-ignore
+                            this._meta.addTag({name: 'keywords', content: page.en_seo_keywords});
+                            this._meta.removeTag('name="description"');
+                            // @ts-ignore
+                            this._meta.addTag({name: 'description', content: page.en_seo_description});
+                        }
                     }
                 }
             }
