@@ -3,6 +3,7 @@ import {SpinnerService} from "../../service/spinner.service";
 import {EmailService} from "../../service/email.service";
 import {FormValidateService} from "../../service/form-validate.service";
 import {GlobalService} from "../../service/global.service";
+import {postAPI} from "../../helpers/api";
 
 declare var $: any;
 
@@ -105,6 +106,15 @@ export class DknhintroComponent implements OnInit {
             message => {
                 this.spinner.hide();
                 $('#alert-success').modal('show');
+
+                //save data
+                const data = new FormData();
+                const now = new Date();
+                const nowDate = now.getFullYear() + '-' + (now.getMonth() + 1) + '-' + now.getDate() + ' ' + now.getHours() + ':' + now.getMinutes() + ':' + now.getSeconds();
+                data.append('query', `insert into customer(name,phone,email,description,created_at,service)
+                                                    values('${this.name}','${this.phone}','${this.email}','${this.description}','${nowDate}','Đăng ký nhãn hiệu')`);
+                postAPI(data, function (res): void {
+                });
             }
         );
     }
