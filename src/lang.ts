@@ -30,11 +30,11 @@ export const langDefined = {
     },
     'home-tranhchapthuongmai': {
         vi: "Tranh chấp thương mại",
-        en: "Commercial Dispute"
+        en: "Commercial Disputes"
     },
     'home-laodongnhansu': {
         vi: "Lao động - nhân sự",
-        en: "Labour"
+        en: "Labour - Employment"
     },
     'home-sukien-truyenthong': {
         vi: "Sự kiện - truyền thông",
@@ -54,7 +54,7 @@ export const langDefined = {
     },
     'home-dinhcu-duhoc': {
         vi: "Định cư - du học",
-        en: "Study & Settle Abroad"
+        en: "Study Abroad - Migration"
     },
     'home-linhvuc-khac': {
         vi: "Ngân hàng - bảo hiểm",
@@ -201,8 +201,8 @@ export const langDefined = {
         en: "Asoka Law is trusted by +3500 businesses"
     },
     'home-tu-cong-ty-khoi-nghiep': {
-        vi: "Từ công ty khởi nghiệp cho đến công ty hoạt động trên 03 năm đều dễ dàng tìm thấy các dịch vụ pháp lý thiết yếu tại Asoka Law. Đóng gói chặt chẽ theo độ tuổi doanh nghiệp/ lĩnh vực kinh doanh, tư vấn nhiệt tình, thực hiện tận tâm. Asoka Law đã hỗ trợ khách hàng kinh doanh thành công từ 2015 cho đến nay. ",
-        en: "From start-ups to companies operating for more than 3 years, it's easy to find essential legal services at Asoka Law. Closely packed according to the age of the business / business sector, enthusiastic advice, dedicated. Asoka Law has been supporting successful business customers since 2015 until now."
+        vi: "Từ công ty khởi nghiệp cho đến công ty hoạt động trên 03 năm đều dễ dàng tìm thấy các dịch vụ pháp lý thiết yếu tại Asoka Law. Đóng gói chặt chẽ theo độ tuổi doanh nghiệp/lĩnh vực kinh doanh, tư vấn nhiệt tình, thực hiện tận tâm. Asoka Law đã hỗ trợ khách hàng kinh doanh thành công từ 2015 cho đến nay. ",
+        en: "From start-ups to companies operating for more than 3 years, it's easy to find essential legal services at Asoka Law. Closely packed according to the age of the business/business sector, enthusiastic advice, dedicated. Asoka Law has been supporting successful business customers since 2015 until now."
     },
     'home-khoi-tao-doanh-nghiep': {
         vi: "Khởi tạo doanh nghiệp",
@@ -338,7 +338,7 @@ export const langDefined = {
     },
     'home-khongchi-co-luatsu': {
         vi: "Không chỉ có luật sư/chuyên viên trực tiếp làm việc tại Văn Phòng nhằm giải quyết các vấn đề pháp lý phổ biến cho doanh nghiệp, Asoka Law còn có mối quan hệ hợp tác với các luật sư/cố vấn tại các chuyên ngành cần chuyên môn sâu nhằm hỗ trợ khách hàng giải quyết tốt nhất ở các hồ sơ đặc thù. Chúng tôi tự hào có mối quan hệ hợp tác với trên 30 luật sư/cố vấn chuyên môn ở các lĩnh vực như hàng hải, bảo hiểm, truyền thông, nhượng quyền...",
-        en: "Beside the Lawyers/Legal Executives working in our office for your companies' issues, Asoka Law also works with the other Lawyer/Advisor experting in different fields to support Clients with special cases. We are proud that Asoka Law is a partner of over 30 Lawyers/Advisor in some fields: maritime, insurance, media, concession"
+        en: "Beside the Lawyers/Legal Executives working in our office for your companies' issues, Asoka Law also works with the other Lawyer/Advisor experting in different fields to support Clients with special cases. We are proud that Asoka Law is a partner of over 30 Lawyers/Advisors in some fields: maritime, insurance, media, concession"
     },
     'home-luatsu-tamduong': {
         vi: "Chọn lĩnh vực bạn quan tâm",
@@ -423,7 +423,7 @@ export const langDefined = {
     },
     '1k8luotxem': {
         vi: "1.8k lượt xem",
-        en: "1.8k view"
+        en: "1.8k views"
     },
     'home-goingaychochungtoi': {
         vi: "Gọi ngay cho chúng tôi để được tư vấn pháp lý miễn phí",

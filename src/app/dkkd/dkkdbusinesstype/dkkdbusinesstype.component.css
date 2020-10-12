@@ -1519,6 +1519,12 @@ hr {
   .tab-link-custom-mb .active {
     text-decoration: none;
     color: #7ec8e9;
+    background-color: aliceblue;
+
+  }
+  li.tab-link-custom-mb.col-6:hover:active
+  {
+    background-color: aliceblue;
   }
   .tab-link-custom-mb.active{
     border-radius: 5px;

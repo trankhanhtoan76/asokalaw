@@ -144,7 +144,7 @@
                     </div>
                 </div>
                 <div class="form-group">
-                    <textarea [(ngModel)]="description" name="description" class="form-control" id="questiontext" rows="3" placeholder="Nhập câu hỏi mô tả tình trạng công ty bạn tại đây"></textarea>
+                    <textarea [(ngModel)]="description" name="description" class="form-control" id="questiontext" rows="3" placeholder="{{global.locale=='vi'?'Nhập câu hỏi mô tả tình trạng công ty bạn tại đây':'Insert your question(s) or describe the company\'s status'}}"></textarea>
                 </div>
             </div>
             <div class="modal-footer">
