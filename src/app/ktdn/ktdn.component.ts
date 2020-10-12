@@ -2,6 +2,7 @@ import {Component, OnInit} from '@angular/core';
 import {SpinnerService} from "../service/spinner.service";
 import {EmailService} from "../service/email.service";
 import {GlobalService} from "../service/global.service";
+import {postAPI} from "../helpers/api";
 
 declare var $: any;
 
@@ -135,6 +136,17 @@ export class KtdnComponent implements OnInit {
                 this.spinner.hide();
                 $('#ktdnform1').modal('hide');
                 $('#alert-success').modal('show');
+
+                //save data
+                const description = `dịch vụ: ${serviceString}\nmô tả: ${this.description}`;
+                const data = new FormData();
+                const now = new Date();
+                const id = new Date().getTime();
+                const nowDate = now.getFullYear() + '-' + (now.getMonth() + 1) + '-' + now.getDate() + ' ' + now.getHours() + ':' + now.getMinutes() + ':' + now.getSeconds();
+                data.append('query', `insert into customer(id,name,phone,email,description,created_at,service)
+                                                    values('${id}','${this.name}','${this.phone}','${this.email}','${description}','${nowDate}','Khởi tạo doanh nghiệp')`);
+                postAPI(data, function (res): void {
+                });
             }
         );
     }

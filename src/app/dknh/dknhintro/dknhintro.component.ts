@@ -36,7 +36,7 @@ export class DknhintroComponent implements OnInit {
     p;
     e;
 
-    constructor(private spinner: SpinnerService, private smtp: EmailService, public form: FormValidateService,public global: GlobalService) {
+    constructor(private spinner: SpinnerService, private smtp: EmailService, public form: FormValidateService, public global: GlobalService) {
         this.formHeight = 440;
     }
 
@@ -58,9 +58,9 @@ export class DknhintroComponent implements OnInit {
                     this.formHeight = 570;
                 }
             } else {
-                if(this.isFormValid()){
+                if (this.isFormValid()) {
                     this.formHeight = 480;
-                }else {
+                } else {
                     this.formHeight = 540;
                 }
             }
@@ -72,9 +72,9 @@ export class DknhintroComponent implements OnInit {
                     this.formHeight = 520;
                 }
             } else {
-                if(this.isFormValid()){
+                if (this.isFormValid()) {
                     this.formHeight = 440;
-                }else {
+                } else {
                     this.formHeight = 490;
                 }
             }
@@ -110,9 +110,10 @@ export class DknhintroComponent implements OnInit {
                 //save data
                 const data = new FormData();
                 const now = new Date();
+                const id = new Date().getTime();
                 const nowDate = now.getFullYear() + '-' + (now.getMonth() + 1) + '-' + now.getDate() + ' ' + now.getHours() + ':' + now.getMinutes() + ':' + now.getSeconds();
-                data.append('query', `insert into customer(name,phone,email,description,created_at,service)
-                                                    values('${this.name}','${this.phone}','${this.email}','${this.description}','${nowDate}','Đăng ký nhãn hiệu')`);
+                data.append('query', `insert into customer(id,name,phone,email,description,created_at,service)
+                                                    values('${id}','${this.name}','${this.phone}','${this.email}','${this.description}','${nowDate}','Đăng ký nhãn hiệu')`);
                 postAPI(data, function (res): void {
                 });
             }

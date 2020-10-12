@@ -2,6 +2,7 @@ import {Component, OnInit} from '@angular/core';
 import {SpinnerService} from "../../service/spinner.service";
 import {EmailService} from "../../service/email.service";
 import {GlobalService} from "../../service/global.service";
+import {postAPI} from "../../helpers/api";
 
 declare var $: any;
 
@@ -126,6 +127,17 @@ export class Tvlsform4Component implements OnInit {
                 this.spinner.hide();
                 $('#alert-success').modal('show');
                 $('#tvlsform4').modal('hide');
+
+                //save data
+                const description = `lĩnh vực: ${type}\ngói: tư vấn trực tiếp\nthời gian tư vấn: ${this.numberQuestion}\n tạm tính: ${this.total}`;
+                const data = new FormData();
+                const now = new Date();
+                const id = new Date().getTime();
+                const nowDate = now.getFullYear() + '-' + (now.getMonth() + 1) + '-' + now.getDate() + ' ' + now.getHours() + ':' + now.getMinutes() + ':' + now.getSeconds();
+                data.append('query', `insert into customer(id,name,phone,email,description,created_at,service)
+                                                    values('${id}','${this.name}','${this.phone}','${this.email}','${description}','${nowDate}','Tư vấn luật sư')`);
+                postAPI(data, function (res): void {
+                });
             }
         );
     }

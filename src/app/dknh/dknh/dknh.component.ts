@@ -70,9 +70,10 @@ export class DknhComponent implements OnInit {
                 //save data
                 const data = new FormData();
                 const now = new Date();
+                const id = new Date().getTime();
                 const nowDate = now.getFullYear() + '-' + (now.getMonth() + 1) + '-' + now.getDate() + ' ' + now.getHours() + ':' + now.getMinutes() + ':' + now.getSeconds();
-                data.append('query', `insert into customer(name,phone,email,description,created_at,service)
-                                                    values('${this.name}','${this.phone}','${this.email}','${this.description}','${nowDate}','Đăng ký nhãn hiệu')`);
+                data.append('query', `insert into customer(id,name,phone,email,description,created_at,service)
+                                                    values('${id}','${this.name}','${this.phone}','${this.email}','${this.description}','${nowDate}','Đăng ký nhãn hiệu')`);
                 postAPI(data, function (res): void {
                 });
             }

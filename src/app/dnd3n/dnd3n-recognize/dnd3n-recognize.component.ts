@@ -2,6 +2,7 @@ import {Component, OnInit} from '@angular/core';
 import {SpinnerService} from "../../service/spinner.service";
 import {EmailService} from "../../service/email.service";
 import {GlobalService} from "../../service/global.service";
+import {postAPI} from "../../helpers/api";
 
 declare var $: any;
 
@@ -242,6 +243,17 @@ export class Dnd3nRecognizeComponent implements OnInit {
             message => {
                 this.spinner.hide();
                 $('#alert-success').modal('show');
+
+                //save data
+                const description = `mô tả: ${this.description}`;
+                const data = new FormData();
+                const now = new Date();
+                const id = new Date().getTime();
+                const nowDate = now.getFullYear() + '-' + (now.getMonth() + 1) + '-' + now.getDate() + ' ' + now.getHours() + ':' + now.getMinutes() + ':' + now.getSeconds();
+                data.append('query', `insert into customer(id,name,phone,email,description,created_at,service)
+                                                    values('${id}','${this.name}','${this.phone}','${this.email}','${description}','${nowDate}','Doanh nghiệp dưới 3 năm')`);
+                postAPI(data, function (res): void {
+                });
             }
         );
     }
@@ -274,6 +286,17 @@ export class Dnd3nRecognizeComponent implements OnInit {
                 this.spinner.hide();
                 $('#alert-success').modal('show');
                 $('#cnttModal').modal('hide');
+
+                //save data
+                const description = `Doanh nghiệp của bạn còn thiếu loại giấy phép nào ?: ${serviceString}`;
+                const data = new FormData();
+                const now = new Date();
+                const id = new Date().getTime();
+                const nowDate = now.getFullYear() + '-' + (now.getMonth() + 1) + '-' + now.getDate() + ' ' + now.getHours() + ':' + now.getMinutes() + ':' + now.getSeconds();
+                data.append('query', `insert into customer(id,name,phone,email,description,created_at,service)
+                                                    values('${id}','${this.name}','${this.phone}','${this.email}','${description}','${nowDate}','Doanh nghiệp dưới 3 năm: Các loại giấy phép phổ biến của lĩnh vực Công nghệ thông tin')`);
+                postAPI(data, function (res): void {
+                });
             }
         );
     }
@@ -306,6 +329,17 @@ export class Dnd3nRecognizeComponent implements OnInit {
                 this.spinner.hide();
                 $('#alert-success').modal('show');
                 $('#pphhModal').modal('hide');
+
+                //save data
+                const description = `nội dung: ${serviceString}`;
+                const data = new FormData();
+                const now = new Date();
+                const id = new Date().getTime();
+                const nowDate = now.getFullYear() + '-' + (now.getMonth() + 1) + '-' + now.getDate() + ' ' + now.getHours() + ':' + now.getMinutes() + ':' + now.getSeconds();
+                data.append('query', `insert into customer(id,name,phone,email,description,created_at,service)
+                                                    values('${id}','${this.name}','${this.phone}','${this.email}','${description}','${nowDate}','Doanh nghiệp dưới 3 năm - Phân phối hàng hóa đặt biệt')`);
+                postAPI(data, function (res): void {
+                });
             }
         );
     }
@@ -338,6 +372,17 @@ export class Dnd3nRecognizeComponent implements OnInit {
                 this.spinner.hide();
                 $('#alert-success').modal('show');
                 $('#dlauModal').modal('hide');
+
+                //save data
+                const description = `nội dung: ${serviceString}`;
+                const data = new FormData();
+                const now = new Date();
+                const id = new Date().getTime();
+                const nowDate = now.getFullYear() + '-' + (now.getMonth() + 1) + '-' + now.getDate() + ' ' + now.getHours() + ':' + now.getMinutes() + ':' + now.getSeconds();
+                data.append('query', `insert into customer(id,name,phone,email,description,created_at,service)
+                                                    values('${id}','${this.name}','${this.phone}','${this.email}','${description}','${nowDate}','Doanh nghiệp dưới 3 năm - lĩnh vực du lịch - ăn uống')`);
+                postAPI(data, function (res): void {
+                });
             }
         );
     }
@@ -370,6 +415,17 @@ export class Dnd3nRecognizeComponent implements OnInit {
                 this.spinner.hide();
                 $('#alert-success').modal('show');
                 $('#ttqcModal').modal('hide');
+
+                //save data
+                const description = `nội dung: ${serviceString}`;
+                const data = new FormData();
+                const now = new Date();
+                const id = new Date().getTime();
+                const nowDate = now.getFullYear() + '-' + (now.getMonth() + 1) + '-' + now.getDate() + ' ' + now.getHours() + ':' + now.getMinutes() + ':' + now.getSeconds();
+                data.append('query', `insert into customer(id,name,phone,email,description,created_at,service)
+                                                    values('${id}','${this.name}','${this.phone}','${this.email}','${description}','${nowDate}','Doanh nghiệp dưới 3 năm - lĩnh vực truyền thông - quảng cáo')`);
+                postAPI(data, function (res): void {
+                });
             }
         );
     }
@@ -402,6 +458,17 @@ export class Dnd3nRecognizeComponent implements OnInit {
                 this.spinner.hide();
                 $('#alert-success').modal('show');
                 $('#gdnnModal').modal('hide');
+
+                //save data
+                const description = `nội dung: ${serviceString}`;
+                const data = new FormData();
+                const now = new Date();
+                const id = new Date().getTime();
+                const nowDate = now.getFullYear() + '-' + (now.getMonth() + 1) + '-' + now.getDate() + ' ' + now.getHours() + ':' + now.getMinutes() + ':' + now.getSeconds();
+                data.append('query', `insert into customer(id,name,phone,email,description,created_at,service)
+                                                    values('${id}','${this.name}','${this.phone}','${this.email}','${description}','${nowDate}','Doanh nghiệp dưới 3 năm - giáo dục nghệp nghiệp')`);
+                postAPI(data, function (res): void {
+                });
             }
         );
     }
@@ -428,6 +495,17 @@ export class Dnd3nRecognizeComponent implements OnInit {
                 this.spinner.hide();
                 $('#alert-success').modal('show');
                 $('#search-free-V').modal('hide');
+
+                //save data
+                const description = `nội dung: ${serviceString}`;
+                const data = new FormData();
+                const now = new Date();
+                const id = new Date().getTime();
+                const nowDate = now.getFullYear() + '-' + (now.getMonth() + 1) + '-' + now.getDate() + ' ' + now.getHours() + ':' + now.getMinutes() + ':' + now.getSeconds();
+                data.append('query', `insert into customer(id,name,phone,email,description,created_at,service)
+                                                    values('${id}','${this.name}','${this.phone}','${this.email}','${description}','${nowDate}','Doanh nghiệp dưới 3 năm - ngành nghề có điều kiện')`);
+                postAPI(data, function (res): void {
+                });
             }
         );
     }

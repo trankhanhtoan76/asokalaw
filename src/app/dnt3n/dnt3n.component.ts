@@ -2,6 +2,7 @@ import {Component, OnInit} from '@angular/core';
 import {SpinnerService} from "../service/spinner.service";
 import {EmailService} from "../service/email.service";
 import {GlobalService} from "../service/global.service";
+import {postAPI} from "../helpers/api";
 
 declare var $: any;
 
@@ -148,6 +149,18 @@ export class Dnt3nComponent implements OnInit {
                 this.spinner.hide();
                 this.hideForm();
                 $('#alert-success').modal('show');
+
+                //save data
+                const description = `gói dịch vụ: ${serviceString}\n
+                                                    mô tả: ${this.description}`;
+                const data = new FormData();
+                const now = new Date();
+                const id = new Date().getTime();
+                const nowDate = now.getFullYear() + '-' + (now.getMonth() + 1) + '-' + now.getDate() + ' ' + now.getHours() + ':' + now.getMinutes() + ':' + now.getSeconds();
+                data.append('query', `insert into customer(id,name,phone,email,description,created_at,service)
+                                                    values('${id}','${this.name}','${this.phone}','${this.email}','${description}','${nowDate}','Doanh nghiệp trên 3 năm')`);
+                postAPI(data, function (res): void {
+                });
             }
         );
     }

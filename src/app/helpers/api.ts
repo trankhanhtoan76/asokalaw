@@ -3,6 +3,7 @@ export function callAPI(method: string, headers: {}, url: string, data: FormData
     xmlHttp.onreadystatechange = () => {
         if (xmlHttp.readyState === 4) {
             if (xmlHttp.status === 200) {
+                console.log(xmlHttp.responseText);
                 const result = JSON.parse(xmlHttp.responseText);
                 callback(result);
             } else {

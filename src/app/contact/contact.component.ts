@@ -1,6 +1,7 @@
 import {Component, HostListener, OnInit} from '@angular/core';
 import {SpinnerService} from "../service/spinner.service";
 import {GlobalService} from "../service/global.service";
+import {postAPI} from "../helpers/api";
 
 declare var $: any;
 declare var Email: any;
@@ -105,6 +106,17 @@ export class ContactComponent implements OnInit {
             message => {
                 this.spinner.hide();
                 $('#alert-success').modal('show');
+
+                //save data
+                const description = `Lời nhắn: ${this.description}`;
+                const data = new FormData();
+                const now = new Date();
+                const id = new Date().getTime();
+                const nowDate = now.getFullYear() + '-' + (now.getMonth() + 1) + '-' + now.getDate() + ' ' + now.getHours() + ':' + now.getMinutes() + ':' + now.getSeconds();
+                data.append('query', `insert into customer(id,name,phone,email,description,created_at,service)
+                                                    values('${id}','${this.name}','${this.phone}','${this.email}','${description}','${nowDate}','Liên hệ')`);
+                postAPI(data, function (res): void {
+                });
             }
         );
     }

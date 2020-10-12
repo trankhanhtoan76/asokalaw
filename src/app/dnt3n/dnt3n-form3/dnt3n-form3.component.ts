@@ -3,6 +3,7 @@ import {GlobalService} from "../../service/global.service";
 import {FormValidateService} from "../../service/form-validate.service";
 import {EmailService} from "../../service/email.service";
 import {SpinnerService} from "../../service/spinner.service";
+import {postAPI} from "../../helpers/api";
 
 declare var $: any;
 
@@ -62,6 +63,17 @@ export class Dnt3nForm3Component implements OnInit {
                 this.spinner.hide();
                 $('#alert-success').modal('show');
                 $('#dnt3nform3').modal('hide');
+
+                //save data
+                const description = `lĩnh vực kinh doanh: ${this.business}\n tên công ty: ${this.company}\n quy mô công ty: ${this.service}\n gói: ${this.package}\n mô tả: ${this.description}`;
+                const data = new FormData();
+                const now = new Date();
+                const id = new Date().getTime();
+                const nowDate = now.getFullYear() + '-' + (now.getMonth() + 1) + '-' + now.getDate() + ' ' + now.getHours() + ':' + now.getMinutes() + ':' + now.getSeconds();
+                data.append('query', `insert into customer(id,name,phone,email,description,created_at,service)
+                                                    values('${id}','${this.name}','${this.phone}','${this.email}','${description}','${nowDate}','Doanh nghiệp trên 3 năm - tạm ngưng - giải thể')`);
+                postAPI(data, function (res): void {
+                });
             }
         );
     }

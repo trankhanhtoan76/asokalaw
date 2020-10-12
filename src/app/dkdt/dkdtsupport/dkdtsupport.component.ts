@@ -2,6 +2,7 @@ import {Component, OnInit} from '@angular/core';
 import {EmailService} from '../../service/email.service';
 import {SpinnerService} from '../../service/spinner.service';
 import {GlobalService} from "../../service/global.service";
+import {postAPI} from "../../helpers/api";
 
 declare var $: any;
 
@@ -152,6 +153,18 @@ export class DkdtsupportComponent implements OnInit {
                 this.spinner.hide();
                 $('#alert-success').modal('show');
                 $('#dkdtform2').modal('hide');
+
+                //save data
+                const description = `dịch vụ: ${s}\n
+                                                    mô tả: ${this.s4a1}`;
+                const data = new FormData();
+                const now = new Date();
+                const id = new Date().getTime();
+                const nowDate = now.getFullYear() + '-' + (now.getMonth() + 1) + '-' + now.getDate() + ' ' + now.getHours() + ':' + now.getMinutes() + ':' + now.getSeconds();
+                data.append('query', `insert into customer(id,name,phone,email,description,created_at,service)
+                                                    values('${id}','${this.name}','${this.phone}','${this.email}','${description}','${nowDate}','Đăng ký đầu tư - hỗ trợ')`);
+                postAPI(data, function (res): void {
+                });
             }
         );
     }
