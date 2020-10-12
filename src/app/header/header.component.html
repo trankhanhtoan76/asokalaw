@@ -56,15 +56,15 @@
             <div class="modal-body">
                 <form id="homeAdvice">
                     <div class="form-group">
-                        <input (keyup)="n=true" [class.is-invalid]="!form.fieldValid(name)&&n" [class.is-valid]="form.fieldValid(name)&&n" type="text" class="form-control" [(ngModel)]="name" name="name" placeholder="{{global.locale == 'vi' ? 'Họ tên ' : 'Full name *'}}">
+                        <input autocomplete="off" (keyup)="n=true" [class.is-invalid]="!form.fieldValid(name)&&n" [class.is-valid]="form.fieldValid(name)&&n" type="text" class="form-control" [(ngModel)]="name" name="name" placeholder="{{global.locale == 'vi' ? 'Họ tên ' : 'Full name *'}}">
                         <i *ngIf="!form.fieldValid(name) && n"><small class="text-danger">{{global.locale=='vi'?'Bắt buộc nhập họ tên.':'Please enter your name. '}}</small></i>
                     </div>
                     <div class="form-group">
-                        <input (keyup)="p=true" [class.is-invalid]="!form.fieldValid(phone,'phone')&&p" [class.is-valid]="form.fieldValid(phone,'phone')&&p" class="form-control" [(ngModel)]="phone" name="phone" type="text" placeholder="{{global.locale == 'vi' ? 'Số điện thoại ' : 'Phone number *'}}"/>
+                        <input autocomplete="off" (keyup)="p=true" [class.is-invalid]="!form.fieldValid(phone,'phone')&&p" [class.is-valid]="form.fieldValid(phone,'phone')&&p" class="form-control" [(ngModel)]="phone" name="phone" type="text" placeholder="{{global.locale == 'vi' ? 'Số điện thoại ' : 'Phone number *'}}"/>
                         <i *ngIf="!form.fieldValid(phone,'phone') && p"><small class="text-danger" >{{global.locale=='vi'?'Bắt buộc nhập số điện thoại hợp lệ.':'Invalid phone number. '}}</small></i>
                     </div>
                     <div class="form-group">
-                        <input (keyup)="e=true" [class.is-invalid]="!form.fieldValid(email,'email')&&e" [class.is-valid]="form.fieldValid(email,'email')&&e" class="form-control" name="email" [(ngModel)]="email" type="text" placeholder="Email * "/>
+                        <input autocomplete="off" (keyup)="e=true" [class.is-invalid]="!form.fieldValid(email,'email')&&e" [class.is-valid]="form.fieldValid(email,'email')&&e" class="form-control" name="email" [(ngModel)]="email" type="text" placeholder="Email * "/>
                         <i *ngIf="!form.fieldValid(email,'email') && e"><small class="text-danger">{{global.locale=='vi'?'Bắt buộc nhập email hợp lệ.':'Invalid email address. '}}</small></i>
                     </div>
                     <div class="form-group problem">

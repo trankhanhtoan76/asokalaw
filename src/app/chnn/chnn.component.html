@@ -215,14 +215,14 @@
                 <div class="col-md-6">
                     <div class="form-group">
                         <label for="name" class="col-form-label">{{global.locale=='vi'?'Họ và tên *':'Full name*'}}</label>
-                        <input (keyup)="n=true" [class.is-invalid]="!fieldValid(name) && n" [class.is-valid]="fieldValid(name) && n" [(ngModel)]="name" name="name" type="text" class="form-control" id="name" placeholder="{{global.locale=='vi'?'Họ tên *':'Full name*'}}">
+                        <input autocomplete="off" (keyup)="n=true" [class.is-invalid]="!fieldValid(name) && n" [class.is-valid]="fieldValid(name) && n" [(ngModel)]="name" name="name" type="text" class="form-control" id="name" placeholder="{{global.locale=='vi'?'Họ tên *':'Full name*'}}">
                         <i *ngIf="!fieldValid(name) && n"><small class="text-danger">{{global.locale=='vi'?'Bắt buộc nhập họ tên.':'Please enter your name. '}}</small></i>
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="form-group">
                         <label for="email" class="col-form-label">{{global.locale=='vi'?'Email *':'Email * '}}</label>
-                        <input (change)="e=true" [class.is-invalid]="!fieldValid(email,'email') && e" [class.is-valid]="fieldValid(email,'email') && e" [(ngModel)]="email" name="email" type="text" class="form-control" id="email" placeholder="{{global.locale=='vi'?'Email *':'Email *'}}">
+                        <input autocomplete="off" (change)="e=true" [class.is-invalid]="!fieldValid(email,'email') && e" [class.is-valid]="fieldValid(email,'email') && e" [(ngModel)]="email" name="email" type="text" class="form-control" id="email" placeholder="{{global.locale=='vi'?'Email *':'Email *'}}">
                         <i *ngIf="!fieldValid(email,'email') && e"><small class="text-danger">{{global.locale=='vi'?'Bắt buộc nhập email hợp lệ.':'Invalid email address. '}}</small></i>
                     </div>
                 </div>
@@ -231,7 +231,7 @@
                 <div class="col-md-6">
                     <div class="form-group">
                         <label for="phone" class="col-form-label">{{global.locale=='vi'?'Số điện thoại *':'Mobile number*'}}</label>
-                        <input (change)="p=true" [class.is-invalid]="!fieldValid(phone,'phone') && p" [class.is-valid]="fieldValid(phone,'phone') && p" [(ngModel)]="phone" name="phone" type="text" class="form-control" id="phone" placeholder="{{global.locale=='vi'?'Số điện thoại *':'Mobile number*'}}">
+                        <input autocomplete="off" (change)="p=true" [class.is-invalid]="!fieldValid(phone,'phone') && p" [class.is-valid]="fieldValid(phone,'phone') && p" [(ngModel)]="phone" name="phone" type="text" class="form-control" id="phone" placeholder="{{global.locale=='vi'?'Số điện thoại *':'Mobile number*'}}">
                         <i *ngIf="!fieldValid(phone,'phone') && p"><small class="text-danger">{{global.locale=='vi'?'Bắt buộc nhập số điện thoại hợp lệ.':'Invalid phone number. '}}</small></i>
                     </div>
                 </div>

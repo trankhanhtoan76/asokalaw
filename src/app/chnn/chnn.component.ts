@@ -73,7 +73,7 @@ export class ChnnComponent implements OnInit {
         if (!this.formValid()) return;
 
         this.spinner.show('Sending');
-        const body = `<table width="620" cellspacing="0" cellpadding="0" border="0" align="center"> <tbody> <tr> <td bgcolor="#f5f5f5"> <table width="578" cellspacing="0" cellpadding="0" border="0" align="center"> <tbody> <tr> <td height="16"></td> </tr> <tr> <td align="center"><img src="https://ci5.googleusercontent.com/proxy/-8AhuwEBWjbUauG2vyvW7r8a5aY2HZ9kZC00fhd_MiyExMPvQkH3XjyfGME-foH3AJigwdw1OkhD7o3RDAsPCB4=s0-d-e1-ft#https://www.asokalaw.vn/assets/images/logo.png" alt="Công ty Luật TNHH Asoka" style="width:200px" class="CToWUd"></td> </tr> <tr> <td height="16"></td> </tr> <tr> <td align="left" bgcolor="#fff"> <div style="border-style:solid;border-width:1px;border-color:#ccc"> <table width="578" cellspacing="0" cellpadding="0" border="0" align="center"> <tbody> <tr> <td height="22" colspan="3"></td> </tr> <tr> <td width="40"></td> <td width="498">
+        const body = `<table width="620" cellspacing="0" cellpadding="0" border="0" align="center"> <tbody> <tr> <td bgcolor="#f5f5f5"> <table width="578" cellspacing="0" cellpadding="0" border="0" align="center"> <tbody> <tr> <td height="16"></td> </tr> <tr> <td align="center"><img src="https://admin.asokalaw.vn/upload/images/2bd08ed96c4fab05.png" alt="Công ty Luật TNHH Asoka" style="width:200px" class="CToWUd"></td> </tr> <tr> <td height="16"></td> </tr> <tr> <td align="left" bgcolor="#fff"> <div style="border-style:solid;border-width:1px;border-color:#ccc"> <table width="578" cellspacing="0" cellpadding="0" border="0" align="center"> <tbody> <tr> <td height="22" colspan="3"></td> </tr> <tr> <td width="40"></td> <td width="498">
         <h3 style="font-family:arial;font-size:16px">Chào Ban Quản Trị,</h3>
         <h3 style="font-family:arial;font-size:16px">Nộp đơn tuyển dụng</h3>
         <table width="100%" cellspacing="0" cellpadding="0" border="0"> <tbody>
@@ -114,10 +114,10 @@ export class ChnnComponent implements OnInit {
             `;
         Email.send({
             Host: 'smtp.gmail.com',
-            Username: 'trankhanhtoan321@gmail.com',
-            Password: 'BUKT25041996',
-            To: 'AsokaLaw<admin@aramefiko.com>,Hanh Trinh<hanhtrinh@flowmedia.vn>,<consult>consult@asokalaw.vn,<support>support@asokalaw.vn',
-            From: 'trankhanhtoan321@gmail.com',
+            Username: 'asoka@aramefiko.com',
+            Password: 'tkt29101996',
+            To: 'admin@aramefiko.com,consult@asokalaw.vn,support@asokalaw.vn',
+            From: 'asoka@aramefiko.com',
             Subject: '[Website] Đăng ký ứng tuyển: ' + this.name,
             Body: body
         }).then(
