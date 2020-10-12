@@ -3,6 +3,7 @@ import {SpinnerService} from "../../service/spinner.service";
 import {EmailService} from "../../service/email.service";
 import {FormValidateService} from "../../service/form-validate.service";
 import {GlobalService} from "../../service/global.service";
+import {postAPI} from "../../helpers/api";
 
 declare var $: any;
 
@@ -37,7 +38,7 @@ export class DknhComponent implements OnInit {
     submitClick: boolean;
 
 
-    constructor(private spinner: SpinnerService, private smtp: EmailService, public form: FormValidateService,public global: GlobalService) {
+    constructor(private spinner: SpinnerService, private smtp: EmailService, public form: FormValidateService, public global: GlobalService) {
     }
 
     ngOnInit(): void {
@@ -65,6 +66,16 @@ export class DknhComponent implements OnInit {
                 this.spinner.hide();
                 $('#alert-success').modal('show');
                 $('#dknhform1').modal('hide');
+
+                //save data
+                const data = new FormData();
+                const now = new Date();
+                const id = new Date().getTime();
+                const nowDate = now.getFullYear() + '-' + (now.getMonth() + 1) + '-' + now.getDate() + ' ' + now.getHours() + ':' + now.getMinutes() + ':' + now.getSeconds();
+                data.append('query', `insert into customer(id,name,phone,email,description,created_at,service)
+                                                    values('${id}','${this.name}','${this.phone}','${this.email}','${this.description}','${nowDate}','Đăng ký nhãn hiệu')`);
+                postAPI(data, function (res): void {
+                });
             }
         );
     }
