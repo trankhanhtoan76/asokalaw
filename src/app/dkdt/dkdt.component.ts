@@ -143,4 +143,14 @@ export class DkdtComponent implements OnInit {
     changeTypeRegister(e): void {
         this.form = e;
     }
+    /*test*/
+
+    topricing()
+    {
+        document.getElementById("recognize").scrollIntoView();
+    }
+    topricing2()
+    {
+        document.getElementById("exampleRadios1").scrollIntoView();
+    }
 }

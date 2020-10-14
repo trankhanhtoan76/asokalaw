@@ -1,4 +1,4 @@
-<h4>{{global.locale=='vi'?'Bài đăng mới nhất':'Bài đăng mới nhất aaa'}}</h4>
+<h4>{{global.locale=='vi'?'Bài đăng mới nhất':'LASTEST NEWS'}}</h4>
 <ul>
     <li *ngFor="let item of posts">
         <p><a routerLink="/{{global.locale=='vi'?item.slug:item.en_slug}}">{{global.locale == 'vi' ? item.title : item.en_title}}</a></p>
@@ -6,5 +6,5 @@
     </li>
 </ul>
 <p class="news-post-link">
-    <a routerLink="/{{global.locale=='vi'?'tin-tuc':'news'}}">{{global.locale=='vi'?'Xem thêm >>':'Xem thêm >> aaa'}}</a>
+    <a routerLink="/{{global.locale=='vi'?'tin-tuc':'news'}}">{{global.locale=='vi'?'Xem thêm >>':'See more>>'}}</a>
 </p>

@@ -31,10 +31,10 @@ export class PlskComponent implements OnInit {
 
     constructor(private spinner: SpinnerService, private smtp: EmailService, public global: GlobalService) {
         if (this.global.locale != 'vi') {
-            this.s1 = 'Event license';
-            this.s2 = 'Contract event';
-            this.s3 = 'Event management';
-            this.s4 = 'Legal course';
+            this.s1 = 'Contract package';
+            this.s2 = 'Administration Package';
+            this.s3 = 'License Package';
+            this.s4 = 'Our legal course';
         }
     }
 
