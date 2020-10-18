@@ -9,7 +9,7 @@
                     <div class="shadow container-search flex-center-vertically tvls-shadow">
                         <div class="row row-search">
                             <i class="fa fa-search"></i>
-                            <select [(ngModel)]="type" name="type" class="input-search">
+                            <select [(ngModel)]="type" name="type" class="input-search" style="margin-right:-20%; width: 100% !important;" >
                                 <option value="0">{{global.locale=='vi'?'Chọn lĩnh vực bạn cần tư vấn':'Choose your field of interest'}}</option>
                                 <option value="Doanh nghiệp">{{global.locale=='vi'?'Doanh nghiệp':'Business'}}</option>
                                 <option value="Sở hữu trí tuệ">{{global.locale=='vi'?'Sở hữu trí tuệ':'Intellectual property'}}</option>
@@ -21,7 +21,7 @@
                                 <option value="Định cư - du học">{{global.locale=='vi'?'Định cư - du học':'Study Abroad - Migration'}}</option>
                                 <option value="Lĩnh vực khác">{{global.locale=='vi'?'Lĩnh vực khác':'Other Fields'}}</option>
                             </select>
-                            <i class="fa fa-caret-down" ></i>
+                            <i class="fa fa-caret-down" style="pointer-events: none !important;" ></i>
                         </div>
                     </div>
                     <button (click)="showForm1()" class="shadow btn btn-warning text-color-search nut-tvls">{{global.locale=='vi'?'Đặt lịch ngay':'Schedule now'}}</button>
