@@ -1375,7 +1375,7 @@ hr.blue {
     display: block;
   }
   #mainvisual.news {
-    height: 300px;
+    height: 150px;
     background: url('/assets/media/chnn/news_banner_mb.jpg') center center no-repeat;
     background-size: cover;
     margin-bottom: 3rem;

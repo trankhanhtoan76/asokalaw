@@ -2332,6 +2332,7 @@ img.icon {
 }
 
 .controller-tabs ul li {
+
   width: 30%;
   /*padding: 20px;*/
 }
@@ -3609,6 +3610,10 @@ img.nextArrowBtnNews {
   }
   .box {
     overflow: hidden;
+  }
+  .blockdautrang
+  {
+    margin-top: -10% !important;
   }
 }
 /* </Change> */

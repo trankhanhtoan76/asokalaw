@@ -48,11 +48,11 @@
                     <i *ngIf="!fieldValid(email,'email') && e"><small class="text-danger">{{global.locale=='vi'?'Bắt buộc nhập email hợp lệ.':'Invalid email address.'}}</small></i>
                 </div>
                 <div class="form-group">
-                    <label class="col-form-label">{{global.locale=='vi'?'Tên doanh nghiệp (Nếu bạn đăng ký khóa học pháp lý)':'Business name (if you apply for our legal course)'}}<sup>*</sup></label>
+                    <label class="col-form-label">{{global.locale=='vi'?'Tên doanh nghiệp (Nếu bạn đăng ký khóa học pháp lý)':'Business name (if you apply for our legal course)'}}</label>
                     <input class="form-control" name="email" [(ngModel)]="company" type="text"/>
                 </div>
                 <div class="form-group problem-checkbox">
-                    <label>{{global.locale=='vi'?'Chọn dịch vụ bạn cần tự vấn':'Select a suitable service package'}}</label>
+                    <label>{{global.locale=='vi'?'Chọn dịch vụ bạn cần tư vấn':'Choose a service for consultation'}}</label>
                     <div class="row">
                         <div class="col-md-6">
                             <div class="form-check form-check-inline">

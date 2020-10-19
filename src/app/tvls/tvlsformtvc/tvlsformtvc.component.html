@@ -35,7 +35,7 @@
                         </div>
                     </div>
                     <div class="col-4 vertical-middle">
-                        X 200.000 vnđ
+                        {{global.locale=='vi'?'X 200.000 vnđ ':'10 usd '}}
                     </div>
                 </div>
                 <div class="form-group">
@@ -64,7 +64,7 @@
                     <label>
                         <input (change)="checkTerm=!checkTerm" value="1" type="checkbox">
                         {{global.locale=='vi'?'Tôi đã đọc và đồng ý với các điều khoản':'I have read and accepted the terms and the conditions'}}
-                        <span style="text-decoration: underline;color:#0f74a8;font-style: italic"><a href="/chinh-sach-khach-hang">{{global.locale=='vi'?'Xem chi tiết':'See Details'}}</a></span>
+                        <span style="text-decoration: underline;color:#0f74a8;font-style: italic"><a href="/chinh-sach-khach-hang" target="_blank">{{global.locale=='vi'?'Xem chi tiết':'See Details'}}</a></span>
                     </label><br/>
                     <i *ngIf="!checkTerm&&t"><small class="text-danger">{{global.locale=='vi'?'Bắt buộc đồng ý với các điều khoản.':'Required to agree to the terms.'}}</small></i>
                 </div>

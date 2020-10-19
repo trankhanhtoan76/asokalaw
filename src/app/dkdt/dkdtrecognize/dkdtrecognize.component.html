@@ -182,24 +182,24 @@
                 </ul>
             </div>
         </div>
-        <div class="d-none d-md-block">
+        <div class="d-none d-md-block" >
             <div class="row  sub custom-tab home-tab hide-V" id="tab-mcp-V">
 
-                <div class="col-md-4">
-                    <h1>{{global.locale=='vi'?'Đề xuất các gói phí từ Asoka Law':'Recommended packages from Asoka Law '}}</h1>
+                <div class="col-md-4" >
+                    <h1 >{{global.locale=='vi'?'Đề xuất các gói phí từ Asoka Law':'Recommended packages from Asoka Law '}}</h1>
                     {{global.locale=='vi'?'Bấm chọn loại hình đầu tư phù hợp vơi nhu cầu của bạn để xem giá phí tương ứng.':'Click to choose the investment type that suits your needs to see the corresponding fees'}}
                 </div>
                 <div class="col-md-4">
                     <div class="box shadow-lg" style="background-color: #FDF6F3;border: 1px solid #4caddb">
                         <div class="block-one">
-                            <img class="sticky" [src]="global.locale=='vi'?'/assets/media/DKKD/cac-goi-phi/Asset 36.svg':'/assets/media/DKKD/cac-goi-phi/Asset 36.svg'" >
+                            <img class="sticky" [src]="global.locale=='vi'?'/assets/media/DKKD/cac-goi-phi/mua-co-phan-von-gop.svg':'/assets/media/DKKD/cac-goi-phi/Asset 36.svg'" >
                             <div class="title-block center">
                                 <h6>{{global.locale=='vi'?'Gói tiết kiệm':'Economic package'}}</h6>
                             </div>
 
                             <div style="font-size: 10px; text-align: center">
                                 <sup style="font-size: 12px; top: -9px">{{global.locale=='vi'?'Từ':'From'}}</sup><b style="font-size: 26px">
-                                12.000.000 </b>VND
+                                {{global.locale=='vi'?'1000 ':'1000 '}}</b>{{global.locale=='vi'?'USD':'USD'}}
 
                             </div>
                         </div>
@@ -250,7 +250,7 @@
 
                             <div style="font-size: 10px; text-align: center">
                                 <sup style="font-size: 12px; top: -9px">{{global.locale=='vi'?'Từ':'From'}}</sup><b style="font-size: 26px">
-                                15.000.000 </b>VND
+                                {{global.locale=='vi'?'1500':'1500'}}</b>{{global.locale=='vi'?'USD':'USD'}}
 
                             </div>
                         </div>
@@ -312,7 +312,7 @@
 
                             <div style="font-size: 10px; text-align: center">
                                 <sup style="font-size: 12px; top: -9px">{{global.locale=='vi'?'Từ':'From'}}</sup><b style="font-size: 26px">
-                                15.000.000 </b>VND
+                                {{global.locale=='vi'?'1500 ':'1500'}} </b>{{global.locale=='vi'?'USD':'USD'}}
 
                             </div>
                         </div>
@@ -378,7 +378,7 @@
 
                             <div style="font-size: 10px; text-align: center">
                                 <sup style="font-size: 12px; top: -9px">{{global.locale=='vi'?'Từ':'From'}}</sup><b style="font-size: 26px">
-                                25.000.000 </b>VND
+                                {{global.locale=='vi'?'2000':'2000'}} </b>{{global.locale=='vi'?'USD':'USD'}}
 
                             </div>
                         </div>
@@ -469,7 +469,7 @@
 
                             <div style="font-size: 10px; text-align: center">
                                 <sup style="font-size: 12px; top: -9px">{{global.locale=='vi'?'Từ':'From'}}</sup><b style="font-size: 26px">
-                                15.000.000 </b>VND
+                                {{global.locale=='vi'?'1500 ':'1500'}} </b>{{global.locale=='vi'?'USD':'USD'}}
 
                             </div>
                         </div>
@@ -536,7 +536,7 @@
 
                             <div style="font-size: 10px; text-align: center">
                                 <sup style="font-size: 12px; top: -9px">{{global.locale=='vi'?'Từ':'From'}}</sup><b style="font-size: 26px">
-                                25.000.000 </b>VND
+                                {{global.locale=='vi'?'2000':'2000'}}</b>{{global.locale=='vi'?'USD':'USD'}}
 
                             </div>
                         </div>
@@ -597,14 +597,14 @@
                 <div class="col-sm-12 p-4">
                     <div class="box shadow-lg" style="background-color: #FDF6F3;border: 1px solid #4caddb">
                         <div class="block-one">
-                            <img class="sticky"  [src]="global.locale=='vi'?'/assets/media/DKKD/cac-goi-phi/Asset 36.svg':'/assets/media/DKKD/cac-goi-phi/Asset 36.svg'">
+                            <img class="sticky"  [src]="global.locale=='vi'?'/assets/media/DKKD/cac-goi-phi/mua-co-phan-von-gop.svg':'/assets/media/DKKD/cac-goi-phi/Asset 36.svg'">
                             <div class="title-block center">
                                 <h6>{{global.locale=='vi'?'Gói tiết kiệm':'Economic package'}}</h6>
                             </div>
 
                             <div style="font-size: 10px; text-align: center">
                                 <sup style="font-size: 12px; top: -9px">{{global.locale=='vi'?'Từ':'From'}}</sup><b style="font-size: 26px">
-                                12.000.000 </b>VND
+                                {{global.locale=='vi'?'12.000.000 ':'1000 '}}</b>{{global.locale=='vi'?'VND':'USD'}}
 
                             </div>
                         </div>
@@ -656,7 +656,7 @@
 
                             <div style="font-size: 10px; text-align: center">
                                 <sup style="font-size: 12px; top: -9px">{{global.locale=='vi'?'Từ':'From'}}</sup><b style="font-size: 26px">
-                                15.000.000 </b>VND
+                                {{global.locale=='vi'?'1500 ':'1500'}} </b>{{global.locale=='vi'?'USD':'USD'}}
 
                             </div>
                         </div>
