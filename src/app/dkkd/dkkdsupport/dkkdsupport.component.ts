@@ -90,7 +90,7 @@ export class DkkdsupportComponent implements OnInit {
         $('.slide-support-pltx').slick({
             infinite: true,
             slidesToShow: 4,
-            slidesToScroll: 2,
+            slidesToScroll: 4,
             autoplay: true,
             autoplaySpeed: 4000,
 

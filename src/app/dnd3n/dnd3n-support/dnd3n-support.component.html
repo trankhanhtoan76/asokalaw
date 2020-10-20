@@ -70,7 +70,7 @@
                             <p>{{global.locale=='vi'?'568 lượt sử dụng':'Used: 568 times'}}</p>
                         </div>
                     </div>
-                    <button (click)="selectOneService(s4);showForm()" style="position: absolute;" class="btn btn-outline-warning custom-color-white">{{global.locale=='vi'?'Tư vấn dịch vụ':'Get free consultation'}}</button>
+                    <button (click)="selectOneService(s4);showForm()" style="{{global.locale=='vi'?'position: absolute !important;left: 25% !important;':'position: absolute !important;left: 15% !important;'}}"  class="btn btn-outline-warning custom-color-white" >{{global.locale=='vi'?'Tư vấn dịch vụ':'Get free consultation'}}</button>
                 </div>
             </div>
         </div>
