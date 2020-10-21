@@ -159,6 +159,20 @@
     src: url('../fonts/SVN-PLAYFAIR DISPLAY BOLD.TTF');
 }
 
+.modal{
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+.nav-pills .active a{
+    text-decoration: none;
+    color: #7ec8e9;
+    background-color: aliceblue;
+}
+/* #fix-dkdtbusiness-V .active img{
+    border-radius: 100%;
+    border: 3px solid #fac113;
+} */
+
 * {
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
