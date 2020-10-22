@@ -46,7 +46,7 @@
             </div>
         </div>
     </div>
-    <div class="recognize-block-bg" style="margin-bottom: 3rem;">
+    <div class="recognize-block-bg chitrenmaytinh" style="margin-bottom: 3rem;">
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
@@ -67,6 +67,31 @@
             </div>
         </div>
     </div>
+    <!--            test-->
+    <div class="row d-block d-md-none" style=" margin-top: 15px;">
+        <div class="recognize-block-bg" style="margin-bottom: 3rem;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="recognize-block" style="margin-left: 3%;">
+                            <p class="pc m-0"><img style="top: -30px; left: 315px;" src="/assets/media/DNT3N/Nhan-dinh-dung/bg-tam-ngung-giai-the.svg"></p>
+                            <p class="sp m-0"><img style="top: -30px; right: 0;" src="/assets/media/DNT3N/Nhan-dinh-dung/bg-tam-ngung-giai-the.svg"></p>
+                            <p class="alt-title">{{global.locale == 'vi' ? 'Tạm ngừng hoạt động & Giải thể doanh nghiệp' : 'Temporary Suspension/Dissolution of Enterprise'}}</p>
+                            <hr style="width: 80px; border: 1.5px solid #7ec8e9; margin-top: 10px; margin-bottom: 25px">
+                            <div class="mission-txt">
+                                <p>{{global.locale == 'vi' ? 'Sau 03 năm hoạt động nhưng kinh doanh vẫn không hiệu quả, doanh nghiệp cần thực hiện các hành động dứt khoát để chấm dứt thua lỗ. Tùy vào tình trạng có thể tái cấu trúc, tìm hướng phát triển mới hay không mà doanh nghiệp có thể chọn tạm ngừng (tối đa 02 năm liên tiếp) hoặc giải thể (chấm dứt hoạt động).' : 'If business activities remain ineffective after 03 years of operation, enterprises need to take decisive actions to stop losses. Depending on whether it is possible to restructure and/or find new development directions, enterprises can choose to suspend (maximum 02 consecutive years) or dissolve (terminate operations).'}}</p>
+                            </div>
+                            <button onclick="$('#dnt3nform-banggia-gqtc-tamngung-giaithe').modal('show')" style="margin-top: 30px; margin-bottom: 20px" class="btn btn-warning sub-button">{{global.locale == 'vi' ? 'Xem báo giá chi tiết' : 'See detail quotations'}}</button>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <img style="max-width: 100%;" src="/assets/media/DNT3N/Nhan-dinh-dung/3-tam-ngung-giai-the.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--            end test-->
 </section>
 
 <app-dnt3n-form2></app-dnt3n-form2>
@@ -167,7 +192,7 @@
                                     <div><p class="" style="font-size: 40px; padding-bottom: 20px"><span style="font-size: 12px;font-weight: 200;position: relative;top: -22px; padding-right: 5px">{{global.locale == 'vi' ? 'Từ' : 'From'}}</span>{{global.locale == 'vi' ? '5.900.000' : '5.900.000'}} <span class="sub-title">{{global.locale == 'vi' ? 'VNĐ' : 'VND'}}</span></p></div>
                                     <p>{{global.locale == 'vi' ? 'Dưới 05 lao động' : 'Under 5 employees'}}</p>
                                     <hr style="margin-bottom: 20px !important;margin: auto !important;width: 30%;border: 2px solid #fac115;background: #7ec8e9;margin-left: 0;">
-                                    <p class="align-left" style="margin-top: 20px; margin-left: 20%;"><b>{{global.locale == 'vi' ? 'Rà soát pháp lý doanh nghiệp' : 'Corporate Legal Review'}}</b></p>
+                                    <p class="align-left" style="margin-top: 20px; margin-left: 5% !important;"><b>{{global.locale == 'vi' ? 'Rà soát pháp lý doanh nghiệp' : 'Corporate Legal Review'}}</b></p>
                                     <div class="price-ul" style="margin-left: 5%;">
                                         <div class="price-li"><span class=" icon"><img src="/assets/media/DKKD/cac-goi-phi/Asset 8.svg"></span>{{global.locale == 'vi' ? 'Kiểm tra ngành nghề kinh doanh' : 'Reviewing business lines'}}</div>
                                         <div class="price-li"><span class=" icon"><img src="/assets/media/DKKD/cac-goi-phi/Asset 8.svg"></span>{{global.locale == 'vi' ? 'Thủ tục cho sản phẩm lưu hành' : 'Procedures of Product Circulation'}}</div>
@@ -202,7 +227,7 @@
                                     <div><p class="" style="font-size: 40px; padding-bottom: 20px"><span style="font-size: 12px;font-weight: 200;position: relative;top: -22px; padding-right: 5px">{{global.locale == 'vi' ? 'Từ' : 'From'}}</span>{{global.locale == 'vi' ? '8.900.000 ' : '8.900.00 '}}<span class="sub-title">{{global.locale == 'vi' ? 'VNĐ' : 'VND'}}</span></p></div>
                                     <p>{{global.locale == 'vi' ? 'Từ 06 - 10 lao động' : '06 -10 employees'}}</p>
                                     <hr style="margin-bottom: 20px !important;margin: auto !important;width: 30%;border: 2px solid #fac115;background: #7ec8e9;margin-left: 0;">
-                                    <p class="align-left" style="margin-top: 20px; margin-left: 20%;"><b>{{global.locale == 'vi' ? 'Rà soát pháp lý doanh nghiệp' : 'Corporate Legal Review'}}</b></p>
+                                    <p class="align-left" style="margin-top: 20px; margin-left: 5% !important;"><b>{{global.locale == 'vi' ? 'Rà soát pháp lý doanh nghiệp' : 'Corporate Legal Review'}}</b></p>
                                     <div class="price-ul" style="margin-left: 5%;">
 
                                         <div class="price-li"><span class=" icon"><img src="/assets/media/DKKD/cac-goi-phi/Asset 8.svg"></span>{{global.locale == 'vi' ? 'Kiểm tra ngành nghề kinh doanh' : 'Reviewing business lines'}}</div>
@@ -255,7 +280,7 @@
                 </div>
                 <div class="form-group">
                     <input autocomplete="off" (keyup)="p=true" [class.is-invalid]="!form.fieldValid(phone,'phone')&&p" [class.is-valid]="form.fieldValid(phone,'phone')&&p" type="text" class="form-control" [(ngModel)]="phone" name="phone" placeholder="{{global.locale == 'vi' ? 'Số điện thoại *' : 'Telephone no.*'}}">
-                    <i *ngIf="!form.fieldValid(name) && n"><small class="text-danger">{{global.locale == 'vi' ? 'Bắt buộc nhập họ tên.' : 'Please enter your name. '}}</small></i>
+                    <i *ngIf="!form.fieldValid(name) && n"><small class="text-danger">{{global.locale=='vi'?'Bắt buộc nhập số điện thoại hợp lệ.':'Invalid phone number.'}}</small></i>
                 </div>
                 <div class="form-group">
                     <input autocomplete="off" (keyup)="e=true" [class.is-invalid]="!form.fieldValid(email,'email')&&(e||submitClick)" [class.is-valid]="form.fieldValid(email,'email')" class="form-control" name="email" [(ngModel)]="email" type="text" placeholder="{{global.locale == 'vi' ? 'Email *' : 'Email *'}}"/>

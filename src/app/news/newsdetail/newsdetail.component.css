@@ -1,0 +1,7 @@
+@media only screen and (max-width: 768px) {
+
+    #mainvisual.news {
+        height: 150px !important;
+
+    }
+}
