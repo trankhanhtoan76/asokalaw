@@ -168,7 +168,7 @@ export class Dnt3nSupportComponent implements OnInit {
         $('.slide-support-pltx').slick({
             infinite: true,
             slidesToShow: 4,
-            slidesToScroll: 2,
+            slidesToScroll: 1,
             autoplay: true,
             autoplaySpeed: 4000,
             nextArrow: '<img src="/assets/media/landingpage/news/right.svg" class="nextArrowBtnVideo news">',
