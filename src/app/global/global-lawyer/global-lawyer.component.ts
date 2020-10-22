@@ -3,7 +3,6 @@ import {postAPI} from "../../helpers/api";
 import {GlobalService} from "../../service/global.service";
 
 declare var $: any;
-
 @Component({
     selector: 'app-global-lawyer',
     templateUrl: './global-lawyer.component.html',
@@ -46,6 +45,7 @@ export class GlobalLawyerComponent implements OnInit {
             this.initialized = true;
             const $ctrl = $('.controller-tabs-popular');
             $ctrl.slick({
+                initialSlide: 1,
                 infinite: true,
                 slidesToShow: 4,
                 focusOnSelect: true,
@@ -64,6 +64,7 @@ export class GlobalLawyerComponent implements OnInit {
                     }
                 ]
             });
+            console.log('DAWD AJWD JAWJ DJAWJ DẠ')
             $ctrl.on('beforeChange', function (event, slick, currentSlide, nextSlide) {
                 let activeEle;
                 let dataTarget;
@@ -92,8 +93,10 @@ export class GlobalLawyerComponent implements OnInit {
                
             });
 
-            // $('.tab-content .tab-pane-business:nth-child(2)').css('display', 'flex');
-            // $('.nextArrowBtnNews').click();
+            var new_A =  $('.controller-tabs-popular div[data-slick-index="' + (1) + '"]');
+            var new_B = $('.controller-tabs-popular div[data-slick-index="' + (1) + '"]').data('target');
+            new_A.addClass('active');
+            $(new_B + '.tab-pane-business').css('display', 'flex');
         }
     }
 }
