@@ -19,11 +19,12 @@ export class DkdtrecognizeComponent implements OnInit {
     }
 
     ngAfterContentInit(): void {
+        const self = this;
         $('.custom-collapse').on('click', function (elem) {
             if ($(this).hasClass('collapsed')) {
-                $(this).text('Collapse');
+                $(this).text(self.global.locale == 'vi' ? 'Thu gọn' : 'Collapsed');
             } else {
-                $(this).text('Task description');
+                $(this).text(self.global.locale == 'vi' ? 'Chi tiết hạng mục công việc' : 'Task description');
             }
         });
         $('input[name="checkBox"]').on('change', function () {
@@ -35,12 +36,12 @@ export class DkdtrecognizeComponent implements OnInit {
 
     changepackage(e, target?): void {
         this.onclickchangepackage.emit(e);
-        if(target === 'tab-mcp-V'){
+        if (target === 'tab-mcp-V') {
             $('#tab-tldnm-V').addClass('hide-V');
-            $('#'+target).removeClass('hide-V');
-        }else if(target === 'tab-tldnm-V'){
+            $('#' + target).removeClass('hide-V');
+        } else if (target === 'tab-tldnm-V') {
             $('#tab-mcp-V').addClass('hide-V');
-            $('#'+target).removeClass('hide-V');
+            $('#' + target).removeClass('hide-V');
         }
     }
 

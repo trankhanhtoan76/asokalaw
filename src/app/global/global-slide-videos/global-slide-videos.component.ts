@@ -1,4 +1,5 @@
 import {Component, Input, OnInit} from '@angular/core';
+import {GlobalService} from "../../service/global.service";
 
 declare var $: any;
 
@@ -11,7 +12,11 @@ export class GlobalSlideVideosComponent implements OnInit {
     @Input() videos;
     isInstalled: boolean;
 
-    constructor() {
+    constructor(public global: GlobalService) {
+    }
+
+    get random() {
+        return Math.random() * 10000;
     }
 
     ngOnInit(): void {
