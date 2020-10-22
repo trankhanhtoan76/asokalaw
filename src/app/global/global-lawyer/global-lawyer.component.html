@@ -9,7 +9,9 @@
             <div class="col-md-12">
                 <div class="controller-tabs-popular" id="fix-dkdtbusiness-V">
                     <div class="tkt-slide-item" *ngFor="let item of data" [attr.data-target]="'#'+item.id">
-                        <img src="{{item.image}}"/>
+                        <div>
+                            <img src="{{item.image}}"/>
+                        </div>
                     </div>
                     <div *ngFor="let item of data" [attr.data-target]="'#'+item.id">
                         <img src="{{item.image}}"/>

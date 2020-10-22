@@ -48,7 +48,8 @@ export class GlobalLawyerComponent implements OnInit {
             $ctrl.slick({
                 infinite: true,
                 slidesToShow: 4,
-                // focusOnSelect: true,
+                focusOnSelect: true,
+                centerMode: true,
                 slidesToScroll: 1,
                 autoplaySpeed: 4000,
                 nextArrow: '<img src="/assets/media/landingpage/Asset 83.svg" class="nutmuiten nuttienlen">',
@@ -66,27 +67,33 @@ export class GlobalLawyerComponent implements OnInit {
             $ctrl.on('beforeChange', function (event, slick, currentSlide, nextSlide) {
                 let activeEle;
                 let dataTarget;
-                if (currentSlide === 7 && nextSlide === 0) {
-                    activeEle = $('.controller-tabs-popular div[data-slick-index="' + 1 + '"]');
-                    dataTarget = $('.controller-tabs-popular div[data-slick-index="' + 1 + '"]').data('target');
-                } else {
-                    if (currentSlide < nextSlide) {
-                        activeEle = $('.controller-tabs-popular div[data-slick-index="' + (nextSlide + 1) + '"]');
-                        dataTarget = $('.controller-tabs-popular div[data-slick-index="' + (nextSlide + 1) + '"]').data('target');
-                    } else {
-                        activeEle = $('.controller-tabs-popular div[data-slick-index="' + (currentSlide) + '"]');
-                        dataTarget = $('.controller-tabs-popular div[data-slick-index="' + (currentSlide) + '"]').data('target');
-                    }
-                }
+                // if (currentSlide === 7 && nextSlide === 0) {
+                //     activeEle = $('.controller-tabs-popular div[data-slick-index="' + 1 + '"]');
+                //     dataTarget = $('.controller-tabs-popular div[data-slick-index="' + 1 + '"]').data('target');
+                // } else {
+                //     if (currentSlide < nextSlide) {
+                //         activeEle = $('.controller-tabs-popular div[data-slick-index="' + (nextSlide + 1) + '"]');
+                //         dataTarget = $('.controller-tabs-popular div[data-slick-index="' + (nextSlide + 1) + '"]').data('target');
+                //     } else {
+                //         activeEle = $('.controller-tabs-popular div[data-slick-index="' + (currentSlide) + '"]');
+                //         dataTarget = $('.controller-tabs-popular div[data-slick-index="' + (currentSlide) + '"]').data('target');
+                //     }
+                // }
+
+                activeEle = $('.controller-tabs-popular div[data-slick-index="' + (nextSlide) + '"]');
+                dataTarget = $('.controller-tabs-popular div[data-slick-index="' + (nextSlide) + '"]').data('target');
+
+
                 $('.controller-tabs-popular div').removeClass('active');
                 activeEle.addClass('active');
 
                 $('div.tab-pane-business').css('display', 'none');
                 $(dataTarget + '.tab-pane-business').css('display', 'flex');
+               
             });
 
-            $('.tab-content .tab-pane-business:nth-child(2)').css('display', 'flex');
-            $('.nextArrowBtnNews').click();
+            // $('.tab-content .tab-pane-business:nth-child(2)').css('display', 'flex');
+            // $('.nextArrowBtnNews').click();
         }
     }
 }
