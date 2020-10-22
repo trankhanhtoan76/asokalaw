@@ -108,7 +108,7 @@
     text-align: center;
     font-size: 12px;">
         {{global.locale == 'vi' ? '© 2019 asokalaw.vn' : '© 2019 asokalaw.vn'}}<br/>
-        {{global.settings.name}}<br/>
+        {{global.locale == 'vi' ? global.settings.name : global.settings.en_name}}<br/>
         {{global.locale == 'vi' ? 'Trụ sở chính: ' + global.settings.head_office : 'Head Quarter Address:' + global.settings.en_head_office}}<br/>
         {{global.locale == 'vi' ? 'Chi nhánh: ' + global.settings.branch_office : 'Branch Office:' + global.settings.en_branch_office}}<br/>
         {{global.locale == 'vi' ? global.settings.license : global.settings.en_license}}

@@ -21,6 +21,7 @@ export class GlobalService {
         mailer_fromname: '',
         mailer_replytoname: '',
         name: '',
+        en_name: '',
         email: '',
         head_office: '',
         en_head_office: '',
